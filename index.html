@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dustmite</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Dustmite</h1>
+      <p class="subtitle">Graphics / Systems Programmer</p>
+    </header>
+
+    <section>
+      <p>
+        I build performant graphics systems, simulations, and engines in C.
+      </p>
+      <p>
+        My focus is efficient and portable code that runs well on both high and low-end hardware.
+      </p>
+    </section>
+
+    <section>
+
+      <h2>Projects</h2>
+
+      <div class="project featured">
+        <div class="project-content">
+          <h3>3D Flow Lenia<span class="status-finished">Finished</span></h3>
+          <p>
+            3D extension of Lenia with transport mechanics and real-time meshing, built on and for Windows XP-era hardware.
+          </p>
+          <ul class="details">
+            <li>CPU-only SIMD implementation</li>
+            <li>Multithreaded, highly vectorized</li>
+            <li>Reintegration tracking / advection</li>
+            <li>Marching cubes meshing (4 views)</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/lostnthought/Lenia">GitHub</a>
+            |
+            <a href="https://www.youtube.com/playlist?list=PLx2-_nhEkLHaCdtw1cXqM7XY0kHZ3Jn_E">YouTube</a>
+          </p>
+          <p class="tech">C(++), DX9, Windows XP, Win32, FFTW</p>
+        </div>
+        <div class="previews">
+          <video class="preview" autoplay loop muted playsinline preload="metadata">
+            <source src="videos/lenia1.mp4" type="video/mp4">
+          </video>
+          <video class="preview" autoplay loop muted playsinline preload="metadata">
+            <source src="videos/lenia2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-content">
+          <h3>Space Simulation<span class="status-in-progress">In Progress</span></h3>
+          <p>
+            3D N-body simulation with accretion and real-time lighting.
+          </p>
+          <ul class="details">
+            <li>GPU-only compute shader simulation</li>
+            <li>LBVH constructed from Morton codes</li>
+            <li>Radix sort handles morton ordering</li>
+            <li>Planned: Walkable planets with terrain generation</li>
+          </ul>
+          <p class="tech">C, OpenGL, GLSL, SDL2</p>
+        </div>
+          <div class="previews">
+        
+          <video class="preview" autoplay loop muted playsinline preload="metadata">
+            <source src="videos/space4.mp4" type="video/mp4">
+          </video>
+          </div>
+      </div>
+
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Sarah (Chess Engine)<span class="status-finished">Finished</span></h3>
+          <p>
+            Bitboard chess engine with handcrafted evaluation, tuning utilities, and extensive search heuristics.
+          </p>
+          <ul class="details">
+            <li>HCE with pawn hashing + lazy eval</li>
+            <li>Search: RFP, Extensions, LMP, Futility, SEE, LMR, etc.</li>
+            <li>Tuning utilities: SGDM(R) / ADAMW(R) / SPSA</li>
+            <li>Corrective, continuation, capture, and regular history</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/lostnthought/sarah">GitHub</a>
+            |
+            <a href="https://www.youtube.com/watch?v=QzS8HQ3dVWA">YouTube</a>
+            |
+            <a href="https://lichess.org/@/vixen_is_very_cool">Lichess</a>
+          </p>
+          <p class="tech">C</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Game Engine<span class="status-on-hold">On-Hold</span></h3>
+          <p>
+            3D game engine with a "precompute-everything" philosophy, bringing beautiful graphical fidelity to low-end hardware. Highly inspired by giallo and movement shooters.
+          </p>
+          <ul class="details">
+            <li>UV + volumetric lightmapper</li>
+            <li>Material-based customizable rendering pipeline</li>
+            <li>Skeletal animation system</li>
+            <li>Collision system using precomputed jarvis marched hulls</li>
+            <li>UI system: triangulated mesh elements, text rendering, and animations</li>
+          </ul>
+          <p class="links">
+            <a href="https://www.youtube.com/playlist?list=PLx2-_nhEkLHbLi6iRiTASyFMCs4D8v-ae">YouTube (Streams)</a>
+            |
+            <a href="https://www.youtube.com/playlist?list=PLx2-_nhEkLHbKc-fZwMgLO1vOcdp3iDfT">YouTube (Devlogs)</a>
+          </p>
+          <p class="tech">C, OpenGL, GLSL, Nuklear, SDL2</p>
+        </div>
+        <div class="previews">
+          <video class="preview" autoplay loop muted playsinline preload="metadata">
+            <source src="videos/engine5.mp4" type="video/mp4">
+          </video>
+          <video class="preview" autoplay loop muted playsinline preload="metadata">
+            <source src="videos/engine3.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+        <h3>PS1 Game Demo<span class="status-unfinished">Unfinished</span></h3>
+        <p>
+          Movement FPS proof of concept for the PS1.
+        </p>
+        <ul class="details">
+          <li>Collision / movement system - fixed point math</li>
+          <li>Map creation pipeline: game engine -> PS1</li>
+          <li>Lightmapped + gouraud shaded</li>
+          <li>Screen space fog inspired by Silent Hill</li>
+        </ul>
+          <p class="links">
+            <a href="https://www.youtube.com/playlist?list=PLx2-_nhEkLHbAS3OKyKuGHJ44uFmmpF3b">YouTube</a>
+          </p>
+        <p class="tech">C, PSN00BSDK</p>
+        </div>
+        <div class="previews">
+          <video class="preview" autoplay loop muted playsinline preload="metadata">
+            <source src="videos/hop2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p class="links">
+        <a href="mailto:dustmite.business@gmail.com">dustmite.business@gmail.com</a>
+        |
+        <a href="https://github.com/lostnthought">GitHub</a>
+        |
+        <a href="https://www.youtube.com/@dustmite-c">YouTube</a>
+      </p>
+    </section>
+
+  </main>
+
+</body>
+</html>

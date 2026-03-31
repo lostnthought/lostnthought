@@ -1,6 +1,24 @@
 h1, h2, h3, p {
   margin: 0;
 }
+h1 {
+  font-size: 3.0rem;
+}
+h2 {
+  margin-top: 0.7em;
+  font-size: 2.0rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.0em;
+}
+h3 {
+  display: flex;
+  font-size: 1.8rem;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
 body {
   font-family: system-ui, sans-serif;
   background: #0F0A0F;
@@ -31,38 +49,22 @@ body {
   padding-top: 10px;
 
 }
-
-h1 {
-  font-size: 3.0rem;
-}
-
 .subtitle {
   color: #888;
   margin: 0;
   margin-bottom: 0.5em;
 }
-h2 {
-  margin-top: 0.7em;
-  font-size: 2.0rem;
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.2em;
-  margin-bottom: 0.0em;
-}
-h3 {
-  display: flex;
-  font-size: 1.8rem;
-  align-items: baseline;
-  gap: 10px;
-  margin-top: 0.6em;
-  margin-bottom: 0.2em;
-}
 
+.featured {
+  border-bottom: 1px solid #333;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+}
 .project {
-  /* width: 120%; */
   margin-top: 0.2em;
   margin-bottom: 0.2em;
   align-items: start;
-  grid-template-columns: 1fr 510px; /* text | media */
+  grid-template-columns: 1fr 510px; 
   display: grid;
   gap: 20px;
   padding: 20px 0;
@@ -70,11 +72,7 @@ h3 {
 section .project:not(:last-of-type) {
   border-bottom: 1px solid #222;
 }
-.featured {
-  border-bottom: 1px solid #333;
-  padding-bottom: 60px;
-  margin-bottom: 30px;
-}
+
 .project-content {
   grid-column: 1;
   
@@ -86,10 +84,8 @@ section .project:not(:last-of-type) {
   flex-direction: column;
   margin: 10px;
   gap: 10px;
-  /* align-items: flex-end; */
 }
 .preview {
-  /* width: 100%; */
   border: 1px solid #222;
 }
 @media (max-width: 800px) {

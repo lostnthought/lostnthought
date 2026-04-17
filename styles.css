@@ -128,3 +128,44 @@ section .project:not(:last-of-type) {
 .links a:hover {
   text-decoration: underline;
 }
+
+article {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 80px auto;
+}
+article container {
+  max-width: 800px;
+  margin: 80px auto;
+
+}
+
+article h1 {
+  margin-bottom: 0.5em;
+}
+
+article h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.3em;
+  color: #ddd;
+}
+
+article p {
+  margin-bottom: 0.8em;
+}
+
+pre {
+  background: #111;
+  padding: 12px;
+  overflow-x: auto;
+  border: 1px solid #222;
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.viz {
+  font-size: 0.85em;
+}

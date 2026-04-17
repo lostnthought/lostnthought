@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brutal 3D CPU Optimization in Lenia: SIMD & Vectorization Layouts</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <article>
+    <header>
+      <h1>Brutal 3D CPU Optimization in Lenia: SIMD & Vectorization Layouts</h1>
+    </header>
+
+    <section>
+      <p>
+        At some point during the development of the 3D lenia project, I realized I was wholly unimpressed with the performance and wasn't sure how to get any more. Due to the nature of different convolution steps, behavior was necessarily branchy, and that was not where I was going to compromise. No, I came up with a different solution.
+      </p>
+      <p>
+        We have three types of borders for our 3D scalar fields. NONE, WALL, and TORUS. These borders all have differing behaviors upon us reaching the edge in iteration.
+      </p>
+      <ul>
+      <li><strong>NONE</strong> Uses zero as the "off-the-edge" value.</li>
+      <li><strong>WALL</strong> Clamps to the edge.</li>
+      <li><strong>TORUS</strong> Wraps.</li>
+      </ul>
+      <p>
+        To maintain these behaviors (zeroing, clamping, and modulo) and optimize, we can pad the 3D scalar fields by a certain amount and fill the padded space with expected values. NONE will fill the borders with zeros, WALL copies the value from the edge into the borders, and TORUS copies the opposite border edge into the padding. 
+      </p>
+      <p>
+        We have 3 different types of fields: pre-gradient, gradient / reintegration, and meshing output. These all need to be processed at different times because their data is made available at different points in a simulation step. To avoid branching, I simply made functions for each of them. You can view this at <a href="https://github.com/lostnthought/Lenia/blob/main/transposition.cpp">this file</a>. Of course, this is not a free optimization, especially since the stride we use prevents us from vectorizing. Nonetheless, it is much faster than branching each time we hit a border.
+      </p>
+
+      <p><strong>Final (copying into padded border)</strong></p>
+      <pre><code>
+      for (int c = 0; c < channels; c++)
+      for (int dd = 0; dd < dd; dd++)
+      {
+          int wi = -1 - dd;
+          int we = GRID_WIDTH - 1 - dd;
+          
+          for (int z = section; z < end; z++)
+          for (int y = 0; y < height; y++)
+          {
+              int idx = PIDX(wi, y, z);
+              int edx = PIDX(we, y, z);
+
+              MU_x[idx] = MU_x[edx];
+              MU_y[idx] = MU_y[edx];
+              MU_z[idx] = MU_z[edx];
+      </code></pre>
+
+      <p>
+        Once that's done, we must also take a look at the cases in which this wrapping is used. The most important one, and the one I'll mention here is reintegration. While the method I used originally makes a lot of logical sense, here it's a bit slow because it stops our cpu vectorization. The method was to process one cell at a time, iterate over the surrounding area (to radius dd) and integrate inward. The much faster method is to simply iterate the entire grid one offset as a time, greatly increasing our cache efficiency.
+      </p>
+
+      <p><strong>Original:</strong></p>
+      <pre><code>
+      for (int z = ...)
+      for (int y = ...)
+      for (int x = ...)
+      {
+          for (int dz = -dd; dz <= dd; dz++)
+          for (int dy = -dd; dy <= dd; dy++)
+          for (int dx = -dd; dx <= dd; dx++)
+      </code></pre>
+
+      <p><strong>Final (vectorized):</strong></p>
+      <pre><code>
+      for (int dz = -dd; dz <= dd; dz++)
+      for (int dy = -dd; dy <= dd; dy++)
+      for (int dx = -dd; dx <= dd; dx++)
+      {
+          for (int z = ...)
+          for (int y = ...)
+          for (int x = ...; x += 4)
+      </code></pre>
+
+    <p>Naturally this forces our layout to be channel * grid_size + idx. I choose this over the other option because max channels is 3, and is not guaranteed to always be 3. To make efficient use of vectorization, that uptime is taken into account. Therefore, we unroll this each channel at a time. </p>
+    <p><strong>Unrolling:</strong></p>
+    <pre class="viz">
+      tt[idx] += (arr[scidx] * mx * my * mz) / sn;
+
+      if (channel_count <= current) continue;
+    </pre>
+    <p>Naturally, marching cubes also greatly benefits from this as well, since we can actually vectorize the 8 offsets internally before we even reach the iso value comparison, since we are avoiding the branch on wrapping.</p>
+    <p><strong>Final (no wrapping):</strong></p>
+    <pre><code>
+    // MAKE POINTS FROM DELTAS
+    __m128 mmx = _mm_add_ps(_mm_set1_ps(gx), _mm_load_ps(&DELTA_X[0]));
+    __m128 mmy = _mm_add_ps(_mm_set1_ps(gy), _mm_load_ps(&DELTA_Y[0]));
+    __m128 mmz = _mm_add_ps(_mm_set1_ps(gz), _mm_load_ps(&DELTA_Z[0]));
+    
+    ...
+
+    for (int i = 0; i < 8; i++){
+
+    	V1_VALS[i] = RBB[(int)POINTS_INDICES[i]];
+    	if (V1_VALS[i] > ISO_VALUE) 
+    	{
+    		V1_VAL |= 1 << i;
+    	}
+    }
+    </code></pre>
+    <p>Due to all of the vectorization that this padding optimization allowed, the application reaches well over 60 fps during reintegration with a dd of 2 (once again on windows XP), which was out of reach previously. Marching cubes actually is the bottleneck now, and there's not much we can do about that if we stay CPU bound (which was the point of the project). All in all, I am satisfied with this result and thanks to these optimizations, the project is a success in my book.</p>
+
+    
+    </section>
+    </article>
+
+    
+  </main>
+
+</body>
+</html>

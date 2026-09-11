@@ -4,8 +4,21 @@
   <meta charset="UTF-8">
   <title>Dustmite</title>
   <link rel="stylesheet" href="styles.css">
+
+  <script>
+      if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+      }
+  </script>
+    
 </head>
 <body>
+
+  
+  <main class="container-right">
+    <button id="theme-toggle">Theme Toggle</button>
+  </main>
+  <script src="script.js"></script>
 
   <main class="container">
     <header>
@@ -21,6 +34,7 @@
         My focus is efficient and portable code that runs well on both high and low-end hardware.
       </p>
     </section>
+
 
     <section>
 
@@ -72,6 +86,9 @@
             <li>Physics system with manifolds: PGS and Baumgarte Stabilization</li>
             <li>Collision with incremental hull: GJK, EPA, and triangle tests</li>
           </ul>
+          <p class="links">
+            <a href="./articles/path-traced-audio-probes.html">Path Traced Audio Probes</a>
+          </p>
           <p class="links">
             <a href="https://www.youtube.com/@dustmite-c">YouTube (Streams)</a>
           </p>

@@ -451,7 +451,7 @@ global history index = (global history index + 1) % max partitions // 96
 copy mono fwd into audio history[global history index] // array of [max partitions][padded len]
 for i in 0.. partitions: // 95
     history index = (global history index - i + max partitions) % max partitions // periodic wrap 96
-    for c in 0.. complex len: // 1024
+    for c in 0.. complex len:
         sum l += complex mul(audio history, current ir left)
         sum r += complex mul(audio history, current ir right)
     if crossfading:

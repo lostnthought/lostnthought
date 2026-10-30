@@ -1,4 +1,4 @@
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 h1 {
@@ -11,6 +11,7 @@ h2 {
   padding-bottom: 0.2em;
   margin-bottom: 0.0em;
 }
+
 h3 {
   display: flex;
   font-size: 1.8rem;
@@ -19,6 +20,15 @@ h3 {
   margin-top: 0.6em;
   margin-bottom: 0.2em;
 }
+h4 {
+  margin-top: 0.7em;
+  font-size: 1.8rem;
+  padding-bottom: 0.2em;
+
+  /* font-style: italic; */
+  margin-bottom: 0.0em;
+}
+
 
 
 :root {
@@ -93,6 +103,7 @@ body {
   text-align: left;
   font-size: 1.5rem;
 }
+
 /* body { */
   /* font-family: system-ui, sans-serif; */
   /* background: #0F0A0F; */
@@ -114,6 +125,11 @@ body {
 .status-in-progress{ color: var(--orange); }
 .status-on-hold{ color: var(--red); }
 .status-unfinished{ color: var(--ash); }
+
+.writings-link {
+  font-style: italic;
+}
+
 
 .container {
   max-width: 1200px;

@@ -35,12 +35,55 @@
       </p>
     </section>
 
+    <section>
+
+      <h4>Writings</h4>
+      <div class="writings-link">
+        <p class="links">
+          <a href="./articles/path-traced-audio-probes.html">Path Traced Audio Probes</a>
+        </p>
+        <p class="links">
+          <a href="./articles/brutal-optimization-lenia.html">Brutal 3D CPU Optimization in Lenia: SIMD & Vectorization Layouts</a>
+        </p>
+      </div>
+
+    </section>
 
     <section>
 
       <h2>Projects</h2>
 
       <div class="project featured">
+        <div class="project-content">
+          <h3>Untitled Game Engine<span class="status-in-progress">In Progress</span></h3>
+          <p>
+            The 3D game engine that brings high fidelity to low end-hardware.
+          </p>
+          <ul class="details">
+            <li>Path Traced audio probe volumes (Schroeder RT & Overlap-Add FFT)</li>
+            <li>HRTF computes IR by rotating SH in real-time</li>
+            <li>UI / Text rendering with events</li>
+            <li>Software GPU path tracing UV lightmapper</li>
+            <li>Parallax corrected reflection probes and indirect probe volumes</li>
+            <li>Acceleration structures (BVH) for both scene nodes and mesh faces</li>
+            <li>Physics system with manifolds: PGS and Baumgarte Stabilization</li>
+            <li>Collision with incremental hull: GJK, EPA, and triangle tests</li>
+            <li>Editor system with undo / redo capabilities (uses byte offsets)</li>
+            <li>Fully physically simulated body with springs and leg IKs</li>
+            <li>Transparents and emissives traced direct offline</li>
+            <li>Shadowmap for directional and point lights</li>
+          </ul>
+          <p class="links">
+            <a href="https://www.youtube.com/@dustmite-c">YouTube (Streams)</a>
+          </p>
+          <p class="tech">C, OpenGL, GLSL, SDL2, Nuklear</p>
+        </div>
+          <div class="previews">
+            <img src="images/rp158.PNG">
+            <img src="images/rp107.PNG">
+          </div>
+      </div>
+      <div class="project">
         <div class="project-content">
           <h3>3D Flow Lenia<span class="status-finished">Finished</span></h3>
           <p>
@@ -52,9 +95,6 @@
             <li>Reintegration tracking / advection</li>
             <li>Marching cubes meshing (4 views)</li>
           </ul>
-          <p class="links">
-            <a href="./articles/brutal-optimization-lenia.html">Brutal 3D CPU Optimization in Lenia: SIMD & Vectorization Layouts</a>
-          </p>
           <p class="links">
             <a href="https://github.com/lostnthought/Lenia">GitHub</a>
             |
@@ -72,31 +112,6 @@
             <source src="videos/lenia2.mp4" type="video/mp4">
           </video>
         </div>
-      </div>
-      <div class="project">
-        <div class="project-content">
-          <h3>Untitled Game Engine<span class="status-in-progress">In Progress</span></h3>
-          <p>
-            The 3D game engine that brings high fidelity to low end-hardware.
-          </p>
-          <ul class="details">
-            <li>GPU-only path tracing UV lightmapper</li>
-            <li>Parallax corrected reflection and indirect probes</li>
-            <li>Acceleration structures (BVH) for both scene nodes and mesh faces</li>
-            <li>Physics system with manifolds: PGS and Baumgarte Stabilization</li>
-            <li>Collision with incremental hull: GJK, EPA, and triangle tests</li>
-          </ul>
-          <p class="links">
-            <a href="./articles/path-traced-audio-probes.html">Path Traced Audio Probes</a>
-          </p>
-          <p class="links">
-            <a href="https://www.youtube.com/@dustmite-c">YouTube (Streams)</a>
-          </p>
-          <p class="tech">C, OpenGL, GLSL, SDL2, Nuklear</p>
-        </div>
-          <div class="previews">
-          <img src="images/rp10.PNG">
-          </div>
       </div>
       <div class="project">
         <div class="project-content">

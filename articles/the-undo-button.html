@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Undo Button</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+      if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+      }
+  </script>
+</head>
+<body>
+  <main class="container-right">
+    <button id="theme-toggle">Theme Toggle</button>
+  </main>
+  <script src="../script.js"></script>
+
+  <main class="container">
+    <article>
+    <header>
+      <h1>The Undo Button</h1>
+    </header>
+
+    <section>
+      <p>
+        I have been historically haunted by the elusive undo button. I've never made one before now, fearing the complexities of one that might touch every single system in my large engines. Even more horrifying: what about redoing, and then undoing again? Well, I've now implemented it and it's actually fairly straightforward. Yes, there is a lot of boilerplate to write here, and certain operations are far more complex then others. The key is to create a structure that can hold all of the information we might need.
+      </p>
+      <h4>The Structure</h4>
+      <p>
+        My undo structure looks like this:
+      </p>
+      <pre><code>struct Undo
+{
+
+    bool free;
+    size_t special_count;
+    size_t byte_size;
+    size_t byte_offset;
+    uint32_t id;
+    Undo * prev;
+    Undo * next;
+    uint8_t ** special_bytes;
+    UndoStructure structure;
+    uint8_t bytes[MAX_UNDO_BYTES];
+    
+};</code></pre>
+      <p>
+        Let's explain what's going on here piece by piece. The free boolean, ID, prev pointer, and next pointer are all used in the linked list that stores our undos and redos. The free flag makes it so that we pick up empty undos before we start pulling from the bottom of the stack and placing it at the top. The prev and next pointer will be used to navigate undoing and redoing by creating a linked list.
+      </p>
+
+      <p>
+        Next, we have the bytes, byte_size, and byte_offset. These fields are for normal undos that just change one field or modify state in a self contained way, such as moving a mesh around or changing a color, etc. Anything that only effects raw bytes in one specific position we can modify. All we need to do is store a byte size and offset so that we can copy into some position. For safety, I don't store a raw pointer. I just use the UndoStructure to indicate where we need to go to copy the data. Here is what that looks like:
+      </p>
+      <pre><code>typedef struct UndoStructure
+{
+
+    UndoStructureType type;
+    UndoSpecial special;
+    int ids[8];
+    
+} UndoStructure;</code></pre>
+      <p>
+        This stores an enum for the type, some IDs, and an enum for the special. The type can range from globals, editor settings, lights, entities, etc. Anything that exists in the engine is included as a structure type. This is important because depending on the type we will index into different arrays, avoiding the unreliable raw pointer method that we decided to not implement above. The IDs are how we get there. For example: the ID for the UI element and the ID for the menu that it is located within. We also repurpose this ID array for storing data, like what ID we currently have selected in the editor. Such as: deleting a ui element, then undoing and restoring that selection instead of dropping it and having to select it again.
+      </p>
+      <p>
+        The special is the final thing we need to cover. This enum specifies if there is a special operation that needs to be completed, and if so which one. If an operation cannot be undone and redone by simply copying bytes to one location, then we need to split thes up into cases. This is where our remaining fields in our undo structure come into play. Special bytes is a buffer of buffers that is unsized, so we can make as many as we would ever need. You can also do this sized, though it would require optimized profiling to know how many pointers you exactly need, and their max size, which can vary. Since this is editor facing, I malloc these. The special count tells us how many byte buffers we have, which is useful in certain operations that depend on some count of items. Importantly, for specials I reuse the field for byte_size to store how many total bytes we have in our special buffers, including the pointer sizes. This is used to determine how close we are to our memory limit, which is checked every time we push an undo. If we exceed our memory limit, we free from the bottom of the stack until we are under it. Some operations need to store large amounts of data, so this safety measure is needed.
+      </p>
+      <h4>The Sliders</h4>
+      <p>
+        So, how do we undo? Well, first we need to explain sliders. I use Nuklear for my debug UI. When I use a propertyf (Nuklear's version of sliders for floats) for example, I don't want to push an undo on every UI input tick. So how do we handle this? Of course, we need to store the state from when we started sliding, and there's really no simple way for us to do this so we need to be clever. For most fields, you're going to need a structure that stores the bytes from the first tick it changed, so that you can push the undo once you stop sliding. For this I use a function to check the equivalency and track when it stops and starts.
+      </p>
+      <pre><code>// a is src, b is the potentially modified value
+bool check_equivalency(void * a, void * b, size_t byte_size, NKSlider * s, bool * dirty)
+{
+    bool push_undo = false;
+    // if a != b, we are sliding
+    if (memcmp(a, b, byte_size) != 0)
+    {
+        // if we were not yet sliding, store the value
+        if (!s->is_held)
+        {
+            s->byte_size = byte_size;
+            memcpy(s->bytes, a, byte_size);
+        }
+        // now we are sliding
+        s->is_held = true;
+        // if we need to store dirty state
+        if (dirty != NULL)
+        {
+            *dirty = true;
+        }
+        // change a to b
+        memcpy(a, b, byte_size);
+        // if we have a new action, the redo history is reset
+        destroy_redo_history();
+    }
+    else
+    {
+        // if we were held and now we have stopped, signal to push the undo
+        if (s->is_held)
+        {
+            push_undo = true;
+        }
+        s->is_held = false;
+    }
+    return push_undo;
+}
+</code></pre>
+      <p>
+        This function returns a boolean that tells us if this is the tick we need to push the undo. If true, we push the bytes stored in the slider structure to an undo, and link it to the top of the undo history. We can push anything, from vectors to matrices to whole structs. We just specify the byte offset it needs to be copied into. Take for example the push for the translation of a text box:
+      </p>
+      <pre><code>if (check_equivalency(&tb->translation, &xyval, sizeof(vec2), &TEXTBOX_MENU.translation, NULL))
+{
+    push_nk_slider_undo(&TEXTBOX_MENU.translation, tb_structure, offsetof(TextBox, translation));
+}</code></pre>
+      <p>
+        Pushing the special cases ranges from trivial to complicated. Basically, we make use of the ID field in our structure as much as we can and try to avoid too much complicated allocation. In a simple case for spawning a light:
+      </p>
+      <pre><code>push_special_undo(
+create_undo_structure(
+      UNDOSTRUCT_LIGHT,
+      (int[8]){GLOBALS.lights.count-1, EDITOR_SETTINGS.selected_light_id},
+      UNDOLIGHT_SPAWN),
+NULL, 0, 0, 0);</code></pre>
+      <h4>The Link</h4>
+      <p>
+        So what does the push look like? Well, first we have to get an undo to push, which we find using the criteria defined above: free ones first, then from the bottom of the stack. We link it to the top of the undo history:
+      </p>
+      <pre><code>void link_undo(Undo * undo)
+{
+
+    if (undo->prev)
+    {
+        undo->prev->next = NULL;
+    }
+    undo->prev = top_undo;
+    if (top_undo) top_undo->next = undo;
+    if (undo->next)
+    {
+        undo->next->prev = NULL;
+    }
+    undo->next = NULL;
+    undo->free = false;
+    top_undo = undo;
+    
+}</code></pre>
+      <p>
+        We link using prev and next pointers, but also remember to clear the relationship that this undo may have already had so that we don't leave any pointers dangling. Then we set our top undo pointer to this new undo. Also, when we push an undo we want to clear the redo history. To do this, I simply while loop and follow the next pointers as I clear them one by one. Clearing involves also freeing any buffers necessary, and removing its byte size from the total undo state size.
+      </p>
+      <h4>Performing the Undo</h4>
+      <p>
+        To perform an undo, we need to simply execute the undo that is the "top_undo", and then make the new top_undo whatever is top_undo->prev. So, we call our execute_undo function that splits off into all of the possible undo structures to find its way to modify the relevant data. Once there, we check if it is a special case or not. If not, we need to simply copied our stored bytes into the offset. For example, here's how we split for a light.
+      </p>
+
+      <pre><code>Light * light = &lights[undo->structure.ids[0]];
+switch(undo->structure.special)
+{
+    case UNDOSPECIAL_NONE:
+        execute_non_special_undo(undo, (uint8_t*)light);
+        break;
+        ...</code></pre>
+      <p>
+        For a non-special undo, we copy the data like so:
+      </p>
+      <pre><code>void execute_non_special_undo(Undo * undo, uint8_t * p)
+{
+    uint8_t temp[MAX_UNDO_BYTES];
+    memcpy(temp, p + undo->byte_offset, undo->byte_size);
+    memcpy(p + undo->byte_offset, undo->bytes, undo->byte_size);
+    memcpy(undo->bytes, temp, undo->byte_size);
+}</code></pre>
+     
+      <p>
+        This does two things: copy our stored data into the offset but also stores the current data that is at that offset back into the undo structure. This is very important because without it we cannot redo. When we execute an undo, we are not only undoing, but also converting our undo into a future redo. So, bytes[] keeps track of what we'll need to undo the undo, which now happens automatically when we execute this undo one more time! We still need to discuss the special cases. Take the special case for a lighting probe volume:
+      </p>
+      <pre><code>case UNDOLPROBE_SPAWN:
+{
+
+    // set up bytes to receive the current probe volume
+    uint8_t ** bytes = malloc(sizeof(uint8_t*));
+    bytes[0] = malloc(sizeof(ProbeVolume));
+    memcpy(bytes[0], pv, sizeof(ProbeVolume));
+
+    // delete the probe volume to undo the spawn
+    REMOVE_FROM_VEC(&GLOBALS.scene_data.lighting_probe_volumes, undo->structure.ids[0], ProbeVolume);
+
+    // flip the ids that will be used for the redo
+    temp[0] = undo->structure.ids[0];
+    temp[1] = EDITOR_SETTINGS.selected_lighting_probe_volume_id;
+    EDITOR_SETTINGS.selected_lighting_probe_volume_id = undo->structure.ids[1];
+    memcpy(undo->structure.ids, temp, sizeof(int) * 8);
+
+    // reset special fields to reflect how we set up the redo
+    undo->special_bytes = bytes;
+    undo->special_count = 1;
+    undo->byte_size = sizeof(uint8_t*) + sizeof(ProbeVolume);
+    
+    // on redo we will "undo the delete"
+    undo->structure.special = UNDOLPROBE_DELETE;
+
+}
+break;</code></pre>
+      <p>
+        Here we are executing the undo (removing from the vector), but more importantly setting up the undo for the potential redo. We flip the special to its opposite since you can't redo and undo the spawn with the same code. Most cases follow this pattern, though some can be performed while not changing the special. I'll omit the redo since you can probably infer what it looks like. I copy the data and free it, then flip the ids so that if it is undone once more we know how to delete the volume.
+      </p>
+      <p>
+        That's pretty much all! The only thing left to really mention is that redos are handled a little differently in that they're tracked in front of the top undo. Like so:
+      </p>
+      <pre><code>void perform_newest_redo()
+{
+    if (!next_redo) return;
+
+    Undo * undo = next_redo;
+    execute_undo(undo);
+    
+    top_undo = undo;
+    next_redo = undo->next;
+}</code></pre>
+      <p>
+        Not too difficult, just a lot of code to write. I hope you found this interesting. If you have any questions, my email and my messages are always open.
+      </p>
+      
+    </section>
+    </article>
+
+    
+  </main>
+
+</body>
+</html>

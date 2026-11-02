@@ -82,7 +82,7 @@ html.dark-theme {
   
 }
 
-#theme-toggle {
+.theme-toggle {
   background-color: var(--other-bg);
   border: none;
   color: var(--other-color);
@@ -145,7 +145,7 @@ body {
   /* padding: 0; */
   /* padding-top: 0; */
   display: flex;
-  justify-content: flex-end;  
+  justify-content: space-between;  
 
 }
 .subtitle {

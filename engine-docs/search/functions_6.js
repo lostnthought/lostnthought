@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['generate_5fbounce_0',['generate_bounce',['../utilities_8c.html#a6244b96dad5e711dfe13f6100d217818',1,'generate_bounce(uint32_t i, uint32_t N):&#160;utilities.c'],['../utilities_8h.html#a6244b96dad5e711dfe13f6100d217818',1,'generate_bounce(uint32_t i, uint32_t N):&#160;utilities.c']]],
+  ['generate_5fcapsule_5fhull_5fmanifold_1',['generate_capsule_hull_manifold',['../physics_8c.html#a8e411a3ade7259cd4ffe88ac49f9b35a',1,'physics.c']]],
+  ['generate_5fgl_5ftexture_2',['generate_gl_texture',['../init_8c.html#a14bb505ba9e5dff498f92d086060038b',1,'init.c']]],
+  ['generate_5fsphere_5fdir_3',['generate_sphere_dir',['../utilities_8c.html#a15a49df5a1d235c64034ddf5e512a293',1,'generate_sphere_dir(int i, int N):&#160;utilities.c'],['../utilities_8h.html#a15a49df5a1d235c64034ddf5e512a293',1,'generate_sphere_dir(int i, int N):&#160;utilities.c']]],
+  ['generate_5fsynthetic_5fir_5ftail_4',['generate_synthetic_IR_tail',['../audio_8c.html#a9cab16900de78d05c901be7ffd51805c',1,'audio.c']]],
+  ['generate_5fuv_5flightmap_5',['generate_uv_lightmap',['../lightmap_8h.html#abd68b4ec7384d22fccbc25c768e3a1bb',1,'lightmap.h']]],
+  ['get_5fmat4_5faxis_5fw_6',['get_mat4_axis_w',['../utilities_8h.html#a1f5b87f2b3e642ced773d90022136da0',1,'utilities.h']]],
+  ['get_5fmat4_5faxis_5fx_7',['get_mat4_axis_x',['../utilities_8h.html#a6464c24f7eb7b25a86b311661d0720e0',1,'utilities.h']]],
+  ['get_5fmat4_5faxis_5fy_8',['get_mat4_axis_y',['../utilities_8h.html#aa71f9e18ac017d77152357f91a68892c',1,'utilities.h']]],
+  ['get_5fmat4_5faxis_5fz_9',['get_mat4_axis_z',['../utilities_8h.html#af43cc24ad7deba4da39fbca8c988b943',1,'utilities.h']]],
+  ['get_5froot_5fnode_10',['get_root_node',['../engine__utilities_8c.html#afb2df275055f9cc377952c9054915869',1,'get_root_node(MeshNode *mns, MeshNode *mn):&#160;engine_utilities.c'],['../engine__utilities_8h.html#afb2df275055f9cc377952c9054915869',1,'get_root_node(MeshNode *mns, MeshNode *mn):&#160;engine_utilities.c']]],
+  ['get_5ftext_5fbox_5ffrom_5fcoords_11',['get_text_box_from_coords',['../ui_8c.html#af806f7211decac67d02281b95b67435f',1,'get_text_box_from_coords(vec2 pos, int *menu_idx):&#160;ui.c'],['../ui_8h.html#af806f7211decac67d02281b95b67435f',1,'get_text_box_from_coords(vec2 pos, int *menu_idx):&#160;ui.c']]],
+  ['get_5fui_5felement_5ffrom_5fcoords_12',['get_ui_element_from_coords',['../ui_8c.html#a0fb09f18c85087a6ca4dba5430a5b2de',1,'get_ui_element_from_coords(vec2 pos, int *menu_idx):&#160;ui.c'],['../ui_8h.html#a0fb09f18c85087a6ca4dba5430a5b2de',1,'get_ui_element_from_coords(vec2 pos, int *menu_idx):&#160;ui.c']]],
+  ['get_5fview_5fplanes_13',['get_view_planes',['../render_8c.html#a7251d76bc96d766031431742dcffdd85',1,'render.c']]],
+  ['get_5fwelded_5fkey_14',['get_welded_key',['../mesh_8c.html#a60245e30d650e1dc6ce28c8d506ec66b',1,'mesh.c']]],
+  ['gjk_15',['GJK',['../_g_j_k_8c.html#a7dca1739af0ed872beb154b155874e9a',1,'GJK(CollisionData a_cd, CollisionData b_cd, mat4 a_mat, mat4 b_mat, mat4 a_inv, mat4 b_inv, CollisionPoints *collision_points, EPAWorkspace *EW):&#160;GJK.c'],['../_g_j_k_8h.html#a7dca1739af0ed872beb154b155874e9a',1,'GJK(CollisionData a_cd, CollisionData b_cd, mat4 a_mat, mat4 b_mat, mat4 a_inv, mat4 b_inv, CollisionPoints *collision_points, EPAWorkspace *EW):&#160;GJK.c']]],
+  ['gltf_5fto_5fengine_5fbasis_16',['gltf_to_engine_basis',['../gltf_8c.html#ae77aadde33dd614a6750fa5eea806edd',1,'gltf.c']]],
+  ['gpu_5finit_5fcluster_5faabbs_17',['GPU_init_cluster_aabbs',['../init_8c.html#a342676572bf361e82b0c30f571e6f7ec',1,'GPU_init_cluster_aabbs():&#160;init.c'],['../init_8h.html#a342676572bf361e82b0c30f571e6f7ec',1,'GPU_init_cluster_aabbs():&#160;init.c']]],
+  ['gpu_5funwrap_5fmesh_5fto_5fbuffers_18',['GPU_unwrap_mesh_to_buffers',['../init_8c.html#a878a65e292423961f3aafc04af1e4532',1,'init.c']]],
+  ['gpu_5fupload_5fscene_5fdata_19',['GPU_upload_scene_data',['../init_8c.html#a7c1c8bf40d9c76d3213c1d09ec9ba24d',1,'GPU_upload_scene_data():&#160;init.c'],['../init_8h.html#a7c1c8bf40d9c76d3213c1d09ec9ba24d',1,'GPU_upload_scene_data():&#160;init.c']]],
+  ['gpu_5fupload_5fsingular_5felement_20',['GPU_upload_singular_element',['../render_8c.html#aab10d8e5a60d2282875a48440375a545',1,'render.c']]],
+  ['gpu_5fupload_5fsingular_5ftext_5fbox_21',['GPU_upload_singular_text_box',['../render_8c.html#ad8eb989fc39137c98fd43508a31388f7',1,'render.c']]],
+  ['gpu_5fupload_5fui_5felements_22',['GPU_upload_ui_elements',['../render_8c.html#a52076ab72f7f2ea9a51dcde4987fde03',1,'render.c']]]
+];

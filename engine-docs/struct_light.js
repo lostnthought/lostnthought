@@ -1,0 +1,27 @@
+var struct_light =
+[
+    [ "A", "struct_light.html#a786003ff47f97df9574c1fb858044273", null ],
+    [ "area", "struct_light.html#adf7e8d06b417dd38315b8dbcf56cd40d", null ],
+    [ "B", "struct_light.html#a42c56d3f1c985c8843c15eacd358c649", null ],
+    [ "C", "struct_light.html#a435ea9232078ff16b190485fd2031312", null ],
+    [ "cone_angle", "struct_light.html#a9319504b498910b3e9dbe8f5126da629", null ],
+    [ "dir", "struct_light.html#a5f91d21ab69480703d279ad3fcf9a3ba", null ],
+    [ "entity_id", "struct_light.html#aa522330a1778d643a96c3e8eea57d163", null ],
+    [ "inner_angle", "struct_light.html#a68ccb135328ea540d71cad0ab9141ecf", null ],
+    [ "intensity", "struct_light.html#a1071eaa556f4bb2a9345fdfba7e6f220", null ],
+    [ "layer", "struct_light.html#a0fb689a07e3870028caccf77378d8acd", null ],
+    [ "light_type", "struct_light.html#a9da097d376d0cec601668574dabfbd6a", null ],
+    [ "lum", "struct_light.html#a445b1aafdf3d5aa218e8ae6e21d2c070", null ],
+    [ "mesh", "struct_light.html#a1ab35108a1a62fdb4425921186ef7b3e", null ],
+    [ "normal", "struct_light.html#a68740e9ffff91d2606fbb6dacc1847ca", null ],
+    [ "outer_angle", "struct_light.html#a7d485736bb90f467703a3a39f1b743da", null ],
+    [ "penumbra", "struct_light.html#a9e0aa9c30b2d85d8775279b4bec41bb1", null ],
+    [ "pos", "struct_light.html#a1ddc9cb0f845afbfd480f890f89aea17", null ],
+    [ "power", "struct_light.html#a6c4c401141c4cdb3b9b9b3bab7dd6fbb", null ],
+    [ "radius", "struct_light.html#ab9a87981b02f4612c872c49efa6b6e53", null ],
+    [ "rgb", "struct_light.html#adb7dba4465cdc1cb8c8f6ce834c4f59c", null ],
+    [ "sm_dirty", "struct_light.html#a6e2b3a9f6e7147023cee3a6b079dd6fb", null ],
+    [ "surface_area", "struct_light.html#a6adf51a9ece05dd740dcf24850607588", null ],
+    [ "threshold", "struct_light.html#ae74e4d755f626db931859716b4353f47", null ],
+    [ "tri", "struct_light.html#a59c5139147c5b1e1c8c9c34669c61fb0", null ]
+];

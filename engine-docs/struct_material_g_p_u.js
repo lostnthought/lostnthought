@@ -1,0 +1,25 @@
+var struct_material_g_p_u =
+[
+    [ "absorption_coefficients", "struct_material_g_p_u.html#a0712b29180d7a62c6ab53142b55c32c2", null ],
+    [ "albedo_handle", "struct_material_g_p_u.html#a432d2afe3d8d3c818c71b7a5872ff410", null ],
+    [ "alpha_cutoff", "struct_material_g_p_u.html#a8c6190b9efd2e9c0b7163aa516f83c51", null ],
+    [ "alpha_mode", "struct_material_g_p_u.html#a235cb7331611256096a2dc27dbd82bd8", null ],
+    [ "ambient", "struct_material_g_p_u.html#aea667bfa0043c300818e5e34c2f0f00d", null ],
+    [ "ao_strength", "struct_material_g_p_u.html#aac44eb0b6b95e25ffa59a6ece4f41eec", null ],
+    [ "arm_handle", "struct_material_g_p_u.html#a7c47a97db12a1b00b30c00cbb93af2e0", null ],
+    [ "diffuse", "struct_material_g_p_u.html#abecf2aefed4a6ab73b2bdea2a1580d82", null ],
+    [ "double_sided", "struct_material_g_p_u.html#aa5f257c4a2d00afaba48ed4f6c2eaded", null ],
+    [ "emissive", "struct_material_g_p_u.html#a0ed6646ed63df9d968cbf6eb0539700a", null ],
+    [ "emissive_handle", "struct_material_g_p_u.html#aeaca24f961afe6c4d43a977c96bf36ae", null ],
+    [ "emissive_strength", "struct_material_g_p_u.html#affe9b8fdb82a77649ba460a008059582", null ],
+    [ "metallic", "struct_material_g_p_u.html#a2e00880cc6c2f32b03e2306a97df74e3", null ],
+    [ "normal_handle", "struct_material_g_p_u.html#ad1be85ab74b3947576320c60bc99bed3", null ],
+    [ "normal_scale", "struct_material_g_p_u.html#a767e10864b9294de02e653deaf642c85", null ],
+    [ "pad0", "struct_material_g_p_u.html#a9ae88e40cef645349d1b39769854c0c4", null ],
+    [ "pad1", "struct_material_g_p_u.html#a9950aa2b8fd56796d7e102638adfe47f", null ],
+    [ "pad2", "struct_material_g_p_u.html#a9c0b72c3c990bdaa2894e9d397a8498d", null ],
+    [ "pad3", "struct_material_g_p_u.html#a1ae7cc7b93074601864f5fb87244c18b", null ],
+    [ "roughness", "struct_material_g_p_u.html#a7c65599ecd6636e9283576a477cbdc83", null ],
+    [ "scattering_coefficients", "struct_material_g_p_u.html#abdf7f4d5b274d2bc3086147b32ad1b3c", null ],
+    [ "specular", "struct_material_g_p_u.html#a18db82987ca073fd06392ea4911e7735", null ]
+];

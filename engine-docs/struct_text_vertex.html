@@ -113,21 +113,33 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_text_ve
 </div><!--header-->
 <div class="contents">
 
+<p>The structure used for rendering <a class="el" href="struct_text_box.html">TextBox</a>es.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ad214bb772f6d73d24f2c23645df9f03e" id="r_ad214bb772f6d73d24f2c23645df9f03e"><td class="memItemLeft"><a class="el" href="structvec2.html">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad214bb772f6d73d24f2c23645df9f03e">pos</a></td></tr>
+<tr class="memdesc:ad214bb772f6d73d24f2c23645df9f03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position.  <br /></td></tr>
 <tr class="memitem:a90bad3d93c33ea2d28f58cc445f3b687" id="r_a90bad3d93c33ea2d28f58cc445f3b687"><td class="memItemLeft"><a class="el" href="structvec2.html">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a90bad3d93c33ea2d28f58cc445f3b687">uv</a></td></tr>
+<tr class="memdesc:a90bad3d93c33ea2d28f58cc445f3b687"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_font.html">Font</a> atlas coordinates.  <br /></td></tr>
 <tr class="memitem:aa8eb595dda1914ae8147bc4ea31ab10e" id="r_aa8eb595dda1914ae8147bc4ea31ab10e"><td class="memItemLeft"><a class="el" href="structvec2.html">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa8eb595dda1914ae8147bc4ea31ab10e">center</a></td></tr>
+<tr class="memdesc:aa8eb595dda1914ae8147bc4ea31ab10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The center of the <a class="el" href="struct_text_box.html">TextBox</a> before transform (should be 0,0 if justified center).  <br /></td></tr>
 <tr class="memitem:a56218dfd3ac4a2698e47def70861774e" id="r_a56218dfd3ac4a2698e47def70861774e"><td class="memItemLeft"><a class="el" href="structvec4.html">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a56218dfd3ac4a2698e47def70861774e">color</a></td></tr>
+<tr class="memdesc:a56218dfd3ac4a2698e47def70861774e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The color of the text.  <br /></td></tr>
 <tr class="memitem:a4acd15b2f374db56dae1cc323553d5aa" id="r_a4acd15b2f374db56dae1cc323553d5aa"><td class="memItemLeft"><a class="el" href="structvec4.html">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4acd15b2f374db56dae1cc323553d5aa">fill</a></td></tr>
+<tr class="memdesc:a4acd15b2f374db56dae1cc323553d5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fill color for the <a class="el" href="struct_text_box.html">TextBox</a>.  <br /></td></tr>
 <tr class="memitem:a99610c11ea981581f05788cd60023811" id="r_a99610c11ea981581f05788cd60023811"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a99610c11ea981581f05788cd60023811">state</a></td></tr>
+<tr class="memdesc:a99610c11ea981581f05788cd60023811"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current <a class="el" href="ui_8h.html#a46982b6b3247b002a74dde6ca26b2344">UIState</a>.  <br /></td></tr>
 <tr class="memitem:a35770914cf2f1e977bed443bee2d56a8" id="r_a35770914cf2f1e977bed443bee2d56a8"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a35770914cf2f1e977bed443bee2d56a8">uID</a></td></tr>
+<tr class="memdesc:a35770914cf2f1e977bed443bee2d56a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID in the <a class="el" href="main_8c.html#a891e5e5dcfb44e0cf47da377e33cfac5">TEXT_BOX_SSBO</a>.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01092">1092</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The structure used for rendering <a class="el" href="struct_text_box.html">TextBox</a>es. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="lightmap_8c.html#a7ce533f7d63fa2233a7fba339b9f078c">bake_lightmap()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01143">1143</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="aa8eb595dda1914ae8147bc4ea31ab10e" name="aa8eb595dda1914ae8147bc4ea31ab10e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8eb595dda1914ae8147bc4ea31ab10e">&#9670;&#160;</a></span>center</h2>
@@ -141,7 +153,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01096">1096</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The center of the <a class="el" href="struct_text_box.html">TextBox</a> before transform (should be 0,0 if justified center). </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01148">1148</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -157,7 +171,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01097">1097</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The color of the text. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01149">1149</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -173,7 +189,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01098">1098</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The fill color for the <a class="el" href="struct_text_box.html">TextBox</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01150">1150</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -189,7 +207,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01094">1094</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The position. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01146">1146</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -205,7 +225,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01099">1099</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The current <a class="el" href="ui_8h.html#a46982b6b3247b002a74dde6ca26b2344">UIState</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01151">1151</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +243,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01100">1100</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The ID in the <a class="el" href="main_8c.html#a891e5e5dcfb44e0cf47da377e33cfac5">TEXT_BOX_SSBO</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01152">1152</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +261,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01095">1095</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_font.html">Font</a> atlas coordinates. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01147">1147</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>

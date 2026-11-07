@@ -113,31 +113,60 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_skeleto
 </div><!--header-->
 <div class="contents">
 
+<p>The controller for leg IKs for <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>s.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aca761c0327901c3c78974a5fafa81ea6" id="r_aca761c0327901c3c78974a5fafa81ea6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aca761c0327901c3c78974a5fafa81ea6">pelvis_height</a></td></tr>
-<tr class="memitem:ac2557b08ea9e3795622813481f285a47" id="r_ac2557b08ea9e3795622813481f285a47"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac2557b08ea9e3795622813481f285a47">hip_height</a></td></tr>
-<tr class="memitem:a65d5cd582a003020cd3ff19e55e7ccf2" id="r_a65d5cd582a003020cd3ff19e55e7ccf2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a65d5cd582a003020cd3ff19e55e7ccf2">neck_height</a></td></tr>
-<tr class="memitem:afd69714dd98566a94884228e5cf981d2" id="r_afd69714dd98566a94884228e5cf981d2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afd69714dd98566a94884228e5cf981d2">pelvis_hip_diff</a></td></tr>
-<tr class="memitem:a468ae9fb3d0b849acb15b56fec358581" id="r_a468ae9fb3d0b849acb15b56fec358581"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a468ae9fb3d0b849acb15b56fec358581">neck_pelvis_diff</a></td></tr>
-<tr class="memitem:a98eece4dc6334a3de84126e72dff06e6" id="r_a98eece4dc6334a3de84126e72dff06e6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a98eece4dc6334a3de84126e72dff06e6">upper_leg_length</a></td></tr>
-<tr class="memitem:a4b94e400c99856b64a6760361a5aa174" id="r_a4b94e400c99856b64a6760361a5aa174"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a4b94e400c99856b64a6760361a5aa174">lower_leg_length</a></td></tr>
 <tr class="memitem:aabdd4d792e9747d8b34eca6f0714cceb" id="r_aabdd4d792e9747d8b34eca6f0714cceb"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aabdd4d792e9747d8b34eca6f0714cceb">q_left</a></td></tr>
+<tr class="memdesc:aabdd4d792e9747d8b34eca6f0714cceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current knee position for left leg.  <br /></td></tr>
 <tr class="memitem:a93404c00722badafc7a046498381721c" id="r_a93404c00722badafc7a046498381721c"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a93404c00722badafc7a046498381721c">q_right</a></td></tr>
+<tr class="memdesc:a93404c00722badafc7a046498381721c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current knee position for right leg.  <br /></td></tr>
 <tr class="memitem:a455157413b8cee74512d46ce432b7526" id="r_a455157413b8cee74512d46ce432b7526"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a455157413b8cee74512d46ce432b7526">p_left</a></td></tr>
+<tr class="memdesc:a455157413b8cee74512d46ce432b7526"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current left foot position.  <br /></td></tr>
 <tr class="memitem:a067fef208bc4af97b40bc57cb2e6dc2b" id="r_a067fef208bc4af97b40bc57cb2e6dc2b"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a067fef208bc4af97b40bc57cb2e6dc2b">p_right</a></td></tr>
+<tr class="memdesc:a067fef208bc4af97b40bc57cb2e6dc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current right foot position.  <br /></td></tr>
 <tr class="memitem:ae9be4d3c631262c7f2f27abefc474195" id="r_ae9be4d3c631262c7f2f27abefc474195"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae9be4d3c631262c7f2f27abefc474195">left_hip_pos</a></td></tr>
+<tr class="memdesc:ae9be4d3c631262c7f2f27abefc474195"><td class="mdescLeft">&#160;</td><td class="mdescRight">The left hip pos, offset by <a class="el" href="main_8c.html#ae5efc7b57e3e7055397a66131108f6dc">left_leg_offset</a>.  <br /></td></tr>
 <tr class="memitem:a1a3699ab47184c7717d82dae6526d6d4" id="r_a1a3699ab47184c7717d82dae6526d6d4"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1a3699ab47184c7717d82dae6526d6d4">right_hip_pos</a></td></tr>
+<tr class="memdesc:a1a3699ab47184c7717d82dae6526d6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The right hip pos, offset by <a class="el" href="main_8c.html#a66d935273ade3d1e3160975050256a48">right_leg_offset</a>.  <br /></td></tr>
 <tr class="memitem:af902ac7187200d03b357a7e6e3f58237" id="r_af902ac7187200d03b357a7e6e3f58237"><td class="memItemLeft"><a class="el" href="struct_spring.html">Spring</a>&#160;</td><td class="memItemRight"><a class="el" href="#af902ac7187200d03b357a7e6e3f58237">pelvis</a></td></tr>
+<tr class="memdesc:af902ac7187200d03b357a7e6e3f58237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pelvis <a class="el" href="struct_spring.html" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> (target based on leg positions).  <br /></td></tr>
 <tr class="memitem:a0394e9052c114ac209b213dfaa4f9dfa" id="r_a0394e9052c114ac209b213dfaa4f9dfa"><td class="memItemLeft"><a class="el" href="struct_spring.html">Spring</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0394e9052c114ac209b213dfaa4f9dfa">neck</a></td></tr>
+<tr class="memdesc:a0394e9052c114ac209b213dfaa4f9dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Neck <a class="el" href="struct_spring.html" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> (target based on pelvis).  <br /></td></tr>
 <tr class="memitem:ad132b77950c1f78ec559a208b969d312" id="r_ad132b77950c1f78ec559a208b969d312"><td class="memItemLeft"><a class="el" href="struct_leg_i_k.html">LegIK</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad132b77950c1f78ec559a208b969d312">left_leg</a></td></tr>
+<tr class="memdesc:ad132b77950c1f78ec559a208b969d312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left leg.  <br /></td></tr>
 <tr class="memitem:a5a5e81645c3224590beac30c7d88786b" id="r_a5a5e81645c3224590beac30c7d88786b"><td class="memItemLeft"><a class="el" href="struct_leg_i_k.html">LegIK</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5a5e81645c3224590beac30c7d88786b">right_leg</a></td></tr>
+<tr class="memdesc:a5a5e81645c3224590beac30c7d88786b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right leg.  <br /></td></tr>
+<tr id="pub-attribs-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Starting Measurements</div></td></tr>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>Measurements for where the skeleton is at rest. </p>
+</div></td></tr>
+<tr class="memitem:aca761c0327901c3c78974a5fafa81ea6" id="r_aca761c0327901c3c78974a5fafa81ea6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aca761c0327901c3c78974a5fafa81ea6">pelvis_height</a></td></tr>
+<tr class="memdesc:aca761c0327901c3c78974a5fafa81ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height from ground to pelvis.  <br /></td></tr>
+<tr class="memitem:ac2557b08ea9e3795622813481f285a47" id="r_ac2557b08ea9e3795622813481f285a47"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac2557b08ea9e3795622813481f285a47">hip_height</a></td></tr>
+<tr class="memdesc:ac2557b08ea9e3795622813481f285a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height from ground to hip.  <br /></td></tr>
+<tr class="memitem:a65d5cd582a003020cd3ff19e55e7ccf2" id="r_a65d5cd582a003020cd3ff19e55e7ccf2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a65d5cd582a003020cd3ff19e55e7ccf2">neck_height</a></td></tr>
+<tr class="memdesc:a65d5cd582a003020cd3ff19e55e7ccf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height from ground to neck.  <br /></td></tr>
+<tr class="memitem:afd69714dd98566a94884228e5cf981d2" id="r_afd69714dd98566a94884228e5cf981d2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afd69714dd98566a94884228e5cf981d2">pelvis_hip_diff</a></td></tr>
+<tr class="memdesc:afd69714dd98566a94884228e5cf981d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height from pelvis to hip.  <br /></td></tr>
+<tr class="memitem:a468ae9fb3d0b849acb15b56fec358581" id="r_a468ae9fb3d0b849acb15b56fec358581"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a468ae9fb3d0b849acb15b56fec358581">neck_pelvis_diff</a></td></tr>
+<tr class="memdesc:a468ae9fb3d0b849acb15b56fec358581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height from pelvis to neck.  <br /></td></tr>
+<tr class="memitem:a98eece4dc6334a3de84126e72dff06e6" id="r_a98eece4dc6334a3de84126e72dff06e6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a98eece4dc6334a3de84126e72dff06e6">upper_leg_length</a></td></tr>
+<tr class="memdesc:a98eece4dc6334a3de84126e72dff06e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper leg length.  <br /></td></tr>
+<tr class="memitem:a4b94e400c99856b64a6760361a5aa174" id="r_a4b94e400c99856b64a6760361a5aa174"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a4b94e400c99856b64a6760361a5aa174">lower_leg_length</a></td></tr>
+<tr class="memdesc:a4b94e400c99856b64a6760361a5aa174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower leg length.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01164">1164</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The controller for leg IKs for <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>s. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="camera_8c.html#a7bbb3168afc972a9c345d9db09eff3d4" title="Moves feet, then solves a skeleton&#39;s leg IKs and updates the springs accordingly.">update_skeleton()</a> </dd>
+<dd>
+move_foot() </dd>
+<dd>
+<a class="el" href="camera_8c.html#ac591bd567e826c8d7cd9b3f1987bb401" title="Calculates velocity based on leg positions and integrates them into the player.">update_body_from_legs()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01239">1239</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ac2557b08ea9e3795622813481f285a47" name="ac2557b08ea9e3795622813481f285a47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2557b08ea9e3795622813481f285a47">&#9670;&#160;</a></span>hip_height</h2>
@@ -151,9 +180,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01169">1169</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Height from ground to hip. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01248">1248</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -169,9 +200,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01179">1179</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The left hip pos, offset by <a class="el" href="main_8c.html#ae5efc7b57e3e7055397a66131108f6dc">left_leg_offset</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03056">render()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01259">1259</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -187,9 +220,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01184">1184</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Left leg. </p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01264">1264</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -205,9 +240,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01174">1174</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Lower leg length. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01091">solve_Q()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01253">1253</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01091">solve_Q()</a>.</p>
 
 </div>
 </div>
@@ -223,9 +260,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01183">1183</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Neck <a class="el" href="struct_spring.html" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> (target based on pelvis). </p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01263">1263</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -241,9 +280,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01170">1170</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Height from ground to neck. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01249">1249</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -259,9 +300,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01172">1172</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Height from pelvis to neck. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01251">1251</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -277,9 +320,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01177">1177</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The current left foot position. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03056">render()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01257">1257</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -295,9 +340,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01178">1178</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The current right foot position. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03056">render()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01258">1258</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -313,9 +360,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01182">1182</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Pelvis <a class="el" href="struct_spring.html" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> (target based on leg positions). </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01262">1262</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -331,9 +380,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01168">1168</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Height from ground to pelvis. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01247">1247</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -349,9 +400,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01171">1171</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Height from pelvis to hip. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01250">1250</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +420,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01175">1175</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The current knee position for left leg. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03056">render()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01255">1255</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -385,9 +440,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01176">1176</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The current knee position for right leg. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03056">render()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01256">1256</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -403,9 +460,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01180">1180</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The right hip pos, offset by <a class="el" href="main_8c.html#a66d935273ade3d1e3160975050256a48">right_leg_offset</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03056">render()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01260">1260</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -421,9 +480,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01185">1185</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Right leg. </p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01265">1265</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -439,9 +500,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01173">1173</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Upper leg length. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00496">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01091">solve_Q()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01252">1252</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00486">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01091">solve_Q()</a>.</p>
 
 </div>
 </div>

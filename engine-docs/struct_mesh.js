@@ -7,7 +7,6 @@ var struct_mesh =
     [ "count", "struct_mesh.html#a61e587c797de86a90da1f7afc00b454d", null ],
     [ "hulls", "struct_mesh.html#a0455deccb0ffc7d1fb6fcb10ad8e8395", null ],
     [ "id", "struct_mesh.html#a30c9835c2b3346c1c514c72aa074c4c6", null ],
-    [ "leaf_indices", "struct_mesh.html#a6fe06032081a887fc1411f18f2e0a1db", null ],
     [ "name", "struct_mesh.html#a95f7a20f3621ad8da6aae006a7cec0f2", null ],
     [ "nodes", "struct_mesh.html#ab4a0f6a8913a512af20dedd7192b8234", null ],
     [ "offset", "struct_mesh.html#abb0a8a8728cda7e1a6dab43f1685446a", null ],

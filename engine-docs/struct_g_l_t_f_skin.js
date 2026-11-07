@@ -7,7 +7,6 @@ var struct_g_l_t_f_skin =
     [ "ibm_accessor", "struct_g_l_t_f_skin.html#ad1dfbc97679990f58245559469918f18", null ],
     [ "id", "struct_g_l_t_f_skin.html#a2e88304e4858463d76e3c2cc5e06aae6", null ],
     [ "inverse_bind", "struct_g_l_t_f_skin.html#a717411aa2fb095cb05ea8858371e04de", null ],
-    [ "is_idled", "struct_g_l_t_f_skin.html#a844f44b5a76c4fd3f7cc1c7d1c53c031", null ],
     [ "joint_count", "struct_g_l_t_f_skin.html#a05fa8b640ff554d5e2d80ffc2c1d94c0", null ],
     [ "joints", "struct_g_l_t_f_skin.html#a7cf0dbabf689f8e67e4526c9836633dd", null ],
     [ "name", "struct_g_l_t_f_skin.html#a95e7a71eb4d9dc50b62cf7e2dadea1c4", null ],

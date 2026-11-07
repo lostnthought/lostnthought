@@ -113,18 +113,31 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_capsule
 </div><!--header-->
 <div class="contents">
 
+<p>The capsule data for collisions.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a5b49c1bda07d449eefab7f19170cc4ec" id="r_a5b49c1bda07d449eefab7f19170cc4ec"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5b49c1bda07d449eefab7f19170cc4ec">a</a></td></tr>
+<tr class="memdesc:a5b49c1bda07d449eefab7f19170cc4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bottom of the capsule (based on <a class="el" href="struct_a_a_b_b.html">AABB</a>).  <br /></td></tr>
 <tr class="memitem:ac6fdd751b62aa61c66c2ebebcf0a6e67" id="r_ac6fdd751b62aa61c66c2ebebcf0a6e67"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac6fdd751b62aa61c66c2ebebcf0a6e67">b</a></td></tr>
+<tr class="memdesc:ac6fdd751b62aa61c66c2ebebcf0a6e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">The top of the capsule (based on <a class="el" href="struct_a_a_b_b.html">AABB</a>).  <br /></td></tr>
 <tr class="memitem:ab54ea02cee642f6fc80b4cc837cf9ed0" id="r_ab54ea02cee642f6fc80b4cc837cf9ed0"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab54ea02cee642f6fc80b4cc837cf9ed0">radius</a></td></tr>
-<tr class="memitem:ac727c4185c74b07d981c07411582acbf" id="r_ac727c4185c74b07d981c07411582acbf"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac727c4185c74b07d981c07411582acbf">height</a></td></tr>
+<tr class="memdesc:ab54ea02cee642f6fc80b4cc837cf9ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The radius of the capsule.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01706">1706</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The capsule data for collisions. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a> </dd>
+<dd>
+<a class="el" href="physics_8c.html">physics/physics.c</a> </dd>
+<dd>
+<a class="el" href="camera_8c.html">core/camera.c</a> </dd>
+<dd>
+<a class="el" href="physics_8c.html#a87ade29221af854340b0be81b35b8468">init_PC()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01997">1997</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a5b49c1bda07d449eefab7f19170cc4ec" name="a5b49c1bda07d449eefab7f19170cc4ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b49c1bda07d449eefab7f19170cc4ec">&#9670;&#160;</a></span>a</h2>
@@ -138,7 +151,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01708">1708</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The bottom of the capsule (based on <a class="el" href="struct_a_a_b_b.html">AABB</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02000">2000</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00159">support_capsule()</a>.</p>
 
@@ -156,25 +171,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01708">1708</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The top of the capsule (based on <a class="el" href="struct_a_a_b_b.html">AABB</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02001">2001</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00159">support_capsule()</a>.</p>
-
-</div>
-</div>
-<a id="ac727c4185c74b07d981c07411582acbf" name="ac727c4185c74b07d981c07411582acbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac727c4185c74b07d981c07411582acbf">&#9670;&#160;</a></span>height</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float CapsuleData::height</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01709">1709</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -190,7 +191,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01708">1708</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The radius of the capsule. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02002">2002</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00159">support_capsule()</a>.</p>
 

@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Untitled", "index.html", [
+    [ "Todo List", "todo.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -39,7 +40,7 @@ var NAVTREE =
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", "globals_vars" ],
-        [ "Typedefs", "globals_type.html", "globals_type" ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", "globals_eval" ],
         [ "Macros", "globals_defs.html", null ]
@@ -52,22 +53,21 @@ var NAVTREEINDEX =
 [
 "_g_j_k_8c.html",
 "dynamic_8vert.html",
-"engine__types_8h.html#a2dbd2ad876086749a71e82f77c83f52d",
-"engine__types_8h.html#acafa236cda00d13bd9a4a7f978acdfa7",
-"globals_func_w.html",
-"init_8h.html#a43db0debacdd789a3382e387f609073d",
-"lightmap_8c.html#a03e7f049fbddff0be0319071e38be3ca",
-"main_8c.html#a72c42b69cf69d60bd2a049bedbefae44",
-"physics_8c.html#a4363b5ecbf617f61c471dd23e535fa11",
-"struct_a_probe_editor_menu.html#a1d66425e56af910f3b090de793c1762f",
-"struct_collision_points.html#a17649a14d0a55e2f98a97b052e2683be",
-"struct_font.html#a258dd1d0155414bf2c0345c8b2abb9d7",
-"struct_instance_data.html#a9ecbe9cd49ec7abcc82d5f5aea5200d6",
-"struct_mesh.html#a95f7a20f3621ad8da6aae006a7cec0f2",
-"struct_simplex.html#ab1952ad0673f3a7d40fbe5e6b4914177",
-"struct_u_i_element_g_p_u.html#a8e1510ede448f4bda7e8439f0d7e3afd",
-"types_8h.html#ac79c9040b19c90137f1ae7604877f1d8a58833a3110c570fb05130d40c365d1e4",
-"union_u_i_value_1_1_0funion_0e_8max__val.html"
+"engine__types_8h.html#a54ac09062d2a7b10f41f0dacb23101e0",
+"fullscreen_8vert_source.html",
+"init_8h.html#a0ad533eb9f24626a925124a584faf2c5",
+"init_8h.html#ad6a84b00adc18a633cc6fdf830f2015c",
+"main_8c.html#a30b68b8b1046f8aa54dfaed4bfe923fc",
+"mathf_8h.html#a674b9c575cfc760641b19dae9175b4a3",
+"shaders_8c.html#a7063bbf75562d8a603b08f55df2beb4e",
+"struct_b_v_h_node_g_p_u.html#a5d51488c79035faea6fd9f347a1cfc20",
+"struct_editor_settings.html#aa960c4358fbc06860b579cd600189fc8",
+"struct_glyph.html#afff3dc6bce665f48ee76188dc4f2f0ff",
+"struct_material_g_p_u.html#a0712b29180d7a62c6ab53142b55c32c2",
+"struct_scene_data.html#a95a959a543c66b347b90d34f0d543054",
+"struct_u_i_element_editor_menu.html#ac145d102dac240a422dc830f53718d01",
+"types_8h.html#adead7617da48125e4f786a1101a6839fa0dfba6aa36f507bebc2369c84674ea77",
+"utilities_8c.html#a4d303a44e32a9cfec87d0ccdf0d124c7"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

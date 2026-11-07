@@ -113,21 +113,37 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_leg_i_k
 </div><!--header-->
 <div class="contents">
 
+<p>The controller for leg IKs for <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>s.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:aabe8c247ba839fd31b7276e927268701" id="r_aabe8c247ba839fd31b7276e927268701"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aabe8c247ba839fd31b7276e927268701">stepping</a></td></tr>
+<tr class="memdesc:aabe8c247ba839fd31b7276e927268701"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the leg is currently stepping.  <br /></td></tr>
 <tr class="memitem:aae5db7d5034d22aadd6862540cc59820" id="r_aae5db7d5034d22aadd6862540cc59820"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aae5db7d5034d22aadd6862540cc59820">stepping_off_ledge</a></td></tr>
+<tr class="memdesc:aae5db7d5034d22aadd6862540cc59820"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the leg is over air.  <br /></td></tr>
 <tr class="memitem:a871318c1a5ac5b0bde43505a643b9115" id="r_a871318c1a5ac5b0bde43505a643b9115"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a871318c1a5ac5b0bde43505a643b9115">pos</a></td></tr>
+<tr class="memdesc:a871318c1a5ac5b0bde43505a643b9115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position of the foot.  <br /></td></tr>
 <tr class="memitem:a1bbe97e7286eeb1ba89fc9d173c4919f" id="r_a1bbe97e7286eeb1ba89fc9d173c4919f"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1bbe97e7286eeb1ba89fc9d173c4919f">start_pos</a></td></tr>
+<tr class="memdesc:a1bbe97e7286eeb1ba89fc9d173c4919f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting position of the foot.  <br /></td></tr>
 <tr class="memitem:aca00b94c01e3131e572e422a2354574a" id="r_aca00b94c01e3131e572e422a2354574a"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aca00b94c01e3131e572e422a2354574a">target_pos</a></td></tr>
+<tr class="memdesc:aca00b94c01e3131e572e422a2354574a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target position for the current step.  <br /></td></tr>
 <tr class="memitem:ae6d0d0f1b4e5297967c53639c94e22a1" id="r_ae6d0d0f1b4e5297967c53639c94e22a1"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae6d0d0f1b4e5297967c53639c94e22a1">duration</a></td></tr>
+<tr class="memdesc:ae6d0d0f1b4e5297967c53639c94e22a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration of the entire step.  <br /></td></tr>
 <tr class="memitem:abdb2bf89ee6b5d9ab5a8568866a79206" id="r_abdb2bf89ee6b5d9ab5a8568866a79206"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#abdb2bf89ee6b5d9ab5a8568866a79206">time</a></td></tr>
+<tr class="memdesc:abdb2bf89ee6b5d9ab5a8568866a79206"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current time to linearly interpolate between start and target pos.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01151">1151</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The controller for leg IKs for <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>s. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="camera_8c.html#a7bbb3168afc972a9c345d9db09eff3d4" title="Moves feet, then solves a skeleton&#39;s leg IKs and updates the springs accordingly.">update_skeleton()</a> </dd>
+<dd>
+move_foot() </dd>
+<dd>
+<a class="el" href="camera_8c.html#ac591bd567e826c8d7cd9b3f1987bb401" title="Calculates velocity based on leg positions and integrates them into the player.">update_body_from_legs()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01220">1220</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ae6d0d0f1b4e5297967c53639c94e22a1" name="ae6d0d0f1b4e5297967c53639c94e22a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6d0d0f1b4e5297967c53639c94e22a1">&#9670;&#160;</a></span>duration</h2>
@@ -141,7 +157,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01159">1159</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The duration of the entire step. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01228">1228</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>.</p>
 
@@ -159,9 +177,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01156">1156</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Position of the foot. </p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00445">calculate_stride_governor()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>, and <a class="el" href="camera_8c_source.html#l01177">update_skeleton()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01225">1225</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00445">calculate_stride_governor()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -177,7 +197,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01157">1157</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Starting position of the foot. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01226">1226</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>.</p>
 
@@ -195,7 +217,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01154">1154</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If the leg is currently stepping. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01223">1223</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00445">calculate_stride_governor()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, and <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>.</p>
 
@@ -213,7 +237,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01155">1155</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If the leg is over air. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01224">1224</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, and <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>.</p>
 
@@ -231,7 +257,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01158">1158</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Target position for the current step. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01227">1227</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>.</p>
 
@@ -249,7 +277,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01160">1160</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The current time to linearly interpolate between start and target pos. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01229">1229</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>.</p>
 

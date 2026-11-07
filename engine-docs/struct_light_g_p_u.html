@@ -113,6 +113,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_light_g
 </div><!--header-->
 <div class="contents">
 
+<p>The GPU side structure for <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s padded for GPU.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -121,8 +124,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ad82589b91eb2378e10be35b7f4ffe637" id="r_ad82589b91eb2378e10be35b7f4ffe637"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ad82589b91eb2378e10be35b7f4ffe637">entity_id</a></td></tr>
 <tr class="memitem:a5db6f50e4fa91e9c248ad4578d06331a" id="r_a5db6f50e4fa91e9c248ad4578d06331a"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5db6f50e4fa91e9c248ad4578d06331a">dir</a></td></tr>
 <tr class="memitem:a4818a21edf755a786d46efe9147ef98d" id="r_a4818a21edf755a786d46efe9147ef98d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a4818a21edf755a786d46efe9147ef98d">outer_cos</a></td></tr>
+<tr class="memdesc:a4818a21edf755a786d46efe9147ef98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputed when uploading to the GPU for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s.  <br /></td></tr>
 <tr class="memitem:af5c978580ed61e7be0b3f7a5fc19aa6d" id="r_af5c978580ed61e7be0b3f7a5fc19aa6d"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#af5c978580ed61e7be0b3f7a5fc19aa6d">rgb</a></td></tr>
 <tr class="memitem:a61d9f653b2077f56add228e0a5b8d471" id="r_a61d9f653b2077f56add228e0a5b8d471"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a61d9f653b2077f56add228e0a5b8d471">cos_diff</a></td></tr>
+<tr class="memdesc:a61d9f653b2077f56add228e0a5b8d471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputed when uploading to the GPU for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s.  <br /></td></tr>
 <tr class="memitem:ad8712d367f5aadf711cfdf3ea915ea39" id="r_ad8712d367f5aadf711cfdf3ea915ea39"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad8712d367f5aadf711cfdf3ea915ea39">intensity</a></td></tr>
 <tr class="memitem:ac3007d0e905209e2f62e458105003d76" id="r_ac3007d0e905209e2f62e458105003d76"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16b">LightType</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac3007d0e905209e2f62e458105003d76">light_type</a></td></tr>
 <tr class="memitem:acdaab2ffcc642aa2332d9f61e1ffebff" id="r_acdaab2ffcc642aa2332d9f61e1ffebff"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#acdaab2ffcc642aa2332d9f61e1ffebff">inner_angle</a></td></tr>
@@ -137,8 +142,16 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aebfaca0b46541c909b69d75edf10cf69" id="r_aebfaca0b46541c909b69d75edf10cf69"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aebfaca0b46541c909b69d75edf10cf69">pad2</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01340">1340</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The GPU side structure for <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s padded for GPU. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_globals.html#a838cf9143fd2ac079e7ddbe94411cd70">Globals.lights</a> </dd>
+<dd>
+<a class="el" href="main_8c.html#af9238b1e4190bb98b85e124db5712f0d">LIGHT_SSBO</a> </dd>
+<dd>
+<a class="el" href="render_8c.html#a359fb009557de2444b93a70c1f7109f7">upload_lights()</a> </dd>
+<dd>
+<a class="el" href="render_8c.html#aa06e29a8e7daefea2cd5b689bb7d0e6a">copy_light_to_gpu_light()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01440">1440</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a3e8f641ebad249e253663f23bcb6f8bc" name="a3e8f641ebad249e253663f23bcb6f8bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e8f641ebad249e253663f23bcb6f8bc">&#9670;&#160;</a></span>area</h2>
@@ -152,9 +165,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01362">1362</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01462">1462</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -170,7 +183,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01363">1363</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01463">1463</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
@@ -188,9 +201,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01350">1350</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Precomputed when uploading to the GPU for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01450">1450</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -206,9 +221,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01346">1346</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01446">1446</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -224,9 +239,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01344">1344</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01444">1444</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -242,9 +257,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01354">1354</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01454">1454</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -260,9 +275,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01352">1352</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01452">1452</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -278,9 +293,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01358">1358</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01458">1458</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -296,9 +311,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01353">1353</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01453">1453</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -314,9 +329,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01359">1359</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01459">1459</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -332,9 +347,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01355">1355</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01455">1455</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -350,9 +365,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01347">1347</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Precomputed when uploading to the GPU for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01447">1447</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -368,7 +385,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01364">1364</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01464">1464</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +401,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01365">1365</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01465">1465</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -400,9 +417,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01343">1343</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01443">1443</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -418,9 +435,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01357">1357</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01457">1457</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -436,9 +453,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01349">1349</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01449">1449</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -454,9 +471,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01360">1360</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01460">1460</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00601">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>

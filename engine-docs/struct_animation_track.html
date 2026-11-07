@@ -113,27 +113,47 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_animati
 </div><!--header-->
 <div class="contents">
 
+<p>Tagged union for the value stored in a keyframe.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:af108e4f887166901d020e28f7271357c" id="r_af108e4f887166901d020e28f7271357c"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#a6454f8331a092fb7cc122450dfe22a8d">AnimationTargetType</a>&#160;</td><td class="memItemRight"><a class="el" href="#af108e4f887166901d020e28f7271357c">type</a></td></tr>
+<tr class="memdesc:af108e4f887166901d020e28f7271357c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the data stored on <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>.  <br /></td></tr>
 <tr class="memitem:a1789a4a30b4cbd280028115e99420462" id="r_a1789a4a30b4cbd280028115e99420462"><td class="memItemLeft"><a class="el" href="struct_animation_keyframe.html">AnimationKeyframe</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1789a4a30b4cbd280028115e99420462">kf</a> [<a class="el" href="engine__types_8h.html#afd7096c51c85adec817b8f4bff06fbd6">MAX_KEYFRAMES</a>]</td></tr>
+<tr class="memdesc:a1789a4a30b4cbd280028115e99420462"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s for this track.  <br /></td></tr>
 <tr class="memitem:a6d4d8d7e88bca6f0a4c50d4a7ce1456b" id="r_a6d4d8d7e88bca6f0a4c50d4a7ce1456b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6d4d8d7e88bca6f0a4c50d4a7ce1456b">kf_count</a></td></tr>
+<tr class="memdesc:a6d4d8d7e88bca6f0a4c50d4a7ce1456b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s.  <br /></td></tr>
 <tr class="memitem:af4a36f612c08e15ee945cf12a8f79249" id="r_af4a36f612c08e15ee945cf12a8f79249"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af4a36f612c08e15ee945cf12a8f79249">current_time</a></td></tr>
+<tr class="memdesc:af4a36f612c08e15ee945cf12a8f79249"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long the animation has been running.  <br /></td></tr>
 <tr class="memitem:a90ea50376cf70c38d84de8cbea4cda33" id="r_a90ea50376cf70c38d84de8cbea4cda33"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a90ea50376cf70c38d84de8cbea4cda33">duration</a></td></tr>
+<tr class="memdesc:a90ea50376cf70c38d84de8cbea4cda33"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration of all of the <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s.  <br /></td></tr>
 <tr class="memitem:a2a8e7d8d5d3be810e004b342f98a82b6" id="r_a2a8e7d8d5d3be810e004b342f98a82b6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2a8e7d8d5d3be810e004b342f98a82b6">loop</a></td></tr>
+<tr class="memdesc:a2a8e7d8d5d3be810e004b342f98a82b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the animation loops.  <br /></td></tr>
 <tr class="memitem:adb02f2b32e5404a34728198c3fbd5d96" id="r_adb02f2b32e5404a34728198c3fbd5d96"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#a73a1548d3d894e61c37af780d95f171b">AnimationDataType</a>&#160;</td><td class="memItemRight"><a class="el" href="#adb02f2b32e5404a34728198c3fbd5d96">data_type</a></td></tr>
+<tr class="memdesc:adb02f2b32e5404a34728198c3fbd5d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of data that is changed during animation.  <br /></td></tr>
 <tr class="memitem:aabf33264137e771ca0b1fde78376bbcc" id="r_aabf33264137e771ca0b1fde78376bbcc"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#aabf33264137e771ca0b1fde78376bbcc">data_index_offset</a></td></tr>
+<tr class="memdesc:aabf33264137e771ca0b1fde78376bbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the structure we are targeting.  <br /></td></tr>
 <tr class="memitem:aa8134b4e63e7aa2567db5f834f77d9f5" id="r_aa8134b4e63e7aa2567db5f834f77d9f5"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#aa8134b4e63e7aa2567db5f834f77d9f5">data_byte_offset</a></td></tr>
+<tr class="memdesc:aa8134b4e63e7aa2567db5f834f77d9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The byte offset in the structure we are targeting.  <br /></td></tr>
 <tr class="memitem:a912309cbd02be34445fa000a0fe638c4" id="r_a912309cbd02be34445fa000a0fe638c4"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a912309cbd02be34445fa000a0fe638c4">data</a></td></tr>
+<tr class="memdesc:a912309cbd02be34445fa000a0fe638c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored pointer to data to change during animation.  <br /></td></tr>
 <tr class="memitem:a7ffb8ae7baf68ca03bd28fc8b9e4ad15" id="r_a7ffb8ae7baf68ca03bd28fc8b9e4ad15"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#a6454f8331a092fb7cc122450dfe22a8d">AnimationTargetType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7ffb8ae7baf68ca03bd28fc8b9e4ad15">completion_type</a></td></tr>
+<tr class="memdesc:a7ffb8ae7baf68ca03bd28fc8b9e4ad15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of data that is modified on completion.  <br /></td></tr>
 <tr class="memitem:aee049afb24469de0cb0259182f767d68" id="r_aee049afb24469de0cb0259182f767d68"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#aee049afb24469de0cb0259182f767d68">completion_data</a></td></tr>
+<tr class="memdesc:aee049afb24469de0cb0259182f767d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the data that is modified on completion.  <br /></td></tr>
 <tr class="memitem:af13c2ddda19608864a999debc5a8b1a2" id="r_af13c2ddda19608864a999debc5a8b1a2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af13c2ddda19608864a999debc5a8b1a2">active</a></td></tr>
+<tr class="memdesc:af13c2ddda19608864a999debc5a8b1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this animation is currently running.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01791">1791</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>Tagged union for the value stored in a keyframe. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="animation_8c.html">core/animation.c</a> </dd>
+<dd>
+<a class="el" href="struct_animation_component.html" title="The animation component for interpolation between AnimationKeyframes.">AnimationComponent</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02138">2138</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="af13c2ddda19608864a999debc5a8b1a2" name="af13c2ddda19608864a999debc5a8b1a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af13c2ddda19608864a999debc5a8b1a2">&#9670;&#160;</a></span>active</h2>
@@ -147,9 +167,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01807">1807</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If this animation is currently running. </p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02154">2154</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -165,9 +187,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01806">1806</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Pointer to the data that is modified on completion. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00931">init_globals()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02153">2153</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -183,7 +207,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01805">1805</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Type of data that is modified on completion. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02152">2152</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
@@ -201,9 +227,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01797">1797</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>How long the animation has been running. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02144">2144</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -219,9 +247,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01804">1804</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Stored pointer to data to change during animation. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00931">init_globals()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02151">2151</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -237,9 +267,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01803">1803</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The byte offset in the structure we are targeting. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02150">2150</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -255,9 +287,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01802">1802</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The index of the structure we are targeting. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02149">2149</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -273,9 +307,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01801">1801</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The type of data that is changed during animation. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02148">2148</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -291,9 +327,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01798">1798</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The duration of all of the <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s. </p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02145">2145</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -309,9 +347,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01795">1795</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s for this track. </p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02142">2142</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -327,9 +367,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01796">1796</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The amount of <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s. </p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02143">2143</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -345,9 +387,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01799">1799</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If the animation loops. </p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02146">2146</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>
@@ -363,9 +407,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01794">1794</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The type of the data stored on <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02141">2141</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>

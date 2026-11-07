@@ -113,24 +113,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_audio_s
 </div><!--header-->
 <div class="contents">
 
+<p>Each ray's samples when baking <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, padded for GPU.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a54c1a2c599a4005b679ecd422287caee" id="r_a54c1a2c599a4005b679ecd422287caee"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a54c1a2c599a4005b679ecd422287caee">arrival_dir</a></td></tr>
+<tr class="memdesc:a54c1a2c599a4005b679ecd422287caee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The direction the ray was traveling to this position.  <br /></td></tr>
 <tr class="memitem:a1f6d81895466a719a4a86edbe82475e3" id="r_a1f6d81895466a719a4a86edbe82475e3"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1f6d81895466a719a4a86edbe82475e3">time_of_flight</a></td></tr>
+<tr class="memdesc:a1f6d81895466a719a4a86edbe82475e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time that it takes for the sample to reach this position in total dist + dist to probe.  <br /></td></tr>
 <tr class="memitem:a72bb18fa2e649ddfe8055ac3b251b4cf" id="r_a72bb18fa2e649ddfe8055ac3b251b4cf"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a72bb18fa2e649ddfe8055ac3b251b4cf">pos</a></td></tr>
+<tr class="memdesc:a72bb18fa2e649ddfe8055ac3b251b4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hit position.  <br /></td></tr>
 <tr class="memitem:aa6d688f661882190ff15b0bb1b353145" id="r_aa6d688f661882190ff15b0bb1b353145"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa6d688f661882190ff15b0bb1b353145">valid</a></td></tr>
+<tr class="memdesc:aa6d688f661882190ff15b0bb1b353145"><td class="mdescLeft">&#160;</td><td class="mdescRight">If it is occluded then it is not valid.  <br /></td></tr>
 <tr class="memitem:a8ffeedea6ea822df455117e9144a1ca5" id="r_a8ffeedea6ea822df455117e9144a1ca5"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a8ffeedea6ea822df455117e9144a1ca5">energy</a> [6]</td></tr>
+<tr class="memdesc:a8ffeedea6ea822df455117e9144a1ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The energy per band.  <br /></td></tr>
 <tr class="memitem:a44f680edbe1dd8d72ba3f0ffe9deaf4f" id="r_a44f680edbe1dd8d72ba3f0ffe9deaf4f"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a44f680edbe1dd8d72ba3f0ffe9deaf4f">pad0</a></td></tr>
 <tr class="memitem:a800800826f4198271c75bb48d193cba4" id="r_a800800826f4198271c75bb48d193cba4"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a800800826f4198271c75bb48d193cba4">pad1</a></td></tr>
 <tr class="memitem:a03413870303f53da9e2290bb4579bf9e" id="r_a03413870303f53da9e2290bb4579bf9e"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a03413870303f53da9e2290bb4579bf9e">abs_energy</a> [6]</td></tr>
+<tr class="memdesc:a03413870303f53da9e2290bb4579bf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The energy per band with only absorption and no scattering.  <br /></td></tr>
 <tr class="memitem:af02300db03ff7cb0f4009fc2571df5b9" id="r_af02300db03ff7cb0f4009fc2571df5b9"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#af02300db03ff7cb0f4009fc2571df5b9">pad4</a></td></tr>
 <tr class="memitem:ab4da146f935e5eb48a87834be166f6b1" id="r_ab4da146f935e5eb48a87834be166f6b1"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab4da146f935e5eb48a87834be166f6b1">pad5</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01269">1269</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>Each ray's samples when baking <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, padded for GPU. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="audio__probe__bake_8comp.html">audio/audio_probe_bake.comp</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01351">1351</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a03413870303f53da9e2290bb4579bf9e" name="a03413870303f53da9e2290bb4579bf9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03413870303f53da9e2290bb4579bf9e">&#9670;&#160;</a></span>abs_energy</h2>
@@ -144,7 +155,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01279">1279</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The energy per band with only absorption and no scattering. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01361">1361</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -162,7 +175,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01272">1272</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The direction the ray was traveling to this position. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01354">1354</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -180,7 +195,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01276">1276</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The energy per band. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01358">1358</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -198,7 +215,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01277">1277</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01359">1359</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +231,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01278">1278</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01360">1360</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +247,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01280">1280</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01362">1362</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +263,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01281">1281</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01363">1363</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +279,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01274">1274</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The hit position. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01356">1356</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +297,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01273">1273</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The time that it takes for the sample to reach this position in total dist + dist to probe. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01355">1355</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -296,7 +317,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01275">1275</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If it is occluded then it is not valid. </p>
+<p>Also, empty samples after the ray dies out are not valid. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01357">1357</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 

@@ -20,11 +20,11 @@ var searchData=
   ['elements_17',['elements',['../struct_u_i_menu.html#a1cdb6ff27c9e03fd84a574936a914525',1,'UIMenu']]],
   ['elements_5findirect_18',['elements_indirect',['../render_8c.html#a7887024ba24d4d0de02e1eefcaab5d92',1,'render.c']]],
   ['elements_5fprefix_5fshader_19',['ELEMENTS_PREFIX_SHADER',['../main_8c.html#accb42e67af1465578870587c930cbb06',1,'ELEMENTS_PREFIX_SHADER:&#160;main.c'],['../init_8h.html#accb42e67af1465578870587c930cbb06',1,'ELEMENTS_PREFIX_SHADER:&#160;main.c']]],
-  ['emissive_20',['emissive',['../struct_emissive_triangle.html#a146ba220fdf59bb3059169ef02ed32a4',1,'EmissiveTriangle::emissive'],['../struct_material_g_p_u.html#a0ed6646ed63df9d968cbf6eb0539700a',1,'MaterialGPU::emissive']]],
+  ['emissive_20',['emissive',['../struct_material_g_p_u.html#a0ed6646ed63df9d968cbf6eb0539700a',1,'MaterialGPU']]],
   ['emissive_5ffactor_21',['emissive_factor',['../struct_g_l_t_f_material.html#a681cf6d084b2bfa9f7641121c4ab224b',1,'GLTFMaterial']]],
   ['emissive_5fflux_22',['emissive_flux',['../struct_b_v_h_node.html#afee77e11ce023a57172221fd33705d7a',1,'BVHNode::emissive_flux'],['../struct_b_v_h_node_g_p_u.html#a2a026fe48fb689183d103f31b2644b5f',1,'BVHNodeGPU::emissive_flux']]],
   ['emissive_5fhandle_23',['emissive_handle',['../struct_material_g_p_u.html#aeaca24f961afe6c4d43a977c96bf36ae',1,'MaterialGPU']]],
-  ['emissive_5fstrength_24',['emissive_strength',['../struct_material_g_p_u.html#affe9b8fdb82a77649ba460a008059582',1,'MaterialGPU::emissive_strength'],['../struct_material.html#aa13ac51435e2aadf82a5487a04b76560',1,'Material::emissive_strength'],['../struct_g_l_t_f_material.html#ad1268e90c20368ef2b9e9dc35ac87118',1,'GLTFMaterial::emissive_strength']]],
+  ['emissive_5fstrength_24',['emissive_strength',['../struct_material.html#aa13ac51435e2aadf82a5487a04b76560',1,'Material::emissive_strength'],['../struct_material_g_p_u.html#affe9b8fdb82a77649ba460a008059582',1,'MaterialGPU::emissive_strength'],['../struct_g_l_t_f_material.html#ad1268e90c20368ef2b9e9dc35ac87118',1,'GLTFMaterial::emissive_strength']]],
   ['emissive_5ftex_25',['emissive_tex',['../struct_material.html#afa9bff31079f389e29e319a401dce056',1,'Material::emissive_tex'],['../struct_g_l_t_f_material.html#ad7063c6a71cb5d77d7cf11cbc80885c6',1,'GLTFMaterial::emissive_tex']]],
   ['emitter_5fpos_26',['emitter_pos',['../struct_a_probe_editor_menu.html#aa3bb5b8a54885cc4c6045127a210d678',1,'AProbeEditorMenu']]],
   ['emitter_5fvol_27',['emitter_vol',['../struct_a_probe_editor_menu.html#ad0e926c9059dbd2ded1345b9ad24aa3f',1,'AProbeEditorMenu']]],
@@ -34,8 +34,7 @@ var searchData=
   ['entity_5fid_31',['entity_id',['../struct_light.html#aa522330a1778d643a96c3e8eea57d163',1,'Light::entity_id'],['../struct_light_g_p_u.html#ad82589b91eb2378e10be35b7f4ffe637',1,'LightGPU::entity_id']]],
   ['entity_5fmenu_5fopen_32',['entity_menu_open',['../struct_editor_settings.html#a6e1238260fb0e610f3dbb974af6897f5',1,'EditorSettings']]],
   ['estimated_5fframe_5fcount_33',['estimated_frame_count',['../init_8c.html#a1438583b395bb935784476e417335b4a',1,'init.c']]],
-  ['event_34',['event',['../struct_animation_event_definition.html#a011e8c58d0c6470daf112002ede6db68',1,'AnimationEventDefinition']]],
-  ['ew_35',['EW',['../main_8c.html#a03aa86e6247d752d0f2f24d29c2626a0',1,'EW:&#160;main.c'],['../init_8h.html#a03aa86e6247d752d0f2f24d29c2626a0',1,'EW:&#160;main.c']]],
-  ['extent_5fwidth_36',['extent_width',['../struct_u_i_slider.html#a0d01ea6f526f3b81a33362c21bf56c29',1,'UISlider']]],
-  ['extents_37',['extents',['../struct_mesh_node_data_g_p_u.html#adab69714f43226b0adb02d7a395a17bc',1,'MeshNodeDataGPU::extents'],['../struct_a_a_b_b_g_p_u.html#a222cb86f5bc464d337d901abaeeaaa00',1,'AABBGPU::extents'],['../struct_b_v_h_node_g_p_u.html#a3a980528eac2fa680b8fe3685e27ebc1',1,'BVHNodeGPU::extents'],['../struct_o_b_b_g_p_u.html#a407ccfc50f35cda3c714b70833b3610b',1,'OBBGPU::extents'],['../struct_a_a_b_b.html#a7310cd50a8940891814341a93decf227',1,'AABB::extents'],['../struct_o_b_b.html#a2624d6f59fc1279a052c410444b2b06d',1,'OBB::extents']]]
+  ['ew_34',['EW',['../main_8c.html#a03aa86e6247d752d0f2f24d29c2626a0',1,'EW:&#160;main.c'],['../init_8h.html#a03aa86e6247d752d0f2f24d29c2626a0',1,'EW:&#160;main.c']]],
+  ['extent_5fwidth_35',['extent_width',['../struct_u_i_slider.html#a0d01ea6f526f3b81a33362c21bf56c29',1,'UISlider']]],
+  ['extents_36',['extents',['../struct_mesh_node_data_g_p_u.html#adab69714f43226b0adb02d7a395a17bc',1,'MeshNodeDataGPU::extents'],['../struct_a_a_b_b_g_p_u.html#a222cb86f5bc464d337d901abaeeaaa00',1,'AABBGPU::extents'],['../struct_b_v_h_node_g_p_u.html#a3a980528eac2fa680b8fe3685e27ebc1',1,'BVHNodeGPU::extents'],['../struct_o_b_b_g_p_u.html#a407ccfc50f35cda3c714b70833b3610b',1,'OBBGPU::extents'],['../struct_a_a_b_b.html#a7310cd50a8940891814341a93decf227',1,'AABB::extents'],['../struct_o_b_b.html#a2624d6f59fc1279a052c410444b2b06d',1,'OBB::extents']]]
 ];

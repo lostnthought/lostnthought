@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b_0',['B',['../struct_light.html#a42c56d3f1c985c8843c15eacd358c649',1,'Light::B'],['../struct_emissive_triangle.html#af3cc577b020f81c1a1a612cec3b1ffd4',1,'EmissiveTriangle::B']]],
+  ['b_0',['B',['../struct_light.html#a42c56d3f1c985c8843c15eacd358c649',1,'Light']]],
   ['b_1',['b',['../struct_collision_points.html#aedd87357ace3f478cb5c0ba2a763e8f7',1,'CollisionPoints::b'],['../struct_manifold.html#a63501f92222cbcdc0342cc0e17d5c24e',1,'Manifold::b'],['../struct_capsule_data.html#ac6fdd751b62aa61c66c2ebebcf0a6e67',1,'CapsuleData::b'],['../struct_edge_pair_key.html#a27890f78bfe87caccf07363be0abc0be',1,'EdgePairKey::b'],['../struct_edge.html#a0b0adbda6302bb96c4a7bd62bb9de9f8',1,'Edge::b'],['../struct_support_vertex.html#af6210560d5737f340ab88470af58d606',1,'SupportVertex::b']]],
   ['b0_2',['b0',['../struct_biquad.html#a0e93302dc1e1e2b092aba811b21e6de1',1,'Biquad::b0'],['../structmat3.html#a4fe0507de6eec08d42fe4a5576dc7ac5',1,'mat3::b0'],['../structmat4.html#a2dc71129bc97f4748af1d365240fee31',1,'mat4::b0'],['../struct_ray_hit.html#aadad27db84749622b5ce8b7e4223d827',1,'RayHit::b0']]],
   ['b1_3',['b1',['../struct_biquad.html#a14e44bc8dbf9add3d8dba4d707ecd642',1,'Biquad::b1'],['../structmat3.html#a57f2aac2d9ba8a1e4291c00116d97d8f',1,'mat3::b1'],['../structmat4.html#af999148a9550d0e8ad372b364dffdf3d',1,'mat4::b1'],['../struct_ray_hit.html#a4e55d285b57ff1e1cc95af8b7777f01f',1,'RayHit::b1']]],
@@ -42,7 +42,7 @@ var searchData=
   ['brdf_5flut_39',['BRDF_LUT',['../main_8c.html#a4499379853a66cda1c1ad2954231403e',1,'BRDF_LUT:&#160;main.c'],['../init_8h.html#a4499379853a66cda1c1ad2954231403e',1,'BRDF_LUT:&#160;main.c']]],
   ['brdf_5fshader_40',['BRDF_SHADER',['../main_8c.html#ae5a2e4deeb58ada51b993eddc9c5047d',1,'BRDF_SHADER:&#160;main.c'],['../init_8h.html#ae5a2e4deeb58ada51b993eddc9c5047d',1,'BRDF_SHADER:&#160;main.c']]],
   ['buf_41',['buf',['../struct_image.html#ab31420f16a715901da9774c278d578bd',1,'Image']]],
-  ['buffer_42',['buffer',['../struct_lightmap_data.html#a9faba2cad8b02336d1b97391ebeec0ef',1,'LightmapData::buffer'],['../struct_combo_label.html#ad7340881c84736b0e48e8a47da2d58b2',1,'ComboLabel::buffer'],['../struct_g_l_t_f_buffer_view.html#a660aa83d1e4dfc7ef301efefc89f630c',1,'GLTFBufferView::buffer'],['../struct_vector.html#ad3c20018fe1692be0ebca8d674e13be4',1,'Vector::buffer']]],
+  ['buffer_42',['buffer',['../struct_g_l_t_f_buffer_view.html#a660aa83d1e4dfc7ef301efefc89f630c',1,'GLTFBufferView::buffer'],['../struct_vector.html#ad3c20018fe1692be0ebca8d674e13be4',1,'Vector::buffer']]],
   ['buffer_5foverride_43',['buffer_override',['../struct_vertex_layout.html#ac31f1f9e9d256a1b93045c1dce33541c',1,'VertexLayout']]],
   ['buffer_5foverride_5fdata_44',['buffer_override_data',['../struct_vertex_layout.html#aa806673494bc02f2d2fef566cf00ee98',1,'VertexLayout']]],
   ['buffer_5ftarget_45',['buffer_target',['../struct_vertex_layout.html#a87d1637215dff0e3f44564c9fa9302c2',1,'VertexLayout']]],

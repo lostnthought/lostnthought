@@ -113,19 +113,31 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_convex_
 </div><!--header-->
 <div class="contents">
 
+<p>Convex Hulls that are generated via incremental hull for non-static meshes.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a0a8744845a20dfdd1f7ad934d294ccae" id="r_a0a8744845a20dfdd1f7ad934d294ccae"><td class="memItemLeft"><a class="el" href="struct_vector.html">Vector</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0a8744845a20dfdd1f7ad934d294ccae">vertices</a></td></tr>
+<tr class="memdesc:a0a8744845a20dfdd1f7ad934d294ccae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_point.html">Point</a>s that initially copy the <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> vertices but then are deduplicated and modified in <a class="el" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull()</a>.  <br /></td></tr>
 <tr class="memitem:a16a3be54bab193442b65b90ae60b79fd" id="r_a16a3be54bab193442b65b90ae60b79fd"><td class="memItemLeft"><a class="el" href="struct_vector.html">Vector</a>&#160;</td><td class="memItemRight"><a class="el" href="#a16a3be54bab193442b65b90ae60b79fd">faces</a></td></tr>
+<tr class="memdesc:a16a3be54bab193442b65b90ae60b79fd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_mesh_face.html">MeshFace</a>s that initially copy the <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> faces but then are modified in <a class="el" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull()</a>.  <br /></td></tr>
 <tr class="memitem:a0021d81049afda51b375c590545c7815" id="r_a0021d81049afda51b375c590545c7815"><td class="memItemLeft"><a class="el" href="struct_vector.html">Vector</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0021d81049afda51b375c590545c7815">hull_faces</a></td></tr>
+<tr class="memdesc:a0021d81049afda51b375c590545c7815"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_hull_face.html">HullFace</a>s that are generated after <a class="el" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull()</a> that combine contiguous triangles into singular faces.  <br /></td></tr>
 <tr class="memitem:a3019024789c2c884bb45eaac596e92d3" id="r_a3019024789c2c884bb45eaac596e92d3"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3019024789c2c884bb45eaac596e92d3">centroid</a></td></tr>
+<tr class="memdesc:a3019024789c2c884bb45eaac596e92d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The center of the hull.  <br /></td></tr>
 <tr class="memitem:a3098a289e3c552ecb7b426bef82b7a3c" id="r_a3098a289e3c552ecb7b426bef82b7a3c"><td class="memItemLeft"><a class="el" href="struct_a_a_b_b.html">AABB</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3098a289e3c552ecb7b426bef82b7a3c">aabb</a></td></tr>
+<tr class="memdesc:a3098a289e3c552ecb7b426bef82b7a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bounding box of the hull.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01016">1016</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>Convex Hulls that are generated via incremental hull for non-static meshes. </p>
+<p>Used for collision. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> </dd>
+<dd>
+<a class="el" href="init_8c.html#adb1dbedb42e4b75e9ab92182d66ade7f">init_mesh()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01038">1038</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a3098a289e3c552ecb7b426bef82b7a3c" name="a3098a289e3c552ecb7b426bef82b7a3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3098a289e3c552ecb7b426bef82b7a3c">&#9670;&#160;</a></span>aabb</h2>
@@ -139,9 +151,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01023">1023</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The bounding box of the hull. </p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh_new()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01045">1045</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -157,9 +171,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01022">1022</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The center of the hull. </p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01044">1044</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
 
 </div>
 </div>
@@ -175,9 +191,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01020">1020</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p><a class="el" href="struct_mesh_face.html">MeshFace</a>s that initially copy the <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> faces but then are modified in <a class="el" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull()</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh_new()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01042">1042</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
 
 </div>
 </div>
@@ -193,9 +211,12 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01021">1021</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p><a class="el" href="struct_hull_face.html">HullFace</a>s that are generated after <a class="el" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull()</a> that combine contiguous triangles into singular faces. </p>
+<p>Used for manifold clipping. </p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh_new()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01043">1043</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>.</p>
 
 </div>
 </div>
@@ -211,9 +232,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01019">1019</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p><a class="el" href="struct_point.html">Point</a>s that initially copy the <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> vertices but then are deduplicated and modified in <a class="el" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull()</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh_new()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, <a class="el" href="load_8c_source.html#l00503">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01041">1041</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
 
 </div>
 </div>

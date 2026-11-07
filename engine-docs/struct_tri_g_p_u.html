@@ -113,25 +113,39 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_tri_g_p
 </div><!--header-->
 <div class="contents">
 
+<p>The GPU side structure of a <a class="el" href="struct_mesh_face.html">MeshFace</a>, used for path traced baking.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:add0d2fd68a82022ef9d904e49263d96f" id="r_add0d2fd68a82022ef9d904e49263d96f"><td class="memItemLeft"><a class="el" href="structuvec3.html">uvec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#add0d2fd68a82022ef9d904e49263d96f">indices</a></td></tr>
+<tr class="memdesc:add0d2fd68a82022ef9d904e49263d96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unused - the indices of each point.  <br /></td></tr>
 <tr class="memitem:a5b949d260c9785235c4fd5f1cdb34bf3" id="r_a5b949d260c9785235c4fd5f1cdb34bf3"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a5b949d260c9785235c4fd5f1cdb34bf3">material_id</a></td></tr>
 <tr class="memitem:abfaf2e64eacbc3b1c7a6fc7d0f8b14f3" id="r_abfaf2e64eacbc3b1c7a6fc7d0f8b14f3"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#abfaf2e64eacbc3b1c7a6fc7d0f8b14f3">normal</a></td></tr>
 <tr class="memitem:aa5183ac1097dac00b06e9f32d5fdfc08" id="r_aa5183ac1097dac00b06e9f32d5fdfc08"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa5183ac1097dac00b06e9f32d5fdfc08">mesh_id</a></td></tr>
+<tr class="memdesc:aa5183ac1097dac00b06e9f32d5fdfc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> id.  <br /></td></tr>
 <tr class="memitem:a7be9def2f741af5da4081795f8b02373" id="r_a7be9def2f741af5da4081795f8b02373"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a7be9def2f741af5da4081795f8b02373">bvh_index</a></td></tr>
+<tr class="memdesc:a7be9def2f741af5da4081795f8b02373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global: The bvh index + the offset for the current <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
 <tr class="memitem:a187d6b8bc8ccc5799411077707eff219" id="r_a187d6b8bc8ccc5799411077707eff219"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a187d6b8bc8ccc5799411077707eff219">tri_idx</a></td></tr>
+<tr class="memdesc:a187d6b8bc8ccc5799411077707eff219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local: The bvh index for this <a class="el" href="struct_mesh_face.html">MeshFace</a>.  <br /></td></tr>
 <tr class="memitem:a9744502280cefba3a1b5efe6595bedb1" id="r_a9744502280cefba3a1b5efe6595bedb1"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a9744502280cefba3a1b5efe6595bedb1">pad1</a></td></tr>
 <tr class="memitem:a8334a50472bdb522c19625c4d787c628" id="r_a8334a50472bdb522c19625c4d787c628"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a8334a50472bdb522c19625c4d787c628">pad2</a></td></tr>
+<tr id="pub-attribs-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Vertices</div></td></tr>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>The vertices for this <a class="el" href="struct_mesh_face.html">MeshFace</a>. </p>
+</div></td></tr>
 <tr class="memitem:ac264de6d3f185ebd94b9831c702f048f" id="r_ac264de6d3f185ebd94b9831c702f048f"><td class="memItemLeft"><a class="el" href="struct_vertex_g_p_u.html">VertexGPU</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac264de6d3f185ebd94b9831c702f048f">v0</a></td></tr>
 <tr class="memitem:a33124a3ce2e9c891ad32b8c67cfd7506" id="r_a33124a3ce2e9c891ad32b8c67cfd7506"><td class="memItemLeft"><a class="el" href="struct_vertex_g_p_u.html">VertexGPU</a>&#160;</td><td class="memItemRight"><a class="el" href="#a33124a3ce2e9c891ad32b8c67cfd7506">v1</a></td></tr>
 <tr class="memitem:a03a3fc72abe1b312f5ebb01ad94526ba" id="r_a03a3fc72abe1b312f5ebb01ad94526ba"><td class="memItemLeft"><a class="el" href="struct_vertex_g_p_u.html">VertexGPU</a>&#160;</td><td class="memItemRight"><a class="el" href="#a03a3fc72abe1b312f5ebb01ad94526ba">v2</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01454">1454</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The GPU side structure of a <a class="el" href="struct_mesh_face.html">MeshFace</a>, used for path traced baking. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_mesh_face.html">MeshFace</a> </dd>
+<dd>
+<a class="el" href="main_8c.html#abaca5e5a21f64755ff2385b60d757c80">TRI_SSBO</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01619">1619</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a7be9def2f741af5da4081795f8b02373" name="a7be9def2f741af5da4081795f8b02373"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7be9def2f741af5da4081795f8b02373">&#9670;&#160;</a></span>bvh_index</h2>
@@ -145,9 +159,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01461">1461</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Global: The bvh index + the offset for the current <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01626">1626</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -163,9 +179,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01457">1457</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Unused - the indices of each point. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01622">1622</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -181,9 +199,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01458">1458</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01623">1623</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -199,9 +217,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01460">1460</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> id. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01625">1625</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -217,9 +237,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01459">1459</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01624">1624</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -235,7 +255,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01463">1463</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01628">1628</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +271,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01464">1464</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01629">1629</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -267,9 +287,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01462">1462</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Local: The bvh index for this <a class="el" href="struct_mesh_face.html">MeshFace</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01627">1627</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -285,9 +307,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01466">1466</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01636">1636</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -303,9 +325,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01467">1467</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01637">1637</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>
@@ -321,9 +343,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01468">1468</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01638">1638</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00600">GPU_unwrap_mesh_to_buffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>.</p>
 
 </div>
 </div>

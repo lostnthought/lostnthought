@@ -113,20 +113,31 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_lightma
 </div><!--header-->
 <div class="contents">
 
+<p>The structure used when rasterizing lightmap data to a texture before baking.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a245ffe6028b4c98517279f8851fb4693" id="r_a245ffe6028b4c98517279f8851fb4693"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a245ffe6028b4c98517279f8851fb4693">pos</a></td></tr>
+<tr class="memdesc:a245ffe6028b4c98517279f8851fb4693"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position.  <br /></td></tr>
 <tr class="memitem:ad8409a1b75adf6e3b2a4eb770d4e4fff" id="r_ad8409a1b75adf6e3b2a4eb770d4e4fff"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad8409a1b75adf6e3b2a4eb770d4e4fff">normal</a></td></tr>
+<tr class="memdesc:ad8409a1b75adf6e3b2a4eb770d4e4fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normal.  <br /></td></tr>
 <tr class="memitem:aaa1dc5d93d650ed2d4f37b15a85ee9a7" id="r_aaa1dc5d93d650ed2d4f37b15a85ee9a7"><td class="memItemLeft"><a class="el" href="structvec2.html">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aaa1dc5d93d650ed2d4f37b15a85ee9a7">uv</a></td></tr>
+<tr class="memdesc:aaa1dc5d93d650ed2d4f37b15a85ee9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture coordinates for the actual face's <a class="el" href="struct_g_l_texture.html" title="Texture abstraction for init.">GLTexture</a>.  <br /></td></tr>
 <tr class="memitem:ae91fbad709f24ffb030b7425fb57ff70" id="r_ae91fbad709f24ffb030b7425fb57ff70"><td class="memItemLeft"><a class="el" href="structvec2.html">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae91fbad709f24ffb030b7425fb57ff70">lm_uv</a></td></tr>
+<tr class="memdesc:ae91fbad709f24ffb030b7425fb57ff70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture coordinates for the <a class="el" href="struct_lightmap_atlas.html" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a>.  <br /></td></tr>
 <tr class="memitem:a0f778eae31cb3607caf783002871515c" id="r_a0f778eae31cb3607caf783002871515c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0f778eae31cb3607caf783002871515c">material_id</a></td></tr>
+<tr class="memdesc:a0f778eae31cb3607caf783002871515c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> this belongs to.  <br /></td></tr>
 <tr class="memitem:a207c324e164c7c6320be1bae8cf3f3b3" id="r_a207c324e164c7c6320be1bae8cf3f3b3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a207c324e164c7c6320be1bae8cf3f3b3">tri_id</a></td></tr>
+<tr class="memdesc:a207c324e164c7c6320be1bae8cf3f3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the <a class="el" href="struct_mesh_face.html">MeshFace</a>.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01072">1072</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The structure used when rasterizing lightmap data to a texture before baking. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="lightmap_8c.html#a7ce533f7d63fa2233a7fba339b9f078c">bake_lightmap()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01115">1115</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ae91fbad709f24ffb030b7425fb57ff70" name="ae91fbad709f24ffb030b7425fb57ff70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae91fbad709f24ffb030b7425fb57ff70">&#9670;&#160;</a></span>lm_uv</h2>
@@ -140,7 +151,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01078">1078</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The texture coordinates for the <a class="el" href="struct_lightmap_atlas.html" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01121">1121</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -158,7 +171,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01079">1079</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> this belongs to. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01122">1122</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -176,7 +191,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01076">1076</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The normal. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01119">1119</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -194,7 +211,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01075">1075</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The position. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01118">1118</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -212,7 +231,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01080">1080</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The ID of the <a class="el" href="struct_mesh_face.html">MeshFace</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01123">1123</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -230,7 +251,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01077">1077</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The texture coordinates for the actual face's <a class="el" href="struct_g_l_texture.html" title="Texture abstraction for init.">GLTexture</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01120">1120</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 

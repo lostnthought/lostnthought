@@ -113,22 +113,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_cam_dat
 </div><!--header-->
 <div class="contents">
 
+<p>The structure uploaded to the GPU for providing render data for a <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a>.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:af7438c9f7aa19b6cd572710d439b3cf7" id="r_af7438c9f7aa19b6cd572710d439b3cf7"><td class="memItemLeft"><a class="el" href="structvec4.html">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#af7438c9f7aa19b6cd572710d439b3cf7">cam_pos</a></td></tr>
+<tr class="memdesc:af7438c9f7aa19b6cd572710d439b3cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position of the <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a> (padded).  <br /></td></tr>
 <tr class="memitem:acf68f6481d9ed113c85163a5094f8d1a" id="r_acf68f6481d9ed113c85163a5094f8d1a"><td class="memItemLeft"><a class="el" href="structvec4.html">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#acf68f6481d9ed113c85163a5094f8d1a">cam_vel</a></td></tr>
+<tr class="memdesc:acf68f6481d9ed113c85163a5094f8d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The velocity of the <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a> (padded).  <br /></td></tr>
 <tr class="memitem:add2cf12a0d6821db8a1e048605e46a4d" id="r_add2cf12a0d6821db8a1e048605e46a4d"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#add2cf12a0d6821db8a1e048605e46a4d">proj</a></td></tr>
+<tr class="memdesc:add2cf12a0d6821db8a1e048605e46a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The projection matrix.  <br /></td></tr>
 <tr class="memitem:a8dd87f7e86f37ee327abb91664f897ff" id="r_a8dd87f7e86f37ee327abb91664f897ff"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8dd87f7e86f37ee327abb91664f897ff">unjittered_proj</a></td></tr>
+<tr class="memdesc:a8dd87f7e86f37ee327abb91664f897ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The projection matrix without TAA jittering.  <br /></td></tr>
 <tr class="memitem:ab45512950ebd01e334f479f83d6208c0" id="r_ab45512950ebd01e334f479f83d6208c0"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab45512950ebd01e334f479f83d6208c0">view</a></td></tr>
+<tr class="memdesc:ab45512950ebd01e334f479f83d6208c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view matrix.  <br /></td></tr>
 <tr class="memitem:a628f67167b36b0cb733b76923b604a9b" id="r_a628f67167b36b0cb733b76923b604a9b"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a628f67167b36b0cb733b76923b604a9b">inv_proj</a></td></tr>
+<tr class="memdesc:a628f67167b36b0cb733b76923b604a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse projection matrix.  <br /></td></tr>
 <tr class="memitem:ab8227987778fff7f568a231de5ed54d4" id="r_ab8227987778fff7f568a231de5ed54d4"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab8227987778fff7f568a231de5ed54d4">unjittered_inv_proj</a></td></tr>
+<tr class="memdesc:ab8227987778fff7f568a231de5ed54d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse projection matrix without TAA jittering.  <br /></td></tr>
 <tr class="memitem:a850e99dc2e4678140b2c8bd20abc46e0" id="r_a850e99dc2e4678140b2c8bd20abc46e0"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a850e99dc2e4678140b2c8bd20abc46e0">inv_view</a></td></tr>
+<tr class="memdesc:a850e99dc2e4678140b2c8bd20abc46e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse view matrix.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01117">1117</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The structure uploaded to the GPU for providing render data for a <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="main_8c.html#ad62db15576e944f4328683234b350458">CAM_UBO</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01172">1172</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="af7438c9f7aa19b6cd572710d439b3cf7" name="af7438c9f7aa19b6cd572710d439b3cf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7438c9f7aa19b6cd572710d439b3cf7">&#9670;&#160;</a></span>cam_pos</h2>
@@ -142,9 +155,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01119">1119</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The position of the <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a> (padded). </p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l00496">init_player()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, and <a class="el" href="render_8c_source.html#l01862">write_point_light_shadows()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01174">1174</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -160,7 +175,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01120">1120</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The velocity of the <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a> (padded). </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01175">1175</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -176,7 +193,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01124">1124</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The inverse projection matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01179">1179</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
@@ -194,7 +213,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01126">1126</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The inverse view matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01181">1181</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
@@ -212,9 +233,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01121">1121</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The projection matrix. </p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l00941">get_view_planes()</a>, <a class="el" href="render_8c_source.html#l02277">render_to_cubemap_face()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, and <a class="el" href="render_8c_source.html#l01862">write_point_light_shadows()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01176">1176</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l00942">get_view_planes()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -230,7 +253,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01125">1125</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The inverse projection matrix without TAA jittering. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01180">1180</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
@@ -248,7 +273,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01122">1122</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The projection matrix without TAA jittering. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01177">1177</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
@@ -266,9 +293,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01123">1123</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The view matrix. </p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l00941">get_view_planes()</a>, <a class="el" href="render_8c_source.html#l02277">render_to_cubemap_face()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, and <a class="el" href="render_8c_source.html#l01862">write_point_light_shadows()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01178">1178</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l00942">get_view_planes()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>

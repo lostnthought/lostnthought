@@ -134,10 +134,10 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:aa08d6510a6d57c9e702c4dd8d38d8916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of B-A.  <br /></td></tr>
 <tr class="memitem:aa4a92f0ef430c0dd9b80a7eaaa948082" id="r_aa4a92f0ef430c0dd9b80a7eaaa948082"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa4a92f0ef430c0dd9b80a7eaaa948082">collision</a></td></tr>
 <tr id="pub-attribs-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Components</div></td></tr>
-<tr><td colspan="2" class="ititle"><div class="groupText"><p>The <a class="el" href="struct_physics_component.html">PhysicsComponent</a>s and their respective <a class="el" href="struct_mesh_node.html" title="Mesh Nodes.">MeshNode</a>s.</p>
-<dl class="section note"><dt>Note</dt><dd>-1 is empty for <a class="el" href="struct_mesh_node.html" title="Mesh Nodes.">MeshNode</a>s </dd>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>The <a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a>s and their respective <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.</p>
+<dl class="section note"><dt>Note</dt><dd>-1 is empty for <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s </dd>
 <dd>
-NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComponent</a>s </dd></dl>
+NULL is empty for <a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a>s </dd></dl>
 </div></td></tr>
 <tr class="memitem:a685a7d565cd12dc36a9f2b3735b53226" id="r_a685a7d565cd12dc36a9f2b3735b53226"><td class="memItemLeft"><a class="el" href="struct_physics_component.html">PhysicsComponent</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a685a7d565cd12dc36a9f2b3735b53226">pcA</a></td></tr>
 <tr class="memitem:af4c1ff255c17ed5d35fdbf1249594192" id="r_af4c1ff255c17ed5d35fdbf1249594192"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af4c1ff255c17ed5d35fdbf1249594192">mnA</a></td></tr>
@@ -159,9 +159,13 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Points that track collision data such as direction, penetration depth, and more to generate <a class="el" href="struct_manifold.html" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a>s and resolve impulses. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="physics_8c.html">physics/physics.c</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_manifold.html" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a> </dd>
+<dd>
+<a class="el" href="main_8c.html#addabccd33050c53a5c801708c296e326">MANIFOLDS</a> </dd>
+<dd>
+<a class="el" href="physics_8c.html">physics/physics.c</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00899">899</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00917">917</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="adb7806e9245a0f3f5e763d9c7d266868" name="adb7806e9245a0f3f5e763d9c7d266868"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb7806e9245a0f3f5e763d9c7d266868">&#9670;&#160;</a></span>a</h2>
@@ -177,9 +181,9 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
 
 <p>Furthest point of A into B. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00902">902</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00920">920</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="camera_8c_source.html#l00327">collision()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="camera_8c_source.html#l00327">collision()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -197,9 +201,9 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
 
 <p>Furthest point of B into A. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00903">903</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00921">921</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -215,7 +219,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00941">941</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00959">959</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, and <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>.</p>
 
@@ -233,7 +237,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00909">909</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00927">927</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="_g_j_k_8c_source.html#l00837">GJK()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>.</p>
 
@@ -253,9 +257,9 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
 
 <p>Length of B-A. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00908">908</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00926">926</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="camera_8c_source.html#l00327">collision()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00837">GJK()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="camera_8c_source.html#l00327">collision()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00837">GJK()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -271,7 +275,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00931">931</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00949">949</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>.</p>
 
@@ -289,7 +293,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00932">932</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00950">950</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>.</p>
 
@@ -307,7 +311,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00929">929</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00947">947</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>.</p>
 
@@ -325,7 +329,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00904">904</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00922">922</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +345,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00905">905</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00923">923</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +361,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00919">919</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00937">937</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
@@ -375,9 +379,9 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00921">921</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00939">939</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -395,9 +399,9 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
 
 <p>The collision normal from B into A. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00906">906</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00924">924</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -413,7 +417,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00940">940</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00958">958</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00837">GJK()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, and <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>.</p>
 
@@ -431,7 +435,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00918">918</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00936">936</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
@@ -449,7 +453,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00920">920</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00938">938</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l00047">generate_capsule_hull_manifold()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
@@ -467,7 +471,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00930">930</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00948">948</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>.</p>
 
@@ -487,7 +491,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
 
 <p>The tangent used for frictional impulse resolution. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00907">907</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00925">925</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, and <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>.</p>
 
@@ -505,7 +509,7 @@ NULL is empty for <a class="el" href="struct_physics_component.html">PhysicsComp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00942">942</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00960">960</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00087">clip_manifold()</a>, <a class="el" href="_g_j_k_8c_source.html#l00837">GJK()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, and <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>.</p>
 

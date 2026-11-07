@@ -4,7 +4,6 @@ var searchData=
   ['edgepairentry_1',['EdgePairEntry',['../struct_edge_pair_entry.html',1,'']]],
   ['edgepairkey_2',['EdgePairKey',['../struct_edge_pair_key.html',1,'']]],
   ['editorsettings_3',['EditorSettings',['../struct_editor_settings.html',1,'']]],
-  ['emissivetriangle_4',['EmissiveTriangle',['../struct_emissive_triangle.html',1,'']]],
-  ['entity_5',['Entity',['../struct_entity.html',1,'']]],
-  ['epaworkspace_6',['EPAWorkspace',['../struct_e_p_a_workspace.html',1,'']]]
+  ['entity_4',['Entity',['../struct_entity.html',1,'']]],
+  ['epaworkspace_5',['EPAWorkspace',['../struct_e_p_a_workspace.html',1,'']]]
 ];

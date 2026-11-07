@@ -2,7 +2,6 @@ var render_8c =
 [
     [ "UIUIDPair", "struct_u_i_u_i_d_pair.html", "struct_u_i_u_i_d_pair" ],
     [ "MAX_MESHES_PER_PT_LIGHT_SHADOW", "render_8c.html#aaa3b7aa58040027a5fb0ab42b5a7c31c", null ],
-    [ "UIUIDPair", "render_8c.html#aff30e066948743b1e5c5997a3afc865c", null ],
     [ "aabb_in_frustum", "render_8c.html#a3eb3ef710fab1c4b247c3da55851ef1b", null ],
     [ "aabb_to_vertices", "render_8c.html#ac0ba48c0ba031eef701f0ba7494ca19b", null ],
     [ "add_all_meshes_to_buffer", "render_8c.html#afb1127f4d5c403f8c65cbd58527d272c", null ],

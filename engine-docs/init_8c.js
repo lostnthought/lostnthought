@@ -23,7 +23,7 @@ var init_8c =
     [ "init_gl_renderbuffer", "init_8c.html#aa9694abe0c5a00a004e38767e70b5cf3", null ],
     [ "init_gl_texture", "init_8c.html#a982379ec42dc8b8db2a3c0b304e1911e", null ],
     [ "init_globals", "init_8c.html#a456bffd5c5014ad1543ebec3c7c5fade", null ],
-    [ "init_mesh_new", "init_8c.html#ad9d10f8d7158da1b6549613d3b700ae7", null ],
+    [ "init_mesh", "init_8c.html#adb1dbedb42e4b75e9ab92182d66ade7f", null ],
     [ "init_new_asset_instance", "init_8c.html#ac1c505fa384e621b6e9e445d9f2477f2", null ],
     [ "init_new_material", "init_8c.html#af4a7ad12c899a381d4f554bc99bbd531", null ],
     [ "init_player", "init_8c.html#a57635694b1ac97e079e5ca9f3771ef7d", null ],

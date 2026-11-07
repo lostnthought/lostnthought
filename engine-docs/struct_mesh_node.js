@@ -26,7 +26,6 @@ var struct_mesh_node =
     [ "physics_mode", "struct_mesh_node.html#ab5570300078f0d76460d4a6552d9410c", null ],
     [ "point_light_count", "struct_mesh_node.html#af18beb3c0a2778530ff39eda744c9d2f", null ],
     [ "point_light_offset", "struct_mesh_node.html#a7e8e90face77f58002cbc98aa13b2d40", null ],
-    [ "root", "struct_mesh_node.html#adbe261f00b71a5dd5367f4dcb2385367", null ],
     [ "rotation", "struct_mesh_node.html#a9356fcc4bb573bdf50bf02c536171975", null ],
     [ "scale", "struct_mesh_node.html#ad36a9046aceb021f7c81c44933d8290e", null ],
     [ "skin", "struct_mesh_node.html#a20eeedea7c8205b3bece46555e94869e", null ],

@@ -10,8 +10,7 @@ var searchData=
   ['clustergpu_7',['ClusterGPU',['../struct_cluster_g_p_u.html',1,'']]],
   ['collisiondata_8',['CollisionData',['../struct_collision_data.html',1,'']]],
   ['collisionpoints_9',['CollisionPoints',['../struct_collision_points.html',1,'']]],
-  ['combolabel_10',['ComboLabel',['../struct_combo_label.html',1,'']]],
-  ['computeshaderprogram_11',['ComputeShaderProgram',['../struct_compute_shader_program.html',1,'']]],
-  ['convexhull_12',['ConvexHull',['../struct_convex_hull.html',1,'']]],
-  ['convolvernode_13',['ConvolverNode',['../struct_convolver_node.html',1,'']]]
+  ['computeshaderprogram_10',['ComputeShaderProgram',['../struct_compute_shader_program.html',1,'']]],
+  ['convexhull_11',['ConvexHull',['../struct_convex_hull.html',1,'']]],
+  ['convolvernode_12',['ConvolverNode',['../struct_convolver_node.html',1,'']]]
 ];

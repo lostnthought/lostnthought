@@ -16,7 +16,7 @@ var searchData=
   ['json_5fget_5ftex_5findex_13',['json_get_tex_index',['../gltf_8c.html#ae73a6db5cd0df04bc85b84b580015d18',1,'gltf.c']]],
   ['json_5fget_5fvec3_14',['json_get_vec3',['../gltf_8c.html#aa9123e83ba837b37f8a713b8b45cba69',1,'gltf.c']]],
   ['json_5fget_5fvec4_15',['json_get_vec4',['../gltf_8c.html#a3db4c770717e46a75cd76d2fd325fe16',1,'gltf.c']]],
-  ['justify_16',['Justify',['../ui_8h.html#ad1e8474fe04a7a3dec8cd4edd1c07f61',1,'Justify:&#160;ui.h'],['../ui_8h.html#a4eca00fd674e0caddcc7ff6ed57831fc',1,'Justify:&#160;ui.h']]],
+  ['justify_16',['Justify',['../ui_8h.html#ad1e8474fe04a7a3dec8cd4edd1c07f61',1,'ui.h']]],
   ['justify_17',['justify',['../struct_text_box.html#a874e6bff45e9a9b6e58936eecba64d0b',1,'TextBox']]],
   ['justify_5fbottom_5fcenter_18',['JUSTIFY_BOTTOM_CENTER',['../ui_8h.html#ad1e8474fe04a7a3dec8cd4edd1c07f61acb68112da4f56ba66e19d5d91385814d',1,'ui.h']]],
   ['justify_5fbottom_5fleft_19',['JUSTIFY_BOTTOM_LEFT',['../ui_8h.html#ad1e8474fe04a7a3dec8cd4edd1c07f61a6187bda444723574339861d0c464a554',1,'ui.h']]],

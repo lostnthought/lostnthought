@@ -113,23 +113,43 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_sub_mes
 </div><!--header-->
 <div class="contents">
 
+<p>Sections of <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es that are divided based on <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> for batching and <a class="el" href="struct_draw_command.html">DrawCommand</a> ordering purposes.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:aa7121ac95c930e9b2cd0b5e19115e158" id="r_aa7121ac95c930e9b2cd0b5e19115e158"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#aa7121ac95c930e9b2cd0b5e19115e158">material</a></td></tr>
+<tr class="memdesc:aa7121ac95c930e9b2cd0b5e19115e158"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a>.  <br /></td></tr>
 <tr class="memitem:a01f199b701298bdf4cdc433fe6b740e8" id="r_a01f199b701298bdf4cdc433fe6b740e8"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a01f199b701298bdf4cdc433fe6b740e8">first_vertex</a></td></tr>
+<tr class="memdesc:a01f199b701298bdf4cdc433fe6b740e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first <a class="el" href="struct_point.html">Point</a> in <a class="el" href="struct_mesh.html#aeecd06af64f0f9e8bde9a323303290ae" title="The Points.">Mesh.vertices</a> that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to.  <br /></td></tr>
 <tr class="memitem:adb1c1b495e9c207a8cc4bf45515e7352" id="r_adb1c1b495e9c207a8cc4bf45515e7352"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#adb1c1b495e9c207a8cc4bf45515e7352">vertex_count</a></td></tr>
+<tr class="memdesc:adb1c1b495e9c207a8cc4bf45515e7352"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of <a class="el" href="struct_point.html">Point</a>s that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to.  <br /></td></tr>
 <tr class="memitem:a79a7025e910cd59072dc696f28360449" id="r_a79a7025e910cd59072dc696f28360449"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a79a7025e910cd59072dc696f28360449">first_index</a></td></tr>
+<tr class="memdesc:a79a7025e910cd59072dc696f28360449"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first index that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to (<a class="el" href="struct_mesh.html#aed0c3f96e81f11095ecef1e744fd1232" title="The MeshFaces.">Mesh.tris</a> count * 3).  <br /></td></tr>
 <tr class="memitem:a4e69ed1b4027d8f3d32796b82ff6efb4" id="r_a4e69ed1b4027d8f3d32796b82ff6efb4"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a4e69ed1b4027d8f3d32796b82ff6efb4">index_count</a></td></tr>
+<tr class="memdesc:a4e69ed1b4027d8f3d32796b82ff6efb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of indices that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to: <a class="el" href="struct_mesh.html#aed0c3f96e81f11095ecef1e744fd1232" title="The MeshFaces.">Mesh.tris</a> -&gt; <a class="el" href="struct_mesh_face.html#a7929b9c1655784d7d99a0a9cd8723777">MeshFace.indices</a>.  <br /></td></tr>
 <tr class="memitem:a158dcec8060ac9528ec1d754b28a7f6a" id="r_a158dcec8060ac9528ec1d754b28a7f6a"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a158dcec8060ac9528ec1d754b28a7f6a">lm_offset</a></td></tr>
+<tr class="memdesc:a158dcec8060ac9528ec1d754b28a7f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting index in <a class="el" href="main_8c.html#a1dbe43df9bcb92d9dc00349b5106c71b">LIGHTMAP_DATA</a> that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> points to.  <br /></td></tr>
 <tr class="memitem:aecb492e14d71438fdfe052dceb5e29b6" id="r_aecb492e14d71438fdfe052dceb5e29b6"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#aecb492e14d71438fdfe052dceb5e29b6">draw_offset</a></td></tr>
+<tr class="memdesc:aecb492e14d71438fdfe052dceb5e29b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently the same index as <a class="el" href="#a158dcec8060ac9528ec1d754b28a7f6a" title="The starting index in LIGHTMAP_DATA that this SubMesh points to.">SubMesh.lm_offset</a>.  <br /></td></tr>
 <tr class="memitem:a577ddafcb69a3e459c2a0c107ad0d8f9" id="r_a577ddafcb69a3e459c2a0c107ad0d8f9"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a577ddafcb69a3e459c2a0c107ad0d8f9">command_id</a></td></tr>
+<tr class="memdesc:a577ddafcb69a3e459c2a0c107ad0d8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_draw_command.html">DrawCommand</a> this is assigned to.  <br /></td></tr>
 <tr class="memitem:a0a49e5c65e3f628e8b138d93d8d576d4" id="r_a0a49e5c65e3f628e8b138d93d8d576d4"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a0a49e5c65e3f628e8b138d93d8d576d4">mesh_data_id</a></td></tr>
+<tr class="memdesc:a0a49e5c65e3f628e8b138d93d8d576d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_mesh_node_data_g_p_u.html" title="MeshNode structure padded for GPU (MESH_NODE_SSBO).">MeshNodeDataGPU</a> this is assigned to.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01943">1943</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>Sections of <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es that are divided based on <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> for batching and <a class="el" href="struct_draw_command.html">DrawCommand</a> ordering purposes. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> </dd>
+<dd>
+<a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> </dd>
+<dd>
+<a class="el" href="gltf_8c.html#af209c3b2d1de215d8f337aa50afe1931">load_gltf()</a> </dd>
+<dd>
+<a class="el" href="render_8c.html#afb1127f4d5c403f8c65cbd58527d272c">add_all_meshes_to_buffer()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02354">2354</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a577ddafcb69a3e459c2a0c107ad0d8f9" name="a577ddafcb69a3e459c2a0c107ad0d8f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a577ddafcb69a3e459c2a0c107ad0d8f9">&#9670;&#160;</a></span>command_id</h2>
@@ -143,7 +163,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01953">1953</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_draw_command.html">DrawCommand</a> this is assigned to. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02364">2364</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -159,9 +181,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01952">1952</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Currently the same index as <a class="el" href="#a158dcec8060ac9528ec1d754b28a7f6a" title="The starting index in LIGHTMAP_DATA that this SubMesh points to.">SubMesh.lm_offset</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00257">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00155">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="render_8c_source.html#l01032">populate_draw_commands()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02363">2363</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
 </div>
 </div>
@@ -177,9 +201,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01949">1949</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The first index that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to (<a class="el" href="struct_mesh.html#aed0c3f96e81f11095ecef1e744fd1232" title="The MeshFaces.">Mesh.tris</a> count * 3). </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00257">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00155">fill_vertex_buffer_mesh()</a>, and <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02360">2360</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, and <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>.</p>
 
 </div>
 </div>
@@ -195,7 +221,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01947">1947</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The first <a class="el" href="struct_point.html">Point</a> in <a class="el" href="struct_mesh.html#aeecd06af64f0f9e8bde9a323303290ae" title="The Points.">Mesh.vertices</a> that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02358">2358</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>.</p>
 
@@ -213,9 +241,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01950">1950</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The amount of indices that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to: <a class="el" href="struct_mesh.html#aed0c3f96e81f11095ecef1e744fd1232" title="The MeshFaces.">Mesh.tris</a> -&gt; <a class="el" href="struct_mesh_face.html#a7929b9c1655784d7d99a0a9cd8723777">MeshFace.indices</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00257">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00155">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="render_8c_source.html#l01032">populate_draw_commands()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02361">2361</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
 </div>
 </div>
@@ -231,9 +261,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01951">1951</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The starting index in <a class="el" href="main_8c.html#a1dbe43df9bcb92d9dc00349b5106c71b">LIGHTMAP_DATA</a> that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> points to. </p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00257">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00155">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="render_8c_source.html#l01032">populate_draw_commands()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02362">2362</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
 </div>
 </div>
@@ -249,9 +281,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01946">1946</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="render_8c_source.html#l01032">populate_draw_commands()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02357">2357</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
 </div>
 </div>
@@ -267,7 +301,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01954">1954</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_mesh_node_data_g_p_u.html" title="MeshNode structure padded for GPU (MESH_NODE_SSBO).">MeshNodeDataGPU</a> this is assigned to. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02365">2365</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +319,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01948">1948</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The amount of <a class="el" href="struct_point.html">Point</a>s that this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> refers to. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02359">2359</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>.</p>
 

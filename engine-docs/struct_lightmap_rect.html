@@ -113,20 +113,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_lightma
 </div><!--header-->
 <div class="contents">
 
+<p>The rects that are slotted into thet <a class="el" href="struct_lightmap_atlas.html" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a> during UV generation for UV lightmaps.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a89a618420cf43fbe313c54a6e6ea9dba" id="r_a89a618420cf43fbe313c54a6e6ea9dba"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a89a618420cf43fbe313c54a6e6ea9dba">u</a></td></tr>
+<tr class="memdesc:a89a618420cf43fbe313c54a6e6ea9dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The width of the rect in UV space.  <br /></td></tr>
 <tr class="memitem:a08d6a9c55d65e04462aa3c8c5d6bc466" id="r_a08d6a9c55d65e04462aa3c8c5d6bc466"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a08d6a9c55d65e04462aa3c8c5d6bc466">v</a></td></tr>
+<tr class="memdesc:a08d6a9c55d65e04462aa3c8c5d6bc466"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the rect in UV space.  <br /></td></tr>
 <tr class="memitem:a6f9497da71ddff701ba90d536220dd46" id="r_a6f9497da71ddff701ba90d536220dd46"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6f9497da71ddff701ba90d536220dd46">w</a></td></tr>
+<tr class="memdesc:a6f9497da71ddff701ba90d536220dd46"><td class="mdescLeft">&#160;</td><td class="mdescRight">The width of the rect in pixels.  <br /></td></tr>
 <tr class="memitem:a8826738be93fc450fbb1dd2d5e30ee99" id="r_a8826738be93fc450fbb1dd2d5e30ee99"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8826738be93fc450fbb1dd2d5e30ee99">h</a></td></tr>
+<tr class="memdesc:a8826738be93fc450fbb1dd2d5e30ee99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the rect in piexles.  <br /></td></tr>
 <tr class="memitem:ae661c1835253eb3d0176945b5c0a8bab" id="r_ae661c1835253eb3d0176945b5c0a8bab"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae661c1835253eb3d0176945b5c0a8bab">padding</a></td></tr>
+<tr class="memdesc:ae661c1835253eb3d0176945b5c0a8bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much padding to avoid light leaking.  <br /></td></tr>
 <tr class="memitem:a90478de40d1c9a3246ad04272e7bb7a7" id="r_a90478de40d1c9a3246ad04272e7bb7a7"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a90478de40d1c9a3246ad04272e7bb7a7">success</a></td></tr>
+<tr class="memdesc:a90478de40d1c9a3246ad04272e7bb7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the rect was allocated.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01633">1633</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The rects that are slotted into thet <a class="el" href="struct_lightmap_atlas.html" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a> during UV generation for UV lightmaps. </p>
+<dl class="section see"><dt>See also</dt><dd>SceneData.LightmapData </dd>
+<dd>
+<a class="el" href="lightmap_8c.html#a0841dc3897e70ce20be53fd4fa1b86f6">init_lightmap_atlas()</a> </dd>
+<dd>
+<a class="el" href="lightmap_8c.html#ab2bc7157510bd93930cfcda3bff94118">allocate_lightmap_rect()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01884">1884</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a8826738be93fc450fbb1dd2d5e30ee99" name="a8826738be93fc450fbb1dd2d5e30ee99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8826738be93fc450fbb1dd2d5e30ee99">&#9670;&#160;</a></span>h</h2>
@@ -140,7 +155,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01635">1635</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The height of the rect in piexles. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01889">1889</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>.</p>
 
@@ -158,7 +175,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01636">1636</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>How much padding to avoid light leaking. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01890">1890</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>.</p>
 
@@ -176,7 +195,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01637">1637</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If the rect was allocated. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01891">1891</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>.</p>
 
@@ -194,7 +215,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01635">1635</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The width of the rect in UV space. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01886">1886</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>.</p>
 
@@ -212,7 +235,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01635">1635</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The height of the rect in UV space. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01887">1887</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>.</p>
 
@@ -230,7 +255,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01635">1635</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The width of the rect in pixels. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01888">1888</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>.</p>
 

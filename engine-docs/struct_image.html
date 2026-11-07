@@ -113,28 +113,47 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_image.h
 </div><!--header-->
 <div class="contents">
 
+<p>Where <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> textures are saved upon loading from file.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:aeb4e10f7880374fb2714ce373bd19521" id="r_aeb4e10f7880374fb2714ce373bd19521"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#aeb4e10f7880374fb2714ce373bd19521">path</a> [256]</td></tr>
+<tr class="memdesc:aeb4e10f7880374fb2714ce373bd19521"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path to the <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a>.  <br /></td></tr>
 <tr class="memitem:af2d868c865124f42d89509b0a9628d9c" id="r_af2d868c865124f42d89509b0a9628d9c"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#af2d868c865124f42d89509b0a9628d9c">mime_type</a> [256]</td></tr>
+<tr class="memdesc:af2d868c865124f42d89509b0a9628d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unused, refer to GLTF spec.  <br /></td></tr>
 <tr class="memitem:ab3e72e402524ed16102252be078d50cb" id="r_ab3e72e402524ed16102252be078d50cb"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#ab3e72e402524ed16102252be078d50cb">name</a> [256]</td></tr>
+<tr class="memdesc:ab3e72e402524ed16102252be078d50cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a> file.  <br /></td></tr>
 <tr class="memitem:a73572ed4b7f15054c5a598c6aabffd86" id="r_a73572ed4b7f15054c5a598c6aabffd86"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a73572ed4b7f15054c5a598c6aabffd86">channels</a></td></tr>
+<tr class="memdesc:a73572ed4b7f15054c5a598c6aabffd86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of channels for an <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a> (RGBA).  <br /></td></tr>
 <tr class="memitem:ab31420f16a715901da9774c278d578bd" id="r_ab31420f16a715901da9774c278d578bd"><td class="memItemLeft">unsigned char *&#160;</td><td class="memItemRight"><a class="el" href="#ab31420f16a715901da9774c278d578bd">buf</a></td></tr>
+<tr class="memdesc:ab31420f16a715901da9774c278d578bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If available, the raw bytes of the <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a>.  <br /></td></tr>
 <tr class="memitem:ac18854a0bd574e7fc97d4a1e89014cae" id="r_ac18854a0bd574e7fc97d4a1e89014cae"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#ac18854a0bd574e7fc97d4a1e89014cae">i</a></td></tr>
+<tr class="memdesc:ac18854a0bd574e7fc97d4a1e89014cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle for the texture.  <br /></td></tr>
 <tr class="memitem:abb63eac822f20de61f75697bf49ba561" id="r_abb63eac822f20de61f75697bf49ba561"><td class="memItemLeft">GLuint64&#160;</td><td class="memItemRight"><a class="el" href="#abb63eac822f20de61f75697bf49ba561">handle</a></td></tr>
+<tr class="memdesc:abb63eac822f20de61f75697bf49ba561"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle for the bindless texture.  <br /></td></tr>
 <tr class="memitem:ab8d12f635013c04159cd4d3d972bac88" id="r_ab8d12f635013c04159cd4d3d972bac88"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab8d12f635013c04159cd4d3d972bac88">width</a></td></tr>
 <tr class="memitem:a51df43db420c9c0b57536cb2dd36de5c" id="r_a51df43db420c9c0b57536cb2dd36de5c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a51df43db420c9c0b57536cb2dd36de5c">height</a></td></tr>
 <tr class="memitem:a631c0870c3924e6b867a59bfc811ce6e" id="r_a631c0870c3924e6b867a59bfc811ce6e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a631c0870c3924e6b867a59bfc811ce6e">sRGB</a></td></tr>
+<tr class="memdesc:a631c0870c3924e6b867a59bfc811ce6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">To load in this <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a> as sRGB.  <br /></td></tr>
 <tr class="memitem:a24a0c501e5768b7699783d5044267d30" id="r_a24a0c501e5768b7699783d5044267d30"><td class="memItemLeft">GLint&#160;</td><td class="memItemRight"><a class="el" href="#a24a0c501e5768b7699783d5044267d30">min_filter</a></td></tr>
+<tr class="memdesc:a24a0c501e5768b7699783d5044267d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to OpenGL texture loading.  <br /></td></tr>
 <tr class="memitem:aa698e3669bbe572326607e5b7abe2091" id="r_aa698e3669bbe572326607e5b7abe2091"><td class="memItemLeft">GLint&#160;</td><td class="memItemRight"><a class="el" href="#aa698e3669bbe572326607e5b7abe2091">mag_filter</a></td></tr>
+<tr class="memdesc:aa698e3669bbe572326607e5b7abe2091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to OpenGL texture loading.  <br /></td></tr>
 <tr class="memitem:a8a36286826186546fa17c5c75acd062a" id="r_a8a36286826186546fa17c5c75acd062a"><td class="memItemLeft">GLint&#160;</td><td class="memItemRight"><a class="el" href="#a8a36286826186546fa17c5c75acd062a">wrap_s</a></td></tr>
+<tr class="memdesc:a8a36286826186546fa17c5c75acd062a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to OpenGL texture loading.  <br /></td></tr>
 <tr class="memitem:a65cc270c8c72ff4e39be71651733e135" id="r_a65cc270c8c72ff4e39be71651733e135"><td class="memItemLeft">GLint&#160;</td><td class="memItemRight"><a class="el" href="#a65cc270c8c72ff4e39be71651733e135">wrap_t</a></td></tr>
+<tr class="memdesc:a65cc270c8c72ff4e39be71651733e135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to OpenGL texture loading.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02005">2005</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>Where <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> textures are saved upon loading from file. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> </dd>
+<dd>
+<a class="el" href="struct_globals.html">Globals</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02431">2431</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ab31420f16a715901da9774c278d578bd" name="ab31420f16a715901da9774c278d578bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab31420f16a715901da9774c278d578bd">&#9670;&#160;</a></span>buf</h2>
@@ -148,9 +167,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02012">2012</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If available, the raw bytes of the <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00805">init_default_textures()</a>, <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, and <a class="el" href="load_8c_source.html#l01277">scene_load()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02438">2438</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, and <a class="el" href="load_8c_source.html#l01272">scene_load()</a>.</p>
 
 </div>
 </div>
@@ -166,9 +187,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02011">2011</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The amount of channels for an <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a> (RGBA). </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00805">init_default_textures()</a>, <a class="el" href="load_8c_source.html#l00275">open_image()</a>, and <a class="el" href="load_8c_source.html#l01277">scene_load()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02437">2437</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, <a class="el" href="load_8c_source.html#l00275">open_image()</a>, and <a class="el" href="load_8c_source.html#l01272">scene_load()</a>.</p>
 
 </div>
 </div>
@@ -184,9 +207,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02014">2014</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The handle for the bindless texture. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00805">init_default_textures()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="render_8c_source.html#l00853">upload_material_data()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02440">2440</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
 
 </div>
 </div>
@@ -202,9 +227,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02016">2016</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02442">2442</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00805">init_default_textures()</a>, and <a class="el" href="load_8c_source.html#l00275">open_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, and <a class="el" href="load_8c_source.html#l00275">open_image()</a>.</p>
 
 </div>
 </div>
@@ -220,9 +245,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02013">2013</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The handle for the texture. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="render_8c_source.html#l01661">bind_material()</a>, <a class="el" href="init_8c_source.html#l00805">init_default_textures()</a>, <a class="el" href="render_8c_source.html#l03056">render()</a>, and <a class="el" href="load_8c_source.html#l01277">scene_load()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02439">2439</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="render_8c_source.html#l01662">bind_material()</a>, <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="load_8c_source.html#l01272">scene_load()</a>.</p>
 
 </div>
 </div>
@@ -238,9 +265,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02020">2020</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Refer to OpenGL texture loading. </p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02446">2446</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +285,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02009">2009</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Unused, refer to GLTF spec. </p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02435">2435</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -274,9 +305,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02019">2019</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Refer to OpenGL texture loading. </p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02445">2445</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -292,9 +325,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02010">2010</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The name of the <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a> file. </p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02436">2436</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -310,9 +345,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02008">2008</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The path to the <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a>. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00805">init_default_textures()</a>, <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l00275">open_image()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02434">2434</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l00275">open_image()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -328,9 +365,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02017">2017</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>To load in this <a class="el" href="struct_image.html" title="Where Material textures are saved upon loading from file.">Image</a> as sRGB. </p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02443">2443</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -346,9 +385,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02015">2015</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02441">2441</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00805">init_default_textures()</a>, and <a class="el" href="load_8c_source.html#l00275">open_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, and <a class="el" href="load_8c_source.html#l00275">open_image()</a>.</p>
 
 </div>
 </div>
@@ -364,9 +403,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02021">2021</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Refer to OpenGL texture loading. </p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02447">2447</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -382,9 +423,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02022">2022</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Refer to OpenGL texture loading. </p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01277">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00503">scene_save()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02448">2448</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>

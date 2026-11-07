@@ -125,7 +125,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a30c9835c2b3346c1c514c72aa074c4c6" id="r_a30c9835c2b3346c1c514c72aa074c4c6"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a30c9835c2b3346c1c514c72aa074c4c6">id</a></td></tr>
 <tr class="memdesc:a30c9835c2b3346c1c514c72aa074c4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID into <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1">Globals.meshes</a>.  <br /></td></tr>
 <tr class="memitem:a33107abef56ba33a9c5ed41120ccba3c" id="r_a33107abef56ba33a9c5ed41120ccba3c"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a33107abef56ba33a9c5ed41120ccba3c">asset_id</a></td></tr>
-<tr class="memdesc:a33107abef56ba33a9c5ed41120ccba3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_asset.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">Asset</a> ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>.  <br /></td></tr>
+<tr class="memdesc:a33107abef56ba33a9c5ed41120ccba3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>.  <br /></td></tr>
 <tr class="memitem:aa3e444fee0f872df184f7ce3c3f40f7e" id="r_aa3e444fee0f872df184f7ce3c3f40f7e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa3e444fee0f872df184f7ce3c3f40f7e">bvh_prim</a></td></tr>
 <tr class="memdesc:aa3e444fee0f872df184f7ce3c3f40f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> has a BVH computed.  <br /></td></tr>
 <tr class="memitem:a457a2f94fda2033667fe1e177ceb7d44" id="r_a457a2f94fda2033667fe1e177ceb7d44"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a457a2f94fda2033667fe1e177ceb7d44">static_mesh</a></td></tr>
@@ -151,7 +151,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:aed0c3f96e81f11095ecef1e744fd1232"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_mesh_face.html">MeshFace</a>s.  <br /></td></tr>
 <tr id="pub-attribs-1" class="groupHeader"><td colspan="2"><div class="groupHeader">BVH</div></td></tr>
 <tr><td colspan="2" class="ititle"><div class="groupText"><p>BVH fields filled if this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> is static.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>We may be able to remove tri_aabbs.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo</a></b></dt><dd>We may be able to remove tri_aabbs.</dd></dl>
 </div></td></tr>
 <tr class="memitem:a53c2ab5a4050e5241c1e77b6ace0bea2" id="r_a53c2ab5a4050e5241c1e77b6ace0bea2"><td class="memItemLeft">size_t *&#160;</td><td class="memItemRight"><a class="el" href="#a53c2ab5a4050e5241c1e77b6ace0bea2">bvh_indices</a></td></tr>
 <tr class="memdesc:a53c2ab5a4050e5241c1e77b6ace0bea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indices for the BVH, sorted as the BVH is generated.  <br /></td></tr>
@@ -168,7 +168,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="init_8c.html#adb1dbedb42e4b75e9ab92182d66ade7f">init_mesh()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02386">2386</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02398">2398</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a54a8c2a2e354651e84a8c83ea96e48a4" name="a54a8c2a2e354651e84a8c83ea96e48a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54a8c2a2e354651e84a8c83ea96e48a4">&#9670;&#160;</a></span>aabb</h2>
@@ -184,9 +184,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_a_a_b_b.html">AABB</a> of the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02394">2394</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02406">2406</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="gltf_8c_source.html#l01186">determine_aabb_of_children()</a>, <a class="el" href="render_8c_source.html#l01008">determine_mesh_visibility()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="gltf_8c_source.html#l01186">determine_aabb_of_children()</a>, <a class="el" href="render_8c_source.html#l01008">determine_mesh_visibility()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
 </div>
 </div>
@@ -202,11 +202,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <a class="el" href="struct_asset.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">Asset</a> ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>. </p>
+<p>The <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02391">2391</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02403">2403</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -224,9 +224,9 @@ Data Fields</h2></td></tr>
 
 <p>Indices for the BVH, sorted as the BVH is generated. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02418">2418</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02430">2430</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>.</p>
 
 </div>
 </div>
@@ -244,9 +244,9 @@ Data Fields</h2></td></tr>
 
 <p>This <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> has a BVH computed. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02392">2392</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02404">2404</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ Data Fields</h2></td></tr>
 
 <p>The count pushed into <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02397">2397</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02409">2409</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>.</p>
 
@@ -284,9 +284,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_convex_hull.html" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>s generated if this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> is dynamic. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02405">2405</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02417">2417</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="init_8c_source.html#l00486">init_player()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>.</p>
 
 </div>
 </div>
@@ -304,9 +304,9 @@ Data Fields</h2></td></tr>
 
 <p>The ID into <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1">Globals.meshes</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02390">2390</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02402">2402</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -324,9 +324,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> name assigned on load. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02389">2389</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02401">2401</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +344,9 @@ Data Fields</h2></td></tr>
 
 <p><a class="el" href="struct_b_v_h_node.html" title="Nodes for the acceleration structures of BVHs.">BVHNode</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02419">2419</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02431">2431</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>.</p>
 
 </div>
 </div>
@@ -364,7 +364,7 @@ Data Fields</h2></td></tr>
 
 <p>The offset into <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02396">2396</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02408">2408</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>.</p>
 
@@ -384,9 +384,9 @@ Data Fields</h2></td></tr>
 
 <p>This <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> is static and must create a BVH or if not it must perform incremental_hull. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02393">2393</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02405">2405</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="gltf_8c_source.html#l01172">apply_static_mesh_to_children()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00662">GPU_upload_scene_data()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="load_8c_source.html#l01106">read_mesh_node()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="gltf_8c_source.html#l01172">apply_static_mesh_to_children()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="load_8c_source.html#l01101">read_mesh_node()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
 
 </div>
 </div>
@@ -404,9 +404,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>es split via <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02404">2404</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02416">2416</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
 </div>
 </div>
@@ -424,9 +424,9 @@ Data Fields</h2></td></tr>
 
 <p><a class="el" href="struct_a_a_b_b.html">AABB</a>s for each triangle inside of this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02420">2420</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02432">2432</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>.</p>
 
 </div>
 </div>
@@ -444,9 +444,9 @@ Data Fields</h2></td></tr>
 
 <p>Adjacent triangles allocated per <a class="el" href="struct_mesh_face.html">MeshFace</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02410">2410</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02422">2422</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -464,9 +464,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_mesh_face.html">MeshFace</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02407">2407</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02419">2419</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="load_8c_source.html#l01106">read_mesh_node()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="load_8c_source.html#l01101">read_mesh_node()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
 
 </div>
 </div>
@@ -484,9 +484,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_point.html">Point</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02406">2406</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02418">2418</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00590">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
 
 </div>
 </div>

@@ -222,6 +222,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CPU side structure for <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s.  <a href="struct_light.html#details">More...</a><br /></td></tr>
 <tr class="memitem:LightGPU" id="r_LightGPU"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_light_g_p_u.html">LightGPU</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GPU side structure for <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s padded for GPU.  <a href="struct_light_g_p_u.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ComboLabel" id="r_ComboLabel"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_combo_label.html">ComboLabel</a></td></tr>
 <tr class="memitem:Material" id="r_Material"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_material.html">Material</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Materials parsed in from scene files that determine rendering pipeline setup, uploads, and ordering.  <a href="struct_material.html#details">More...</a><br /></td></tr>
 <tr class="memitem:MaterialGPU" id="r_MaterialGPU"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_material_g_p_u.html">MaterialGPU</a></td></tr>
@@ -334,9 +335,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:GLTFDoc" id="r_GLTFDoc"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_g_l_t_f_doc.html">GLTFDoc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The entire GLTF after it is parsed via <a class="el" href="gltf_8c.html#af209c3b2d1de215d8f337aa50afe1931">load_gltf()</a>.  <a href="struct_g_l_t_f_doc.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AssetInstance" id="r_AssetInstance"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_asset_instance.html">AssetInstance</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A instance of an <a class="el" href="struct_asset.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">Asset</a> that retains its node structure but can be duplicated into multiple instances that are independent.  <a href="struct_asset_instance.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A instance of an <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> that retains its node structure but can be duplicated into multiple instances that are independent.  <a href="struct_asset_instance.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Asset" id="r_Asset"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_asset.html">Asset</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A instance of an <a class="el" href="struct_asset.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">Asset</a> that retains its node structure but can be duplicated into multiple instances that are independent.  <a href="struct_asset.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> after it is loaded in from file into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>.  <a href="struct_asset.html#details">More...</a><br /></td></tr>
 <tr class="memitem:InstanceData" id="r_InstanceData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_instance_data.html">InstanceData</a></td></tr>
 <tr class="memitem:DrawCommand" id="r_DrawCommand"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_draw_command.html">DrawCommand</a></td></tr>
 <tr class="memitem:EPAWorkspace" id="r_EPAWorkspace"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_e_p_a_workspace.html">EPAWorkspace</a></td></tr>
@@ -472,6 +473,8 @@ Macros</h2></td></tr>
 <tr class="memdesc:afa08373d2f8bf4977271b2c35f261574"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of Manifolds in <a class="el" href="main_8c.html#addabccd33050c53a5c801708c296e326">MANIFOLDS</a>.  <br /></td></tr>
 <tr class="memitem:a4a65ac5a8ff080cd38dae03e5f9d438d" id="r_a4a65ac5a8ff080cd38dae03e5f9d438d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4a65ac5a8ff080cd38dae03e5f9d438d">MAX_RPROBES</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memdesc:a4a65ac5a8ff080cd38dae03e5f9d438d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of <a class="el" href="struct_r_probe.html" title="The structure for ReflectionProbes padded for the GPU.">RProbe</a>s to send to the GPU at once.  <br /></td></tr>
+<tr class="memitem:a3efe763bce012c49de8766945ad60965" id="r_a3efe763bce012c49de8766945ad60965"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3efe763bce012c49de8766945ad60965">MAX_TEX_LABELS</a>&#160;&#160;&#160;600</td></tr>
+<tr class="memitem:a870907eff34384accd3afda3e4ecd1e0" id="r_a870907eff34384accd3afda3e4ecd1e0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a870907eff34384accd3afda3e4ecd1e0">LABEL_LEN</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memitem:afd7096c51c85adec817b8f4bff06fbd6" id="r_afd7096c51c85adec817b8f4bff06fbd6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afd7096c51c85adec817b8f4bff06fbd6">MAX_KEYFRAMES</a>&#160;&#160;&#160;64</td></tr>
 <tr class="memdesc:afd7096c51c85adec817b8f4bff06fbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s in an <a class="el" href="struct_animation_track.html" title="Tagged union for the value stored in a keyframe.">AnimationTrack</a>.  <br /></td></tr>
 <tr class="memitem:a4cf6d8181ed3515e00ce8f2c65b05a4f" id="r_a4cf6d8181ed3515e00ce8f2c65b05a4f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4cf6d8181ed3515e00ce8f2c65b05a4f">MAX_TRACKS</a>&#160;&#160;&#160;64</td></tr>
@@ -864,7 +867,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00049">49</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00902">generate_synthetic_IR_tail()</a>, <a class="el" href="audio_8c_source.html#l01525">init_band_kernels()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>, <a class="el" href="audio_8h.html#ac99f1bde288c2a05ff22ab0edb1b0adb">populate_audio_probes()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00902">generate_synthetic_IR_tail()</a>, <a class="el" href="audio_8c_source.html#l01525">init_band_kernels()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>, <a class="el" href="audio_8h.html#ac99f1bde288c2a05ff22ab0edb1b0adb">populate_audio_probes()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
 
 </div>
 </div>
@@ -904,7 +907,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00104">104</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
 </div>
 </div>
@@ -922,7 +925,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00122">122</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>.</p>
 
 </div>
 </div>
@@ -940,7 +943,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00124">124</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>.</p>
 
 </div>
 </div>
@@ -960,7 +963,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00081">81</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -1086,7 +1089,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00126">126</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="init_8c_source.html#l01191">precompute_fbm_texture()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="init_8c_source.html#l01190">precompute_fbm_texture()</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1129,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00107">107</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1147,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00150">150</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00779">GPU_init_cluster_aabbs()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00778">GPU_init_cluster_aabbs()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
 </div>
 </div>
@@ -1162,7 +1165,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00151">151</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00779">GPU_init_cluster_aabbs()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00778">GPU_init_cluster_aabbs()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1183,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00152">152</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00779">GPU_init_cluster_aabbs()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00778">GPU_init_cluster_aabbs()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
 </div>
 </div>
@@ -1204,6 +1207,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a870907eff34384accd3afda3e4ecd1e0" name="a870907eff34384accd3afda3e4ecd1e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870907eff34384accd3afda3e4ecd1e0">&#9670;&#160;</a></span>LABEL_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LABEL_LEN&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01470">1470</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l02379">render_dropdown()</a>, <a class="el" href="editor_8c_source.html#l02355">render_dropdown_labels()</a>, <a class="el" href="editor_8c_source.html#l02318">render_file_directory_dropdown()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
+
+</div>
+</div>
 <a id="aaf28a5335072738692c0d78a6f120d35" name="aaf28a5335072738692c0d78a6f120d35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf28a5335072738692c0d78a6f120d35">&#9670;&#160;</a></span>LIGHTMAP_HEIGHT</h2>
 
@@ -1218,7 +1239,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00117">117</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1257,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00116">116</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
 
 </div>
 </div>
@@ -1308,7 +1329,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00163">163</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="lightmap_8c_source.html#l01324">reset_lighting_pvs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="lightmap_8c_source.html#l01324">reset_lighting_pvs()</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1348,7 @@ Variables</h2></td></tr>
 <p>The maximum amount of animation indices per <a class="el" href="struct_g_l_t_f_skin.html" title="The structure of an Skeletatal Animation loaded in from GLTFAnimation.">GLTFSkin</a>. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo</a></b></dt><dd>Remove this maximum or increase it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02637">2637</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02649">2649</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, and <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>.</p>
 
@@ -1367,7 +1388,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00033">33</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00452">init_emitter()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00452">init_emitter()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1424,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00164">164</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio_8c_source.html#l00603">reset_audio_pvs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio_8c_source.html#l00603">reset_audio_pvs()</a>.</p>
 
 </div>
 </div>
@@ -1423,7 +1444,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00077">77</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, and <a class="el" href="init_8c_source.html#l01995">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, and <a class="el" href="init_8c_source.html#l01994">init()</a>.</p>
 
 </div>
 </div>
@@ -1497,7 +1518,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02839">2839</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02854">2854</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1513,7 +1534,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02842">2842</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02857">2857</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1529,7 +1550,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02841">2841</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02856">2856</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1545,7 +1566,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02840">2840</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02855">2855</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1561,7 +1582,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02838">2838</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02853">2853</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1577,7 +1598,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02843">2843</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02858">2858</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1597,7 +1618,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00066">66</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
 </div>
 </div>
@@ -1657,7 +1678,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00065">65</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>.</p>
 
 </div>
 </div>
@@ -1675,7 +1696,7 @@ Variables</h2></td></tr>
 
 <p>Maximum <a class="el" href="struct_animation_keyframe.html" title="Tagged union for the value stored in a keyframe.">AnimationKeyframe</a>s in an <a class="el" href="struct_animation_track.html" title="Tagged union for the value stored in a keyframe.">AnimationTrack</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02131">2131</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02143">2143</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1695,7 +1716,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00068">68</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -1713,7 +1734,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00154">154</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
 </div>
 </div>
@@ -1733,7 +1754,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00072">72</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="init_8c_source.html#l00921">init_globals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="init_8c_source.html#l00920">init_globals()</a>.</p>
 
 </div>
 </div>
@@ -1753,7 +1774,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00967">967</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00485">create_new_manifold()</a>, <a class="el" href="physics_8c_source.html#l00468">find_manifold_for_pair()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00485">create_new_manifold()</a>, <a class="el" href="physics_8c_source.html#l00468">find_manifold_for_pair()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -1791,7 +1812,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00063">63</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="init_8c_source.html#l00921">init_globals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="init_8c_source.html#l00920">init_globals()</a>.</p>
 
 </div>
 </div>
@@ -1827,7 +1848,7 @@ Variables</h2></td></tr>
 
 <p>Maximum amount of direct <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> children to be stored in a <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02259">2259</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02271">2271</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -1887,7 +1908,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00132">132</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>.</p>
 
 </div>
 </div>
@@ -1903,9 +1924,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02892">2892</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02907">2907</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, and <a class="el" href="audio_8c_source.html#l00154">reconstruct_path_aportal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="audio_8c_source.html#l00154">reconstruct_path_aportal()</a>.</p>
 
 </div>
 </div>
@@ -1925,7 +1946,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00136">136</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>.</p>
 
 </div>
 </div>
@@ -2007,6 +2028,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a3efe763bce012c49de8766945ad60965" name="a3efe763bce012c49de8766945ad60965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3efe763bce012c49de8766945ad60965">&#9670;&#160;</a></span>MAX_TEX_LABELS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TEX_LABELS&#160;&#160;&#160;600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01469">1469</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+</div>
+</div>
 <a id="a4cf6d8181ed3515e00ce8f2c65b05a4f" name="a4cf6d8181ed3515e00ce8f2c65b05a4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cf6d8181ed3515e00ce8f2c65b05a4f">&#9670;&#160;</a></span>MAX_TRACKS</h2>
 
@@ -2021,9 +2058,9 @@ Variables</h2></td></tr>
 
 <p>Maximum <a class="el" href="struct_animation_track.html" title="Tagged union for the value stored in a keyframe.">AnimationTrack</a>s in an <a class="el" href="struct_animation_component.html" title="The animation component for interpolation between AnimationKeyframes.">AnimationComponent</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02158">2158</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02170">2170</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00921">init_globals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>.</p>
 
 </div>
 </div>
@@ -2083,7 +2120,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00052">52</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01416">convolver_node_process_pcm_frames()</a>, <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, <a class="el" href="audio__ir_8c_source.html#l00126">fft_channels()</a>, <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01415">convolver_node_process_pcm_frames()</a>, <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, <a class="el" href="audio__ir_8c_source.html#l00126">fft_channels()</a>, <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
 </div>
 </div>
@@ -2103,7 +2140,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00051">51</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01416">convolver_node_process_pcm_frames()</a>, <a class="el" href="audio__ir_8c_source.html#l00126">fft_channels()</a>, and <a class="el" href="init_8c_source.html#l01608">init_audio_scratch_buffers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01415">convolver_node_process_pcm_frames()</a>, <a class="el" href="audio__ir_8c_source.html#l00126">fft_channels()</a>, and <a class="el" href="init_8c_source.html#l01607">init_audio_scratch_buffers()</a>.</p>
 
 </div>
 </div>
@@ -2177,7 +2214,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00167">167</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, and <a class="el" href="init_8c_source.html#l00921">init_globals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, and <a class="el" href="init_8c_source.html#l00920">init_globals()</a>.</p>
 
 </div>
 </div>
@@ -2197,7 +2234,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00168">168</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2252,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00166">166</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, and <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>.</p>
 
 </div>
 </div>
@@ -2233,7 +2270,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00165">165</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, and <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>.</p>
 
 </div>
 </div>
@@ -2251,7 +2288,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00120">120</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>.</p>
 
 </div>
 </div>
@@ -2269,7 +2306,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00119">119</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, and <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>.</p>
 
 </div>
 </div>
@@ -2309,7 +2346,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00134">134</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00044">allocate_audio_scratch_hrtf()</a>, <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="audio__ir_8c_source.html#l00009">evaluate_sh()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="init_8c_source.html#l01995">init()</a>, <a class="el" href="audio_8c_source.html#l00611">load_audio_pv()</a>, <a class="el" href="audio__ir_8c_source.html#l00105">load_hrtf_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="audio__ir_8c_source.html#l00197">rotate_sh()</a>, <a class="el" href="audio__ir_8c_source.html#l00087">save_hrtf_to_binary()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00044">allocate_audio_scratch_hrtf()</a>, <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="audio__ir_8c_source.html#l00009">evaluate_sh()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, <a class="el" href="audio_8c_source.html#l00611">load_audio_pv()</a>, <a class="el" href="audio__ir_8c_source.html#l00105">load_hrtf_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="audio__ir_8c_source.html#l00197">rotate_sh()</a>, <a class="el" href="audio__ir_8c_source.html#l00087">save_hrtf_to_binary()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
 </div>
 </div>
@@ -2347,7 +2384,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00140">140</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>.</p>
 
 </div>
 </div>
@@ -2365,7 +2402,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00153">153</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01995">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>.</p>
 
 </div>
 </div>
@@ -2385,7 +2422,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00106">106</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
 </div>
 </div>
@@ -2405,7 +2442,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00030">30</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00779">GPU_init_cluster_aabbs()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00778">GPU_init_cluster_aabbs()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
 </div>
 </div>
@@ -2425,7 +2462,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00029">29</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00779">GPU_init_cluster_aabbs()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00778">GPU_init_cluster_aabbs()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
 </div>
 </div>
@@ -2445,7 +2482,7 @@ Variables</h2></td></tr>
 <p>The lightmap UVs stored on <a class="el" href="struct_u_v_island.html" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s per <a class="el" href="struct_mesh_face.html">MeshFace</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="lightmap_8c.html#afc59c12be32f691a4d684158e6b63eba">assign_uvs()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01899">1899</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01911">1911</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2505,7 +2542,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a5da455c0ed3c3b35dbceb5ac58b0e1b1aeb75aee9be3f657652620b26ddf4365f" name="a5da455c0ed3c3b35dbceb5ac58b0e1b1aeb75aee9be3f657652620b26ddf4365f"></a>ALPHA_BLEND&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01472">1472</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01484">1484</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2540,7 +2577,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a73a1548d3d894e61c37af780d95f171baa3cd4f74aaff640df4fb89e3331137c7" name="a73a1548d3d894e61c37af780d95f171baa3cd4f74aaff640df4fb89e3331137c7"></a>ANIM_DATA_MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02107">2107</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02119">2119</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2566,7 +2603,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad43022fbea21e9cb01cffcf75d556952ab0e81f9db4bb1bd59db5824bb9b7af40" name="ad43022fbea21e9cb01cffcf75d556952ab0e81f9db4bb1bd59db5824bb9b7af40"></a>CUBICSPLINE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02554">2554</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02566">2566</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2593,7 +2630,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a7dca5cb9d4d9db5af72040c09db4ea20aa740c3a90cec02599045344865b6f1bc" name="a7dca5cb9d4d9db5af72040c09db4ea20aa740c3a90cec02599045344865b6f1bc"></a>TARGET_WEIGHTS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02561">2561</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02573">2573</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2623,7 +2660,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a6454f8331a092fb7cc122450dfe22a8da1b3441823ea7c2513dcc15d2f155fa30" name="a6454f8331a092fb7cc122450dfe22a8da1b3441823ea7c2513dcc15d2f155fa30"></a>ANIM_TARGET_MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02096">2096</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02108">2108</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2654,7 +2691,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01964">1964</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01976">1976</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2741,7 +2778,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad79a57ed3105eb60d991a1aeb4a9dc44a06854fd769b091461acfd50c62251e17" name="ad79a57ed3105eb60d991a1aeb4a9dc44a06854fd769b091461acfd50c62251e17"></a>ENTITY_FILTER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02183">2183</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02195">2195</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2873,7 +2910,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="aa6631dbaf918a61bca94cc9119ba1452ad99f4f84c1f2f53c4f86f2b54a401ba1" name="aa6631dbaf918a61bca94cc9119ba1452ad99f4f84c1f2f53c4f86f2b54a401ba1"></a>MSAA_SAMPLE_OPTIONS_MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03036">3036</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03051">3051</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -2939,7 +2976,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01979">1979</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01991">1991</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -3069,7 +3106,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a1615968a92950438f6e67a28e9d56e5ca6498cab783e7d22bd5627085059baa9f" name="a1615968a92950438f6e67a28e9d56e5ca6498cab783e7d22bd5627085059baa9f"></a>ESTATE_MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02198">2198</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02210">2210</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -3191,7 +3228,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02936">2936</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02951">2951</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -3217,7 +3254,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02937">2937</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02952">2952</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
 
@@ -3371,7 +3408,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00315">315</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00190">a_star_aportal()</a>, <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="init_8c_source.html#l01776">allocate_gbuffer_msaa()</a>, <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="init_8c_source.html#l01718">allocate_main_fbo()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="render_8c_source.html#l01662">bind_material()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="init_8c_source.html#l00419">destroy_asset_instance()</a>, <a class="el" href="render_8c_source.html#l02231">determine_closest_rprobes()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="render_8c_source.html#l01008">determine_mesh_visibility()</a>, <a class="el" href="entity__states_8c_source.html#l00008">ESTATE_chair_interact()</a>, <a class="el" href="editor_8c_source.html#l01008">execute_aportal_undo()</a>, <a class="el" href="editor_8c_source.html#l00858">execute_aprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="editor_8c_source.html#l00458">execute_light_undo()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, <a class="el" href="editor_8c_source.html#l00636">execute_rprobe_undo()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="audio_8c_source.html#l00084">find_closest_visible_aportal()</a>, <a class="el" href="init_8c_source.html#l00153">find_free_mn()</a>, <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, <a class="el" href="init_8c_source.html#l00662">GPU_upload_scene_data()</a>, <a class="el" href="init_8c_source.html#l00795">init_default_textures()</a>, <a class="el" href="init_8c_source.html#l00921">init_globals()</a>, <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="audio_8c_source.html#l00375">init_new_audio_portal()</a>, <a class="el" href="init_8c_source.html#l00041">init_new_material()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="init_8c_source.html#l01166">init_vertex_layouts()</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, <a class="el" href="load_8c_source.html#l02719">load_aprobes()</a>, <a class="el" href="audio_8c_source.html#l00611">load_audio_pv()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="load_8c_source.html#l02602">load_lprobes()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="init_8c_source.html#l00122">MN_INIT()</a>, <a class="el" href="audio_8c_source.html#l00299">pathfind_audio_occlusion()</a>, <a class="el" href="physics_8c_source.html#l00943">PC_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="audio_8c_source.html#l00577">query_probe_volume()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00356">raycast_scene()</a>, <a class="el" href="load_8c_source.html#l01106">read_mesh_node()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="audio_8c_source.html#l00027">recalculate_audio_portal_paths()</a>, <a class="el" href="audio_8c_source.html#l00383">remove_audio_portal()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="editor_8c_source.html#l06519">render_asset_instance_menu()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="editor_8c_source.html#l05690">render_material_menu()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="audio_8c_source.html#l00603">reset_audio_pvs()</a>, <a class="el" href="lightmap_8c_source.html#l01324">reset_lighting_pvs()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="init_8c_source.html#l00220">retrieve_asset_by_name()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l02699">save_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l02588">save_lprobes()</a>, <a class="el" href="load_8c_source.html#l01272">scene_load()</a>, <a class="el" href="load_8c_source.html#l02472">scene_load_volumes()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="load_8c_source.html#l02419">scene_save_volumes()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, <a class="el" href="physics_8c_source.html#l00882">search_collisions_from_pc()</a>, <a class="el" href="init_8c_source.html#l00138">SKIN_INIT()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>, <a class="el" href="render_8c_source.html#l00810">update_scene_nodes()</a>, <a class="el" href="render_8c_source.html#l00831">update_skin_matrices()</a>, <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>, <a class="el" href="render_8c_source.html#l00763">upload_joint_matrices()</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>, <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00190">a_star_aportal()</a>, <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="init_8c_source.html#l01775">allocate_gbuffer_msaa()</a>, <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="init_8c_source.html#l01717">allocate_main_fbo()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="render_8c_source.html#l01662">bind_material()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="init_8c_source.html#l00418">destroy_asset_instance()</a>, <a class="el" href="render_8c_source.html#l02231">determine_closest_rprobes()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="render_8c_source.html#l01008">determine_mesh_visibility()</a>, <a class="el" href="entity__states_8c_source.html#l00008">ESTATE_chair_interact()</a>, <a class="el" href="editor_8c_source.html#l01008">execute_aportal_undo()</a>, <a class="el" href="editor_8c_source.html#l00858">execute_aprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="editor_8c_source.html#l00458">execute_light_undo()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, <a class="el" href="editor_8c_source.html#l00636">execute_rprobe_undo()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="audio_8c_source.html#l00084">find_closest_visible_aportal()</a>, <a class="el" href="init_8c_source.html#l00153">find_free_mn()</a>, <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="init_8c_source.html#l00794">init_default_textures()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="audio_8c_source.html#l00375">init_new_audio_portal()</a>, <a class="el" href="init_8c_source.html#l00041">init_new_material()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="init_8c_source.html#l01165">init_vertex_layouts()</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, <a class="el" href="load_8c_source.html#l02709">load_aprobes()</a>, <a class="el" href="audio_8c_source.html#l00611">load_audio_pv()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>, <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="load_8c_source.html#l02592">load_lprobes()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="init_8c_source.html#l00122">MN_INIT()</a>, <a class="el" href="audio_8c_source.html#l00299">pathfind_audio_occlusion()</a>, <a class="el" href="physics_8c_source.html#l00943">PC_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="audio_8c_source.html#l00577">query_probe_volume()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00356">raycast_scene()</a>, <a class="el" href="load_8c_source.html#l01101">read_mesh_node()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="audio_8c_source.html#l00027">recalculate_audio_portal_paths()</a>, <a class="el" href="audio_8c_source.html#l00383">remove_audio_portal()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="editor_8c_source.html#l06519">render_asset_instance_menu()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="editor_8c_source.html#l05690">render_material_menu()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="audio_8c_source.html#l00603">reset_audio_pvs()</a>, <a class="el" href="lightmap_8c_source.html#l01324">reset_lighting_pvs()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="init_8c_source.html#l00220">retrieve_asset_by_name()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l02689">save_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l02578">save_lprobes()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l02462">scene_load_volumes()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="load_8c_source.html#l02409">scene_save_volumes()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, <a class="el" href="physics_8c_source.html#l00882">search_collisions_from_pc()</a>, <a class="el" href="init_8c_source.html#l00138">SKIN_INIT()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>, <a class="el" href="render_8c_source.html#l00810">update_scene_nodes()</a>, <a class="el" href="render_8c_source.html#l00831">update_skin_matrices()</a>, <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>, <a class="el" href="render_8c_source.html#l00763">upload_joint_matrices()</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>, <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>

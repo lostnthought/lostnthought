@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Untitled", "index.html", [
+    [ "Untitled Documentation", "index.html", "index" ],
     [ "Todo List", "todo.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -53,21 +54,21 @@ var NAVTREEINDEX =
 [
 "_g_j_k_8c.html",
 "dynamic_8vert.html",
-"engine__types_8h.html#a54ac09062d2a7b10f41f0dacb23101e0",
-"fullscreen_8vert_source.html",
-"init_8h.html#a0ad533eb9f24626a925124a584faf2c5",
-"init_8h.html#ad6a84b00adc18a633cc6fdf830f2015c",
-"main_8c.html#a30b68b8b1046f8aa54dfaed4bfe923fc",
-"mathf_8h.html#a674b9c575cfc760641b19dae9175b4a3",
-"shaders_8c.html#a7063bbf75562d8a603b08f55df2beb4e",
-"struct_b_v_h_node_g_p_u.html#a5d51488c79035faea6fd9f347a1cfc20",
-"struct_editor_settings.html#aa960c4358fbc06860b579cd600189fc8",
-"struct_glyph.html#afff3dc6bce665f48ee76188dc4f2f0ff",
-"struct_material_g_p_u.html#a0712b29180d7a62c6ab53142b55c32c2",
-"struct_scene_data.html#a95a959a543c66b347b90d34f0d543054",
-"struct_u_i_element_editor_menu.html#ac145d102dac240a422dc830f53718d01",
-"types_8h.html#adead7617da48125e4f786a1101a6839fa0dfba6aa36f507bebc2369c84674ea77",
-"utilities_8c.html#a4d303a44e32a9cfec87d0ccdf0d124c7"
+"engine__types_8h.html#a54a15c7759ae27bb73c7d63affa1bd9c",
+"fullscreen_8frag_source.html",
+"init_8c.html#afeb6983d55283dbfa70c116c364c7a67",
+"init_8h.html#aca31630c143cd81a73ce919a21e707ee",
+"main_8c.html#a2494ea07458853c839c3cd3b412d3379",
+"mathf_8h.html#a1eb5c74ab3c7675179266b6bf3577bef",
+"render_8h.html#adeb8ce26b716208524a0e4f54f2d6efc",
+"struct_b_v_h_node_g_p_u.html",
+"struct_editor_settings.html#a9127a51bf7fd61faae6efb02a8856f1f",
+"struct_globals.html#ad2fcd45b16cb97c2d9ad621f53ab272b",
+"struct_material.html#ab3551ed93a9d5caebf2966ff5f63b5b9",
+"struct_s_h_data_g_p_u.html#a5e87aedddecc4ceb5bb9a788bb2d94de",
+"struct_u_i_element_editor_menu.html#a5f5bca3d25bdde8330964f3c06d68776",
+"types_8h.html#ac058c4ac08df2109182f38b03357788ea2d14644ef42ff6497492c5840a869ebf",
+"utilities_8c.html#a27bc1745bc25c888ec8004e1617e5b24"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

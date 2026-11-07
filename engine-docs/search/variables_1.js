@@ -42,7 +42,7 @@ var searchData=
   ['brdf_5flut_39',['BRDF_LUT',['../main_8c.html#a4499379853a66cda1c1ad2954231403e',1,'BRDF_LUT:&#160;main.c'],['../init_8h.html#a4499379853a66cda1c1ad2954231403e',1,'BRDF_LUT:&#160;main.c']]],
   ['brdf_5fshader_40',['BRDF_SHADER',['../main_8c.html#ae5a2e4deeb58ada51b993eddc9c5047d',1,'BRDF_SHADER:&#160;main.c'],['../init_8h.html#ae5a2e4deeb58ada51b993eddc9c5047d',1,'BRDF_SHADER:&#160;main.c']]],
   ['buf_41',['buf',['../struct_image.html#ab31420f16a715901da9774c278d578bd',1,'Image']]],
-  ['buffer_42',['buffer',['../struct_g_l_t_f_buffer_view.html#a660aa83d1e4dfc7ef301efefc89f630c',1,'GLTFBufferView::buffer'],['../struct_vector.html#ad3c20018fe1692be0ebca8d674e13be4',1,'Vector::buffer']]],
+  ['buffer_42',['buffer',['../struct_combo_label.html#ad7340881c84736b0e48e8a47da2d58b2',1,'ComboLabel::buffer'],['../struct_g_l_t_f_buffer_view.html#a660aa83d1e4dfc7ef301efefc89f630c',1,'GLTFBufferView::buffer'],['../struct_vector.html#ad3c20018fe1692be0ebca8d674e13be4',1,'Vector::buffer']]],
   ['buffer_5foverride_43',['buffer_override',['../struct_vertex_layout.html#ac31f1f9e9d256a1b93045c1dce33541c',1,'VertexLayout']]],
   ['buffer_5foverride_5fdata_44',['buffer_override_data',['../struct_vertex_layout.html#aa806673494bc02f2d2fef566cf00ee98',1,'VertexLayout']]],
   ['buffer_5ftarget_45',['buffer_target',['../struct_vertex_layout.html#a87d1637215dff0e3f44564c9fa9302c2',1,'VertexLayout']]],

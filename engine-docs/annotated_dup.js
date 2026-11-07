@@ -35,6 +35,7 @@ var annotated_dup =
     [ "ClusterGPU", "struct_cluster_g_p_u.html", "struct_cluster_g_p_u" ],
     [ "CollisionData", "struct_collision_data.html", "struct_collision_data" ],
     [ "CollisionPoints", "struct_collision_points.html", "struct_collision_points" ],
+    [ "ComboLabel", "struct_combo_label.html", "struct_combo_label" ],
     [ "ComputeShaderProgram", "struct_compute_shader_program.html", "struct_compute_shader_program" ],
     [ "ConvexHull", "struct_convex_hull.html", "struct_convex_hull" ],
     [ "ConvolverNode", "struct_convolver_node.html", "struct_convolver_node" ],

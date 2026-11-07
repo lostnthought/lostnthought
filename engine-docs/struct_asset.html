@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -113,7 +120,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_asset.h
 </div><!--header-->
 <div class="contents">
 
-<p>An <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> after it is loaded in from file into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>.  
+<p>An <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> after it is loaded in from file into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d" title="Assets.">Globals.assets</a>.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
@@ -123,7 +130,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ad41f6e4a5991c9eee47ae294949cd09f" id="r_ad41f6e4a5991c9eee47ae294949cd09f"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#ad41f6e4a5991c9eee47ae294949cd09f">path</a> [256]</td></tr>
 <tr class="memdesc:ad41f6e4a5991c9eee47ae294949cd09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path to the <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>.  <br /></td></tr>
 <tr class="memitem:aa418693f1a738343de1a0866520a6fd3" id="r_aa418693f1a738343de1a0866520a6fd3"><td class="memItemLeft"><a class="el" href="struct_vector.html">Vector</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa418693f1a738343de1a0866520a6fd3">mesh_indices</a></td></tr>
-<tr class="memdesc:aa418693f1a738343de1a0866520a6fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">int - Indices into <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1">Globals.meshes</a> which indicate what <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es are within this <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>.  <br /></td></tr>
+<tr class="memdesc:aa418693f1a738343de1a0866520a6fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">int - Indices into <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1" title="Meshes.">Globals.meshes</a> which indicate what <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es are within this <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>.  <br /></td></tr>
 <tr class="memitem:ab03aeaed3fea34fe8a4fdfc2e9d65e89" id="r_ab03aeaed3fea34fe8a4fdfc2e9d65e89"><td class="memItemLeft"><a class="el" href="struct_mesh_node.html">MeshNode</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab03aeaed3fea34fe8a4fdfc2e9d65e89">nodes</a></td></tr>
 <tr class="memitem:ac7cb8e6e837364897c627ae7864b860e" id="r_ac7cb8e6e837364897c627ae7864b860e"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#ac7cb8e6e837364897c627ae7864b860e">node_count</a></td></tr>
 <tr class="memitem:a9fd6871e140191c49289c62bdf7c5550" id="r_a9fd6871e140191c49289c62bdf7c5550"><td class="memItemLeft"><a class="el" href="struct_g_l_t_f_skin.html">GLTFSkin</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a9fd6871e140191c49289c62bdf7c5550">skins</a></td></tr>
@@ -131,17 +138,17 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ac7e70c548eba228fdf19356a3706b515" id="r_ac7e70c548eba228fdf19356a3706b515"><td class="memItemLeft"><a class="el" href="struct_animation.html">Animation</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ac7e70c548eba228fdf19356a3706b515">animations</a></td></tr>
 <tr class="memitem:a2d82544a7f308994d368b224af9b6c58" id="r_a2d82544a7f308994d368b224af9b6c58"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a2d82544a7f308994d368b224af9b6c58">animation_count</a></td></tr>
 <tr class="memitem:a3b7c83cf16e0695d6446442270dc319e" id="r_a3b7c83cf16e0695d6446442270dc319e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3b7c83cf16e0695d6446442270dc319e">asset_id</a></td></tr>
-<tr class="memdesc:a3b7c83cf16e0695d6446442270dc319e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>.  <br /></td></tr>
+<tr class="memdesc:a3b7c83cf16e0695d6446442270dc319e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d" title="Assets.">Globals.assets</a>.  <br /></td></tr>
 <tr class="memitem:a777d094692db043ed7ca1fad17ac550a" id="r_a777d094692db043ed7ca1fad17ac550a"><td class="memItemLeft"><a class="el" href="struct_a_a_b_b.html">AABB</a>&#160;</td><td class="memItemRight"><a class="el" href="#a777d094692db043ed7ca1fad17ac550a">aabb</a></td></tr>
 <tr class="memdesc:a777d094692db043ed7ca1fad17ac550a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_a_a_b_b.html">AABB</a> over each <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> for this <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> after it is loaded in from file into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>. </p>
+<div class="textblock"><p>An <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> after it is loaded in from file into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d" title="Assets.">Globals.assets</a>. </p>
 <p>It is a template for <a class="el" href="struct_asset_instance.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">AssetInstance</a>s. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_asset_instance.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">AssetInstance</a> </dd>
 <dd>
-<a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a> </dd></dl>
+<a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d" title="Assets.">Globals.assets</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02789">2789</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02833">2833</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a777d094692db043ed7ca1fad17ac550a" name="a777d094692db043ed7ca1fad17ac550a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a777d094692db043ed7ca1fad17ac550a">&#9670;&#160;</a></span>aabb</h2>
@@ -157,9 +164,9 @@ Data Fields</h2></td></tr>
 
 <p><a class="el" href="struct_a_a_b_b.html">AABB</a> over each <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> for this <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02802">2802</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02846">2846</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -175,9 +182,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02799">2799</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02843">2843</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -193,9 +200,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02798">2798</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02842">2842</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -211,11 +218,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a>. </p>
+<p>The ID into <a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d" title="Assets.">Globals.assets</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02801">2801</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02845">2845</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -231,11 +238,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>int - Indices into <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1">Globals.meshes</a> which indicate what <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es are within this <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>. </p>
+<p>int - Indices into <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1" title="Meshes.">Globals.meshes</a> which indicate what <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es are within this <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02793">2793</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02837">2837</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -251,9 +258,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02795">2795</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02839">2839</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -269,9 +276,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02794">2794</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02838">2838</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -289,9 +296,9 @@ Data Fields</h2></td></tr>
 
 <p>The path to the <a class="el" href="struct_asset.html" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02792">2792</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02836">2836</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="init_8c_source.html#l00220">retrieve_asset_by_name()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="init_8c_source.html#l00220">retrieve_asset_by_name()</a>, <a class="el" href="init_8c_source.html#l00242">retrieve_mesh_by_name()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -307,9 +314,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02797">2797</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02841">2841</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -325,9 +332,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02796">2796</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02840">2840</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>

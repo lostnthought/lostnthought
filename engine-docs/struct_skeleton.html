@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -166,7 +173,7 @@ move_foot() </dd>
 <dd>
 <a class="el" href="camera_8c.html#ac591bd567e826c8d7cd9b3f1987bb401" title="Calculates velocity based on leg positions and integrates them into the player.">update_body_from_legs()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01239">1239</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01273">1273</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ac2557b08ea9e3795622813481f285a47" name="ac2557b08ea9e3795622813481f285a47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2557b08ea9e3795622813481f285a47">&#9670;&#160;</a></span>hip_height</h2>
@@ -182,7 +189,7 @@ move_foot() </dd>
 
 <p>Height from ground to hip. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01248">1248</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01282">1282</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -202,7 +209,7 @@ move_foot() </dd>
 
 <p>The left hip pos, offset by <a class="el" href="main_8c.html#ae5efc7b57e3e7055397a66131108f6dc">left_leg_offset</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01259">1259</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01293">1293</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -222,7 +229,7 @@ move_foot() </dd>
 
 <p>Left leg. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01264">1264</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01298">1298</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -242,7 +249,7 @@ move_foot() </dd>
 
 <p>Lower leg length. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01253">1253</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01287">1287</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01091">solve_Q()</a>.</p>
 
@@ -262,7 +269,7 @@ move_foot() </dd>
 
 <p>Neck <a class="el" href="struct_spring.html" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> (target based on pelvis). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01263">1263</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01297">1297</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>, <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -282,7 +289,7 @@ move_foot() </dd>
 
 <p>Height from ground to neck. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01249">1249</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01283">1283</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>.</p>
 
@@ -302,7 +309,7 @@ move_foot() </dd>
 
 <p>Height from pelvis to neck. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01251">1251</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01285">1285</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -322,7 +329,7 @@ move_foot() </dd>
 
 <p>The current left foot position. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01257">1257</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01291">1291</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -342,7 +349,7 @@ move_foot() </dd>
 
 <p>The current right foot position. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01258">1258</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01292">1292</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -362,7 +369,7 @@ move_foot() </dd>
 
 <p>Pelvis <a class="el" href="struct_spring.html" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> (target based on leg positions). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01262">1262</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01296">1296</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -382,7 +389,7 @@ move_foot() </dd>
 
 <p>Height from ground to pelvis. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01247">1247</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01281">1281</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -402,7 +409,7 @@ move_foot() </dd>
 
 <p>Height from pelvis to hip. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01250">1250</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01284">1284</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>.</p>
 
@@ -422,7 +429,7 @@ move_foot() </dd>
 
 <p>The current knee position for left leg. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01255">1255</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01289">1289</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -442,7 +449,7 @@ move_foot() </dd>
 
 <p>The current knee position for right leg. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01256">1256</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01290">1290</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -462,7 +469,7 @@ move_foot() </dd>
 
 <p>The right hip pos, offset by <a class="el" href="main_8c.html#a66d935273ade3d1e3160975050256a48">right_leg_offset</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01260">1260</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01294">1294</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -482,7 +489,7 @@ move_foot() </dd>
 
 <p>Right leg. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01265">1265</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01299">1299</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l00847">reset_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -502,7 +509,7 @@ move_foot() </dd>
 
 <p>Upper leg length. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01252">1252</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01286">1286</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, and <a class="el" href="camera_8c_source.html#l01091">solve_Q()</a>.</p>
 

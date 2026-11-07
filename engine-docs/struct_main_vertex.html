@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -139,7 +146,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="dynamic_8vert.html">render/dynamic.vert</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01099">1099</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01133">1133</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a0748f2bba2f12eea5dfb2882b1172442" name="a0748f2bba2f12eea5dfb2882b1172442"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0748f2bba2f12eea5dfb2882b1172442">&#9670;&#160;</a></span>joint_indices</h2>
@@ -155,7 +162,7 @@ Data Fields</h2></td></tr>
 
 <p>The indices for each joint matrix (skeletal animations). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01105">1105</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01139">1139</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, and <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>.</p>
 
@@ -175,7 +182,7 @@ Data Fields</h2></td></tr>
 
 <p>The normal. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01103">1103</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01137">1137</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, and <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>.</p>
 
@@ -195,7 +202,7 @@ Data Fields</h2></td></tr>
 
 <p>The position. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01102">1102</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01136">1136</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, and <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>.</p>
 
@@ -216,7 +223,7 @@ Data Fields</h2></td></tr>
 <p>The tangent for TBN construction. </p>
 <p>This is supplied by GLTF. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01104">1104</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01138">1138</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, and <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>.</p>
 
@@ -236,7 +243,7 @@ Data Fields</h2></td></tr>
 
 <p>The texture coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01107">1107</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01141">1141</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, and <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>.</p>
 
@@ -256,7 +263,7 @@ Data Fields</h2></td></tr>
 
 <p>The weights each joint is multiplied by. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01106">1106</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01140">1140</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, and <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>.</p>
 

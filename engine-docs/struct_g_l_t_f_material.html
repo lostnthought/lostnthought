@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -135,8 +142,8 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1116697d593fd2fa0da81cb01d5e1e85" id="r_a1116697d593fd2fa0da81cb01d5e1e85"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#a5da455c0ed3c3b35dbceb5ac58b0e1b1">AlphaMode</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1116697d593fd2fa0da81cb01d5e1e85">alpha_mode</a></td></tr>
 <tr class="memitem:a9cf41109e740eabaa81212f5e666481b" id="r_a9cf41109e740eabaa81212f5e666481b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9cf41109e740eabaa81212f5e666481b">alpha_cutoff</a></td></tr>
 <tr class="memitem:a34d9e656ee65d44902f0e85e872a6166" id="r_a34d9e656ee65d44902f0e85e872a6166"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a34d9e656ee65d44902f0e85e872a6166">double_sided</a></td></tr>
-<tr class="memitem:a590ad845a61691fa0006cf3a2befc557" id="r_a590ad845a61691fa0006cf3a2befc557"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a590ad845a61691fa0006cf3a2befc557">absorption_coefficients</a> [<a class="el" href="engine__types_8h.html#ae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td></tr>
-<tr class="memitem:ade2c0716b3f0aa8c6bdb12d2380abe28" id="r_ade2c0716b3f0aa8c6bdb12d2380abe28"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ade2c0716b3f0aa8c6bdb12d2380abe28">scattering_coefficients</a> [<a class="el" href="engine__types_8h.html#ae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td></tr>
+<tr class="memitem:a590ad845a61691fa0006cf3a2befc557" id="r_a590ad845a61691fa0006cf3a2befc557"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a590ad845a61691fa0006cf3a2befc557">absorption_coefficients</a> [<a class="el" href="group__aprobe__group.html#gae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td></tr>
+<tr class="memitem:ade2c0716b3f0aa8c6bdb12d2380abe28" id="r_ade2c0716b3f0aa8c6bdb12d2380abe28"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ade2c0716b3f0aa8c6bdb12d2380abe28">scattering_coefficients</a> [<a class="el" href="group__aprobe__group.html#gae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td></tr>
 <tr class="memitem:ad1268e90c20368ef2b9e9dc35ac87118" id="r_ad1268e90c20368ef2b9e9dc35ac87118"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad1268e90c20368ef2b9e9dc35ac87118">emissive_strength</a></td></tr>
 <tr class="memitem:ad5ed6836abfb5134b35d0a7fabf29db1" id="r_ad5ed6836abfb5134b35d0a7fabf29db1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad5ed6836abfb5134b35d0a7fabf29db1">fwd_shader</a></td></tr>
 <tr class="memitem:aa7c4b3c848b82d1d07bbbd5ea9500d73" id="r_aa7c4b3c848b82d1d07bbbd5ea9500d73"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa7c4b3c848b82d1d07bbbd5ea9500d73">gbuffer_shader</a></td></tr>
@@ -148,7 +155,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="struct_g_l_t_f_doc.html" title="The entire GLTF after it is parsed via load_gltf().">GLTFDoc</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02469">2469</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02513">2513</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a590ad845a61691fa0006cf3a2befc557" name="a590ad845a61691fa0006cf3a2befc557"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a590ad845a61691fa0006cf3a2befc557">&#9670;&#160;</a></span>absorption_coefficients</h2>
@@ -157,12 +164,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float GLTFMaterial::absorption_coefficients[<a class="el" href="engine__types_8h.html#ae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td>
+          <td class="memname">float GLTFMaterial::absorption_coefficients[<a class="el" href="group__aprobe__group.html#gae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02491">2491</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02535">2535</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -180,7 +187,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02488">2488</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02532">2532</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -198,7 +205,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02487">2487</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02531">2531</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -216,7 +223,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02473">2473</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02517">2517</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -234,7 +241,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02478">2478</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02522">2522</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -252,7 +259,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02489">2489</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02533">2533</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -270,7 +277,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02476">2476</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02520">2520</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -288,7 +295,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02494">2494</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02538">2538</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -306,7 +313,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02482">2482</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02526">2526</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -324,7 +331,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02495">2495</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02539">2539</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -342,7 +349,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02496">2496</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02540">2540</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -360,7 +367,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02474">2474</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02518">2518</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -378,7 +385,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02479">2479</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02523">2523</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -396,7 +403,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02471">2471</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02515">2515</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -414,7 +421,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02484">2484</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02528">2528</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -432,7 +439,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02480">2480</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02524">2524</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -450,7 +457,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02485">2485</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02529">2529</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -468,7 +475,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02481">2481</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02525">2525</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -486,7 +493,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02497">2497</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02541">2541</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -504,7 +511,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02475">2475</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02519">2519</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -517,12 +524,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float GLTFMaterial::scattering_coefficients[<a class="el" href="engine__types_8h.html#ae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td>
+          <td class="memname">float GLTFMaterial::scattering_coefficients[<a class="el" href="group__aprobe__group.html#gae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02492">2492</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02536">2536</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 

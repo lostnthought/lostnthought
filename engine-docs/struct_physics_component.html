@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -125,7 +132,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ac110273e42491ea17a7c5af84c9f4643" id="r_ac110273e42491ea17a7c5af84c9f4643"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac110273e42491ea17a7c5af84c9f4643">free</a></td></tr>
 <tr class="memdesc:ac110273e42491ea17a7c5af84c9f4643"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is an empty component.  <br /></td></tr>
 <tr class="memitem:a204d1483be193e118daf60a7f4f59f08" id="r_a204d1483be193e118daf60a7f4f59f08"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a204d1483be193e118daf60a7f4f59f08">player_pc</a></td></tr>
-<tr class="memdesc:a204d1483be193e118daf60a7f4f59f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is the <a class="el" href="struct_player.html">Player</a> <a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a>.  <br /></td></tr>
+<tr class="memdesc:a204d1483be193e118daf60a7f4f59f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is the <a class="el" href="struct_player.html" title="The Player.">Player</a> <a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a>.  <br /></td></tr>
 <tr class="memitem:a979c7bc51f2c9bb4f698daedf6697f29" id="r_a979c7bc51f2c9bb4f698daedf6697f29"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a979c7bc51f2c9bb4f698daedf6697f29">at_rest</a></td></tr>
 <tr class="memdesc:a979c7bc51f2c9bb4f698daedf6697f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this component is at rest it does not update.  <br /></td></tr>
 <tr class="memitem:a0f63f8044eff762aa894c30699fcdf05" id="r_a0f63f8044eff762aa894c30699fcdf05"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0f63f8044eff762aa894c30699fcdf05">rest_counter</a></td></tr>
@@ -180,7 +187,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02064">2064</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02107">2107</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a5ebbcc3aa4f6004a5ccfa9ebbac57bae" name="a5ebbcc3aa4f6004a5ccfa9ebbac57bae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ebbcc3aa4f6004a5ccfa9ebbac57bae">&#9670;&#160;</a></span>aabb</h2>
@@ -196,9 +203,9 @@ Data Fields</h2></td></tr>
 
 <p>Bounding box of the PC, determined based on <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> or <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02092">2092</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02135">2135</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01992">calc_inverse_inertia()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l00882">search_collisions_from_pc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01992">calc_inverse_inertia()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l00882">search_collisions_from_pc()</a>.</p>
 
 </div>
 </div>
@@ -216,7 +223,7 @@ Data Fields</h2></td></tr>
 
 <p>Acceleration from this step + acceleration from last step * <a class="el" href="engine__types_8h.html#aab016479e5fc989d1b6360ebc123555d" title="Friction / air accel decay constant.">ACCEL_BETA</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02087">2087</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02130">2130</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -236,9 +243,9 @@ Data Fields</h2></td></tr>
 
 <p>Rotational velocity. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02088">2088</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02131">2131</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l00024">PC_apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l00024">PC_apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +263,9 @@ Data Fields</h2></td></tr>
 
 <p>If this component is at rest it does not update. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02070">2070</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02113">2113</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00485">create_new_manifold()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00485">create_new_manifold()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -276,9 +283,9 @@ Data Fields</h2></td></tr>
 
 <p>Tagged union for collision options. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02094">2094</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02137">2137</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="physics_8c_source.html#l00943">PC_find_collision()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, <a class="el" href="physics_8c_source.html#l00882">search_collisions_from_pc()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="physics_8c_source.html#l00943">PC_find_collision()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="physics_8c_source.html#l00898">search_collisions_from_hull()</a>, <a class="el" href="physics_8c_source.html#l00882">search_collisions_from_pc()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -296,9 +303,9 @@ Data Fields</h2></td></tr>
 
 <p>COM based on the <a class="el" href="struct_a_a_b_b.html">AABB</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02081">2081</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02124">2124</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -316,9 +323,9 @@ Data Fields</h2></td></tr>
 
 <p>Which <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a> this component belongs to. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02097">2097</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02140">2140</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -336,9 +343,9 @@ Data Fields</h2></td></tr>
 
 <p>If this is an empty component. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02068">2068</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02111">2111</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -356,9 +363,9 @@ Data Fields</h2></td></tr>
 
 <p>The ID in <a class="el" href="main_8c.html#a16610e289548759e5e937a896847e54f">PHYSICS_COMPONENTS</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02067">2067</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02110">2110</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
 
 </div>
 </div>
@@ -376,9 +383,9 @@ Data Fields</h2></td></tr>
 
 <p>IIA (currently just a calculated box). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02082">2082</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02125">2125</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -396,9 +403,9 @@ Data Fields</h2></td></tr>
 
 <p><a class="el" href="#a306997ca92db36b59cd15a18c2acccfe" title="IIA (currently just a calculated box).">PhysicsComponent.inverse_inertia</a> transformed by rotation into world space for the current step. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02090">2090</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02133">2133</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -416,9 +423,9 @@ Data Fields</h2></td></tr>
 
 <p>Mass of the component. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02078">2078</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02121">2121</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01992">calc_inverse_inertia()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01992">calc_inverse_inertia()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -436,9 +443,9 @@ Data Fields</h2></td></tr>
 
 <p>The friction constant for the component. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02080">2080</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02123">2123</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -456,7 +463,7 @@ Data Fields</h2></td></tr>
 
 <p>Last step's angular velocity. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02089">2089</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02132">2132</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
@@ -476,7 +483,7 @@ Data Fields</h2></td></tr>
 
 <p>Last step's velocity. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02086">2086</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02129">2129</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -496,7 +503,7 @@ Data Fields</h2></td></tr>
 
 <p>Impulse resolution options. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02095">2095</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02138">2138</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
@@ -514,11 +521,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If this is the <a class="el" href="struct_player.html">Player</a> <a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a>. </p>
+<p>If this is the <a class="el" href="struct_player.html" title="The Player.">Player</a> <a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02069">2069</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02112">2112</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -536,7 +543,7 @@ Data Fields</h2></td></tr>
 
 <p>The counter that decreases until at rest. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02071">2071</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02114">2114</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
@@ -556,9 +563,9 @@ Data Fields</h2></td></tr>
 
 <p>The restitution (bounce). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02079">2079</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02122">2122</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -576,9 +583,9 @@ Data Fields</h2></td></tr>
 
 <p>Velocity. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02085">2085</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02128">2128</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="camera_8c_source.html#l00544">apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l00024">PC_apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="camera_8c_source.html#l00544">apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>, <a class="el" href="physics_8c_source.html#l00024">PC_apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l00974">player_resolve_impulse_static()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
 </div>
 </div>

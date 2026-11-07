@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -113,23 +120,43 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_player.
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="struct_player.html" title="The Player.">Player</a>.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a9bb3da6cfcb057fb879b5e22f22bf3b7" id="r_a9bb3da6cfcb057fb879b5e22f22bf3b7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9bb3da6cfcb057fb879b5e22f22bf3b7">radius</a></td></tr>
+<tr class="memdesc:a9bb3da6cfcb057fb879b5e22f22bf3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The radius of the <a class="el" href="struct_player.html" title="The Player.">Player</a> body.  <br /></td></tr>
 <tr class="memitem:a1470344c20073c3a20b3700d1d638f07" id="r_a1470344c20073c3a20b3700d1d638f07"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1470344c20073c3a20b3700d1d638f07">height</a></td></tr>
+<tr class="memdesc:a1470344c20073c3a20b3700d1d638f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the <a class="el" href="struct_player.html" title="The Player.">Player</a> body.  <br /></td></tr>
 <tr class="memitem:a5f126c4eb73164722430f85dd2e4f1d4" id="r_a5f126c4eb73164722430f85dd2e4f1d4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5f126c4eb73164722430f85dd2e4f1d4">sprinting</a></td></tr>
+<tr class="memdesc:a5f126c4eb73164722430f85dd2e4f1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently unused flag for sprinting.  <br /></td></tr>
 <tr class="memitem:af5cf3a5684623872ff4130e2cd695c76" id="r_af5cf3a5684623872ff4130e2cd695c76"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af5cf3a5684623872ff4130e2cd695c76">noclip</a></td></tr>
+<tr class="memdesc:af5cf3a5684623872ff4130e2cd695c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables flying (but not collisions).  <br /></td></tr>
 <tr class="memitem:adedf642371b6c510333cdf14c8f7f898" id="r_adedf642371b6c510333cdf14c8f7f898"><td class="memItemLeft"><a class="el" href="struct_camera.html">Camera</a> *&#160;</td><td class="memItemRight"><a class="el" href="#adedf642371b6c510333cdf14c8f7f898">cam</a></td></tr>
+<tr class="memdesc:adedf642371b6c510333cdf14c8f7f898"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="The Player.">Player</a> <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a>.  <br /></td></tr>
 <tr class="memitem:a49b42265a335a9b787dcd742df1153ca" id="r_a49b42265a335a9b787dcd742df1153ca"><td class="memItemLeft"><a class="el" href="struct_physics_component.html">PhysicsComponent</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a49b42265a335a9b787dcd742df1153ca">pc</a></td></tr>
+<tr class="memdesc:a49b42265a335a9b787dcd742df1153ca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a> in <a class="el" href="main_8c.html#a16610e289548759e5e937a896847e54f">PHYSICS_COMPONENTS</a>.  <br /></td></tr>
 <tr class="memitem:a03baf6014e7b4e8a79a9c5619fe1199f" id="r_a03baf6014e7b4e8a79a9c5619fe1199f"><td class="memItemLeft"><a class="el" href="structvec3.html">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a03baf6014e7b4e8a79a9c5619fe1199f">pos</a></td></tr>
+<tr class="memdesc:a03baf6014e7b4e8a79a9c5619fe1199f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently anchors the <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>.  <br /></td></tr>
 <tr class="memitem:a43c3d69312b74962323a8a5f95e5a3c2" id="r_a43c3d69312b74962323a8a5f95e5a3c2"><td class="memItemLeft"><a class="el" href="struct_skeleton.html">Skeleton</a>&#160;</td><td class="memItemRight"><a class="el" href="#a43c3d69312b74962323a8a5f95e5a3c2">skeleton</a></td></tr>
+<tr class="memdesc:a43c3d69312b74962323a8a5f95e5a3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="The Player.">Player</a> <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>.  <br /></td></tr>
 <tr class="memitem:a525fd6f0e4ea5c9229b2966d704f02f6" id="r_a525fd6f0e4ea5c9229b2966d704f02f6"><td class="memItemLeft"><a class="el" href="struct_mesh.html">Mesh</a>&#160;</td><td class="memItemRight"><a class="el" href="#a525fd6f0e4ea5c9229b2966d704f02f6">mesh</a></td></tr>
+<tr class="memdesc:a525fd6f0e4ea5c9229b2966d704f02f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> for the <a class="el" href="struct_convex_hull.html" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a> used for collisions (an <a class="el" href="struct_a_a_b_b.html">AABB</a>).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02935">2935</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The <a class="el" href="struct_player.html" title="The Player.">Player</a>. </p>
+<p>There can currently only be one <a class="el" href="struct_player.html" title="The Player.">Player</a>, located in <a class="el" href="main_8c.html#af61d6983a9396a11078805087518af88">player</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="camera_8c.html#ad2684701fab258579925989014b82a00" title="Updates a camera based on a skeleton&#39;s current neck and body position.">update_camera()</a> </dd>
+<dd>
+<a class="el" href="input_8c.html#a8831d3087a9d2abf364d68672cd0fdf6" title="Receives input from SDL in a while loop, pushes th events onto queues to be consumed at the end of th...">process_input()</a> </dd>
+<dd>
+<a class="el" href="group__audio__group.html#gaf16a797b8464b2f882abbe2fe8a9552e" title="Raycasts from player to audio sources to determine occlusion and performs a star if necessary.">update_audio_occlusion()</a> </dd>
+<dd>
+<a class="el" href="group__audio__group.html#ga59e8ca705239d674e4aebdccad02b07a" title="Spatializes the audio from the player&#39;s position.">audio_update()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03004">3004</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="adedf642371b6c510333cdf14c8f7f898" name="adedf642371b6c510333cdf14c8f7f898"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adedf642371b6c510333cdf14c8f7f898">&#9670;&#160;</a></span>cam</h2>
@@ -143,7 +170,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02942">2942</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p><a class="el" href="struct_player.html" title="The Player.">Player</a> <a class="el" href="struct_camera.html" title="The camera structure for players and entities.">Camera</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03011">3011</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
@@ -161,7 +190,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02939">2939</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The height of the <a class="el" href="struct_player.html" title="The Player.">Player</a> body. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03008">3008</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, and <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>.</p>
 
@@ -179,7 +210,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02946">2946</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> for the <a class="el" href="struct_convex_hull.html" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a> used for collisions (an <a class="el" href="struct_a_a_b_b.html">AABB</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03015">3015</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, and <a class="el" href="render_8c_source.html#l03057">render()</a>.</p>
 
@@ -197,7 +230,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02941">2941</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Enables flying (but not collisions). </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03010">3010</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
 
@@ -215,7 +250,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02943">2943</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p><a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a> in <a class="el" href="main_8c.html#a16610e289548759e5e937a896847e54f">PHYSICS_COMPONENTS</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03012">3012</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="camera_8c_source.html#l00544">apply_velocity()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -233,7 +270,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02944">2944</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Currently anchors the <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03013">3013</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="ui__callbacks_8c_source.html#l00022">init_action_callbacks()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
@@ -251,7 +290,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02938">2938</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The radius of the <a class="el" href="struct_player.html" title="The Player.">Player</a> body. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03007">3007</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00485">init_player()</a>, and <a class="el" href="init_8c_source.html#l00454">init_player_PC()</a>.</p>
 
@@ -269,7 +310,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02945">2945</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p><a class="el" href="struct_player.html" title="The Player.">Player</a> <a class="el" href="struct_skeleton.html" title="The controller for leg IKs for Skeletons.">Skeleton</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03014">3014</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>, <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>, <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>, and <a class="el" href="camera_8c_source.html#l01175">update_skeleton()</a>.</p>
 
@@ -287,7 +330,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02940">2940</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Currently unused flag for sprinting. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03009">3009</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00478">apply_planet_velocity()</a>, and <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
 

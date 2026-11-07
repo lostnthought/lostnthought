@@ -5,6 +5,5 @@ var mesh_8h =
     [ "deduplicate", "mesh_8h.html#afaf138ae7eb676e0b2bd6d95e3a1598c", null ],
     [ "find_mn_by_name", "mesh_8h.html#a1c100236f6fcebfd696bd620adf8729b", null ],
     [ "incremental_hull", "mesh_8h.html#a5c35f44de283319fcf3a05b6b422bb1f", null ],
-    [ "load_obj", "mesh_8h.html#a098331489afa2e490da7a2dd3ab7bfa1", null ],
     [ "mesh_decomposition", "mesh_8h.html#ae6e3f9965ab26fec92234d2dc4cb8d5a", null ]
 ];

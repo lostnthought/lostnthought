@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -230,7 +237,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a9e6bbfac14a3935a8db3ef1b751d8c52" id="r_a9e6bbfac14a3935a8db3ef1b751d8c52"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9e6bbfac14a3935a8db3ef1b751d8c52">selected_asset_instance_mn_id</a></td></tr>
 <tr class="memitem:a1b146f43052c56ac16043621d0658379" id="r_a1b146f43052c56ac16043621d0658379"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1b146f43052c56ac16043621d0658379">selected_r_probe</a></td></tr>
 <tr id="pub-attribs-6" class="groupHeader"><td colspan="2"><div class="groupHeader">PV Overlay</div></td></tr>
-<tr><td colspan="2" class="ititle"><div class="groupText"><p>Toggles debug overlays for the <a class="el" href="struct_o_b_b.html">OBB</a>s for <a class="el" href="struct_probe_volume.html">ProbeVolume</a>s. </p>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>Toggles debug overlays for the <a class="el" href="struct_o_b_b.html">OBB</a>s for <a class="el" href="struct_probe_volume.html" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a>s. </p>
 </div></td></tr>
 <tr class="memitem:ac08de631b4d8f2ba032abdc8c1ce119a" id="r_ac08de631b4d8f2ba032abdc8c1ce119a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac08de631b4d8f2ba032abdc8c1ce119a">audio_probe_volume_overlay</a></td></tr>
 <tr class="memitem:a73efe6e26b67e0c8e54f4c8eec67ab59" id="r_a73efe6e26b67e0c8e54f4c8eec67ab59"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a73efe6e26b67e0c8e54f4c8eec67ab59">lighting_probe_volume_overlay</a></td></tr>
@@ -255,7 +262,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:af3bce85a5c826003dbe16d194175dd5a" id="r_af3bce85a5c826003dbe16d194175dd5a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af3bce85a5c826003dbe16d194175dd5a">mfactor</a></td></tr>
 <tr class="memdesc:af3bce85a5c826003dbe16d194175dd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls how many iterations per lightmap iteration perform the AO check.  <br /></td></tr>
 <tr id="pub-attribs-8" class="groupHeader"><td colspan="2"><div class="groupHeader">OBB Axis</div></td></tr>
-<tr><td colspan="2" class="ititle"><div class="groupText"><p>Handles <a class="el" href="struct_o_b_b.html">OBB</a> rotation (mainly for <a class="el" href="struct_l_p_v.html">LPV</a>s and <a class="el" href="struct_a_p_v.html">APV</a>s). </p>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>Handles <a class="el" href="struct_o_b_b.html">OBB</a> rotation (mainly for <a class="el" href="struct_l_p_v.html" title="A ProbeVolume for indirect lighting probes.">LPV</a>s and <a class="el" href="struct_a_p_v.html" title="A ProbeVolume for AudioProbes.">APV</a>s). </p>
 </div></td></tr>
 <tr class="memitem:ae9739ab0f815ea8a60f2d0732ee550c9" id="r_ae9739ab0f815ea8a60f2d0732ee550c9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae9739ab0f815ea8a60f2d0732ee550c9">obb_axis_x_angle</a></td></tr>
 <tr class="memitem:a6062045baeec4db2f9431e1f1943cc8b" id="r_a6062045baeec4db2f9431e1f1943cc8b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6062045baeec4db2f9431e1f1943cc8b">obb_axis_y_angle</a></td></tr>
@@ -265,7 +272,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Editor settings and engine global variables that can be changed through the editor. </p>
 <p>Also houses flags and indices for the editor UI. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="editor_8c.html">editor/editor.c</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00601">601</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00635">635</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a9b930c7545bbd4d545112e127633dcce" name="a9b930c7545bbd4d545112e127633dcce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b930c7545bbd4d545112e127633dcce">&#9670;&#160;</a></span>ACES</h2>
@@ -279,7 +286,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00657">657</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00691">691</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -299,7 +306,7 @@ Data Fields</h2></td></tr>
 
 <p>Controls how many iterations per lightmap iteration perform the AO check. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00741">741</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00775">775</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -319,7 +326,7 @@ Data Fields</h2></td></tr>
 
 <p>Controls the distance threshold for AO detection. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00740">740</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00774">774</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -337,7 +344,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00632">632</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00666">666</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -355,7 +362,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00628">628</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00662">662</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -375,7 +382,7 @@ Data Fields</h2></td></tr>
 
 <p>The amount of bounces to accept per <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> iteration. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00747">747</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00781">781</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -395,7 +402,7 @@ Data Fields</h2></td></tr>
 
 <p>The amount of iterations (sample rays) to bake per <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00746">746</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00780">780</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -413,7 +420,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00726">726</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00760">760</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>.</p>
 
@@ -431,7 +438,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00652">652</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00686">686</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -449,7 +456,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00611">611</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00645">645</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -467,7 +474,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00708">708</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00742">742</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00059">change_fullscreen_option()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -485,7 +492,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00649">649</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00683">683</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="ui__callbacks_8c_source.html#l00047">init_hover_callbacks()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -503,7 +510,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00670">670</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00704">704</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +526,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00672">672</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00706">706</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -537,7 +544,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00671">671</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00705">705</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -555,7 +562,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00674">674</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00708">708</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -573,7 +580,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00673">673</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00707">707</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -591,7 +598,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00620">620</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00654">654</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
 
@@ -609,7 +616,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00621">621</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00655">655</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>.</p>
 
@@ -627,7 +634,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00638">638</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00672">672</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, and <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>.</p>
 
@@ -645,7 +652,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00626">626</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00660">660</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
@@ -663,7 +670,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00659">659</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00693">693</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00089">change_render_resolution()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -681,7 +688,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00624">624</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00658">658</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -699,7 +706,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00727">727</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00761">761</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, and <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>.</p>
 
@@ -719,7 +726,7 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_a_a_b_b.html">AABB</a> that sizes the current lightmap in world space. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00764">764</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00798">798</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -739,7 +746,7 @@ Data Fields</h2></td></tr>
 
 <p>The amount of iterations to bake a lightmap. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00737">737</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00771">771</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -757,7 +764,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00630">630</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00664">664</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, and <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
 
@@ -775,7 +782,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00656">656</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00690">690</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ui__callbacks_8c_source.html#l00022">init_action_callbacks()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -793,7 +800,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00625">625</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00659">659</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -811,7 +818,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00623">623</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00657">657</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
@@ -829,7 +836,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00650">650</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00684">684</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -847,7 +854,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00622">622</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00656">656</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l06519">render_asset_instance_menu()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -867,7 +874,7 @@ Data Fields</h2></td></tr>
 
 <p>Controls how many iterations per lightmap iteration perform the AO check. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00743">743</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00777">777</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -887,7 +894,7 @@ Data Fields</h2></td></tr>
 
 <p>Controls how many iterations per lightmap iteration perform the AO check. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00742">742</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00776">776</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -905,9 +912,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00653">653</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00687">687</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="editor_8c_source.html#l00089">change_render_resolution()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="editor_8c_source.html#l00089">change_render_resolution()</a>, <a class="el" href="init_8c_source.html#l01991">init()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
 </div>
 </div>
@@ -923,7 +930,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00655">655</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00689">689</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -941,7 +948,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00759">759</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00793">793</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00858">execute_aprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, and <a class="el" href="editor_8c_source.html#l02806">render_obb_widget()</a>.</p>
 
@@ -959,7 +966,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00760">760</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00794">794</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00858">execute_aprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, and <a class="el" href="editor_8c_source.html#l02806">render_obb_widget()</a>.</p>
 
@@ -977,7 +984,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00761">761</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00795">795</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00858">execute_aprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, and <a class="el" href="editor_8c_source.html#l02806">render_obb_widget()</a>.</p>
 
@@ -995,7 +1002,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00633">633</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00667">667</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
@@ -1013,7 +1020,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00612">612</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00646">646</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1033,7 +1040,7 @@ Data Fields</h2></td></tr>
 
 <p>The amount of iterations to bake each probe. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00738">738</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00772">772</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -1053,7 +1060,7 @@ Data Fields</h2></td></tr>
 
 <p>The target framerate for rendering and processing ui events (a cap). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00749">749</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00783">783</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1071,7 +1078,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00685">685</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00719">719</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1092,7 +1099,7 @@ Data Fields</h2></td></tr>
 <p>Tracks rendering dimensions in editor menu. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="editor_8c.html#ae4255fa27e7c15ff45b6bf5cda72961b">render_main_menu()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00684">684</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00718">718</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1112,9 +1119,9 @@ Data Fields</h2></td></tr>
 
 <p>Controls the volume of the reverb signal. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00751">751</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00785">785</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01415">convolver_node_process_pcm_frames()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01412">convolver_node_process_pcm_frames()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1139,7 @@ Data Fields</h2></td></tr>
 
 <p>The current angle for rotation operations in the editor. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00719">719</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00753">753</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01421">execute_asset_instance_undo()</a>, <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, and <a class="el" href="editor_8c_source.html#l02671">render_mat4_widget()</a>.</p>
 
@@ -1152,7 +1159,7 @@ Data Fields</h2></td></tr>
 
 <p>The rotation axis for rotation operations in the editor. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00718">718</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00752">752</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l02671">render_mat4_widget()</a>.</p>
 
@@ -1170,7 +1177,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00698">698</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00732">732</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1188,7 +1195,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00713">713</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00747">747</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l06519">render_asset_instance_menu()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -1206,7 +1213,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00714">714</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00748">748</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l06519">render_asset_instance_menu()</a>.</p>
 
@@ -1224,7 +1231,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00703">703</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00737">737</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00959">execute_aemitter_undo()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -1242,7 +1249,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00704">704</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00738">738</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -1260,7 +1267,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00705">705</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00739">739</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00858">execute_aprobe_undo()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
 
@@ -1278,7 +1285,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00701">701</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00735">735</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
@@ -1296,7 +1303,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00707">707</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00741">741</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00558">execute_editor_settings_undo()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1314,7 +1321,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00696">696</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00730">730</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1332,7 +1339,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00699">699</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00733">733</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00458">execute_light_undo()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -1350,7 +1357,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00706">706</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00740">740</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
 
@@ -1368,7 +1375,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00694">694</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00728">728</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l05690">render_material_menu()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
@@ -1386,7 +1393,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00700">700</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00734">734</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l06519">render_asset_instance_menu()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
@@ -1404,7 +1411,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00715">715</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00749">749</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00636">execute_rprobe_undo()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -1422,7 +1429,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00697">697</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00731">731</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1440,7 +1447,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00695">695</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00729">729</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>.</p>
 
@@ -1458,7 +1465,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00702">702</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00736">736</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01293">execute_text_box_undo()</a>, <a class="el" href="render_8c_source.html#l01260">GPU_upload_singular_text_box()</a>, <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, and <a class="el" href="editor_8c_source.html#l03035">render_text_menu()</a>.</p>
 
@@ -1476,7 +1483,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00711">711</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00745">745</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>.</p>
 
@@ -1494,7 +1501,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00709">709</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00743">743</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01361">GPU_upload_singular_element()</a>, <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, and <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>.</p>
 
@@ -1512,7 +1519,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00712">712</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00746">746</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>.</p>
 
@@ -1530,7 +1537,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00710">710</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00744">744</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01361">GPU_upload_singular_element()</a>, <a class="el" href="render_8c_source.html#l01260">GPU_upload_singular_text_box()</a>, <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l03035">render_text_menu()</a>, and <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>.</p>
 
@@ -1548,7 +1555,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00629">629</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00663">663</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -1566,7 +1573,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00636">636</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00670">670</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="editor_8c_source.html#l02997">render_selection_menu()</a>.</p>
 
@@ -1584,7 +1591,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00647">647</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00681">681</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -1602,7 +1609,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00648">648</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00682">682</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -1620,7 +1627,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00651">651</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00685">685</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="camera_8c_source.html#l00361">update_camera()</a>.</p>
 
@@ -1640,7 +1647,7 @@ Data Fields</h2></td></tr>
 
 <p>Controls the texel density of the uv lightmapper. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00739">739</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00773">773</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, and <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>.</p>
 
@@ -1658,7 +1665,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00639">639</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00673">673</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, and <a class="el" href="editor_8c_source.html#l03035">render_text_menu()</a>.</p>
 
@@ -1676,7 +1683,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00627">627</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00661">661</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -1694,7 +1701,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00658">658</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00692">692</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01463">GPU_upload_ui_elements()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1712,7 +1719,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00631">631</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00665">665</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
 
@@ -1732,7 +1739,7 @@ Data Fields</h2></td></tr>
 
 <p>The maximum memory value for the <a class="el" href="struct_undo.html">Undo</a> stack. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00766">766</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00800">800</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00267">check_stack_size()</a>, and <a class="el" href="init_8c_source.html#l00920">init_globals()</a>.</p>
 
@@ -1752,9 +1759,9 @@ Data Fields</h2></td></tr>
 
 <p>Controls the engine volume. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00752">752</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00786">786</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01415">convolver_node_process_pcm_frames()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01412">convolver_node_process_pcm_frames()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
 </div>
 </div>
@@ -1770,7 +1777,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00654">654</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00688">688</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
 
@@ -1790,7 +1797,7 @@ Data Fields</h2></td></tr>
 
 <p>Shows wireframes around many structures: <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s, <a class="el" href="struct_reflection_probe.html" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s, <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, <a class="el" href="struct_audio_portal.html" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s, <a class="el" href="struct_a_a_b_b.html">AABB</a>s, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00677">677</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00711">711</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="render_8c_source.html#l03057">render()</a>.</p>
 

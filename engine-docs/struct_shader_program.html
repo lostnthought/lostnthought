@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -113,21 +120,34 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_shader_
 </div><!--header-->
 <div class="contents">
 
+<p>OpenGL <a class="el" href="struct_shader_program.html" title="OpenGL ShaderPrograms: vertex, fragment, geometry, and compute.">ShaderProgram</a>s: vertex, fragment, geometry, and compute.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a5cd33e7bf1c9d23b2eef8aa93dc36558" id="r_a5cd33e7bf1c9d23b2eef8aa93dc36558"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#a5cd33e7bf1c9d23b2eef8aa93dc36558">program</a></td></tr>
+<tr class="memdesc:a5cd33e7bf1c9d23b2eef8aa93dc36558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program handle.  <br /></td></tr>
 <tr class="memitem:a8a79d75e76d1fef9e34217efac148e7e" id="r_a8a79d75e76d1fef9e34217efac148e7e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a8a79d75e76d1fef9e34217efac148e7e">perm</a></td></tr>
+<tr class="memdesc:a8a79d75e76d1fef9e34217efac148e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which permutation of a shader branch this is.  <br /></td></tr>
 <tr class="memitem:abf19c42a4e032adf28edc149a01a652f" id="r_abf19c42a4e032adf28edc149a01a652f"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#abf19c42a4e032adf28edc149a01a652f">name</a> [256]</td></tr>
+<tr class="memdesc:abf19c42a4e032adf28edc149a01a652f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the shader.  <br /></td></tr>
 <tr class="memitem:a99059a335b32681ff6993a3533c7cbd8" id="r_a99059a335b32681ff6993a3533c7cbd8"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a99059a335b32681ff6993a3533c7cbd8">vert_path</a> [256]</td></tr>
+<tr class="memdesc:a99059a335b32681ff6993a3533c7cbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to vertex shader (or compute shader).  <br /></td></tr>
 <tr class="memitem:a5e924b2bed28c6028a921a0bf6410c65" id="r_a5e924b2bed28c6028a921a0bf6410c65"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a5e924b2bed28c6028a921a0bf6410c65">geom_path</a> [256]</td></tr>
+<tr class="memdesc:a5e924b2bed28c6028a921a0bf6410c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to geometry shader.  <br /></td></tr>
 <tr class="memitem:a911ba57524334afb767a5a62a0b6cad4" id="r_a911ba57524334afb767a5a62a0b6cad4"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a911ba57524334afb767a5a62a0b6cad4">frag_path</a> [256]</td></tr>
+<tr class="memdesc:a911ba57524334afb767a5a62a0b6cad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to fragment shader.  <br /></td></tr>
 <tr class="memitem:af4e73dea9301fd2d6c520431b4f1955c" id="r_af4e73dea9301fd2d6c520431b4f1955c"><td class="memItemLeft"><a class="el" href="struct_uniform.html">Uniform</a>&#160;</td><td class="memItemRight"><a class="el" href="#af4e73dea9301fd2d6c520431b4f1955c">uniforms</a> [32]</td></tr>
+<tr class="memdesc:af4e73dea9301fd2d6c520431b4f1955c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_uniform.html" title="OpenGL shader Uniforms.">Uniform</a>s for shader data.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03311">3311</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>OpenGL <a class="el" href="struct_shader_program.html" title="OpenGL ShaderPrograms: vertex, fragment, geometry, and compute.">ShaderProgram</a>s: vertex, fragment, geometry, and compute. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="shaders_8c.html">core/shaders.c</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo</a></b></dt><dd>Expand uniform count or make it dynamic? </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03408">3408</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a911ba57524334afb767a5a62a0b6cad4" name="a911ba57524334afb767a5a62a0b6cad4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a911ba57524334afb767a5a62a0b6cad4">&#9670;&#160;</a></span>frag_path</h2>
@@ -141,7 +161,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03319">3319</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Path to fragment shader. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03416">3416</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l01113">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00770">init_brdf_shader()</a>, <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="shaders_8c_source.html#l00978">init_history_shader()</a>, <a class="el" href="shaders_8c_source.html#l00794">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00783">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l00969">init_sobel_shader()</a>, <a class="el" href="shaders_8c_source.html#l01025">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00543">init_static_shader()</a>, <a class="el" href="shaders_8c_source.html#l00803">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00819">init_ui_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00673">init_wireframe_shader()</a>.</p>
 
@@ -159,7 +181,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03318">3318</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Path to geometry shader. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03415">3415</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>.</p>
 
@@ -177,7 +201,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03316">3316</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Name of the shader. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03413">3413</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>.</p>
 
@@ -195,7 +221,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03315">3315</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Which permutation of a shader branch this is. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03412">3412</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00683">init_postprocess_shader()</a>.</p>
 
@@ -213,9 +241,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03314">3314</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Program handle. </p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="render_8c_source.html#l01836">draw_arrays_elements()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, <a class="el" href="shaders_8c_source.html#l01113">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00770">init_brdf_shader()</a>, <a class="el" href="shaders_8c_source.html#l00898">init_cull_clusers_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00917">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="shaders_8c_source.html#l00978">init_history_shader()</a>, <a class="el" href="shaders_8c_source.html#l00794">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00683">init_postprocess_shader()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00783">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l00969">init_sobel_shader()</a>, <a class="el" href="shaders_8c_source.html#l01025">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00543">init_static_shader()</a>, <a class="el" href="shaders_8c_source.html#l00803">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00819">init_ui_shader()</a>, <a class="el" href="shaders_8c_source.html#l00673">init_wireframe_shader()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03411">3411</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="render_8c_source.html#l01836">draw_arrays_elements()</a>, <a class="el" href="init_8c_source.html#l01991">init()</a>, <a class="el" href="shaders_8c_source.html#l01113">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00770">init_brdf_shader()</a>, <a class="el" href="shaders_8c_source.html#l00898">init_cull_clusers_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00917">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="shaders_8c_source.html#l00978">init_history_shader()</a>, <a class="el" href="shaders_8c_source.html#l00794">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00683">init_postprocess_shader()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00783">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l00969">init_sobel_shader()</a>, <a class="el" href="shaders_8c_source.html#l01025">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00543">init_static_shader()</a>, <a class="el" href="shaders_8c_source.html#l00803">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00819">init_ui_shader()</a>, <a class="el" href="shaders_8c_source.html#l00673">init_wireframe_shader()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -231,7 +261,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03321">3321</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p><a class="el" href="struct_uniform.html" title="OpenGL shader Uniforms.">Uniform</a>s for shader data. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03418">3418</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l01113">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00770">init_brdf_shader()</a>, <a class="el" href="shaders_8c_source.html#l00898">init_cull_clusers_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00917">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="shaders_8c_source.html#l00683">init_postprocess_shader()</a>, <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00783">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l01025">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00803">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00819">init_ui_shader()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
@@ -249,7 +281,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03317">3317</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Path to vertex shader (or compute shader). </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03414">3414</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l01113">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00770">init_brdf_shader()</a>, <a class="el" href="shaders_8c_source.html#l00917">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="shaders_8c_source.html#l00978">init_history_shader()</a>, <a class="el" href="shaders_8c_source.html#l00794">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00783">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l00969">init_sobel_shader()</a>, <a class="el" href="shaders_8c_source.html#l01025">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00543">init_static_shader()</a>, <a class="el" href="shaders_8c_source.html#l00803">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00819">init_ui_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00673">init_wireframe_shader()</a>.</p>
 

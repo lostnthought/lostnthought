@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -109,7 +116,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_audio_p
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">AudioProbeWeights Struct Reference</div></div>
+  <div class="headertitle"><div class="title">AudioProbeWeights Struct Reference<div class="ingroups"><a class="el" href="group__aprobe__group.html">AudioProbe Definitions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -123,17 +130,17 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aea8b83a5523bb3dc2cbbeb66c111c024" id="r_aea8b83a5523bb3dc2cbbeb66c111c024"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aea8b83a5523bb3dc2cbbeb66c111c024">count</a></td></tr>
 <tr class="memdesc:aea8b83a5523bb3dc2cbbeb66c111c024"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of probes that were sampled.  <br /></td></tr>
 <tr class="memitem:ad49d1bca1eae13d8e9f5aa54f8c4fdad" id="r_ad49d1bca1eae13d8e9f5aa54f8c4fdad"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad49d1bca1eae13d8e9f5aa54f8c4fdad">APV_id</a></td></tr>
-<tr class="memdesc:ad49d1bca1eae13d8e9f5aa54f8c4fdad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which <a class="el" href="struct_a_p_v.html">APV</a> these probes belong to.  <br /></td></tr>
-<tr class="memitem:af0c66c2b3ad2bf5de2f2aded8287ffdf" id="r_af0c66c2b3ad2bf5de2f2aded8287ffdf"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af0c66c2b3ad2bf5de2f2aded8287ffdf">probes</a> [<a class="el" href="engine__types_8h.html#a55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td></tr>
+<tr class="memdesc:ad49d1bca1eae13d8e9f5aa54f8c4fdad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which <a class="el" href="struct_a_p_v.html" title="A ProbeVolume for AudioProbes.">APV</a> these probes belong to.  <br /></td></tr>
+<tr class="memitem:af0c66c2b3ad2bf5de2f2aded8287ffdf" id="r_af0c66c2b3ad2bf5de2f2aded8287ffdf"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af0c66c2b3ad2bf5de2f2aded8287ffdf">probes</a> [<a class="el" href="group__aprobe__group.html#ga55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td></tr>
 <tr class="memdesc:af0c66c2b3ad2bf5de2f2aded8287ffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The indices of the <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s.  <br /></td></tr>
-<tr class="memitem:afdbd6693654e45837c1e935d36b1a7a1" id="r_afdbd6693654e45837c1e935d36b1a7a1"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afdbd6693654e45837c1e935d36b1a7a1">weights</a> [<a class="el" href="engine__types_8h.html#a55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td></tr>
+<tr class="memitem:afdbd6693654e45837c1e935d36b1a7a1" id="r_afdbd6693654e45837c1e935d36b1a7a1"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afdbd6693654e45837c1e935d36b1a7a1">weights</a> [<a class="el" href="group__aprobe__group.html#ga55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td></tr>
 <tr class="memdesc:afdbd6693654e45837c1e935d36b1a7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The weights that correspond to each probe's value.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Weights used for interpolating between audio probes. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="audio_8c.html#ad72657018ab828f28d69b5fbe9036f14">interpolate_nearest_aprobes()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00320">320</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00349">349</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ad49d1bca1eae13d8e9f5aa54f8c4fdad" name="ad49d1bca1eae13d8e9f5aa54f8c4fdad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad49d1bca1eae13d8e9f5aa54f8c4fdad">&#9670;&#160;</a></span>APV_id</h2>
@@ -147,9 +154,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Which <a class="el" href="struct_a_p_v.html">APV</a> these probes belong to. </p>
+<p>Which <a class="el" href="struct_a_p_v.html" title="A ProbeVolume for AudioProbes.">APV</a> these probes belong to. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00324">324</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00353">353</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
@@ -169,7 +176,7 @@ Data Fields</h2></td></tr>
 
 <p>The amount of probes that were sampled. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00323">323</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00352">352</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
@@ -182,14 +189,14 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int AudioProbeWeights::probes[<a class="el" href="engine__types_8h.html#a55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td>
+          <td class="memname">int AudioProbeWeights::probes[<a class="el" href="group__aprobe__group.html#ga55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The indices of the <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00325">325</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00354">354</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
@@ -202,14 +209,14 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float AudioProbeWeights::weights[<a class="el" href="engine__types_8h.html#a55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td>
+          <td class="memname">float AudioProbeWeights::weights[<a class="el" href="group__aprobe__group.html#ga55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The weights that correspond to each probe's value. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00326">326</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00355">355</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 

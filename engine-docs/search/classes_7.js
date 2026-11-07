@@ -18,6 +18,5 @@ var searchData=
   ['gltfsampler_15',['GLTFSampler',['../struct_g_l_t_f_sampler.html',1,'']]],
   ['gltfskin_16',['GLTFSkin',['../struct_g_l_t_f_skin.html',1,'']]],
   ['gltftexture_17',['GLTFTexture',['../struct_g_l_t_f_texture.html',1,'']]],
-  ['glyph_18',['Glyph',['../struct_glyph.html',1,'']]],
-  ['gscoreentry_19',['GScoreEntry',['../struct_g_score_entry.html',1,'']]]
+  ['glyph_18',['Glyph',['../struct_glyph.html',1,'']]]
 ];

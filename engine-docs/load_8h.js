@@ -6,7 +6,6 @@ var load_8h =
     [ "load_aprobes", "load_8h.html#a7cf412d3fadb333fdb401cbac887aa64", null ],
     [ "load_cubemap", "load_8h.html#a7818b730c8e29e695878a3d5962b2992", null ],
     [ "load_lprobes", "load_8h.html#a7aaa4191ada4b271c4e3638514e883ba", null ],
-    [ "load_obj", "load_8h.html#a098331489afa2e490da7a2dd3ab7bfa1", null ],
     [ "load_rprobes", "load_8h.html#a40fecd5fcffd2eb95836d8ef4613f924", null ],
     [ "load_texture", "load_8h.html#ad9b6ee41b834ed091b5bed23f98f214c", null ],
     [ "load_ui", "load_8h.html#a3911b6ff2c604464597aadf0b50f0cf2", null ],

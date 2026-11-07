@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -123,7 +130,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a37858b8411a6e4f1b4a246306a881cb3" id="r_a37858b8411a6e4f1b4a246306a881cb3"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a37858b8411a6e4f1b4a246306a881cb3">mn_id</a></td></tr>
 <tr class="memdesc:a37858b8411a6e4f1b4a246306a881cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> this belongs to.  <br /></td></tr>
 <tr class="memitem:a5b705acb331ab7dd9db3965b5bad8d0d" id="r_a5b705acb331ab7dd9db3965b5bad8d0d"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a5b705acb331ab7dd9db3965b5bad8d0d">command_id</a></td></tr>
-<tr class="memdesc:a5b705acb331ab7dd9db3965b5bad8d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_draw_command.html">DrawCommand</a> this refers to.  <br /></td></tr>
+<tr class="memdesc:a5b705acb331ab7dd9db3965b5bad8d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_draw_command.html" title="The structure used to sort unique submeshes by materials, and shaders in the main render pass.">DrawCommand</a> this refers to.  <br /></td></tr>
 <tr class="memitem:ab0416c7e505c6bd36038f0e753a65b30" id="r_ab0416c7e505c6bd36038f0e753a65b30"><td class="memItemLeft"><a class="el" href="structuvec2.html">uvec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab0416c7e505c6bd36038f0e753a65b30">directional_lights</a></td></tr>
 <tr class="memdesc:ab0416c7e505c6bd36038f0e753a65b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directional <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s count and offset.  <br /></td></tr>
 <tr class="memitem:a3f5f70d8ff3120bf2eb06fc24cdd5dd5" id="r_a3f5f70d8ff3120bf2eb06fc24cdd5dd5"><td class="memItemLeft"><a class="el" href="structuvec2.html">uvec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3f5f70d8ff3120bf2eb06fc24cdd5dd5">spot_lights</a></td></tr>
@@ -139,7 +146,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p><a class="el" href="struct_transform_g_p_u.html" title="TransformGPU buffer structure for INSTANCE_SSBO.">TransformGPU</a> buffer structure for <a class="el" href="main_8c.html#a8abd2461b1981b503675395277d929d2">INSTANCE_SSBO</a>. </p>
 <p>Triple buffered and submitted into each frame for each mesh node. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="main_8c.html#a8abd2461b1981b503675395277d929d2">INSTANCE_SSBO</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00859">859</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00893">893</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a5b705acb331ab7dd9db3965b5bad8d0d" name="a5b705acb331ab7dd9db3965b5bad8d0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b705acb331ab7dd9db3965b5bad8d0d">&#9670;&#160;</a></span>command_id</h2>
@@ -153,9 +160,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <a class="el" href="struct_draw_command.html">DrawCommand</a> this refers to. </p>
+<p>The <a class="el" href="struct_draw_command.html" title="The structure used to sort unique submeshes by materials, and shaders in the main render pass.">DrawCommand</a> this refers to. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00863">863</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00897">897</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -175,7 +182,7 @@ Data Fields</h2></td></tr>
 
 <p>Directional <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s count and offset. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00864">864</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00898">898</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -195,7 +202,7 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> ID for this submesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00867">867</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00901">901</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -215,7 +222,7 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> this belongs to. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00862">862</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00896">896</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -235,7 +242,7 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_g_l_t_f_skin.html" title="The structure of an Skeletatal Animation loaded in from GLTFAnimation.">GLTFSkin</a> matrix offset for this transform. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00866">866</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00900">900</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -255,7 +262,7 @@ Data Fields</h2></td></tr>
 
 <p>Spot <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s count and offset. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00865">865</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00899">899</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -275,7 +282,7 @@ Data Fields</h2></td></tr>
 
 <p>The Transform's matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00868">868</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00902">902</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 

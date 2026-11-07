@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -121,261 +128,27 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('audio__ir_8h.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad7b112adefb25363ce2cac8d90f519cc" id="r_ad7b112adefb25363ce2cac8d90f519cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad7b112adefb25363ce2cac8d90f519cc">rotate_sh</a> (float *OUT, float SH[<a class="el" href="engine__types_8h.html#a11a427cb1228a62dee06e50c466d4804">SH_MAX</a>], <a class="el" href="structmat3.html">mat3</a> rot)</td></tr>
-<tr class="memdesc:ad7b112adefb25363ce2cac8d90f519cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the SH.  <br /></td></tr>
-<tr class="memitem:a3b6731fb91c35d5c834c0addcf0753ef" id="r_a3b6731fb91c35d5c834c0addcf0753ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3b6731fb91c35d5c834c0addcf0753ef">fft_channels</a> (<a class="el" href="struct_convolver_node.html">ConvolverNode</a> *node, bool crossfading)</td></tr>
-<tr class="memdesc:a3b6731fb91c35d5c834c0addcf0753ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFTs the newest audio chunk with the partitioned overlap-add buffer.  <br /></td></tr>
-<tr class="memitem:a33cb3214a18859fbac84b5832d4ec433" id="r_a33cb3214a18859fbac84b5832d4ec433"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a33cb3214a18859fbac84b5832d4ec433">evaluate_sh</a> (<a class="el" href="structvec3.html">vec3</a> dir, float SH[<a class="el" href="engine__types_8h.html#a11a427cb1228a62dee06e50c466d4804">SH_MAX</a>])</td></tr>
-<tr class="memdesc:a33cb3214a18859fbac84b5832d4ec433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates 9 spherical harmonics based on direction.  <br /></td></tr>
-<tr class="memitem:ac94670b0a25d91c04c62d2e745727f03" id="r_ac94670b0a25d91c04c62d2e745727f03"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac94670b0a25d91c04c62d2e745727f03">load_hrtf_from_binary</a> (const char *filename)</td></tr>
-<tr class="memdesc:ac94670b0a25d91c04c62d2e745727f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a stored HRTF from engine binary.  <br /></td></tr>
-<tr class="memitem:a87c9086910fb559205a3fdbcd2c975b3" id="r_a87c9086910fb559205a3fdbcd2c975b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a87c9086910fb559205a3fdbcd2c975b3">update_player_audio_probe</a> ()</td></tr>
-<tr class="memdesc:a87c9086910fb559205a3fdbcd2c975b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a new IR needs to be signaled from the background thread.  <br /></td></tr>
-<tr class="memitem:afa67ed8d6e7bf514aa0ccd3a4cbef3f7" id="r_afa67ed8d6e7bf514aa0ccd3a4cbef3f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afa67ed8d6e7bf514aa0ccd3a4cbef3f7">init_hrtf_worker_thread</a> (<a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *td)</td></tr>
-<tr class="memdesc:afa67ed8d6e7bf514aa0ccd3a4cbef3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the worker thread that convolves the audio probes with the HRTF.  <br /></td></tr>
-<tr class="memitem:a53c21fcfa5ed74a88fd0ef9736493dcc" id="r_a53c21fcfa5ed74a88fd0ef9736493dcc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a53c21fcfa5ed74a88fd0ef9736493dcc">delete_hrtf_worker_thread</a> (<a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *td)</td></tr>
-<tr class="memdesc:a53c21fcfa5ed74a88fd0ef9736493dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up the worker thread that convolves the audio probes with the HRTF.  <br /></td></tr>
+<tr class="memitem:gad7b112adefb25363ce2cac8d90f519cc" id="r_gad7b112adefb25363ce2cac8d90f519cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gad7b112adefb25363ce2cac8d90f519cc">rotate_sh</a> (float *OUT, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>], <a class="el" href="structmat3.html">mat3</a> rot)</td></tr>
+<tr class="memdesc:gad7b112adefb25363ce2cac8d90f519cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the SH.  <br /></td></tr>
+<tr class="memitem:ga3b6731fb91c35d5c834c0addcf0753ef" id="r_ga3b6731fb91c35d5c834c0addcf0753ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga3b6731fb91c35d5c834c0addcf0753ef">fft_channels</a> (<a class="el" href="struct_convolver_node.html">ConvolverNode</a> *node, bool crossfading)</td></tr>
+<tr class="memdesc:ga3b6731fb91c35d5c834c0addcf0753ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFTs the newest audio chunk with the partitioned overlap-add buffer.  <br /></td></tr>
+<tr class="memitem:ga33cb3214a18859fbac84b5832d4ec433" id="r_ga33cb3214a18859fbac84b5832d4ec433"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433">evaluate_sh</a> (<a class="el" href="structvec3.html">vec3</a> dir, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>])</td></tr>
+<tr class="memdesc:ga33cb3214a18859fbac84b5832d4ec433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates 9 spherical harmonics based on direction.  <br /></td></tr>
+<tr class="memitem:gac94670b0a25d91c04c62d2e745727f03" id="r_gac94670b0a25d91c04c62d2e745727f03"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gac94670b0a25d91c04c62d2e745727f03">load_hrtf_from_binary</a> (const char *filename)</td></tr>
+<tr class="memdesc:gac94670b0a25d91c04c62d2e745727f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a stored HRTF from engine binary.  <br /></td></tr>
+<tr class="memitem:ga87c9086910fb559205a3fdbcd2c975b3" id="r_ga87c9086910fb559205a3fdbcd2c975b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga87c9086910fb559205a3fdbcd2c975b3">update_player_audio_probe</a> ()</td></tr>
+<tr class="memdesc:ga87c9086910fb559205a3fdbcd2c975b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a new IR needs to be signaled from the background thread.  <br /></td></tr>
+<tr class="memitem:gafa67ed8d6e7bf514aa0ccd3a4cbef3f7" id="r_gafa67ed8d6e7bf514aa0ccd3a4cbef3f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gafa67ed8d6e7bf514aa0ccd3a4cbef3f7">init_hrtf_worker_thread</a> (<a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *td)</td></tr>
+<tr class="memdesc:gafa67ed8d6e7bf514aa0ccd3a4cbef3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the worker thread that convolves the audio probes with the HRTF.  <br /></td></tr>
+<tr class="memitem:ga53c21fcfa5ed74a88fd0ef9736493dcc" id="r_ga53c21fcfa5ed74a88fd0ef9736493dcc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga53c21fcfa5ed74a88fd0ef9736493dcc">delete_hrtf_worker_thread</a> (<a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *td)</td></tr>
+<tr class="memdesc:ga53c21fcfa5ed74a88fd0ef9736493dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up the worker thread that convolves the audio probes with the HRTF.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Audio IR processing, hrtf loading and parsing, and audio threading. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="init_8c.html">init.c</a> for the audio thread convolution. </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="audio__ir_8h_source.html">audio_ir.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a53c21fcfa5ed74a88fd0ef9736493dcc" name="a53c21fcfa5ed74a88fd0ef9736493dcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53c21fcfa5ed74a88fd0ef9736493dcc">&#9670;&#160;</a></span>delete_hrtf_worker_thread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void delete_hrtf_worker_thread </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *</td>          <td class="paramname"><span class="paramname"><em>td</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cleans up the worker thread that convolves the audio probes with the HRTF. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">td</td><td>The worker thread data. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00506">506</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
-
-<p class="reference">References <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, <a class="el" href="engine__types_8h_source.html#l00355">HRTFThreadData::mutex</a>, <a class="el" href="engine__types_8h_source.html#l00052">NUM_PARTITIONS</a>, <a class="el" href="engine__types_8h_source.html#l00345">PARTITION_BUFFERS</a>, <a class="el" href="engine__types_8h_source.html#l00363">HRTFThreadData::stop_requested</a>, <a class="el" href="engine__types_8h_source.html#l00354">HRTFThreadData::t</a>, <a class="el" href="engine__types_8h_source.html#l00368">HRTFThreadData::tables</a>, and <a class="el" href="engine__types_8h_source.html#l00356">HRTFThreadData::work_cond</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, and <a class="el" href="main_8c_source.html#l00493">main()</a>.</p>
-
-</div>
-</div>
-<a id="a33cb3214a18859fbac84b5832d4ec433" name="a33cb3214a18859fbac84b5832d4ec433"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33cb3214a18859fbac84b5832d4ec433">&#9670;&#160;</a></span>evaluate_sh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void evaluate_sh </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>SH</em></span>[SH_MAX]&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Evaluates 9 spherical harmonics based on direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dir</td><td>The direction to evaluate. </td></tr>
-    <tr><td class="paramname">SH</td><td>The output SH array. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00009">9</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
-
-<p class="reference">References <a class="el" href="audio__ir_8c_source.html#l00009">evaluate_sh()</a>, <a class="el" href="engine__types_8h_source.html#l00134">SH_MAX</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00009">evaluate_sh()</a>, and <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
-
-</div>
-</div>
-<a id="a3b6731fb91c35d5c834c0addcf0753ef" name="a3b6731fb91c35d5c834c0addcf0753ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b6731fb91c35d5c834c0addcf0753ef">&#9670;&#160;</a></span>fft_channels()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fft_channels </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_convolver_node.html">ConvolverNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>crossfading</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>FFTs the newest audio chunk with the partitioned overlap-add buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td>The convolver node that is processing the audio. </td></tr>
-    <tr><td class="paramname">crossfading</td><td>If we are currently crossfading into a new IR this frame. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00126">126</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00433">ConvolverNode::AUDIO_HISTORY</a>, <a class="el" href="engine__types_8h_source.html#l00430">ConvolverNode::bwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00424">ConvolverNode::complex_len</a>, <a class="el" href="main_8c_source.html#l00069">CONVOLVER_NODE</a>, <a class="el" href="audio__ir_8c_source.html#l00126">fft_channels()</a>, <a class="el" href="engine__types_8h_source.html#l00429">ConvolverNode::fwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00440">ConvolverNode::history_head</a>, <a class="el" href="engine__types_8h_source.html#l00426">ConvolverNode::ir</a>, <a class="el" href="engine__types_8h_source.html#l00444">ConvolverNode::LEFT_OUT</a>, <a class="el" href="engine__types_8h_source.html#l00432">ConvolverNode::MONO_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00052">NUM_PARTITIONS</a>, <a class="el" href="engine__types_8h_source.html#l00051">NUM_PARTITIONS_MAX</a>, <a class="el" href="engine__types_8h_source.html#l00423">ConvolverNode::padded_len</a>, <a class="el" href="engine__types_8h_source.html#l00427">ConvolverNode::prev_ir</a>, <a class="el" href="engine__types_8h_source.html#l00442">ConvolverNode::PREV_LEFT_OUT</a>, <a class="el" href="engine__types_8h_source.html#l00443">ConvolverNode::PREV_RIGHT_OUT</a>, <a class="el" href="engine__types_8h_source.html#l00435">ConvolverNode::PREV_SUM_L</a>, <a class="el" href="engine__types_8h_source.html#l00436">ConvolverNode::PREV_SUM_R</a>, <a class="el" href="engine__types_8h_source.html#l00445">ConvolverNode::RIGHT_OUT</a>, <a class="el" href="engine__types_8h_source.html#l00437">ConvolverNode::SUM_L</a>, <a class="el" href="engine__types_8h_source.html#l00438">ConvolverNode::SUM_R</a>, and <a class="el" href="types_8h_source.html#l00031">X</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01415">convolver_node_process_pcm_frames()</a>, and <a class="el" href="audio__ir_8c_source.html#l00126">fft_channels()</a>.</p>
-
-</div>
-</div>
-<a id="afa67ed8d6e7bf514aa0ccd3a4cbef3f7" name="afa67ed8d6e7bf514aa0ccd3a4cbef3f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa67ed8d6e7bf514aa0ccd3a4cbef3f7">&#9670;&#160;</a></span>init_hrtf_worker_thread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_hrtf_worker_thread </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *</td>          <td class="paramname"><span class="paramname"><em>td</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the worker thread that convolves the audio probes with the HRTF. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">td</td><td>The worker thread data. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00475">475</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main_8c_source.html#l00070">AUDIO_SCRATCH</a>, <a class="el" href="engine__types_8h_source.html#l00386">AudioScratchBuffers::complex_len</a>, <a class="el" href="engine__types_8h_source.html#l00323">AudioProbeWeights::count</a>, <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, <a class="el" href="engine__types_8h_source.html#l00358">HRTFThreadData::ir_swap_lock</a>, <a class="el" href="engine__types_8h_source.html#l00355">HRTFThreadData::mutex</a>, <a class="el" href="engine__types_8h_source.html#l00364">HRTFThreadData::new_probe_ready</a>, <a class="el" href="engine__types_8h_source.html#l00052">NUM_PARTITIONS</a>, <a class="el" href="engine__types_8h_source.html#l00345">PARTITION_BUFFERS</a>, <a class="el" href="engine__types_8h_source.html#l00363">HRTFThreadData::stop_requested</a>, <a class="el" href="engine__types_8h_source.html#l00354">HRTFThreadData::t</a>, <a class="el" href="engine__types_8h_source.html#l00368">HRTFThreadData::tables</a>, <a class="el" href="engine__types_8h_source.html#l00366">HRTFThreadData::w</a>, and <a class="el" href="engine__types_8h_source.html#l00356">HRTFThreadData::work_cond</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01607">init_audio_scratch_buffers()</a>, and <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>.</p>
-
-</div>
-</div>
-<a id="ac94670b0a25d91c04c62d2e745727f03" name="ac94670b0a25d91c04c62d2e745727f03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac94670b0a25d91c04c62d2e745727f03">&#9670;&#160;</a></span>load_hrtf_from_binary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_hrtf_from_binary </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Loads a stored HRTF from engine binary. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>The file to load. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00105">105</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
-
-<p class="reference">References <a class="el" href="audio__ir_8c_source.html#l00044">allocate_audio_scratch_hrtf()</a>, <a class="el" href="main_8c_source.html#l00070">AUDIO_SCRATCH</a>, <a class="el" href="engine__types_8h_source.html#l00389">AudioScratchBuffers::complex_ir_len</a>, <a class="el" href="main_8c_source.html#l00068">HRTF_LENGTH</a>, <a class="el" href="engine__types_8h_source.html#l00388">AudioScratchBuffers::ir_len</a>, <a class="el" href="audio__ir_8c_source.html#l00105">load_hrtf_from_binary()</a>, <a class="el" href="engine__types_8h_source.html#l00134">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l00402">AudioScratchBuffers::STATIC_HRTF_L</a>, <a class="el" href="engine__types_8h_source.html#l00404">AudioScratchBuffers::STATIC_HRTF_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00403">AudioScratchBuffers::STATIC_HRTF_R</a>, and <a class="el" href="engine__types_8h_source.html#l00405">AudioScratchBuffers::STATIC_HRTF_R_FWD</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="audio__ir_8c_source.html#l00105">load_hrtf_from_binary()</a>.</p>
-
-</div>
-</div>
-<a id="ad7b112adefb25363ce2cac8d90f519cc" name="ad7b112adefb25363ce2cac8d90f519cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7b112adefb25363ce2cac8d90f519cc">&#9670;&#160;</a></span>rotate_sh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void rotate_sh </td>
-          <td>(</td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>OUT</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>SH</em></span>[SH_MAX], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmat3.html">mat3</a></td>          <td class="paramname"><span class="paramname"><em>rot</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Rotates the SH. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">OUT</td><td>The array of rotated SH. </td></tr>
-    <tr><td class="paramname">SH</td><td>The input SH. </td></tr>
-    <tr><td class="paramname">rot</td><td>The rotation matrix. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section author"><dt>Author</dt><dd>John Hable. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00197">197</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
-
-<p class="reference">References <a class="el" href="camera_8c_source.html#l00888">rot()</a>, <a class="el" href="audio__ir_8c_source.html#l00197">rotate_sh()</a>, and <a class="el" href="engine__types_8h_source.html#l00134">SH_MAX</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00197">rotate_sh()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
-
-</div>
-</div>
-<a id="a87c9086910fb559205a3fdbcd2c975b3" name="a87c9086910fb559205a3fdbcd2c975b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87c9086910fb559205a3fdbcd2c975b3">&#9670;&#160;</a></span>update_player_audio_probe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_player_audio_probe </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if a new IR needs to be signaled from the background thread. </p>
-
-<p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00851">851</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02942">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01278">Camera::forward</a>, <a class="el" href="main_8c_source.html#l00071">HRTF_TD</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, <a class="el" href="engine__types_8h_source.html#l00361">HRTFThreadData::last_fwd</a>, <a class="el" href="engine__types_8h_source.html#l00360">HRTFThreadData::last_pos</a>, <a class="el" href="engine__types_8h_source.html#l00355">HRTFThreadData::mutex</a>, <a class="el" href="engine__types_8h_source.html#l01263">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l00364">HRTFThreadData::new_probe_ready</a>, <a class="el" href="main_8c_source.html#l00291">player</a>, <a class="el" href="engine__types_8h_source.html#l01203">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l02945">Player::skeleton</a>, <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, <a class="el" href="engine__types_8h_source.html#l00366">HRTFThreadData::w</a>, and <a class="el" href="engine__types_8h_source.html#l00356">HRTFThreadData::work_cond</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00493">main()</a>, and <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -113,42 +120,63 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_draw_co
 </div><!--header-->
 <div class="contents">
 
-<p> 
+<p>The structure used to sort unique submeshes by materials, and shaders in the main render pass.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa5a1ea6b61a80e21733fcba4c309134e" id="r_aa5a1ea6b61a80e21733fcba4c309134e"><td class="memItemLeft">uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#aa5a1ea6b61a80e21733fcba4c309134e">sort_key</a></td></tr>
 <tr class="memitem:ae2760cc3de32ebc3934fea6de47e41f5" id="r_ae2760cc3de32ebc3934fea6de47e41f5"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#ae2760cc3de32ebc3934fea6de47e41f5">gbuffer_shader</a></td></tr>
+<tr class="memdesc:ae2760cc3de32ebc3934fea6de47e41f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader for the <a class="el" href="main_8c.html#af1652fcad85da131a459957d0a408237">DEPTH_PRE_PASS_SHADER</a>.  <br /></td></tr>
 <tr class="memitem:a62aa48821430d0b78c7b808cc3362618" id="r_a62aa48821430d0b78c7b808cc3362618"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a62aa48821430d0b78c7b808cc3362618">fwd_shader</a></td></tr>
+<tr class="memdesc:a62aa48821430d0b78c7b808cc3362618"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader in <a class="el" href="main_8c.html#aeac10b18caa41a08ec41d44039433a84">DYNAMIC_SHADER</a>.  <br /></td></tr>
 <tr class="memitem:a255a9a6d1d2d20fad5d718f313f4a6ca" id="r_a255a9a6d1d2d20fad5d718f313f4a6ca"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a255a9a6d1d2d20fad5d718f313f4a6ca">material</a></td></tr>
+<tr class="memdesc:a255a9a6d1d2d20fad5d718f313f4a6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> ID into <a class="el" href="struct_globals.html#ab65866f3a5d6aebb5984447222c229ce" title="Materials.">Globals.materials</a>.  <br /></td></tr>
 <tr class="memitem:a8e999410e971283470aa96a60883b133" id="r_a8e999410e971283470aa96a60883b133"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a8e999410e971283470aa96a60883b133">opaque</a></td></tr>
-<tr class="memitem:a95642a3ce64205e68599de9d29e45df1" id="r_a95642a3ce64205e68599de9d29e45df1"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a95642a3ce64205e68599de9d29e45df1">mesh_id</a></td></tr>
+<tr class="memdesc:a8e999410e971283470aa96a60883b133"><td class="mdescLeft">&#160;</td><td class="mdescRight">How opaque a <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> is.  <br /></td></tr>
 <tr class="memitem:a00eccf5a6de9a667349c6c51a7ddd222" id="r_a00eccf5a6de9a667349c6c51a7ddd222"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a00eccf5a6de9a667349c6c51a7ddd222">static_mesh</a></td></tr>
+<tr class="memdesc:a00eccf5a6de9a667349c6c51a7ddd222"><td class="mdescLeft">&#160;</td><td class="mdescRight">If it is a static mesh.  <br /></td></tr>
+<tr class="memitem:a95642a3ce64205e68599de9d29e45df1" id="r_a95642a3ce64205e68599de9d29e45df1"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a95642a3ce64205e68599de9d29e45df1">mesh_id</a></td></tr>
+<tr class="memdesc:a95642a3ce64205e68599de9d29e45df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
+<tr class="memitem:ab29000ef2d4ca47fd296064a420a831a" id="r_ab29000ef2d4ca47fd296064a420a831a"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#ab29000ef2d4ca47fd296064a420a831a">skin_offset</a></td></tr>
+<tr class="memdesc:ab29000ef2d4ca47fd296064a420a831a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset into <a class="el" href="main_8c.html#a9a6deea611410d80610e893d75020150">JOINT_SSBO</a>.  <br /></td></tr>
 <tr class="memitem:a1bf7caa6a9f79ee553e766cce328e722" id="r_a1bf7caa6a9f79ee553e766cce328e722"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a1bf7caa6a9f79ee553e766cce328e722">start_index</a></td></tr>
+<tr class="memdesc:a1bf7caa6a9f79ee553e766cce328e722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the indices / vertices start for this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> in <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>.  <br /></td></tr>
 <tr class="memitem:ad930522c58541d661f2ceea637daa2f6" id="r_ad930522c58541d661f2ceea637daa2f6"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ad930522c58541d661f2ceea637daa2f6">index_count</a></td></tr>
+<tr class="memdesc:ad930522c58541d661f2ceea637daa2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many indices in this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>.  <br /></td></tr>
 <tr class="memitem:a46fee476d8b6652cadf34097e4cb5f2e" id="r_a46fee476d8b6652cadf34097e4cb5f2e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a46fee476d8b6652cadf34097e4cb5f2e">lm_offset</a></td></tr>
+<tr class="memdesc:a46fee476d8b6652cadf34097e4cb5f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lightmap offset into <a class="el" href="main_8c.html#a1dbe43df9bcb92d9dc00349b5106c71b">LIGHTMAP_DATA</a> / <a class="el" href="main_8c.html#a176d559582eb5157b1689ee144a8ac6f">LIGHTMAP_SSBO</a>.  <br /></td></tr>
+<tr class="memitem:a5cd52c734d364f7fb9c01231be744f14" id="r_a5cd52c734d364f7fb9c01231be744f14"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a5cd52c734d364f7fb9c01231be744f14">mn_id</a></td></tr>
+<tr class="memdesc:a5cd52c734d364f7fb9c01231be744f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>.  <br /></td></tr>
+<tr class="memitem:abb7da3556981c092c5bd1c049743081e" id="r_abb7da3556981c092c5bd1c049743081e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#abb7da3556981c092c5bd1c049743081e">sm_id</a></td></tr>
+<tr class="memdesc:abb7da3556981c092c5bd1c049743081e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>.  <br /></td></tr>
+<tr class="memitem:a066e23a012993f4935054e3f7a61a3b6" id="r_a066e23a012993f4935054e3f7a61a3b6"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a066e23a012993f4935054e3f7a61a3b6">array_offset</a></td></tr>
+<tr class="memdesc:a066e23a012993f4935054e3f7a61a3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset into <a class="el" href="main_8c.html#a05ebf56e712bce650a3143213b1e8158">INDIRECT_ARRAYS_COMMAND_BUFFER</a>.  <br /></td></tr>
+<tr class="memitem:ad17ba87a9aca6a3b6126c6b956b31bca" id="r_ad17ba87a9aca6a3b6126c6b956b31bca"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ad17ba87a9aca6a3b6126c6b956b31bca">element_offset</a></td></tr>
+<tr class="memdesc:ad17ba87a9aca6a3b6126c6b956b31bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset into <a class="el" href="main_8c.html#a528a4dce9c1192080c0b28069c6e6087">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>.  <br /></td></tr>
+<tr class="memitem:aa5a1ea6b61a80e21733fcba4c309134e" id="r_aa5a1ea6b61a80e21733fcba4c309134e"><td class="memItemLeft">uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#aa5a1ea6b61a80e21733fcba4c309134e">sort_key</a></td></tr>
+<tr class="memdesc:aa5a1ea6b61a80e21733fcba4c309134e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key that is sorted in <a class="el" href="render_8c.html#a038a44c47525a96e8b73a4877a0fcd82">create_and_sort_draw_commands()</a>.  <br /></td></tr>
+<tr class="memitem:a2e090097d92b7a0bbe3aa7d2e7e6a3b9" id="r_a2e090097d92b7a0bbe3aa7d2e7e6a3b9"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2e090097d92b7a0bbe3aa7d2e7e6a3b9">matrix</a></td></tr>
+<tr class="memdesc:a2e090097d92b7a0bbe3aa7d2e7e6a3b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transformation matrix of the <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>.  <br /></td></tr>
+<tr id="pub-attribs-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Light Offsets</div></td></tr>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>The offsets and counts into the <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a> arrays based on which are effecting this <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>. </p>
+</div></td></tr>
 <tr class="memitem:aab38ec5f587af3ffa6da589089dfb81b" id="r_aab38ec5f587af3ffa6da589089dfb81b"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#aab38ec5f587af3ffa6da589089dfb81b">point_light_offset</a></td></tr>
 <tr class="memitem:aeee998f119a2913973f50ed686fa4f02" id="r_aeee998f119a2913973f50ed686fa4f02"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#aeee998f119a2913973f50ed686fa4f02">point_light_count</a></td></tr>
 <tr class="memitem:ad6931a90fa8503ebca8940cd9c8a6c9d" id="r_ad6931a90fa8503ebca8940cd9c8a6c9d"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#ad6931a90fa8503ebca8940cd9c8a6c9d">directional_light_offset</a></td></tr>
 <tr class="memitem:a2a22de9f494c0dddbc294ef3761b2912" id="r_a2a22de9f494c0dddbc294ef3761b2912"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a2a22de9f494c0dddbc294ef3761b2912">directional_light_count</a></td></tr>
 <tr class="memitem:a0727c15f70397a29e62a894c7fd12adb" id="r_a0727c15f70397a29e62a894c7fd12adb"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a0727c15f70397a29e62a894c7fd12adb">spot_light_offset</a></td></tr>
 <tr class="memitem:a718e251f2a7624dc40fa45d0f22251b1" id="r_a718e251f2a7624dc40fa45d0f22251b1"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a718e251f2a7624dc40fa45d0f22251b1">spot_light_count</a></td></tr>
-<tr class="memitem:a5cd52c734d364f7fb9c01231be744f14" id="r_a5cd52c734d364f7fb9c01231be744f14"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a5cd52c734d364f7fb9c01231be744f14">mn_id</a></td></tr>
-<tr class="memitem:abb7da3556981c092c5bd1c049743081e" id="r_abb7da3556981c092c5bd1c049743081e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#abb7da3556981c092c5bd1c049743081e">sm_id</a></td></tr>
-<tr class="memitem:a2e090097d92b7a0bbe3aa7d2e7e6a3b9" id="r_a2e090097d92b7a0bbe3aa7d2e7e6a3b9"><td class="memItemLeft"><a class="el" href="structmat4.html">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2e090097d92b7a0bbe3aa7d2e7e6a3b9">matrix</a></td></tr>
-<tr class="memitem:ab29000ef2d4ca47fd296064a420a831a" id="r_ab29000ef2d4ca47fd296064a420a831a"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#ab29000ef2d4ca47fd296064a420a831a">skin_offset</a></td></tr>
-<tr class="memitem:a066e23a012993f4935054e3f7a61a3b6" id="r_a066e23a012993f4935054e3f7a61a3b6"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a066e23a012993f4935054e3f7a61a3b6">array_offset</a></td></tr>
-<tr class="memitem:ad17ba87a9aca6a3b6126c6b956b31bca" id="r_ad17ba87a9aca6a3b6126c6b956b31bca"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ad17ba87a9aca6a3b6126c6b956b31bca">element_offset</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_asset_instance.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">AssetInstance</a> </dd>
+<div class="textblock"><p>The structure used to sort unique submeshes by materials, and shaders in the main render pass. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="render_8c.html#a038a44c47525a96e8b73a4877a0fcd82">create_and_sort_draw_commands()</a> </dd>
 <dd>
-<a class="el" href="struct_globals.html#abae58930c10e53514261af91ca6f173d">Globals.assets</a> </dd></dl>
+<a class="el" href="render_8c.html#a431495ba9526e496fb1da91e8503e0ad">upload_instance_data()</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>Possibly sort 128 keys instead of 64 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02821">2821</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02870">2870</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a066e23a012993f4935054e3f7a61a3b6" name="a066e23a012993f4935054e3f7a61a3b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a066e23a012993f4935054e3f7a61a3b6">&#9670;&#160;</a></span>array_offset</h2>
@@ -162,7 +190,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02845">2845</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The offset into <a class="el" href="main_8c.html#a05ebf56e712bce650a3143213b1e8158">INDIRECT_ARRAYS_COMMAND_BUFFER</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02899">2899</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -180,7 +210,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02838">2838</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02889">2889</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -198,7 +228,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02837">2837</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02888">2888</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -216,7 +246,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02846">2846</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The offset into <a class="el" href="main_8c.html#a528a4dce9c1192080c0b28069c6e6087">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02900">2900</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -234,7 +266,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02826">2826</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The shader in <a class="el" href="main_8c.html#aeac10b18caa41a08ec41d44039433a84">DYNAMIC_SHADER</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02874">2874</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -252,7 +286,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02825">2825</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The shader for the <a class="el" href="main_8c.html#af1652fcad85da131a459957d0a408237">DEPTH_PRE_PASS_SHADER</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02873">2873</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -270,7 +306,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02833">2833</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>How many indices in this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02895">2895</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -288,7 +326,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02834">2834</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Lightmap offset into <a class="el" href="main_8c.html#a1dbe43df9bcb92d9dc00349b5106c71b">LIGHTMAP_DATA</a> / <a class="el" href="main_8c.html#a176d559582eb5157b1689ee144a8ac6f">LIGHTMAP_SSBO</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02896">2896</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -306,7 +346,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02828">2828</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> ID into <a class="el" href="struct_globals.html#ab65866f3a5d6aebb5984447222c229ce" title="Materials.">Globals.materials</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02875">2875</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, and <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -324,7 +366,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02843">2843</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The transformation matrix of the <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02902">2902</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -342,7 +386,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02830">2830</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02878">2878</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -360,7 +406,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02841">2841</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02897">2897</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, and <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -378,7 +426,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02829">2829</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>How opaque a <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> is. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02876">2876</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
@@ -396,7 +446,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02836">2836</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02887">2887</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -414,7 +464,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02835">2835</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02886">2886</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -432,7 +482,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02844">2844</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The offset into <a class="el" href="main_8c.html#a9a6deea611410d80610e893d75020150">JOINT_SSBO</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02879">2879</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -450,7 +502,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02842">2842</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02898">2898</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, and <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>.</p>
 
@@ -468,7 +522,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02824">2824</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The key that is sorted in <a class="el" href="render_8c.html#a038a44c47525a96e8b73a4877a0fcd82">create_and_sort_draw_commands()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02901">2901</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01121">compare_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -486,7 +542,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02840">2840</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02891">2891</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -504,7 +560,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02839">2839</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02890">2890</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
@@ -522,7 +578,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02832">2832</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>Where the indices / vertices start for this <a class="el" href="struct_sub_mesh.html" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a> in <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02894">2894</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 
@@ -540,7 +598,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02831">2831</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>If it is a static mesh. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02877">2877</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, and <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>.</p>
 

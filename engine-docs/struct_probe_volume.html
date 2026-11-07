@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -109,23 +116,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_probe_v
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">ProbeVolume Struct Reference</div></div>
+  <div class="headertitle"><div class="title">ProbeVolume Struct Reference<div class="ingroups"><a class="el" href="group__aprobe__group.html">AudioProbe Definitions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="struct_probe_volume.html" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a>s for <a class="el" href="struct_a_p_v.html" title="A ProbeVolume for AudioProbes.">APV</a>s and <a class="el" href="struct_l_p_v.html" title="A ProbeVolume for indirect lighting probes.">LPV</a>s, controlled by <a class="el" href="struct_o_b_b.html">OBB</a>s.  
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="engine__types_8h_source.html">engine_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a8d0775856981093c2808d62bf92f3f13" id="r_a8d0775856981093c2808d62bf92f3f13"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a8d0775856981093c2808d62bf92f3f13">byte_offset</a></td></tr>
+<tr class="memdesc:a8d0775856981093c2808d62bf92f3f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">The byte offset into the binary file storing this volume.  <br /></td></tr>
 <tr class="memitem:a853847b24c2d937a0c8f60c4b96782b4" id="r_a853847b24c2d937a0c8f60c4b96782b4"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a853847b24c2d937a0c8f60c4b96782b4">size</a></td></tr>
+<tr class="memdesc:a853847b24c2d937a0c8f60c4b96782b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The byte size of this volume.  <br /></td></tr>
 <tr class="memitem:a9fa4e06f8a19048d9599fefb82959e79" id="r_a9fa4e06f8a19048d9599fefb82959e79"><td class="memItemLeft"><a class="el" href="struct_o_b_b.html">OBB</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9fa4e06f8a19048d9599fefb82959e79">obb</a></td></tr>
+<tr class="memdesc:a9fa4e06f8a19048d9599fefb82959e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_o_b_b.html">OBB</a> that defines the size.  <br /></td></tr>
 <tr class="memitem:a7b656278ac4f4557234c8f475d4ecd10" id="r_a7b656278ac4f4557234c8f475d4ecd10"><td class="memItemLeft"><a class="el" href="structivec3.html">ivec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7b656278ac4f4557234c8f475d4ecd10">resolution</a></td></tr>
-<tr class="memitem:a0b2f74b815114270654eab247cee9f9d" id="r_a0b2f74b815114270654eab247cee9f9d"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a0b2f74b815114270654eab247cee9f9d">path</a> [256]</td></tr>
+<tr class="memdesc:a7b656278ac4f4557234c8f475d4ecd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resolution in X, Y, Z.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02954">2954</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<div class="textblock"><p>The <a class="el" href="struct_probe_volume.html" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a>s for <a class="el" href="struct_a_p_v.html" title="A ProbeVolume for AudioProbes.">APV</a>s and <a class="el" href="struct_l_p_v.html" title="A ProbeVolume for indirect lighting probes.">LPV</a>s, controlled by <a class="el" href="struct_o_b_b.html">OBB</a>s. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="audio_8c.html#a47be429339f036064bdf57fd5e190e3b">load_audio_pv()</a> </dd>
+<dd>
+<a class="el" href="struct_a_p_v.html" title="A ProbeVolume for AudioProbes.">APV</a> </dd>
+<dd>
+<a class="el" href="struct_l_p_v.html" title="A ProbeVolume for indirect lighting probes.">LPV</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03031">3031</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a8d0775856981093c2808d62bf92f3f13" name="a8d0775856981093c2808d62bf92f3f13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d0775856981093c2808d62bf92f3f13">&#9670;&#160;</a></span>byte_offset</h2>
@@ -139,7 +158,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02957">2957</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The byte offset into the binary file storing this volume. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03034">3034</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="audio_8c_source.html#l00611">load_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
 
@@ -157,25 +178,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02959">2959</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The <a class="el" href="struct_o_b_b.html">OBB</a> that defines the size. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03036">3036</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="audio_8c_source.html#l00637">check_audio_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="audio_8c_source.html#l00709">probe_world_position()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="engine__utilities_8h_source.html#l00027">PV_step_size()</a>, <a class="el" href="audio_8c_source.html#l00568">query_audio_probe()</a>, <a class="el" href="audio_8c_source.html#l00577">query_probe_volume()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
-
-</div>
-</div>
-<a id="a0b2f74b815114270654eab247cee9f9d" name="a0b2f74b815114270654eab247cee9f9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b2f74b815114270654eab247cee9f9d">&#9670;&#160;</a></span>path</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char ProbeVolume::path[256]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02961">2961</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +198,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02960">2960</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The resolution in X, Y, Z. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03037">3037</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, <a class="el" href="audio_8c_source.html#l00611">load_audio_pv()</a>, <a class="el" href="audio_8c_source.html#l00709">probe_world_position()</a>, <a class="el" href="engine__utilities_8h_source.html#l00027">PV_step_size()</a>, <a class="el" href="audio_8c_source.html#l00568">query_audio_probe()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, and <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>.</p>
 
@@ -209,7 +218,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02958">2958</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p>The byte size of this volume. </p>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l03035">3035</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
 

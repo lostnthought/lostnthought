@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -109,7 +116,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_audio_s
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">AudioSampleGPU Struct Reference</div></div>
+  <div class="headertitle"><div class="title">AudioSampleGPU Struct Reference<div class="ingroups"><a class="el" href="group__aprobe__group.html">AudioProbe Definitions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -141,7 +148,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Each ray's samples when baking <a class="el" href="struct_audio_probe.html" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, padded for GPU. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="audio__probe__bake_8comp.html">audio/audio_probe_bake.comp</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01351">1351</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01388">1388</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a03413870303f53da9e2290bb4579bf9e" name="a03413870303f53da9e2290bb4579bf9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03413870303f53da9e2290bb4579bf9e">&#9670;&#160;</a></span>abs_energy</h2>
@@ -157,7 +164,7 @@ Data Fields</h2></td></tr>
 
 <p>The energy per band with only absorption and no scattering. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01361">1361</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01398">1398</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -177,7 +184,7 @@ Data Fields</h2></td></tr>
 
 <p>The direction the ray was traveling to this position. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01354">1354</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01391">1391</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -197,7 +204,7 @@ Data Fields</h2></td></tr>
 
 <p>The energy per band. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01358">1358</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01395">1395</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -215,7 +222,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01359">1359</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01396">1396</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -231,7 +238,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01360">1360</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01397">1397</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +254,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01362">1362</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01399">1399</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +270,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01363">1363</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01400">1400</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +288,7 @@ Data Fields</h2></td></tr>
 
 <p>The hit position. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01356">1356</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01393">1393</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +306,7 @@ Data Fields</h2></td></tr>
 
 <p>The time that it takes for the sample to reach this position in total dist + dist to probe. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01355">1355</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01392">1392</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 
@@ -320,7 +327,7 @@ Data Fields</h2></td></tr>
 <p>If it is occluded then it is not valid. </p>
 <p>Also, empty samples after the ray dies out are not valid. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01357">1357</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01394">1394</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01055">process_probe_chunk()</a>.</p>
 

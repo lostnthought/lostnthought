@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -145,7 +152,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="lightmap_8c.html#a2bbbe962fb7a6954fe28f01e58f8aba2">build_uv_islands()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01920">1920</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01963">1963</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a449eef8663383462b3839afafc3ad865" name="a449eef8663383462b3839afafc3ad865"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a449eef8663383462b3839afafc3ad865">&#9670;&#160;</a></span>centroid</h2>
@@ -161,7 +168,7 @@ Data Fields</h2></td></tr>
 
 <p>The centroid of the <a class="el" href="struct_mesh_face.html">MeshFace</a>s on this island. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01930">1930</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01973">1973</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>.</p>
 
@@ -181,7 +188,7 @@ Data Fields</h2></td></tr>
 
 <p>If we are going to rasterize this island on the next lightmap bake. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01928">1928</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01971">1971</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -201,9 +208,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> this island belongs to. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01923">1923</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01966">1966</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -221,9 +228,9 @@ Data Fields</h2></td></tr>
 
 <p>The normal of the island. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01925">1925</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01968">1968</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -241,9 +248,9 @@ Data Fields</h2></td></tr>
 
 <p>The rect that this island allocates. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01926">1926</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01969">1969</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -261,9 +268,9 @@ Data Fields</h2></td></tr>
 
 <p>size_t indices of the <a class="el" href="struct_mesh_face.html">MeshFace</a>s in this island. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01924">1924</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01967">1967</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
 
 </div>
 </div>
@@ -281,9 +288,9 @@ Data Fields</h2></td></tr>
 
 <p>The uvs for each <a class="el" href="struct_mesh_face.html">MeshFace</a> on this islands. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01927">1927</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01970">1970</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -301,7 +308,7 @@ Data Fields</h2></td></tr>
 
 <p>If this island is valid to rasterize. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01929">1929</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01972">1972</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>

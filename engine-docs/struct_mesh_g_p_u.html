@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -150,7 +157,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="main_8c.html#a1e9dc888d7689c8576c3b205f90a496b">MESH_SSBO</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01672">1672</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01715">1715</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="aefde4c6028ff2b7c2934d722c75cbbb4" name="aefde4c6028ff2b7c2934d722c75cbbb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefde4c6028ff2b7c2934d722c75cbbb4">&#9670;&#160;</a></span>bvh_index</h2>
@@ -166,7 +173,7 @@ Data Fields</h2></td></tr>
 
 <p>The BVH index for this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> in the scene BVH. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01684">1684</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01727">1727</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -184,7 +191,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01689">1689</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01732">1732</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -202,7 +209,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01690">1690</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01733">1733</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -220,7 +227,7 @@ Data Fields</h2></td></tr>
 
 <p>If the mesh is not static it is not considered for path tracing. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01685">1685</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01728">1728</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -238,7 +245,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01676">1676</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01719">1719</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -256,7 +263,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01675">1675</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01718">1718</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -276,7 +283,7 @@ Data Fields</h2></td></tr>
 
 <p>How many <a class="el" href="struct_b_v_h_node.html" title="Nodes for the acceleration structures of BVHs.">BVHNode</a>s are in this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01679">1679</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01722">1722</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -296,7 +303,7 @@ Data Fields</h2></td></tr>
 
 <p>Where the <a class="el" href="struct_b_v_h_node.html" title="Nodes for the acceleration structures of BVHs.">BVHNode</a>s start in the SSBO. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01678">1678</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01721">1721</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -314,7 +321,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01687">1687</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01730">1730</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +339,7 @@ Data Fields</h2></td></tr>
 
 <p>Skip directional lights so that they go through this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01686">1686</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01729">1729</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -352,7 +359,7 @@ Data Fields</h2></td></tr>
 
 <p>How many <a class="el" href="struct_tri_g_p_u.html" title="The GPU side structure of a MeshFace, used for path traced baking.">TriGPU</a>s there are for this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01683">1683</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01726">1726</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -372,7 +379,7 @@ Data Fields</h2></td></tr>
 
 <p>Where the <a class="el" href="struct_tri_g_p_u.html" title="The GPU side structure of a MeshFace, used for path traced baking.">TriGPU</a>s for this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> start in the SSBO. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01682">1682</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01725">1725</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -392,7 +399,7 @@ Data Fields</h2></td></tr>
 
 <p>How many <a class="el" href="struct_vertex_g_p_u.html" title="The GPU side structure of a Point, used for path traced baking.">VertexGPU</a>s this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> has. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01681">1681</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01724">1724</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 
@@ -412,7 +419,7 @@ Data Fields</h2></td></tr>
 
 <p>Where the <a class="el" href="struct_vertex_g_p_u.html" title="The GPU side structure of a Point, used for path traced baking.">VertexGPU</a>s for this <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> start in the SSBO. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01680">1680</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01723">1723</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>.</p>
 

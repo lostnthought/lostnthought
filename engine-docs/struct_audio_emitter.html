@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -109,7 +116,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_audio_e
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">AudioEmitter Struct Reference</div></div>
+  <div class="headertitle"><div class="title">AudioEmitter Struct Reference<div class="ingroups"><a class="el" href="group__audio__group.html">Audio Definitions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -155,7 +162,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="main_8c.html#ab6e8e06d25f1c3725fe2be293a97a170">AUDIO_EMITTERS</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00464">464</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00498">498</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="aa2882b6034230fb87110bc185bfdf561" name="aa2882b6034230fb87110bc185bfdf561"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2882b6034230fb87110bc185bfdf561">&#9670;&#160;</a></span>base_volume</h2>
@@ -171,7 +178,7 @@ Data Fields</h2></td></tr>
 
 <p>The starting volume. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00472">472</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00506">506</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00397">load_emitter()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
@@ -191,7 +198,7 @@ Data Fields</h2></td></tr>
 
 <p>The current low pass cutoff. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00471">471</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00505">505</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00397">load_emitter()</a>, and <a class="el" href="audio_8c_source.html#l00434">update_lpf_sound()</a>.</p>
 
@@ -211,7 +218,7 @@ Data Fields</h2></td></tr>
 
 <p>The current distance from listener. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00474">474</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00508">508</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
@@ -231,7 +238,7 @@ Data Fields</h2></td></tr>
 
 <p>The current volume. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00473">473</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00507">507</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
@@ -251,7 +258,7 @@ Data Fields</h2></td></tr>
 
 <p>Indicates if this <a class="el" href="struct_audio_emitter.html" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> is empty or can be replaced. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00480">480</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00514">514</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00480">destroy_emitter()</a>, <a class="el" href="audio_8c_source.html#l00452">init_emitter()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
@@ -271,7 +278,7 @@ Data Fields</h2></td></tr>
 
 <p>The static ID of the <a class="el" href="struct_audio_emitter.html" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> inside of <a class="el" href="main_8c.html#ab6e8e06d25f1c3725fe2be293a97a170">AUDIO_EMITTERS</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00468">468</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00502">502</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -291,7 +298,7 @@ Data Fields</h2></td></tr>
 
 <p>If the emitter is loaded in miniaudio. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00477">477</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00511">511</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00397">load_emitter()</a>, <a class="el" href="audio_8c_source.html#l00492">play_emitter()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l00469">unload_emitter()</a>.</p>
 
@@ -311,7 +318,7 @@ Data Fields</h2></td></tr>
 
 <p>If the <a class="el" href="struct_audio_emitter.html" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> loops. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00479">479</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00513">513</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00397">load_emitter()</a>, <a class="el" href="audio_8c_source.html#l00492">play_emitter()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -331,7 +338,7 @@ Data Fields</h2></td></tr>
 
 <p>If the <a class="el" href="struct_audio_emitter.html" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> can be occluded and needs to go through the <a class="el" href="struct_audio_portal.html" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a> system. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00478">478</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00512">512</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00397">load_emitter()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
@@ -351,7 +358,7 @@ Data Fields</h2></td></tr>
 
 <p>The low pass filter for this emitter. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00470">470</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00504">504</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00434">update_lpf_sound()</a>.</p>
 
@@ -371,7 +378,7 @@ Data Fields</h2></td></tr>
 
 <p>The path to the sound. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00467">467</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00501">501</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00397">load_emitter()</a>, and <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>.</p>
 
@@ -391,7 +398,7 @@ Data Fields</h2></td></tr>
 
 <p>The position of the <a class="el" href="struct_audio_emitter.html" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00475">475</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00509">509</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00492">play_emitter()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
@@ -411,7 +418,7 @@ Data Fields</h2></td></tr>
 
 <p>The miniaudio sound obj. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00469">469</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00503">503</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, <a class="el" href="audio_8c_source.html#l00480">destroy_emitter()</a>, <a class="el" href="audio_8c_source.html#l00520">end_emitter()</a>, <a class="el" href="audio_8c_source.html#l00397">load_emitter()</a>, <a class="el" href="audio_8c_source.html#l00492">play_emitter()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="audio_8c_source.html#l00469">unload_emitter()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 
@@ -431,7 +438,7 @@ Data Fields</h2></td></tr>
 
 <p>The position that we spatialize the emitter at (for example: at the corner instead of behind the wall). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00476">476</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00510">510</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00525">audio_update()</a>, and <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>.</p>
 

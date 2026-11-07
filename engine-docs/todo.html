@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -115,10 +122,23 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('todo.html','',
 <div class="textblock"><dl class="reflist">
 <dt>Struct <a class="el" href="struct_asset_instance.html">AssetInstance</a>  </dt>
 <dd><a class="anchor" id="_todo000002"></a>Very important: The first_skin is not actually in use and needs to be resolved to use skin_indices instead in <a class="el" href="init_8c.html#ac1c505fa384e621b6e9e445d9f2477f2">init_new_asset_instance()</a>  </dd>
+<dt>Struct <a class="el" href="struct_a_star_workspace.html">AStarWorkspace</a>  </dt>
+<dd><a class="anchor" id="_todo000004"></a>Expand path size or make it reallocatable because the current limit is minimal.  </dd>
+<dt>Struct <a class="el" href="struct_draw_command.html">DrawCommand</a>  </dt>
+<dd><a class="anchor" id="_todo000003"></a>Possibly sort 128 keys instead of 64  </dd>
+<dt>Struct <a class="el" href="struct_globals.html">Globals</a>  </dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000005"></a>rename noclip </p>
+<p class="interdd"></p>
+<p class="interdd">change world min and size </p>
+<p class="interdd"></p>
+<p class="enddd">remove probe spacing - should no longer be needed, use resolution  </p>
+</dd>
 <dt>Global <a class="el" href="engine__types_8h.html#ab7789c482b0b240ed2587ecdfe95c333">MAX_ANIMATION_INDICES</a>  </dt>
 <dd><a class="anchor" id="_todo000001"></a>Remove this maximum or increase it.  </dd>
 <dt>Global <a class="el" href="struct_mesh_node.html#a2c30498e928cc2cc11b005c6a278e60d">MeshNode::children</a>  [MAX_NODE_CHILDREN]</dt>
-<dd><a class="anchor" id="_todo000003"></a>Remove this static array and replace it with a safer memory system for larger node graphs. </dd>
+<dd><a class="anchor" id="_todo000007"></a>Remove this static array and replace it with a safer memory system for larger node graphs.  </dd>
+<dt>Struct <a class="el" href="struct_shader_program.html">ShaderProgram</a>  </dt>
+<dd><a class="anchor" id="_todo000006"></a>Expand uniform count or make it dynamic? </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

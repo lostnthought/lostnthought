@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -154,7 +161,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="acceleration_8c.html">core/acceleration.c</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01070">1070</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01104">1104</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ab8ccbdebbea62d51da193f3e96f0b862" name="ab8ccbdebbea62d51da193f3e96f0b862"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8ccbdebbea62d51da193f3e96f0b862">&#9670;&#160;</a></span>aabb</h2>
@@ -170,9 +177,9 @@ Data Fields</h2></td></tr>
 
 <p>The bounding box of all of this node's children. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01085">1085</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01119">1119</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -190,9 +197,9 @@ Data Fields</h2></td></tr>
 
 <p>How many children are inside this node. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01087">1087</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01121">1121</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -211,9 +218,9 @@ Data Fields</h2></td></tr>
 <p>The only-emissive flux. </p>
 <p>Used for <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a> BVH importance sampling. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01089">1089</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01123">1123</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -231,9 +238,9 @@ Data Fields</h2></td></tr>
 
 <p>The first index into the bvh_indices array. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01086">1086</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01120">1120</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -252,9 +259,9 @@ Data Fields</h2></td></tr>
 <p>The total light flux of this node. </p>
 <p>Used for <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a> BVH importance sampling. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01088">1088</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01122">1122</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -272,9 +279,9 @@ Data Fields</h2></td></tr>
 
 <p>The index of the node inside of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01081">1081</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01115">1115</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>.</p>
 
 </div>
 </div>
@@ -293,9 +300,9 @@ Data Fields</h2></td></tr>
 <p>Left child. </p>
 <p>-1 if empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01078">1078</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01112">1112</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l02915">find_depth()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l02915">find_depth()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -314,9 +321,9 @@ Data Fields</h2></td></tr>
 <p>The pointer to the next node (either right child or parent's right child) for recursion-less traversal. </p>
 <p>See: <a class="el" href="acceleration_8c.html#abecfd2a1da5725d6992499b3e064815d">assign_next_nodes()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01082">1082</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01116">1116</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -335,9 +342,9 @@ Data Fields</h2></td></tr>
 <p>Parent. </p>
 <p>-1 if empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01080">1080</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01114">1114</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
@@ -356,9 +363,9 @@ Data Fields</h2></td></tr>
 <p>Right child. </p>
 <p>-1 if empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01079">1079</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01113">1113</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l02915">find_depth()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01182">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00879">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l02915">find_depth()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00592">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>

@@ -37,7 +37,7 @@ var searchData=
   ['undo_5fstack_5fmax_5fbyte_5fsize_34',['undo_stack_max_byte_size',['../struct_editor_settings.html#accce3360a5e045733f889de740b9dbe9',1,'EditorSettings']]],
   ['undo_5fstack_5fsize_35',['undo_stack_size',['../editor_8c.html#a095009da3d0f2bcc33e5ffcb1f9688c2',1,'editor.c']]],
   ['undos_36',['UNDOS',['../editor_8c.html#aa9fcebae768434621be8e87192242ebc',1,'editor.c']]],
-  ['uniforms_37',['uniforms',['../struct_compute_shader_program.html#a17e908268a94788b7c52958217367294',1,'ComputeShaderProgram::uniforms'],['../struct_shader_program.html#af4e73dea9301fd2d6c520431b4f1955c',1,'ShaderProgram::uniforms']]],
+  ['uniforms_37',['uniforms',['../struct_shader_program.html#af4e73dea9301fd2d6c520431b4f1955c',1,'ShaderProgram']]],
   ['unjittered_5finv_5fproj_38',['unjittered_inv_proj',['../struct_cam_data.html#ab8227987778fff7f568a231de5ed54d4',1,'CamData']]],
   ['unjittered_5fproj_39',['UNJITTERED_PROJ',['../main_8c.html#a7ff86234dd7b4c3ea284badf45e55567',1,'UNJITTERED_PROJ:&#160;main.c'],['../init_8h.html#a7ff86234dd7b4c3ea284badf45e55567',1,'UNJITTERED_PROJ:&#160;main.c']]],
   ['unjittered_5fproj_40',['unjittered_proj',['../struct_cam_data.html#a8dd87f7e86f37ee327abb91664f897ff',1,'CamData']]],

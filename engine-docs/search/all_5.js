@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ebo_0',['ebo',['../struct_vertex_layout.html#a72a590d4b1afbd4037f53f32ab5ac73a',1,'VertexLayout']]],
-  ['edc_5fsample_5frate_1',['EDC_SAMPLE_RATE',['../engine__types_8h.html#af1d3ad56cd3798d315f04f86bf6c214a',1,'engine_types.h']]],
+  ['edc_5fsample_5frate_1',['EDC_SAMPLE_RATE',['../group__aprobe__group.html#gaf1d3ad56cd3798d315f04f86bf6c214a',1,'engine_types.h']]],
   ['edge_2',['Edge',['../struct_edge.html',1,'']]],
   ['edge0_3',['edge0',['../struct_clip_vertex.html#a9f9bdfd1fe9cd6766c313fee9f6da645',1,'ClipVertex']]],
   ['edge1_4',['edge1',['../struct_clip_vertex.html#a57d1e78df7f835930ec8c65cb5274cca',1,'ClipVertex']]],
@@ -42,7 +42,7 @@ var searchData=
   ['emissive_5ftex_39',['emissive_tex',['../struct_material.html#afa9bff31079f389e29e319a401dce056',1,'Material::emissive_tex'],['../struct_g_l_t_f_material.html#ad7063c6a71cb5d77d7cf11cbc80885c6',1,'GLTFMaterial::emissive_tex']]],
   ['emitter_5fpos_40',['emitter_pos',['../struct_a_probe_editor_menu.html#aa3bb5b8a54885cc4c6045127a210d678',1,'AProbeEditorMenu']]],
   ['emitter_5fvol_41',['emitter_vol',['../struct_a_probe_editor_menu.html#ad0e926c9059dbd2ded1345b9ad24aa3f',1,'AProbeEditorMenu']]],
-  ['end_5femitter_42',['end_emitter',['../audio_8c.html#a096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c'],['../audio_8h.html#a096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c']]],
+  ['end_5femitter_42',['end_emitter',['../group__audio__group.html#ga096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c'],['../group__audio__group.html#ga096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c']]],
   ['end_5ftimer_43',['end_timer',['../engine__utilities_8h.html#ae527c7c487ec6387400af46102f662a1',1,'engine_utilities.h']]],
   ['energy_44',['energy',['../struct_audio_sample_g_p_u.html#a8ffeedea6ea822df455117e9144a1ca5',1,'AudioSampleGPU']]],
   ['engine_5ftypes_2eh_45',['engine_types.h',['../engine__types_8h.html',1,'']]],
@@ -79,7 +79,7 @@ var searchData=
   ['estate_5fplayer_5finteract_76',['ESTATE_PLAYER_INTERACT',['../engine__types_8h.html#a1615968a92950438f6e67a28e9d56e5ca274f9607a85f7764b7a580f5dd7d6fa9',1,'engine_types.h']]],
   ['estate_5ftrigger_77',['ESTATE_TRIGGER',['../engine__types_8h.html#a1615968a92950438f6e67a28e9d56e5cae131545c5d717133255538c5feadb99e',1,'engine_types.h']]],
   ['estimated_5fframe_5fcount_78',['estimated_frame_count',['../init_8c.html#a1438583b395bb935784476e417335b4a',1,'init.c']]],
-  ['evaluate_5fsh_79',['evaluate_sh',['../audio__ir_8c.html#a33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c'],['../audio__ir_8h.html#a33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c']]],
+  ['evaluate_5fsh_79',['evaluate_sh',['../group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c'],['../group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c']]],
   ['ew_80',['EW',['../main_8c.html#a03aa86e6247d752d0f2f24d29c2626a0',1,'EW:&#160;main.c'],['../init_8h.html#a03aa86e6247d752d0f2f24d29c2626a0',1,'EW:&#160;main.c']]],
   ['execute_5faemitter_5fundo_81',['execute_aemitter_undo',['../editor_8c.html#ae6f8e32fb5eda261433f1961b21d7a18',1,'editor.c']]],
   ['execute_5faportal_5fundo_82',['execute_aportal_undo',['../editor_8c.html#a0c3c639492a2967b5245439cf743cab3',1,'editor.c']]],

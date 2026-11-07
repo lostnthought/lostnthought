@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -173,7 +180,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="entity_8c_source.html#l00118">118</a> of file <a class="el" href="entity_8c_source.html">entity.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02266">Entity::ac</a>, <a class="el" href="main_8c_source.html#l00320">ANIMATION_COMPONENTS</a>, <a class="el" href="entity_8c_source.html#l00118">create_animation_component()</a>, <a class="el" href="engine__types_8h_source.html#l02186">AnimationComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02185">AnimationComponent::free</a>, and <a class="el" href="init_8h_source.html#l00452">MAX_ANIMATION_COMPONENTS</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02310">Entity::ac</a>, <a class="el" href="main_8c_source.html#l00320">ANIMATION_COMPONENTS</a>, <a class="el" href="entity_8c_source.html#l00118">create_animation_component()</a>, <a class="el" href="engine__types_8h_source.html#l02229">AnimationComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02228">AnimationComponent::free</a>, and <a class="el" href="init_8h_source.html#l00452">MAX_ANIMATION_COMPONENTS</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00118">create_animation_component()</a>, <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, and <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>.</p>
 
@@ -222,7 +229,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="entity_8c_source.html#l00150">150</a> of file <a class="el" href="entity_8c_source.html">entity.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02779">AssetInstance::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02254">Entity::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02406">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02266">Entity::ac</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02347">MeshNode::collision_type</a>, <a class="el" href="entity_8c_source.html#l00118">create_animation_component()</a>, <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="engine__types_8h_source.html#l02346">MeshNode::ent</a>, <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="entity_8c_source.html#l00048">find_default_state()</a>, <a class="el" href="engine__types_8h_source.html#l02250">Entity::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02264">Entity::instance</a>, <a class="el" href="init_8h_source.html#l00434">MAX_ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l02300">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l02252">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03255">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03254">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02283">MeshNode::name</a>, <a class="el" href="engine__types_8h_source.html#l02265">Entity::pc</a>, <a class="el" href="engine__types_8h_source.html#l02348">MeshNode::physics_mode</a>, <a class="el" href="engine__types_8h_source.html#l02253">Entity::skin</a>, <a class="el" href="engine__types_8h_source.html#l02303">MeshNode::skin</a>, and <a class="el" href="engine__types_8h_source.html#l02263">Entity::state</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02823">AssetInstance::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02298">Entity::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02450">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02310">Entity::ac</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02391">MeshNode::collision_type</a>, <a class="el" href="entity_8c_source.html#l00118">create_animation_component()</a>, <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="engine__types_8h_source.html#l02390">MeshNode::ent</a>, <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="entity_8c_source.html#l00048">find_default_state()</a>, <a class="el" href="engine__types_8h_source.html#l02294">Entity::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02308">Entity::instance</a>, <a class="el" href="init_8h_source.html#l00434">MAX_ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l02296">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02327">MeshNode::name</a>, <a class="el" href="engine__types_8h_source.html#l02309">Entity::pc</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::physics_mode</a>, <a class="el" href="engine__types_8h_source.html#l02297">Entity::skin</a>, <a class="el" href="engine__types_8h_source.html#l02347">MeshNode::skin</a>, and <a class="el" href="engine__types_8h_source.html#l02307">Entity::state</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -265,7 +272,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="entity_8c_source.html#l00085">85</a> of file <a class="el" href="entity_8c_source.html">entity.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02254">Entity::aabb</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="engine__types_8h_source.html#l02097">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02068">PhysicsComponent::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8h_source.html#l00448">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02252">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03255">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02265">Entity::pc</a>, <a class="el" href="engine__types_8h_source.html#l02349">MeshNode::pc</a>, and <a class="el" href="main_8c_source.html#l00319">PHYSICS_COMPONENTS</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02298">Entity::aabb</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="engine__types_8h_source.html#l02140">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02111">PhysicsComponent::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="physics_8c_source.html#l02018">init_PC()</a>, <a class="el" href="init_8h_source.html#l00448">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02296">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02309">Entity::pc</a>, <a class="el" href="engine__types_8h_source.html#l02393">MeshNode::pc</a>, and <a class="el" href="main_8c_source.html#l00319">PHYSICS_COMPONENTS</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, and <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>.</p>
 
@@ -296,7 +303,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="entity_8c_source.html#l00221">221</a> of file <a class="el" href="entity_8c_source.html">entity.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02266">Entity::ac</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="engine__types_8h_source.html#l02185">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02250">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l02068">PhysicsComponent::free</a>, and <a class="el" href="engine__types_8h_source.html#l02265">Entity::pc</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02310">Entity::ac</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="engine__types_8h_source.html#l02228">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02294">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l02111">PhysicsComponent::free</a>, and <a class="el" href="engine__types_8h_source.html#l02309">Entity::pc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, and <a class="el" href="editor_8c_source.html#l00458">execute_light_undo()</a>.</p>
 
@@ -321,9 +328,9 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="entity_8c_source.html#l00020">20</a> of file <a class="el" href="entity_8c_source.html">entity.c</a>.</p>
 
-<p class="reference">References <a class="el" href="entity__states_8c_source.html#l00008">ESTATE_chair_interact()</a>, <a class="el" href="engine__types_8h_source.html#l02214">ESTATE_PLAYER_INTERACT</a>, <a class="el" href="engine__types_8h_source.html#l02235">State::fn</a>, <a class="el" href="entity_8c_source.html#l00015">STATE_COUNT</a>, <a class="el" href="entity_8c_source.html#l00014">STATE_REGISTRY</a>, and <a class="el" href="entity_8c_source.html#l00020">STATES_INIT()</a>.</p>
+<p class="reference">References <a class="el" href="entity__states_8c_source.html#l00008">ESTATE_chair_interact()</a>, <a class="el" href="engine__types_8h_source.html#l02257">ESTATE_PLAYER_INTERACT</a>, <a class="el" href="engine__types_8h_source.html#l02278">State::fn</a>, <a class="el" href="entity_8c_source.html#l00015">STATE_COUNT</a>, <a class="el" href="entity_8c_source.html#l00014">STATE_REGISTRY</a>, and <a class="el" href="entity_8c_source.html#l00020">STATES_INIT()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="entity_8c_source.html#l00020">STATES_INIT()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01991">init()</a>, and <a class="el" href="entity_8c_source.html#l00020">STATES_INIT()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +353,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="entity_8c_source.html#l00066">66</a> of file <a class="el" href="entity_8c_source.html">entity.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="init_8h_source.html#l00434">MAX_ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l02265">Entity::pc</a>, and <a class="el" href="entity_8c_source.html#l00066">update_entities()</a>.</p>
+<p class="reference">References <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="init_8h_source.html#l00434">MAX_ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l02309">Entity::pc</a>, and <a class="el" href="entity_8c_source.html#l00066">update_entities()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00066">update_entities()</a>.</p>
 

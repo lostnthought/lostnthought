@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['end_5femitter_0',['end_emitter',['../audio_8c.html#a096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c'],['../audio_8h.html#a096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c']]],
+  ['end_5femitter_0',['end_emitter',['../group__audio__group.html#ga096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c'],['../group__audio__group.html#ga096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c']]],
   ['end_5ftimer_1',['end_timer',['../engine__utilities_8h.html#ae527c7c487ec6387400af46102f662a1',1,'engine_utilities.h']]],
   ['epa_2',['epa',['../_g_j_k_8c.html#afc57382a84d9d6293a1814082a195f7b',1,'GJK.c']]],
   ['epa_5fadd_5fhorizon_5fface_5fto_5fhull_5ffaces_3',['EPA_add_horizon_face_to_hull_faces',['../_g_j_k_8c.html#aa74fa735647866ca4bd19a627e2942fc',1,'GJK.c']]],
@@ -9,7 +9,7 @@ var searchData=
   ['epa_5fexpand_5fhull_6',['EPA_expand_hull',['../_g_j_k_8c.html#ac67e2aa85cbe775c69eca6a9b2419387',1,'GJK.c']]],
   ['estate_5fchair_5fcombat_7',['ESTATE_chair_combat',['../entity__states_8c.html#a60921760de97285d342884fab2ac5135',1,'entity_states.c']]],
   ['estate_5fchair_5finteract_8',['ESTATE_chair_interact',['../entity__states_8c.html#ac030018416793a0409c7150219507716',1,'ESTATE_chair_interact(void *data):&#160;entity_states.c'],['../entity__states_8h.html#ac030018416793a0409c7150219507716',1,'ESTATE_chair_interact(void *data):&#160;entity_states.c']]],
-  ['evaluate_5fsh_9',['evaluate_sh',['../audio__ir_8c.html#a33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c'],['../audio__ir_8h.html#a33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c']]],
+  ['evaluate_5fsh_9',['evaluate_sh',['../group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c'],['../group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c']]],
   ['execute_5faemitter_5fundo_10',['execute_aemitter_undo',['../editor_8c.html#ae6f8e32fb5eda261433f1961b21d7a18',1,'editor.c']]],
   ['execute_5faportal_5fundo_11',['execute_aportal_undo',['../editor_8c.html#a0c3c639492a2967b5245439cf743cab3',1,'editor.c']]],
   ['execute_5faprobe_5fundo_12',['execute_aprobe_undo',['../editor_8c.html#a064aa41966c374bb44d5337ac703d3ed',1,'editor.c']]],

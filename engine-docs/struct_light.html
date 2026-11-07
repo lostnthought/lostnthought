@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -171,7 +178,7 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The CPU side structure for <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>s. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_globals.html#a838cf9143fd2ac079e7ddbe94411cd70">Globals.lights</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_globals.html#a838cf9143fd2ac079e7ddbe94411cd70" title="Lights.">Globals.lights</a> </dd>
 <dd>
 <a class="el" href="struct_light_g_p_u.html" title="The GPU side structure for Lights padded for GPU.">LightGPU</a> </dd>
 <dd>
@@ -179,7 +186,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="acceleration_8c.html#abdff8e2d5681d0f6121d5573d87dd8be" title="Initializes a bvh for all current lights and emissive triangles in the scene, and sets the flux up fo...">build_light_bvh()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01388">1388</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01425">1425</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a786003ff47f97df9574c1fb858044273" name="a786003ff47f97df9574c1fb858044273"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a786003ff47f97df9574c1fb858044273">&#9670;&#160;</a></span>A</h2>
@@ -193,9 +200,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01423">1423</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01460">1460</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>.</p>
 
 </div>
 </div>
@@ -213,9 +220,9 @@ Data Fields</h2></td></tr>
 
 <p>The physical area of <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba2fc7dcb26f0eb96cc22edfff3e5b87f9">AREA_LIGHT</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01407">1407</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01444">1444</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, and <a class="el" href="main_8c_source.html#l00493">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="main_8c_source.html#l00493">main()</a>.</p>
 
 </div>
 </div>
@@ -231,9 +238,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01424">1424</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01461">1461</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>.</p>
 
 </div>
 </div>
@@ -249,9 +256,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01425">1425</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01462">1462</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>.</p>
 
 </div>
 </div>
@@ -269,7 +276,7 @@ Data Fields</h2></td></tr>
 
 <p>Cone angle for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01395">1395</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01432">1432</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -289,7 +296,7 @@ Data Fields</h2></td></tr>
 
 <p>Direction for lights that are not <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba30d898c2a063caaf4b25a1af79e2e305">POINT_LIGHT</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01394">1394</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01431">1431</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, and <a class="el" href="camera_8c_source.html#l00182">update_light_camera()</a>.</p>
 
@@ -309,7 +316,7 @@ Data Fields</h2></td></tr>
 
 <p><a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a> ID into <a class="el" href="main_8c.html#a286971fd13a3dcef81cce1ed225ded7f">ENTITIES</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01392">1392</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01429">1429</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="editor_8c_source.html#l00458">execute_light_undo()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -329,7 +336,7 @@ Data Fields</h2></td></tr>
 
 <p>Starting angle for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01402">1402</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01439">1439</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
@@ -349,9 +356,9 @@ Data Fields</h2></td></tr>
 
 <p>The intensity of the <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01400">1400</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01437">1437</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
 </div>
 </div>
@@ -369,7 +376,7 @@ Data Fields</h2></td></tr>
 
 <p>Which layer a <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba5d2f2becc8f8ccac92c1077f953543e6">DIRECTIONAL_LIGHT</a> corresponds to in the <a class="el" href="main_8c.html#addad317d99d6169a42b6362f5d9e6c36">SHADOW_MAP_FBO</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01410">1410</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01447">1447</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, and <a class="el" href="main_8c_source.html#l00493">main()</a>.</p>
 
@@ -389,9 +396,9 @@ Data Fields</h2></td></tr>
 
 <p>The type of <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01401">1401</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01438">1438</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="load_8c_source.html#l02462">scene_load_volumes()</a>, <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -409,9 +416,9 @@ Data Fields</h2></td></tr>
 
 <p>The luminosity for importance sampling. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01415">1415</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01452">1452</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>.</p>
 
 </div>
 </div>
@@ -430,9 +437,9 @@ Data Fields</h2></td></tr>
 <p>The <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> this corresponds to. </p>
 <p>Used when building light BVH in <a class="el" href="acceleration_8c.html#abdff8e2d5681d0f6121d5573d87dd8be" title="Initializes a bvh for all current lights and emissive triangles in the scene, and sets the flux up fo...">build_light_bvh()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01412">1412</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01449">1449</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -448,9 +455,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01426">1426</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01463">1463</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>.</p>
 
 </div>
 </div>
@@ -468,9 +475,9 @@ Data Fields</h2></td></tr>
 
 <p>Outer angle for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01403">1403</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01440">1440</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +495,7 @@ Data Fields</h2></td></tr>
 
 <p>Penumbra (opening) for <a class="el" href="engine__types_8h.html#a19462db9fac41ceb18dff5d48daed16ba35201264051660c1c10df69ce81d2f44">SPOT_LIGHT</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01398">1398</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01435">1435</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
@@ -508,9 +515,9 @@ Data Fields</h2></td></tr>
 
 <p>Position of light. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01391">1391</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01428">1428</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -528,9 +535,9 @@ Data Fields</h2></td></tr>
 
 <p>The power for importance sampling. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01416">1416</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01453">1453</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l01229">subdivide_light_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>.</p>
 
 </div>
 </div>
@@ -549,9 +556,9 @@ Data Fields</h2></td></tr>
 <p>The radius of the <a class="el" href="struct_light.html" title="The CPU side structure for Lights.">Light</a>. </p>
 <p>Computed via <a class="el" href="render_8c.html#aa06e29a8e7daefea2cd5b689bb7d0e6a">copy_light_to_gpu_light()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01405">1405</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01442">1442</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -569,9 +576,9 @@ Data Fields</h2></td></tr>
 
 <p>Color of the light. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01397">1397</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01434">1434</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
 </div>
 </div>
@@ -589,7 +596,7 @@ Data Fields</h2></td></tr>
 
 <p>If a point light needs a new shadowmap. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01409">1409</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01446">1446</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00458">execute_light_undo()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
@@ -609,9 +616,9 @@ Data Fields</h2></td></tr>
 
 <p>The surface area of the triangle. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01427">1427</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01464">1464</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>
@@ -629,9 +636,9 @@ Data Fields</h2></td></tr>
 
 <p>The threshold (how far a light reaches). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01406">1406</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01443">1443</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
 
 </div>
 </div>
@@ -650,9 +657,9 @@ Data Fields</h2></td></tr>
 <p>The <a class="el" href="struct_mesh_face.html">MeshFace</a> this corresponds to. </p>
 <p>Used when building light BVH in <a class="el" href="acceleration_8c.html#abdff8e2d5681d0f6121d5573d87dd8be" title="Initializes a bvh for all current lights and emissive triangles in the scene, and sets the flux up fo...">build_light_bvh()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01413">1413</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01450">1450</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01551">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>.</p>
 
 </div>
 </div>

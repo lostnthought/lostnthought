@@ -1,12 +1,8 @@
 var struct_globals =
 [
-    [ "aprobe_size", "struct_globals.html#af87a694db53f4a8b67153050a39739c0", null ],
-    [ "aprobe_spacing", "struct_globals.html#afa7ae7b53f6741faae11e2b36845d7bd", null ],
-    [ "aprobe_start", "struct_globals.html#a4de83f3c84b973c8a8c9f7c9af6ecf23", null ],
     [ "assets", "struct_globals.html#abae58930c10e53514261af91ca6f173d", null ],
     [ "audio_portals", "struct_globals.html#a570c9c752437d81f1671c23e21d31171", null ],
     [ "audio_probes", "struct_globals.html#a60c5f6324b96336a23e1c6640074e10f", null ],
-    [ "current_directional", "struct_globals.html#a9661f3d3c2bc40e5b635cdebaac1f349", null ],
     [ "images", "struct_globals.html#aabdc23335ba202335a993ee2168a6d61", null ],
     [ "keyboard_locked", "struct_globals.html#a7c542779e65a11a96b162355cdae06c3", null ],
     [ "lights", "struct_globals.html#a838cf9143fd2ac079e7ddbe94411cd70", null ],
@@ -22,9 +18,6 @@ var struct_globals =
     [ "scene_data", "struct_globals.html#a1f11cfd28f61fbb990d21ea56b91dfcb", null ],
     [ "skins", "struct_globals.html#ad2fcd45b16cb97c2d9ad621f53ab272b", null ],
     [ "vertex_layouts", "struct_globals.html#a4997410d34052c76a153ccb96e14a0c0", null ],
-    [ "WORLD_DEPTH", "struct_globals.html#a6bceab02e109009db0e0eeb14784dac2", null ],
-    [ "WORLD_HEIGHT", "struct_globals.html#a16e6ee3aa3951590a41c881c66231302", null ],
     [ "world_min", "struct_globals.html#a75d54c4152e392d08cdfc15b07febd09", null ],
-    [ "world_size", "struct_globals.html#a94e802189cf4af0f9f9736294090d713", null ],
-    [ "WORLD_WIDTH", "struct_globals.html#a079c53dd353003d1d1502aa0cf0afb9a", null ]
+    [ "world_size", "struct_globals.html#a94e802189cf4af0f9f9736294090d713", null ]
 ];

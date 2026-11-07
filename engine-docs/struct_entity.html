@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -109,7 +116,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_entity.
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Entity Struct Reference</div></div>
+  <div class="headertitle"><div class="title">Entity Struct Reference<div class="ingroups"><a class="el" href="group__audio__group.html">Audio Definitions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -152,7 +159,7 @@ Data Fields</h2></td></tr>
 <dd>
 <a class="el" href="struct_filter.html" title="Filters to be used for filtering out entities for triggers.">Filter</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02246">2246</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02290">2290</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="acc8f3e434f1ef26c373ee69727fe0069" name="acc8f3e434f1ef26c373ee69727fe0069"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc8f3e434f1ef26c373ee69727fe0069">&#9670;&#160;</a></span>aabb</h2>
@@ -168,9 +175,9 @@ Data Fields</h2></td></tr>
 
 <p>The bounding box over all <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s for this <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02254">2254</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02298">2298</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -188,7 +195,7 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_animation_component.html" title="The animation component for interpolation between AnimationKeyframes.">AnimationComponent</a> inside of <a class="el" href="main_8c.html#a557fff5cb8cd3e5eb549836723bee3b6">ANIMATION_COMPONENTS</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02266">2266</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02310">2310</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00118">create_animation_component()</a>, <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, and <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>.</p>
 
@@ -222,9 +229,9 @@ Data Fields</h2></td></tr>
 
 <p>If the <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a> is empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02250">2250</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02294">2294</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -242,9 +249,9 @@ Data Fields</h2></td></tr>
 
 <p>ID inside of <a class="el" href="main_8c.html#a286971fd13a3dcef81cce1ed225ded7f">ENTITIES</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02249">2249</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02293">2293</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
 
 </div>
 </div>
@@ -262,9 +269,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_asset_instance.html" title="A instance of an Asset that retains its node structure but can be duplicated into multiple instances ...">AssetInstance</a> that spawned this <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02264">2264</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02308">2308</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -282,9 +289,9 @@ Data Fields</h2></td></tr>
 
 <p>The top-most <a class="el" href="struct_mesh_node.html" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> that belongs to this <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02252">2252</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02296">2296</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="entity__states_8c_source.html#l00008">ESTATE_chair_interact()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="entity__states_8c_source.html#l00008">ESTATE_chair_interact()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="physics_8c_source.html#l01393">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01234">PC_resolve_impulse_static()</a>, <a class="el" href="physics_8c_source.html#l01044">player_resolve_impulse()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -302,9 +309,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_physics_component.html" title="Entity Component used for physics resolution.">PhysicsComponent</a> inside of <a class="el" href="main_8c.html#a16610e289548759e5e937a896847e54f">PHYSICS_COMPONENTS</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02265">2265</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02309">2309</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="entity_8c_source.html#l00066">update_entities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="entity_8c_source.html#l00085">create_physics_component()</a>, <a class="el" href="entity_8c_source.html#l00221">destroy_entity()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="entity_8c_source.html#l00066">update_entities()</a>.</p>
 
 </div>
 </div>
@@ -322,9 +329,9 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_g_l_t_f_skin.html" title="The structure of an Skeletatal Animation loaded in from GLTFAnimation.">GLTFSkin</a> to be modified by this <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a> (skeletal animations). </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02253">2253</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02297">2297</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01267">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>
@@ -342,7 +349,7 @@ Data Fields</h2></td></tr>
 
 <p>The current <a class="el" href="struct_state.html" title="Entity States that control what functions are available for an Entity.">State</a> that describes actions for this <a class="el" href="struct_entity.html" title="Entity structure that holds components and references to the data it owns.">Entity</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02263">2263</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02307">2307</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00150">create_entity()</a>, and <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>.</p>
 
@@ -362,7 +369,7 @@ Data Fields</h2></td></tr>
 
 <p>Type of entity for <a class="el" href="struct_filter.html" title="Filters to be used for filtering out entities for triggers.">Filter</a>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02256">2256</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02300">2300</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 </div>
 </div>

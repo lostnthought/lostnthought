@@ -7,7 +7,6 @@ var struct_scene_data =
     [ "bvh_indices", "struct_scene_data.html#aef13c2ae300934b355d49d2095df96aa", null ],
     [ "bvh_indices_count", "struct_scene_data.html#a060e2d63979438d944b4bc6dbfddf4be", null ],
     [ "bvh_nodes", "struct_scene_data.html#a3005b8bbaab11d03204857dccb8265f5", null ],
-    [ "leaf_indices", "struct_scene_data.html#a5016d71e8add6c42e37c2f965563f6de", null ],
     [ "light_bvh", "struct_scene_data.html#a01e2711ec5d23656a8bed8f34d76410f", null ],
     [ "lighting_probe_volumes", "struct_scene_data.html#a95a959a543c66b347b90d34f0d543054", null ],
     [ "lightmap_data", "struct_scene_data.html#aed5558ae700564fc9312bafd610d5e50", null ],

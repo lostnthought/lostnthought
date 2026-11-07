@@ -8,8 +8,9 @@ var indexSectionsWithContent =
   5: "flp",
   6: "acdefghjlmpstu",
   7: "abcdefghjlmprstuxyz",
-  8: "abcdefgilmnpqrstuvy",
-  9: "acdefilopstu"
+  8: "abcdefglmnpqrstuvy",
+  9: "admnt",
+  10: "acdefilopstu"
 };
 
 var indexSectionNames =
@@ -23,7 +24,8 @@ var indexSectionNames =
   6: "enums",
   7: "enumvalues",
   8: "defines",
-  9: "pages"
+  9: "groups",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -37,6 +39,7 @@ var indexSectionLabels =
   6: "Enumerations",
   7: "Enumerator",
   8: "Macros",
-  9: "Pages"
+  9: "Modules",
+  10: "Pages"
 };
 

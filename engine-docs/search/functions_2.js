@@ -20,7 +20,7 @@ var searchData=
   ['change_5ffullscreen_5foption_17',['change_fullscreen_option',['../editor_8c.html#a8f0115bd3a9e57ae1a8b096f10f81886',1,'editor.c']]],
   ['change_5frender_5fresolution_18',['change_render_resolution',['../editor_8c.html#a96d049e8cc762d4960681c532cd8b15b',1,'editor.c']]],
   ['change_5fssao_5fres_19',['change_ssao_res',['../editor_8c.html#a91b4c53e118c0d534734df2b93070c82',1,'editor.c']]],
-  ['check_5faudio_5fpv_20',['check_audio_pv',['../audio_8c.html#ab002dcb2d0c7f9e3d100f75dc89c0668',1,'check_audio_pv():&#160;audio.c'],['../audio_8h.html#ab002dcb2d0c7f9e3d100f75dc89c0668',1,'check_audio_pv():&#160;audio.c']]],
+  ['check_5faudio_5fpv_20',['check_audio_pv',['../group__aprobe__group.html#gab002dcb2d0c7f9e3d100f75dc89c0668',1,'check_audio_pv():&#160;audio.c'],['../group__aprobe__group.html#gab002dcb2d0c7f9e3d100f75dc89c0668',1,'check_audio_pv():&#160;audio.c']]],
   ['check_5fequivalencyf_21',['check_equivalencyf',['../editor_8c.html#ab24e71fd53a3daa2a338e6e56a85aa59',1,'editor.c']]],
   ['check_5fequivalencyi_22',['check_equivalencyi',['../editor_8c.html#a4d30863acb4f0ef7698865fe23998a4f',1,'editor.c']]],
   ['check_5fequivalencyv3_23',['check_equivalencyv3',['../editor_8c.html#a6e8f009bf2241f40a023f90f3ff85800',1,'editor.c']]],

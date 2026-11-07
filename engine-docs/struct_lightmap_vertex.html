@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -137,7 +144,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>The structure used when rasterizing lightmap data to a texture before baking. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="lightmap_8c.html#a7ce533f7d63fa2233a7fba339b9f078c">bake_lightmap()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01115">1115</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01149">1149</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ae91fbad709f24ffb030b7425fb57ff70" name="ae91fbad709f24ffb030b7425fb57ff70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae91fbad709f24ffb030b7425fb57ff70">&#9670;&#160;</a></span>lm_uv</h2>
@@ -153,7 +160,7 @@ Data Fields</h2></td></tr>
 
 <p>The texture coordinates for the <a class="el" href="struct_lightmap_atlas.html" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01121">1121</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01155">1155</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -173,7 +180,7 @@ Data Fields</h2></td></tr>
 
 <p>The <a class="el" href="struct_material.html" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> this belongs to. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01122">1122</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01156">1156</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -193,7 +200,7 @@ Data Fields</h2></td></tr>
 
 <p>The normal. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01119">1119</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01153">1153</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -213,7 +220,7 @@ Data Fields</h2></td></tr>
 
 <p>The position. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01118">1118</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01152">1152</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -233,7 +240,7 @@ Data Fields</h2></td></tr>
 
 <p>The ID of the <a class="el" href="struct_mesh_face.html">MeshFace</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01123">1123</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01157">1157</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 
@@ -253,7 +260,7 @@ Data Fields</h2></td></tr>
 
 <p>The texture coordinates for the actual face's <a class="el" href="struct_g_l_texture.html" title="Texture abstraction for init.">GLTexture</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01120">1120</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l01154">1154</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>.</p>
 

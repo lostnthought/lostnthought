@@ -30,5 +30,5 @@ var searchData=
   ['assign_5fnext_5fnodes_27',['assign_next_nodes',['../acceleration_8c.html#abecfd2a1da5725d6992499b3e064815d',1,'acceleration.c']]],
   ['assign_5ftext_5fbox_5fto_5fcontainer_28',['assign_text_box_to_container',['../ui_8c.html#ad6e48f88a40308afedb4ac05daaf2118',1,'assign_text_box_to_container(TextBox *tb, UIContainer *c):&#160;ui.c'],['../ui_8h.html#ad6e48f88a40308afedb4ac05daaf2118',1,'assign_text_box_to_container(TextBox *tb, UIContainer *c):&#160;ui.c']]],
   ['assign_5fuvs_29',['assign_uvs',['../lightmap_8c.html#afc59c12be32f691a4d684158e6b63eba',1,'lightmap.c']]],
-  ['audio_5fupdate_30',['audio_update',['../audio_8c.html#a59e8ca705239d674e4aebdccad02b07a',1,'audio_update(Player *player):&#160;audio.c'],['../audio_8h.html#a59e8ca705239d674e4aebdccad02b07a',1,'audio_update(Player *player):&#160;audio.c']]]
+  ['audio_5fupdate_30',['audio_update',['../group__audio__group.html#ga59e8ca705239d674e4aebdccad02b07a',1,'audio_update(Player *player):&#160;audio.c'],['../group__audio__group.html#ga59e8ca705239d674e4aebdccad02b07a',1,'audio_update(Player *player):&#160;audio.c']]]
 ];

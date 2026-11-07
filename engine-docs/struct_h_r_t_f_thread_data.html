@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -109,7 +116,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_h_r_t_f
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">HRTFThreadData Struct Reference</div></div>
+  <div class="headertitle"><div class="title">HRTFThreadData Struct Reference<div class="ingroups"><a class="el" href="group__aprobe__group.html">AudioProbe Definitions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -138,16 +145,16 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a3a0a0cb1b0a1eb1e7e43f680b02dd8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a new job is ready.  <br /></td></tr>
 <tr class="memitem:af90473ed0f6ab382f4722c487309c05b" id="r_af90473ed0f6ab382f4722c487309c05b"><td class="memItemLeft"><a class="el" href="struct_audio_probe_weights.html">AudioProbeWeights</a>&#160;</td><td class="memItemRight"><a class="el" href="#af90473ed0f6ab382f4722c487309c05b">w</a></td></tr>
 <tr class="memdesc:af90473ed0f6ab382f4722c487309c05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current job's weights.  <br /></td></tr>
-<tr class="memitem:a80a75e1fd601037e38147b7fd806eced" id="r_a80a75e1fd601037e38147b7fd806eced"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#a7fae4736b00b65e477b230a17d018cee">PartitionTable</a>&#160;</td><td class="memItemRight"><a class="el" href="#a80a75e1fd601037e38147b7fd806eced">tables</a> [<a class="el" href="engine__types_8h.html#a90908d2e75bf3ee04a2d8c2ce9ca3967">PARTITION_BUFFERS</a>]</td></tr>
+<tr class="memitem:a80a75e1fd601037e38147b7fd806eced" id="r_a80a75e1fd601037e38147b7fd806eced"><td class="memItemLeft"><a class="el" href="group__aprobe__group.html#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a>&#160;</td><td class="memItemRight"><a class="el" href="#a80a75e1fd601037e38147b7fd806eced">tables</a> [<a class="el" href="engine__types_8h.html#a90908d2e75bf3ee04a2d8c2ce9ca3967">PARTITION_BUFFERS</a>]</td></tr>
 <tr class="memdesc:a80a75e1fd601037e38147b7fd806eced"><td class="mdescLeft">&#160;</td><td class="mdescRight">The partitions for overlap-add quad-buffered.  <br /></td></tr>
-<tr class="memitem:a25242987d74729a1c36a0413405cc24a" id="r_a25242987d74729a1c36a0413405cc24a"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#a7fae4736b00b65e477b230a17d018cee">PartitionTable</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a25242987d74729a1c36a0413405cc24a">FRONT</a></td></tr>
+<tr class="memitem:a25242987d74729a1c36a0413405cc24a" id="r_a25242987d74729a1c36a0413405cc24a"><td class="memItemLeft"><a class="el" href="group__aprobe__group.html#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a25242987d74729a1c36a0413405cc24a">FRONT</a></td></tr>
 <tr class="memdesc:a25242987d74729a1c36a0413405cc24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current partition presented to the audio thread.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The data for the thread that prepares IRs by rotating then convolving them with an HRTF before it presents it to the audio thread. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="audio__ir_8c.html">audio_ir.c</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00351">351</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00382">382</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a25242987d74729a1c36a0413405cc24a" name="a25242987d74729a1c36a0413405cc24a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25242987d74729a1c36a0413405cc24a">&#9670;&#160;</a></span>FRONT</h2>
@@ -156,16 +163,16 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="engine__types_8h.html#a7fae4736b00b65e477b230a17d018cee">PartitionTable</a>* HRTFThreadData::FRONT</td>
+          <td class="memname"><a class="el" href="group__aprobe__group.html#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a>* HRTFThreadData::FRONT</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The current partition presented to the audio thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00370">370</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00401">401</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01415">convolver_node_process_pcm_frames()</a>, and <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01412">convolver_node_process_pcm_frames()</a>, and <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>.</p>
 
 </div>
 </div>
@@ -183,9 +190,9 @@ Data Fields</h2></td></tr>
 
 <p>The spinlock used when presenting an IR to the audio thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00358">358</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00389">389</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01415">convolver_node_process_pcm_frames()</a>, <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, <a class="el" href="init_8c_source.html#l01994">init()</a>, and <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01412">convolver_node_process_pcm_frames()</a>, <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, <a class="el" href="init_8c_source.html#l01991">init()</a>, and <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>.</p>
 
 </div>
 </div>
@@ -203,7 +210,7 @@ Data Fields</h2></td></tr>
 
 <p>The last job's direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00361">361</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00392">392</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
@@ -223,7 +230,7 @@ Data Fields</h2></td></tr>
 
 <p>The last job's position. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00360">360</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00391">391</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
@@ -243,7 +250,7 @@ Data Fields</h2></td></tr>
 
 <p>The mutex used when signalling a job. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00355">355</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00386">386</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, and <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>.</p>
 
@@ -263,7 +270,7 @@ Data Fields</h2></td></tr>
 
 <p>If a new job is ready. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00364">364</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00395">395</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, and <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>.</p>
 
@@ -283,7 +290,7 @@ Data Fields</h2></td></tr>
 
 <p>Used to quit gracefully. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00363">363</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00394">394</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, and <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>.</p>
 
@@ -303,7 +310,7 @@ Data Fields</h2></td></tr>
 
 <p>The thread object. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00354">354</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00385">385</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, and <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>.</p>
 
@@ -316,7 +323,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="engine__types_8h.html#a7fae4736b00b65e477b230a17d018cee">PartitionTable</a> HRTFThreadData::tables[<a class="el" href="engine__types_8h.html#a90908d2e75bf3ee04a2d8c2ce9ca3967">PARTITION_BUFFERS</a>]</td>
+          <td class="memname"><a class="el" href="group__aprobe__group.html#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a> HRTFThreadData::tables[<a class="el" href="engine__types_8h.html#a90908d2e75bf3ee04a2d8c2ce9ca3967">PARTITION_BUFFERS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -324,7 +331,7 @@ Data Fields</h2></td></tr>
 <p>The partitions for overlap-add quad-buffered. </p>
 <p>Writes into the empty one. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00368">368</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00399">399</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, and <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>.</p>
 
@@ -344,7 +351,7 @@ Data Fields</h2></td></tr>
 
 <p>Current job's weights. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00366">366</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00397">397</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>, and <a class="el" href="audio__ir_8c_source.html#l00289">update_player_ir()</a>.</p>
 
@@ -364,7 +371,7 @@ Data Fields</h2></td></tr>
 
 <p>The job signal. </p>
 
-<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00356">356</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00387">387</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00506">delete_hrtf_worker_thread()</a>, <a class="el" href="audio__ir_8c_source.html#l00413">hrtf_worker()</a>, <a class="el" href="audio__ir_8c_source.html#l00475">init_hrtf_worker_thread()</a>, and <a class="el" href="audio_8c_source.html#l00851">update_player_audio_probe()</a>.</p>
 

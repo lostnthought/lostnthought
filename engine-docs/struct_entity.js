@@ -1,6 +1,5 @@
 var struct_entity =
 [
-    [ "[union].as", "union_entity_1_1_0funion_0e_8as.html", "union_entity_1_1_0funion_0e_8as" ],
     [ "aabb", "struct_entity.html#acc8f3e434f1ef26c373ee69727fe0069", null ],
     [ "ac", "struct_entity.html#a435a53983ad479d11b94be39192d8374", null ],
     [ "as", "struct_entity.html#a2cd119742886669a110051ec2b071d36", null ],

@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -18,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -113,35 +117,30 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('mesh_8h_source
 </div><!--header-->
 <div class="contents">
 <a href="mesh_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef MESH_H</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define MESH_H</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="engine__types_8h.html">core/engine_types.h</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">int</span> <a class="code hl_function" href="mesh_8c.html#a1c100236f6fcebfd696bd620adf8729b">find_mn_by_name</a>(<span class="keywordtype">char</span> name[256]);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#ad0872e286dd1863d749539846b135d61">build_adjacency_map</a>(<a class="code hl_struct" href="struct_mesh.html">Mesh</a> * mesh);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#afaf138ae7eb676e0b2bd6d95e3a1598c">deduplicate</a>(<a class="code hl_struct" href="struct_vector.html">Vector</a> * in_verts, <a class="code hl_struct" href="struct_vector.html">Vector</a> * faces);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull</a>(<a class="code hl_struct" href="struct_convex_hull.html">ConvexHull</a> * hull);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="mesh_8h.html#ae6e3f9965ab26fec92234d2dc4cb8d5a">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8h.html#ae6e3f9965ab26fec92234d2dc4cb8d5a">mesh_decomposition</a>(<a class="code hl_struct" href="struct_mesh.html">Mesh</a> * mesh);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#adb0d5fd34a1f657d3c06729bc983f497">compute_mesh_hulls</a>(<a class="code hl_struct" href="struct_convex_hull.html">ConvexHull</a> * hull);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MESH_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define MESH_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="engine__types_8h.html">core/engine_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">int</span> <a class="code hl_function" href="mesh_8c.html#a1c100236f6fcebfd696bd620adf8729b">find_mn_by_name</a>(<span class="keywordtype">char</span> name[256]);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#ad0872e286dd1863d749539846b135d61">build_adjacency_map</a>(<a class="code hl_struct" href="engine__types_8h.html#struct_mesh">Mesh</a> * mesh);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#afaf138ae7eb676e0b2bd6d95e3a1598c">deduplicate</a>(<a class="code hl_struct" href="types_8h.html#struct_vector">Vector</a> * in_verts, <a class="code hl_struct" href="types_8h.html#struct_vector">Vector</a> * faces);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull</a>(<a class="code hl_struct" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> * hull);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">void</span> <a class="code hl_function" href="mesh_8c.html#adb0d5fd34a1f657d3c06729bc983f497">compute_mesh_hulls</a>(<a class="code hl_struct" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> * hull);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aengine__types_8h_html"><div class="ttname"><a href="engine__types_8h.html">engine_types.h</a></div><div class="ttdoc">Engine specific types and defines.</div></div>
+<div class="ttc" id="aengine__types_8h_html_struct_mesh"><div class="ttname"><a href="engine__types_8h.html#struct_mesh">Mesh</a></div><div class="ttdoc">A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02477">engine_types.h:2478</a></div></div>
+<div class="ttc" id="agroup__physics__group_html_struct_convex_hull"><div class="ttname"><a href="group__physics__group.html#struct_convex_hull">ConvexHull</a></div><div class="ttdoc">Convex Hulls that are generated via incremental hull for non-static meshes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l01100">engine_types.h:1101</a></div></div>
 <div class="ttc" id="amesh_8c_html_a1c100236f6fcebfd696bd620adf8729b"><div class="ttname"><a href="mesh_8c.html#a1c100236f6fcebfd696bd620adf8729b">find_mn_by_name</a></div><div class="ttdeci">int find_mn_by_name(char name[256])</div><div class="ttdoc">Finds a Mesh inside of Globals.meshes via string.</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00191">mesh.c:191</a></div></div>
-<div class="ttc" id="amesh_8c_html_a5c35f44de283319fcf3a05b6b422bb1f"><div class="ttname"><a href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull</a></div><div class="ttdeci">void incremental_hull(ConvexHull *hull)</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00744">mesh.c:744</a></div></div>
+<div class="ttc" id="amesh_8c_html_a5c35f44de283319fcf3a05b6b422bb1f"><div class="ttname"><a href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull</a></div><div class="ttdeci">void incremental_hull(ConvexHull *hull)</div><div class="ttdoc">Deduplicates vertices.</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00744">mesh.c:744</a></div></div>
 <div class="ttc" id="amesh_8c_html_ad0872e286dd1863d749539846b135d61"><div class="ttname"><a href="mesh_8c.html#ad0872e286dd1863d749539846b135d61">build_adjacency_map</a></div><div class="ttdeci">void build_adjacency_map(Mesh *mesh)</div><div class="ttdoc">Builds a map of TriangleAdjacency over adjacent MeshFaces on the Mesh.</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00058">mesh.c:58</a></div></div>
-<div class="ttc" id="amesh_8c_html_adb0d5fd34a1f657d3c06729bc983f497"><div class="ttname"><a href="mesh_8c.html#adb0d5fd34a1f657d3c06729bc983f497">compute_mesh_hulls</a></div><div class="ttdeci">void compute_mesh_hulls(ConvexHull *hull)</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00925">mesh.c:925</a></div></div>
-<div class="ttc" id="amesh_8c_html_afaf138ae7eb676e0b2bd6d95e3a1598c"><div class="ttname"><a href="mesh_8c.html#afaf138ae7eb676e0b2bd6d95e3a1598c">deduplicate</a></div><div class="ttdeci">void deduplicate(Vector *in_verts, Vector *faces)</div><div class="ttdoc">Deduplicated vertices.</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00210">mesh.c:210</a></div></div>
-<div class="ttc" id="amesh_8h_html_ae6e3f9965ab26fec92234d2dc4cb8d5a"><div class="ttname"><a href="mesh_8h.html#ae6e3f9965ab26fec92234d2dc4cb8d5a">mesh_decomposition</a></div><div class="ttdeci">void mesh_decomposition(Mesh *mesh)</div></div>
-<div class="ttc" id="astruct_convex_hull_html"><div class="ttname"><a href="struct_convex_hull.html">ConvexHull</a></div><div class="ttdoc">Convex Hulls that are generated via incremental hull for non-static meshes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l01072">engine_types.h:1073</a></div></div>
-<div class="ttc" id="astruct_mesh_html"><div class="ttname"><a href="struct_mesh.html">Mesh</a></div><div class="ttdoc">A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02442">engine_types.h:2443</a></div></div>
-<div class="ttc" id="astruct_vector_html"><div class="ttname"><a href="struct_vector.html">Vector</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00209">types.h:210</a></div></div>
+<div class="ttc" id="amesh_8c_html_adb0d5fd34a1f657d3c06729bc983f497"><div class="ttname"><a href="mesh_8c.html#adb0d5fd34a1f657d3c06729bc983f497">compute_mesh_hulls</a></div><div class="ttdeci">void compute_mesh_hulls(ConvexHull *hull)</div><div class="ttdoc">Combines contiguous triangles with same normals into one face.</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00924">mesh.c:924</a></div></div>
+<div class="ttc" id="amesh_8c_html_afaf138ae7eb676e0b2bd6d95e3a1598c"><div class="ttname"><a href="mesh_8c.html#afaf138ae7eb676e0b2bd6d95e3a1598c">deduplicate</a></div><div class="ttdeci">void deduplicate(Vector *in_verts, Vector *faces)</div><div class="ttdoc">Deduplicates vertices.</div><div class="ttdef"><b>Definition</b> <a href="mesh_8c_source.html#l00210">mesh.c:210</a></div></div>
+<div class="ttc" id="atypes_8h_html_struct_vector"><div class="ttname"><a href="types_8h.html#struct_vector">Vector</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00206">types.h:207</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

@@ -1,0 +1,25 @@
+var engine__types_8h_struct_draw_command =
+[
+    [ "gbuffer_shader", "engine__types_8h.html#ae2760cc3de32ebc3934fea6de47e41f5", null ],
+    [ "fwd_shader", "engine__types_8h.html#a62aa48821430d0b78c7b808cc3362618", null ],
+    [ "material", "engine__types_8h.html#a255a9a6d1d2d20fad5d718f313f4a6ca", null ],
+    [ "opaque", "engine__types_8h.html#a8e999410e971283470aa96a60883b133", null ],
+    [ "static_mesh", "engine__types_8h.html#a00eccf5a6de9a667349c6c51a7ddd222", null ],
+    [ "mesh_id", "engine__types_8h.html#a95642a3ce64205e68599de9d29e45df1", null ],
+    [ "skin_offset", "engine__types_8h.html#ab29000ef2d4ca47fd296064a420a831a", null ],
+    [ "point_light_offset", "engine__types_8h.html#aab38ec5f587af3ffa6da589089dfb81b", null ],
+    [ "point_light_count", "engine__types_8h.html#aeee998f119a2913973f50ed686fa4f02", null ],
+    [ "directional_light_offset", "engine__types_8h.html#ad6931a90fa8503ebca8940cd9c8a6c9d", null ],
+    [ "directional_light_count", "engine__types_8h.html#a2a22de9f494c0dddbc294ef3761b2912", null ],
+    [ "spot_light_offset", "engine__types_8h.html#a0727c15f70397a29e62a894c7fd12adb", null ],
+    [ "spot_light_count", "engine__types_8h.html#a718e251f2a7624dc40fa45d0f22251b1", null ],
+    [ "start_index", "engine__types_8h.html#a1bf7caa6a9f79ee553e766cce328e722", null ],
+    [ "index_count", "engine__types_8h.html#ad930522c58541d661f2ceea637daa2f6", null ],
+    [ "lm_offset", "engine__types_8h.html#a46fee476d8b6652cadf34097e4cb5f2e", null ],
+    [ "mn_id", "engine__types_8h.html#a5cd52c734d364f7fb9c01231be744f14", null ],
+    [ "sm_id", "engine__types_8h.html#abb7da3556981c092c5bd1c049743081e", null ],
+    [ "array_offset", "engine__types_8h.html#a066e23a012993f4935054e3f7a61a3b6", null ],
+    [ "element_offset", "engine__types_8h.html#ad17ba87a9aca6a3b6126c6b956b31bca", null ],
+    [ "sort_key", "engine__types_8h.html#aa5a1ea6b61a80e21733fcba4c309134e", null ],
+    [ "matrix", "engine__types_8h.html#a2e090097d92b7a0bbe3aa7d2e7e6a3b9", null ]
+];

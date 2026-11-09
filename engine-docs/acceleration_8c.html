@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -136,30 +140,29 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abffcb385325372c5a2868c0d9f607b8e" id="r_abffcb385325372c5a2868c0d9f607b8e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abffcb385325372c5a2868c0d9f607b8e">swap_size_t</a> (size_t *a, size_t *b)</td></tr>
-<tr class="memitem:abecfd2a1da5725d6992499b3e064815d" id="r_abecfd2a1da5725d6992499b3e064815d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abecfd2a1da5725d6992499b3e064815d">assign_next_nodes</a> (<a class="el" href="struct_b_v_h_node.html">BVHNode</a> *nodes, int index, int next)</td></tr>
-<tr class="memitem:a4f91e2ffe43799e6b0697497d17b1fdf" id="r_a4f91e2ffe43799e6b0697497d17b1fdf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4f91e2ffe43799e6b0697497d17b1fdf">BVH_slab_test_aabb</a> (<a class="el" href="struct_ray_hit.html">RayHit</a> *hit, <a class="el" href="struct_a_a_b_b.html">AABB</a> aabb, <a class="el" href="structvec3.html">vec3</a> origin, <a class="el" href="structvec3.html">vec3</a> dir, <a class="el" href="structvec3.html">vec3</a> inv_dir)</td></tr>
-<tr class="memitem:a264e79089ffaf93cf2d29b5f68077714" id="r_a264e79089ffaf93cf2d29b5f68077714"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a264e79089ffaf93cf2d29b5f68077714">ray_intersects_aabb</a> (<a class="el" href="struct_a_a_b_b.html">AABB</a> aabb, <a class="el" href="structvec3.html">vec3</a> origin, <a class="el" href="structvec3.html">vec3</a> dir, <a class="el" href="structvec3.html">vec3</a> inv_dir)</td></tr>
+<tr class="memitem:ae96f1ad904d6de034028e6d99b069cb9" id="r_ae96f1ad904d6de034028e6d99b069cb9"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ae96f1ad904d6de034028e6d99b069cb9">swap_size_t</a> (size_t *a, size_t *b)</td></tr>
+<tr class="memitem:a5552cb5cc7b28b2dd475180950dcd839" id="r_a5552cb5cc7b28b2dd475180950dcd839"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a5552cb5cc7b28b2dd475180950dcd839">assign_next_nodes</a> (<a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *nodes, int index, int next)</td></tr>
+<tr class="memitem:a9d98edfaf4615c65d660bb86ffc28826" id="r_a9d98edfaf4615c65d660bb86ffc28826"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a9d98edfaf4615c65d660bb86ffc28826">BVH_slab_test_aabb</a> (<a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> *hit, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> aabb, <a class="el" href="types_8h.html#structvec3">vec3</a> origin, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_dir)</td></tr>
+<tr class="memitem:a7d92c57b410c08bfe725f9abb5c50460" id="r_a7d92c57b410c08bfe725f9abb5c50460"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a7d92c57b410c08bfe725f9abb5c50460">ray_traverse_mesh_bvh</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *m, <a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *nodes, <a class="el" href="types_8h.html#structvec3">vec3</a> origin, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_pos, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> mod_dir, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_dir, <a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> *hit, size_t mesh, size_t tri, bool check_normal)</td></tr>
+<tr class="memitem:a2c111901695b00440d9a06068bdddb17" id="r_a2c111901695b00440d9a06068bdddb17"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2c111901695b00440d9a06068bdddb17">ray_traverse_scene_bvh</a> (<a class="el" href="engine__types_8h.html#struct_scene_data">SceneData</a> *sd, <a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *nodes, <a class="el" href="types_8h.html#structvec3">vec3</a> origin, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_pos, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> mod_dir, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_dir, <a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> *hit, size_t mesh, size_t tri, bool check_normal)</td></tr>
+<tr class="memitem:a32dd225f1c6dbf0f663768bce919df15" id="r_a32dd225f1c6dbf0f663768bce919df15"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a32dd225f1c6dbf0f663768bce919df15">process_collision_node</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *m, <a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *node, <a class="el" href="types_8h.html#structvec3">vec3</a> proposed, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *p)</td></tr>
+<tr class="memitem:abc6e3265cefb6a827956296f124fcb61" id="r_abc6e3265cefb6a827956296f124fcb61"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#abc6e3265cefb6a827956296f124fcb61">subdivide_scene_bvh</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *bvh_nodes, size_t *indices, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *aabbs, int pidx, int depth, int axes_tried)</td></tr>
+<tr class="memitem:a7a65a8d01cc961c70a15898724f0cc5b" id="r_a7a65a8d01cc961c70a15898724f0cc5b"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a7a65a8d01cc961c70a15898724f0cc5b">subdivide_mesh_tri_bvh</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *mesh, size_t *indices, int indices_count, int pidx, int depth, int axes_tried)</td></tr>
+<tr class="memitem:ad1a50d65a601fa381eff98b7e39717d3" id="r_ad1a50d65a601fa381eff98b7e39717d3"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad1a50d65a601fa381eff98b7e39717d3">subdivide_light_bvh</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *bvh_nodes, size_t *indices, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *aabbs, <a class="el" href="engine__types_8h.html#struct_light">Light</a> *lights, int pidx, int depth, int axes_tried)</td></tr>
+<tr class="memitem:a264e79089ffaf93cf2d29b5f68077714" id="r_a264e79089ffaf93cf2d29b5f68077714"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a264e79089ffaf93cf2d29b5f68077714">ray_intersects_aabb</a> (<a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> aabb, <a class="el" href="types_8h.html#structvec3">vec3</a> origin, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_dir)</td></tr>
 <tr class="memdesc:a264e79089ffaf93cf2d29b5f68077714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a ray intersects an aabb.  <br /></td></tr>
-<tr class="memitem:ae6754056c0b5a5d1261149f188a9be8e" id="r_ae6754056c0b5a5d1261149f188a9be8e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae6754056c0b5a5d1261149f188a9be8e">ray_intersects_aabb_with_point</a> (<a class="el" href="struct_a_a_b_b.html">AABB</a> aabb, <a class="el" href="structvec3.html">vec3</a> origin, <a class="el" href="structvec3.html">vec3</a> dir, <a class="el" href="structvec3.html">vec3</a> inv_dir, <a class="el" href="structvec3.html">vec3</a> *intersection_point)</td></tr>
+<tr class="memitem:ae6754056c0b5a5d1261149f188a9be8e" id="r_ae6754056c0b5a5d1261149f188a9be8e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae6754056c0b5a5d1261149f188a9be8e">ray_intersects_aabb_with_point</a> (<a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> aabb, <a class="el" href="types_8h.html#structvec3">vec3</a> origin, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_dir, <a class="el" href="types_8h.html#structvec3">vec3</a> *intersection_point)</td></tr>
 <tr class="memdesc:ae6754056c0b5a5d1261149f188a9be8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a ray intersects an aabb and outputs an intersection point.  <br /></td></tr>
-<tr class="memitem:ac1fdb91beaaefc8aeb49df8c37962d57" id="r_ac1fdb91beaaefc8aeb49df8c37962d57"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac1fdb91beaaefc8aeb49df8c37962d57">ray_intersects_obb_with_point</a> (<a class="el" href="struct_o_b_b.html">OBB</a> obb, <a class="el" href="structvec3.html">vec3</a> origin, <a class="el" href="structvec3.html">vec3</a> dir, <a class="el" href="structvec3.html">vec3</a> *intersection_point)</td></tr>
+<tr class="memitem:ac1fdb91beaaefc8aeb49df8c37962d57" id="r_ac1fdb91beaaefc8aeb49df8c37962d57"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac1fdb91beaaefc8aeb49df8c37962d57">ray_intersects_obb_with_point</a> (<a class="el" href="types_8h.html#struct_o_b_b">OBB</a> obb, <a class="el" href="types_8h.html#structvec3">vec3</a> origin, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> *intersection_point)</td></tr>
 <tr class="memdesc:ac1fdb91beaaefc8aeb49df8c37962d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a ray intersects an obb and outputs an intersection point.  <br /></td></tr>
-<tr class="memitem:a88d3dc32dbdb3e7a9ac34cad47bcdd30" id="r_a88d3dc32dbdb3e7a9ac34cad47bcdd30"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a88d3dc32dbdb3e7a9ac34cad47bcdd30">ray_traverse_mesh_bvh</a> (<a class="el" href="struct_mesh.html">Mesh</a> *m, <a class="el" href="struct_mesh_node.html">MeshNode</a> *mn, <a class="el" href="struct_b_v_h_node.html">BVHNode</a> *nodes, <a class="el" href="structvec3.html">vec3</a> origin, <a class="el" href="structvec3.html">vec3</a> inv_pos, <a class="el" href="structvec3.html">vec3</a> dir, <a class="el" href="structvec3.html">vec3</a> mod_dir, <a class="el" href="structvec3.html">vec3</a> inv_dir, <a class="el" href="struct_ray_hit.html">RayHit</a> *hit, size_t mesh, size_t tri, bool check_normal)</td></tr>
-<tr class="memitem:a5bb66cbd8d1364754e16eaa0c0c7930f" id="r_a5bb66cbd8d1364754e16eaa0c0c7930f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5bb66cbd8d1364754e16eaa0c0c7930f">ray_traverse_scene_bvh</a> (<a class="el" href="struct_scene_data.html">SceneData</a> *sd, <a class="el" href="struct_b_v_h_node.html">BVHNode</a> *nodes, <a class="el" href="structvec3.html">vec3</a> origin, <a class="el" href="structvec3.html">vec3</a> inv_pos, <a class="el" href="structvec3.html">vec3</a> dir, <a class="el" href="structvec3.html">vec3</a> mod_dir, <a class="el" href="structvec3.html">vec3</a> inv_dir, <a class="el" href="struct_ray_hit.html">RayHit</a> *hit, size_t mesh, size_t tri, bool check_normal)</td></tr>
-<tr class="memitem:a14d2ae40fcc4811acb5bcca2e8e9fe92" id="r_a14d2ae40fcc4811acb5bcca2e8e9fe92"><td class="memItemLeft"><a class="el" href="struct_ray_hit.html">RayHit</a>&#160;</td><td class="memItemRight"><a class="el" href="#a14d2ae40fcc4811acb5bcca2e8e9fe92">raycast_scene</a> (<a class="el" href="structvec3.html">vec3</a> start, <a class="el" href="structvec3.html">vec3</a> dir, float initial_t, bool check_normal)</td></tr>
+<tr class="memitem:a14d2ae40fcc4811acb5bcca2e8e9fe92" id="r_a14d2ae40fcc4811acb5bcca2e8e9fe92"><td class="memItemLeft"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a>&#160;</td><td class="memItemRight"><a class="el" href="#a14d2ae40fcc4811acb5bcca2e8e9fe92">raycast_scene</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> start, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, float initial_t, bool check_normal)</td></tr>
 <tr class="memdesc:a14d2ae40fcc4811acb5bcca2e8e9fe92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raycasts through the scene and finds closest intersection to meshes.  <br /></td></tr>
-<tr class="memitem:a2fb9824e4ae1deb6cb16dc781f072643" id="r_a2fb9824e4ae1deb6cb16dc781f072643"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2fb9824e4ae1deb6cb16dc781f072643">ray_intersects_collision_aabb</a> (<a class="el" href="struct_a_a_b_b.html">AABB</a> aabb, <a class="el" href="structvec3.html">vec3</a> origin, <a class="el" href="structvec3.html">vec3</a> end, <a class="el" href="structvec3.html">vec3</a> dir, <a class="el" href="structvec3.html">vec3</a> inv_dir)</td></tr>
-<tr class="memitem:a6f38f32992cb0a92a15bf79b1b9a1fde" id="r_a6f38f32992cb0a92a15bf79b1b9a1fde"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6f38f32992cb0a92a15bf79b1b9a1fde">process_collision_node</a> (<a class="el" href="struct_mesh.html">Mesh</a> *m, <a class="el" href="struct_mesh_node.html">MeshNode</a> *mn, <a class="el" href="struct_b_v_h_node.html">BVHNode</a> *node, <a class="el" href="structvec3.html">vec3</a> proposed, <a class="el" href="struct_collision_points.html">CollisionPoints</a> *p)</td></tr>
-<tr class="memitem:aee1ae2d343af7f959bda05f54c48b426" id="r_aee1ae2d343af7f959bda05f54c48b426"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aee1ae2d343af7f959bda05f54c48b426">traverse_collision_bvh</a> (<a class="el" href="struct_mesh.html">Mesh</a> *m, <a class="el" href="struct_mesh_node.html">MeshNode</a> *mn, <a class="el" href="struct_b_v_h_node.html">BVHNode</a> *nodes, <a class="el" href="struct_b_v_h_node.html">BVHNode</a> *node, <a class="el" href="structvec3.html">vec3</a> proposed, <a class="el" href="structvec3.html">vec3</a> inv_p, <a class="el" href="struct_collision_points.html">CollisionPoints</a> *p)</td></tr>
+<tr class="memitem:aee1ae2d343af7f959bda05f54c48b426" id="r_aee1ae2d343af7f959bda05f54c48b426"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aee1ae2d343af7f959bda05f54c48b426">traverse_collision_bvh</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *m, <a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *nodes, <a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *node, <a class="el" href="types_8h.html#structvec3">vec3</a> proposed, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_p, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *p)</td></tr>
 <tr class="memdesc:aee1ae2d343af7f959bda05f54c48b426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the mesh bvh to find collisions based on point vs aabb within a certain epsilon for player collisions.  <br /></td></tr>
-<tr class="memitem:a459f7b979f539aa495802d6adb05655d" id="r_a459f7b979f539aa495802d6adb05655d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a459f7b979f539aa495802d6adb05655d">subdivide_scene_bvh</a> (<a class="el" href="struct_vector.html">Vector</a> *bvh_nodes, size_t *indices, <a class="el" href="struct_a_a_b_b.html">AABB</a> *aabbs, int pidx, int depth, int axes_tried)</td></tr>
 <tr class="memitem:a0f233f0c56cafedae97073ddc3a2126a" id="r_a0f233f0c56cafedae97073ddc3a2126a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f233f0c56cafedae97073ddc3a2126a">init_scene_bvh</a> ()</td></tr>
 <tr class="memdesc:a0f233f0c56cafedae97073ddc3a2126a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes or updates the pre-existing scene bvh based on all mesh nodes with valid meshes.  <br /></td></tr>
-<tr class="memitem:a7cbb94db1c182d770945be1b1bd9333c" id="r_a7cbb94db1c182d770945be1b1bd9333c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7cbb94db1c182d770945be1b1bd9333c">subdivide_mesh_tri_bvh</a> (<a class="el" href="struct_mesh.html">Mesh</a> *mesh, size_t *indices, int indices_count, int pidx, int depth, int axes_tried)</td></tr>
-<tr class="memitem:ab51daa4720877a6c37a72f20581cbfa1" id="r_ab51daa4720877a6c37a72f20581cbfa1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab51daa4720877a6c37a72f20581cbfa1">init_mesh_tri_bvh</a> (<a class="el" href="struct_mesh.html">Mesh</a> *mesh)</td></tr>
+<tr class="memitem:ab51daa4720877a6c37a72f20581cbfa1" id="r_ab51daa4720877a6c37a72f20581cbfa1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab51daa4720877a6c37a72f20581cbfa1">init_mesh_tri_bvh</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *mesh)</td></tr>
 <tr class="memdesc:ab51daa4720877a6c37a72f20581cbfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the bvh for a mesh's triangles.  <br /></td></tr>
-<tr class="memitem:a5b7e833aaa556eb67a2bcbba478df5f0" id="r_a5b7e833aaa556eb67a2bcbba478df5f0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5b7e833aaa556eb67a2bcbba478df5f0">subdivide_light_bvh</a> (<a class="el" href="struct_vector.html">Vector</a> *bvh_nodes, size_t *indices, <a class="el" href="struct_a_a_b_b.html">AABB</a> *aabbs, <a class="el" href="struct_light.html">Light</a> *lights, int pidx, int depth, int axes_tried)</td></tr>
 <tr class="memitem:abdff8e2d5681d0f6121d5573d87dd8be" id="r_abdff8e2d5681d0f6121d5573d87dd8be"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abdff8e2d5681d0f6121d5573d87dd8be">build_light_bvh</a> ()</td></tr>
 <tr class="memdesc:abdff8e2d5681d0f6121d5573d87dd8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a bvh for all current lights and emissive triangles in the scene, and sets the flux up for importance sampling.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -185,16 +188,54 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="abecfd2a1da5725d6992499b3e064815d" name="abecfd2a1da5725d6992499b3e064815d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abecfd2a1da5725d6992499b3e064815d">&#9670;&#160;</a></span>assign_next_nodes()</h2>
+<a id="ae96f1ad904d6de034028e6d99b069cb9" name="ae96f1ad904d6de034028e6d99b069cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96f1ad904d6de034028e6d99b069cb9">&#9670;&#160;</a></span>swap_size_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swap_size_t </td>
+          <td>(</td>
+          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00025">25</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+
+<p class="reference">References <a class="el" href="acceleration_8c_source.html#l00025">swap_size_t()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00854">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00025">swap_size_t()</a>.</p>
+
+</div>
+</div>
+<a id="a5552cb5cc7b28b2dd475180950dcd839" name="a5552cb5cc7b28b2dd475180950dcd839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5552cb5cc7b28b2dd475180950dcd839">&#9670;&#160;</a></span>assign_next_nodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void assign_next_nodes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_b_v_h_node.html">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -207,423 +248,124 @@ Variables</h2></td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>next</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00025">25</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00034">34</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, and <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>.</p>
+<p class="reference">References <a class="el" href="acceleration_8c_source.html#l00034">assign_next_nodes()</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, and <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00034">assign_next_nodes()</a>, <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="abdff8e2d5681d0f6121d5573d87dd8be" name="abdff8e2d5681d0f6121d5573d87dd8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdff8e2d5681d0f6121d5573d87dd8be">&#9670;&#160;</a></span>build_light_bvh()</h2>
+<a id="a9d98edfaf4615c65d660bb86ffc28826" name="a9d98edfaf4615c65d660bb86ffc28826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d98edfaf4615c65d660bb86ffc28826">&#9670;&#160;</a></span>BVH_slab_test_aabb()</h2>
 
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void build_light_bvh </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes a bvh for all current lights and emissive triangles in the scene, and sets the flux up for importance sampling. </p>
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l01549">1549</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01460">Light::A</a>, <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01444">Light::area</a>, <a class="el" href="engine__types_8h_source.html#l01413">AREA_LIGHT</a>, <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="engine__types_8h_source.html#l01461">Light::B</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03109">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03108">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l01462">Light::C</a>, <a class="el" href="utilities_8c_source.html#l00305">calculate_aabb_bounds()</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01411">DIRECTIONAL_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01123">BVHNode::emissive_flux</a>, <a class="el" href="engine__types_8h_source.html#l01554">Material::emissive_strength</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01122">BVHNode::flux</a>, <a class="el" href="engine__types_8h_source.html#l02329">MeshNode::free</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01115">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l03084">LightBVH::indices</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l03085">LightBVH::indices_count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01437">Light::intensity</a>, <a class="el" href="engine__types_8h_source.html#l01550">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l03117">SceneData::light_bvh</a>, <a class="el" href="engine__types_8h_source.html#l01438">Light::light_type</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03086">LightBVH::lights</a>, <a class="el" href="engine__types_8h_source.html#l01452">Light::lum</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="types_8h_source.html#l00288">MeshFace::material_id</a>, <a class="el" href="engine__types_8h_source.html#l03380">Globals::materials</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l01449">Light::mesh</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l03083">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01463">Light::normal</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01440">Light::outer_angle</a>, <a class="el" href="engine__types_8h_source.html#l01114">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01410">POINT_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01428">Light::pos</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l01453">Light::power</a>, <a class="el" href="engine__types_8h_source.html#l01442">Light::radius</a>, <a class="el" href="engine__types_8h_source.html#l01434">Light::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="camera_8c_source.html#l00888">rot()</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l01412">SPOT_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l02357">MeshNode::static_mesh</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::surface_area</a>, <a class="el" href="engine__types_8h_source.html#l01443">Light::threshold</a>, <a class="el" href="engine__types_8h_source.html#l01450">Light::tri</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
-
-</div>
-</div>
-<a id="a4f91e2ffe43799e6b0697497d17b1fdf" name="a4f91e2ffe43799e6b0697497d17b1fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f91e2ffe43799e6b0697497d17b1fdf">&#9670;&#160;</a></span>BVH_slab_test_aabb()</h2>
-
-<div class="memitem">
-<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool BVH_slab_test_aabb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_ray_hit.html">RayHit</a> *</td>          <td class="paramname"><span class="paramname"><em>hit</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> *</td>          <td class="paramname"><span class="paramname"><em>hit</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_a_a_b_b.html">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00041">41</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00050">50</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="acceleration_8c_source.html#l00041">BVH_slab_test_aabb()</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="acceleration_8c_source.html#l00050">BVH_slab_test_aabb()</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00041">BVH_slab_test_aabb()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00050">BVH_slab_test_aabb()</a>, <a class="el" href="acceleration_8c_source.html#l00215">ray_traverse_mesh_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="ab51daa4720877a6c37a72f20581cbfa1" name="ab51daa4720877a6c37a72f20581cbfa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab51daa4720877a6c37a72f20581cbfa1">&#9670;&#160;</a></span>init_mesh_tri_bvh()</h2>
+<a id="a7d92c57b410c08bfe725f9abb5c50460" name="a7d92c57b410c08bfe725f9abb5c50460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d92c57b410c08bfe725f9abb5c50460">&#9670;&#160;</a></span>ray_traverse_mesh_bvh()</h2>
 
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_mesh_tri_bvh </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the bvh for a mesh's triangles. </p>
-<p>Only performed on static meshes. </p>
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l01180">1180</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02450">Mesh::aabb</a>, <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="utilities_8c_source.html#l00768">compute_aabb_from_points()</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01115">BVHNode::index</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02475">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01114">BVHNode::parent</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l02476">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, and <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, and <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>.</p>
-
-</div>
-</div>
-<a id="a0f233f0c56cafedae97073ddc3a2126a" name="a0f233f0c56cafedae97073ddc3a2126a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f233f0c56cafedae97073ddc3a2126a">&#9670;&#160;</a></span>init_scene_bvh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_scene_bvh </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes or updates the pre-existing scene bvh based on all mesh nodes with valid meshes. </p>
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00791">791</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02450">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l03100">SceneData::aabb</a>, <a class="el" href="acceleration_8c_source.html#l00025">assign_next_nodes()</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03109">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03108">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l03107">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02329">MeshNode::free</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01115">BVHNode::index</a>, <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01114">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
-
-</div>
-</div>
-<a id="a6f38f32992cb0a92a15bf79b1b9a1fde" name="a6f38f32992cb0a92a15bf79b1b9a1fde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f38f32992cb0a92a15bf79b1b9a1fde">&#9670;&#160;</a></span>process_collision_node()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool process_collision_node </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_b_v_h_node.html">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>proposed</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_collision_points.html">CollisionPoints</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00410">410</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::bias_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="camera_8c_source.html#l00327">collision()</a>, <a class="el" href="engine__types_8h_source.html#l00961">CollisionPoints::collision</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l00960">CollisionPoints::d</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="engine__types_8h_source.html#l02330">MeshNode::id</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l00973">CollisionPoints::mnB</a>, <a class="el" href="engine__types_8h_source.html#l00958">CollisionPoints::normal</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02393">MeshNode::pc</a>, <a class="el" href="engine__types_8h_source.html#l00972">CollisionPoints::pcB</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::tangent_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, and <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, and <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>.</p>
-
-</div>
-</div>
-<a id="a264e79089ffaf93cf2d29b5f68077714" name="a264e79089ffaf93cf2d29b5f68077714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a264e79089ffaf93cf2d29b5f68077714">&#9670;&#160;</a></span>ray_intersects_aabb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ray_intersects_aabb </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_a_a_b_b.html">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if a ray intersects an aabb. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">aabb</td><td>The aabb to check. </td></tr>
-    <tr><td class="paramname">origin</td><td>The origin of the ray. </td></tr>
-    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
-    <tr><td class="paramname">inv_dir</td><td>1.0f/dir of the ray. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If we intersected the aabb. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00064">64</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="acceleration_8c_source.html#l00064">ray_intersects_aabb()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00064">ray_intersects_aabb()</a>.</p>
-
-</div>
-</div>
-<a id="ae6754056c0b5a5d1261149f188a9be8e" name="ae6754056c0b5a5d1261149f188a9be8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6754056c0b5a5d1261149f188a9be8e">&#9670;&#160;</a></span>ray_intersects_aabb_with_point()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ray_intersects_aabb_with_point </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_a_a_b_b.html">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>intersection_point</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if a ray intersects an aabb and outputs an intersection point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">aabb</td><td>The aabb to check. </td></tr>
-    <tr><td class="paramname">origin</td><td>The origin of the ray. </td></tr>
-    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
-    <tr><td class="paramname">inv_dir</td><td>1.0f/dir of the ray. </td></tr>
-    <tr><td class="paramname">intersection_point</td><td>A pointer to where we will place the intersection point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>intersection_point must not be NULL. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>If we intersected the aabb. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00089">89</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="acceleration_8c_source.html#l00089">ray_intersects_aabb_with_point()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="acceleration_8c_source.html#l00089">ray_intersects_aabb_with_point()</a>, and <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>.</p>
-
-</div>
-</div>
-<a id="a2fb9824e4ae1deb6cb16dc781f072643" name="a2fb9824e4ae1deb6cb16dc781f072643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fb9824e4ae1deb6cb16dc781f072643">&#9670;&#160;</a></span>ray_intersects_collision_aabb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ray_intersects_collision_aabb </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_a_a_b_b.html">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00378">378</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="acceleration_8c_source.html#l00378">ray_intersects_collision_aabb()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00378">ray_intersects_collision_aabb()</a>.</p>
-
-</div>
-</div>
-<a id="ac1fdb91beaaefc8aeb49df8c37962d57" name="ac1fdb91beaaefc8aeb49df8c37962d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1fdb91beaaefc8aeb49df8c37962d57">&#9670;&#160;</a></span>ray_intersects_obb_with_point()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ray_intersects_obb_with_point </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_o_b_b.html">OBB</a></td>          <td class="paramname"><span class="paramname"><em>obb</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>intersection_point</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if a ray intersects an obb and outputs an intersection point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">obb</td><td>The obb to check. </td></tr>
-    <tr><td class="paramname">origin</td><td>The origin of the ray. </td></tr>
-    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
-    <tr><td class="paramname">intersection_point</td><td>A pointer to where we will place the intersection point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>intersection_point must not be NULL. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>If we intersected the obb. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00127">127</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00020">mat3::a0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a2</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b2</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c2</a>, <a class="el" href="types_8h_source.html#l00050">OBB::center</a>, <a class="el" href="types_8h_source.html#l00051">OBB::extents</a>, <a class="el" href="acceleration_8c_source.html#l00125">RAY_EPS</a>, <a class="el" href="acceleration_8c_source.html#l00127">ray_intersects_obb_with_point()</a>, <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="acceleration_8c_source.html#l00127">ray_intersects_obb_with_point()</a>.</p>
-
-</div>
-</div>
-<a id="a88d3dc32dbdb3e7a9ac34cad47bcdd30" name="a88d3dc32dbdb3e7a9ac34cad47bcdd30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d3dc32dbdb3e7a9ac34cad47bcdd30">&#9670;&#160;</a></span>ray_traverse_mesh_bvh()</h2>
-
-<div class="memitem">
-<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ray_traverse_mesh_bvh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_b_v_h_node.html">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_pos</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_pos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>mod_dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>mod_dir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_ray_hit.html">RayHit</a> *</td>          <td class="paramname"><span class="paramname"><em>hit</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> *</td>          <td class="paramname"><span class="paramname"><em>hit</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -641,61 +383,69 @@ Variables</h2></td></tr>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>check_normal</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00206">206</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00215">215</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="types_8h_source.html#l00265">RayHit::b0</a>, <a class="el" href="types_8h_source.html#l00266">RayHit::b1</a>, <a class="el" href="types_8h_source.html#l00267">RayHit::b2</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="acceleration_8c_source.html#l00041">BVH_slab_test_aabb()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="types_8h_source.html#l00264">RayHit::hit</a>, <a class="el" href="types_8h_source.html#l00253">HIT_STATIC</a>, <a class="el" href="engine__types_8h_source.html#l02330">MeshNode::id</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00262">RayHit::mesh_node_idx</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="types_8h_source.html#l00261">RayHit::pos</a>, <a class="el" href="utilities_8c_source.html#l00341">ray_intersects_triangle()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="types_8h_source.html#l00260">RayHit::t</a>, <a class="el" href="types_8h_source.html#l00263">RayHit::tri</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="types_8h_source.html#l00262">RayHit::b0</a>, <a class="el" href="types_8h_source.html#l00263">RayHit::b1</a>, <a class="el" href="types_8h_source.html#l00264">RayHit::b2</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="acceleration_8c_source.html#l00050">BVH_slab_test_aabb()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="types_8h_source.html#l00261">RayHit::hit</a>, <a class="el" href="types_8h_source.html#l00250">HIT_STATIC</a>, <a class="el" href="engine__types_8h_source.html#l02365">MeshNode::id</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00259">RayHit::mesh_node_idx</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="types_8h_source.html#l00258">RayHit::pos</a>, <a class="el" href="utilities_8c_source.html#l00341">ray_intersects_triangle()</a>, <a class="el" href="acceleration_8c_source.html#l00215">ray_traverse_mesh_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="types_8h_source.html#l00257">RayHit::t</a>, <a class="el" href="types_8h_source.html#l00260">RayHit::tri</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00215">ray_traverse_mesh_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="a5bb66cbd8d1364754e16eaa0c0c7930f" name="a5bb66cbd8d1364754e16eaa0c0c7930f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bb66cbd8d1364754e16eaa0c0c7930f">&#9670;&#160;</a></span>ray_traverse_scene_bvh()</h2>
+<a id="a2c111901695b00440d9a06068bdddb17" name="a2c111901695b00440d9a06068bdddb17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c111901695b00440d9a06068bdddb17">&#9670;&#160;</a></span>ray_traverse_scene_bvh()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool ray_traverse_scene_bvh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_scene_data.html">SceneData</a> *</td>          <td class="paramname"><span class="paramname"><em>sd</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_scene_data">SceneData</a> *</td>          <td class="paramname"><span class="paramname"><em>sd</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_b_v_h_node.html">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_pos</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_pos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>mod_dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>mod_dir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_ray_hit.html">RayHit</a> *</td>          <td class="paramname"><span class="paramname"><em>hit</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> *</td>          <td class="paramname"><span class="paramname"><em>hit</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -713,75 +463,84 @@ Variables</h2></td></tr>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>check_normal</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00280">280</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00289">289</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02450">Mesh::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="engine__types_8h_source.html#l03109">SceneData::bvh_indices</a>, <a class="el" href="acceleration_8c_source.html#l00041">BVH_slab_test_aabb()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01169">DebugVertex::color</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="main_8c_source.html#l00286">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00285">DEBUG_LINES</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02329">MeshNode::free</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="types_8h_source.html#l00264">RayHit::hit</a>, <a class="el" href="types_8h_source.html#l00254">HIT_DYNAMIC</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="types_8h_source.html#l00262">RayHit::mesh_node_idx</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02475">Mesh::nodes</a>, <a class="el" href="types_8h_source.html#l00261">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00089">ray_intersects_aabb_with_point()</a>, <a class="el" href="acceleration_8c_source.html#l00206">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l02449">Mesh::static_mesh</a>, <a class="el" href="types_8h_source.html#l00260">RayHit::t</a>, <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02485">Mesh::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="engine__types_8h_source.html#l03144">SceneData::bvh_indices</a>, <a class="el" href="acceleration_8c_source.html#l00050">BVH_slab_test_aabb()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01198">DebugVertex::color</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="main_8c_source.html#l00277">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00276">DEBUG_LINES</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02364">MeshNode::free</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="types_8h_source.html#l00261">RayHit::hit</a>, <a class="el" href="types_8h_source.html#l00251">HIT_DYNAMIC</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="types_8h_source.html#l00259">RayHit::mesh_node_idx</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02510">Mesh::nodes</a>, <a class="el" href="types_8h_source.html#l00258">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00098">ray_intersects_aabb_with_point()</a>, <a class="el" href="acceleration_8c_source.html#l00215">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l02484">Mesh::static_mesh</a>, <a class="el" href="types_8h_source.html#l00257">RayHit::t</a>, <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00356">raycast_scene()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>.</p>
 
 </div>
 </div>
-<a id="a14d2ae40fcc4811acb5bcca2e8e9fe92" name="a14d2ae40fcc4811acb5bcca2e8e9fe92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14d2ae40fcc4811acb5bcca2e8e9fe92">&#9670;&#160;</a></span>raycast_scene()</h2>
+<a id="a32dd225f1c6dbf0f663768bce919df15" name="a32dd225f1c6dbf0f663768bce919df15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32dd225f1c6dbf0f663768bce919df15">&#9670;&#160;</a></span>process_collision_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_ray_hit.html">RayHit</a> raycast_scene </td>
+          <td class="memname">bool process_collision_node </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>initial_t</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>check_normal</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>proposed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Raycasts through the scene and finds closest intersection to meshes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">start</td><td>The ray's starting position. </td></tr>
-    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
-    <tr><td class="paramname">initial_t</td><td>The starting T to begin evaluating, usually set at INFINITY. </td></tr>
-    <tr><td class="paramname">check_normal</td><td>To check backfaces or not. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_ray_hit.html">RayHit</a> with hit information. </dd></dl>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00387">387</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00356">356</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="engine__types_8h_source.html#l01020">CollisionPoints::bias_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="camera_8c_source.html#l00336">collision()</a>, <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::collision</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l00987">CollisionPoints::d</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="engine__types_8h_source.html#l02365">MeshNode::id</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l01000">CollisionPoints::mnB</a>, <a class="el" href="engine__types_8h_source.html#l00985">CollisionPoints::normal</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01019">CollisionPoints::normal_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02428">MeshNode::pc</a>, <a class="el" href="engine__types_8h_source.html#l00999">CollisionPoints::pcB</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="acceleration_8c_source.html#l00387">process_collision_node()</a>, <a class="el" href="engine__types_8h_source.html#l01021">CollisionPoints::tangent_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, and <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03107">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="types_8h_source.html#l00264">RayHit::hit</a>, <a class="el" href="types_8h_source.html#l00262">RayHit::mesh_node_idx</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="types_8h_source.html#l00261">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00356">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="types_8h_source.html#l00260">RayHit::t</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00084">find_closest_visible_aportal()</a>, <a class="el" href="audio_8c_source.html#l00734">interpolate_nearest_aprobes()</a>, <a class="el" href="audio_8c_source.html#l00299">pathfind_audio_occlusion()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="acceleration_8c_source.html#l00356">raycast_scene()</a>, <a class="el" href="audio_8c_source.html#l00027">recalculate_audio_portal_paths()</a>, <a class="el" href="camera_8c_source.html#l01266">resolve_collisions()</a>, <a class="el" href="audio_8c_source.html#l01435">update_audio_occlusion()</a>, <a class="el" href="camera_8c_source.html#l00901">update_body_from_legs()</a>, and <a class="el" href="camera_8c_source.html#l00982">update_leg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00387">process_collision_node()</a>, and <a class="el" href="acceleration_8c_source.html#l00432">traverse_collision_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="a5b7e833aaa556eb67a2bcbba478df5f0" name="a5b7e833aaa556eb67a2bcbba478df5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b7e833aaa556eb67a2bcbba478df5f0">&#9670;&#160;</a></span>subdivide_light_bvh()</h2>
+<a id="abc6e3265cefb6a827956296f124fcb61" name="abc6e3265cefb6a827956296f124fcb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6e3265cefb6a827956296f124fcb61">&#9670;&#160;</a></span>subdivide_scene_bvh()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool subdivide_light_bvh </td>
+          <td class="memname">bool subdivide_scene_bvh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>bvh_nodes</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>bvh_nodes</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -791,12 +550,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_a_a_b_b.html">AABB</a> *</td>          <td class="paramname"><span class="paramname"><em>aabbs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_light.html">Light</a> *</td>          <td class="paramname"><span class="paramname"><em>lights</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *</td>          <td class="paramname"><span class="paramname"><em>aabbs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -814,26 +568,34 @@ Variables</h2></td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>axes_tried</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l01227">1227</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00480">480</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01413">AREA_LIGHT</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01411">DIRECTIONAL_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01123">BVHNode::emissive_flux</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01122">BVHNode::flux</a>, <a class="el" href="engine__types_8h_source.html#l01115">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01438">Light::light_type</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01114">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01453">Light::power</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00016">swap_size_t()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01144">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01143">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00025">swap_size_t()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01549">build_light_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="a7cbb94db1c182d770945be1b1bd9333c" name="a7cbb94db1c182d770945be1b1bd9333c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cbb94db1c182d770945be1b1bd9333c">&#9670;&#160;</a></span>subdivide_mesh_tri_bvh()</h2>
+<a id="a7a65a8d01cc961c70a15898724f0cc5b" name="a7a65a8d01cc961c70a15898724f0cc5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a65a8d01cc961c70a15898724f0cc5b">&#9670;&#160;</a></span>subdivide_mesh_tri_bvh()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool subdivide_mesh_tri_bvh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -861,26 +623,34 @@ Variables</h2></td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>axes_tried</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00877">877</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00854">854</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01115">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02475">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01114">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00016">swap_size_t()</a>, <a class="el" href="engine__types_8h_source.html#l02476">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01144">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02510">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01143">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l00854">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00025">swap_size_t()</a>, <a class="el" href="engine__types_8h_source.html#l02511">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01180">init_mesh_tri_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00854">subdivide_mesh_tri_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="a459f7b979f539aa495802d6adb05655d" name="a459f7b979f539aa495802d6adb05655d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a459f7b979f539aa495802d6adb05655d">&#9670;&#160;</a></span>subdivide_scene_bvh()</h2>
+<a id="ad1a50d65a601fa381eff98b7e39717d3" name="ad1a50d65a601fa381eff98b7e39717d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a50d65a601fa381eff98b7e39717d3">&#9670;&#160;</a></span>subdivide_light_bvh()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool subdivide_scene_bvh </td>
+          <td class="memname">bool subdivide_light_bvh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>bvh_nodes</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>bvh_nodes</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -890,7 +660,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_a_a_b_b.html">AABB</a> *</td>          <td class="paramname"><span class="paramname"><em>aabbs</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *</td>          <td class="paramname"><span class="paramname"><em>aabbs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_light">Light</a> *</td>          <td class="paramname"><span class="paramname"><em>lights</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -908,40 +683,222 @@ Variables</h2></td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>axes_tried</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00503">503</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l01204">1204</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01115">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01114">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00016">swap_size_t()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01442">AREA_LIGHT</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01440">DIRECTIONAL_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01152">BVHNode::emissive_flux</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01151">BVHNode::flux</a>, <a class="el" href="engine__types_8h_source.html#l01144">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::light_type</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01143">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01482">Light::power</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00025">swap_size_t()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00791">init_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="abffcb385325372c5a2868c0d9f607b8e" name="abffcb385325372c5a2868c0d9f607b8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abffcb385325372c5a2868c0d9f607b8e">&#9670;&#160;</a></span>swap_size_t()</h2>
+<a id="a264e79089ffaf93cf2d29b5f68077714" name="a264e79089ffaf93cf2d29b5f68077714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264e79089ffaf93cf2d29b5f68077714">&#9670;&#160;</a></span>ray_intersects_aabb()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void swap_size_t </td>
+          <td class="memname">bool ray_intersects_aabb </td>
           <td>(</td>
-          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00016">16</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p>Checks if a ray intersects an aabb. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aabb</td><td>The aabb to check. </td></tr>
+    <tr><td class="paramname">origin</td><td>The origin of the ray. </td></tr>
+    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
+    <tr><td class="paramname">inv_dir</td><td>1.0f/dir of the ray. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If we intersected the aabb. </dd></dl>
 
-<p class="reference">References <a class="el" href="acceleration_8c_source.html#l00016">swap_size_t()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00073">73</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01227">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00877">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00503">subdivide_scene_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00016">swap_size_t()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="acceleration_8c_source.html#l00073">ray_intersects_aabb()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00073">ray_intersects_aabb()</a>.</p>
+
+</div>
+</div>
+<a id="ae6754056c0b5a5d1261149f188a9be8e" name="ae6754056c0b5a5d1261149f188a9be8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6754056c0b5a5d1261149f188a9be8e">&#9670;&#160;</a></span>ray_intersects_aabb_with_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ray_intersects_aabb_with_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>intersection_point</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a ray intersects an aabb and outputs an intersection point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aabb</td><td>The aabb to check. </td></tr>
+    <tr><td class="paramname">origin</td><td>The origin of the ray. </td></tr>
+    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
+    <tr><td class="paramname">inv_dir</td><td>1.0f/dir of the ray. </td></tr>
+    <tr><td class="paramname">intersection_point</td><td>A pointer to where we will place the intersection point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>intersection_point must not be NULL. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If we intersected the aabb. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00098">98</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="acceleration_8c_source.html#l00098">ray_intersects_aabb_with_point()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="acceleration_8c_source.html#l00098">ray_intersects_aabb_with_point()</a>, and <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>.</p>
+
+</div>
+</div>
+<a id="ac1fdb91beaaefc8aeb49df8c37962d57" name="ac1fdb91beaaefc8aeb49df8c37962d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1fdb91beaaefc8aeb49df8c37962d57">&#9670;&#160;</a></span>ray_intersects_obb_with_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ray_intersects_obb_with_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_o_b_b">OBB</a></td>          <td class="paramname"><span class="paramname"><em>obb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>intersection_point</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a ray intersects an obb and outputs an intersection point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obb</td><td>The obb to check. </td></tr>
+    <tr><td class="paramname">origin</td><td>The origin of the ray. </td></tr>
+    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
+    <tr><td class="paramname">intersection_point</td><td>A pointer to where we will place the intersection point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>intersection_point must not be NULL. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If we intersected the obb. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00136">136</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00020">mat3::a0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a2</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b2</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c2</a>, <a class="el" href="types_8h_source.html#l00050">OBB::center</a>, <a class="el" href="types_8h_source.html#l00051">OBB::extents</a>, <a class="el" href="acceleration_8c_source.html#l00134">RAY_EPS</a>, <a class="el" href="acceleration_8c_source.html#l00136">ray_intersects_obb_with_point()</a>, <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, and <a class="el" href="acceleration_8c_source.html#l00136">ray_intersects_obb_with_point()</a>.</p>
+
+</div>
+</div>
+<a id="a14d2ae40fcc4811acb5bcca2e8e9fe92" name="a14d2ae40fcc4811acb5bcca2e8e9fe92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d2ae40fcc4811acb5bcca2e8e9fe92">&#9670;&#160;</a></span>raycast_scene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> raycast_scene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>initial_t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>check_normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raycasts through the scene and finds closest intersection to meshes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>The ray's starting position. </td></tr>
+    <tr><td class="paramname">dir</td><td>The dir of the ray. </td></tr>
+    <tr><td class="paramname">initial_t</td><td>The starting T to begin evaluating, usually set at INFINITY. </td></tr>
+    <tr><td class="paramname">check_normal</td><td>To check backfaces or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> with hit information. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00365">365</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03142">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="types_8h_source.html#l00261">RayHit::hit</a>, <a class="el" href="types_8h_source.html#l00259">RayHit::mesh_node_idx</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="types_8h_source.html#l00258">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="types_8h_source.html#l00257">RayHit::t</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00111">find_closest_visible_aportal()</a>, <a class="el" href="audio_8c_source.html#l00739">interpolate_nearest_aprobes()</a>, <a class="el" href="audio_8c_source.html#l00302">pathfind_audio_occlusion()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="audio_8c_source.html#l00054">recalculate_audio_portal_paths()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, <a class="el" href="audio_8c_source.html#l01434">update_audio_occlusion()</a>, <a class="el" href="camera_8c_source.html#l00910">update_body_from_legs()</a>, and <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>.</p>
 
 </div>
 </div>
@@ -954,37 +911,37 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool traverse_collision_bvh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_b_v_h_node.html">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_b_v_h_node.html">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_b_v_h_node">BVHNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>proposed</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>proposed</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_p</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_collision_points.html">CollisionPoints</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1004,11 +961,87 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If it collides with a mesh. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00455">455</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00432">432</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="acceleration_8c_source.html#l00410">process_collision_node()</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, and <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="acceleration_8c_source.html#l00387">process_collision_node()</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, and <a class="el" href="acceleration_8c_source.html#l00432">traverse_collision_bvh()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>, and <a class="el" href="acceleration_8c_source.html#l00455">traverse_collision_bvh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>, and <a class="el" href="acceleration_8c_source.html#l00432">traverse_collision_bvh()</a>.</p>
+
+</div>
+</div>
+<a id="a0f233f0c56cafedae97073ddc3a2126a" name="a0f233f0c56cafedae97073ddc3a2126a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f233f0c56cafedae97073ddc3a2126a">&#9670;&#160;</a></span>init_scene_bvh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_scene_bvh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes or updates the pre-existing scene bvh based on all mesh nodes with valid meshes. </p>
+
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00768">768</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02485">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l03135">SceneData::aabb</a>, <a class="el" href="acceleration_8c_source.html#l00034">assign_next_nodes()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03144">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03143">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l03142">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02364">MeshNode::free</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01144">BVHNode::index</a>, <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01143">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="main_8c_source.html#l00483">main()</a>, and <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>.</p>
+
+</div>
+</div>
+<a id="ab51daa4720877a6c37a72f20581cbfa1" name="ab51daa4720877a6c37a72f20581cbfa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51daa4720877a6c37a72f20581cbfa1">&#9670;&#160;</a></span>init_mesh_tri_bvh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_mesh_tri_bvh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the bvh for a mesh's triangles. </p>
+<p>Only performed on static meshes. </p>
+
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l01157">1157</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02485">Mesh::aabb</a>, <a class="el" href="acceleration_8c_source.html#l00034">assign_next_nodes()</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="utilities_8c_source.html#l00768">compute_aabb_from_points()</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01144">BVHNode::index</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02510">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01143">BVHNode::parent</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="acceleration_8c_source.html#l00854">subdivide_mesh_tri_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l02511">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, and <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, and <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>.</p>
+
+</div>
+</div>
+<a id="abdff8e2d5681d0f6121d5573d87dd8be" name="abdff8e2d5681d0f6121d5573d87dd8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdff8e2d5681d0f6121d5573d87dd8be">&#9670;&#160;</a></span>build_light_bvh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void build_light_bvh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a bvh for all current lights and emissive triangles in the scene, and sets the flux up for importance sampling. </p>
+
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l01526">1526</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01489">Light::A</a>, <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01473">Light::area</a>, <a class="el" href="engine__types_8h_source.html#l01442">AREA_LIGHT</a>, <a class="el" href="acceleration_8c_source.html#l00034">assign_next_nodes()</a>, <a class="el" href="engine__types_8h_source.html#l01490">Light::B</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03144">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03143">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l01491">Light::C</a>, <a class="el" href="utilities_8c_source.html#l00305">calculate_aabb_bounds()</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01440">DIRECTIONAL_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01152">BVHNode::emissive_flux</a>, <a class="el" href="engine__types_8h_source.html#l01584">Material::emissive_strength</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01151">BVHNode::flux</a>, <a class="el" href="engine__types_8h_source.html#l02364">MeshNode::free</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01144">BVHNode::index</a>, <a class="el" href="engine__types_8h_source.html#l03119">LightBVH::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l03120">LightBVH::indices_count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01466">Light::intensity</a>, <a class="el" href="engine__types_8h_source.html#l01580">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l03152">SceneData::light_bvh</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::light_type</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03121">LightBVH::lights</a>, <a class="el" href="engine__types_8h_source.html#l01481">Light::lum</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="types_8h_source.html#l00285">MeshFace::material_id</a>, <a class="el" href="engine__types_8h_source.html#l03415">Globals::materials</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::mesh</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l03118">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01492">Light::normal</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01469">Light::outer_angle</a>, <a class="el" href="engine__types_8h_source.html#l01143">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01439">POINT_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01457">Light::pos</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l01482">Light::power</a>, <a class="el" href="engine__types_8h_source.html#l01471">Light::radius</a>, <a class="el" href="engine__types_8h_source.html#l01463">Light::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l01441">SPOT_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::static_mesh</a>, <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01493">Light::surface_area</a>, <a class="el" href="engine__types_8h_source.html#l01472">Light::threshold</a>, <a class="el" href="engine__types_8h_source.html#l01479">Light::tri</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, and <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>.</p>
 
 </div>
 </div>
@@ -1033,9 +1066,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00125">125</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acceleration_8c_source.html#l00134">134</a> of file <a class="el" href="acceleration_8c_source.html">acceleration.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00127">ray_intersects_obb_with_point()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00136">ray_intersects_obb_with_point()</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -124,7 +128,6 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_d.html
 <li>D&#160;:&#160;<a class="el" href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba77a6b11f9898c052926f1d49765861e8">types.h</a></li>
 <li>deallocate_fbo()&#160;:&#160;<a class="el" href="init_8c.html#a21079e49f244ba4fe5c24aa0aa144460">init.c</a></li>
 <li>deallocate_lightmap_rect()&#160;:&#160;<a class="el" href="lightmap_8c.html#a2e92d1578ca582604c995d5030f374ca">lightmap.c</a></li>
-<li>DEBUG_APROBE&#160;:&#160;<a class="el" href="main_8c.html#a186a0392e93ebf1dbfaa30ac0caa6bf6">main.c</a>, <a class="el" href="init_8h.html#a186a0392e93ebf1dbfaa30ac0caa6bf6">init.h</a></li>
 <li>DEBUG_APROBE_RAY_COUNT&#160;:&#160;<a class="el" href="main_8c.html#a2d1a33794f1b2a38f39271797a28aee6">main.c</a>, <a class="el" href="init_8h.html#a2d1a33794f1b2a38f39271797a28aee6">init.h</a></li>
 <li>DEBUG_CURRENT_APROBE&#160;:&#160;<a class="el" href="main_8c.html#af84bf92e0d2b8a60bebd201788478d03">main.c</a>, <a class="el" href="init_8h.html#af84bf92e0d2b8a60bebd201788478d03">init.h</a></li>
 <li>DEBUG_FACE_COUNT&#160;:&#160;<a class="el" href="main_8c.html#a91eed8b4b476e34fa2ca9ec2833efdda">main.c</a>, <a class="el" href="init_8h.html#a91eed8b4b476e34fa2ca9ec2833efdda">init.h</a></li>
@@ -132,36 +135,35 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_d.html
 <li>DEBUG_LINE_COUNT&#160;:&#160;<a class="el" href="main_8c.html#a8053056291f55479217f21eb3218880b">main.c</a>, <a class="el" href="init_8h.html#a8053056291f55479217f21eb3218880b">init.h</a></li>
 <li>DEBUG_LINES&#160;:&#160;<a class="el" href="main_8c.html#aee9bac1b373030fd725d6c6eccae8155">main.c</a>, <a class="el" href="init_8h.html#aee9bac1b373030fd725d6c6eccae8155">init.h</a></li>
 <li>DEBUG_LINES_MAX&#160;:&#160;<a class="el" href="init_8h.html#a76b19f862b5fa0e38878d04b6f215450">init.h</a></li>
-<li>DEBUG_POINT&#160;:&#160;<a class="el" href="init_8h.html#a0da9fd63055f9f9e342e6d5774aeda4f">init.h</a>, <a class="el" href="physics_8c.html#a0da9fd63055f9f9e342e6d5774aeda4f">physics.c</a></li>
 <li>DEBUG_POINT_COUNT&#160;:&#160;<a class="el" href="main_8c.html#ad8430851f7882892ee75cd31a93bb3f6">main.c</a>, <a class="el" href="init_8h.html#ad8430851f7882892ee75cd31a93bb3f6">init.h</a></li>
 <li>DEBUG_POINTS&#160;:&#160;<a class="el" href="main_8c.html#acd39317cde169abe25c19a436ebdc93d">main.c</a>, <a class="el" href="init_8h.html#acd39317cde169abe25c19a436ebdc93d">init.h</a></li>
 <li>DebugView&#160;:&#160;<a class="el" href="engine__types_8h.html#ab676c9e978f9e9c7bd5830fb713d55fb">engine_types.h</a></li>
 <li>deduplicate()&#160;:&#160;<a class="el" href="mesh_8c.html#afaf138ae7eb676e0b2bd6d95e3a1598c">mesh.c</a>, <a class="el" href="mesh_8h.html#afaf138ae7eb676e0b2bd6d95e3a1598c">mesh.h</a></li>
 <li>DEFAULT_APV_RES&#160;:&#160;<a class="el" href="engine__types_8h.html#aa22234fb9525c5a795742a9ae047d7a0">engine_types.h</a></li>
 <li>DEFAULT_ARM&#160;:&#160;<a class="el" href="main_8c.html#a8a4e94f64e44b6a66b7ca1417b46e92f">main.c</a>, <a class="el" href="init_8h.html#a8a4e94f64e44b6a66b7ca1417b46e92f">init.h</a></li>
-<li>DEFAULT_CALLBACK&#160;:&#160;<a class="el" href="ui_8h.html#a671b46c5ae4cae9e6121dcb5992b2921">ui.h</a></li>
+<li>DEFAULT_CALLBACK&#160;:&#160;<a class="el" href="group__ui__group.html#ga671b46c5ae4cae9e6121dcb5992b2921">ui.h</a></li>
 <li>DEFAULT_DIFFUSE&#160;:&#160;<a class="el" href="main_8c.html#a690c147a99616483dbc385d3f2a0759a">main.c</a>, <a class="el" href="init_8h.html#a690c147a99616483dbc385d3f2a0759a">init.h</a></li>
 <li>DEFAULT_DISPLACEMENT&#160;:&#160;<a class="el" href="main_8c.html#a7eb75e6d80c23e6e4a22cf0acbcf797a">main.c</a>, <a class="el" href="init_8h.html#a7eb75e6d80c23e6e4a22cf0acbcf797a">init.h</a></li>
 <li>DEFAULT_EMISSIVE&#160;:&#160;<a class="el" href="main_8c.html#aa13d9b166d1ab5d8095f57811e042f62">main.c</a>, <a class="el" href="init_8h.html#aa13d9b166d1ab5d8095f57811e042f62">init.h</a></li>
 <li>DEFAULT_HEIGHT&#160;:&#160;<a class="el" href="main_8c.html#a1879f9e5604a01f0983829846001ab23">main.c</a></li>
-<li>DEFAULT_LABEL&#160;:&#160;<a class="el" href="ui_8h.html#aafe166ffada75840774b6cac7eac7684">ui.h</a></li>
+<li>DEFAULT_LABEL&#160;:&#160;<a class="el" href="group__ui__group.html#gaafe166ffada75840774b6cac7eac7684">ui.h</a></li>
 <li>default_light&#160;:&#160;<a class="el" href="init_8h.html#a2c3082f71d84f222aea8a03e81fe5b1a">init.h</a></li>
 <li>DEFAULT_LPV_RES&#160;:&#160;<a class="el" href="engine__types_8h.html#a1d560b00f14a300af83f1c129b21e5ca">engine_types.h</a></li>
 <li>DEFAULT_NORMAL&#160;:&#160;<a class="el" href="main_8c.html#a234aa20164f3fec48f0c8d648d31c682">main.c</a>, <a class="el" href="init_8h.html#a234aa20164f3fec48f0c8d648d31c682">init.h</a></li>
 <li>DEFAULT_POINT_LIGHT_SHADOWS_SIZE&#160;:&#160;<a class="el" href="engine__types_8h.html#a57222cc66af54470a556be7e01b4c758">engine_types.h</a></li>
 <li>DEFAULT_SHADOW_MAP_SIZE&#160;:&#160;<a class="el" href="engine__types_8h.html#acf83e77d1cb05c14e0d9e099bb8c4035">engine_types.h</a></li>
-<li>DEFAULT_SLIDER&#160;:&#160;<a class="el" href="ui_8h.html#af6d9fbe110425b0d5284d1ff4046a285">ui.h</a></li>
-<li>DEFAULT_TEXT_BOX&#160;:&#160;<a class="el" href="ui_8h.html#a75c39c139107ce7138b837e4c470878e">ui.h</a></li>
+<li>DEFAULT_SLIDER&#160;:&#160;<a class="el" href="group__ui__group.html#gaf6d9fbe110425b0d5284d1ff4046a285">ui.h</a></li>
+<li>DEFAULT_TEXT_BOX&#160;:&#160;<a class="el" href="group__ui__group.html#ga75c39c139107ce7138b837e4c470878e">ui.h</a></li>
 <li>DEFAULT_TEXTURES&#160;:&#160;<a class="el" href="engine__types_8h.html#a565f500ca9ba5e3a9d210909b96f20e4">engine_types.h</a></li>
-<li>DEFAULT_UI_CONTAINER&#160;:&#160;<a class="el" href="ui_8h.html#a7a3502cfc07deea2156a5ba8d80a0aba">ui.h</a></li>
-<li>DEFAULT_UI_ELEMENT&#160;:&#160;<a class="el" href="ui_8h.html#a6d260112184534a5cd24db1e91bea176">ui.h</a></li>
+<li>DEFAULT_UI_CONTAINER&#160;:&#160;<a class="el" href="group__ui__group.html#ga7a3502cfc07deea2156a5ba8d80a0aba">ui.h</a></li>
+<li>DEFAULT_UI_ELEMENT&#160;:&#160;<a class="el" href="group__ui__group.html#ga6d260112184534a5cd24db1e91bea176">ui.h</a></li>
 <li>DEFAULT_WIDTH&#160;:&#160;<a class="el" href="main_8c.html#a93493eb8fae5549bd5be67f3449245e0">main.c</a></li>
-<li>define_M()&#160;:&#160;<a class="el" href="camera_8c.html#a40ae20013414edf368fd1fd4ba4ac1e3">camera.c</a></li>
-<li>DEGREES_TO_RAD&#160;:&#160;<a class="el" href="audio__ir_8c.html#af5c16ae68471fb619ac81e4d8c1ccec7">audio_ir.c</a></li>
+<li>define_M()&#160;:&#160;<a class="el" href="camera_8c.html#af9ae8fd03d923f588f8fae0554067a2e">camera.c</a></li>
+<li>DEGREES_TO_RAD&#160;:&#160;<a class="el" href="utilities_8c.html#af5c16ae68471fb619ac81e4d8c1ccec7">utilities.c</a></li>
 <li>delete_hrtf_worker_thread()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga53c21fcfa5ed74a88fd0ef9736493dcc">audio_ir.c</a>, <a class="el" href="group__aprobe__group.html#ga53c21fcfa5ed74a88fd0ef9736493dcc">audio_ir.h</a></li>
 <li>delete_text_box()&#160;:&#160;<a class="el" href="fonts_8c.html#a675de23a65b76d7a51579d301d6301eb">fonts.c</a>, <a class="el" href="fonts_8h.html#a675de23a65b76d7a51579d301d6301eb">fonts.h</a></li>
-<li>delete_ui_container()&#160;:&#160;<a class="el" href="ui_8c.html#a948fd918289e648600e2641fda200f93">ui.c</a>, <a class="el" href="ui_8h.html#a948fd918289e648600e2641fda200f93">ui.h</a></li>
-<li>delete_ui_element()&#160;:&#160;<a class="el" href="ui_8c.html#a4b389392611f8b9ae9f156ffc369a048">ui.c</a>, <a class="el" href="ui_8h.html#a4b389392611f8b9ae9f156ffc369a048">ui.h</a></li>
+<li>delete_ui_container()&#160;:&#160;<a class="el" href="group__ui__group.html#ga948fd918289e648600e2641fda200f93">ui.c</a>, <a class="el" href="group__ui__group.html#ga948fd918289e648600e2641fda200f93">ui.h</a></li>
+<li>delete_ui_element()&#160;:&#160;<a class="el" href="group__ui__group.html#ga4b389392611f8b9ae9f156ffc369a048">ui.c</a>, <a class="el" href="group__ui__group.html#ga4b389392611f8b9ae9f156ffc369a048">ui.h</a></li>
 <li>DEPTH_DOWNSAMPLE_FBO&#160;:&#160;<a class="el" href="main_8c.html#ad6a84b00adc18a633cc6fdf830f2015c">main.c</a>, <a class="el" href="init_8h.html#ad6a84b00adc18a633cc6fdf830f2015c">init.h</a></li>
 <li>DEPTH_DOWNSAMPLE_SHADER&#160;:&#160;<a class="el" href="main_8c.html#a6abd5c27769ad5073f561ba7128f957a">main.c</a>, <a class="el" href="init_8h.html#a6abd5c27769ad5073f561ba7128f957a">init.h</a></li>
 <li>DEPTH_MODE_HW&#160;:&#160;<a class="el" href="engine__types_8h.html#a2138a4aa772d52fca2a897623dee79d7ae2c278f7aa43c34ae2c1dfa8bdcdb4a3">engine_types.h</a></li>
@@ -173,8 +175,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_d.html
 <li>destroy_asset_instance()&#160;:&#160;<a class="el" href="init_8c.html#a37b02c0d931c3e39996ac4ddfa4430f2">init.c</a>, <a class="el" href="init_8h.html#a37b02c0d931c3e39996ac4ddfa4430f2">init.h</a></li>
 <li>destroy_emitter()&#160;:&#160;<a class="el" href="group__audio__group.html#gae04d26cc1094129708ce375166548611">audio.c</a>, <a class="el" href="group__audio__group.html#gae04d26cc1094129708ce375166548611">audio.h</a></li>
 <li>destroy_entity()&#160;:&#160;<a class="el" href="entity_8c.html#a59c2105af575af91f702d85019adea67">entity.c</a>, <a class="el" href="entity_8h.html#a59c2105af575af91f702d85019adea67">entity.h</a></li>
-<li>destroy_redo_history()&#160;:&#160;<a class="el" href="editor_8c.html#a76e41384109859c1883cd69c128f9578">editor.c</a></li>
-<li>destroy_undo()&#160;:&#160;<a class="el" href="editor_8c.html#aea5348c163c8ca872178a157f5b3a2c2">editor.c</a></li>
+<li>destroy_redo_history()&#160;:&#160;<a class="el" href="group__editor__group.html#ga76e41384109859c1883cd69c128f9578">editor.c</a></li>
+<li>destroy_undo()&#160;:&#160;<a class="el" href="group__editor__group.html#gaea5348c163c8ca872178a157f5b3a2c2">editor.c</a></li>
 <li>detect_best_axis_mapping()&#160;:&#160;<a class="el" href="gltf_8c.html#a41ee34dd6f20df1dbe1e1ff12a65c59e">gltf.c</a></li>
 <li>determine_aabb_of_children()&#160;:&#160;<a class="el" href="gltf_8c.html#af7146ee64bb030c32abb53487652a1d5">gltf.c</a></li>
 <li>determine_closest_rprobes()&#160;:&#160;<a class="el" href="render_8c.html#aa0fe4f93ac40c8cdc20e17dfb9b3829c">render.c</a></li>

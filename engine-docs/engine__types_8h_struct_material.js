@@ -1,0 +1,28 @@
+var engine__types_8h_struct_material =
+[
+    [ "name", "engine__types_8h.html#a38c1725867a33679c928a6a9e9287b3b", null ],
+    [ "fwd_shader", "engine__types_8h.html#a170bfc72083417388bb40a68c7d6de87", null ],
+    [ "gbuffer_shader", "engine__types_8h.html#aecc9c6867392464338dd9a8ad7c17527", null ],
+    [ "ka", "engine__types_8h.html#a7e7f914739368a651fe526f7d619b8bd", null ],
+    [ "kd", "engine__types_8h.html#afb460bde77d85ff8ce1a3ce8dc4502f1", null ],
+    [ "ks", "engine__types_8h.html#ae4c24ab57823c4c026a05eb55d1cb730", null ],
+    [ "ke", "engine__types_8h.html#aa46321afbfe9130defea1c668b18e015", null ],
+    [ "metallic", "engine__types_8h.html#a97fc4551763505f23dac24a9901cee88", null ],
+    [ "roughness", "engine__types_8h.html#abbaeac8374986ca82670ff0d7749c566", null ],
+    [ "ao_strength", "engine__types_8h.html#a21cbb4b2ea332d560bfadf355e22cde3", null ],
+    [ "emissive_strength", "engine__types_8h.html#aa13ac51435e2aadf82a5487a04b76560", null ],
+    [ "absorption_coefficients", "engine__types_8h.html#acaac01f686e387f9dececd910849485e", null ],
+    [ "scattering_coefficients", "engine__types_8h.html#a3bd35a0fa12a0f51439bab0f52f1861d", null ],
+    [ "diffuse_tex", "engine__types_8h.html#ab3551ed93a9d5caebf2966ff5f63b5b9", null ],
+    [ "normal_tex", "engine__types_8h.html#aa97e1df23177705d4f3df8e6682c1724", null ],
+    [ "emissive_tex", "engine__types_8h.html#afa9bff31079f389e29e319a401dce056", null ],
+    [ "arm_tex", "engine__types_8h.html#aaa0cba6688aea159271bf10fdf2a25c6", null ],
+    [ "ao_tex", "engine__types_8h.html#a1961a62dccb3fcf5eb92c2281a8a78a3", null ],
+    [ "mr_tex", "engine__types_8h.html#acb5b4778c3aa40a81dee1dc626a3661b", null ],
+    [ "normal_scale", "engine__types_8h.html#a32cd53c510778d8e56d9e52a469aa271", null ],
+    [ "alpha_mode", "engine__types_8h.html#a8b10fb290f7ff5671aac0d1313fbf5f3", null ],
+    [ "alpha_cutoff", "engine__types_8h.html#aee3d96a88db4eb861cb0864cc0a47514", null ],
+    [ "double_sided", "engine__types_8h.html#ac4189dd9f18f8d0f6b6f763a08024895", null ],
+    [ "override_transparent", "engine__types_8h.html#a53040b8398f4df35d128705ca7022f04", null ],
+    [ "override_arm", "engine__types_8h.html#ac01ed015869a9eb03bd3c7e405e188d2", null ]
+];

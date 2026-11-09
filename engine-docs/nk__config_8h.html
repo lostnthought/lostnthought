@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -133,38 +137,6 @@ Macros</h2></td></tr>
 <tr class="memitem:af0847faa9e18a4865944c2f5fb093be0" id="r_af0847faa9e18a4865944c2f5fb093be0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af0847faa9e18a4865944c2f5fb093be0">NK_INCLUDE_DEFAULT_FONT</a></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
-<a id="adf1c808d169071b73cb46f7538bf1721" name="adf1c808d169071b73cb46f7538bf1721"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf1c808d169071b73cb46f7538bf1721">&#9670;&#160;</a></span>NK_INCLUDE_DEFAULT_ALLOCATOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NK_INCLUDE_DEFAULT_ALLOCATOR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00007">7</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
-
-</div>
-</div>
-<a id="af0847faa9e18a4865944c2f5fb093be0" name="af0847faa9e18a4865944c2f5fb093be0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0847faa9e18a4865944c2f5fb093be0">&#9670;&#160;</a></span>NK_INCLUDE_DEFAULT_FONT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NK_INCLUDE_DEFAULT_FONT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00010">10</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
-
-</div>
-</div>
 <a id="a4e30c99b0f20f7155adebf2cb2219b03" name="a4e30c99b0f20f7155adebf2cb2219b03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e30c99b0f20f7155adebf2cb2219b03">&#9670;&#160;</a></span>NK_INCLUDE_FIXED_TYPES</h2>
 
@@ -178,22 +150,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00004">4</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
-
-</div>
-</div>
-<a id="a7ad0c2aa5bf98a3302a170b7ce2fb9d2" name="a7ad0c2aa5bf98a3302a170b7ce2fb9d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ad0c2aa5bf98a3302a170b7ce2fb9d2">&#9670;&#160;</a></span>NK_INCLUDE_FONT_BAKING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NK_INCLUDE_FONT_BAKING</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00009">9</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
 
 </div>
 </div>
@@ -229,6 +185,22 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="adf1c808d169071b73cb46f7538bf1721" name="adf1c808d169071b73cb46f7538bf1721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1c808d169071b73cb46f7538bf1721">&#9670;&#160;</a></span>NK_INCLUDE_DEFAULT_ALLOCATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NK_INCLUDE_DEFAULT_ALLOCATOR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00007">7</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
+
+</div>
+</div>
 <a id="ac67be0ee8bc7f08530c891cbfa14b788" name="ac67be0ee8bc7f08530c891cbfa14b788"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac67be0ee8bc7f08530c891cbfa14b788">&#9670;&#160;</a></span>NK_INCLUDE_VERTEX_BUFFER_OUTPUT</h2>
 
@@ -242,6 +214,38 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00008">8</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
+
+</div>
+</div>
+<a id="a7ad0c2aa5bf98a3302a170b7ce2fb9d2" name="a7ad0c2aa5bf98a3302a170b7ce2fb9d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad0c2aa5bf98a3302a170b7ce2fb9d2">&#9670;&#160;</a></span>NK_INCLUDE_FONT_BAKING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NK_INCLUDE_FONT_BAKING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00009">9</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
+
+</div>
+</div>
+<a id="af0847faa9e18a4865944c2f5fb093be0" name="af0847faa9e18a4865944c2f5fb093be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0847faa9e18a4865944c2f5fb093be0">&#9670;&#160;</a></span>NK_INCLUDE_DEFAULT_FONT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NK_INCLUDE_DEFAULT_FONT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nk__config_8h_source.html#l00010">10</a> of file <a class="el" href="nk__config_8h_source.html">nk_config.h</a>.</p>
 
 </div>
 </div>

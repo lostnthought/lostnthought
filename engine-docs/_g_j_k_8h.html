@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -119,73 +123,23 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_g_j_k_8h.html
   <div class="headertitle"><div class="title">GJK.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>GJK and EPA collision resolution.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="engine__types_8h_source.html">core/engine_types.h</a>&quot;</code><br />
 </div>
 <p><a href="_g_j_k_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7dca1739af0ed872beb154b155874e9a" id="r_a7dca1739af0ed872beb154b155874e9a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7dca1739af0ed872beb154b155874e9a">GJK</a> (<a class="el" href="struct_collision_data.html">CollisionData</a> a_cd, <a class="el" href="struct_collision_data.html">CollisionData</a> b_cd, <a class="el" href="structmat4.html">mat4</a> a_mat, <a class="el" href="structmat4.html">mat4</a> b_mat, <a class="el" href="structmat4.html">mat4</a> a_inv, <a class="el" href="structmat4.html">mat4</a> b_inv, <a class="el" href="struct_collision_points.html">CollisionPoints</a> *collision_points, <a class="el" href="struct_e_p_a_workspace.html">EPAWorkspace</a> *EW)</td></tr>
+<tr class="memitem:ga7dca1739af0ed872beb154b155874e9a" id="r_ga7dca1739af0ed872beb154b155874e9a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="group__physics__group.html#ga7dca1739af0ed872beb154b155874e9a">GJK</a> (<a class="el" href="group__physics__group.html#struct_collision_data">CollisionData</a> a_cd, <a class="el" href="group__physics__group.html#struct_collision_data">CollisionData</a> b_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> a_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> b_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> a_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> b_inv, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *collision_points, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW)</td></tr>
+<tr class="memdesc:ga7dca1739af0ed872beb154b155874e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GJK polytope construction based on A and B (which can be any <a class="el" href="group__physics__group.html#gaa884075f403706dceea29a61771a0d44" title="Defines collision types with different behaviors and mesh setup and validation.">CollisionType</a>), calls EPA internally.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a7dca1739af0ed872beb154b155874e9a" name="a7dca1739af0ed872beb154b155874e9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dca1739af0ed872beb154b155874e9a">&#9670;&#160;</a></span>GJK()</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>GJK and EPA collision resolution. </p>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool GJK </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_collision_data.html">CollisionData</a></td>          <td class="paramname"><span class="paramname"><em>a_cd</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_collision_data.html">CollisionData</a></td>          <td class="paramname"><span class="paramname"><em>b_cd</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmat4.html">mat4</a></td>          <td class="paramname"><span class="paramname"><em>a_mat</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmat4.html">mat4</a></td>          <td class="paramname"><span class="paramname"><em>b_mat</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmat4.html">mat4</a></td>          <td class="paramname"><span class="paramname"><em>a_inv</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmat4.html">mat4</a></td>          <td class="paramname"><span class="paramname"><em>b_inv</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_collision_points.html">CollisionPoints</a> *</td>          <td class="paramname"><span class="paramname"><em>collision_points</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_e_p_a_workspace.html">EPAWorkspace</a> *</td>          <td class="paramname"><span class="paramname"><em>EW</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00837">837</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
-
-<p class="reference">References <a class="el" href="_g_j_k_8c_source.html#l00540">add_point_to_simplex()</a>, <a class="el" href="camera_8c_source.html#l00327">collision()</a>, <a class="el" href="engine__types_8h_source.html#l00961">CollisionPoints::collision</a>, <a class="el" href="types_8h_source.html#l00314">Simplex::count</a>, <a class="el" href="engine__types_8h_source.html#l00960">CollisionPoints::d</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="main_8c_source.html#l00295">EW</a>, <a class="el" href="_g_j_k_8c_source.html#l00584">find_next_direction()</a>, <a class="el" href="_g_j_k_8c_source.html#l00837">GJK()</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal_impulse</a>, <a class="el" href="types_8h_source.html#l00304">SupportVertex::p</a>, <a class="el" href="types_8h_source.html#l00313">Simplex::points</a>, <a class="el" href="_g_j_k_8c_source.html#l00176">support()</a>, <a class="el" href="_g_j_k_8c_source.html#l00201">support_diff()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::tangent_impulse</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00837">GJK()</a>, <a class="el" href="physics_8c_source.html#l00513">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00627">PC_traverse_scene_bvh()</a>, and <a class="el" href="camera_8c_source.html#l00594">player_find_collision()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p class="definition">Definition in file <a class="el" href="_g_j_k_8h_source.html">GJK.h</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

@@ -1,3 +1,22 @@
+
+
+.libre-baskerville-font {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+	
+.lora-font {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 h1, h2, h3, h4, p {
   margin: 0;
 }
@@ -96,12 +115,13 @@ html.dark-theme {
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: "Libre Baskerville", system-ui, sans-serif;
   background: var(--background);
   color: var(--color);
   margin: 0;
   text-align: left;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 /* body { */
@@ -222,6 +242,7 @@ section .project:not(:last-of-type) {
 .links a {
   color: var(--blue);
   text-decoration: none;
+  font-style: italic;
 }
 
 .links a:hover {
@@ -272,7 +293,7 @@ pre {
 }
 
 code {
-  font-family: monospace;
+  font-family: "Google Sans Code", monospace;
   font-size: 0.7em;
   color: var(--color);
 

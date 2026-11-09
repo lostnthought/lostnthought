@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -119,110 +123,52 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('render_8h.html
   <div class="headertitle"><div class="title">render.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The main render pass, data GPU uploads, and SSBO management.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="engine__types_8h_source.html">core/engine_types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ui_8h_source.html">ui/ui.h</a>&quot;</code><br />
 </div>
 <p><a href="render_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aad386b819aca78f68c7c3833f61b926f" id="r_aad386b819aca78f68c7c3833f61b926f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aad386b819aca78f68c7c3833f61b926f">add_mesh_to_buffer</a> (<a class="el" href="struct_mesh.html">Mesh</a> *m, <a class="el" href="struct_vertex_layout.html">VertexLayout</a> *layout)</td></tr>
-<tr class="memitem:a359fb009557de2444b93a70c1f7109f7" id="r_a359fb009557de2444b93a70c1f7109f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a359fb009557de2444b93a70c1f7109f7">upload_lights</a> ()</td></tr>
-<tr class="memitem:a038a44c47525a96e8b73a4877a0fcd82" id="r_a038a44c47525a96e8b73a4877a0fcd82"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a038a44c47525a96e8b73a4877a0fcd82">create_and_sort_draw_commands</a> (int *dc_cnt, <a class="el" href="struct_draw_command.html">DrawCommand</a> *dcs)</td></tr>
-<tr class="memitem:adeb8ce26b716208524a0e4f54f2d6efc" id="r_adeb8ce26b716208524a0e4f54f2d6efc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adeb8ce26b716208524a0e4f54f2d6efc">render_to_cubemap_face</a> (<a class="el" href="struct_camera.html">Camera</a> *rprobe_cam, GLuint render_fbo, int render_width, int render_height, bool probe_bake)</td></tr>
-<tr class="memitem:a7d9edd8b0a8d0d2f737eb5ee0b0a5040" id="r_a7d9edd8b0a8d0d2f737eb5ee0b0a5040"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7d9edd8b0a8d0d2f737eb5ee0b0a5040">render</a> ()</td></tr>
-<tr class="memitem:ac0ba48c0ba031eef701f0ba7494ca19b" id="r_ac0ba48c0ba031eef701f0ba7494ca19b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac0ba48c0ba031eef701f0ba7494ca19b">aabb_to_vertices</a> (<a class="el" href="struct_debug_vertex.html">DebugVertex</a> *out, <a class="el" href="struct_a_a_b_b.html">AABB</a> *aabb, <a class="el" href="structvec3.html">vec3</a> offset)</td></tr>
-<tr class="memitem:a113956a98f9b91e056b0814583712db5" id="r_a113956a98f9b91e056b0814583712db5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a113956a98f9b91e056b0814583712db5">render_mesh_aabbs_from_root</a> (<a class="el" href="struct_mesh_node.html">MeshNode</a> *mn)</td></tr>
-<tr class="memitem:afb1127f4d5c403f8c65cbd58527d272c" id="r_afb1127f4d5c403f8c65cbd58527d272c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb1127f4d5c403f8c65cbd58527d272c">add_all_meshes_to_buffer</a> (<a class="el" href="struct_vertex_layout.html">VertexLayout</a> *layout)</td></tr>
-<tr class="memitem:a7bd9e50e940a116ffe45d5cd3414f085" id="r_a7bd9e50e940a116ffe45d5cd3414f085"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader</a> (<a class="el" href="struct_mesh_node.html">MeshNode</a> *mn)</td></tr>
-<tr class="memitem:a9fa6892080a2c475574cd02206fd6e49" id="r_a9fa6892080a2c475574cd02206fd6e49"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9fa6892080a2c475574cd02206fd6e49">upload_material_data</a> ()</td></tr>
-<tr class="memitem:aa06e29a8e7daefea2cd5b689bb7d0e6a" id="r_aa06e29a8e7daefea2cd5b689bb7d0e6a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa06e29a8e7daefea2cd5b689bb7d0e6a">copy_light_to_gpu_light</a> (<a class="el" href="struct_light_g_p_u.html">LightGPU</a> *lgpu, <a class="el" href="struct_light.html">Light</a> *l)</td></tr>
 <tr class="memitem:a3d4bc78367546ca01d32d2f491ffde8c" id="r_a3d4bc78367546ca01d32d2f491ffde8c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3d4bc78367546ca01d32d2f491ffde8c">bind_baking_ssbos</a> ()</td></tr>
+<tr class="memdesc:a3d4bc78367546ca01d32d2f491ffde8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds SSBOs required for baking.  <br /></td></tr>
 <tr class="memitem:a8e6a23f1dffd4db5767d549f45362f82" id="r_a8e6a23f1dffd4db5767d549f45362f82"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8e6a23f1dffd4db5767d549f45362f82">unbind_baking_ssbos</a> ()</td></tr>
+<tr class="memdesc:a8e6a23f1dffd4db5767d549f45362f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbinds SSBOs required for baking.  <br /></td></tr>
 <tr class="memitem:aaeea249083f99584a020101d89034c9c" id="r_aaeea249083f99584a020101d89034c9c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaeea249083f99584a020101d89034c9c">bind_render_ssbos</a> ()</td></tr>
+<tr class="memdesc:aaeea249083f99584a020101d89034c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds SSBOs required for rendering.  <br /></td></tr>
+<tr class="memitem:ac0ba48c0ba031eef701f0ba7494ca19b" id="r_ac0ba48c0ba031eef701f0ba7494ca19b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac0ba48c0ba031eef701f0ba7494ca19b">aabb_to_vertices</a> (<a class="el" href="engine__types_8h.html#struct_debug_vertex">DebugVertex</a> *out, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *aabb, <a class="el" href="types_8h.html#structvec3">vec3</a> offset)</td></tr>
+<tr class="memdesc:ac0ba48c0ba031eef701f0ba7494ca19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers an <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> to DebufVertex for a wireframe (GL_LINES).  <br /></td></tr>
+<tr class="memitem:a113956a98f9b91e056b0814583712db5" id="r_a113956a98f9b91e056b0814583712db5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a113956a98f9b91e056b0814583712db5">render_mesh_aabbs_from_root</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn)</td></tr>
+<tr class="memdesc:a113956a98f9b91e056b0814583712db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a>s for each <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> child recursively to <a class="el" href="main_8c.html#aee9bac1b373030fd725d6c6eccae8155">DEBUG_LINES</a>.  <br /></td></tr>
+<tr class="memitem:a9fa6892080a2c475574cd02206fd6e49" id="r_a9fa6892080a2c475574cd02206fd6e49"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9fa6892080a2c475574cd02206fd6e49">upload_material_data</a> ()</td></tr>
+<tr class="memdesc:a9fa6892080a2c475574cd02206fd6e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads <a class="el" href="engine__types_8h.html#struct_material" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> data to the GPU as <a class="el" href="engine__types_8h.html#struct_material_g_p_u" title="The GPU side padded structure for Materials.">MaterialGPU</a>.  <br /></td></tr>
+<tr class="memitem:aa06e29a8e7daefea2cd5b689bb7d0e6a" id="r_aa06e29a8e7daefea2cd5b689bb7d0e6a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa06e29a8e7daefea2cd5b689bb7d0e6a">copy_light_to_gpu_light</a> (<a class="el" href="engine__types_8h.html#struct_light_g_p_u">LightGPU</a> *lgpu, <a class="el" href="engine__types_8h.html#struct_light">Light</a> *l)</td></tr>
+<tr class="memdesc:aa06e29a8e7daefea2cd5b689bb7d0e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers a <a class="el" href="engine__types_8h.html#struct_light" title="The CPU side structure for Lights.">Light</a> to a <a class="el" href="engine__types_8h.html#struct_light_g_p_u" title="The GPU side structure for Lights padded for GPU.">LightGPU</a>.  <br /></td></tr>
+<tr class="memitem:a359fb009557de2444b93a70c1f7109f7" id="r_a359fb009557de2444b93a70c1f7109f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a359fb009557de2444b93a70c1f7109f7">upload_lights</a> ()</td></tr>
+<tr class="memdesc:a359fb009557de2444b93a70c1f7109f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads all current <a class="el" href="engine__types_8h.html#struct_light" title="The CPU side structure for Lights.">Light</a>s inside of <a class="el" href="engine__types_8h.html#a838cf9143fd2ac079e7ddbe94411cd70" title="Lights.">Globals.lights</a> to the GPU in a triple buffered <a class="el" href="main_8c.html#af9238b1e4190bb98b85e124db5712f0d">LIGHT_SSBO</a>.  <br /></td></tr>
+<tr class="memitem:aad386b819aca78f68c7c3833f61b926f" id="r_aad386b819aca78f68c7c3833f61b926f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aad386b819aca78f68c7c3833f61b926f">add_mesh_to_buffer</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *m, <a class="el" href="engine__types_8h.html#struct_vertex_layout">VertexLayout</a> *layout)</td></tr>
+<tr class="memdesc:aad386b819aca78f68c7c3833f61b926f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a single <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> to the <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>.  <br /></td></tr>
+<tr class="memitem:afb1127f4d5c403f8c65cbd58527d272c" id="r_afb1127f4d5c403f8c65cbd58527d272c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb1127f4d5c403f8c65cbd58527d272c">add_all_meshes_to_buffer</a> (<a class="el" href="engine__types_8h.html#struct_vertex_layout">VertexLayout</a> *layout)</td></tr>
+<tr class="memdesc:afb1127f4d5c403f8c65cbd58527d272c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es that have valid <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <br /></td></tr>
+<tr class="memitem:a187fdef1c8e91bed6d022d63fc468be2" id="r_a187fdef1c8e91bed6d022d63fc468be2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a187fdef1c8e91bed6d022d63fc468be2">add_text_box</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *tvs, <a class="el" href="types_8h.html#struct_vector">Vector</a> *tis, <a class="el" href="group__ui__group.html#struct_text_box">TextBox</a> *tb, int current_box)</td></tr>
+<tr class="memdesc:a187fdef1c8e91bed6d022d63fc468be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> to a vertex and index buffer, to be uploaded to <a class="el" href="main_8c.html#ae0204ae8afc25072ce2ea38536ade60d">TEXT_VBO</a> and <a class="el" href="main_8c.html#ac96717898d4524c38bb29cbb1ee54ea0">TEXT_EBO</a>.  <br /></td></tr>
+<tr class="memitem:acc6a010948e804a545ac2c106f21941f" id="r_acc6a010948e804a545ac2c106f21941f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acc6a010948e804a545ac2c106f21941f">add_all_text_boxes_to_draw_buffer</a> ()</td></tr>
+<tr class="memdesc:acc6a010948e804a545ac2c106f21941f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es to <a class="el" href="main_8c.html#ae0204ae8afc25072ce2ea38536ade60d">TEXT_VBO</a> and iterates through each character to push indices to <a class="el" href="main_8c.html#ac96717898d4524c38bb29cbb1ee54ea0">TEXT_EBO</a>.  <br /></td></tr>
+<tr class="memitem:a038a44c47525a96e8b73a4877a0fcd82" id="r_a038a44c47525a96e8b73a4877a0fcd82"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a038a44c47525a96e8b73a4877a0fcd82">create_and_sort_draw_commands</a> (int *dc_cnt, <a class="el" href="engine__types_8h.html#struct_draw_command">DrawCommand</a> *dcs)</td></tr>
+<tr class="memdesc:a038a44c47525a96e8b73a4877a0fcd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates all <a class="el" href="engine__types_8h.html#struct_draw_command" title="The structure used to sort unique submeshes by materials, and shaders in the main render pass.">DrawCommand</a>s based on unique <a class="el" href="engine__types_8h.html#struct_sub_mesh" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>es and sorts them via <a class="el" href="engine__types_8h.html#aa5a1ea6b61a80e21733fcba4c309134e" title="The key that is sorted in create_and_sort_draw_commands().">DrawCommand.sort_key</a>.  <br /></td></tr>
+<tr class="memitem:adeb8ce26b716208524a0e4f54f2d6efc" id="r_adeb8ce26b716208524a0e4f54f2d6efc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adeb8ce26b716208524a0e4f54f2d6efc">render_to_cubemap_face</a> (<a class="el" href="engine__types_8h.html#struct_camera">Camera</a> *rprobe_cam, GLuint render_fbo, int render_width, int render_height, bool probe_bake)</td></tr>
+<tr class="memdesc:adeb8ce26b716208524a0e4f54f2d6efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads per-frame data to GPU and renders main render pass to a target FBO (omits Text, UI, and postprocessing that occurs after).  <br /></td></tr>
+<tr class="memitem:a7d9edd8b0a8d0d2f737eb5ee0b0a5040" id="r_a7d9edd8b0a8d0d2f737eb5ee0b0a5040"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7d9edd8b0a8d0d2f737eb5ee0b0a5040">render</a> ()</td></tr>
+<tr class="memdesc:a7d9edd8b0a8d0d2f737eb5ee0b0a5040"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main render pass.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ac0ba48c0ba031eef701f0ba7494ca19b" name="ac0ba48c0ba031eef701f0ba7494ca19b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0ba48c0ba031eef701f0ba7494ca19b">&#9670;&#160;</a></span>aabb_to_vertices()</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The main render pass, data GPU uploads, and SSBO management. </p>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void aabb_to_vertices </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_debug_vertex.html">DebugVertex</a> *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_a_a_b_b.html">AABB</a> *</td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>offset</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00475">475</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, and <a class="el" href="engine__types_8h_source.html#l01168">DebugVertex::pos</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="acceleration_8c_source.html#l00280">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
-
-</div>
-</div>
-<a id="afb1127f4d5c403f8c65cbd58527d272c" name="afb1127f4d5c403f8c65cbd58527d272c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb1127f4d5c403f8c65cbd58527d272c">&#9670;&#160;</a></span>add_all_meshes_to_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void add_all_meshes_to_buffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vertex_layout.html">VertexLayout</a> *</td>          <td class="paramname"><span class="paramname"><em>layout</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00441">441</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02329">MeshNode::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="main_8c_source.html#l00194">LIGHTMAP_DATA</a>, <a class="el" href="main_8c_source.html#l00154">LIGHTMAP_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03442">VertexLayout::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01889">LightmapSSBO::uvs</a>, and <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="aad386b819aca78f68c7c3833f61b926f" name="aad386b819aca78f68c7c3833f61b926f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad386b819aca78f68c7c3833f61b926f">&#9670;&#160;</a></span>add_mesh_to_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void add_mesh_to_buffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vertex_layout.html">VertexLayout</a> *</td>          <td class="paramname"><span class="paramname"><em>layout</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00343">343</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02453">Mesh::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03439">VertexLayout::current_capacity</a>, <a class="el" href="engine__types_8h_source.html#l03441">VertexLayout::current_index_capacity</a>, <a class="el" href="engine__types_8h_source.html#l03440">VertexLayout::current_index_offset</a>, <a class="el" href="engine__types_8h_source.html#l03438">VertexLayout::current_offset</a>, <a class="el" href="engine__types_8h_source.html#l03433">VertexLayout::ebo</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02446">Mesh::id</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03442">VertexLayout::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02452">Mesh::offset</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l03432">VertexLayout::vbo</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="render_8c_source.html#l00341">visize</a>, and <a class="el" href="render_8c_source.html#l00340">vsize</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, and <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>.</p>
-
-</div>
-</div>
+<p class="definition">Definition in file <a class="el" href="render_8h_source.html">render.h</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a3d4bc78367546ca01d32d2f491ffde8c" name="a3d4bc78367546ca01d32d2f491ffde8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d4bc78367546ca01d32d2f491ffde8c">&#9670;&#160;</a></span>bind_baking_ssbos()</h2>
 
@@ -238,11 +184,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Binds SSBOs required for baking. </p>
+
 <p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00031">31</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
 
-<p class="reference">References <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="main_8c_source.html#l00158">MESH_BVH_SSBO</a>, <a class="el" href="main_8c_source.html#l00157">MESH_SSBO</a>, <a class="el" href="main_8c_source.html#l00160">PROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00161">RPROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00159">SCENE_BVH_SSBO</a>, <a class="el" href="main_8c_source.html#l00156">TRI_SSBO</a>, and <a class="el" href="main_8c_source.html#l00155">VERTEX_SSBO</a>.</p>
+<p class="reference">References <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="main_8c_source.html#l00152">MESH_BVH_SSBO</a>, <a class="el" href="main_8c_source.html#l00151">MESH_SSBO</a>, <a class="el" href="main_8c_source.html#l00154">PROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00155">RPROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00153">SCENE_BVH_SSBO</a>, <a class="el" href="main_8c_source.html#l00150">TRI_SSBO</a>, and <a class="el" href="main_8c_source.html#l00149">VERTEX_SSBO</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, and <a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01304">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01509">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01009">bake_lightmap()</a>, and <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>.</p>
+
+</div>
+</div>
+<a id="a8e6a23f1dffd4db5767d549f45362f82" name="a8e6a23f1dffd4db5767d549f45362f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e6a23f1dffd4db5767d549f45362f82">&#9670;&#160;</a></span>unbind_baking_ssbos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unbind_baking_ssbos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unbinds SSBOs required for baking. </p>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00042">42</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main_8c_source.html#l00161">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00162">INDIRECT_ARRAYS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00164">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00166">INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00156">JOINT_SSBO</a>, <a class="el" href="main_8c_source.html#l00155">RPROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00167">TEXT_BOX_SSBO</a>, and <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01304">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01509">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01009">bake_lightmap()</a>, and <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>.</p>
 
 </div>
 </div>
@@ -261,32 +234,112 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Binds SSBOs required for rendering. </p>
+
 <p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00056">56</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
 
-<p class="reference">References <a class="el" href="render_8c_source.html#l00056">bind_render_ssbos()</a>, <a class="el" href="main_8c_source.html#l00163">CLUSTER_AABB_SSBO</a>, <a class="el" href="main_8c_source.html#l00165">CLUSTER_SSBO</a>, <a class="el" href="main_8c_source.html#l00167">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00164">GLOBAL_LIGHT_INDICES_SSBO</a>, <a class="el" href="main_8c_source.html#l00168">INDIRECT_ARRAYS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00170">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00172">INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00162">JOINT_SSBO</a>, <a class="el" href="main_8c_source.html#l00154">LIGHTMAP_SSBO</a>, <a class="el" href="main_8c_source.html#l00153">MATERIAL_SSBO</a>, <a class="el" href="main_8c_source.html#l00152">MESH_LIGHT_SSBO</a>, <a class="el" href="main_8c_source.html#l00166">MESH_NODE_SSBO</a>, <a class="el" href="main_8c_source.html#l00161">RPROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00173">TEXT_BOX_SSBO</a>, and <a class="el" href="main_8c_source.html#l00174">UI_SSBO</a>.</p>
+<p class="reference">References <a class="el" href="render_8c_source.html#l00056">bind_render_ssbos()</a>, <a class="el" href="main_8c_source.html#l00157">CLUSTER_AABB_SSBO</a>, <a class="el" href="main_8c_source.html#l00159">CLUSTER_SSBO</a>, <a class="el" href="main_8c_source.html#l00161">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00158">GLOBAL_LIGHT_INDICES_SSBO</a>, <a class="el" href="main_8c_source.html#l00162">INDIRECT_ARRAYS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00164">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00166">INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00156">JOINT_SSBO</a>, <a class="el" href="main_8c_source.html#l00148">LIGHTMAP_SSBO</a>, <a class="el" href="main_8c_source.html#l00147">MATERIAL_SSBO</a>, <a class="el" href="main_8c_source.html#l00146">MESH_LIGHT_SSBO</a>, <a class="el" href="main_8c_source.html#l00160">MESH_NODE_SSBO</a>, <a class="el" href="main_8c_source.html#l00155">RPROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00167">TEXT_BOX_SSBO</a>, and <a class="el" href="main_8c_source.html#l00168">UI_SSBO</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00056">bind_render_ssbos()</a>, <a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader()</a>, and <a class="el" href="init_8c_source.html#l01991">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00056">bind_render_ssbos()</a>, and <a class="el" href="init_8c_source.html#l01988">init()</a>.</p>
 
 </div>
 </div>
-<a id="a7bd9e50e940a116ffe45d5cd3414f085" name="a7bd9e50e940a116ffe45d5cd3414f085"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bd9e50e940a116ffe45d5cd3414f085">&#9670;&#160;</a></span>bind_static_shader()</h2>
+<a id="ac0ba48c0ba031eef701f0ba7494ca19b" name="ac0ba48c0ba031eef701f0ba7494ca19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ba48c0ba031eef701f0ba7494ca19b">&#9670;&#160;</a></span>aabb_to_vertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void bind_static_shader </td>
+          <td class="memname">void aabb_to_vertices </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_debug_vertex">DebugVertex</a> *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *</td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>offset</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transfers an <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> to DebufVertex for a wireframe (GL_LINES). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>The outgoing vertices. </td></tr>
+    <tr><td class="paramname">aabb</td><td>The input <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a>. </td></tr>
+    <tr><td class="paramname">offset</td><td>The offset in world space.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo</a></b></dt><dd>Make a matrix transform instead of an offset. Or instance the AABBs and transform on the GPU. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00475">475</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, and <a class="el" href="engine__types_8h_source.html#l01197">DebugVertex::pos</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, and <a class="el" href="physics_8c_source.html#l01605">update_physics_components()</a>.</p>
+
+</div>
+</div>
+<a id="a113956a98f9b91e056b0814583712db5" name="a113956a98f9b91e056b0814583712db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113956a98f9b91e056b0814583712db5">&#9670;&#160;</a></span>render_mesh_aabbs_from_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_mesh_aabbs_from_root </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="render_8c_source.html#l00056">bind_render_ssbos()</a>, <a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
+<p>Adds <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a>s for each <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> child recursively to <a class="el" href="main_8c.html#aee9bac1b373030fd725d6c6eccae8155">DEBUG_LINES</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mn</td><td>The <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> root. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">Referenced by <a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00517">517</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02485">Mesh::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02390">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02389">MeshNode::children</a>, <a class="el" href="engine__types_8h_source.html#l01198">DebugVertex::color</a>, <a class="el" href="main_8c_source.html#l00277">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00276">DEBUG_LINES</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, and <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, and <a class="el" href="physics_8c_source.html#l01605">update_physics_components()</a>.</p>
+
+</div>
+</div>
+<a id="a9fa6892080a2c475574cd02206fd6e49" name="a9fa6892080a2c475574cd02206fd6e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa6892080a2c475574cd02206fd6e49">&#9670;&#160;</a></span>upload_material_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void upload_material_data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uploads <a class="el" href="engine__types_8h.html#struct_material" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a> data to the GPU as <a class="el" href="engine__types_8h.html#struct_material_g_p_u" title="The GPU side padded structure for Materials.">MaterialGPU</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00854">854</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01587">Material::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01631">MaterialGPU::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01639">MaterialGPU::albedo_handle</a>, <a class="el" href="engine__types_8h_source.html#l01605">Material::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01649">MaterialGPU::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01604">Material::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l01648">MaterialGPU::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l01623">MaterialGPU::ambient</a>, <a class="el" href="engine__types_8h_source.html#l01583">Material::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01646">MaterialGPU::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01641">MaterialGPU::arm_handle</a>, <a class="el" href="engine__types_8h_source.html#l01598">Material::arm_tex</a>, <a class="el" href="engine__types_8h_source.html#l00087">AUDIO_NUM_BANDS</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00193">DEFAULT_ARM</a>, <a class="el" href="main_8c_source.html#l00191">DEFAULT_DIFFUSE</a>, <a class="el" href="main_8c_source.html#l00194">DEFAULT_EMISSIVE</a>, <a class="el" href="main_8c_source.html#l00192">DEFAULT_NORMAL</a>, <a class="el" href="engine__types_8h_source.html#l01625">MaterialGPU::diffuse</a>, <a class="el" href="engine__types_8h_source.html#l01595">Material::diffuse_tex</a>, <a class="el" href="engine__types_8h_source.html#l01608">Material::double_sided</a>, <a class="el" href="engine__types_8h_source.html#l01650">MaterialGPU::double_sided</a>, <a class="el" href="engine__types_8h_source.html#l01629">MaterialGPU::emissive</a>, <a class="el" href="engine__types_8h_source.html#l01642">MaterialGPU::emissive_handle</a>, <a class="el" href="engine__types_8h_source.html#l01584">Material::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01651">MaterialGPU::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01597">Material::emissive_tex</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02531">Image::handle</a>, <a class="el" href="engine__types_8h_source.html#l03416">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l01577">Material::ka</a>, <a class="el" href="engine__types_8h_source.html#l01578">Material::kd</a>, <a class="el" href="engine__types_8h_source.html#l01580">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l01579">Material::ks</a>, <a class="el" href="main_8c_source.html#l00189">MATERIAL_DATA</a>, <a class="el" href="main_8c_source.html#l00147">MATERIAL_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l03415">Globals::materials</a>, <a class="el" href="engine__types_8h_source.html#l01665">MaterialData::materials</a>, <a class="el" href="engine__types_8h_source.html#l01581">Material::metallic</a>, <a class="el" href="engine__types_8h_source.html#l01644">MaterialGPU::metallic</a>, <a class="el" href="engine__types_8h_source.html#l01640">MaterialGPU::normal_handle</a>, <a class="el" href="engine__types_8h_source.html#l01603">Material::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01647">MaterialGPU::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01596">Material::normal_tex</a>, <a class="el" href="engine__types_8h_source.html#l01610">Material::override_arm</a>, <a class="el" href="engine__types_8h_source.html#l01582">Material::roughness</a>, <a class="el" href="engine__types_8h_source.html#l01645">MaterialGPU::roughness</a>, <a class="el" href="engine__types_8h_source.html#l01588">Material::scattering_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01635">MaterialGPU::scattering_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01627">MaterialGPU::specular</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00516">execute_globals_undo()</a>, <a class="el" href="main_8c_source.html#l00483">main()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, <a class="el" href="editor_8c_source.html#l05695">render_material_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
 
 </div>
 </div>
@@ -299,21 +352,197 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void copy_light_to_gpu_light </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_light_g_p_u.html">LightGPU</a> *</td>          <td class="paramname"><span class="paramname"><em>lgpu</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_light_g_p_u">LightGPU</a> *</td>          <td class="paramname"><span class="paramname"><em>lgpu</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_light.html">Light</a> *</td>          <td class="paramname"><span class="paramname"><em>l</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_light">Light</a> *</td>          <td class="paramname"><span class="paramname"><em>l</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Transfers a <a class="el" href="engine__types_8h.html#struct_light" title="The CPU side structure for Lights.">Light</a> to a <a class="el" href="engine__types_8h.html#struct_light_g_p_u" title="The GPU side structure for Lights padded for GPU.">LightGPU</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>The light to copy from. </td></tr>
+    <tr><td class="paramname">lgpu</td><td>The target GPU light. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00602">602</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01499">LightGPU::area</a>, <a class="el" href="engine__types_8h_source.html#l01432">Light::cone_angle</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="engine__types_8h_source.html#l01487">LightGPU::cos_diff</a>, <a class="el" href="engine__types_8h_source.html#l01431">Light::dir</a>, <a class="el" href="engine__types_8h_source.html#l01483">LightGPU::dir</a>, <a class="el" href="engine__types_8h_source.html#l01429">Light::entity_id</a>, <a class="el" href="engine__types_8h_source.html#l01481">LightGPU::entity_id</a>, <a class="el" href="engine__types_8h_source.html#l01439">Light::inner_angle</a>, <a class="el" href="engine__types_8h_source.html#l01491">LightGPU::inner_angle</a>, <a class="el" href="engine__types_8h_source.html#l01437">Light::intensity</a>, <a class="el" href="engine__types_8h_source.html#l01489">LightGPU::intensity</a>, <a class="el" href="engine__types_8h_source.html#l01447">Light::layer</a>, <a class="el" href="engine__types_8h_source.html#l01495">LightGPU::layer</a>, <a class="el" href="engine__types_8h_source.html#l01438">Light::light_type</a>, <a class="el" href="engine__types_8h_source.html#l01490">LightGPU::light_type</a>, <a class="el" href="engine__types_8h_source.html#l01449">Light::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01496">LightGPU::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01440">Light::outer_angle</a>, <a class="el" href="engine__types_8h_source.html#l01492">LightGPU::outer_angle</a>, <a class="el" href="engine__types_8h_source.html#l01484">LightGPU::outer_cos</a>, <a class="el" href="engine__types_8h_source.html#l01435">Light::penumbra</a>, <a class="el" href="engine__types_8h_source.html#l01428">Light::pos</a>, <a class="el" href="engine__types_8h_source.html#l01480">LightGPU::pos</a>, <a class="el" href="engine__types_8h_source.html#l01442">Light::radius</a>, <a class="el" href="engine__types_8h_source.html#l01494">LightGPU::radius</a>, <a class="el" href="engine__types_8h_source.html#l01434">Light::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01486">LightGPU::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::surface_area</a>, <a class="el" href="engine__types_8h_source.html#l01443">Light::threshold</a>, <a class="el" href="engine__types_8h_source.html#l01450">Light::tri</a>, and <a class="el" href="engine__types_8h_source.html#l01497">LightGPU::tri</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01528">LightGPU::area</a>, <a class="el" href="engine__types_8h_source.html#l01461">Light::cone_angle</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="engine__types_8h_source.html#l01516">LightGPU::cos_diff</a>, <a class="el" href="engine__types_8h_source.html#l01460">Light::dir</a>, <a class="el" href="engine__types_8h_source.html#l01512">LightGPU::dir</a>, <a class="el" href="engine__types_8h_source.html#l01458">Light::entity_id</a>, <a class="el" href="engine__types_8h_source.html#l01510">LightGPU::entity_id</a>, <a class="el" href="engine__types_8h_source.html#l01468">Light::inner_angle</a>, <a class="el" href="engine__types_8h_source.html#l01520">LightGPU::inner_angle</a>, <a class="el" href="engine__types_8h_source.html#l01466">Light::intensity</a>, <a class="el" href="engine__types_8h_source.html#l01518">LightGPU::intensity</a>, <a class="el" href="engine__types_8h_source.html#l01476">Light::layer</a>, <a class="el" href="engine__types_8h_source.html#l01524">LightGPU::layer</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::light_type</a>, <a class="el" href="engine__types_8h_source.html#l01519">LightGPU::light_type</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01525">LightGPU::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01469">Light::outer_angle</a>, <a class="el" href="engine__types_8h_source.html#l01521">LightGPU::outer_angle</a>, <a class="el" href="engine__types_8h_source.html#l01513">LightGPU::outer_cos</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::penumbra</a>, <a class="el" href="engine__types_8h_source.html#l01457">Light::pos</a>, <a class="el" href="engine__types_8h_source.html#l01509">LightGPU::pos</a>, <a class="el" href="engine__types_8h_source.html#l01471">Light::radius</a>, <a class="el" href="engine__types_8h_source.html#l01523">LightGPU::radius</a>, <a class="el" href="engine__types_8h_source.html#l01463">Light::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01515">LightGPU::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01493">Light::surface_area</a>, <a class="el" href="engine__types_8h_source.html#l01472">Light::threshold</a>, <a class="el" href="engine__types_8h_source.html#l01479">Light::tri</a>, and <a class="el" href="engine__types_8h_source.html#l01526">LightGPU::tri</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader()</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>, and <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="lightmap_8c_source.html#l00943">upload_bake_lights_gpu()</a>, and <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>.</p>
+
+</div>
+</div>
+<a id="a359fb009557de2444b93a70c1f7109f7" name="a359fb009557de2444b93a70c1f7109f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359fb009557de2444b93a70c1f7109f7">&#9670;&#160;</a></span>upload_lights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void upload_lights </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uploads all current <a class="el" href="engine__types_8h.html#struct_light" title="The CPU side structure for Lights.">Light</a>s inside of <a class="el" href="engine__types_8h.html#a838cf9143fd2ac079e7ddbe94411cd70" title="Lights.">Globals.lights</a> to the GPU in a triple buffered <a class="el" href="main_8c.html#af9238b1e4190bb98b85e124db5712f0d">LIGHT_SSBO</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00634">634</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="render_8c_source.html#l00600">gpu_light_count</a>, <a class="el" href="render_8c_source.html#l00599">GPU_LIGHTS</a>, <a class="el" href="main_8c_source.html#l00145">LIGHT_SSBO</a>, <a class="el" href="main_8c_source.html#l00340">light_ssbo_ptr</a>, <a class="el" href="main_8c_source.html#l00339">light_ssbo_size</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, and <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00516">execute_globals_undo()</a>, <a class="el" href="main_8c_source.html#l00483">main()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>, and <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>.</p>
+
+</div>
+</div>
+<a id="aad386b819aca78f68c7c3833f61b926f" name="aad386b819aca78f68c7c3833f61b926f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad386b819aca78f68c7c3833f61b926f">&#9670;&#160;</a></span>add_mesh_to_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_mesh_to_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_vertex_layout">VertexLayout</a> *</td>          <td class="paramname"><span class="paramname"><em>layout</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a single <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> to the <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> to add. </td></tr>
+    <tr><td class="paramname">layout</td><td>The <a class="el" href="engine__types_8h.html#struct_vertex_layout" title="An unused abstraction for VertexLayouts.">VertexLayout</a> whose offset and counts during <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> addition. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00343">343</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00325">calc_mesh_index_size()</a>, <a class="el" href="render_8c_source.html#l00299">calc_mesh_size()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02488">Mesh::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03474">VertexLayout::current_capacity</a>, <a class="el" href="engine__types_8h_source.html#l03476">VertexLayout::current_index_capacity</a>, <a class="el" href="engine__types_8h_source.html#l03475">VertexLayout::current_index_offset</a>, <a class="el" href="engine__types_8h_source.html#l03473">VertexLayout::current_offset</a>, <a class="el" href="engine__types_8h_source.html#l03468">VertexLayout::ebo</a>, <a class="el" href="render_8c_source.html#l00258">fill_index_buffer_mesh()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02481">Mesh::id</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03477">VertexLayout::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02487">Mesh::offset</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l03467">VertexLayout::vbo</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="render_8c_source.html#l00341">visize</a>, and <a class="el" href="render_8c_source.html#l00340">vsize</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, and <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>.</p>
+
+</div>
+</div>
+<a id="afb1127f4d5c403f8c65cbd58527d272c" name="afb1127f4d5c403f8c65cbd58527d272c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1127f4d5c403f8c65cbd58527d272c">&#9670;&#160;</a></span>add_all_meshes_to_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_all_meshes_to_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_vertex_layout">VertexLayout</a> *</td>          <td class="paramname"><span class="paramname"><em>layout</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds all <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es that have valid <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layout</td><td>The layout to use (<a class="el" href="main_8c.html#a4fb75685a9f0cbd54c92849770f2fcfc">MAIN_VAO</a>). @critial Decide if we should upload ALL <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es instead of just <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s here so that we can separate the two. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00441">441</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00407">allocate_lightmap_ssbo()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02364">MeshNode::free</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="main_8c_source.html#l00188">LIGHTMAP_DATA</a>, <a class="el" href="main_8c_source.html#l00148">LIGHTMAP_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03477">VertexLayout::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01919">LightmapSSBO::uvs</a>, and <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="editor_8c_source.html#l00516">execute_globals_undo()</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>, <a class="el" href="main_8c_source.html#l00483">main()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+
+</div>
+</div>
+<a id="a187fdef1c8e91bed6d022d63fc468be2" name="a187fdef1c8e91bed6d022d63fc468be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187fdef1c8e91bed6d022d63fc468be2">&#9670;&#160;</a></span>add_text_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_text_box </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>tvs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>tis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ui__group.html#struct_text_box">TextBox</a> *</td>          <td class="paramname"><span class="paramname"><em>tb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>current_box</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> to a vertex and index buffer, to be uploaded to <a class="el" href="main_8c.html#ae0204ae8afc25072ce2ea38536ade60d">TEXT_VBO</a> and <a class="el" href="main_8c.html#ac96717898d4524c38bb29cbb1ee54ea0">TEXT_EBO</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tvs</td><td>The out vertex <a class="el" href="types_8h.html#struct_vector">Vector</a>. </td></tr>
+    <tr><td class="paramname">tis</td><td>The out index <a class="el" href="types_8h.html#struct_vector">Vector</a>. </td></tr>
+    <tr><td class="paramname">tb</td><td>The <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> to upload. </td></tr>
+    <tr><td class="paramname">current_box</td><td>The index within the entire buffer, meaning a running count through each individual <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>s.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo</a></b></dt><dd>This current_box variable makes it so we can never reorder our <a class="el" href="main_8c.html#a891e5e5dcfb44e0cf47da377e33cfac5">TEXT_BOX_SSBO</a> or else every vertex will be pointing to the wrong data. Resolve this. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l01154">1154</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00285">TextBox::color</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00286">TextBox::fill</a>, <a class="el" href="ui_8h_source.html#l00262">TextBox::font_id</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="ui_8h_source.html#l00079">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00078">Font::glyphs</a>, <a class="el" href="ui_8h_source.html#l00060">Glyph::height</a>, <a class="el" href="ui_8h_source.html#l00284">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00267">TextBox::text_size</a>, <a class="el" href="ui_8h_source.html#l00055">Glyph::u0</a>, <a class="el" href="ui_8h_source.html#l00057">Glyph::u1</a>, <a class="el" href="ui_8h_source.html#l00056">Glyph::v0</a>, <a class="el" href="ui_8h_source.html#l00058">Glyph::v1</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="ui_8h_source.html#l00059">Glyph::width</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="ui_8h_source.html#l00063">Glyph::xadvance</a>, <a class="el" href="ui_8h_source.html#l00061">Glyph::xoffset</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, and <a class="el" href="ui_8h_source.html#l00062">Glyph::yoffset</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, and <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>.</p>
+
+</div>
+</div>
+<a id="acc6a010948e804a545ac2c106f21941f" name="acc6a010948e804a545ac2c106f21941f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6a010948e804a545ac2c106f21941f">&#9670;&#160;</a></span>add_all_text_boxes_to_draw_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_all_text_boxes_to_draw_buffer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds all <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es to <a class="el" href="main_8c.html#ae0204ae8afc25072ce2ea38536ade60d">TEXT_VBO</a> and iterates through each character to push indices to <a class="el" href="main_8c.html#ac96717898d4524c38bb29cbb1ee54ea0">TEXT_EBO</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>This function is currently called on <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> text change. Text should always be pre-loaded because this should not be called during "game-time." </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l01220">1220</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="main_8c_source.html#l00247">TEXT_EBO</a>, <a class="el" href="fonts_8c_source.html#l00016">TEXT_INDEX_COUNT</a>, and <a class="el" href="main_8c_source.html#l00246">TEXT_VBO</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="editor_8c_source.html#l01298">execute_text_box_undo()</a>, <a class="el" href="editor_8c_source.html#l01076">execute_ui_element_undo()</a>, <a class="el" href="main_8c_source.html#l00483">main()</a>, <a class="el" href="editor_8c_source.html#l03040">render_text_menu()</a>, <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="editor_8c_source.html#l01635">update_performance_overlay()</a>.</p>
 
 </div>
 </div>
@@ -331,62 +560,25 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_draw_command.html">DrawCommand</a> *</td>          <td class="paramname"><span class="paramname"><em>dcs</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_draw_command">DrawCommand</a> *</td>          <td class="paramname"><span class="paramname"><em>dcs</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates all <a class="el" href="engine__types_8h.html#struct_draw_command" title="The structure used to sort unique submeshes by materials, and shaders in the main render pass.">DrawCommand</a>s based on unique <a class="el" href="engine__types_8h.html#struct_sub_mesh" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>es and sorts them via <a class="el" href="engine__types_8h.html#aa5a1ea6b61a80e21733fcba4c309134e" title="The key that is sorted in create_and_sort_draw_commands().">DrawCommand.sort_key</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dc_cnt</td><td>The output count of <a class="el" href="engine__types_8h.html#struct_draw_command" title="The structure used to sort unique submeshes by materials, and shaders in the main render pass.">DrawCommand</a>s. </td></tr>
+    <tr><td class="paramname">dcs</td><td>The output <a class="el" href="engine__types_8h.html#struct_draw_command" title="The structure used to sort unique submeshes by materials, and shaders in the main render pass.">DrawCommand</a>s. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="render_8c_source.html#l01132">1132</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
 
 <p class="reference">References <a class="el" href="render_8c_source.html#l01121">compare_draw_commands()</a>, <a class="el" href="render_8c_source.html#l01132">create_and_sort_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01132">create_and_sort_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
-
-</div>
-</div>
-<a id="a7d9edd8b0a8d0d2f737eb5ee0b0a5040" name="a7d9edd8b0a8d0d2f737eb5ee0b0a5040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d9edd8b0a8d0d2f737eb5ee0b0a5040">&#9670;&#160;</a></span>render()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void render </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l03057">3057</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00325">ReflectionProbe::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="engine__types_8h_source.html#l00691">EditorSettings::ACES</a>, <a class="el" href="animation_8c_source.html#l00010">animation_length()</a>, <a class="el" href="main_8c_source.html#l00064">AUDIO_EMITTERS</a>, <a class="el" href="engine__types_8h_source.html#l00662">EditorSettings::audio_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l03383">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l03114">SceneData::audio_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l00686">EditorSettings::BLOOM</a>, <a class="el" href="main_8c_source.html#l00099">BLOOM_PYRAMID</a>, <a class="el" href="main_8c_source.html#l00098">BOKEH_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00123">BUFFER_FRAMES</a>, <a class="el" href="engine__types_8h_source.html#l03107">SceneData::bvh_nodes</a>, <a class="el" href="main_8c_source.html#l00327">cam</a>, <a class="el" href="engine__types_8h_source.html#l00327">ReflectionProbe::capture_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="main_8c_source.html#l00097">COC_FBO</a>, <a class="el" href="engine__types_8h_source.html#l01169">DebugVertex::color</a>, <a class="el" href="main_8c_source.html#l00147">COLOR_GRADE_LUT</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="render_8c_source.html#l00022">cur_history</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00490">current_query_frame</a>, <a class="el" href="main_8c_source.html#l00286">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00285">DEBUG_LINES</a>, <a class="el" href="init_8h_source.html#l00291">DEBUG_LINES_MAX</a>, <a class="el" href="engine__types_8h_source.html#l00594">Framebuffer::depth_texture</a>, <a class="el" href="engine__types_8h_source.html#l00683">EditorSettings::DOF</a>, <a class="el" href="engine__types_8h_source.html#l00706">EditorSettings::DOF_focal_length</a>, <a class="el" href="engine__types_8h_source.html#l00705">EditorSettings::DOF_fstop</a>, <a class="el" href="engine__types_8h_source.html#l00708">EditorSettings::DOF_max_blur_radius</a>, <a class="el" href="engine__types_8h_source.html#l00707">EditorSettings::DOF_sensor_height</a>, <a class="el" href="engine__types_8h_source.html#l00118">EDITOR_APORTAL_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00114">EDITOR_AUDIO_EMITTER_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00110">EDITOR_LIGHT_SIZE</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="main_8c_source.html#l00178">FBM_TEXTURE</a>, <a class="el" href="engine__types_8h_source.html#l00591">Framebuffer::fbo</a>, <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="main_8c_source.html#l00305">frame_time</a>, <a class="el" href="main_8c_source.html#l00091">GBUFFER_RESOLVE_FBO</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="render_8c_source.html#l01463">GPU_upload_ui_elements()</a>, <a class="el" href="engine__types_8h_source.html#l00524">GVEL</a>, <a class="el" href="engine__types_8h_source.html#l00596">Framebuffer::h</a>, <a class="el" href="main_8c_source.html#l00210">HISTORY_TEXTURE</a>, <a class="el" href="engine__types_8h_source.html#l02461">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l00558">GLTexture::i</a>, <a class="el" href="engine__types_8h_source.html#l02495">Image::i</a>, <a class="el" href="engine__types_8h_source.html#l03381">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l01293">Skeleton::left_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l03115">SceneData::lighting_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l03136">SceneData::lightmap_data</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03399">Uniform::location</a>, <a class="el" href="engine__types_8h_source.html#l00690">EditorSettings::LUT</a>, <a class="el" href="main_8c_source.html#l00087">MAIN_FBO</a>, <a class="el" href="main_8c_source.html#l00479">main_queries</a>, <a class="el" href="main_8c_source.html#l00088">MAIN_RESOLVE_FBO</a>, <a class="el" href="camera_8c_source.html#l00063">make_ortho()</a>, <a class="el" href="render_8c_source.html#l00021">master_frame</a>, <a class="el" href="engine__types_8h_source.html#l00037">MAX_AUDIO_EMITTERS</a>, <a class="el" href="ui_8h_source.html#l00008">MAX_UI_ELEMENTS</a>, <a class="el" href="engine__types_8h_source.html#l00684">EditorSettings::MBLUR</a>, <a class="el" href="engine__types_8h_source.html#l03015">Player::mesh</a>, <a class="el" href="engine__types_8h_source.html#l00656">EditorSettings::mesh_node_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l00687">EditorSettings::MSAA</a>, <a class="el" href="engine__types_8h_source.html#l00689">EditorSettings::NOISE</a>, <a class="el" href="engine__types_8h_source.html#l01291">Skeleton::p_left</a>, <a class="el" href="engine__types_8h_source.html#l01292">Skeleton::p_right</a>, <a class="el" href="utilities_8c_source.html#l00139">perm()</a>, <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, <a class="el" href="main_8c_source.html#l00291">player</a>, <a class="el" href="engine__types_8h_source.html#l00509">AudioEmitter::pos</a>, <a class="el" href="engine__types_8h_source.html#l00368">AudioPortal::pos</a>, <a class="el" href="engine__types_8h_source.html#l01168">DebugVertex::pos</a>, <a class="el" href="engine__types_8h_source.html#l01428">Light::pos</a>, <a class="el" href="main_8c_source.html#l00119">POSTPROCESS_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00247">PP_ACES</a>, <a class="el" href="engine__types_8h_source.html#l00247">PP_BLOOM</a>, <a class="el" href="engine__types_8h_source.html#l00247">PP_DOF</a>, <a class="el" href="engine__types_8h_source.html#l00646">EditorSettings::pp_dview</a>, <a class="el" href="engine__types_8h_source.html#l00247">PP_LUT</a>, <a class="el" href="engine__types_8h_source.html#l00247">PP_MBLUR</a>, <a class="el" href="engine__types_8h_source.html#l00247">PP_NOISE</a>, <a class="el" href="main_8c_source.html#l00276">PP_SHADER_VERSIONS</a>, <a class="el" href="engine__types_8h_source.html#l00255">PPDVIEW_DEFAULT</a>, <a class="el" href="engine__types_8h_source.html#l03411">ShaderProgram::program</a>, <a class="el" href="engine__types_8h_source.html#l01289">Skeleton::q_left</a>, <a class="el" href="engine__types_8h_source.html#l01290">Skeleton::q_right</a>, <a class="el" href="engine__types_8h_source.html#l03113">SceneData::reflection_probes</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="main_8c_source.html#l00297">RENDER_FENCE</a>, <a class="el" href="engine__types_8h_source.html#l00783">EditorSettings::render_framerate_target</a>, <a class="el" href="main_8c_source.html#l00077">RENDER_HEIGHT</a>, <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="main_8c_source.html#l00076">RENDER_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l01434">Light::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01294">Skeleton::right_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l00752">EditorSettings::rotation_axis</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="main_8c_source.html#l00075">SCREEN_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00074">SCREEN_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l00734">EditorSettings::selected_mn_id</a>, <a class="el" href="engine__types_8h_source.html#l03014">Player::skeleton</a>, <a class="el" href="main_8c_source.html#l00092">SSR_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00685">EditorSettings::TAA</a>, <a class="el" href="main_8c_source.html#l00096">TAA_FBO</a>, <a class="el" href="main_8c_source.html#l00255">TEXT_EBO</a>, <a class="el" href="main_8c_source.html#l00100">TEXT_FBO</a>, <a class="el" href="fonts_8c_source.html#l00016">TEXT_INDEX_COUNT</a>, <a class="el" href="main_8c_source.html#l00132">TEXT_SHADER</a>, <a class="el" href="main_8c_source.html#l00253">TEXT_VAO</a>, <a class="el" href="main_8c_source.html#l00254">TEXT_VBO</a>, <a class="el" href="ui_8h_source.html#l00028">Font::texture</a>, <a class="el" href="engine__types_8h_source.html#l00592">Framebuffer::texture</a>, <a class="el" href="engine__types_8h_source.html#l01989">LightmapData::texture_id</a>, <a class="el" href="main_8c_source.html#l00325">time</a>, <a class="el" href="engine__types_8h_source.html#l02337">MeshNode::translation</a>, <a class="el" href="render_8c_source.html#l01359">ui_element_count</a>, <a class="el" href="main_8c_source.html#l00133">UI_SHADER</a>, <a class="el" href="main_8c_source.html#l00257">UI_VAO</a>, <a class="el" href="engine__types_8h_source.html#l03418">ShaderProgram::uniforms</a>, <a class="el" href="engine__types_8h_source.html#l00596">Framebuffer::w</a>, <a class="el" href="main_8c_source.html#l00118">WIREFRAME_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00711">EditorSettings::wireframe_toggled</a>, <a class="el" href="main_8c_source.html#l00246">WIREFRAME_VAO</a>, and <a class="el" href="main_8c_source.html#l00245">WIREFRAME_VBO</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00493">main()</a>, and <a class="el" href="render_8c_source.html#l03057">render()</a>.</p>
-
-</div>
-</div>
-<a id="a113956a98f9b91e056b0814583712db5" name="a113956a98f9b91e056b0814583712db5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a113956a98f9b91e056b0814583712db5">&#9670;&#160;</a></span>render_mesh_aabbs_from_root()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void render_mesh_aabbs_from_root </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00517">517</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02450">Mesh::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02355">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02354">MeshNode::children</a>, <a class="el" href="engine__types_8h_source.html#l01169">DebugVertex::color</a>, <a class="el" href="main_8c_source.html#l00286">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00285">DEBUG_LINES</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, and <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, and <a class="el" href="physics_8c_source.html#l01601">update_physics_components()</a>.</p>
 
 </div>
 </div>
@@ -399,7 +591,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void render_to_cubemap_face </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_camera.html">Camera</a> *</td>          <td class="paramname"><span class="paramname"><em>rprobe_cam</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_camera">Camera</a> *</td>          <td class="paramname"><span class="paramname"><em>rprobe_cam</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -424,22 +616,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Uploads per-frame data to GPU and renders main render pass to a target FBO (omits Text, UI, and postprocessing that occurs after). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rprobe_cam</td><td>The <a class="el" href="engine__types_8h.html#struct_camera" title="The camera structure for players and entities.">Camera</a> to upload for the <a class="el" href="main_8c.html#ad62db15576e944f4328683234b350458">CAM_UBO</a>. </td></tr>
+    <tr><td class="paramname">render_fbo</td><td>The main target FBO. </td></tr>
+    <tr><td class="paramname">render_width</td><td>The width of the target FBO. </td></tr>
+    <tr><td class="paramname">probe_bake</td><td>If this is baking <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s. This flag controls if <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s are sampled so that there is no accumulation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This is used by the main pass and the <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a> cubemap rendering. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="render_8c_source.html#l02278">2278</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00020">mat3::a0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a2</a>, <a class="el" href="render_8c_source.html#l01725">array_offset</a>, <a class="el" href="engine__types_8h_source.html#l02899">DrawCommand::array_offset</a>, <a class="el" href="engine__types_8h_source.html#l01827">OBBGPU::axis_x</a>, <a class="el" href="engine__types_8h_source.html#l01829">OBBGPU::axis_y</a>, <a class="el" href="engine__types_8h_source.html#l01831">OBBGPU::axis_z</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b2</a>, <a class="el" href="engine__types_8h_source.html#l00686">EditorSettings::BLOOM</a>, <a class="el" href="main_8c_source.html#l00125">BLOOM_DOWNSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00099">BLOOM_PYRAMID</a>, <a class="el" href="main_8c_source.html#l00489">bloom_queries</a>, <a class="el" href="main_8c_source.html#l00111">BLOOM_SHADER</a>, <a class="el" href="main_8c_source.html#l00126">BLOOM_UPSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00098">BOKEH_FBO</a>, <a class="el" href="main_8c_source.html#l00110">BOKEH_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00123">BUFFER_FRAMES</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c2</a>, <a class="el" href="engine__types_8h_source.html#l01314">Camera::cam_data</a>, <a class="el" href="main_8c_source.html#l00136">CAM_UBO</a>, <a class="el" href="main_8c_source.html#l00337">cam_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00338">cam_ubo_ptr</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00050">OBB::center</a>, <a class="el" href="engine__types_8h_source.html#l01825">OBBGPU::center</a>, <a class="el" href="main_8c_source.html#l00097">COC_FBO</a>, <a class="el" href="main_8c_source.html#l00109">COC_SHADER</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="render_8c_source.html#l01132">create_and_sort_draw_commands()</a>, <a class="el" href="main_8c_source.html#l00120">CULL_CLUSTERS_SHADER</a>, <a class="el" href="main_8c_source.html#l00121">CULL_DRAW_CALLS_SHADER</a>, <a class="el" href="main_8c_source.html#l00483">cull_queries</a>, <a class="el" href="render_8c_source.html#l00022">cur_history</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00490">current_query_frame</a>, <a class="el" href="main_8c_source.html#l00279">DEPTH_DOWNSAMPLE_FBO</a>, <a class="el" href="main_8c_source.html#l00134">DEPTH_DOWNSAMPLE_SHADER</a>, <a class="el" href="main_8c_source.html#l00116">DEPTH_PRE_PASS_SHADER</a>, <a class="el" href="main_8c_source.html#l00117">DEPTH_PRE_PASS_SHADER_MSAA</a>, <a class="el" href="engine__types_8h_source.html#l00594">Framebuffer::depth_texture</a>, <a class="el" href="render_8c_source.html#l02231">determine_closest_rprobes()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="main_8c_source.html#l00329">DIRECTIONAL_LIGHT_COUNT</a>, <a class="el" href="engine__types_8h_source.html#l00683">EditorSettings::DOF</a>, <a class="el" href="engine__types_8h_source.html#l00706">EditorSettings::DOF_focal_length</a>, <a class="el" href="engine__types_8h_source.html#l00705">EditorSettings::DOF_fstop</a>, <a class="el" href="main_8c_source.html#l00081">DOF_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00708">EditorSettings::DOF_max_blur_radius</a>, <a class="el" href="main_8c_source.html#l00485">dof_queries</a>, <a class="el" href="engine__types_8h_source.html#l00707">EditorSettings::DOF_sensor_height</a>, <a class="el" href="main_8c_source.html#l00080">DOF_WIDTH</a>, <a class="el" href="render_8c_source.html#l01836">draw_arrays_elements()</a>, <a class="el" href="render_8c_source.html#l01712">draw_call_count</a>, <a class="el" href="main_8c_source.html#l00264">draw_command_count</a>, <a class="el" href="render_8c_source.html#l01711">draw_command_counts</a>, <a class="el" href="render_8c_source.html#l01710">draw_command_offsets</a>, <a class="el" href="main_8c_source.html#l00263">DRAW_COMMANDS</a>, <a class="el" href="main_8c_source.html#l00393">draw_dirty</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l02900">DrawCommand::element_offset</a>, <a class="el" href="render_8c_source.html#l01727">element_offset</a>, <a class="el" href="main_8c_source.html#l00123">ELEMENTS_PREFIX_SHADER</a>, <a class="el" href="types_8h_source.html#l00051">OBB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01833">OBBGPU::extents</a>, <a class="el" href="engine__types_8h_source.html#l00591">Framebuffer::fbo</a>, <a class="el" href="main_8c_source.html#l00313">FOCAL_DISTANCE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00693">EditorSettings::FULL_GBUFFER</a>, <a class="el" href="engine__types_8h_source.html#l02874">DrawCommand::fwd_shader</a>, <a class="el" href="engine__types_8h_source.html#l00524">GALBEDO</a>, <a class="el" href="main_8c_source.html#l00090">GBUFFER_FBO</a>, <a class="el" href="main_8c_source.html#l00484">gbuffer_queries</a>, <a class="el" href="main_8c_source.html#l00091">GBUFFER_RESOLVE_FBO</a>, <a class="el" href="engine__types_8h_source.html#l02873">DrawCommand::gbuffer_shader</a>, <a class="el" href="render_8c_source.html#l00942">get_view_planes()</a>, <a class="el" href="engine__types_8h_source.html#l00524">GEXTRA</a>, <a class="el" href="main_8c_source.html#l00167">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l00524">GNORMAL</a>, <a class="el" href="engine__types_8h_source.html#l00524">GPOMDEPTH</a>, <a class="el" href="engine__types_8h_source.html#l00168">GRID_X</a>, <a class="el" href="engine__types_8h_source.html#l00169">GRID_Y</a>, <a class="el" href="engine__types_8h_source.html#l00170">GRID_Z</a>, <a class="el" href="engine__types_8h_source.html#l00524">GVEL</a>, <a class="el" href="engine__types_8h_source.html#l00596">Framebuffer::h</a>, <a class="el" href="engine__types_8h_source.html#l00558">GLTexture::i</a>, <a class="el" href="main_8c_source.html#l00168">INDIRECT_ARRAYS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00169">INDIRECT_ARRAYS_COMMAND_BUFFER_OUT</a>, <a class="el" href="main_8c_source.html#l00170">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00171">INDIRECT_ELEMENTS_COMMAND_BUFFER_OUT</a>, <a class="el" href="main_8c_source.html#l00122">INDIRECT_PREFIX_SHADER</a>, <a class="el" href="render_8c_source.html#l01713">instance_offset</a>, <a class="el" href="main_8c_source.html#l00242">INSTANCE_VBO</a>, <a class="el" href="main_8c_source.html#l00359">instance_vbo_ptr</a>, <a class="el" href="main_8c_source.html#l00182">JITTER_OFFSET</a>, <a class="el" href="main_8c_source.html#l00328">LIGHT_CAM</a>, <a class="el" href="main_8c_source.html#l00138">LIGHT_CAM_UBO</a>, <a class="el" href="main_8c_source.html#l00340">light_cam_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00341">light_cam_ubo_ptr</a>, <a class="el" href="engine__types_8h_source.html#l03115">SceneData::lighting_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03362">Globals::lights_dirty</a>, <a class="el" href="engine__types_8h_source.html#l01826">OBBGPU::loaded</a>, <a class="el" href="engine__types_8h_source.html#l03128">SceneData::LOADED_LIGHTING_PV</a>, <a class="el" href="engine__types_8h_source.html#l03129">SceneData::LOADED_LIGHTING_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l03399">Uniform::location</a>, <a class="el" href="engine__types_8h_source.html#l00181">LPV_SLOTS</a>, <a class="el" href="main_8c_source.html#l00240">MAIN_EBO</a>, <a class="el" href="main_8c_source.html#l00087">MAIN_FBO</a>, <a class="el" href="main_8c_source.html#l00088">MAIN_RESOLVE_FBO</a>, <a class="el" href="main_8c_source.html#l00241">MAIN_VAO</a>, <a class="el" href="main_8c_source.html#l00239">MAIN_VBO</a>, <a class="el" href="engine__types_8h_source.html#l00172">MAX_LIGHTS_PER_CLUSTER</a>, <a class="el" href="render_8c_source.html#l01721">mesh_node_data_gpu</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l00687">EditorSettings::MSAA</a>, <a class="el" href="engine__types_8h_source.html#l03036">ProbeVolume::obb</a>, <a class="el" href="engine__types_8h_source.html#l01846">ProbeVolumeUBO::obb</a>, <a class="el" href="engine__types_8h_source.html#l02876">DrawCommand::opaque</a>, <a class="el" href="main_8c_source.html#l00480">pl_queries</a>, <a class="el" href="main_8c_source.html#l00141">PROBE_VOLUME_UBO</a>, <a class="el" href="main_8c_source.html#l00346">probe_volume_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00347">probe_volume_ubo_ptr</a>, <a class="el" href="engine__types_8h_source.html#l03411">ShaderProgram::program</a>, <a class="el" href="engine__types_8h_source.html#l01210">CamData::proj</a>, <a class="el" href="engine__types_8h_source.html#l01196">ShadowmapUBO::proj</a>, <a class="el" href="engine__types_8h_source.html#l03064">LPV::pv_id</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="main_8c_source.html#l00077">RENDER_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00482">render_queries</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="main_8c_source.html#l00076">RENDER_WIDTH</a>, <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>, <a class="el" href="main_8c_source.html#l00139">RPROBE_UBO</a>, <a class="el" href="render_8c_source.html#l02229">RPROBE_UBO_DATA</a>, <a class="el" href="main_8c_source.html#l00343">rprobe_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00344">rprobe_ubo_ptr</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="main_8c_source.html#l00089">SHADOW_MAP_FBO</a>, <a class="el" href="main_8c_source.html#l00115">SHADOW_MAP_SHADER</a>, <a class="el" href="render_8c_source.html#l02276">SHADOWMAP_FRAME_DATA</a>, <a class="el" href="main_8c_source.html#l00127">SKY_SHADER</a>, <a class="el" href="main_8c_source.html#l00308">SKY_VAO</a>, <a class="el" href="main_8c_source.html#l00309">SKY_VBO</a>, <a class="el" href="main_8c_source.html#l00307">SKYBOX</a>, <a class="el" href="main_8c_source.html#l00481">sm_queries</a>, <a class="el" href="engine__types_8h_source.html#l00681">EditorSettings::SSAO</a>, <a class="el" href="main_8c_source.html#l00095">SSAO_BLUR_FBO</a>, <a class="el" href="main_8c_source.html#l00105">SSAO_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00094">SSAO_FBO</a>, <a class="el" href="main_8c_source.html#l00085">SSAO_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00177">SSAO_NOISE_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00486">ssao_queries</a>, <a class="el" href="main_8c_source.html#l00104">SSAO_SHADER</a>, <a class="el" href="main_8c_source.html#l00084">SSAO_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l00682">EditorSettings::SSR</a>, <a class="el" href="main_8c_source.html#l00092">SSR_FBO</a>, <a class="el" href="main_8c_source.html#l00083">SSR_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00108">SSR_HISTORY_SHADER</a>, <a class="el" href="main_8c_source.html#l00488">ssr_queries</a>, <a class="el" href="main_8c_source.html#l00106">SSR_SHADER</a>, <a class="el" href="main_8c_source.html#l00082">SSR_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l02877">DrawCommand::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l00685">EditorSettings::TAA</a>, <a class="el" href="main_8c_source.html#l00096">TAA_FBO</a>, <a class="el" href="main_8c_source.html#l00487">taa_queries</a>, <a class="el" href="engine__types_8h_source.html#l00592">Framebuffer::texture</a>, <a class="el" href="main_8c_source.html#l00325">time</a>, <a class="el" href="main_8c_source.html#l00478">time_since_last_render</a>, <a class="el" href="render_8c_source.html#l01729">transform_count</a>, <a class="el" href="engine__types_8h_source.html#l03418">ShaderProgram::uniforms</a>, <a class="el" href="render_8c_source.html#l00810">update_scene_nodes()</a>, <a class="el" href="render_8c_source.html#l00831">update_skin_matrices()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>, <a class="el" href="render_8c_source.html#l00763">upload_joint_matrices()</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, <a class="el" href="engine__types_8h_source.html#l01212">CamData::view</a>, <a class="el" href="engine__types_8h_source.html#l01197">ShadowmapUBO::view</a>, <a class="el" href="engine__types_8h_source.html#l00046">VIEW_FAR</a>, <a class="el" href="engine__types_8h_source.html#l00045">VIEW_NEAR</a>, <a class="el" href="engine__types_8h_source.html#l00596">Framebuffer::w</a>, <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00020">mat3::a0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a2</a>, <a class="el" href="render_8c_source.html#l01725">array_offset</a>, <a class="el" href="engine__types_8h_source.html#l02934">DrawCommand::array_offset</a>, <a class="el" href="engine__types_8h_source.html#l01857">OBBGPU::axis_x</a>, <a class="el" href="engine__types_8h_source.html#l01859">OBBGPU::axis_y</a>, <a class="el" href="engine__types_8h_source.html#l01861">OBBGPU::axis_z</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b2</a>, <a class="el" href="engine__types_8h_source.html#l00712">EditorSettings::BLOOM</a>, <a class="el" href="main_8c_source.html#l00120">BLOOM_DOWNSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00097">BLOOM_PYRAMID</a>, <a class="el" href="main_8c_source.html#l00479">bloom_queries</a>, <a class="el" href="main_8c_source.html#l00107">BLOOM_SHADER</a>, <a class="el" href="main_8c_source.html#l00121">BLOOM_UPSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00096">BOKEH_FBO</a>, <a class="el" href="main_8c_source.html#l00106">BOKEH_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00148">BUFFER_FRAMES</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c2</a>, <a class="el" href="engine__types_8h_source.html#l01343">Camera::cam_data</a>, <a class="el" href="main_8c_source.html#l00130">CAM_UBO</a>, <a class="el" href="main_8c_source.html#l00327">cam_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00328">cam_ubo_ptr</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00050">OBB::center</a>, <a class="el" href="engine__types_8h_source.html#l01855">OBBGPU::center</a>, <a class="el" href="main_8c_source.html#l00095">COC_FBO</a>, <a class="el" href="main_8c_source.html#l00105">COC_SHADER</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="render_8c_source.html#l01132">create_and_sort_draw_commands()</a>, <a class="el" href="main_8c_source.html#l00115">CULL_CLUSTERS_SHADER</a>, <a class="el" href="main_8c_source.html#l00116">CULL_DRAW_CALLS_SHADER</a>, <a class="el" href="main_8c_source.html#l00473">cull_queries</a>, <a class="el" href="render_8c_source.html#l00022">cur_history</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00480">current_query_frame</a>, <a class="el" href="main_8c_source.html#l00270">DEPTH_DOWNSAMPLE_FBO</a>, <a class="el" href="main_8c_source.html#l00128">DEPTH_DOWNSAMPLE_SHADER</a>, <a class="el" href="main_8c_source.html#l00111">DEPTH_PRE_PASS_SHADER</a>, <a class="el" href="main_8c_source.html#l00112">DEPTH_PRE_PASS_SHADER_MSAA</a>, <a class="el" href="engine__types_8h_source.html#l00619">Framebuffer::depth_texture</a>, <a class="el" href="render_8c_source.html#l02231">determine_closest_rprobes()</a>, <a class="el" href="render_8c_source.html#l00658">determine_light_visibility_per_mesh()</a>, <a class="el" href="main_8c_source.html#l00319">DIRECTIONAL_LIGHT_COUNT</a>, <a class="el" href="engine__types_8h_source.html#l00709">EditorSettings::DOF</a>, <a class="el" href="engine__types_8h_source.html#l00732">EditorSettings::DOF_focal_length</a>, <a class="el" href="engine__types_8h_source.html#l00731">EditorSettings::DOF_fstop</a>, <a class="el" href="main_8c_source.html#l00079">DOF_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00734">EditorSettings::DOF_max_blur_radius</a>, <a class="el" href="main_8c_source.html#l00475">dof_queries</a>, <a class="el" href="engine__types_8h_source.html#l00733">EditorSettings::DOF_sensor_height</a>, <a class="el" href="main_8c_source.html#l00078">DOF_WIDTH</a>, <a class="el" href="render_8c_source.html#l01836">draw_arrays_elements()</a>, <a class="el" href="render_8c_source.html#l01712">draw_call_count</a>, <a class="el" href="main_8c_source.html#l00255">draw_command_count</a>, <a class="el" href="render_8c_source.html#l01711">draw_command_counts</a>, <a class="el" href="render_8c_source.html#l01710">draw_command_offsets</a>, <a class="el" href="main_8c_source.html#l00254">DRAW_COMMANDS</a>, <a class="el" href="main_8c_source.html#l00383">draw_dirty</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l02935">DrawCommand::element_offset</a>, <a class="el" href="render_8c_source.html#l01727">element_offset</a>, <a class="el" href="main_8c_source.html#l00118">ELEMENTS_PREFIX_SHADER</a>, <a class="el" href="types_8h_source.html#l00051">OBB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01863">OBBGPU::extents</a>, <a class="el" href="engine__types_8h_source.html#l00616">Framebuffer::fbo</a>, <a class="el" href="main_8c_source.html#l00303">FOCAL_DISTANCE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00719">EditorSettings::FULL_GBUFFER</a>, <a class="el" href="engine__types_8h_source.html#l02909">DrawCommand::fwd_shader</a>, <a class="el" href="engine__types_8h_source.html#l00549">GALBEDO</a>, <a class="el" href="main_8c_source.html#l00088">GBUFFER_FBO</a>, <a class="el" href="main_8c_source.html#l00474">gbuffer_queries</a>, <a class="el" href="main_8c_source.html#l00089">GBUFFER_RESOLVE_FBO</a>, <a class="el" href="engine__types_8h_source.html#l02908">DrawCommand::gbuffer_shader</a>, <a class="el" href="render_8c_source.html#l00942">get_view_planes()</a>, <a class="el" href="engine__types_8h_source.html#l00549">GEXTRA</a>, <a class="el" href="main_8c_source.html#l00161">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l00549">GNORMAL</a>, <a class="el" href="engine__types_8h_source.html#l00549">GPOMDEPTH</a>, <a class="el" href="engine__types_8h_source.html#l00193">GRID_X</a>, <a class="el" href="engine__types_8h_source.html#l00194">GRID_Y</a>, <a class="el" href="engine__types_8h_source.html#l00195">GRID_Z</a>, <a class="el" href="engine__types_8h_source.html#l00549">GVEL</a>, <a class="el" href="engine__types_8h_source.html#l00621">Framebuffer::h</a>, <a class="el" href="engine__types_8h_source.html#l00583">GLTexture::i</a>, <a class="el" href="main_8c_source.html#l00162">INDIRECT_ARRAYS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00163">INDIRECT_ARRAYS_COMMAND_BUFFER_OUT</a>, <a class="el" href="main_8c_source.html#l00164">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00165">INDIRECT_ELEMENTS_COMMAND_BUFFER_OUT</a>, <a class="el" href="main_8c_source.html#l00117">INDIRECT_PREFIX_SHADER</a>, <a class="el" href="render_8c_source.html#l01713">instance_offset</a>, <a class="el" href="main_8c_source.html#l00234">INSTANCE_VBO</a>, <a class="el" href="main_8c_source.html#l00349">instance_vbo_ptr</a>, <a class="el" href="main_8c_source.html#l00176">JITTER_OFFSET</a>, <a class="el" href="main_8c_source.html#l00318">LIGHT_CAM</a>, <a class="el" href="main_8c_source.html#l00132">LIGHT_CAM_UBO</a>, <a class="el" href="main_8c_source.html#l00330">light_cam_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00331">light_cam_ubo_ptr</a>, <a class="el" href="engine__types_8h_source.html#l03150">SceneData::lighting_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03397">Globals::lights_dirty</a>, <a class="el" href="engine__types_8h_source.html#l01856">OBBGPU::loaded</a>, <a class="el" href="engine__types_8h_source.html#l03163">SceneData::LOADED_LIGHTING_PV</a>, <a class="el" href="engine__types_8h_source.html#l03164">SceneData::LOADED_LIGHTING_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l03434">Uniform::location</a>, <a class="el" href="engine__types_8h_source.html#l00206">LPV_SLOTS</a>, <a class="el" href="main_8c_source.html#l00232">MAIN_EBO</a>, <a class="el" href="main_8c_source.html#l00085">MAIN_FBO</a>, <a class="el" href="main_8c_source.html#l00086">MAIN_RESOLVE_FBO</a>, <a class="el" href="main_8c_source.html#l00233">MAIN_VAO</a>, <a class="el" href="main_8c_source.html#l00231">MAIN_VBO</a>, <a class="el" href="engine__types_8h_source.html#l00197">MAX_LIGHTS_PER_CLUSTER</a>, <a class="el" href="render_8c_source.html#l01721">mesh_node_data_gpu</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l00713">EditorSettings::MSAA</a>, <a class="el" href="engine__types_8h_source.html#l03071">ProbeVolume::obb</a>, <a class="el" href="engine__types_8h_source.html#l01876">ProbeVolumeUBO::obb</a>, <a class="el" href="engine__types_8h_source.html#l02911">DrawCommand::opaque</a>, <a class="el" href="main_8c_source.html#l00470">pl_queries</a>, <a class="el" href="main_8c_source.html#l00135">PROBE_VOLUME_UBO</a>, <a class="el" href="main_8c_source.html#l00336">probe_volume_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00337">probe_volume_ubo_ptr</a>, <a class="el" href="engine__types_8h_source.html#l03446">ShaderProgram::program</a>, <a class="el" href="engine__types_8h_source.html#l01239">CamData::proj</a>, <a class="el" href="engine__types_8h_source.html#l01225">ShadowmapUBO::proj</a>, <a class="el" href="engine__types_8h_source.html#l03099">LPV::pv_id</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, <a class="el" href="main_8c_source.html#l00075">RENDER_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00472">render_queries</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="main_8c_source.html#l00074">RENDER_WIDTH</a>, <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>, <a class="el" href="main_8c_source.html#l00133">RPROBE_UBO</a>, <a class="el" href="render_8c_source.html#l02229">RPROBE_UBO_DATA</a>, <a class="el" href="main_8c_source.html#l00333">rprobe_ubo_padded</a>, <a class="el" href="main_8c_source.html#l00334">rprobe_ubo_ptr</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="main_8c_source.html#l00087">SHADOW_MAP_FBO</a>, <a class="el" href="main_8c_source.html#l00110">SHADOW_MAP_SHADER</a>, <a class="el" href="render_8c_source.html#l02276">SHADOWMAP_FRAME_DATA</a>, <a class="el" href="main_8c_source.html#l00122">SKY_SHADER</a>, <a class="el" href="main_8c_source.html#l00298">SKY_VAO</a>, <a class="el" href="main_8c_source.html#l00299">SKY_VBO</a>, <a class="el" href="main_8c_source.html#l00297">SKYBOX</a>, <a class="el" href="main_8c_source.html#l00471">sm_queries</a>, <a class="el" href="engine__types_8h_source.html#l00707">EditorSettings::SSAO</a>, <a class="el" href="main_8c_source.html#l00093">SSAO_BLUR_FBO</a>, <a class="el" href="main_8c_source.html#l00101">SSAO_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00092">SSAO_FBO</a>, <a class="el" href="main_8c_source.html#l00083">SSAO_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00171">SSAO_NOISE_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00476">ssao_queries</a>, <a class="el" href="main_8c_source.html#l00100">SSAO_SHADER</a>, <a class="el" href="main_8c_source.html#l00082">SSAO_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l00708">EditorSettings::SSR</a>, <a class="el" href="main_8c_source.html#l00090">SSR_FBO</a>, <a class="el" href="main_8c_source.html#l00081">SSR_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00104">SSR_HISTORY_SHADER</a>, <a class="el" href="main_8c_source.html#l00478">ssr_queries</a>, <a class="el" href="main_8c_source.html#l00102">SSR_SHADER</a>, <a class="el" href="main_8c_source.html#l00080">SSR_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l02912">DrawCommand::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l00711">EditorSettings::TAA</a>, <a class="el" href="main_8c_source.html#l00094">TAA_FBO</a>, <a class="el" href="main_8c_source.html#l00477">taa_queries</a>, <a class="el" href="engine__types_8h_source.html#l00617">Framebuffer::texture</a>, <a class="el" href="main_8c_source.html#l00315">time</a>, <a class="el" href="main_8c_source.html#l00468">time_since_last_render</a>, <a class="el" href="render_8c_source.html#l01729">transform_count</a>, <a class="el" href="engine__types_8h_source.html#l03453">ShaderProgram::uniforms</a>, <a class="el" href="render_8c_source.html#l00810">update_scene_nodes()</a>, <a class="el" href="render_8c_source.html#l00831">update_skin_matrices()</a>, <a class="el" href="render_8c_source.html#l01732">upload_instance_data()</a>, <a class="el" href="render_8c_source.html#l01996">upload_instances()</a>, <a class="el" href="render_8c_source.html#l00763">upload_joint_matrices()</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, <a class="el" href="engine__types_8h_source.html#l01241">CamData::view</a>, <a class="el" href="engine__types_8h_source.html#l01226">ShadowmapUBO::view</a>, <a class="el" href="engine__types_8h_source.html#l00065">VIEW_FAR</a>, <a class="el" href="engine__types_8h_source.html#l00064">VIEW_NEAR</a>, <a class="el" href="engine__types_8h_source.html#l00621">Framebuffer::w</a>, <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
 
 </div>
 </div>
-<a id="a8e6a23f1dffd4db5767d549f45362f82" name="a8e6a23f1dffd4db5767d549f45362f82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e6a23f1dffd4db5767d549f45362f82">&#9670;&#160;</a></span>unbind_baking_ssbos()</h2>
+<a id="a7d9edd8b0a8d0d2f737eb5ee0b0a5040" name="a7d9edd8b0a8d0d2f737eb5ee0b0a5040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9edd8b0a8d0d2f737eb5ee0b0a5040">&#9670;&#160;</a></span>render()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unbind_baking_ssbos </td>
+          <td class="memname">void render </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -447,57 +651,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00042">42</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
+<p>The main render pass. </p>
+<p>Calls <a class="el" href="#adeb8ce26b716208524a0e4f54f2d6efc" title="Uploads per-frame data to GPU and renders main render pass to a target FBO (omits Text,...">render_to_cubemap_face()</a> and then renders wireframes, text, ui, and postprocessing. </p>
 
-<p class="reference">References <a class="el" href="main_8c_source.html#l00167">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00168">INDIRECT_ARRAYS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00170">INDIRECT_ELEMENTS_COMMAND_BUFFER</a>, <a class="el" href="main_8c_source.html#l00172">INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00162">JOINT_SSBO</a>, <a class="el" href="main_8c_source.html#l00161">RPROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00173">TEXT_BOX_SSBO</a>, and <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l03057">3057</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01305">bake_audio_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader()</a>, and <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00350">ReflectionProbe::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="engine__types_8h_source.html#l00717">EditorSettings::ACES</a>, <a class="el" href="animation_8c_source.html#l00010">animation_length()</a>, <a class="el" href="main_8c_source.html#l00062">AUDIO_EMITTERS</a>, <a class="el" href="engine__types_8h_source.html#l00688">EditorSettings::audio_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::audio_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l00712">EditorSettings::BLOOM</a>, <a class="el" href="main_8c_source.html#l00097">BLOOM_PYRAMID</a>, <a class="el" href="main_8c_source.html#l00096">BOKEH_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00148">BUFFER_FRAMES</a>, <a class="el" href="engine__types_8h_source.html#l03142">SceneData::bvh_nodes</a>, <a class="el" href="main_8c_source.html#l00317">cam</a>, <a class="el" href="engine__types_8h_source.html#l00352">ReflectionProbe::capture_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="main_8c_source.html#l00095">COC_FBO</a>, <a class="el" href="engine__types_8h_source.html#l01198">DebugVertex::color</a>, <a class="el" href="main_8c_source.html#l00141">COLOR_GRADE_LUT</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="render_8c_source.html#l00022">cur_history</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00480">current_query_frame</a>, <a class="el" href="main_8c_source.html#l00277">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00276">DEBUG_LINES</a>, <a class="el" href="init_8h_source.html#l00347">DEBUG_LINES_MAX</a>, <a class="el" href="engine__types_8h_source.html#l00619">Framebuffer::depth_texture</a>, <a class="el" href="engine__types_8h_source.html#l00709">EditorSettings::DOF</a>, <a class="el" href="engine__types_8h_source.html#l00732">EditorSettings::DOF_focal_length</a>, <a class="el" href="engine__types_8h_source.html#l00731">EditorSettings::DOF_fstop</a>, <a class="el" href="engine__types_8h_source.html#l00734">EditorSettings::DOF_max_blur_radius</a>, <a class="el" href="engine__types_8h_source.html#l00733">EditorSettings::DOF_sensor_height</a>, <a class="el" href="engine__types_8h_source.html#l00141">EDITOR_APORTAL_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00137">EDITOR_AUDIO_EMITTER_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00133">EDITOR_LIGHT_SIZE</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="main_8c_source.html#l00172">FBM_TEXTURE</a>, <a class="el" href="engine__types_8h_source.html#l00616">Framebuffer::fbo</a>, <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="main_8c_source.html#l00295">frame_time</a>, <a class="el" href="main_8c_source.html#l00089">GBUFFER_RESOLVE_FBO</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="render_8c_source.html#l01463">GPU_upload_ui_elements()</a>, <a class="el" href="engine__types_8h_source.html#l00549">GVEL</a>, <a class="el" href="engine__types_8h_source.html#l00621">Framebuffer::h</a>, <a class="el" href="main_8c_source.html#l00204">HISTORY_TEXTURE</a>, <a class="el" href="engine__types_8h_source.html#l02496">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l00583">GLTexture::i</a>, <a class="el" href="engine__types_8h_source.html#l02530">Image::i</a>, <a class="el" href="engine__types_8h_source.html#l03416">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l01322">Skeleton::left_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l03150">SceneData::lighting_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l03171">SceneData::lightmap_data</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03434">Uniform::location</a>, <a class="el" href="engine__types_8h_source.html#l00716">EditorSettings::LUT</a>, <a class="el" href="main_8c_source.html#l00085">MAIN_FBO</a>, <a class="el" href="main_8c_source.html#l00469">main_queries</a>, <a class="el" href="main_8c_source.html#l00086">MAIN_RESOLVE_FBO</a>, <a class="el" href="camera_8c_source.html#l00072">make_ortho()</a>, <a class="el" href="render_8c_source.html#l00021">master_frame</a>, <a class="el" href="engine__types_8h_source.html#l00030">MAX_AUDIO_EMITTERS</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="engine__types_8h_source.html#l00710">EditorSettings::MBLUR</a>, <a class="el" href="engine__types_8h_source.html#l03050">Player::mesh</a>, <a class="el" href="engine__types_8h_source.html#l00682">EditorSettings::mesh_node_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l00713">EditorSettings::MSAA</a>, <a class="el" href="engine__types_8h_source.html#l00715">EditorSettings::NOISE</a>, <a class="el" href="engine__types_8h_source.html#l01320">Skeleton::p_left</a>, <a class="el" href="engine__types_8h_source.html#l01321">Skeleton::p_right</a>, <a class="el" href="utilities_8c_source.html#l00139">perm()</a>, <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, <a class="el" href="main_8c_source.html#l00282">player</a>, <a class="el" href="engine__types_8h_source.html#l00534">AudioEmitter::pos</a>, <a class="el" href="engine__types_8h_source.html#l00393">AudioPortal::pos</a>, <a class="el" href="engine__types_8h_source.html#l01197">DebugVertex::pos</a>, <a class="el" href="engine__types_8h_source.html#l01457">Light::pos</a>, <a class="el" href="main_8c_source.html#l00114">POSTPROCESS_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00272">PP_ACES</a>, <a class="el" href="engine__types_8h_source.html#l00272">PP_BLOOM</a>, <a class="el" href="engine__types_8h_source.html#l00272">PP_DOF</a>, <a class="el" href="engine__types_8h_source.html#l00672">EditorSettings::pp_dview</a>, <a class="el" href="engine__types_8h_source.html#l00272">PP_LUT</a>, <a class="el" href="engine__types_8h_source.html#l00272">PP_MBLUR</a>, <a class="el" href="engine__types_8h_source.html#l00272">PP_NOISE</a>, <a class="el" href="main_8c_source.html#l00267">PP_SHADER_VERSIONS</a>, <a class="el" href="engine__types_8h_source.html#l00280">PPDVIEW_DEFAULT</a>, <a class="el" href="engine__types_8h_source.html#l03446">ShaderProgram::program</a>, <a class="el" href="engine__types_8h_source.html#l01318">Skeleton::q_left</a>, <a class="el" href="engine__types_8h_source.html#l01319">Skeleton::q_right</a>, <a class="el" href="engine__types_8h_source.html#l03148">SceneData::reflection_probes</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="main_8c_source.html#l00288">RENDER_FENCE</a>, <a class="el" href="engine__types_8h_source.html#l00809">EditorSettings::render_framerate_target</a>, <a class="el" href="main_8c_source.html#l00075">RENDER_HEIGHT</a>, <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="main_8c_source.html#l00074">RENDER_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l01463">Light::rgb</a>, <a class="el" href="engine__types_8h_source.html#l01323">Skeleton::right_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l00778">EditorSettings::rotation_axis</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="main_8c_source.html#l00073">SCREEN_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00072">SCREEN_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l00760">EditorSettings::selected_mn_id</a>, <a class="el" href="engine__types_8h_source.html#l03049">Player::skeleton</a>, <a class="el" href="main_8c_source.html#l00090">SSR_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00711">EditorSettings::TAA</a>, <a class="el" href="main_8c_source.html#l00094">TAA_FBO</a>, <a class="el" href="main_8c_source.html#l00247">TEXT_EBO</a>, <a class="el" href="main_8c_source.html#l00098">TEXT_FBO</a>, <a class="el" href="fonts_8c_source.html#l00016">TEXT_INDEX_COUNT</a>, <a class="el" href="main_8c_source.html#l00126">TEXT_SHADER</a>, <a class="el" href="main_8c_source.html#l00245">TEXT_VAO</a>, <a class="el" href="main_8c_source.html#l00246">TEXT_VBO</a>, <a class="el" href="ui_8h_source.html#l00077">Font::texture</a>, <a class="el" href="engine__types_8h_source.html#l00617">Framebuffer::texture</a>, <a class="el" href="engine__types_8h_source.html#l02019">LightmapData::texture_id</a>, <a class="el" href="main_8c_source.html#l00315">time</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::translation</a>, <a class="el" href="render_8c_source.html#l01359">ui_element_count</a>, <a class="el" href="main_8c_source.html#l00127">UI_SHADER</a>, <a class="el" href="main_8c_source.html#l00249">UI_VAO</a>, <a class="el" href="engine__types_8h_source.html#l03453">ShaderProgram::uniforms</a>, <a class="el" href="engine__types_8h_source.html#l00621">Framebuffer::w</a>, <a class="el" href="main_8c_source.html#l00113">WIREFRAME_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00737">EditorSettings::wireframe_toggled</a>, <a class="el" href="main_8c_source.html#l00238">WIREFRAME_VAO</a>, and <a class="el" href="main_8c_source.html#l00237">WIREFRAME_VBO</a>.</p>
 
-</div>
-</div>
-<a id="a359fb009557de2444b93a70c1f7109f7" name="a359fb009557de2444b93a70c1f7109f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a359fb009557de2444b93a70c1f7109f7">&#9670;&#160;</a></span>upload_lights()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void upload_lights </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00634">634</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="render_8c_source.html#l00600">gpu_light_count</a>, <a class="el" href="render_8c_source.html#l00599">GPU_LIGHTS</a>, <a class="el" href="main_8c_source.html#l00151">LIGHT_SSBO</a>, <a class="el" href="main_8c_source.html#l00350">light_ssbo_ptr</a>, <a class="el" href="main_8c_source.html#l00349">light_ssbo_size</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, and <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>, and <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>.</p>
-
-</div>
-</div>
-<a id="a9fa6892080a2c475574cd02206fd6e49" name="a9fa6892080a2c475574cd02206fd6e49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fa6892080a2c475574cd02206fd6e49">&#9670;&#160;</a></span>upload_material_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void upload_material_data </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l00854">854</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01557">Material::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01601">MaterialGPU::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01609">MaterialGPU::albedo_handle</a>, <a class="el" href="engine__types_8h_source.html#l01575">Material::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01619">MaterialGPU::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01574">Material::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l01618">MaterialGPU::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l01593">MaterialGPU::ambient</a>, <a class="el" href="engine__types_8h_source.html#l01553">Material::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01616">MaterialGPU::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01611">MaterialGPU::arm_handle</a>, <a class="el" href="engine__types_8h_source.html#l01568">Material::arm_tex</a>, <a class="el" href="engine__types_8h_source.html#l00068">AUDIO_NUM_BANDS</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00199">DEFAULT_ARM</a>, <a class="el" href="main_8c_source.html#l00197">DEFAULT_DIFFUSE</a>, <a class="el" href="main_8c_source.html#l00200">DEFAULT_EMISSIVE</a>, <a class="el" href="main_8c_source.html#l00198">DEFAULT_NORMAL</a>, <a class="el" href="engine__types_8h_source.html#l01595">MaterialGPU::diffuse</a>, <a class="el" href="engine__types_8h_source.html#l01565">Material::diffuse_tex</a>, <a class="el" href="engine__types_8h_source.html#l01578">Material::double_sided</a>, <a class="el" href="engine__types_8h_source.html#l01620">MaterialGPU::double_sided</a>, <a class="el" href="engine__types_8h_source.html#l01599">MaterialGPU::emissive</a>, <a class="el" href="engine__types_8h_source.html#l01612">MaterialGPU::emissive_handle</a>, <a class="el" href="engine__types_8h_source.html#l01554">Material::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01621">MaterialGPU::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01567">Material::emissive_tex</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02496">Image::handle</a>, <a class="el" href="engine__types_8h_source.html#l03381">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l01547">Material::ka</a>, <a class="el" href="engine__types_8h_source.html#l01548">Material::kd</a>, <a class="el" href="engine__types_8h_source.html#l01550">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l01549">Material::ks</a>, <a class="el" href="main_8c_source.html#l00195">MATERIAL_DATA</a>, <a class="el" href="main_8c_source.html#l00153">MATERIAL_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l03380">Globals::materials</a>, <a class="el" href="engine__types_8h_source.html#l01635">MaterialData::materials</a>, <a class="el" href="engine__types_8h_source.html#l01551">Material::metallic</a>, <a class="el" href="engine__types_8h_source.html#l01614">MaterialGPU::metallic</a>, <a class="el" href="engine__types_8h_source.html#l01610">MaterialGPU::normal_handle</a>, <a class="el" href="engine__types_8h_source.html#l01573">Material::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01617">MaterialGPU::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01566">Material::normal_tex</a>, <a class="el" href="engine__types_8h_source.html#l01580">Material::override_arm</a>, <a class="el" href="engine__types_8h_source.html#l01552">Material::roughness</a>, <a class="el" href="engine__types_8h_source.html#l01615">MaterialGPU::roughness</a>, <a class="el" href="engine__types_8h_source.html#l01558">Material::scattering_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01605">MaterialGPU::scattering_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l01597">MaterialGPU::specular</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="#a7bd9e50e940a116ffe45d5cd3414f085">bind_static_shader()</a>, <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="editor_8c_source.html#l05690">render_material_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00483">main()</a>, and <a class="el" href="render_8c_source.html#l03057">render()</a>.</p>
 
 </div>
 </div>

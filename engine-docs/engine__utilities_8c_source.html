@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -18,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -117,14 +121,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('engine__utilit
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="engine__types_8h.html">core/engine_types.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="engine__utilities_8c.html#acff887ccd26f80b7304db59e6a803259">    5</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="engine__utilities_8c.html#acff887ccd26f80b7304db59e6a803259">mn_inside_of_root_tree</a>(<a class="code hl_struct" href="struct_mesh_node.html">MeshNode</a> * mns, <span class="keywordtype">int</span> check_id, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="engine__utilities_8c.html#acff887ccd26f80b7304db59e6a803259">    5</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="engine__utilities_8c.html#acff887ccd26f80b7304db59e6a803259">mn_inside_of_root_tree</a>(<a class="code hl_struct" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> * mns, <span class="keywordtype">int</span> check_id, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == -1 || check_id == -1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_struct" href="struct_mesh_node.html">MeshNode</a> * mn = &amp;mns[id];</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">if</span> (mn-&gt;<a class="code hl_variable" href="struct_mesh_node.html#a1bdd13b13d6331d2fe520292a63e8672">id</a> == check_id) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mn-&gt;<a class="code hl_variable" href="struct_mesh_node.html#ac44cecf797eaedd61a44a610a95132be">child_count</a>; i++)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_struct" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> * mn = &amp;mns[id];</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">if</span> (mn-&gt;<a class="code hl_variable" href="engine__types_8h.html#a1bdd13b13d6331d2fe520292a63e8672">id</a> == check_id) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; mn-&gt;<a class="code hl_variable" href="engine__types_8h.html#ac44cecf797eaedd61a44a610a95132be">child_count</a>; i++)</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">bool</span> inside = <a class="code hl_function" href="engine__utilities_8c.html#acff887ccd26f80b7304db59e6a803259">mn_inside_of_root_tree</a>(mns, check_id, mn-&gt;<a class="code hl_variable" href="struct_mesh_node.html#a2c30498e928cc2cc11b005c6a278e60d">children</a>[i]);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">bool</span> inside = <a class="code hl_function" href="engine__utilities_8c.html#acff887ccd26f80b7304db59e6a803259">mn_inside_of_root_tree</a>(mns, check_id, mn-&gt;<a class="code hl_variable" href="engine__types_8h.html#a2c30498e928cc2cc11b005c6a278e60d">children</a>[i]);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">if</span> (inside == <span class="keyword">true</span>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -133,13 +137,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('engine__utilit
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="engine__utilities_8c.html#afb2df275055f9cc377952c9054915869">   19</a></span><a class="code hl_struct" href="struct_mesh_node.html">MeshNode</a> * <a class="code hl_function" href="engine__utilities_8c.html#afb2df275055f9cc377952c9054915869">get_root_node</a>(<a class="code hl_struct" href="struct_mesh_node.html">MeshNode</a> * mns, <a class="code hl_struct" href="struct_mesh_node.html">MeshNode</a> * mn)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="engine__utilities_8c.html#afb2df275055f9cc377952c9054915869">   19</a></span><a class="code hl_struct" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> * <a class="code hl_function" href="engine__utilities_8c.html#afb2df275055f9cc377952c9054915869">get_root_node</a>(<a class="code hl_struct" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> * mns, <a class="code hl_struct" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> * mn)</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span> (mn-&gt;<a class="code hl_variable" href="struct_mesh_node.html#aa7506a4c6e7c96ccce6782d7d6cd875e">parent</a> != -1)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span> (mn-&gt;<a class="code hl_variable" href="engine__types_8h.html#aa7506a4c6e7c96ccce6782d7d6cd875e">parent</a> != -1)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="engine__utilities_8c.html#afb2df275055f9cc377952c9054915869">get_root_node</a>(mns, &amp;mns[mn-&gt;<a class="code hl_variable" href="struct_mesh_node.html#aa7506a4c6e7c96ccce6782d7d6cd875e">parent</a>]);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="engine__utilities_8c.html#afb2df275055f9cc377952c9054915869">get_root_node</a>(mns, &amp;mns[mn-&gt;<a class="code hl_variable" href="engine__types_8h.html#aa7506a4c6e7c96ccce6782d7d6cd875e">parent</a>]);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> mn;</div>
@@ -147,13 +151,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('engine__utilit
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 </div>
 <div class="ttc" id="aengine__types_8h_html"><div class="ttname"><a href="engine__types_8h.html">engine_types.h</a></div><div class="ttdoc">Engine specific types and defines.</div></div>
+<div class="ttc" id="aengine__types_8h_html_a1bdd13b13d6331d2fe520292a63e8672"><div class="ttname"><a href="engine__types_8h.html#a1bdd13b13d6331d2fe520292a63e8672">MeshNode::id</a></div><div class="ttdeci">size_t id</div><div class="ttdoc">The ID inside of Globals.mesh_nodes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02365">engine_types.h:2365</a></div></div>
+<div class="ttc" id="aengine__types_8h_html_a2c30498e928cc2cc11b005c6a278e60d"><div class="ttname"><a href="engine__types_8h.html#a2c30498e928cc2cc11b005c6a278e60d">MeshNode::children</a></div><div class="ttdeci">int children[MAX_NODE_CHILDREN]</div><div class="ttdoc">The children to this node, a global index into Globals.mesh_nodes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02389">engine_types.h:2389</a></div></div>
+<div class="ttc" id="aengine__types_8h_html_aa7506a4c6e7c96ccce6782d7d6cd875e"><div class="ttname"><a href="engine__types_8h.html#aa7506a4c6e7c96ccce6782d7d6cd875e">MeshNode::parent</a></div><div class="ttdeci">int parent</div><div class="ttdoc">The parent to this node, a global index into Globals.mesh_nodes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02385">engine_types.h:2385</a></div></div>
+<div class="ttc" id="aengine__types_8h_html_ac44cecf797eaedd61a44a610a95132be"><div class="ttname"><a href="engine__types_8h.html#ac44cecf797eaedd61a44a610a95132be">MeshNode::child_count</a></div><div class="ttdeci">int child_count</div><div class="ttdoc">The amount of children.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02390">engine_types.h:2390</a></div></div>
+<div class="ttc" id="aengine__types_8h_html_struct_mesh_node"><div class="ttname"><a href="engine__types_8h.html#struct_mesh_node">MeshNode</a></div><div class="ttdoc">MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02360">engine_types.h:2360</a></div></div>
 <div class="ttc" id="aengine__utilities_8c_html_acff887ccd26f80b7304db59e6a803259"><div class="ttname"><a href="engine__utilities_8c.html#acff887ccd26f80b7304db59e6a803259">mn_inside_of_root_tree</a></div><div class="ttdeci">bool mn_inside_of_root_tree(MeshNode *mns, int check_id, int id)</div><div class="ttdef"><b>Definition</b> <a href="#l00005">engine_utilities.c:5</a></div></div>
 <div class="ttc" id="aengine__utilities_8c_html_afb2df275055f9cc377952c9054915869"><div class="ttname"><a href="engine__utilities_8c.html#afb2df275055f9cc377952c9054915869">get_root_node</a></div><div class="ttdeci">MeshNode * get_root_node(MeshNode *mns, MeshNode *mn)</div><div class="ttdef"><b>Definition</b> <a href="#l00019">engine_utilities.c:19</a></div></div>
-<div class="ttc" id="astruct_mesh_node_html"><div class="ttname"><a href="struct_mesh_node.html">MeshNode</a></div><div class="ttdoc">MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02325">engine_types.h:2325</a></div></div>
-<div class="ttc" id="astruct_mesh_node_html_a1bdd13b13d6331d2fe520292a63e8672"><div class="ttname"><a href="struct_mesh_node.html#a1bdd13b13d6331d2fe520292a63e8672">MeshNode::id</a></div><div class="ttdeci">size_t id</div><div class="ttdoc">The ID inside of Globals.mesh_nodes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02330">engine_types.h:2330</a></div></div>
-<div class="ttc" id="astruct_mesh_node_html_a2c30498e928cc2cc11b005c6a278e60d"><div class="ttname"><a href="struct_mesh_node.html#a2c30498e928cc2cc11b005c6a278e60d">MeshNode::children</a></div><div class="ttdeci">int children[MAX_NODE_CHILDREN]</div><div class="ttdoc">The children to this node, a global index into Globals.mesh_nodes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02354">engine_types.h:2354</a></div></div>
-<div class="ttc" id="astruct_mesh_node_html_aa7506a4c6e7c96ccce6782d7d6cd875e"><div class="ttname"><a href="struct_mesh_node.html#aa7506a4c6e7c96ccce6782d7d6cd875e">MeshNode::parent</a></div><div class="ttdeci">int parent</div><div class="ttdoc">The parent to this node, a global index into Globals.mesh_nodes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02350">engine_types.h:2350</a></div></div>
-<div class="ttc" id="astruct_mesh_node_html_ac44cecf797eaedd61a44a610a95132be"><div class="ttname"><a href="struct_mesh_node.html#ac44cecf797eaedd61a44a610a95132be">MeshNode::child_count</a></div><div class="ttdeci">int child_count</div><div class="ttdoc">The amount of children.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l02355">engine_types.h:2355</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

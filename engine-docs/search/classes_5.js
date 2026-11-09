@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['edge_0',['Edge',['../struct_edge.html',1,'']]],
-  ['edgepairentry_1',['EdgePairEntry',['../struct_edge_pair_entry.html',1,'']]],
-  ['edgepairkey_2',['EdgePairKey',['../struct_edge_pair_key.html',1,'']]],
-  ['editorsettings_3',['EditorSettings',['../struct_editor_settings.html',1,'']]],
-  ['entity_4',['Entity',['../struct_entity.html',1,'']]],
-  ['epaworkspace_5',['EPAWorkspace',['../struct_e_p_a_workspace.html',1,'']]]
+  ['edge_0',['Edge',['../types_8h.html#struct_edge',1,'']]],
+  ['edgepairentry_1',['EdgePairEntry',['../mesh_8c.html#struct_edge_pair_entry',1,'']]],
+  ['edgepairkey_2',['EdgePairKey',['../mesh_8c.html#struct_edge_pair_key',1,'']]],
+  ['editorsettings_3',['EditorSettings',['../group__editor__group.html#struct_editor_settings',1,'']]],
+  ['entity_4',['Entity',['../engine__types_8h.html#struct_entity',1,'']]],
+  ['epaworkspace_5',['EPAWorkspace',['../engine__types_8h.html#struct_e_p_a_workspace',1,'']]]
 ];

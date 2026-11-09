@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -132,7 +136,6 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_b.html
 <li>bind_dynamic_shader()&#160;:&#160;<a class="el" href="render_8c.html#a4bd30e61b9a9b6ff9ab7c0e79fefa4f7">render.c</a></li>
 <li>bind_material()&#160;:&#160;<a class="el" href="render_8c.html#a69ddedb0b45fa185f2a44f8d7489b1d2">render.c</a></li>
 <li>bind_render_ssbos()&#160;:&#160;<a class="el" href="render_8c.html#aaeea249083f99584a020101d89034c9c">render.c</a>, <a class="el" href="render_8h.html#aaeea249083f99584a020101d89034c9c">render.h</a></li>
-<li>bind_static_shader()&#160;:&#160;<a class="el" href="render_8h.html#a7bd9e50e940a116ffe45d5cd3414f085">render.h</a></li>
 <li>BLENDED_RPROBE_CUBE_MAP&#160;:&#160;<a class="el" href="main_8c.html#a29bebfbffc5c639d653089b8ddba3d7f">main.c</a>, <a class="el" href="init_8h.html#a29bebfbffc5c639d653089b8ddba3d7f">init.h</a></li>
 <li>BLOOM_BLUR_SHADER&#160;:&#160;<a class="el" href="main_8c.html#a2b0509cb36ea8e292eac44f2f347e6a1">main.c</a>, <a class="el" href="init_8h.html#a2b0509cb36ea8e292eac44f2f347e6a1">init.h</a></li>
 <li>BLOOM_DOWNSCALE_SHADER&#160;:&#160;<a class="el" href="main_8c.html#aad53bb59240a6afe13466aac3f12487d">main.c</a>, <a class="el" href="init_8h.html#aad53bb59240a6afe13466aac3f12487d">init.h</a></li>
@@ -148,11 +151,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_b.html
 <li>BRDF_LUT&#160;:&#160;<a class="el" href="main_8c.html#a4499379853a66cda1c1ad2954231403e">main.c</a>, <a class="el" href="init_8h.html#a4499379853a66cda1c1ad2954231403e">init.h</a></li>
 <li>BRDF_SHADER&#160;:&#160;<a class="el" href="main_8c.html#ae5a2e4deeb58ada51b993eddc9c5047d">main.c</a>, <a class="el" href="init_8h.html#ae5a2e4deeb58ada51b993eddc9c5047d">init.h</a></li>
 <li>BUFFER_FRAMES&#160;:&#160;<a class="el" href="engine__types_8h.html#ac97321d33aa8fb44a414c0479a63031c">engine_types.h</a></li>
-<li>build_adjacency_map()&#160;:&#160;<a class="el" href="mesh_8c.html#ad0872e286dd1863d749539846b135d61">mesh.c</a>, <a class="el" href="mesh_8h.html#ad0872e286dd1863d749539846b135d61">mesh.h</a>, <a class="el" href="lightmap_8h.html#ad0872e286dd1863d749539846b135d61">lightmap.h</a></li>
+<li>build_adjacency_map()&#160;:&#160;<a class="el" href="mesh_8c.html#ad0872e286dd1863d749539846b135d61">mesh.c</a>, <a class="el" href="mesh_8h.html#ad0872e286dd1863d749539846b135d61">mesh.h</a></li>
 <li>build_animation()&#160;:&#160;<a class="el" href="gltf_8c.html#ab51937163d0834ca6f37c12dcfff2889">gltf.c</a></li>
 <li>build_light_bvh()&#160;:&#160;<a class="el" href="acceleration_8c.html#abdff8e2d5681d0f6121d5573d87dd8be">acceleration.c</a>, <a class="el" href="acceleration_8h.html#abdff8e2d5681d0f6121d5573d87dd8be">acceleration.h</a></li>
 <li>build_uv_islands()&#160;:&#160;<a class="el" href="lightmap_8c.html#a2bbbe962fb7a6954fe28f01e58f8aba2">lightmap.c</a>, <a class="el" href="lightmap_8h.html#a2bbbe962fb7a6954fe28f01e58f8aba2">lightmap.h</a></li>
-<li>BVH_slab_test_aabb()&#160;:&#160;<a class="el" href="acceleration_8c.html#a4f91e2ffe43799e6b0697497d17b1fdf">acceleration.c</a></li>
+<li>BVH_slab_test_aabb()&#160;:&#160;<a class="el" href="acceleration_8c.html#a9d98edfaf4615c65d660bb86ffc28826">acceleration.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

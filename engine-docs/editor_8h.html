@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -119,231 +123,39 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('editor_8h.html
   <div class="headertitle"><div class="title">editor.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The debug editor UI for the engine.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="engine__types_8h_source.html">core/engine_types.h</a>&quot;</code><br />
 </div>
 <p><a href="editor_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4f3640fdc04ea81587b7148de518c9f4" id="r_a4f3640fdc04ea81587b7148de518c9f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4f3640fdc04ea81587b7148de518c9f4">UNDO_INIT</a> ()</td></tr>
-<tr class="memitem:a0bac0e59612fc251e60c4a29d7b6d777" id="r_a0bac0e59612fc251e60c4a29d7b6d777"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0bac0e59612fc251e60c4a29d7b6d777">render_editor_menu</a> ()</td></tr>
-<tr class="memitem:a049124239d5fb07d65d17ecf6f48e24f" id="r_a049124239d5fb07d65d17ecf6f48e24f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a049124239d5fb07d65d17ecf6f48e24f">init_file_directory_registries</a> ()</td></tr>
-<tr class="memitem:ae0196eb41530938b8ce76540c9d52ddf" id="r_ae0196eb41530938b8ce76540c9d52ddf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae0196eb41530938b8ce76540c9d52ddf">toggle_performance_overlay</a> ()</td></tr>
-<tr class="memitem:a614449112e147d19a2fe864257464d05" id="r_a614449112e147d19a2fe864257464d05"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a614449112e147d19a2fe864257464d05">execute_undo</a> (<a class="el" href="struct_undo.html">Undo</a> *undo)</td></tr>
-<tr class="memitem:a182cd2856674e29c9d97f0538bf090e4" id="r_a182cd2856674e29c9d97f0538bf090e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a182cd2856674e29c9d97f0538bf090e4">update_performance_overlay</a> (GLuint64 query_s[<a class="el" href="engine__types_8h.html#a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd">PQUERY_MAX</a>])</td></tr>
-<tr class="memitem:ab293df379aeee4e6224ccb6682ff2ddc" id="r_ab293df379aeee4e6224ccb6682ff2ddc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab293df379aeee4e6224ccb6682ff2ddc">create_performance_overlay</a> ()</td></tr>
-<tr class="memitem:acf7abdab47e1e8bb34237eaf78caadbc" id="r_acf7abdab47e1e8bb34237eaf78caadbc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acf7abdab47e1e8bb34237eaf78caadbc">perform_newest_undo</a> ()</td></tr>
-<tr class="memitem:a5e21c32bd7ee3cda49110a01e0ffcaee" id="r_a5e21c32bd7ee3cda49110a01e0ffcaee"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e21c32bd7ee3cda49110a01e0ffcaee">perform_newest_redo</a> ()</td></tr>
+<tr class="memitem:ga4f3640fdc04ea81587b7148de518c9f4" id="r_ga4f3640fdc04ea81587b7148de518c9f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga4f3640fdc04ea81587b7148de518c9f4">UNDO_INIT</a> ()</td></tr>
+<tr class="memdesc:ga4f3640fdc04ea81587b7148de518c9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="group__editor__group.html#struct_undo">Undo</a>s inside of <a class="el" href="group__editor__group.html#gaa9fcebae768434621be8e87192242ebc">UNDOS</a> to free state.  <br /></td></tr>
+<tr class="memitem:ga0bac0e59612fc251e60c4a29d7b6d777" id="r_ga0bac0e59612fc251e60c4a29d7b6d777"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga0bac0e59612fc251e60c4a29d7b6d777">render_editor_menu</a> ()</td></tr>
+<tr class="memdesc:ga0bac0e59612fc251e60c4a29d7b6d777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the editor menus.  <br /></td></tr>
+<tr class="memitem:gab8dafd6b2954eea3f019700950812e70" id="r_gab8dafd6b2954eea3f019700950812e70"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gab8dafd6b2954eea3f019700950812e70">FILE_DIR_REGISTRY_INIT</a> ()</td></tr>
+<tr class="memdesc:gab8dafd6b2954eea3f019700950812e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes each <a class="el" href="engine__types_8h.html#struct_file_directory_registry" title="Registry for folders that are used for dropdowns in the editor UI.">FileDirectoryRegistry</a> based on initial paths.  <br /></td></tr>
+<tr class="memitem:gae0196eb41530938b8ce76540c9d52ddf" id="r_gae0196eb41530938b8ce76540c9d52ddf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gae0196eb41530938b8ce76540c9d52ddf">toggle_performance_overlay</a> ()</td></tr>
+<tr class="memdesc:gae0196eb41530938b8ce76540c9d52ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the performance overlay menu: <a class="el" href="main_8c.html#a837a8e4242ecfc03e7321abf70359190">PERFORMANCE_OVERLAY_MENU</a>.  <br /></td></tr>
+<tr class="memitem:ga182cd2856674e29c9d97f0538bf090e4" id="r_ga182cd2856674e29c9d97f0538bf090e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga182cd2856674e29c9d97f0538bf090e4">update_performance_overlay</a> (GLuint64 query_s[<a class="el" href="engine__types_8h.html#a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd">PQUERY_MAX</a>])</td></tr>
+<tr class="memdesc:ga182cd2856674e29c9d97f0538bf090e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills performance overlay with text based on current GPU profiling information.  <br /></td></tr>
+<tr class="memitem:gab293df379aeee4e6224ccb6682ff2ddc" id="r_gab293df379aeee4e6224ccb6682ff2ddc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gab293df379aeee4e6224ccb6682ff2ddc">create_performance_overlay</a> ()</td></tr>
+<tr class="memdesc:gab293df379aeee4e6224ccb6682ff2ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes position of the <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es for the performance overlay.  <br /></td></tr>
+<tr class="memitem:ga614449112e147d19a2fe864257464d05" id="r_ga614449112e147d19a2fe864257464d05"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga614449112e147d19a2fe864257464d05">execute_undo</a> (<a class="el" href="group__editor__group.html#struct_undo">Undo</a> *undo)</td></tr>
+<tr class="memdesc:ga614449112e147d19a2fe864257464d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an <a class="el" href="group__editor__group.html#struct_undo">Undo</a> (switch-case into each <a class="el" href="group__editor__group.html#gab1db91053f25b9236ef22203b0e5b8cb">UndoStructureType</a>).  <br /></td></tr>
+<tr class="memitem:gacf7abdab47e1e8bb34237eaf78caadbc" id="r_gacf7abdab47e1e8bb34237eaf78caadbc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gacf7abdab47e1e8bb34237eaf78caadbc">perform_newest_undo</a> ()</td></tr>
+<tr class="memdesc:gacf7abdab47e1e8bb34237eaf78caadbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs top-most <a class="el" href="group__editor__group.html#struct_undo">Undo</a> and moves the top-most pointer to the previous.  <br /></td></tr>
+<tr class="memitem:ga5e21c32bd7ee3cda49110a01e0ffcaee" id="r_ga5e21c32bd7ee3cda49110a01e0ffcaee"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga5e21c32bd7ee3cda49110a01e0ffcaee">perform_newest_redo</a> ()</td></tr>
+<tr class="memdesc:ga5e21c32bd7ee3cda49110a01e0ffcaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs top-most Redo (Undo-&gt;next) and moves pointers upward.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ab293df379aeee4e6224ccb6682ff2ddc" name="ab293df379aeee4e6224ccb6682ff2ddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab293df379aeee4e6224ccb6682ff2ddc">&#9670;&#160;</a></span>create_performance_overlay()</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The debug editor UI for the engine. </p>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void create_performance_overlay </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l01669">1669</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="editor_8c_source.html#l01669">create_performance_overlay()</a>, <a class="el" href="ui_8h_source.html#l00173">TextBox::free</a>, <a class="el" href="ui_8h_source.html#l00176">TextBox::justify</a>, <a class="el" href="ui_8h_source.html#l00089">JUSTIFY_LEFT</a>, <a class="el" href="ui_8h_source.html#l00194">TextBox::menu</a>, <a class="el" href="fonts_8c_source.html#l00149">move_text_box_to_origin()</a>, <a class="el" href="main_8c_source.html#l00250">PERFORMANCE_OVERLAY_MENU</a>, <a class="el" href="engine__types_8h_source.html#l00121">PERFORMANCE_OVERLAY_TEXT_BOX_COUNT</a>, <a class="el" href="main_8c_source.html#l00249">PERFORMANCE_OVERLAY_TEXT_BOX_START</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00178">TextBox::text_cap</a>, <a class="el" href="ui_8h_source.html#l00185">TextBox::translation</a>, <a class="el" href="ui_8h_source.html#l00175">TextBox::uID</a>, <a class="el" href="ui_8h_source.html#l00373">UIMenu::uID</a>, <a class="el" href="ui_8h_source.html#l00172">TextBox::visible</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01669">create_performance_overlay()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="a614449112e147d19a2fe864257464d05" name="a614449112e147d19a2fe864257464d05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a614449112e147d19a2fe864257464d05">&#9670;&#160;</a></span>execute_undo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void execute_undo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_undo.html">Undo</a> *</td>          <td class="paramname"><span class="paramname"><em>undo</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l01525">1525</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="editor_8c_source.html#l00959">execute_aemitter_undo()</a>, <a class="el" href="editor_8c_source.html#l01008">execute_aportal_undo()</a>, <a class="el" href="editor_8c_source.html#l00858">execute_aprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l01421">execute_asset_instance_undo()</a>, <a class="el" href="editor_8c_source.html#l00558">execute_editor_settings_undo()</a>, <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="editor_8c_source.html#l00458">execute_light_undo()</a>, <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l01465">execute_mesh_node_undo()</a>, <a class="el" href="editor_8c_source.html#l00636">execute_rprobe_undo()</a>, <a class="el" href="editor_8c_source.html#l01293">execute_text_box_undo()</a>, <a class="el" href="editor_8c_source.html#l01241">execute_ui_container_undo()</a>, <a class="el" href="editor_8c_source.html#l01071">execute_ui_element_undo()</a>, <a class="el" href="editor_8c_source.html#l01054">execute_ui_menu_undo()</a>, <a class="el" href="editor_8c_source.html#l01525">execute_undo()</a>, <a class="el" href="types_8h_source.html#l00183">Undo::structure</a>, <a class="el" href="types_8h_source.html#l00165">UndoStructure::type</a>, <a class="el" href="types_8h_source.html#l00070">UNDOSTRUCT_AEMITTER</a>, <a class="el" href="types_8h_source.html#l00071">UNDOSTRUCT_APORTAL</a>, <a class="el" href="types_8h_source.html#l00069">UNDOSTRUCT_APROBE</a>, <a class="el" href="types_8h_source.html#l00073">UNDOSTRUCT_ASSETINSTANCE</a>, <a class="el" href="types_8h_source.html#l00064">UNDOSTRUCT_EDITOR_SETTINGS</a>, <a class="el" href="types_8h_source.html#l00065">UNDOSTRUCT_ENTITY</a>, <a class="el" href="types_8h_source.html#l00063">UNDOSTRUCT_GLOBAL</a>, <a class="el" href="types_8h_source.html#l00062">UNDOSTRUCT_LIGHT</a>, <a class="el" href="types_8h_source.html#l00068">UNDOSTRUCT_LPROBE</a>, <a class="el" href="types_8h_source.html#l00066">UNDOSTRUCT_MATERIAL</a>, <a class="el" href="types_8h_source.html#l00072">UNDOSTRUCT_MENU</a>, <a class="el" href="types_8h_source.html#l00058">UNDOSTRUCT_MN</a>, <a class="el" href="types_8h_source.html#l00067">UNDOSTRUCT_RPROBE</a>, <a class="el" href="types_8h_source.html#l00061">UNDOSTRUCT_TEXTBOX</a>, <a class="el" href="types_8h_source.html#l00060">UNDOSTRUCT_UI_CONTAINER</a>, and <a class="el" href="types_8h_source.html#l00059">UNDOSTRUCT_UI_ELEMENT</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01525">execute_undo()</a>, <a class="el" href="editor_8c_source.html#l00298">perform_newest_redo()</a>, and <a class="el" href="editor_8c_source.html#l00282">perform_newest_undo()</a>.</p>
-
-</div>
-</div>
-<a id="a049124239d5fb07d65d17ecf6f48e24f" name="a049124239d5fb07d65d17ecf6f48e24f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a049124239d5fb07d65d17ecf6f48e24f">&#9670;&#160;</a></span>init_file_directory_registries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_file_directory_registries </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l01853">1853</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="editor_8c_source.html#l00051">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00054">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03155">FileDirectoryRegistry::current_selection</a>, <a class="el" href="engine__types_8h_source.html#l03154">FileDirectoryRegistry::directory</a>, <a class="el" href="editor_8c_source.html#l01853">init_file_directory_registries()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="editor_8c_source.html#l00049">light_registry</a>, <a class="el" href="editor_8c_source.html#l00048">lightmap_registry</a>, <a class="el" href="editor_8c_source.html#l00053">lprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03151">FileDirectoryRegistry::names</a>, <a class="el" href="engine__types_8h_source.html#l03156">FileDirectoryRegistry::open</a>, <a class="el" href="editor_8c_source.html#l00052">rprobe_registry</a>, <a class="el" href="editor_8c_source.html#l00055">scene_apv_registry</a>, <a class="el" href="editor_8c_source.html#l00056">scene_lpv_registry</a>, <a class="el" href="editor_8c_source.html#l00047">scene_registry</a>, <a class="el" href="engine__types_8h_source.html#l03153">FileDirectoryRegistry::search_suffix</a>, <a class="el" href="editor_8c_source.html#l00050">sound_registry</a>, and <a class="el" href="editor_8c_source.html#l00057">ui_registry</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01991">init()</a>, and <a class="el" href="editor_8c_source.html#l01853">init_file_directory_registries()</a>.</p>
-
-</div>
-</div>
-<a id="a5e21c32bd7ee3cda49110a01e0ffcaee" name="a5e21c32bd7ee3cda49110a01e0ffcaee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e21c32bd7ee3cda49110a01e0ffcaee">&#9670;&#160;</a></span>perform_newest_redo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void perform_newest_redo </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l00298">298</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="editor_8c_source.html#l01525">execute_undo()</a>, <a class="el" href="types_8h_source.html#l00181">Undo::next</a>, <a class="el" href="editor_8c_source.html#l00148">next_redo</a>, <a class="el" href="editor_8c_source.html#l00298">perform_newest_redo()</a>, and <a class="el" href="editor_8c_source.html#l00147">top_undo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00298">perform_newest_redo()</a>, and <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
-
-</div>
-</div>
-<a id="acf7abdab47e1e8bb34237eaf78caadbc" name="acf7abdab47e1e8bb34237eaf78caadbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf7abdab47e1e8bb34237eaf78caadbc">&#9670;&#160;</a></span>perform_newest_undo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void perform_newest_undo </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l00282">282</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="editor_8c_source.html#l01525">execute_undo()</a>, <a class="el" href="editor_8c_source.html#l00148">next_redo</a>, <a class="el" href="editor_8c_source.html#l00282">perform_newest_undo()</a>, <a class="el" href="types_8h_source.html#l00180">Undo::prev</a>, and <a class="el" href="editor_8c_source.html#l00147">top_undo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00282">perform_newest_undo()</a>, and <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
-
-</div>
-</div>
-<a id="a0bac0e59612fc251e60c4a29d7b6d777" name="a0bac0e59612fc251e60c4a29d7b6d777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bac0e59612fc251e60c4a29d7b6d777">&#9670;&#160;</a></span>render_editor_menu()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void render_editor_menu </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l06600">6600</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="editor_8c_source.html#l02976">aportal_flags</a>, <a class="el" href="editor_8c_source.html#l02977">apv_flags</a>, <a class="el" href="engine__types_8h_source.html#l00666">EditorSettings::asset_instance_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l00662">EditorSettings::audio_menu_open</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l00660">EditorSettings::entity_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l02294">Entity::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03364">Globals::keyboard_locked</a>, <a class="el" href="engine__types_8h_source.html#l00658">EditorSettings::light_menu_open</a>, <a class="el" href="editor_8c_source.html#l02985">light_name_flags</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="editor_8c_source.html#l02986">lm_name_flags</a>, <a class="el" href="engine__types_8h_source.html#l00664">EditorSettings::lprobe_menu_open</a>, <a class="el" href="editor_8c_source.html#l02979">lpv_flags</a>, <a class="el" href="engine__types_8h_source.html#l00659">EditorSettings::main_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l00657">EditorSettings::material_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l03380">Globals::materials</a>, <a class="el" href="init_8h_source.html#l00438">MAX_ASSET_INSTANCES</a>, <a class="el" href="ui_8h_source.html#l00012">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00008">MAX_UI_ELEMENTS</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_AINST</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_AUDIO</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_ENT</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_LPROBE</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_MAIN</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_MATERIAL</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_MN</a>, <a class="el" href="editor_8c_source.html#l02302">menu_names</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_TEXT</a>, <a class="el" href="engine__types_8h_source.html#l00628">MENU_UI</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="engine__types_8h_source.html#l00656">EditorSettings::mesh_node_menu_open</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="main_8c_source.html#l00332">NK_CTX</a>, <a class="el" href="main_8c_source.html#l00333">NUKLEAR_HOVERED</a>, <a class="el" href="editor_8c_source.html#l06519">render_asset_instance_menu()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>, <a class="el" href="editor_8c_source.html#l02023">render_entity_menu()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="editor_8c_source.html#l05690">render_material_menu()</a>, <a class="el" href="editor_8c_source.html#l05534">render_mn_menu()</a>, <a class="el" href="editor_8c_source.html#l02997">render_selection_menu()</a>, <a class="el" href="editor_8c_source.html#l03035">render_text_menu()</a>, <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>, <a class="el" href="editor_8c_source.html#l02984">rprobe_name_flags</a>, <a class="el" href="editor_8c_source.html#l02978">scene_apv_flags</a>, <a class="el" href="editor_8c_source.html#l02982">scene_file_name_flags</a>, <a class="el" href="editor_8c_source.html#l02980">scene_lpv_flags</a>, <a class="el" href="editor_8c_source.html#l02981">scene_name_flags</a>, <a class="el" href="engine__types_8h_source.html#l00747">EditorSettings::selected_asset_instance_id</a>, <a class="el" href="engine__types_8h_source.html#l00735">EditorSettings::selected_ent_id</a>, <a class="el" href="engine__types_8h_source.html#l00733">EditorSettings::selected_light_id</a>, <a class="el" href="engine__types_8h_source.html#l00728">EditorSettings::selected_material_mn_id</a>, <a class="el" href="engine__types_8h_source.html#l00734">EditorSettings::selected_mn_id</a>, <a class="el" href="engine__types_8h_source.html#l00736">EditorSettings::selected_text_id</a>, <a class="el" href="engine__types_8h_source.html#l00743">EditorSettings::selected_ui_element_id</a>, <a class="el" href="engine__types_8h_source.html#l00744">EditorSettings::selected_ui_menu_id</a>, <a class="el" href="engine__types_8h_source.html#l00663">EditorSettings::selection_menu_open</a>, <a class="el" href="editor_8c_source.html#l02969">tb_cont_flags</a>, <a class="el" href="editor_8c_source.html#l02967">tb_id_flags</a>, <a class="el" href="editor_8c_source.html#l02968">tb_text_flags</a>, <a class="el" href="engine__types_8h_source.html#l00661">EditorSettings::text_menu_open</a>, <a class="el" href="editor_8c_source.html#l02973">ui_cont_flags</a>, <a class="el" href="editor_8c_source.html#l02971">ui_id_flags</a>, <a class="el" href="editor_8c_source.html#l02975">ui_label_id_flags</a>, <a class="el" href="editor_8c_source.html#l02970">ui_menu_id_flags</a>, <a class="el" href="engine__types_8h_source.html#l00665">EditorSettings::ui_menu_open</a>, <a class="el" href="editor_8c_source.html#l02983">ui_name_flags</a>, <a class="el" href="editor_8c_source.html#l02972">ui_parent_cont_flags</a>, and <a class="el" href="editor_8c_source.html#l02974">ui_scrollbar_flags</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00493">main()</a>, and <a class="el" href="editor_8c_source.html#l06600">render_editor_menu()</a>.</p>
-
-</div>
-</div>
-<a id="ae0196eb41530938b8ce76540c9d52ddf" name="ae0196eb41530938b8ce76540c9d52ddf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0196eb41530938b8ce76540c9d52ddf">&#9670;&#160;</a></span>toggle_performance_overlay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void toggle_performance_overlay </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l01611">1611</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="main_8c_source.html#l00250">PERFORMANCE_OVERLAY_MENU</a>, <a class="el" href="engine__types_8h_source.html#l00121">PERFORMANCE_OVERLAY_TEXT_BOX_COUNT</a>, <a class="el" href="main_8c_source.html#l00249">PERFORMANCE_OVERLAY_TEXT_BOX_START</a>, <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>, <a class="el" href="editor_8c_source.html#l01611">toggle_performance_overlay()</a>, and <a class="el" href="ui_8h_source.html#l00172">TextBox::visible</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="editor_8c_source.html#l01611">toggle_performance_overlay()</a>.</p>
-
-</div>
-</div>
-<a id="a4f3640fdc04ea81587b7148de518c9f4" name="a4f3640fdc04ea81587b7148de518c9f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f3640fdc04ea81587b7148de518c9f4">&#9670;&#160;</a></span>UNDO_INIT()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UNDO_INIT </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l00150">150</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00175">Undo::free</a>, <a class="el" href="types_8h_source.html#l00179">Undo::id</a>, <a class="el" href="types_8h_source.html#l00092">MAX_UNDOS</a>, <a class="el" href="types_8h_source.html#l00181">Undo::next</a>, <a class="el" href="types_8h_source.html#l00180">Undo::prev</a>, <a class="el" href="editor_8c_source.html#l00147">top_undo</a>, <a class="el" href="editor_8c_source.html#l00150">UNDO_INIT()</a>, and <a class="el" href="editor_8c_source.html#l00144">UNDOS</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01991">init()</a>, and <a class="el" href="editor_8c_source.html#l00150">UNDO_INIT()</a>.</p>
-
-</div>
-</div>
-<a id="a182cd2856674e29c9d97f0538bf090e4" name="a182cd2856674e29c9d97f0538bf090e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a182cd2856674e29c9d97f0538bf090e4">&#9670;&#160;</a></span>update_performance_overlay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_performance_overlay </td>
-          <td>(</td>
-          <td class="paramtype">GLuint64</td>          <td class="paramname"><span class="paramname"><em>query_s</em></span>[PQUERY_MAX]</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="editor_8c_source.html#l01630">1630</a> of file <a class="el" href="editor_8c_source.html">editor.c</a>.</p>
-
-<p class="reference">References <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="fonts_8c_source.html#l00149">move_text_box_to_origin()</a>, <a class="el" href="main_8c_source.html#l00250">PERFORMANCE_OVERLAY_MENU</a>, <a class="el" href="engine__types_8h_source.html#l00121">PERFORMANCE_OVERLAY_TEXT_BOX_COUNT</a>, <a class="el" href="main_8c_source.html#l00249">PERFORMANCE_OVERLAY_TEXT_BOX_START</a>, <a class="el" href="engine__types_8h_source.html#l01062">PQUERY_MAX</a>, <a class="el" href="editor_8c_source.html#l01596">QUERY_NAMES</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>, <a class="el" href="main_8c_source.html#l00325">time</a>, and <a class="el" href="editor_8c_source.html#l01630">update_performance_overlay()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00493">main()</a>, and <a class="el" href="editor_8c_source.html#l01630">update_performance_overlay()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p class="definition">Definition in file <a class="el" href="editor_8h_source.html">editor.h</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

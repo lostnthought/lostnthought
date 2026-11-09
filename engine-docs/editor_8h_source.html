@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -18,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -112,35 +116,45 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('editor_8h_sour
   <div class="headertitle"><div class="title">editor.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="editor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef EDITOR_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define EDITOR_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="engine__types_8h.html">core/engine_types.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#a4f3640fdc04ea81587b7148de518c9f4">UNDO_INIT</a>();</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#a0bac0e59612fc251e60c4a29d7b6d777">render_editor_menu</a>();</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#a049124239d5fb07d65d17ecf6f48e24f">init_file_directory_registries</a>();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#ae0196eb41530938b8ce76540c9d52ddf">toggle_performance_overlay</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#a614449112e147d19a2fe864257464d05">execute_undo</a>(<a class="code hl_struct" href="struct_undo.html">Undo</a> * undo);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#a182cd2856674e29c9d97f0538bf090e4">update_performance_overlay</a>(GLuint64 query_s[<a class="code hl_enumvalue" href="engine__types_8h.html#a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd">PQUERY_MAX</a>]);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#ab293df379aeee4e6224ccb6682ff2ddc">create_performance_overlay</a>();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#acf7abdab47e1e8bb34237eaf78caadbc">perform_newest_undo</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> <a class="code hl_function" href="editor_8c.html#a5e21c32bd7ee3cda49110a01e0ffcaee">perform_newest_redo</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aeditor_8c_html_a049124239d5fb07d65d17ecf6f48e24f"><div class="ttname"><a href="editor_8c.html#a049124239d5fb07d65d17ecf6f48e24f">init_file_directory_registries</a></div><div class="ttdeci">void init_file_directory_registries()</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01853">editor.c:1853</a></div></div>
-<div class="ttc" id="aeditor_8c_html_a0bac0e59612fc251e60c4a29d7b6d777"><div class="ttname"><a href="editor_8c.html#a0bac0e59612fc251e60c4a29d7b6d777">render_editor_menu</a></div><div class="ttdeci">void render_editor_menu()</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l06600">editor.c:6600</a></div></div>
-<div class="ttc" id="aeditor_8c_html_a182cd2856674e29c9d97f0538bf090e4"><div class="ttname"><a href="editor_8c.html#a182cd2856674e29c9d97f0538bf090e4">update_performance_overlay</a></div><div class="ttdeci">void update_performance_overlay(GLuint64 query_s[PQUERY_MAX])</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01630">editor.c:1630</a></div></div>
-<div class="ttc" id="aeditor_8c_html_a4f3640fdc04ea81587b7148de518c9f4"><div class="ttname"><a href="editor_8c.html#a4f3640fdc04ea81587b7148de518c9f4">UNDO_INIT</a></div><div class="ttdeci">void UNDO_INIT()</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l00150">editor.c:150</a></div></div>
-<div class="ttc" id="aeditor_8c_html_a5e21c32bd7ee3cda49110a01e0ffcaee"><div class="ttname"><a href="editor_8c.html#a5e21c32bd7ee3cda49110a01e0ffcaee">perform_newest_redo</a></div><div class="ttdeci">void perform_newest_redo()</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l00298">editor.c:298</a></div></div>
-<div class="ttc" id="aeditor_8c_html_a614449112e147d19a2fe864257464d05"><div class="ttname"><a href="editor_8c.html#a614449112e147d19a2fe864257464d05">execute_undo</a></div><div class="ttdeci">void execute_undo(Undo *undo)</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01525">editor.c:1525</a></div></div>
-<div class="ttc" id="aeditor_8c_html_ab293df379aeee4e6224ccb6682ff2ddc"><div class="ttname"><a href="editor_8c.html#ab293df379aeee4e6224ccb6682ff2ddc">create_performance_overlay</a></div><div class="ttdeci">void create_performance_overlay()</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01669">editor.c:1669</a></div></div>
-<div class="ttc" id="aeditor_8c_html_acf7abdab47e1e8bb34237eaf78caadbc"><div class="ttname"><a href="editor_8c.html#acf7abdab47e1e8bb34237eaf78caadbc">perform_newest_undo</a></div><div class="ttdeci">void perform_newest_undo()</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l00282">editor.c:282</a></div></div>
-<div class="ttc" id="aeditor_8c_html_ae0196eb41530938b8ce76540c9d52ddf"><div class="ttname"><a href="editor_8c.html#ae0196eb41530938b8ce76540c9d52ddf">toggle_performance_overlay</a></div><div class="ttdeci">void toggle_performance_overlay()</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01611">editor.c:1611</a></div></div>
+<a href="editor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef EDITOR_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define EDITOR_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="engine__types_8h.html">core/engine_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#ga4f3640fdc04ea81587b7148de518c9f4">UNDO_INIT</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#ga0bac0e59612fc251e60c4a29d7b6d777">render_editor_menu</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#gab8dafd6b2954eea3f019700950812e70">FILE_DIR_REGISTRY_INIT</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#gae0196eb41530938b8ce76540c9d52ddf">toggle_performance_overlay</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#ga182cd2856674e29c9d97f0538bf090e4">update_performance_overlay</a>(GLuint64 query_s[<a class="code hl_enumvalue" href="engine__types_8h.html#a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd">PQUERY_MAX</a>]);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#gab293df379aeee4e6224ccb6682ff2ddc">create_performance_overlay</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#ga614449112e147d19a2fe864257464d05">execute_undo</a>(<a class="code hl_struct" href="group__editor__group.html#struct_undo">Undo</a> * undo);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#gacf7abdab47e1e8bb34237eaf78caadbc">perform_newest_undo</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__editor__group.html#ga5e21c32bd7ee3cda49110a01e0ffcaee">perform_newest_redo</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aengine__types_8h_html"><div class="ttname"><a href="engine__types_8h.html">engine_types.h</a></div><div class="ttdoc">Engine specific types and defines.</div></div>
-<div class="ttc" id="aengine__types_8h_html_a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd"><div class="ttname"><a href="engine__types_8h.html#a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd">PQUERY_MAX</a></div><div class="ttdeci">@ PQUERY_MAX</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l01062">engine_types.h:1062</a></div></div>
-<div class="ttc" id="astruct_undo_html"><div class="ttname"><a href="struct_undo.html">Undo</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00172">types.h:173</a></div></div>
+<div class="ttc" id="aengine__types_8h_html_a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd"><div class="ttname"><a href="engine__types_8h.html#a010f3f7fe8abd214eab5a2c03c6e182aaab4834f9ac765140831c191002ad4abd">PQUERY_MAX</a></div><div class="ttdeci">@ PQUERY_MAX</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l01089">engine_types.h:1089</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_ga0bac0e59612fc251e60c4a29d7b6d777"><div class="ttname"><a href="group__editor__group.html#ga0bac0e59612fc251e60c4a29d7b6d777">render_editor_menu</a></div><div class="ttdeci">void render_editor_menu()</div><div class="ttdoc">Renders the editor menus.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l06605">editor.c:6605</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_ga182cd2856674e29c9d97f0538bf090e4"><div class="ttname"><a href="group__editor__group.html#ga182cd2856674e29c9d97f0538bf090e4">update_performance_overlay</a></div><div class="ttdeci">void update_performance_overlay(GLuint64 query_s[PQUERY_MAX])</div><div class="ttdoc">Fills performance overlay with text based on current GPU profiling information.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01635">editor.c:1635</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_ga4f3640fdc04ea81587b7148de518c9f4"><div class="ttname"><a href="group__editor__group.html#ga4f3640fdc04ea81587b7148de518c9f4">UNDO_INIT</a></div><div class="ttdeci">void UNDO_INIT()</div><div class="ttdoc">Initializes Undos inside of UNDOS to free state.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l00155">editor.c:155</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_ga5e21c32bd7ee3cda49110a01e0ffcaee"><div class="ttname"><a href="group__editor__group.html#ga5e21c32bd7ee3cda49110a01e0ffcaee">perform_newest_redo</a></div><div class="ttdeci">void perform_newest_redo()</div><div class="ttdoc">Performs top-most Redo (Undo-&gt;next) and moves pointers upward.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l00303">editor.c:303</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_ga614449112e147d19a2fe864257464d05"><div class="ttname"><a href="group__editor__group.html#ga614449112e147d19a2fe864257464d05">execute_undo</a></div><div class="ttdeci">void execute_undo(Undo *undo)</div><div class="ttdoc">Performs an Undo (switch-case into each UndoStructureType).</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01530">editor.c:1530</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_gab293df379aeee4e6224ccb6682ff2ddc"><div class="ttname"><a href="group__editor__group.html#gab293df379aeee4e6224ccb6682ff2ddc">create_performance_overlay</a></div><div class="ttdeci">void create_performance_overlay()</div><div class="ttdoc">Allocates and initializes position of the TextBoxes for the performance overlay.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01674">editor.c:1674</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_gab8dafd6b2954eea3f019700950812e70"><div class="ttname"><a href="group__editor__group.html#gab8dafd6b2954eea3f019700950812e70">FILE_DIR_REGISTRY_INIT</a></div><div class="ttdeci">void FILE_DIR_REGISTRY_INIT()</div><div class="ttdoc">Initializes each FileDirectoryRegistry based on initial paths.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01858">editor.c:1858</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_gacf7abdab47e1e8bb34237eaf78caadbc"><div class="ttname"><a href="group__editor__group.html#gacf7abdab47e1e8bb34237eaf78caadbc">perform_newest_undo</a></div><div class="ttdeci">void perform_newest_undo()</div><div class="ttdoc">Performs top-most Undo and moves the top-most pointer to the previous.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l00287">editor.c:287</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_gae0196eb41530938b8ce76540c9d52ddf"><div class="ttname"><a href="group__editor__group.html#gae0196eb41530938b8ce76540c9d52ddf">toggle_performance_overlay</a></div><div class="ttdeci">void toggle_performance_overlay()</div><div class="ttdoc">Toggles the performance overlay menu: PERFORMANCE_OVERLAY_MENU.</div><div class="ttdef"><b>Definition</b> <a href="editor_8c_source.html#l01616">editor.c:1616</a></div></div>
+<div class="ttc" id="agroup__editor__group_html_struct_undo"><div class="ttname"><a href="group__editor__group.html#struct_undo">Undo</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00176">types.h:177</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

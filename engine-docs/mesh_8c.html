@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -133,85 +137,205 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('mesh_8c.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:WeldedVertexKey" id="r_WeldedVertexKey"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_welded_vertex_key.html">WeldedVertexKey</a></td></tr>
-<tr class="memitem:WeldedEntry" id="r_WeldedEntry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_welded_entry.html">WeldedEntry</a></td></tr>
-<tr class="memitem:EdgePairKey" id="r_EdgePairKey"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_edge_pair_key.html">EdgePairKey</a></td></tr>
-<tr class="memitem:EdgePairEntry" id="r_EdgePairEntry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_edge_pair_entry.html">EdgePairEntry</a></td></tr>
+<tr class="memitem:WeldedVertexKey_5Fstruct_5Fwelded_5Fvertex_5Fkey" id="r_WeldedVertexKey_5Fstruct_5Fwelded_5Fvertex_5Fkey"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_welded_vertex_key">WeldedVertexKey</a></td></tr>
+<tr class="memitem:WeldedEntry_5Fstruct_5Fwelded_5Fentry" id="r_WeldedEntry_5Fstruct_5Fwelded_5Fentry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_welded_entry">WeldedEntry</a></td></tr>
+<tr class="memitem:EdgePairKey_5Fstruct_5Fedge_5Fpair_5Fkey" id="r_EdgePairKey_5Fstruct_5Fedge_5Fpair_5Fkey"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_edge_pair_key">EdgePairKey</a></td></tr>
+<tr class="memitem:EdgePairEntry_5Fstruct_5Fedge_5Fpair_5Fentry" id="r_EdgePairEntry_5Fstruct_5Fedge_5Fpair_5Fentry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_edge_pair_entry">EdgePairEntry</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a60245e30d650e1dc6ce28c8d506ec66b" id="r_a60245e30d650e1dc6ce28c8d506ec66b"><td class="memItemLeft"><a class="el" href="struct_welded_vertex_key.html">WeldedVertexKey</a>&#160;</td><td class="memItemRight"><a class="el" href="#a60245e30d650e1dc6ce28c8d506ec66b">get_welded_key</a> (<a class="el" href="structvec3.html">vec3</a> pos, float epsilon)</td></tr>
-<tr class="memitem:ad0872e286dd1863d749539846b135d61" id="r_ad0872e286dd1863d749539846b135d61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad0872e286dd1863d749539846b135d61">build_adjacency_map</a> (<a class="el" href="struct_mesh.html">Mesh</a> *mesh)</td></tr>
-<tr class="memdesc:ad0872e286dd1863d749539846b135d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a map of <a class="el" href="struct_triangle_adjacency.html" title="Adjacent triangles for each MeshFace on a Mesh.">TriangleAdjacency</a> over adjacent <a class="el" href="struct_mesh_face.html">MeshFace</a>s on the <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
+<tr class="memitem:a60245e30d650e1dc6ce28c8d506ec66b" id="r_a60245e30d650e1dc6ce28c8d506ec66b"><td class="memItemLeft"><a class="el" href="#struct_welded_vertex_key">WeldedVertexKey</a>&#160;</td><td class="memItemRight"><a class="el" href="#a60245e30d650e1dc6ce28c8d506ec66b">get_welded_key</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pos, float epsilon)</td></tr>
+<tr class="memitem:ad0872e286dd1863d749539846b135d61" id="r_ad0872e286dd1863d749539846b135d61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad0872e286dd1863d749539846b135d61">build_adjacency_map</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *mesh)</td></tr>
+<tr class="memdesc:ad0872e286dd1863d749539846b135d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a map of <a class="el" href="engine__types_8h.html#struct_triangle_adjacency" title="Adjacent triangles for each MeshFace on a Mesh.">TriangleAdjacency</a> over adjacent <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a>s on the <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
 <tr class="memitem:a1c100236f6fcebfd696bd620adf8729b" id="r_a1c100236f6fcebfd696bd620adf8729b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1c100236f6fcebfd696bd620adf8729b">find_mn_by_name</a> (char name[256])</td></tr>
-<tr class="memdesc:a1c100236f6fcebfd696bd620adf8729b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> inside of <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1" title="Meshes.">Globals.meshes</a> via string.  <br /></td></tr>
-<tr class="memitem:afaf138ae7eb676e0b2bd6d95e3a1598c" id="r_afaf138ae7eb676e0b2bd6d95e3a1598c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afaf138ae7eb676e0b2bd6d95e3a1598c">deduplicate</a> (<a class="el" href="struct_vector.html">Vector</a> *in_verts, <a class="el" href="struct_vector.html">Vector</a> *faces)</td></tr>
-<tr class="memdesc:afaf138ae7eb676e0b2bd6d95e3a1598c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduplicated vertices.  <br /></td></tr>
-<tr class="memitem:a903557793d00205886cf7f2bc667761c" id="r_a903557793d00205886cf7f2bc667761c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a903557793d00205886cf7f2bc667761c">clean_up_hull</a> (<a class="el" href="struct_vector.html">Vector</a> *in_vertices, <a class="el" href="struct_vector.html">Vector</a> *in_faces)</td></tr>
-<tr class="memitem:ae468c21f32a628a2f7ced85a2395b3c5" id="r_ae468c21f32a628a2f7ced85a2395b3c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae468c21f32a628a2f7ced85a2395b3c5">check_face_visibility</a> (<a class="el" href="structvec3.html">vec3</a> p, <a class="el" href="struct_vector.html">Vector</a> vertices, <a class="el" href="struct_vector.html">Vector</a> hull_faces, <a class="el" href="struct_vector.html">Vector</a> hull_indices, <a class="el" href="struct_vector.html">Vector</a> *visible_faces_indices)</td></tr>
-<tr class="memitem:a4d69ef08177a6d9ef89ed9237365f144" id="r_a4d69ef08177a6d9ef89ed9237365f144"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4d69ef08177a6d9ef89ed9237365f144">check_horizon_edges</a> (<a class="el" href="struct_mesh_face.html">MeshFace</a> *face, <a class="el" href="struct_vector.html">Vector</a> vertices, <a class="el" href="struct_vector.html">Vector</a> *edges, <a class="el" href="struct_vector.html">Vector</a> *counts)</td></tr>
-<tr class="memitem:a461ad2ca59f3f43b636d9c90a6281754" id="r_a461ad2ca59f3f43b636d9c90a6281754"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a461ad2ca59f3f43b636d9c90a6281754">add_horizon_face_to_hull_faces</a> (size_t p_idx, <a class="el" href="struct_horizon_edge.html">HorizonEdge</a> e, <a class="el" href="struct_vector.html">Vector</a> vertices, <a class="el" href="structvec3.html">vec3</a> center, <a class="el" href="struct_vector.html">Vector</a> *hull_faces, <a class="el" href="struct_vector.html">Vector</a> *hull_indices, bool epa)</td></tr>
-<tr class="memitem:a8c42c7ffd76896258674548548f7f989" id="r_a8c42c7ffd76896258674548548f7f989"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8c42c7ffd76896258674548548f7f989">expand_hull</a> (<a class="el" href="structvec3.html">vec3</a> p, int index, <a class="el" href="struct_vector.html">Vector</a> *vertices, <a class="el" href="struct_vector.html">Vector</a> *hull_faces, <a class="el" href="struct_vector.html">Vector</a> *hull_indices, <a class="el" href="struct_vector.html">Vector</a> *horizon_edges, <a class="el" href="struct_vector.html">Vector</a> *horizon_counts, <a class="el" href="struct_vector.html">Vector</a> *visible_faces_indices, <a class="el" href="structvec3.html">vec3</a> centroid)</td></tr>
-<tr class="memitem:abf457aa663b3ad2d67de968bd1b5e011" id="r_abf457aa663b3ad2d67de968bd1b5e011"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#abf457aa663b3ad2d67de968bd1b5e011">pick_lowest_point</a> (<a class="el" href="struct_convex_hull.html">ConvexHull</a> *hull)</td></tr>
-<tr class="memitem:a96507f5c0da565087ca318e5da7a38ed" id="r_a96507f5c0da565087ca318e5da7a38ed"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a96507f5c0da565087ca318e5da7a38ed">setup_initial_hull_points</a> (<a class="el" href="struct_convex_hull.html">ConvexHull</a> *hull)</td></tr>
-<tr class="memitem:a5c35f44de283319fcf3a05b6b422bb1f" id="r_a5c35f44de283319fcf3a05b6b422bb1f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull</a> (<a class="el" href="struct_convex_hull.html">ConvexHull</a> *hull)</td></tr>
-<tr class="memitem:adb0d5fd34a1f657d3c06729bc983f497" id="r_adb0d5fd34a1f657d3c06729bc983f497"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adb0d5fd34a1f657d3c06729bc983f497">compute_mesh_hulls</a> (<a class="el" href="struct_convex_hull.html">ConvexHull</a> *hull)</td></tr>
+<tr class="memdesc:a1c100236f6fcebfd696bd620adf8729b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> inside of <a class="el" href="engine__types_8h.html#a5b9df227c573055f2ee43ad17e7fcec1" title="Meshes.">Globals.meshes</a> via string.  <br /></td></tr>
+<tr class="memitem:afaf138ae7eb676e0b2bd6d95e3a1598c" id="r_afaf138ae7eb676e0b2bd6d95e3a1598c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afaf138ae7eb676e0b2bd6d95e3a1598c">deduplicate</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *in_verts, <a class="el" href="types_8h.html#struct_vector">Vector</a> *faces)</td></tr>
+<tr class="memdesc:afaf138ae7eb676e0b2bd6d95e3a1598c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduplicates vertices.  <br /></td></tr>
+<tr class="memitem:a903557793d00205886cf7f2bc667761c" id="r_a903557793d00205886cf7f2bc667761c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a903557793d00205886cf7f2bc667761c">clean_up_hull</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *in_vertices, <a class="el" href="types_8h.html#struct_vector">Vector</a> *in_faces)</td></tr>
+<tr class="memitem:ae468c21f32a628a2f7ced85a2395b3c5" id="r_ae468c21f32a628a2f7ced85a2395b3c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae468c21f32a628a2f7ced85a2395b3c5">check_face_visibility</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> p, <a class="el" href="types_8h.html#struct_vector">Vector</a> vertices, <a class="el" href="types_8h.html#struct_vector">Vector</a> hull_faces, <a class="el" href="types_8h.html#struct_vector">Vector</a> hull_indices, <a class="el" href="types_8h.html#struct_vector">Vector</a> *visible_faces_indices)</td></tr>
+<tr class="memitem:a4d69ef08177a6d9ef89ed9237365f144" id="r_a4d69ef08177a6d9ef89ed9237365f144"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4d69ef08177a6d9ef89ed9237365f144">check_horizon_edges</a> (<a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a> *face, <a class="el" href="types_8h.html#struct_vector">Vector</a> vertices, <a class="el" href="types_8h.html#struct_vector">Vector</a> *edges, <a class="el" href="types_8h.html#struct_vector">Vector</a> *counts)</td></tr>
+<tr class="memitem:a461ad2ca59f3f43b636d9c90a6281754" id="r_a461ad2ca59f3f43b636d9c90a6281754"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a461ad2ca59f3f43b636d9c90a6281754">add_horizon_face_to_hull_faces</a> (size_t p_idx, <a class="el" href="types_8h.html#struct_horizon_edge">HorizonEdge</a> e, <a class="el" href="types_8h.html#struct_vector">Vector</a> vertices, <a class="el" href="types_8h.html#structvec3">vec3</a> center, <a class="el" href="types_8h.html#struct_vector">Vector</a> *hull_faces, <a class="el" href="types_8h.html#struct_vector">Vector</a> *hull_indices, bool epa)</td></tr>
+<tr class="memitem:a8c42c7ffd76896258674548548f7f989" id="r_a8c42c7ffd76896258674548548f7f989"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8c42c7ffd76896258674548548f7f989">expand_hull</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> p, int index, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vertices, <a class="el" href="types_8h.html#struct_vector">Vector</a> *hull_faces, <a class="el" href="types_8h.html#struct_vector">Vector</a> *hull_indices, <a class="el" href="types_8h.html#struct_vector">Vector</a> *horizon_edges, <a class="el" href="types_8h.html#struct_vector">Vector</a> *horizon_counts, <a class="el" href="types_8h.html#struct_vector">Vector</a> *visible_faces_indices, <a class="el" href="types_8h.html#structvec3">vec3</a> centroid)</td></tr>
+<tr class="memitem:abf457aa663b3ad2d67de968bd1b5e011" id="r_abf457aa663b3ad2d67de968bd1b5e011"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#abf457aa663b3ad2d67de968bd1b5e011">pick_lowest_point</a> (<a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *hull)</td></tr>
+<tr class="memitem:a96507f5c0da565087ca318e5da7a38ed" id="r_a96507f5c0da565087ca318e5da7a38ed"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a96507f5c0da565087ca318e5da7a38ed">setup_initial_hull_points</a> (<a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *hull)</td></tr>
+<tr class="memitem:a5c35f44de283319fcf3a05b6b422bb1f" id="r_a5c35f44de283319fcf3a05b6b422bb1f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5c35f44de283319fcf3a05b6b422bb1f">incremental_hull</a> (<a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *hull)</td></tr>
+<tr class="memdesc:a5c35f44de283319fcf3a05b6b422bb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduplicates vertices.  <br /></td></tr>
+<tr class="memitem:adb0d5fd34a1f657d3c06729bc983f497" id="r_adb0d5fd34a1f657d3c06729bc983f497"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adb0d5fd34a1f657d3c06729bc983f497">compute_mesh_hulls</a> (<a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *hull)</td></tr>
+<tr class="memdesc:adb0d5fd34a1f657d3c06729bc983f497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combines contiguous triangles with same normals into one face.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a72ecbe5f2bbb8e8aa5bc5e6451009678" id="r_a72ecbe5f2bbb8e8aa5bc5e6451009678"><td class="memItemLeft"><a class="el" href="struct_edge_pair_entry.html">EdgePairEntry</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a72ecbe5f2bbb8e8aa5bc5e6451009678">edge_pair_table</a> = NULL</td></tr>
-<tr class="memitem:a5b6e9ee683a112c6ea8751d4d40419d1" id="r_a5b6e9ee683a112c6ea8751d4d40419d1"><td class="memItemLeft"><a class="el" href="struct_welded_entry.html">WeldedEntry</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5b6e9ee683a112c6ea8751d4d40419d1">welded_table</a> = NULL</td></tr>
+<tr class="memitem:a72ecbe5f2bbb8e8aa5bc5e6451009678" id="r_a72ecbe5f2bbb8e8aa5bc5e6451009678"><td class="memItemLeft"><a class="el" href="#struct_edge_pair_entry">EdgePairEntry</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a72ecbe5f2bbb8e8aa5bc5e6451009678">edge_pair_table</a> = NULL</td></tr>
+<tr class="memitem:a5b6e9ee683a112c6ea8751d4d40419d1" id="r_a5b6e9ee683a112c6ea8751d4d40419d1"><td class="memItemLeft"><a class="el" href="#struct_welded_entry">WeldedEntry</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5b6e9ee683a112c6ea8751d4d40419d1">welded_table</a> = NULL</td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a461ad2ca59f3f43b636d9c90a6281754" name="a461ad2ca59f3f43b636d9c90a6281754"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a461ad2ca59f3f43b636d9c90a6281754">&#9670;&#160;</a></span>add_horizon_face_to_hull_faces()</h2>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Data Structure Documentation</h2>
+<a name="struct_welded_vertex_key" id="struct_welded_vertex_key"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_welded_vertex_key">&#9670;&#160;</a></span>WeldedVertexKey</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void add_horizon_face_to_hull_faces </td>
+          <td class="memname">struct WeldedVertexKey</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00015">15</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a369fe6beafb6290b58e2dcbd89d1dce2" name="a369fe6beafb6290b58e2dcbd89d1dce2"></a>int32_t</td>
+<td class="fieldname">
+x</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5affcc8ef369be6a184883423c96e8c6" name="a5affcc8ef369be6a184883423c96e8c6"></a>int32_t</td>
+<td class="fieldname">
+y</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7579d4e7df2b308fbe9691b58b86573e" name="a7579d4e7df2b308fbe9691b58b86573e"></a>int32_t</td>
+<td class="fieldname">
+z</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_welded_entry" id="struct_welded_entry"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_welded_entry">&#9670;&#160;</a></span>WeldedEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct WeldedEntry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00031">31</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="adfdf86f3b8c18406584b39c7b463b3cc" name="adfdf86f3b8c18406584b39c7b463b3cc"></a><a class="el" href="#struct_welded_vertex_key">WeldedVertexKey</a></td>
+<td class="fieldname">
+key</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a80f10f39b2ad4df1d643c754a0f76533" name="a80f10f39b2ad4df1d643c754a0f76533"></a>size_t</td>
+<td class="fieldname">
+index</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="afa5481d52a98def821af67dc579537dd" name="afa5481d52a98def821af67dc579537dd"></a>UT_hash_handle</td>
+<td class="fieldname">
+hh</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_edge_pair_key" id="struct_edge_pair_key"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_edge_pair_key">&#9670;&#160;</a></span>EdgePairKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct EdgePairKey</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00039">39</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="af5b7478238b58232b75d179fbb92bbe5" name="af5b7478238b58232b75d179fbb92bbe5"></a>int32_t</td>
+<td class="fieldname">
+a</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a27890f78bfe87caccf07363be0abc0be" name="a27890f78bfe87caccf07363be0abc0be"></a>int32_t</td>
+<td class="fieldname">
+b</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_edge_pair_entry" id="struct_edge_pair_entry"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_edge_pair_entry">&#9670;&#160;</a></span>EdgePairEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct EdgePairEntry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00046">46</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="acb959fbe13a0acdd388aaf597ce75260" name="acb959fbe13a0acdd388aaf597ce75260"></a><a class="el" href="#struct_edge_pair_key">EdgePairKey</a></td>
+<td class="fieldname">
+key</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9cc0cdebbf262df42d087726d5c9bab3" name="a9cc0cdebbf262df42d087726d5c9bab3"></a><a class="el" href="types_8h.html#struct_vector">Vector</a></td>
+<td class="fieldname">
+tris</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4964c136d0b492ded9adb9b9cd566f79" name="a4964c136d0b492ded9adb9b9cd566f79"></a>UT_hash_handle</td>
+<td class="fieldname">
+hh</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a60245e30d650e1dc6ce28c8d506ec66b" name="a60245e30d650e1dc6ce28c8d506ec66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60245e30d650e1dc6ce28c8d506ec66b">&#9670;&#160;</a></span>get_welded_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#struct_welded_vertex_key">WeldedVertexKey</a> get_welded_key </td>
           <td>(</td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>p_idx</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_horizon_edge.html">HorizonEdge</a></td>          <td class="paramname"><span class="paramname"><em>e</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a></td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>center</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_faces</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_indices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>epa</em></span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>epsilon</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00377">377</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00022">22</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00246">HorizonEdge::ab</a>, <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="_g_j_k_8c_source.html#l00237">epa()</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+<p class="reference">References <a class="el" href="mesh_8c_source.html#l00022">get_welded_key()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="mesh_8c_source.html#l00017">WeldedVertexKey::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="mesh_8c_source.html#l00018">WeldedVertexKey::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::z</a>, and <a class="el" href="mesh_8c_source.html#l00019">WeldedVertexKey::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, and <a class="el" href="mesh_8c_source.html#l00022">get_welded_key()</a>.</p>
 
 </div>
 </div>
@@ -224,251 +348,25 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void build_adjacency_map </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Builds a map of <a class="el" href="struct_triangle_adjacency.html" title="Adjacent triangles for each MeshFace on a Mesh.">TriangleAdjacency</a> over adjacent <a class="el" href="struct_mesh_face.html">MeshFace</a>s on the <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
+<p>Builds a map of <a class="el" href="engine__types_8h.html#struct_triangle_adjacency" title="Adjacent triangles for each MeshFace on a Mesh.">TriangleAdjacency</a> over adjacent <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a>s on the <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mesh</td><td>The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> to build over. </td></tr>
+    <tr><td class="paramname">mesh</td><td>The <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> to build over. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00058">58</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02432">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00054">edge_pair_table</a>, <a class="el" href="mesh_8c_source.html#l00022">get_welded_key()</a>, <a class="el" href="mesh_8c_source.html#l00034">WeldedEntry::index</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="mesh_8c_source.html#l00048">EdgePairEntry::key</a>, <a class="el" href="mesh_8c_source.html#l00033">WeldedEntry::key</a>, <a class="el" href="engine__types_8h_source.html#l02466">Mesh::tri_adjacency</a>, <a class="el" href="mesh_8c_source.html#l00049">EdgePairEntry::tris</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, and <a class="el" href="mesh_8c_source.html#l00055">welded_table</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02467">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00054">edge_pair_table</a>, <a class="el" href="mesh_8c_source.html#l00022">get_welded_key()</a>, <a class="el" href="mesh_8c_source.html#l00034">WeldedEntry::index</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="mesh_8c_source.html#l00048">EdgePairEntry::key</a>, <a class="el" href="mesh_8c_source.html#l00033">WeldedEntry::key</a>, <a class="el" href="engine__types_8h_source.html#l02501">Mesh::tri_adjacency</a>, <a class="el" href="mesh_8c_source.html#l00049">EdgePairEntry::tris</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, and <a class="el" href="mesh_8c_source.html#l00055">welded_table</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="lightmap_8h.html#abd68b4ec7384d22fccbc25c768e3a1bb">generate_uv_lightmap()</a>, and <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>.</p>
-
-</div>
-</div>
-<a id="ae468c21f32a628a2f7ced85a2395b3c5" name="ae468c21f32a628a2f7ced85a2395b3c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae468c21f32a628a2f7ced85a2395b3c5">&#9670;&#160;</a></span>check_face_visibility()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void check_face_visibility </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a></td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a></td>          <td class="paramname"><span class="paramname"><em>hull_faces</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a></td>          <td class="paramname"><span class="paramname"><em>hull_indices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>visible_faces_indices</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00311">311</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
-
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, and <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>.</p>
-
-</div>
-</div>
-<a id="a4d69ef08177a6d9ef89ed9237365f144" name="a4d69ef08177a6d9ef89ed9237365f144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d69ef08177a6d9ef89ed9237365f144">&#9670;&#160;</a></span>check_horizon_edges()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void check_horizon_edges </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh_face.html">MeshFace</a> *</td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a></td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>edges</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>counts</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00332">332</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00246">HorizonEdge::ab</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>.</p>
-
-</div>
-</div>
-<a id="a903557793d00205886cf7f2bc667761c" name="a903557793d00205886cf7f2bc667761c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a903557793d00205886cf7f2bc667761c">&#9670;&#160;</a></span>clean_up_hull()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void clean_up_hull </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>in_vertices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>in_faces</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00259">259</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>.</p>
-
-</div>
-</div>
-<a id="adb0d5fd34a1f657d3c06729bc983f497" name="adb0d5fd34a1f657d3c06729bc983f497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0d5fd34a1f657d3c06729bc983f497">&#9670;&#160;</a></span>compute_mesh_hulls()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void compute_mesh_hulls </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_convex_hull.html">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00925">925</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="utilities_8c_source.html#l00718">compute_hull_faces()</a>, <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="types_8h_source.html#l00326">HullFace::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01076">ConvexHull::faces</a>, <a class="el" href="engine__types_8h_source.html#l01077">ConvexHull::hull_faces</a>, <a class="el" href="types_8h_source.html#l00325">HullFace::indices</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l01092">TriangleGroup::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="utilities_8c_source.html#l00330">is_similar_plane()</a>, <a class="el" href="utilities_8c_source.html#l00578">mesh_faces_are_contiguous()</a>, <a class="el" href="types_8h_source.html#l00327">HullFace::normal</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01090">TriangleGroup::normal</a>, <a class="el" href="engine__types_8h_source.html#l01091">TriangleGroup::ref_point</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l01075">ConvexHull::vertices</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00925">compute_mesh_hulls()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, and <a class="el" href="mesh_8h.html#ae6e3f9965ab26fec92234d2dc4cb8d5a">mesh_decomposition()</a>.</p>
-
-</div>
-</div>
-<a id="afaf138ae7eb676e0b2bd6d95e3a1598c" name="afaf138ae7eb676e0b2bd6d95e3a1598c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaf138ae7eb676e0b2bd6d95e3a1598c">&#9670;&#160;</a></span>deduplicate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void deduplicate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>in_verts</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>faces</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Deduplicated vertices. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mesh</td><td>The <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> to build over. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00210">210</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>.</p>
-
-</div>
-</div>
-<a id="a8c42c7ffd76896258674548548f7f989" name="a8c42c7ffd76896258674548548f7f989"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c42c7ffd76896258674548548f7f989">&#9670;&#160;</a></span>expand_hull()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void expand_hull </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_faces</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_indices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>horizon_edges</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>horizon_counts</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>visible_faces_indices</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>centroid</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00405">405</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
-
-<p class="reference">References <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>, and <a class="el" href="utilities_8h_source.html#l00276">REMOVE_FROM_VEC</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, and <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>.</p>
 
 </div>
 </div>
@@ -487,7 +385,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Finds a <a class="el" href="struct_mesh.html" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> inside of <a class="el" href="struct_globals.html#a5b9df227c573055f2ee43ad17e7fcec1" title="Meshes.">Globals.meshes</a> via string. </p>
+<p>Finds a <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> inside of <a class="el" href="engine__types_8h.html#a5b9df227c573055f2ee43ad17e7fcec1" title="Meshes.">Globals.meshes</a> via string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name to compare. </td></tr>
@@ -499,59 +397,265 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00191">191</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, <a class="el" href="engine__types_8h_source.html#l02329">MeshNode::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, and <a class="el" href="engine__types_8h_source.html#l02327">MeshNode::name</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, <a class="el" href="engine__types_8h_source.html#l02364">MeshNode::free</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, and <a class="el" href="engine__types_8h_source.html#l02362">MeshNode::name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, and <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, and <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>.</p>
 
 </div>
 </div>
-<a id="a60245e30d650e1dc6ce28c8d506ec66b" name="a60245e30d650e1dc6ce28c8d506ec66b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60245e30d650e1dc6ce28c8d506ec66b">&#9670;&#160;</a></span>get_welded_key()</h2>
+<a id="afaf138ae7eb676e0b2bd6d95e3a1598c" name="afaf138ae7eb676e0b2bd6d95e3a1598c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf138ae7eb676e0b2bd6d95e3a1598c">&#9670;&#160;</a></span>deduplicate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_welded_vertex_key.html">WeldedVertexKey</a> get_welded_key </td>
+          <td class="memname">void deduplicate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>in_verts</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>epsilon</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>faces</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00022">22</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+<p>Deduplicates vertices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_verts</td><td>The <a class="el" href="types_8h.html#structvec3">vec3</a>s of the <a class="el" href="group__physics__group.html#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>. </td></tr>
+    <tr><td class="paramname">faces</td><td>The <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a>s of the <a class="el" href="group__physics__group.html#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="mesh_8c_source.html#l00022">get_welded_key()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="mesh_8c_source.html#l00017">WeldedVertexKey::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="mesh_8c_source.html#l00018">WeldedVertexKey::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::z</a>, and <a class="el" href="mesh_8c_source.html#l00019">WeldedVertexKey::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00210">210</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, and <a class="el" href="mesh_8c_source.html#l00022">get_welded_key()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>.</p>
 
 </div>
 </div>
-<a id="a5c35f44de283319fcf3a05b6b422bb1f" name="a5c35f44de283319fcf3a05b6b422bb1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c35f44de283319fcf3a05b6b422bb1f">&#9670;&#160;</a></span>incremental_hull()</h2>
+<a id="a903557793d00205886cf7f2bc667761c" name="a903557793d00205886cf7f2bc667761c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903557793d00205886cf7f2bc667761c">&#9670;&#160;</a></span>clean_up_hull()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void incremental_hull </td>
+          <td class="memname">void clean_up_hull </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_convex_hull.html">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>in_vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>in_faces</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00744">744</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00259">259</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01079">ConvexHull::aabb</a>, <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01078">ConvexHull::centroid</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="utilities_8c_source.html#l00768">compute_aabb_from_points()</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01076">ConvexHull::faces</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="utilities_8h_source.html#l00276">REMOVE_FROM_VEC</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, and <a class="el" href="engine__types_8h_source.html#l01075">ConvexHull::vertices</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, and <a class="el" href="init_8c_source.html#l00485">init_player()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>.</p>
+
+</div>
+</div>
+<a id="ae468c21f32a628a2f7ced85a2395b3c5" name="ae468c21f32a628a2f7ced85a2395b3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae468c21f32a628a2f7ced85a2395b3c5">&#9670;&#160;</a></span>check_face_visibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check_face_visibility </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a></td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a></td>          <td class="paramname"><span class="paramname"><em>hull_faces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a></td>          <td class="paramname"><span class="paramname"><em>hull_indices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>visible_faces_indices</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00311">311</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, and <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>.</p>
+
+</div>
+</div>
+<a id="a4d69ef08177a6d9ef89ed9237365f144" name="a4d69ef08177a6d9ef89ed9237365f144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d69ef08177a6d9ef89ed9237365f144">&#9670;&#160;</a></span>check_horizon_edges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void check_horizon_edges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a> *</td>          <td class="paramname"><span class="paramname"><em>face</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a></td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>edges</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>counts</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00332">332</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00243">HorizonEdge::ab</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>.</p>
+
+</div>
+</div>
+<a id="a461ad2ca59f3f43b636d9c90a6281754" name="a461ad2ca59f3f43b636d9c90a6281754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a461ad2ca59f3f43b636d9c90a6281754">&#9670;&#160;</a></span>add_horizon_face_to_hull_faces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_horizon_face_to_hull_faces </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>p_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_horizon_edge">HorizonEdge</a></td>          <td class="paramname"><span class="paramname"><em>e</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a></td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>center</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_faces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_indices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>epa</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00377">377</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00243">HorizonEdge::ab</a>, <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="_g_j_k_8c_source.html#l00242">epa()</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>.</p>
+
+</div>
+</div>
+<a id="a8c42c7ffd76896258674548548f7f989" name="a8c42c7ffd76896258674548548f7f989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c42c7ffd76896258674548548f7f989">&#9670;&#160;</a></span>expand_hull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void expand_hull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_faces</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>hull_indices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>horizon_edges</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>horizon_counts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>visible_faces_indices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>centroid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00405">405</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+
+<p class="reference">References <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>, and <a class="el" href="utilities_8h_source.html#l00276">REMOVE_FROM_VEC</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00406">expand_hull()</a>.</p>
 
 </div>
 </div>
@@ -564,7 +668,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int pick_lowest_point </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_convex_hull.html">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -572,7 +676,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00514">514</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01079">ConvexHull::aabb</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="engine__types_8h_source.html#l01075">ConvexHull::vertices</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01107">ConvexHull::aabb</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="engine__types_8h_source.html#l01103">ConvexHull::vertices</a>, <a class="el" href="types_8h_source.html#l00031">X</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00031">Y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00031">Z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
 
@@ -587,7 +691,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool setup_initial_hull_points </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_convex_hull.html">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -595,9 +699,73 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00563">563</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01078">ConvexHull::centroid</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="engine__types_8h_source.html#l01076">ConvexHull::faces</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l01075">ConvexHull::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01106">ConvexHull::centroid</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="engine__types_8h_source.html#l01104">ConvexHull::faces</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="mesh_8c_source.html#l00514">pick_lowest_point()</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l01103">ConvexHull::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, and <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>.</p>
+
+</div>
+</div>
+<a id="a5c35f44de283319fcf3a05b6b422bb1f" name="a5c35f44de283319fcf3a05b6b422bb1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c35f44de283319fcf3a05b6b422bb1f">&#9670;&#160;</a></span>incremental_hull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void incremental_hull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deduplicates vertices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_verts</td><td>The <a class="el" href="types_8h.html#structvec3">vec3</a>s of the <a class="el" href="group__physics__group.html#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>. </td></tr>
+    <tr><td class="paramname">faces</td><td>The <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a>s of the <a class="el" href="group__physics__group.html#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00744">744</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01107">ConvexHull::aabb</a>, <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01106">ConvexHull::centroid</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="utilities_8c_source.html#l00768">compute_aabb_from_points()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01104">ConvexHull::faces</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="utilities_8h_source.html#l00276">REMOVE_FROM_VEC</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, and <a class="el" href="engine__types_8h_source.html#l01103">ConvexHull::vertices</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, and <a class="el" href="init_8c_source.html#l00485">init_player()</a>.</p>
+
+</div>
+</div>
+<a id="adb0d5fd34a1f657d3c06729bc983f497" name="adb0d5fd34a1f657d3c06729bc983f497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0d5fd34a1f657d3c06729bc983f497">&#9670;&#160;</a></span>compute_mesh_hulls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void compute_mesh_hulls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__physics__group.html#struct_convex_hull">ConvexHull</a> *</td>          <td class="paramname"><span class="paramname"><em>hull</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Combines contiguous triangles with same normals into one face. </p>
+<p>Important for more efficient physics / manifold clipping. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_verts</td><td>The <a class="el" href="types_8h.html#structvec3">vec3</a>s of the <a class="el" href="group__physics__group.html#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>. </td></tr>
+    <tr><td class="paramname">faces</td><td>The <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a>s of the <a class="el" href="group__physics__group.html#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8c_source.html#l00924">924</a> of file <a class="el" href="mesh_8c_source.html">mesh.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="utilities_8c_source.html#l00718">compute_hull_faces()</a>, <a class="el" href="mesh_8c_source.html#l00924">compute_mesh_hulls()</a>, <a class="el" href="types_8h_source.html#l00323">HullFace::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01104">ConvexHull::faces</a>, <a class="el" href="engine__types_8h_source.html#l01105">ConvexHull::hull_faces</a>, <a class="el" href="types_8h_source.html#l00322">HullFace::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l01121">TriangleGroup::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="utilities_8c_source.html#l00330">is_similar_plane()</a>, <a class="el" href="utilities_8c_source.html#l00578">mesh_faces_are_contiguous()</a>, <a class="el" href="types_8h_source.html#l00324">HullFace::normal</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01119">TriangleGroup::normal</a>, <a class="el" href="engine__types_8h_source.html#l01120">TriangleGroup::ref_point</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l01103">ConvexHull::vertices</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00924">compute_mesh_hulls()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, and <a class="el" href="init_8c_source.html#l00485">init_player()</a>.</p>
 
 </div>
 </div>
@@ -609,7 +777,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_edge_pair_entry.html">EdgePairEntry</a>* edge_pair_table = NULL</td>
+          <td class="memname"><a class="el" href="#struct_edge_pair_entry">EdgePairEntry</a>* edge_pair_table = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -627,7 +795,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_welded_entry.html">WeldedEntry</a>* welded_table = NULL</td>
+          <td class="memname"><a class="el" href="#struct_welded_entry">WeldedEntry</a>* welded_table = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">

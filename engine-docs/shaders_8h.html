@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -119,6 +123,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('shaders_8h.htm
   <div class="headertitle"><div class="title">shaders.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Initialization for <a class="el" href="engine__types_8h.html#struct_shader_program" title="OpenGL ShaderPrograms: vertex, fragment, geometry, and compute.">ShaderProgram</a>s.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="engine__types_8h_source.html">core/engine_types.h</a>&quot;</code><br />
 </div>
 <p><a href="shaders_8h_source.html">Go to the source code of this file.</a></p>
@@ -126,12 +133,86 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('shaders_8h.htm
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab5e8b6289c8d0f065872cbe531443692" id="r_ab5e8b6289c8d0f065872cbe531443692"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#ab5e8b6289c8d0f065872cbe531443692">read_file</a> (const char *filename)</td></tr>
+<tr class="memdesc:ab5e8b6289c8d0f065872cbe531443692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a file into raw bytes.  <br /></td></tr>
 <tr class="memitem:ab8b780ddb002ec377738d5674bf4abc1" id="r_ab8b780ddb002ec377738d5674bf4abc1"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#ab8b780ddb002ec377738d5674bf4abc1">create_compute_shader</a> (const char *filename)</td></tr>
+<tr class="memdesc:ab8b780ddb002ec377738d5674bf4abc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a compute shader.  <br /></td></tr>
 <tr class="memitem:a8e70fcbd4f2012794b9799680fd0a61d" id="r_a8e70fcbd4f2012794b9799680fd0a61d"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#a8e70fcbd4f2012794b9799680fd0a61d">compile_shader</a> (GLenum type, const char *filename)</td></tr>
-<tr class="memitem:a98d6e993e96a3fd8ef08029150474404" id="r_a98d6e993e96a3fd8ef08029150474404"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#a98d6e993e96a3fd8ef08029150474404">create_shader_program</a> (const char *vertexPath, const char *fragmentPath)</td></tr>
-<tr class="memitem:acdeee1f8b8e001fdaf780a7d75004015" id="r_acdeee1f8b8e001fdaf780a7d75004015"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdeee1f8b8e001fdaf780a7d75004015">init_shaders</a> ()</td></tr>
+<tr class="memdesc:a8e70fcbd4f2012794b9799680fd0a61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles a non-compute shader.  <br /></td></tr>
+<tr class="memitem:a841395384dda0de6e195d0bfc8e230c1" id="r_a841395384dda0de6e195d0bfc8e230c1"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#a841395384dda0de6e195d0bfc8e230c1">create_shader_program</a> (const char *vertex_path, const char *fragment_path)</td></tr>
+<tr class="memdesc:a841395384dda0de6e195d0bfc8e230c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles and links vert and frag pairs.  <br /></td></tr>
+<tr class="memitem:a6379c354cc1b7464697bf1441f9f3541" id="r_a6379c354cc1b7464697bf1441f9f3541"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6379c354cc1b7464697bf1441f9f3541">SHADERS_INIT</a> ()</td></tr>
+<tr class="memdesc:a6379c354cc1b7464697bf1441f9f3541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes and then recompiles and links all engine shaders.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Initialization for <a class="el" href="engine__types_8h.html#struct_shader_program" title="OpenGL ShaderPrograms: vertex, fragment, geometry, and compute.">ShaderProgram</a>s. </p>
+
+<p class="definition">Definition in file <a class="el" href="shaders_8h_source.html">shaders.h</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="ab5e8b6289c8d0f065872cbe531443692" name="ab5e8b6289c8d0f065872cbe531443692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e8b6289c8d0f065872cbe531443692">&#9670;&#160;</a></span>read_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * read_file </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a file into raw bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The file to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The byte buffer. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Must be freed. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l00010">10</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
+
+<p class="reference">References <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00105">compile_gbuffer_frag_shader()</a>, <a class="el" href="shaders_8c_source.html#l00291">compile_postprocess_shader()</a>, <a class="el" href="shaders_8c_source.html#l00077">compile_shader()</a>, <a class="el" href="shaders_8c_source.html#l00198">compile_uber_frag_shader()</a>, <a class="el" href="shaders_8c_source.html#l00034">create_compute_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>.</p>
+
+</div>
+</div>
+<a id="ab8b780ddb002ec377738d5674bf4abc1" name="ab8b780ddb002ec377738d5674bf4abc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b780ddb002ec377738d5674bf4abc1">&#9670;&#160;</a></span>create_compute_shader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint create_compute_shader </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a compute shader. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The path to file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The handle for the shader. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l00034">34</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
+
+<p class="reference">References <a class="el" href="shaders_8c_source.html#l00034">create_compute_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00034">create_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00961">init_audio_shader()</a>, <a class="el" href="shaders_8c_source.html#l00890">init_cull_clusers_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00909">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l01027">init_dof_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00878">init_lightmap_bounce_compute_shader()</a>.</p>
+
+</div>
+</div>
 <a id="a8e70fcbd4f2012794b9799680fd0a61d" name="a8e70fcbd4f2012794b9799680fd0a61d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e70fcbd4f2012794b9799680fd0a61d">&#9670;&#160;</a></span>compile_shader()</h2>
 
@@ -151,6 +232,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Compiles a non-compute shader. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of shader to compile. </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the shader. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The handle for the shader. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l00077">77</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
 
 <p class="reference">References <a class="el" href="shaders_8c_source.html#l00077">compile_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>.</p>
@@ -159,31 +250,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab8b780ddb002ec377738d5674bf4abc1" name="ab8b780ddb002ec377738d5674bf4abc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b780ddb002ec377738d5674bf4abc1">&#9670;&#160;</a></span>create_compute_shader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLuint create_compute_shader </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l00033">33</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
-
-<p class="reference">References <a class="el" href="shaders_8c_source.html#l00033">create_compute_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00033">create_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00988">init_audio_shader()</a>, <a class="el" href="shaders_8c_source.html#l00898">init_cull_clusers_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00917">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00886">init_lightmap_bounce_compute_shader()</a>.</p>
-
-</div>
-</div>
-<a id="a98d6e993e96a3fd8ef08029150474404" name="a98d6e993e96a3fd8ef08029150474404"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98d6e993e96a3fd8ef08029150474404">&#9670;&#160;</a></span>create_shader_program()</h2>
+<a id="a841395384dda0de6e195d0bfc8e230c1" name="a841395384dda0de6e195d0bfc8e230c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841395384dda0de6e195d0bfc8e230c1">&#9670;&#160;</a></span>create_shader_program()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,32 +259,42 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">GLuint create_shader_program </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>vertexPath</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>vertex_path</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fragmentPath</em></span>&#160;)</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fragment_path</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Compiles and links vert and frag pairs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertex_path</td><td>The path to the vert shader. </td></tr>
+    <tr><td class="paramname">fragment_path</td><td>The path to the frag shader. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The handle to the linked shader. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l00377">377</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
 
 <p class="reference">References <a class="el" href="shaders_8c_source.html#l00077">compile_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00377">create_shader_program()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00377">create_shader_program()</a>, <a class="el" href="shaders_8c_source.html#l01113">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00770">init_brdf_shader()</a>, <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00978">init_history_shader()</a>, <a class="el" href="shaders_8c_source.html#l00794">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00783">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l00969">init_sobel_shader()</a>, <a class="el" href="shaders_8c_source.html#l01025">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00543">init_static_shader()</a>, <a class="el" href="shaders_8c_source.html#l00803">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00819">init_ui_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00673">init_wireframe_shader()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00377">create_shader_program()</a>, <a class="el" href="shaders_8c_source.html#l01086">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00762">init_brdf_shader()</a>, <a class="el" href="shaders_8c_source.html#l00967">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01027">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00786">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00635">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00775">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l00998">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00795">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00811">init_ui_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00665">init_wireframe_shader()</a>.</p>
 
 </div>
 </div>
-<a id="acdeee1f8b8e001fdaf780a7d75004015" name="acdeee1f8b8e001fdaf780a7d75004015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdeee1f8b8e001fdaf780a7d75004015">&#9670;&#160;</a></span>init_shaders()</h2>
+<a id="a6379c354cc1b7464697bf1441f9f3541" name="a6379c354cc1b7464697bf1441f9f3541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6379c354cc1b7464697bf1441f9f3541">&#9670;&#160;</a></span>SHADERS_INIT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void init_shaders </td>
+          <td class="memname">void SHADERS_INIT </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -224,34 +302,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l01158">1158</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
+<p>Deletes and then recompiles and links all engine shaders. </p>
 
-<p class="reference">References <a class="el" href="main_8c_source.html#l00232">AUDIO_PROBE_BAKE_SHADER</a>, <a class="el" href="main_8c_source.html#l00112">BLOOM_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00125">BLOOM_DOWNSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00111">BLOOM_SHADER</a>, <a class="el" href="main_8c_source.html#l00126">BLOOM_UPSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00110">BOKEH_SHADER</a>, <a class="el" href="main_8c_source.html#l00129">BRDF_SHADER</a>, <a class="el" href="main_8c_source.html#l00109">COC_SHADER</a>, <a class="el" href="main_8c_source.html#l00120">CULL_CLUSTERS_SHADER</a>, <a class="el" href="main_8c_source.html#l00121">CULL_DRAW_CALLS_SHADER</a>, <a class="el" href="main_8c_source.html#l00124">CULL_POINT_LIGHT_SHADOWS_SHADER</a>, <a class="el" href="main_8c_source.html#l00116">DEPTH_PRE_PASS_SHADER</a>, <a class="el" href="main_8c_source.html#l00234">DIRECTIONAL_MAP_NORMALIZE_SHADER</a>, <a class="el" href="main_8c_source.html#l00114">DYNAMIC_SHADER</a>, <a class="el" href="main_8c_source.html#l00123">ELEMENTS_PREFIX_SHADER</a>, <a class="el" href="main_8c_source.html#l00313">FOCAL_DISTANCE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00126">GBUFFER_VERSIONS</a>, <a class="el" href="main_8c_source.html#l00130">GGX_RPROBE_SHADER</a>, <a class="el" href="main_8c_source.html#l00103">HISTORY_SHADER</a>, <a class="el" href="main_8c_source.html#l00122">INDIRECT_PREFIX_SHADER</a>, <a class="el" href="shaders_8c_source.html#l00988">init_audio_shader()</a>, <a class="el" href="shaders_8c_source.html#l01113">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00770">init_brdf_shader()</a>, <a class="el" href="main_8c_source.html#l00278">INIT_CLUSTER_AABBS_SHADER</a>, <a class="el" href="shaders_8c_source.html#l00898">init_cull_clusers_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00917">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00994">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01054">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00551">init_dynamic_shader()</a>, <a class="el" href="shaders_8c_source.html#l00886">init_lightmap_bounce_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00794">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00683">init_postprocess_shader()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, <a class="el" href="shaders_8c_source.html#l00643">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00783">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l01025">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00833">init_SSR_shader()</a>, <a class="el" href="shaders_8c_source.html#l00803">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00819">init_ui_shader()</a>, <a class="el" href="shaders_8c_source.html#l00673">init_wireframe_shader()</a>, <a class="el" href="main_8c_source.html#l00228">LIGHTMAP_BOUNCE_SHADER</a>, <a class="el" href="main_8c_source.html#l00229">LIGHTMAP_DENOISE_SHADER</a>, <a class="el" href="main_8c_source.html#l00230">LIGHTMAP_DILATE_SHADER</a>, <a class="el" href="main_8c_source.html#l00227">LIGHTMAP_INIT_SHADER</a>, <a class="el" href="main_8c_source.html#l00128">LIGHTMAP_SHADER</a>, <a class="el" href="main_8c_source.html#l00131">POINT_LIGHT_SHADOW_SHADER</a>, <a class="el" href="main_8c_source.html#l00119">POSTPROCESS_SHADER</a>, <a class="el" href="main_8c_source.html#l00276">PP_SHADER_VERSIONS</a>, <a class="el" href="main_8c_source.html#l00231">PROBE_BAKE_SHADER</a>, <a class="el" href="main_8c_source.html#l00233">PROBE_UNPACK_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l03411">ShaderProgram::program</a>, <a class="el" href="main_8c_source.html#l00115">SHADOW_MAP_SHADER</a>, <a class="el" href="main_8c_source.html#l00127">SKY_SHADER</a>, <a class="el" href="main_8c_source.html#l00102">SOBEL_SHADER</a>, <a class="el" href="main_8c_source.html#l00105">SSAO_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00104">SSAO_SHADER</a>, <a class="el" href="main_8c_source.html#l00107">SSR_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00108">SSR_HISTORY_SHADER</a>, <a class="el" href="main_8c_source.html#l00106">SSR_SHADER</a>, <a class="el" href="main_8c_source.html#l00113">STATIC_SHADER</a>, <a class="el" href="main_8c_source.html#l00132">TEXT_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00125">UBERSHADER_VERSIONS</a>, <a class="el" href="main_8c_source.html#l00133">UI_SHADER</a>, and <a class="el" href="main_8c_source.html#l00118">WIREFRAME_SHADER</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l01131">1131</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01991">init()</a>, <a class="el" href="shaders_8c_source.html#l01158">init_shaders()</a>, and <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
+<p class="reference">References <a class="el" href="main_8c_source.html#l00224">AUDIO_PROBE_BAKE_SHADER</a>, <a class="el" href="main_8c_source.html#l00108">BLOOM_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00120">BLOOM_DOWNSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00107">BLOOM_SHADER</a>, <a class="el" href="main_8c_source.html#l00121">BLOOM_UPSCALE_SHADER</a>, <a class="el" href="main_8c_source.html#l00106">BOKEH_SHADER</a>, <a class="el" href="main_8c_source.html#l00124">BRDF_SHADER</a>, <a class="el" href="main_8c_source.html#l00105">COC_SHADER</a>, <a class="el" href="main_8c_source.html#l00115">CULL_CLUSTERS_SHADER</a>, <a class="el" href="main_8c_source.html#l00116">CULL_DRAW_CALLS_SHADER</a>, <a class="el" href="main_8c_source.html#l00119">CULL_POINT_LIGHT_SHADOWS_SHADER</a>, <a class="el" href="main_8c_source.html#l00111">DEPTH_PRE_PASS_SHADER</a>, <a class="el" href="main_8c_source.html#l00226">DIRECTIONAL_MAP_NORMALIZE_SHADER</a>, <a class="el" href="main_8c_source.html#l00109">DYNAMIC_SHADER</a>, <a class="el" href="main_8c_source.html#l00118">ELEMENTS_PREFIX_SHADER</a>, <a class="el" href="main_8c_source.html#l00303">FOCAL_DISTANCE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00151">GBUFFER_VERSIONS</a>, <a class="el" href="main_8c_source.html#l00117">INDIRECT_PREFIX_SHADER</a>, <a class="el" href="shaders_8c_source.html#l00961">init_audio_shader()</a>, <a class="el" href="shaders_8c_source.html#l01086">init_bloom_shader()</a>, <a class="el" href="shaders_8c_source.html#l00762">init_brdf_shader()</a>, <a class="el" href="main_8c_source.html#l00269">INIT_CLUSTER_AABBS_SHADER</a>, <a class="el" href="shaders_8c_source.html#l00890">init_cull_clusers_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00909">init_cull_draw_calls_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00967">init_depth_pre_pass_shader()</a>, <a class="el" href="shaders_8c_source.html#l01027">init_dof_shader()</a>, <a class="el" href="shaders_8c_source.html#l00543">init_dynamic_shader()</a>, <a class="el" href="shaders_8c_source.html#l00878">init_lightmap_bounce_compute_shader()</a>, <a class="el" href="shaders_8c_source.html#l00786">init_lightmap_shader()</a>, <a class="el" href="shaders_8c_source.html#l00675">init_postprocess_shader()</a>, <a class="el" href="shaders_8c_source.html#l00635">init_shadow_map_shader()</a>, <a class="el" href="shaders_8c_source.html#l00775">init_sky_shader()</a>, <a class="el" href="shaders_8c_source.html#l00998">init_ssao_shader()</a>, <a class="el" href="shaders_8c_source.html#l00825">init_SSR_shader()</a>, <a class="el" href="shaders_8c_source.html#l00795">init_text_shader()</a>, <a class="el" href="shaders_8c_source.html#l00811">init_ui_shader()</a>, <a class="el" href="shaders_8c_source.html#l00665">init_wireframe_shader()</a>, <a class="el" href="main_8c_source.html#l00220">LIGHTMAP_BOUNCE_SHADER</a>, <a class="el" href="main_8c_source.html#l00221">LIGHTMAP_DENOISE_SHADER</a>, <a class="el" href="main_8c_source.html#l00222">LIGHTMAP_DILATE_SHADER</a>, <a class="el" href="main_8c_source.html#l00123">LIGHTMAP_SHADER</a>, <a class="el" href="main_8c_source.html#l00125">POINT_LIGHT_SHADOW_SHADER</a>, <a class="el" href="main_8c_source.html#l00114">POSTPROCESS_SHADER</a>, <a class="el" href="main_8c_source.html#l00267">PP_SHADER_VERSIONS</a>, <a class="el" href="main_8c_source.html#l00223">PROBE_BAKE_SHADER</a>, <a class="el" href="main_8c_source.html#l00225">PROBE_UNPACK_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l03446">ShaderProgram::program</a>, <a class="el" href="shaders_8c_source.html#l01131">SHADERS_INIT()</a>, <a class="el" href="main_8c_source.html#l00110">SHADOW_MAP_SHADER</a>, <a class="el" href="main_8c_source.html#l00122">SKY_SHADER</a>, <a class="el" href="main_8c_source.html#l00101">SSAO_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00100">SSAO_SHADER</a>, <a class="el" href="main_8c_source.html#l00103">SSR_BLUR_SHADER</a>, <a class="el" href="main_8c_source.html#l00104">SSR_HISTORY_SHADER</a>, <a class="el" href="main_8c_source.html#l00102">SSR_SHADER</a>, <a class="el" href="main_8c_source.html#l00126">TEXT_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00150">UBERSHADER_VERSIONS</a>, <a class="el" href="main_8c_source.html#l00127">UI_SHADER</a>, and <a class="el" href="main_8c_source.html#l00113">WIREFRAME_SHADER</a>.</p>
 
-</div>
-</div>
-<a id="ab5e8b6289c8d0f065872cbe531443692" name="ab5e8b6289c8d0f065872cbe531443692"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5e8b6289c8d0f065872cbe531443692">&#9670;&#160;</a></span>read_file()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * read_file </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="shaders_8c_source.html#l00010">10</a> of file <a class="el" href="shaders_8c_source.html">shaders.c</a>.</p>
-
-<p class="reference">References <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="shaders_8c_source.html#l00105">compile_gbuffer_frag_shader()</a>, <a class="el" href="shaders_8c_source.html#l00291">compile_postprocess_shader()</a>, <a class="el" href="shaders_8c_source.html#l00077">compile_shader()</a>, <a class="el" href="shaders_8c_source.html#l00198">compile_uber_frag_shader()</a>, <a class="el" href="shaders_8c_source.html#l00033">create_compute_shader()</a>, and <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01988">init()</a>, <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="shaders_8c_source.html#l01131">SHADERS_INIT()</a>.</p>
 
 </div>
 </div>

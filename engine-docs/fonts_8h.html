@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -119,6 +123,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('fonts_8h.html'
   <div class="headertitle"><div class="title">fonts.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Functions that modify <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es and load <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>s.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">utilities/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ui_8h_source.html">ui/ui.h</a>&quot;</code><br />
 </div>
@@ -126,186 +133,31 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('fonts_8h.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a618b0e542cb8378b100b0caedaa2fc58" id="r_a618b0e542cb8378b100b0caedaa2fc58"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a618b0e542cb8378b100b0caedaa2fc58">find_empty_text_box_slot</a> (<a class="el" href="struct_u_i_menu.html">UIMenu</a> *m)</td></tr>
-<tr class="memitem:a1881ce2b8caacf02e28589674707abe2" id="r_a1881ce2b8caacf02e28589674707abe2"><td class="memItemLeft"><a class="el" href="struct_font.html">Font</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1881ce2b8caacf02e28589674707abe2">read_json_msdf</a> (const char *json_path, const char *png_path)</td></tr>
-<tr class="memitem:af9a4820f68217a8aa2f739af3360a1c5" id="r_af9a4820f68217a8aa2f739af3360a1c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af9a4820f68217a8aa2f739af3360a1c5">move_text_box_to_origin</a> (<a class="el" href="struct_text_box.html">TextBox</a> *box)</td></tr>
-<tr class="memitem:aada1f2f4d89d5a5db992fd8da328008c" id="r_aada1f2f4d89d5a5db992fd8da328008c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aada1f2f4d89d5a5db992fd8da328008c">determine_text_box_dimensions</a> (<a class="el" href="struct_text_box.html">TextBox</a> *tb, float *width, float *height)</td></tr>
-<tr class="memitem:acc6a010948e804a545ac2c106f21941f" id="r_acc6a010948e804a545ac2c106f21941f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acc6a010948e804a545ac2c106f21941f">add_all_text_boxes_to_draw_buffer</a> ()</td></tr>
-<tr class="memitem:a2e9128b145fec89cba7a19a3b7190c9b" id="r_a2e9128b145fec89cba7a19a3b7190c9b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2e9128b145fec89cba7a19a3b7190c9b">create_text_box</a> (int menu_id)</td></tr>
-<tr class="memitem:a675de23a65b76d7a51579d301d6301eb" id="r_a675de23a65b76d7a51579d301d6301eb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a675de23a65b76d7a51579d301d6301eb">delete_text_box</a> (int menu, int id)</td></tr>
-<tr class="memitem:a187fdef1c8e91bed6d022d63fc468be2" id="r_a187fdef1c8e91bed6d022d63fc468be2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a187fdef1c8e91bed6d022d63fc468be2">add_text_box</a> (<a class="el" href="struct_vector.html">Vector</a> *tvs, <a class="el" href="struct_vector.html">Vector</a> *tis, <a class="el" href="struct_text_box.html">TextBox</a> *tb, int current_box)</td></tr>
 <tr class="memitem:a79c3d287d8b27556e723218c77f7d797" id="r_a79c3d287d8b27556e723218c77f7d797"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a79c3d287d8b27556e723218c77f7d797">FONTS_INIT</a> ()</td></tr>
+<tr class="memdesc:a79c3d287d8b27556e723218c77f7d797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simply clears the <a class="el" href="#a30f17acd13d2e00562e734e7d5ff85ae" title="All loaded Fonts.">FONTS</a> buffer and re-initializes the <a class="el" href="types_8h.html#struct_vector">Vector</a>.  <br /></td></tr>
+<tr class="memitem:a618b0e542cb8378b100b0caedaa2fc58" id="r_a618b0e542cb8378b100b0caedaa2fc58"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a618b0e542cb8378b100b0caedaa2fc58">find_empty_text_box_slot</a> (<a class="el" href="group__ui__group.html#struct_u_i_menu">UIMenu</a> *m)</td></tr>
+<tr class="memdesc:a618b0e542cb8378b100b0caedaa2fc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an empty slot for a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> that is marked as free.  <br /></td></tr>
+<tr class="memitem:a1881ce2b8caacf02e28589674707abe2" id="r_a1881ce2b8caacf02e28589674707abe2"><td class="memItemLeft"><a class="el" href="group__ui__group.html#struct_font">Font</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1881ce2b8caacf02e28589674707abe2">read_json_msdf</a> (const char *json_path, const char *png_path)</td></tr>
+<tr class="memdesc:a1881ce2b8caacf02e28589674707abe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the JSON for an MSDF <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>, and creates a <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a> from it.  <br /></td></tr>
+<tr class="memitem:aada1f2f4d89d5a5db992fd8da328008c" id="r_aada1f2f4d89d5a5db992fd8da328008c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aada1f2f4d89d5a5db992fd8da328008c">determine_text_box_dimensions</a> (<a class="el" href="group__ui__group.html#struct_text_box">TextBox</a> *tb, float *width, float *height)</td></tr>
+<tr class="memdesc:aada1f2f4d89d5a5db992fd8da328008c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> dimensions by iterating through its text as if it was rendering the <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>.  <br /></td></tr>
+<tr class="memitem:af9a4820f68217a8aa2f739af3360a1c5" id="r_af9a4820f68217a8aa2f739af3360a1c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af9a4820f68217a8aa2f739af3360a1c5">move_text_box_to_origin</a> (<a class="el" href="group__ui__group.html#struct_text_box">TextBox</a> *box)</td></tr>
+<tr class="memdesc:af9a4820f68217a8aa2f739af3360a1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> to \((0, 0)\), while accounting for <a class="el" href="group__ui__group.html#gad1e8474fe04a7a3dec8cd4edd1c07f61" title="Options for Justifying TextBoxes inside of containers but also around the origin .">Justify</a>.  <br /></td></tr>
+<tr class="memitem:a2e9128b145fec89cba7a19a3b7190c9b" id="r_a2e9128b145fec89cba7a19a3b7190c9b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2e9128b145fec89cba7a19a3b7190c9b">create_text_box</a> (int menu_id)</td></tr>
+<tr class="memdesc:a2e9128b145fec89cba7a19a3b7190c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a ::DEFAULT_TEXT_BOX.  <br /></td></tr>
+<tr class="memitem:a675de23a65b76d7a51579d301d6301eb" id="r_a675de23a65b76d7a51579d301d6301eb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a675de23a65b76d7a51579d301d6301eb">delete_text_box</a> (int menu, int id)</td></tr>
+<tr class="memdesc:a675de23a65b76d7a51579d301d6301eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> and its text and frees it from the <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a30f17acd13d2e00562e734e7d5ff85ae" id="r_a30f17acd13d2e00562e734e7d5ff85ae"><td class="memItemLeft"><a class="el" href="struct_vector.html">Vector</a>&#160;</td><td class="memItemRight"><a class="el" href="#a30f17acd13d2e00562e734e7d5ff85ae">FONTS</a></td></tr>
+<tr class="memitem:a30f17acd13d2e00562e734e7d5ff85ae" id="r_a30f17acd13d2e00562e734e7d5ff85ae"><td class="memItemLeft"><a class="el" href="types_8h.html#struct_vector">Vector</a>&#160;</td><td class="memItemRight"><a class="el" href="#a30f17acd13d2e00562e734e7d5ff85ae">FONTS</a></td></tr>
+<tr class="memdesc:a30f17acd13d2e00562e734e7d5ff85ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">All loaded <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>s.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="acc6a010948e804a545ac2c106f21941f" name="acc6a010948e804a545ac2c106f21941f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc6a010948e804a545ac2c106f21941f">&#9670;&#160;</a></span>add_all_text_boxes_to_draw_buffer()</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Functions that modify <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es and load <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>s. </p>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void add_all_text_boxes_to_draw_buffer </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l01220">1220</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="ui_8h_source.html#l00012">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>, <a class="el" href="main_8c_source.html#l00255">TEXT_EBO</a>, <a class="el" href="fonts_8c_source.html#l00016">TEXT_INDEX_COUNT</a>, and <a class="el" href="main_8c_source.html#l00254">TEXT_VBO</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="editor_8c_source.html#l01293">execute_text_box_undo()</a>, <a class="el" href="editor_8c_source.html#l01071">execute_ui_element_undo()</a>, <a class="el" href="main_8c_source.html#l00493">main()</a>, <a class="el" href="editor_8c_source.html#l03035">render_text_menu()</a>, <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="editor_8c_source.html#l01630">update_performance_overlay()</a>.</p>
-
-</div>
-</div>
-<a id="a187fdef1c8e91bed6d022d63fc468be2" name="a187fdef1c8e91bed6d022d63fc468be2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a187fdef1c8e91bed6d022d63fc468be2">&#9670;&#160;</a></span>add_text_box()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void add_text_box </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>tvs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>tis</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_text_box.html">TextBox</a> *</td>          <td class="paramname"><span class="paramname"><em>tb</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>current_box</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render_8c_source.html#l01154">1154</a> of file <a class="el" href="render_8c_source.html">render.c</a>.</p>
-
-<p class="reference">References <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00189">TextBox::color</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00190">TextBox::fill</a>, <a class="el" href="ui_8h_source.html#l00174">TextBox::font_id</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="ui_8h_source.html#l00030">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00029">Font::glyphs</a>, <a class="el" href="ui_8h_source.html#l00020">Glyph::height</a>, <a class="el" href="ui_8h_source.html#l00188">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00179">TextBox::text_size</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::u0</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::u1</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::v0</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::v1</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="ui_8h_source.html#l00020">Glyph::width</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="ui_8h_source.html#l00022">Glyph::xadvance</a>, <a class="el" href="ui_8h_source.html#l00021">Glyph::xoffset</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, and <a class="el" href="ui_8h_source.html#l00021">Glyph::yoffset</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, and <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>.</p>
-
-</div>
-</div>
-<a id="a2e9128b145fec89cba7a19a3b7190c9b" name="a2e9128b145fec89cba7a19a3b7190c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e9128b145fec89cba7a19a3b7190c9b">&#9670;&#160;</a></span>create_text_box()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int create_text_box </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>menu_id</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00201">201</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
-
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="fonts_8c_source.html#l00201">create_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, <a class="el" href="ui_8h_source.html#l00194">TextBox::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="fonts_8c_source.html#l00149">move_text_box_to_origin()</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00178">TextBox::text_cap</a>, <a class="el" href="ui_8h_source.html#l00175">TextBox::uID</a>, and <a class="el" href="ui_8h_source.html#l00373">UIMenu::uID</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00201">create_text_box()</a>, <a class="el" href="editor_8c_source.html#l03035">render_text_menu()</a>, and <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>.</p>
-
-</div>
-</div>
-<a id="a675de23a65b76d7a51579d301d6301eb" name="a675de23a65b76d7a51579d301d6301eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a675de23a65b76d7a51579d301d6301eb">&#9670;&#160;</a></span>delete_text_box()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void delete_text_box </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>menu</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00183">183</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
-
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00377">UIMenu::containers</a>, <a class="el" href="fonts_8c_source.html#l00183">delete_text_box()</a>, <a class="el" href="ui_8h_source.html#l00173">TextBox::free</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00195">TextBox::parent_container</a>, <a class="el" href="ui_8c_source.html#l00157">remove_text_box_from_container()</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, and <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00183">delete_text_box()</a>, <a class="el" href="editor_8c_source.html#l01293">execute_text_box_undo()</a>, <a class="el" href="editor_8c_source.html#l01071">execute_ui_element_undo()</a>, <a class="el" href="ui_8c_source.html#l00329">move_text_box_to_menu()</a>, <a class="el" href="editor_8c_source.html#l03035">render_text_menu()</a>, and <a class="el" href="editor_8c_source.html#l03419">render_ui_menu()</a>.</p>
-
-</div>
-</div>
-<a id="aada1f2f4d89d5a5db992fd8da328008c" name="aada1f2f4d89d5a5db992fd8da328008c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aada1f2f4d89d5a5db992fd8da328008c">&#9670;&#160;</a></span>determine_text_box_dimensions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void determine_text_box_dimensions </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_text_box.html">TextBox</a> *</td>          <td class="paramname"><span class="paramname"><em>tb</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00096">96</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
-
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="fonts_8c_source.html#l00096">determine_text_box_dimensions()</a>, <a class="el" href="ui_8h_source.html#l00174">TextBox::font_id</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="ui_8h_source.html#l00030">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00029">Font::glyphs</a>, <a class="el" href="ui_8h_source.html#l00020">Glyph::height</a>, <a class="el" href="ui_8h_source.html#l00033">Font::highest_dist</a>, <a class="el" href="ui_8h_source.html#l00188">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00031">Font::tex_h</a>, <a class="el" href="ui_8h_source.html#l00031">Font::tex_w</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00179">TextBox::text_size</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::u0</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::u1</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::v0</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::v1</a>, <a class="el" href="ui_8h_source.html#l00180">TextBox::w</a>, <a class="el" href="ui_8h_source.html#l00020">Glyph::width</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="ui_8h_source.html#l00022">Glyph::xadvance</a>, <a class="el" href="ui_8h_source.html#l00021">Glyph::xoffset</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, and <a class="el" href="ui_8h_source.html#l00021">Glyph::yoffset</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00096">determine_text_box_dimensions()</a>, and <a class="el" href="fonts_8c_source.html#l00149">move_text_box_to_origin()</a>.</p>
-
-</div>
-</div>
-<a id="a618b0e542cb8378b100b0caedaa2fc58" name="a618b0e542cb8378b100b0caedaa2fc58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a618b0e542cb8378b100b0caedaa2fc58">&#9670;&#160;</a></span>find_empty_text_box_slot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int find_empty_text_box_slot </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_u_i_menu.html">UIMenu</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00021">21</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
-
-<p class="reference">References <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, <a class="el" href="ui_8h_source.html#l00173">TextBox::free</a>, <a class="el" href="ui_8h_source.html#l00012">MAX_TEXT_BOXES</a>, and <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00201">create_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, and <a class="el" href="ui_8c_source.html#l00329">move_text_box_to_menu()</a>.</p>
-
-</div>
-</div>
+<p class="definition">Definition in file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a79c3d287d8b27556e723218c77f7d797" name="a79c3d287d8b27556e723218c77f7d797"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79c3d287d8b27556e723218c77f7d797">&#9670;&#160;</a></span>FONTS_INIT()</h2>
 
@@ -329,9 +181,121 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Simply clears the <a class="el" href="#a30f17acd13d2e00562e734e7d5ff85ae" title="All loaded Fonts.">FONTS</a> buffer and re-initializes the <a class="el" href="types_8h.html#struct_vector">Vector</a>. </p>
+
 <p class="definition">Definition at line <a class="el" href="fonts_8h_source.html#l00021">21</a> of file <a class="el" href="fonts_8h_source.html">fonts.h</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, and <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, and <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>.</p>
+
+</div>
+</div>
+<a id="a618b0e542cb8378b100b0caedaa2fc58" name="a618b0e542cb8378b100b0caedaa2fc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618b0e542cb8378b100b0caedaa2fc58">&#9670;&#160;</a></span>find_empty_text_box_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int find_empty_text_box_slot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ui__group.html#struct_u_i_menu">UIMenu</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds an empty slot for a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> that is marked as free. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a> to search. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00021">21</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
+
+<p class="reference">References <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, and <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, and <a class="el" href="ui_8c_source.html#l00329">move_text_box_to_menu()</a>.</p>
+
+</div>
+</div>
+<a id="a1881ce2b8caacf02e28589674707abe2" name="a1881ce2b8caacf02e28589674707abe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1881ce2b8caacf02e28589674707abe2">&#9670;&#160;</a></span>read_json_msdf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ui__group.html#struct_font">Font</a> * read_json_msdf </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>json_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>png_path</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads the JSON for an MSDF <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>, and creates a <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a> from it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json_path</td><td>The path to the json. </td></tr>
+    <tr><td class="paramname">png_path</td><td>The path to the png. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the resulting <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00033">33</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="ui_8h_source.html#l00079">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00078">Font::glyphs</a>, <a class="el" href="ui_8h_source.html#l00060">Glyph::height</a>, <a class="el" href="ui_8h_source.html#l00083">Font::highest_dist</a>, <a class="el" href="ui_8h_source.html#l00082">Font::highest_y</a>, <a class="el" href="ui_8h_source.html#l00076">Font::id</a>, <a class="el" href="ui_8h_source.html#l00054">Glyph::id</a>, <a class="el" href="ui_8h_source.html#l00084">Font::name</a>, <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>, <a class="el" href="ui_8h_source.html#l00081">Font::tex_h</a>, <a class="el" href="ui_8h_source.html#l00080">Font::tex_w</a>, <a class="el" href="ui_8h_source.html#l00055">Glyph::u0</a>, <a class="el" href="ui_8h_source.html#l00057">Glyph::u1</a>, <a class="el" href="ui_8h_source.html#l00056">Glyph::v0</a>, <a class="el" href="ui_8h_source.html#l00058">Glyph::v1</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="ui_8h_source.html#l00059">Glyph::width</a>, <a class="el" href="ui_8h_source.html#l00063">Glyph::xadvance</a>, <a class="el" href="ui_8h_source.html#l00061">Glyph::xoffset</a>, and <a class="el" href="ui_8h_source.html#l00062">Glyph::yoffset</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>.</p>
+
+</div>
+</div>
+<a id="aada1f2f4d89d5a5db992fd8da328008c" name="aada1f2f4d89d5a5db992fd8da328008c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aada1f2f4d89d5a5db992fd8da328008c">&#9670;&#160;</a></span>determine_text_box_dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void determine_text_box_dimensions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ui__group.html#struct_text_box">TextBox</a> *</td>          <td class="paramname"><span class="paramname"><em>tb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> dimensions by iterating through its text as if it was rendering the <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tb</td><td>The <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>. </td></tr>
+    <tr><td class="paramname">width</td><td>Pointer to out width. </td></tr>
+    <tr><td class="paramname">height</td><td>Pointer to out height. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00097">97</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
+
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="fonts_8c_source.html#l00097">determine_text_box_dimensions()</a>, <a class="el" href="ui_8h_source.html#l00262">TextBox::font_id</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="ui_8h_source.html#l00079">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00078">Font::glyphs</a>, <a class="el" href="ui_8h_source.html#l00060">Glyph::height</a>, <a class="el" href="ui_8h_source.html#l00083">Font::highest_dist</a>, <a class="el" href="ui_8h_source.html#l00284">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00081">Font::tex_h</a>, <a class="el" href="ui_8h_source.html#l00080">Font::tex_w</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00267">TextBox::text_size</a>, <a class="el" href="ui_8h_source.html#l00055">Glyph::u0</a>, <a class="el" href="ui_8h_source.html#l00057">Glyph::u1</a>, <a class="el" href="ui_8h_source.html#l00056">Glyph::v0</a>, <a class="el" href="ui_8h_source.html#l00058">Glyph::v1</a>, <a class="el" href="ui_8h_source.html#l00268">TextBox::w</a>, <a class="el" href="ui_8h_source.html#l00059">Glyph::width</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="ui_8h_source.html#l00063">Glyph::xadvance</a>, <a class="el" href="ui_8h_source.html#l00061">Glyph::xoffset</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, and <a class="el" href="ui_8h_source.html#l00062">Glyph::yoffset</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00097">determine_text_box_dimensions()</a>, and <a class="el" href="fonts_8c_source.html#l00150">move_text_box_to_origin()</a>.</p>
 
 </div>
 </div>
@@ -344,44 +308,93 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void move_text_box_to_origin </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_text_box.html">TextBox</a> *</td>          <td class="paramname"><span class="paramname"><em>box</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__ui__group.html#struct_text_box">TextBox</a> *</td>          <td class="paramname"><span class="paramname"><em>box</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00149">149</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
+<p>Moves a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> to \((0, 0)\), while accounting for <a class="el" href="group__ui__group.html#gad1e8474fe04a7a3dec8cd4edd1c07f61" title="Options for Justifying TextBoxes inside of containers but also around the origin .">Justify</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">box</td><td>The <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> to move. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="ui_8h_source.html#l00187">TextBox::center</a>, <a class="el" href="fonts_8c_source.html#l00096">determine_text_box_dimensions()</a>, <a class="el" href="ui_8h_source.html#l00181">TextBox::h</a>, <a class="el" href="ui_8h_source.html#l00176">TextBox::justify</a>, <a class="el" href="ui_8h_source.html#l00088">JUSTIFY_CENTER</a>, <a class="el" href="ui_8h_source.html#l00089">JUSTIFY_LEFT</a>, <a class="el" href="ui_8h_source.html#l00090">JUSTIFY_RIGHT</a>, <a class="el" href="fonts_8c_source.html#l00149">move_text_box_to_origin()</a>, <a class="el" href="ui_8h_source.html#l00188">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00180">TextBox::w</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00150">150</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01669">create_performance_overlay()</a>, <a class="el" href="fonts_8c_source.html#l00201">create_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00149">move_text_box_to_origin()</a>, and <a class="el" href="editor_8c_source.html#l01630">update_performance_overlay()</a>.</p>
+<p class="reference">References <a class="el" href="ui_8h_source.html#l00283">TextBox::center</a>, <a class="el" href="fonts_8c_source.html#l00097">determine_text_box_dimensions()</a>, <a class="el" href="ui_8h_source.html#l00269">TextBox::h</a>, <a class="el" href="ui_8h_source.html#l00264">TextBox::justify</a>, <a class="el" href="ui_8h_source.html#l00154">JUSTIFY_CENTER</a>, <a class="el" href="ui_8h_source.html#l00155">JUSTIFY_LEFT</a>, <a class="el" href="ui_8h_source.html#l00156">JUSTIFY_RIGHT</a>, <a class="el" href="fonts_8c_source.html#l00150">move_text_box_to_origin()</a>, <a class="el" href="ui_8h_source.html#l00284">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00268">TextBox::w</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01674">create_performance_overlay()</a>, <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00150">move_text_box_to_origin()</a>, and <a class="el" href="editor_8c_source.html#l01635">update_performance_overlay()</a>.</p>
 
 </div>
 </div>
-<a id="a1881ce2b8caacf02e28589674707abe2" name="a1881ce2b8caacf02e28589674707abe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1881ce2b8caacf02e28589674707abe2">&#9670;&#160;</a></span>read_json_msdf()</h2>
+<a id="a2e9128b145fec89cba7a19a3b7190c9b" name="a2e9128b145fec89cba7a19a3b7190c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e9128b145fec89cba7a19a3b7190c9b">&#9670;&#160;</a></span>create_text_box()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_font.html">Font</a> * read_json_msdf </td>
+          <td class="memname">int create_text_box </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>json_path</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>menu_id</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>png_path</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00033">33</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
+<p>Creates a ::DEFAULT_TEXT_BOX. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menu_id</td><td>The target <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index to the <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>. </dd></dl>
 
-<p class="reference">References <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="ui_8h_source.html#l00030">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00029">Font::glyphs</a>, <a class="el" href="ui_8h_source.html#l00020">Glyph::height</a>, <a class="el" href="ui_8h_source.html#l00033">Font::highest_dist</a>, <a class="el" href="ui_8h_source.html#l00032">Font::highest_y</a>, <a class="el" href="ui_8h_source.html#l00018">Glyph::id</a>, <a class="el" href="ui_8h_source.html#l00035">Font::name</a>, <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>, <a class="el" href="ui_8h_source.html#l00031">Font::tex_h</a>, <a class="el" href="ui_8h_source.html#l00031">Font::tex_w</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::u0</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::u1</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::v0</a>, <a class="el" href="ui_8h_source.html#l00019">Glyph::v1</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="ui_8h_source.html#l00020">Glyph::width</a>, <a class="el" href="ui_8h_source.html#l00022">Glyph::xadvance</a>, <a class="el" href="ui_8h_source.html#l00021">Glyph::xoffset</a>, and <a class="el" href="ui_8h_source.html#l00021">Glyph::yoffset</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00202">202</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, <a class="el" href="ui_8h_source.html#l00289">TextBox::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="fonts_8c_source.html#l00150">move_text_box_to_origin()</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00266">TextBox::text_cap</a>, <a class="el" href="ui_8h_source.html#l00263">TextBox::uID</a>, and <a class="el" href="ui_8h_source.html#l00564">UIMenu::uID</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, <a class="el" href="editor_8c_source.html#l03040">render_text_menu()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
+
+</div>
+</div>
+<a id="a675de23a65b76d7a51579d301d6301eb" name="a675de23a65b76d7a51579d301d6301eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675de23a65b76d7a51579d301d6301eb">&#9670;&#160;</a></span>delete_text_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_text_box </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>menu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> and its text and frees it from the <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menu</td><td>The <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a> the <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> is in. </td></tr>
+    <tr><td class="paramname">id</td><td>The index of the <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00184">184</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
+
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="fonts_8c_source.html#l00184">delete_text_box()</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00290">TextBox::parent_container</a>, <a class="el" href="ui_8c_source.html#l00157">remove_text_box_from_container()</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, and <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00184">delete_text_box()</a>, <a class="el" href="editor_8c_source.html#l01298">execute_text_box_undo()</a>, <a class="el" href="editor_8c_source.html#l01076">execute_ui_element_undo()</a>, <a class="el" href="ui_8c_source.html#l00329">move_text_box_to_menu()</a>, <a class="el" href="editor_8c_source.html#l03040">render_text_menu()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
 
 </div>
 </div>
@@ -396,7 +409,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_vector.html">Vector</a> FONTS</td>
+          <td class="memname"><a class="el" href="types_8h.html#struct_vector">Vector</a> FONTS</td>
         </tr>
       </table>
   </td>
@@ -406,9 +419,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>All loaded <a class="el" href="group__ui__group.html#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a>s. </p>
+
 <p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00014">14</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00096">determine_text_box_dimensions()</a>, <a class="el" href="fonts_8h_source.html#l00021">FONTS_INIT()</a>, <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00097">determine_text_box_dimensions()</a>, <a class="el" href="fonts_8h_source.html#l00021">FONTS_INIT()</a>, <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
 
 </div>
 </div>

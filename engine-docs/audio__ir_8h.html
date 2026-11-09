@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -128,19 +132,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('audio__ir_8h.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad7b112adefb25363ce2cac8d90f519cc" id="r_gad7b112adefb25363ce2cac8d90f519cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gad7b112adefb25363ce2cac8d90f519cc">rotate_sh</a> (float *OUT, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>], <a class="el" href="structmat3.html">mat3</a> rot)</td></tr>
+<tr class="memitem:gad7b112adefb25363ce2cac8d90f519cc" id="r_gad7b112adefb25363ce2cac8d90f519cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gad7b112adefb25363ce2cac8d90f519cc">rotate_sh</a> (float *OUT, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>], <a class="el" href="types_8h.html#structmat3">mat3</a> rot)</td></tr>
 <tr class="memdesc:gad7b112adefb25363ce2cac8d90f519cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the SH.  <br /></td></tr>
-<tr class="memitem:ga3b6731fb91c35d5c834c0addcf0753ef" id="r_ga3b6731fb91c35d5c834c0addcf0753ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga3b6731fb91c35d5c834c0addcf0753ef">fft_channels</a> (<a class="el" href="struct_convolver_node.html">ConvolverNode</a> *node, bool crossfading)</td></tr>
+<tr class="memitem:ga3b6731fb91c35d5c834c0addcf0753ef" id="r_ga3b6731fb91c35d5c834c0addcf0753ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga3b6731fb91c35d5c834c0addcf0753ef">fft_channels</a> (<a class="el" href="group__aprobe__group.html#struct_convolver_node">ConvolverNode</a> *node, bool crossfading)</td></tr>
 <tr class="memdesc:ga3b6731fb91c35d5c834c0addcf0753ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFTs the newest audio chunk with the partitioned overlap-add buffer.  <br /></td></tr>
-<tr class="memitem:ga33cb3214a18859fbac84b5832d4ec433" id="r_ga33cb3214a18859fbac84b5832d4ec433"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433">evaluate_sh</a> (<a class="el" href="structvec3.html">vec3</a> dir, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>])</td></tr>
+<tr class="memitem:ga33cb3214a18859fbac84b5832d4ec433" id="r_ga33cb3214a18859fbac84b5832d4ec433"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433">evaluate_sh</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> dir, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>])</td></tr>
 <tr class="memdesc:ga33cb3214a18859fbac84b5832d4ec433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates 9 spherical harmonics based on direction.  <br /></td></tr>
 <tr class="memitem:gac94670b0a25d91c04c62d2e745727f03" id="r_gac94670b0a25d91c04c62d2e745727f03"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gac94670b0a25d91c04c62d2e745727f03">load_hrtf_from_binary</a> (const char *filename)</td></tr>
 <tr class="memdesc:gac94670b0a25d91c04c62d2e745727f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a stored HRTF from engine binary.  <br /></td></tr>
-<tr class="memitem:ga87c9086910fb559205a3fdbcd2c975b3" id="r_ga87c9086910fb559205a3fdbcd2c975b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga87c9086910fb559205a3fdbcd2c975b3">update_player_audio_probe</a> ()</td></tr>
-<tr class="memdesc:ga87c9086910fb559205a3fdbcd2c975b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a new IR needs to be signaled from the background thread.  <br /></td></tr>
-<tr class="memitem:gafa67ed8d6e7bf514aa0ccd3a4cbef3f7" id="r_gafa67ed8d6e7bf514aa0ccd3a4cbef3f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gafa67ed8d6e7bf514aa0ccd3a4cbef3f7">init_hrtf_worker_thread</a> (<a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *td)</td></tr>
+<tr class="memitem:gafa67ed8d6e7bf514aa0ccd3a4cbef3f7" id="r_gafa67ed8d6e7bf514aa0ccd3a4cbef3f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gafa67ed8d6e7bf514aa0ccd3a4cbef3f7">init_hrtf_worker_thread</a> (<a class="el" href="group__aprobe__group.html#struct_h_r_t_f_thread_data">HRTFThreadData</a> *td)</td></tr>
 <tr class="memdesc:gafa67ed8d6e7bf514aa0ccd3a4cbef3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the worker thread that convolves the audio probes with the HRTF.  <br /></td></tr>
-<tr class="memitem:ga53c21fcfa5ed74a88fd0ef9736493dcc" id="r_ga53c21fcfa5ed74a88fd0ef9736493dcc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga53c21fcfa5ed74a88fd0ef9736493dcc">delete_hrtf_worker_thread</a> (<a class="el" href="struct_h_r_t_f_thread_data.html">HRTFThreadData</a> *td)</td></tr>
+<tr class="memitem:ga53c21fcfa5ed74a88fd0ef9736493dcc" id="r_ga53c21fcfa5ed74a88fd0ef9736493dcc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga53c21fcfa5ed74a88fd0ef9736493dcc">delete_hrtf_worker_thread</a> (<a class="el" href="group__aprobe__group.html#struct_h_r_t_f_thread_data">HRTFThreadData</a> *td)</td></tr>
 <tr class="memdesc:ga53c21fcfa5ed74a88fd0ef9736493dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up the worker thread that convolves the audio probes with the HRTF.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>

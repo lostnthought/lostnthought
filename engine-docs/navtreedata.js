@@ -27,6 +27,7 @@ var NAVTREE =
   [ "Untitled", "index.html", [
     [ "Untitled Documentation", "index.html", "index" ],
     [ "Todo List", "todo.html", null ],
+    [ "Critical Todo List", "critical.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -54,22 +55,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_g_j_k_8c.html",
-"editor_8c.html#a5e21c32bd7ee3cda49110a01e0ffcaee",
-"engine__types_8h.html#a8e5aa3a533efbd116147ad56ff9fd123ada664fba3eecf8efd9b87415550f85f4",
-"globals_eval_u.html",
-"init_8h.html#a1cebcf2c717b2eea23c913fd914ff24b",
-"init_8h.html#ae2d4db6afe9b1f35ad60f3095916909a",
-"main_8c.html#a37b254050ef36cc7dd6f596ae0aaee09",
-"mathf_8h.html#ad60f5d8bfb22906cc7949f4ababf110f",
-"shaders_8c.html#ae6178fafb6c5ef778e7fb67bc8168449",
-"struct_cam_data.html#af7438c9f7aa19b6cd572710d439b3cf7",
-"struct_entity.html#acc8f3e434f1ef26c373ee69727fe0069",
-"struct_instance_data.html#aa5eafec6f2436fb8fc9e656741eff9b8",
-"struct_mesh_g_p_u.html#a2eaa9eaca9cedf90f81c84f366f7dd4e",
-"struct_spring.html#afb93d4f7f0d736f04abe265438dfffb8",
-"struct_u_i_slider.html#adab1d074a0a527eff8139640ac3595dd",
-"types_8h.html#adead7617da48125e4f786a1101a6839faf53683209a38cfc1b35e16418d73ebf6",
-"utilities_8h.html#a39063cd7a2279f8e037b564239cf16a5"
+"engine__types_8h.html#a0dc653d750d5efd2b52ad459ddd3803e",
+"engine__types_8h.html#a570c9c752437d81f1671c23e21d31171",
+"engine__types_8h.html#a916a444002852583ac3264aa872e982ba91e321e9cc0be16d6779874eb086557b",
+"engine__types_8h.html#ad0cbed59ceee47f6f37f14c2fb35ac0b",
+"engine__types_8h.html#struct_r_probe_u_b_o_1_1_align16",
+"gltf_8c.html#a49c15d8b2091fd3ed85f77f80c763692",
+"group__editor__group.html#a46360735d46a45969ea3d067c0c1252f",
+"group__editor__group.html#ga99abbda8f64f6035de314da0322f46d6",
+"group__physics__group.html#ga8b1ea34e8cb186200ff7c7c2ef02bed5",
+"group__ui__group.html#gadabf9a498fa29add38f9ceac1a987a5e",
+"init_8h.html#a7e7a08fc97f53648f4dac98ddfc45f0b",
+"lightmap_8h.html#ae59e1e354b2903189ac4ebe97171a2cc",
+"main_8c.html#aad53bb59240a6afe13466aac3f12487d",
+"render_8c.html#a5035cc0cc6f3eff10015e4704ab9fb1a",
+"types_8h.html#aded54b137bbdc3f10a7b3cbe154e5aad"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

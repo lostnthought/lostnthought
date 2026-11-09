@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -145,10 +149,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('lightmap_8c.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:UVAssignmentPair" id="r_UVAssignmentPair"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_u_v_assignment_pair.html">UVAssignmentPair</a></td></tr>
-<tr class="memitem:LMDebug" id="r_LMDebug"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_l_m_debug.html">LMDebug</a></td></tr>
-<tr class="memitem:LightGPUData" id="r_LightGPUData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_light_g_p_u_data.html">LightGPUData</a></td></tr>
-<tr class="memitem:DistancePair" id="r_DistancePair"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_distance_pair.html">DistancePair</a></td></tr>
+<tr class="memitem:UVAssignmentPair_5Fstruct_5Fu_5Fv_5Fassignment_5Fpair" id="r_UVAssignmentPair_5Fstruct_5Fu_5Fv_5Fassignment_5Fpair"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_u_v_assignment_pair">UVAssignmentPair</a></td></tr>
+<tr class="memitem:LMDebug_5Fstruct_5Fl_5Fm_5Fdebug" id="r_LMDebug_5Fstruct_5Fl_5Fm_5Fdebug"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_l_m_debug">LMDebug</a></td></tr>
+<tr class="memitem:LightGPUData_5Fstruct_5Flight_5Fg_5Fp_5Fu_5Fdata" id="r_LightGPUData_5Fstruct_5Flight_5Fg_5Fp_5Fu_5Fdata"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_light_g_p_u_data">LightGPUData</a></td></tr>
+<tr class="memitem:DistancePair_5Fstruct_5Fdistance_5Fpair" id="r_DistancePair_5Fstruct_5Fdistance_5Fpair"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_distance_pair">DistancePair</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -160,97 +164,260 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6374f217972f2dff01da117ae732514c" id="r_a6374f217972f2dff01da117ae732514c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6374f217972f2dff01da117ae732514c">walk_coplanar_adjacency</a> (<a class="el" href="struct_mesh.html">Mesh</a> *mesh, <a class="el" href="struct_u_v_island.html">UVIsland</a> *island, <a class="el" href="struct_u_v_mapping.html">UVMapping</a> *uv_map, int island_idx, int current_face_index, bool *tri_list, <a class="el" href="struct_triangle_adjacency.html">TriangleAdjacency</a> *tri_adj, <a class="el" href="structvec3.html">vec3</a> normal, <a class="el" href="structvec3.html">vec3</a> ref_point, float eps)</td></tr>
-<tr class="memitem:a0841dc3897e70ce20be53fd4fa1b86f6" id="r_a0841dc3897e70ce20be53fd4fa1b86f6"><td class="memItemLeft"><a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0841dc3897e70ce20be53fd4fa1b86f6">init_lightmap_atlas</a> (int width, int height, int block_size)</td></tr>
-<tr class="memitem:a022d7798232162ea9f6f165b01dbe1a8" id="r_a022d7798232162ea9f6f165b01dbe1a8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a022d7798232162ea9f6f165b01dbe1a8">free_lightmap_atlas</a> (<a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a> *atlas)</td></tr>
-<tr class="memitem:addd1c1eeb6c51b2df84ff589b2cb9ebe" id="r_addd1c1eeb6c51b2df84ff589b2cb9ebe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addd1c1eeb6c51b2df84ff589b2cb9ebe">init_lightmap_data</a> (<a class="el" href="struct_lightmap_data.html">LightmapData</a> *ld)</td></tr>
-<tr class="memitem:a7f3bec020d20e5fb502e95e45c466073" id="r_a7f3bec020d20e5fb502e95e45c466073"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7f3bec020d20e5fb502e95e45c466073">find_least_parallel_axis</a> (<a class="el" href="structvec3.html">vec3</a> normal, <a class="el" href="structvec3.html">vec3</a> *u_dir, <a class="el" href="structvec3.html">vec3</a> *v_dir)</td></tr>
-<tr class="memitem:ab2bc7157510bd93930cfcda3bff94118" id="r_ab2bc7157510bd93930cfcda3bff94118"><td class="memItemLeft"><a class="el" href="struct_lightmap_rect.html">LightmapRect</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab2bc7157510bd93930cfcda3bff94118">allocate_lightmap_rect</a> (<a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a> *atlas, int w_px, int h_px)</td></tr>
-<tr class="memitem:a2e92d1578ca582604c995d5030f374ca" id="r_a2e92d1578ca582604c995d5030f374ca"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2e92d1578ca582604c995d5030f374ca">deallocate_lightmap_rect</a> (<a class="el" href="struct_lightmap_data.html">LightmapData</a> *ld, <a class="el" href="struct_lightmap_rect.html">LightmapRect</a> *rect)</td></tr>
-<tr class="memitem:afc59c12be32f691a4d684158e6b63eba" id="r_afc59c12be32f691a4d684158e6b63eba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc59c12be32f691a4d684158e6b63eba">assign_uvs</a> (<a class="el" href="struct_u_v_island.html">UVIsland</a> *uvi, <a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a> *atlas)</td></tr>
-<tr class="memitem:a70f43c51271be99ad6f4981650a2074b" id="r_a70f43c51271be99ad6f4981650a2074b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a70f43c51271be99ad6f4981650a2074b">add_uv_island_to_lightmap</a> (<a class="el" href="struct_lightmap_data.html">LightmapData</a> *ld, <a class="el" href="struct_u_v_island.html">UVIsland</a> *uvi)</td></tr>
-<tr class="memitem:ad0bc48ed982f9e2f7b38097967c0207d" id="r_ad0bc48ed982f9e2f7b38097967c0207d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad0bc48ed982f9e2f7b38097967c0207d">init_uv_islands</a> (<a class="el" href="struct_lightmap_data.html">LightmapData</a> *ld)</td></tr>
-<tr class="memitem:a2bbbe962fb7a6954fe28f01e58f8aba2" id="r_a2bbbe962fb7a6954fe28f01e58f8aba2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2bbbe962fb7a6954fe28f01e58f8aba2">build_uv_islands</a> (<a class="el" href="struct_mesh_node.html">MeshNode</a> *mn)</td></tr>
+<tr class="memitem:a6374f217972f2dff01da117ae732514c" id="r_a6374f217972f2dff01da117ae732514c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6374f217972f2dff01da117ae732514c">walk_coplanar_adjacency</a> (<a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *mesh, <a class="el" href="engine__types_8h.html#struct_u_v_island">UVIsland</a> *island, <a class="el" href="engine__types_8h.html#struct_u_v_mapping">UVMapping</a> *uv_map, int island_idx, int current_face_index, bool *tri_list, <a class="el" href="engine__types_8h.html#struct_triangle_adjacency">TriangleAdjacency</a> *tri_adj, <a class="el" href="types_8h.html#structvec3">vec3</a> normal, <a class="el" href="types_8h.html#structvec3">vec3</a> ref_point, float eps)</td></tr>
+<tr class="memitem:a0841dc3897e70ce20be53fd4fa1b86f6" id="r_a0841dc3897e70ce20be53fd4fa1b86f6"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0841dc3897e70ce20be53fd4fa1b86f6">init_lightmap_atlas</a> (int width, int height, int block_size)</td></tr>
+<tr class="memitem:a022d7798232162ea9f6f165b01dbe1a8" id="r_a022d7798232162ea9f6f165b01dbe1a8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a022d7798232162ea9f6f165b01dbe1a8">free_lightmap_atlas</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a> *atlas)</td></tr>
+<tr class="memitem:addd1c1eeb6c51b2df84ff589b2cb9ebe" id="r_addd1c1eeb6c51b2df84ff589b2cb9ebe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addd1c1eeb6c51b2df84ff589b2cb9ebe">init_lightmap_data</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *ld)</td></tr>
+<tr class="memdesc:addd1c1eeb6c51b2df84ff589b2cb9ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees current <a class="el" href="engine__types_8h.html#struct_lightmap_atlas" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a> and <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> data and re-initializes the <a class="el" href="engine__types_8h.html#struct_lightmap_atlas" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a> array and initializes the <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> <a class="el" href="types_8h.html#struct_vector">Vector</a>.  <br /></td></tr>
+<tr class="memitem:a7f3bec020d20e5fb502e95e45c466073" id="r_a7f3bec020d20e5fb502e95e45c466073"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7f3bec020d20e5fb502e95e45c466073">find_least_parallel_axis</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> normal, <a class="el" href="types_8h.html#structvec3">vec3</a> *u_dir, <a class="el" href="types_8h.html#structvec3">vec3</a> *v_dir)</td></tr>
+<tr class="memitem:ab2bc7157510bd93930cfcda3bff94118" id="r_ab2bc7157510bd93930cfcda3bff94118"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#struct_lightmap_rect">LightmapRect</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab2bc7157510bd93930cfcda3bff94118">allocate_lightmap_rect</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a> *atlas, int w_px, int h_px)</td></tr>
+<tr class="memitem:a2e92d1578ca582604c995d5030f374ca" id="r_a2e92d1578ca582604c995d5030f374ca"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2e92d1578ca582604c995d5030f374ca">deallocate_lightmap_rect</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *ld, <a class="el" href="engine__types_8h.html#struct_lightmap_rect">LightmapRect</a> *rect)</td></tr>
+<tr class="memitem:afc59c12be32f691a4d684158e6b63eba" id="r_afc59c12be32f691a4d684158e6b63eba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc59c12be32f691a4d684158e6b63eba">assign_uvs</a> (<a class="el" href="engine__types_8h.html#struct_u_v_island">UVIsland</a> *uvi, <a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a> *atlas)</td></tr>
+<tr class="memitem:a70f43c51271be99ad6f4981650a2074b" id="r_a70f43c51271be99ad6f4981650a2074b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a70f43c51271be99ad6f4981650a2074b">add_uv_island_to_lightmap</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *ld, <a class="el" href="engine__types_8h.html#struct_u_v_island">UVIsland</a> *uvi)</td></tr>
+<tr class="memitem:ad0bc48ed982f9e2f7b38097967c0207d" id="r_ad0bc48ed982f9e2f7b38097967c0207d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad0bc48ed982f9e2f7b38097967c0207d">init_uv_islands</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *ld)</td></tr>
+<tr class="memdesc:ad0bc48ed982f9e2f7b38097967c0207d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all current <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s to the lightmap by allocating <a class="el" href="engine__types_8h.html#struct_lightmap_rect" title="The rects that are slotted into thet LightmapAtlas during UV generation for UV lightmaps.">LightmapRect</a>s.  <br /></td></tr>
+<tr class="memitem:a2bbbe962fb7a6954fe28f01e58f8aba2" id="r_a2bbbe962fb7a6954fe28f01e58f8aba2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2bbbe962fb7a6954fe28f01e58f8aba2">build_uv_islands</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn)</td></tr>
+<tr class="memdesc:a2bbbe962fb7a6954fe28f01e58f8aba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s over a <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> by stepping through <a class="el" href="engine__types_8h.html#struct_triangle_adjacency" title="Adjacent triangles for each MeshFace on a Mesh.">TriangleAdjacency</a> and stopping when normals become too different.  <br /></td></tr>
 <tr class="memitem:ab2af1a73b7856f95359d7333fdd77d00" id="r_ab2af1a73b7856f95359d7333fdd77d00"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab2af1a73b7856f95359d7333fdd77d00">LM_regenerate_texels</a> ()</td></tr>
+<tr class="memdesc:ab2af1a73b7856f95359d7333fdd77d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regenerates lightmap texels: re-inits <a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a>, then builds <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s, then calls add_all_meshes_to_draw_buffer.  <br /></td></tr>
 <tr class="memitem:a1017484a2b8b26c8a0513f03eeeec6e7" id="r_a1017484a2b8b26c8a0513f03eeeec6e7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1017484a2b8b26c8a0513f03eeeec6e7">LM_allocate_empty_mns</a> ()</td></tr>
-<tr class="memitem:af08be03d47d4982425d6708d79fe99f9" id="r_af08be03d47d4982425d6708d79fe99f9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af08be03d47d4982425d6708d79fe99f9">save_lightmap_to_binary</a> (<a class="el" href="struct_lightmap_data.html">LightmapData</a> *ld, const char *name)</td></tr>
-<tr class="memitem:abfc795a19d238736194cecd5413980e6" id="r_abfc795a19d238736194cecd5413980e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abfc795a19d238736194cecd5413980e6">load_lightmap_from_binary</a> (<a class="el" href="struct_lightmap_data.html">LightmapData</a> *ld, const char *name)</td></tr>
+<tr class="memdesc:a1017484a2b8b26c8a0513f03eeeec6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates texels for <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s that don't have <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s generated yet.  <br /></td></tr>
+<tr class="memitem:af08be03d47d4982425d6708d79fe99f9" id="r_af08be03d47d4982425d6708d79fe99f9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af08be03d47d4982425d6708d79fe99f9">save_lightmap_to_binary</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *ld, const char *name)</td></tr>
+<tr class="memdesc:af08be03d47d4982425d6708d79fe99f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a UV lightmap and relevant <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> data to binary.  <br /></td></tr>
+<tr class="memitem:abfc795a19d238736194cecd5413980e6" id="r_abfc795a19d238736194cecd5413980e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abfc795a19d238736194cecd5413980e6">load_lightmap_from_binary</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *ld, const char *name)</td></tr>
+<tr class="memdesc:abfc795a19d238736194cecd5413980e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a UV lightmap and relevant <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> data fro, binary.  <br /></td></tr>
 <tr class="memitem:a53786a22330ec848074fd98d4880c917" id="r_a53786a22330ec848074fd98d4880c917"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a53786a22330ec848074fd98d4880c917">bake_reflection_probes</a> ()</td></tr>
+<tr class="memdesc:a53786a22330ec848074fd98d4880c917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bakes <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s for the entire scene onto cubemaps on <a class="el" href="main_8c.html#a35f325c5fdd111c789dc6d1a13e83c75">RPROBE_CUBE_MAP_ARRAY</a>.  <br /></td></tr>
 <tr class="memitem:a6b5f0957d548ba1283d2b36112c7bc69" id="r_a6b5f0957d548ba1283d2b36112c7bc69"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b5f0957d548ba1283d2b36112c7bc69">upload_bake_lights_gpu</a> (GLuint *lights_ssbo)</td></tr>
-<tr class="memitem:a7ce533f7d63fa2233a7fba339b9f078c" id="r_a7ce533f7d63fa2233a7fba339b9f078c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7ce533f7d63fa2233a7fba339b9f078c">bake_lightmap</a> (<a class="el" href="struct_lightmap_data.html">LightmapData</a> *ld)</td></tr>
-<tr class="memitem:a3ede23e13dd3dd6ef57002c15685295d" id="r_a3ede23e13dd3dd6ef57002c15685295d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ede23e13dd3dd6ef57002c15685295d">remove_lighting_pv</a> (<a class="el" href="struct_l_p_v.html">LPV</a> *lpv, bool *lpb)</td></tr>
+<tr class="memitem:a7ce533f7d63fa2233a7fba339b9f078c" id="r_a7ce533f7d63fa2233a7fba339b9f078c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7ce533f7d63fa2233a7fba339b9f078c">bake_lightmap</a> (<a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *ld)</td></tr>
+<tr class="memdesc:a7ce533f7d63fa2233a7fba339b9f078c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bakes a UV Lightmap based on which <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s have <a class="el" href="engine__types_8h.html#aff9db92a02a26d53af22d3ed4b17efe1" title="If we are going to rasterize this island on the next lightmap bake.">UVIsland.currently_rasterizing</a> set.  <br /></td></tr>
+<tr class="memitem:a3ede23e13dd3dd6ef57002c15685295d" id="r_a3ede23e13dd3dd6ef57002c15685295d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ede23e13dd3dd6ef57002c15685295d">remove_lighting_pv</a> (<a class="el" href="engine__types_8h.html#struct_l_p_v">LPV</a> *lpv, bool *lpb)</td></tr>
 <tr class="memitem:afa28cec7d2db64a6913c31b56d54d7cf" id="r_afa28cec7d2db64a6913c31b56d54d7cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afa28cec7d2db64a6913c31b56d54d7cf">reset_lighting_pvs</a> ()</td></tr>
-<tr class="memitem:aed4358900d424108beab97457ed8fa8b" id="r_aed4358900d424108beab97457ed8fa8b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aed4358900d424108beab97457ed8fa8b">load_lighting_pv</a> (<a class="el" href="struct_l_p_v.html">LPV</a> *lpv, <a class="el" href="struct_probe_volume.html">ProbeVolume</a> *pv, int replacing_id)</td></tr>
+<tr class="memdesc:afa28cec7d2db64a6913c31b56d54d7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets current <a class="el" href="engine__types_8h.html#struct_l_p_v" title="A ProbeVolume for indirect lighting probes.">LPV</a>s from their slots in <a class="el" href="engine__types_8h.html#acdece25849ba31ca4971c22cbb79a302" title="Load slots for lighting ProbeVolumes.">SceneData.LOADED_LIGHTING_PV</a>.  <br /></td></tr>
+<tr class="memitem:aed4358900d424108beab97457ed8fa8b" id="r_aed4358900d424108beab97457ed8fa8b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aed4358900d424108beab97457ed8fa8b">load_lighting_pv</a> (<a class="el" href="engine__types_8h.html#struct_l_p_v">LPV</a> *lpv, <a class="el" href="group__aprobe__group.html#struct_probe_volume">ProbeVolume</a> *pv, int replacing_id)</td></tr>
 <tr class="memitem:ad57cb9af3a664a0e6960788c5cf098c0" id="r_ad57cb9af3a664a0e6960788c5cf098c0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad57cb9af3a664a0e6960788c5cf098c0">compare_distances</a> (const void *a, const void *b)</td></tr>
 <tr class="memitem:a45914467c4a9c75a608468612cd6e1b0" id="r_a45914467c4a9c75a608468612cd6e1b0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a45914467c4a9c75a608468612cd6e1b0">compare_current_distances</a> (const void *a, const void *b)</td></tr>
 <tr class="memitem:ac9fe86d6fd9bf384aa5bdb45d17b5140" id="r_ac9fe86d6fd9bf384aa5bdb45d17b5140"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac9fe86d6fd9bf384aa5bdb45d17b5140">check_lighting_pv</a> ()</td></tr>
-<tr class="memitem:ae59e1e354b2903189ac4ebe97171a2cc" id="r_ae59e1e354b2903189ac4ebe97171a2cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae59e1e354b2903189ac4ebe97171a2cc">bake_lighting_probe_volume</a> (<a class="el" href="struct_probe_volume.html">ProbeVolume</a> *pv)</td></tr>
+<tr class="memdesc:ac9fe86d6fd9bf384aa5bdb45d17b5140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines which <a class="el" href="engine__types_8h.html#struct_l_p_v" title="A ProbeVolume for indirect lighting probes.">LPV</a>s we may need to replace due to distance to new ones.  <br /></td></tr>
+<tr class="memitem:ae59e1e354b2903189ac4ebe97171a2cc" id="r_ae59e1e354b2903189ac4ebe97171a2cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae59e1e354b2903189ac4ebe97171a2cc">bake_lighting_probe_volume</a> (<a class="el" href="group__aprobe__group.html#struct_probe_volume">ProbeVolume</a> *pv)</td></tr>
+<tr class="memdesc:ae59e1e354b2903189ac4ebe97171a2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a UV lightmap and relevant <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> data fro, binary.  <br /></td></tr>
 </table>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Data Structure Documentation</h2>
+<a name="struct_u_v_assignment_pair" id="struct_u_v_assignment_pair"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_u_v_assignment_pair">&#9670;&#160;</a></span>UVAssignmentPair</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct UVAssignmentPair</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00219">219</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="aa988b877406f52e9149dd36dd4af0f2f" name="aa988b877406f52e9149dd36dd4af0f2f"></a>float</td>
+<td class="fieldname">
+pu</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aca21192f58eee26ab1a660a06c7cf7c4" name="aca21192f58eee26ab1a660a06c7cf7c4"></a>float</td>
+<td class="fieldname">
+pv</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a05a661869a91aec875cb07fadc732542" name="a05a661869a91aec875cb07fadc732542"></a>size_t</td>
+<td class="fieldname">
+idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9bb94f7c8a047a3c965b34d9ffb177bc" name="a9bb94f7c8a047a3c965b34d9ffb177bc"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+p</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_l_m_debug" id="struct_l_m_debug"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_l_m_debug">&#9670;&#160;</a></span>LMDebug</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct LMDebug</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00915">915</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a1854ab88809dae7e12bb5b76dab21158" name="a1854ab88809dae7e12bb5b76dab21158"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+pos</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a904a77b59b6c1ee43559fcc1631a7f4f" name="a904a77b59b6c1ee43559fcc1631a7f4f"></a>uint32_t</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a971756dddcd1a37990cc82e004b15981" name="a971756dddcd1a37990cc82e004b15981"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+dir</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3cc55f26a5764762c7e0fe7376abe979" name="a3cc55f26a5764762c7e0fe7376abe979"></a>uint32_t</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a264a0d824c95b72838d2020cffdf2d84" name="a264a0d824c95b72838d2020cffdf2d84"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+origin</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7394779b7f513ecf74295e59a7191556" name="a7394779b7f513ecf74295e59a7191556"></a>uint32_t</td>
+<td class="fieldname">
+pad2</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_light_g_p_u_data" id="struct_light_g_p_u_data"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_light_g_p_u_data">&#9670;&#160;</a></span>LightGPUData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct LightGPUData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00925">925</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="abe86e2d3a3797b200b3061db60328219" name="abe86e2d3a3797b200b3061db60328219"></a>int</td>
+<td class="fieldname">
+dir_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a593de91556593b6c749cecd2020db1e5" name="a593de91556593b6c749cecd2020db1e5"></a>int</td>
+<td class="fieldname">
+point_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="acafdedffe4f5d2816622cb59a827064f" name="acafdedffe4f5d2816622cb59a827064f"></a>int</td>
+<td class="fieldname">
+tri_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac19a39a35e8cc1be0eaf5a603b9b5ea4" name="ac19a39a35e8cc1be0eaf5a603b9b5ea4"></a>uint32_t</td>
+<td class="fieldname">
+sample_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ad0b50cbb9acb20591860d8bc69da8e25" name="ad0b50cbb9acb20591860d8bc69da8e25"></a>float</td>
+<td class="fieldname">
+dir_w</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8227a38c514cf134737b0f613650569f" name="a8227a38c514cf134737b0f613650569f"></a>float</td>
+<td class="fieldname">
+point_w</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9210ee56037244c0bf3cf5e26704deb3" name="a9210ee56037244c0bf3cf5e26704deb3"></a>float</td>
+<td class="fieldname">
+tri_w</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab1fa947355689d98688343b934c9fce3" name="ab1fa947355689d98688343b934c9fce3"></a>float</td>
+<td class="fieldname">
+total_power</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab6fb72333c41fda9daa225acb3608988" name="ab6fb72333c41fda9daa225acb3608988"></a><a class="el" href="engine__types_8h.html#struct_light_g_p_u">LightGPU</a></td>
+<td class="fieldname">
+directional_lights[<a class="el" href="#af3e6e51bfac83e5dc98decfcc7c8c070">MAX_DIRECTIONAL_LIGHTS_LM</a>]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8a76d4e737454e4c563263302a616860" name="a8a76d4e737454e4c563263302a616860"></a><a class="el" href="engine__types_8h.html#struct_light_g_p_u">LightGPU</a></td>
+<td class="fieldname">
+point_lights[<a class="el" href="#a31db5671a799cd87fa0f6ff46b500e19">MAX_POINT_LIGHTS_LM</a>]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa86821a59d386ba95bbfe97bfb2967e6" name="aa86821a59d386ba95bbfe97bfb2967e6"></a><a class="el" href="#struct_l_m_debug">LMDebug</a></td>
+<td class="fieldname">
+LMDEBUG[<a class="el" href="#a380f7e25f7322f12b5938c5f5a4bcbba">LMDEBUG_SIZE</a>]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_distance_pair" id="struct_distance_pair"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_distance_pair">&#9670;&#160;</a></span>DistancePair</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct DistancePair</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01364">1364</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a28814eeff5908f6ec5a23101309ca8bd" name="a28814eeff5908f6ec5a23101309ca8bd"></a>float</td>
+<td class="fieldname">
+d</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8e245b23525c497c64456178ad9e8c2a" name="a8e245b23525c497c64456178ad9e8c2a"></a>int</td>
+<td class="fieldname">
+id</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
-<a id="a380f7e25f7322f12b5938c5f5a4bcbba" name="a380f7e25f7322f12b5938c5f5a4bcbba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a380f7e25f7322f12b5938c5f5a4bcbba">&#9670;&#160;</a></span>LMDEBUG_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LMDEBUG_SIZE&#160;&#160;&#160;4096</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00918">918</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-</div>
-</div>
-<a id="af3e6e51bfac83e5dc98decfcc7c8c070" name="af3e6e51bfac83e5dc98decfcc7c8c070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3e6e51bfac83e5dc98decfcc7c8c070">&#9670;&#160;</a></span>MAX_DIRECTIONAL_LIGHTS_LM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_DIRECTIONAL_LIGHTS_LM&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00905">905</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-</div>
-</div>
-<a id="a0d2e031ebbc761cb71cf89ba73974b0f" name="a0d2e031ebbc761cb71cf89ba73974b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d2e031ebbc761cb71cf89ba73974b0f">&#9670;&#160;</a></span>MAX_EMISSIVE_TRIS_LM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_EMISSIVE_TRIS_LM&#160;&#160;&#160;100000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00907">907</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-</div>
-</div>
-<a id="a31db5671a799cd87fa0f6ff46b500e19" name="a31db5671a799cd87fa0f6ff46b500e19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31db5671a799cd87fa0f6ff46b500e19">&#9670;&#160;</a></span>MAX_POINT_LIGHTS_LM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_POINT_LIGHTS_LM&#160;&#160;&#160;2048</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00906">906</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-</div>
-</div>
 <a id="a625a1fd738808effb30aa6ce5cfc8a51" name="a625a1fd738808effb30aa6ce5cfc8a51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a625a1fd738808effb30aa6ce5cfc8a51">&#9670;&#160;</a></span>SLEEP</h2>
 
@@ -271,31 +438,253 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a70f43c51271be99ad6f4981650a2074b" name="a70f43c51271be99ad6f4981650a2074b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70f43c51271be99ad6f4981650a2074b">&#9670;&#160;</a></span>add_uv_island_to_lightmap()</h2>
+<a id="af3e6e51bfac83e5dc98decfcc7c8c070" name="af3e6e51bfac83e5dc98decfcc7c8c070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e6e51bfac83e5dc98decfcc7c8c070">&#9670;&#160;</a></span>MAX_DIRECTIONAL_LIGHTS_LM</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void add_uv_island_to_lightmap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_data.html">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_u_v_island.html">UVIsland</a> *</td>          <td class="paramname"><span class="paramname"><em>uvi</em></span>&#160;)</td>
+          <td class="memname">#define MAX_DIRECTIONAL_LIGHTS_LM&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00353">353</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00911">911</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01971">UVIsland::currently_rasterizing</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01966">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, and <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>.</p>
+</div>
+</div>
+<a id="a31db5671a799cd87fa0f6ff46b500e19" name="a31db5671a799cd87fa0f6ff46b500e19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31db5671a799cd87fa0f6ff46b500e19">&#9670;&#160;</a></span>MAX_POINT_LIGHTS_LM</h2>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, and <a class="el" href="lightmap_8c_source.html#l00384">init_uv_islands()</a>.</p>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_POINT_LIGHTS_LM&#160;&#160;&#160;2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00912">912</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+</div>
+</div>
+<a id="a0d2e031ebbc761cb71cf89ba73974b0f" name="a0d2e031ebbc761cb71cf89ba73974b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d2e031ebbc761cb71cf89ba73974b0f">&#9670;&#160;</a></span>MAX_EMISSIVE_TRIS_LM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_EMISSIVE_TRIS_LM&#160;&#160;&#160;100000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00913">913</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+</div>
+</div>
+<a id="a380f7e25f7322f12b5938c5f5a4bcbba" name="a380f7e25f7322f12b5938c5f5a4bcbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380f7e25f7322f12b5938c5f5a4bcbba">&#9670;&#160;</a></span>LMDEBUG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LMDEBUG_SIZE&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00924">924</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a6374f217972f2dff01da117ae732514c" name="a6374f217972f2dff01da117ae732514c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6374f217972f2dff01da117ae732514c">&#9670;&#160;</a></span>walk_coplanar_adjacency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void walk_coplanar_adjacency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_u_v_island">UVIsland</a> *</td>          <td class="paramname"><span class="paramname"><em>island</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_u_v_mapping">UVMapping</a> *</td>          <td class="paramname"><span class="paramname"><em>uv_map</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>island_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>current_face_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>tri_list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_triangle_adjacency">TriangleAdjacency</a> *</td>          <td class="paramname"><span class="paramname"><em>tri_adj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>ref_point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>eps</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00037">37</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="engine__types_8h_source.html#l02467">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02035">UVMapping::uv_island</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+
+</div>
+</div>
+<a id="a0841dc3897e70ce20be53fd4fa1b86f6" name="a0841dc3897e70ce20be53fd4fa1b86f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0841dc3897e70ce20be53fd4fa1b86f6">&#9670;&#160;</a></span>init_lightmap_atlas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a> init_lightmap_atlas </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>block_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00077">77</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="lightmap_8c_source.html#l00077">init_lightmap_atlas()</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00077">init_lightmap_atlas()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
+
+</div>
+</div>
+<a id="a022d7798232162ea9f6f165b01dbe1a8" name="a022d7798232162ea9f6f165b01dbe1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022d7798232162ea9f6f165b01dbe1a8">&#9670;&#160;</a></span>free_lightmap_atlas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_lightmap_atlas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a> *</td>          <td class="paramname"><span class="paramname"><em>atlas</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00087">87</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="lightmap_8c_source.html#l00087">free_lightmap_atlas()</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00087">free_lightmap_atlas()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
+
+</div>
+</div>
+<a id="addd1c1eeb6c51b2df84ff589b2cb9ebe" name="addd1c1eeb6c51b2df84ff589b2cb9ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd1c1eeb6c51b2df84ff589b2cb9ebe">&#9670;&#160;</a></span>init_lightmap_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_lightmap_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees current <a class="el" href="engine__types_8h.html#struct_lightmap_atlas" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a> and <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> data and re-initializes the <a class="el" href="engine__types_8h.html#struct_lightmap_atlas" title="The atlas that UVIslands are allocated on in LightmapRects during UV lightmapping.">LightmapAtlas</a> array and initializes the <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> <a class="el" href="types_8h.html#struct_vector">Vector</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td><a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> for the lightmap. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00093">93</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l00087">free_lightmap_atlas()</a>, <a class="el" href="lightmap_8c_source.html#l00077">init_lightmap_atlas()</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l00161">LIGHTMAP_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00160">LIGHTMAP_WIDTH</a>, and <a class="el" href="engine__types_8h_source.html#l02020">LightmapData::sample_cubemap</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00516">execute_globals_undo()</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, and <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>.</p>
+
+</div>
+</div>
+<a id="a7f3bec020d20e5fb502e95e45c466073" name="a7f3bec020d20e5fb502e95e45c466073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3bec020d20e5fb502e95e45c466073">&#9670;&#160;</a></span>find_least_parallel_axis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void find_least_parallel_axis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>u_dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>v_dir</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00124">124</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00124">find_least_parallel_axis()</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00124">find_least_parallel_axis()</a>.</p>
 
 </div>
 </div>
@@ -306,9 +695,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_lightmap_rect.html">LightmapRect</a> allocate_lightmap_rect </td>
+          <td class="memname"><a class="el" href="engine__types_8h.html#struct_lightmap_rect">LightmapRect</a> allocate_lightmap_rect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a> *</td>          <td class="paramname"><span class="paramname"><em>atlas</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a> *</td>          <td class="paramname"><span class="paramname"><em>atlas</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -325,9 +714,36 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00147">147</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00147">allocate_lightmap_rect()</a>, <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00147">allocate_lightmap_rect()</a>, <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00147">allocate_lightmap_rect()</a>, and <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>.</p>
+
+</div>
+</div>
+<a id="a2e92d1578ca582604c995d5030f374ca" name="a2e92d1578ca582604c995d5030f374ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e92d1578ca582604c995d5030f374ca">&#9670;&#160;</a></span>deallocate_lightmap_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deallocate_lightmap_rect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_rect">LightmapRect</a> *</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00195">195</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>, <a class="el" href="engine__types_8h_source.html#l01974">LightmapRect::h</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l01975">LightmapRect::padding</a>, <a class="el" href="engine__types_8h_source.html#l01971">LightmapRect::u</a>, <a class="el" href="engine__types_8h_source.html#l01972">LightmapRect::v</a>, <a class="el" href="engine__types_8h_source.html#l01973">LightmapRect::w</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>, and <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>.</p>
 
 </div>
 </div>
@@ -340,67 +756,236 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void assign_uvs </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_u_v_island.html">UVIsland</a> *</td>          <td class="paramname"><span class="paramname"><em>uvi</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_u_v_island">UVIsland</a> *</td>          <td class="paramname"><span class="paramname"><em>uvi</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a> *</td>          <td class="paramname"><span class="paramname"><em>atlas</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_atlas">LightmapAtlas</a> *</td>          <td class="paramname"><span class="paramname"><em>atlas</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00230">230</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00147">allocate_lightmap_rect()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01973">UVIsland::centroid</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="lightmap_8c_source.html#l00124">find_least_parallel_axis()</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01944">LightmapRect::h</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01966">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l00777">EditorSettings::mfactor</a>, <a class="el" href="engine__types_8h_source.html#l00776">EditorSettings::mfactor_enabled</a>, <a class="el" href="engine__types_8h_source.html#l01968">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01945">LightmapRect::padding</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="lightmap_8c_source.html#l00222">UVAssignmentPair::pu</a>, <a class="el" href="lightmap_8c_source.html#l00222">UVAssignmentPair::pv</a>, <a class="el" href="engine__types_8h_source.html#l01969">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l01946">LightmapRect::success</a>, <a class="el" href="engine__types_8h_source.html#l00773">EditorSettings::texels_per_uv_unit</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l01941">LightmapRect::u</a>, <a class="el" href="engine__types_8h_source.html#l02006">UVMapping::uv_idx</a>, <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, <a class="el" href="engine__types_8h_source.html#l01942">LightmapRect::v</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, <a class="el" href="engine__types_8h_source.html#l01943">LightmapRect::w</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00147">allocate_lightmap_rect()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02003">UVIsland::centroid</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="lightmap_8c_source.html#l00124">find_least_parallel_axis()</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01974">LightmapRect::h</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01996">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l00803">EditorSettings::mfactor</a>, <a class="el" href="engine__types_8h_source.html#l00802">EditorSettings::mfactor_enabled</a>, <a class="el" href="engine__types_8h_source.html#l01998">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01975">LightmapRect::padding</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="lightmap_8c_source.html#l00222">UVAssignmentPair::pu</a>, <a class="el" href="lightmap_8c_source.html#l00222">UVAssignmentPair::pv</a>, <a class="el" href="engine__types_8h_source.html#l01999">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l01976">LightmapRect::success</a>, <a class="el" href="engine__types_8h_source.html#l00799">EditorSettings::texels_per_uv_unit</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l01971">LightmapRect::u</a>, <a class="el" href="engine__types_8h_source.html#l02036">UVMapping::uv_idx</a>, <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, <a class="el" href="engine__types_8h_source.html#l01972">LightmapRect::v</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, <a class="el" href="engine__types_8h_source.html#l01973">LightmapRect::w</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, and <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>.</p>
 
 </div>
 </div>
-<a id="ae59e1e354b2903189ac4ebe97171a2cc" name="ae59e1e354b2903189ac4ebe97171a2cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae59e1e354b2903189ac4ebe97171a2cc">&#9670;&#160;</a></span>bake_lighting_probe_volume()</h2>
+<a id="a70f43c51271be99ad6f4981650a2074b" name="a70f43c51271be99ad6f4981650a2074b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f43c51271be99ad6f4981650a2074b">&#9670;&#160;</a></span>add_uv_island_to_lightmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void bake_lighting_probe_volume </td>
+          <td class="memname">void add_uv_island_to_lightmap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_probe_volume.html">ProbeVolume</a> *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_u_v_island">UVIsland</a> *</td>          <td class="paramname"><span class="paramname"><em>uvi</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01503">1503</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00353">353</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03034">ProbeVolume::byte_offset</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03117">SceneData::light_bvh</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03131">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00188">LPV_PADDED_COUNT</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03083">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l03036">ProbeVolume::obb</a>, <a class="el" href="engine__types_8h_source.html#l01813">SHDataGPU::pos</a>, <a class="el" href="main_8c_source.html#l00231">PROBE_BAKE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00772">EditorSettings::probe_iterations</a>, <a class="el" href="engine__types_8h_source.html#l03369">Globals::probe_spacing</a>, <a class="el" href="main_8c_source.html#l00160">PROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00233">PROBE_UNPACK_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00185">PROBE_VOLUME_DEPTH</a>, <a class="el" href="engine__types_8h_source.html#l00186">PROBE_VOLUME_DEPTH_PADDED</a>, <a class="el" href="engine__types_8h_source.html#l00184">PROBE_VOLUME_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00183">PROBE_VOLUME_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l00152">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l03035">ProbeVolume::size</a>, <a class="el" href="main_8c_source.html#l00307">SKYBOX</a>, <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>, <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02001">UVIsland::currently_rasterizing</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01996">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, and <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8h.html#a224e3ed3a70e6f3db3f7eec5d9634626">load_lightmap_image()</a>, and <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, and <a class="el" href="lightmap_8c_source.html#l00384">init_uv_islands()</a>.</p>
 
 </div>
 </div>
-<a id="a7ce533f7d63fa2233a7fba339b9f078c" name="a7ce533f7d63fa2233a7fba339b9f078c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce533f7d63fa2233a7fba339b9f078c">&#9670;&#160;</a></span>bake_lightmap()</h2>
+<a id="ad0bc48ed982f9e2f7b38097967c0207d" name="ad0bc48ed982f9e2f7b38097967c0207d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bc48ed982f9e2f7b38097967c0207d">&#9670;&#160;</a></span>init_uv_islands()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void bake_lightmap </td>
+          <td class="memname">void init_uv_islands </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_data.html">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01003">1003</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p>Adds all current <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s to the lightmap by allocating <a class="el" href="engine__types_8h.html#struct_lightmap_rect" title="The rects that are slotted into thet LightmapAtlas during UV generation for UV lightmaps.">LightmapRect</a>s. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td><a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> for the lightmap. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00775">EditorSettings::ao_iterations</a>, <a class="el" href="engine__types_8h_source.html#l00774">EditorSettings::ao_threshold</a>, <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03109">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03108">SceneData::bvh_indices_count</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l01971">UVIsland::currently_rasterizing</a>, <a class="el" href="main_8c_source.html#l00234">DIRECTIONAL_MAP_NORMALIZE_SHADER</a>, <a class="el" href="main_8c_source.html#l00224">DIRECTIONAL_MAP_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l02329">MeshNode::free</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l03117">SceneData::light_bvh</a>, <a class="el" href="main_8c_source.html#l00228">LIGHTMAP_BOUNCE_SHADER</a>, <a class="el" href="main_8c_source.html#l00229">LIGHTMAP_DENOISE_SHADER</a>, <a class="el" href="main_8c_source.html#l00230">LIGHTMAP_DILATE_SHADER</a>, <a class="el" href="main_8c_source.html#l00218">LIGHTMAP_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00136">LIGHTMAP_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00223">LIGHTMAP_ID_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00222">LIGHTMAP_NORM_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00221">LIGHTMAP_POS_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00128">LIGHTMAP_SHADER</a>, <a class="el" href="main_8c_source.html#l00219">LIGHTMAP_VAO</a>, <a class="el" href="main_8c_source.html#l00220">LIGHTMAP_VBO</a>, <a class="el" href="engine__types_8h_source.html#l00135">LIGHTMAP_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l00771">EditorSettings::lm_iterations</a>, <a class="el" href="engine__types_8h_source.html#l01155">LightmapVertex::lm_uv</a>, <a class="el" href="engine__types_8h_source.html#l01156">LightmapVertex::material_id</a>, <a class="el" href="types_8h_source.html#l00288">MeshFace::material_id</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l03083">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01153">LightmapVertex::normal</a>, <a class="el" href="types_8h_source.html#l00224">Point::normal</a>, <a class="el" href="engine__types_8h_source.html#l01152">LightmapVertex::pos</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l03411">ShaderProgram::program</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="main_8c_source.html#l00307">SKYBOX</a>, <a class="el" href="engine__types_8h_source.html#l01989">LightmapData::texture_id</a>, <a class="el" href="engine__types_8h_source.html#l01157">LightmapVertex::tri_id</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>, <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>, <a class="el" href="engine__types_8h_source.html#l01154">LightmapVertex::uv</a>, <a class="el" href="types_8h_source.html#l00227">Point::uv</a>, <a class="el" href="engine__types_8h_source.html#l02006">UVMapping::uv_idx</a>, <a class="el" href="engine__types_8h_source.html#l02005">UVMapping::uv_island</a>, <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00384">384</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l00384">init_uv_islands()</a>, and <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00384">init_uv_islands()</a>.</p>
+
+</div>
+</div>
+<a id="a2bbbe962fb7a6954fe28f01e58f8aba2" name="a2bbbe962fb7a6954fe28f01e58f8aba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbbe962fb7a6954fe28f01e58f8aba2">&#9670;&#160;</a></span>build_uv_islands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void build_uv_islands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builds <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s over a <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> by stepping through <a class="el" href="engine__types_8h.html#struct_triangle_adjacency" title="Adjacent triangles for each MeshFace on a Mesh.">TriangleAdjacency</a> and stopping when normals become too different. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td><a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> to traverse. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00400">400</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="engine__types_8h_source.html#l02467">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02003">UVIsland::centroid</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02365">MeshNode::id</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l03171">SceneData::lightmap_data</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01996">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01998">UVIsland::normal</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l02501">Mesh::tri_adjacency</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02035">UVMapping::uv_island</a>, <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="editor_8c_source.html#l00516">execute_globals_undo()</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, and <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>.</p>
+
+</div>
+</div>
+<a id="ab2af1a73b7856f95359d7333fdd77d00" name="ab2af1a73b7856f95359d7333fdd77d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2af1a73b7856f95359d7333fdd77d00">&#9670;&#160;</a></span>LM_regenerate_texels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LM_regenerate_texels </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regenerates lightmap texels: re-inits <a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a>, then builds <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s, then calls add_all_meshes_to_draw_buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00486">486</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="engine__types_8h_source.html#l03171">SceneData::lightmap_data</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, and <a class="el" href="engine__types_8h_source.html#l03419">Globals::vertex_layouts</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, and <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>.</p>
+
+</div>
+</div>
+<a id="a1017484a2b8b26c8a0513f03eeeec6e7" name="a1017484a2b8b26c8a0513f03eeeec6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1017484a2b8b26c8a0513f03eeeec6e7">&#9670;&#160;</a></span>LM_allocate_empty_mns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LM_allocate_empty_mns </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates texels for <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s that don't have <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s generated yet. </p>
+<p>Used when loading a binary that does not include certain <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s. </p>
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00502">502</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, and <a class="el" href="engine__types_8h_source.html#l03419">Globals::vertex_layouts</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, and <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>.</p>
+
+</div>
+</div>
+<a id="af08be03d47d4982425d6708d79fe99f9" name="af08be03d47d4982425d6708d79fe99f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08be03d47d4982425d6708d79fe99f9">&#9670;&#160;</a></span>save_lightmap_to_binary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void save_lightmap_to_binary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves a UV lightmap and relevant <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> data to binary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td><a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> for the lightmap. </td></tr>
+    <tr><td class="paramname">The</td><td>path to and name of the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="critical"><dt><b><a class="el" href="critical.html#_critical000001">High Priority Todo</a></b></dt><dd>This is a bug. There is no need to write all <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> <a class="el" href="engine__types_8h.html#struct_u_v_mapping" title="This bridges from MeshNode&#39;s MeshFaces to their respective UVIslands.">UVMapping</a>s per <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and it will explode data. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00525">525</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03414">Globals::assets</a>, <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00217">DIRECTIONAL_MAP_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01996">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02362">MeshNode::name</a>, <a class="el" href="engine__types_8h_source.html#l01998">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l01999">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l02020">LightmapData::sample_cubemap</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="engine__types_8h_source.html#l00799">EditorSettings::texels_per_uv_unit</a>, <a class="el" href="engine__types_8h_source.html#l02019">LightmapData::texture_id</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+
+</div>
+</div>
+<a id="abfc795a19d238736194cecd5413980e6" name="abfc795a19d238736194cecd5413980e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc795a19d238736194cecd5413980e6">&#9670;&#160;</a></span>load_lightmap_from_binary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_lightmap_from_binary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a UV lightmap and relevant <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> data fro, binary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td><a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> for the lightmap. </td></tr>
+    <tr><td class="paramname">The</td><td>path to and name of the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>This does not currently free the current <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s on load. </dd></dl>
+<dl class="critical"><dt><b><a class="el" href="critical.html#_critical000002">High Priority Todo</a></b></dt><dd>This does not free the current <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s and may be a memory leak. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00610">610</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>, <a class="el" href="main_8c_source.html#l00217">DIRECTIONAL_MAP_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01996">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01998">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l01999">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l02020">LightmapData::sample_cubemap</a>, <a class="el" href="engine__types_8h_source.html#l00799">EditorSettings::texels_per_uv_unit</a>, <a class="el" href="engine__types_8h_source.html#l02019">LightmapData::texture_id</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::vertex_layouts</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
 
 </div>
 </div>
@@ -419,45 +1004,105 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00780">780</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p>Bakes <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s for the entire scene onto cubemaps on <a class="el" href="main_8c.html#a35f325c5fdd111c789dc6d1a13e83c75">RPROBE_CUBE_MAP_ARRAY</a>. </p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00325">ReflectionProbe::aabb</a>, <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, <a class="el" href="engine__types_8h_source.html#l00123">BUFFER_FRAMES</a>, <a class="el" href="engine__types_8h_source.html#l01314">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01208">CamData::cam_pos</a>, <a class="el" href="engine__types_8h_source.html#l00327">ReflectionProbe::capture_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01325">RProbe::center</a>, <a class="el" href="camera_8c_source.html#l00020">compute_camera_basis()</a>, <a class="el" href="main_8c_source.html#l00237">CONVOLVE_TRIANGLE_VAO</a>, <a class="el" href="main_8c_source.html#l00236">CONVOLVE_TRIANGLE_VBO</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l01312">Camera::forward</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01213">CamData::inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01215">CamData::inv_view</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="camera_8c_source.html#l00142">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00105">make_projection()</a>, <a class="el" href="engine__types_8h_source.html#l01329">RProbe::max</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l01327">RProbe::min</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l00687">EditorSettings::MSAA</a>, <a class="el" href="engine__types_8h_source.html#l01313">Camera::pitch</a>, <a class="el" href="engine__types_8h_source.html#l01210">CamData::proj</a>, <a class="el" href="engine__types_8h_source.html#l03113">SceneData::reflection_probes</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="main_8c_source.html#l00310">RPROBE_CUBE_MAP_ARRAY</a>, <a class="el" href="main_8c_source.html#l00311">RPROBE_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00139">RPROBE_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00161">RPROBE_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l00138">RPROBE_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l01214">CamData::unjittered_inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01211">CamData::unjittered_proj</a>, <a class="el" href="engine__types_8h_source.html#l01212">CamData::view</a>, and <a class="el" href="engine__types_8h_source.html#l01313">Camera::yaw</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00786">786</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00780">bake_reflection_probes()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00350">ReflectionProbe::aabb</a>, <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="engine__types_8h_source.html#l00148">BUFFER_FRAMES</a>, <a class="el" href="engine__types_8h_source.html#l01343">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01237">CamData::cam_pos</a>, <a class="el" href="engine__types_8h_source.html#l00352">ReflectionProbe::capture_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01354">RProbe::center</a>, <a class="el" href="camera_8c_source.html#l00029">compute_camera_basis()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l01341">Camera::forward</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01242">CamData::inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::inv_view</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="camera_8c_source.html#l00151">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00114">make_projection()</a>, <a class="el" href="engine__types_8h_source.html#l01358">RProbe::max</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l01356">RProbe::min</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l00713">EditorSettings::MSAA</a>, <a class="el" href="engine__types_8h_source.html#l01342">Camera::pitch</a>, <a class="el" href="engine__types_8h_source.html#l01239">CamData::proj</a>, <a class="el" href="engine__types_8h_source.html#l03148">SceneData::reflection_probes</a>, <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>, <a class="el" href="main_8c_source.html#l00300">RPROBE_CUBE_MAP_ARRAY</a>, <a class="el" href="main_8c_source.html#l00301">RPROBE_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00164">RPROBE_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00155">RPROBE_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l00163">RPROBE_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l01243">CamData::unjittered_inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01240">CamData::unjittered_proj</a>, <a class="el" href="engine__types_8h_source.html#l01241">CamData::view</a>, and <a class="el" href="engine__types_8h_source.html#l01342">Camera::yaw</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, and <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>.</p>
 
 </div>
 </div>
-<a id="a2bbbe962fb7a6954fe28f01e58f8aba2" name="a2bbbe962fb7a6954fe28f01e58f8aba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bbbe962fb7a6954fe28f01e58f8aba2">&#9670;&#160;</a></span>build_uv_islands()</h2>
+<a id="a6b5f0957d548ba1283d2b36112c7bc69" name="a6b5f0957d548ba1283d2b36112c7bc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5f0957d548ba1283d2b36112c7bc69">&#9670;&#160;</a></span>upload_bake_lights_gpu()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void build_uv_islands </td>
+          <td class="memname">void upload_bake_lights_gpu </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
+          <td class="paramtype">GLuint *</td>          <td class="paramname"><span class="paramname"><em>lights_ssbo</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00400">400</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00943">943</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="engine__types_8h_source.html#l02432">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l01973">UVIsland::centroid</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02330">MeshNode::id</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l03136">SceneData::lightmap_data</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01966">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01968">UVIsland::normal</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l02466">Mesh::tri_adjacency</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02005">UVMapping::uv_island</a>, <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01148">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01529">LightGPU::bvh_index</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01818">BVHNodeGPU::center</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="engine__types_8h_source.html#l01150">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l01810">BVHNodeGPU::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="engine__types_8h_source.html#l01152">BVHNode::emissive_flux</a>, <a class="el" href="engine__types_8h_source.html#l01815">BVHNodeGPU::emissive_flux</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01820">BVHNodeGPU::extents</a>, <a class="el" href="engine__types_8h_source.html#l01149">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01809">BVHNodeGPU::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01151">BVHNode::flux</a>, <a class="el" href="engine__types_8h_source.html#l01812">BVHNodeGPU::flux</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03119">LightBVH::indices</a>, <a class="el" href="engine__types_8h_source.html#l03120">LightBVH::indices_count</a>, <a class="el" href="engine__types_8h_source.html#l01141">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01804">BVHNodeGPU::left</a>, <a class="el" href="engine__types_8h_source.html#l03152">SceneData::light_bvh</a>, <a class="el" href="main_8c_source.html#l00145">LIGHT_SSBO</a>, <a class="el" href="main_8c_source.html#l00340">light_ssbo_ptr</a>, <a class="el" href="main_8c_source.html#l00339">light_ssbo_size</a>, <a class="el" href="engine__types_8h_source.html#l03121">LightBVH::lights</a>, <a class="el" href="engine__types_8h_source.html#l01816">BVHNodeGPU::max</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01814">BVHNodeGPU::min</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01145">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01811">BVHNodeGPU::next</a>, <a class="el" href="engine__types_8h_source.html#l03118">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01143">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01806">BVHNodeGPU::parent</a>, <a class="el" href="engine__types_8h_source.html#l01142">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l01805">BVHNodeGPU::right</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, and <a class="el" href="lightmap_8c_source.html#l00943">upload_bake_lights_gpu()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="lightmap_8h.html#abd68b4ec7384d22fccbc25c768e3a1bb">generate_uv_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01509">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01009">bake_lightmap()</a>, and <a class="el" href="lightmap_8c_source.html#l00943">upload_bake_lights_gpu()</a>.</p>
 
 </div>
 </div>
-<a id="ac9fe86d6fd9bf384aa5bdb45d17b5140" name="ac9fe86d6fd9bf384aa5bdb45d17b5140"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9fe86d6fd9bf384aa5bdb45d17b5140">&#9670;&#160;</a></span>check_lighting_pv()</h2>
+<a id="a7ce533f7d63fa2233a7fba339b9f078c" name="a7ce533f7d63fa2233a7fba339b9f078c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce533f7d63fa2233a7fba339b9f078c">&#9670;&#160;</a></span>bake_lightmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void check_lighting_pv </td>
+          <td class="memname">void bake_lightmap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bakes a UV Lightmap based on which <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s have <a class="el" href="engine__types_8h.html#aff9db92a02a26d53af22d3ed4b17efe1" title="If we are going to rasterize this island on the next lightmap bake.">UVIsland.currently_rasterizing</a> set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td><a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> for the lightmap. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01009">1009</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00801">EditorSettings::ao_iterations</a>, <a class="el" href="engine__types_8h_source.html#l00800">EditorSettings::ao_threshold</a>, <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="lightmap_8c_source.html#l01009">bake_lightmap()</a>, <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03144">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03143">SceneData::bvh_indices_count</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02001">UVIsland::currently_rasterizing</a>, <a class="el" href="main_8c_source.html#l00226">DIRECTIONAL_MAP_NORMALIZE_SHADER</a>, <a class="el" href="main_8c_source.html#l00217">DIRECTIONAL_MAP_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l02364">MeshNode::free</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l03152">SceneData::light_bvh</a>, <a class="el" href="main_8c_source.html#l00220">LIGHTMAP_BOUNCE_SHADER</a>, <a class="el" href="main_8c_source.html#l00221">LIGHTMAP_DENOISE_SHADER</a>, <a class="el" href="main_8c_source.html#l00222">LIGHTMAP_DILATE_SHADER</a>, <a class="el" href="main_8c_source.html#l00211">LIGHTMAP_FBO</a>, <a class="el" href="engine__types_8h_source.html#l00161">LIGHTMAP_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00216">LIGHTMAP_ID_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00215">LIGHTMAP_NORM_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00214">LIGHTMAP_POS_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00123">LIGHTMAP_SHADER</a>, <a class="el" href="main_8c_source.html#l00212">LIGHTMAP_VAO</a>, <a class="el" href="main_8c_source.html#l00213">LIGHTMAP_VBO</a>, <a class="el" href="engine__types_8h_source.html#l00160">LIGHTMAP_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l00797">EditorSettings::lm_iterations</a>, <a class="el" href="engine__types_8h_source.html#l01184">LightmapVertex::lm_uv</a>, <a class="el" href="engine__types_8h_source.html#l01185">LightmapVertex::material_id</a>, <a class="el" href="types_8h_source.html#l00285">MeshFace::material_id</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l03118">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01182">LightmapVertex::normal</a>, <a class="el" href="types_8h_source.html#l00221">Point::normal</a>, <a class="el" href="engine__types_8h_source.html#l01181">LightmapVertex::pos</a>, <a class="el" href="types_8h_source.html#l00220">Point::pos</a>, <a class="el" href="engine__types_8h_source.html#l03446">ShaderProgram::program</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="main_8c_source.html#l00297">SKYBOX</a>, <a class="el" href="engine__types_8h_source.html#l02019">LightmapData::texture_id</a>, <a class="el" href="engine__types_8h_source.html#l01186">LightmapVertex::tri_id</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>, <a class="el" href="lightmap_8c_source.html#l00943">upload_bake_lights_gpu()</a>, <a class="el" href="engine__types_8h_source.html#l01183">LightmapVertex::uv</a>, <a class="el" href="types_8h_source.html#l00224">Point::uv</a>, <a class="el" href="engine__types_8h_source.html#l02036">UVMapping::uv_idx</a>, <a class="el" href="engine__types_8h_source.html#l02035">UVMapping::uv_island</a>, <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, and <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01009">bake_lightmap()</a>, and <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>.</p>
+
+</div>
+</div>
+<a id="a3ede23e13dd3dd6ef57002c15685295d" name="a3ede23e13dd3dd6ef57002c15685295d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ede23e13dd3dd6ef57002c15685295d">&#9670;&#160;</a></span>remove_lighting_pv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remove_lighting_pv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_l_p_v">LPV</a> *</td>          <td class="paramname"><span class="paramname"><em>lpv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>lpb</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01319">1319</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03106">LPV::lprobes</a>, <a class="el" href="engine__types_8h_source.html#l03099">LPV::pv_id</a>, and <a class="el" href="lightmap_8c_source.html#l01319">remove_lighting_pv()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01319">remove_lighting_pv()</a>.</p>
+
+</div>
+</div>
+<a id="afa28cec7d2db64a6913c31b56d54d7cf" name="afa28cec7d2db64a6913c31b56d54d7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa28cec7d2db64a6913c31b56d54d7cf">&#9670;&#160;</a></span>reset_lighting_pvs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset_lighting_pvs </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -465,38 +1110,45 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01385">1385</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p>Resets current <a class="el" href="engine__types_8h.html#struct_l_p_v" title="A ProbeVolume for indirect lighting probes.">LPV</a>s from their slots in <a class="el" href="engine__types_8h.html#acdece25849ba31ca4971c22cbb79a302" title="Load slots for lighting ProbeVolumes.">SceneData.LOADED_LIGHTING_PV</a>. </p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00050">OBB::center</a>, <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01373">compare_current_distances()</a>, <a class="el" href="lightmap_8c_source.html#l01364">compare_distances()</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l01360">DistancePair::d</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l01361">DistancePair::id</a>, <a class="el" href="engine__types_8h_source.html#l03115">SceneData::lighting_probe_volumes</a>, <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03128">SceneData::LOADED_LIGHTING_PV</a>, <a class="el" href="engine__types_8h_source.html#l03129">SceneData::LOADED_LIGHTING_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l03131">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00181">LPV_SLOTS</a>, <a class="el" href="engine__types_8h_source.html#l01297">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l03036">ProbeVolume::obb</a>, <a class="el" href="main_8c_source.html#l00291">player</a>, <a class="el" href="engine__types_8h_source.html#l01237">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l03064">LPV::pv_id</a>, <a class="el" href="acceleration_8c_source.html#l00127">ray_intersects_obb_with_point()</a>, <a class="el" href="lightmap_8c_source.html#l01313">remove_lighting_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, and <a class="el" href="engine__types_8h_source.html#l03014">Player::skeleton</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01330">1330</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, <a class="el" href="lightmap_8h.html#a224e3ed3a70e6f3db3f7eec5d9634626">load_lightmap_image()</a>, and <a class="el" href="main_8c_source.html#l00493">main()</a>.</p>
+<p class="reference">References <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03163">SceneData::LOADED_LIGHTING_PV</a>, <a class="el" href="engine__types_8h_source.html#l03164">SceneData::LOADED_LIGHTING_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l03106">LPV::lprobes</a>, <a class="el" href="engine__types_8h_source.html#l00206">LPV_SLOTS</a>, <a class="el" href="lightmap_8c_source.html#l01330">reset_lighting_pvs()</a>, and <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00696">execute_lprobe_undo()</a>, <a class="el" href="load_8c_source.html#l02582">load_lprobes()</a>, <a class="el" href="editor_8c_source.html#l04681">render_lprobe_menu()</a>, and <a class="el" href="lightmap_8c_source.html#l01330">reset_lighting_pvs()</a>.</p>
 
 </div>
 </div>
-<a id="a45914467c4a9c75a608468612cd6e1b0" name="a45914467c4a9c75a608468612cd6e1b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45914467c4a9c75a608468612cd6e1b0">&#9670;&#160;</a></span>compare_current_distances()</h2>
+<a id="aed4358900d424108beab97457ed8fa8b" name="aed4358900d424108beab97457ed8fa8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4358900d424108beab97457ed8fa8b">&#9670;&#160;</a></span>load_lighting_pv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int compare_current_distances </td>
+          <td class="memname">void load_lighting_pv </td>
           <td>(</td>
-          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_l_p_v">LPV</a> *</td>          <td class="paramname"><span class="paramname"><em>lpv</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group__aprobe__group.html#struct_probe_volume">ProbeVolume</a> *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>replacing_id</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01373">1373</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01344">1344</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l01373">compare_current_distances()</a>, and <a class="el" href="lightmap_8c_source.html#l01360">DistancePair::d</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03069">ProbeVolume::byte_offset</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l01344">load_lighting_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03106">LPV::lprobes</a>, <a class="el" href="engine__types_8h_source.html#l03166">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00213">LPV_PADDED_COUNT</a>, <a class="el" href="main_8c_source.html#l00263">LPV_TEXTURE</a>, <a class="el" href="engine__types_8h_source.html#l00211">PROBE_VOLUME_DEPTH_PADDED</a>, <a class="el" href="engine__types_8h_source.html#l00209">PROBE_VOLUME_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00208">PROBE_VOLUME_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, and <a class="el" href="engine__types_8h_source.html#l00177">SH_MAX</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01373">compare_current_distances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01344">load_lighting_pv()</a>.</p>
 
 </div>
 </div>
@@ -519,182 +1171,49 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01364">1364</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01370">1370</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l01364">compare_distances()</a>, and <a class="el" href="lightmap_8c_source.html#l01360">DistancePair::d</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l01370">compare_distances()</a>, and <a class="el" href="lightmap_8c_source.html#l01366">DistancePair::d</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01364">compare_distances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01370">compare_distances()</a>.</p>
 
 </div>
 </div>
-<a id="a2e92d1578ca582604c995d5030f374ca" name="a2e92d1578ca582604c995d5030f374ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e92d1578ca582604c995d5030f374ca">&#9670;&#160;</a></span>deallocate_lightmap_rect()</h2>
+<a id="a45914467c4a9c75a608468612cd6e1b0" name="a45914467c4a9c75a608468612cd6e1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45914467c4a9c75a608468612cd6e1b0">&#9670;&#160;</a></span>compare_current_distances()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void deallocate_lightmap_rect </td>
+          <td class="memname">int compare_current_distances </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_data.html">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_rect.html">LightmapRect</a> *</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>&#160;)</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00195">195</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01379">1379</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>, <a class="el" href="engine__types_8h_source.html#l01944">LightmapRect::h</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l01945">LightmapRect::padding</a>, <a class="el" href="engine__types_8h_source.html#l01941">LightmapRect::u</a>, <a class="el" href="engine__types_8h_source.html#l01942">LightmapRect::v</a>, <a class="el" href="engine__types_8h_source.html#l01943">LightmapRect::w</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l01379">compare_current_distances()</a>, and <a class="el" href="lightmap_8c_source.html#l01366">DistancePair::d</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>, and <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01379">compare_current_distances()</a>.</p>
 
 </div>
 </div>
-<a id="a7f3bec020d20e5fb502e95e45c466073" name="a7f3bec020d20e5fb502e95e45c466073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f3bec020d20e5fb502e95e45c466073">&#9670;&#160;</a></span>find_least_parallel_axis()</h2>
+<a id="ac9fe86d6fd9bf384aa5bdb45d17b5140" name="ac9fe86d6fd9bf384aa5bdb45d17b5140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9fe86d6fd9bf384aa5bdb45d17b5140">&#9670;&#160;</a></span>check_lighting_pv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void find_least_parallel_axis </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>u_dir</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a> *</td>          <td class="paramname"><span class="paramname"><em>v_dir</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00124">124</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00124">find_least_parallel_axis()</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, and <a class="el" href="lightmap_8c_source.html#l00124">find_least_parallel_axis()</a>.</p>
-
-</div>
-</div>
-<a id="a022d7798232162ea9f6f165b01dbe1a8" name="a022d7798232162ea9f6f165b01dbe1a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a022d7798232162ea9f6f165b01dbe1a8">&#9670;&#160;</a></span>free_lightmap_atlas()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void free_lightmap_atlas </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a> *</td>          <td class="paramname"><span class="paramname"><em>atlas</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00087">87</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="lightmap_8c_source.html#l00087">free_lightmap_atlas()</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00087">free_lightmap_atlas()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
-
-</div>
-</div>
-<a id="a0841dc3897e70ce20be53fd4fa1b86f6" name="a0841dc3897e70ce20be53fd4fa1b86f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0841dc3897e70ce20be53fd4fa1b86f6">&#9670;&#160;</a></span>init_lightmap_atlas()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lightmap_atlas.html">LightmapAtlas</a> init_lightmap_atlas </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>block_size</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00077">77</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="lightmap_8c_source.html#l00077">init_lightmap_atlas()</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00077">init_lightmap_atlas()</a>, and <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>.</p>
-
-</div>
-</div>
-<a id="addd1c1eeb6c51b2df84ff589b2cb9ebe" name="addd1c1eeb6c51b2df84ff589b2cb9ebe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addd1c1eeb6c51b2df84ff589b2cb9ebe">&#9670;&#160;</a></span>init_lightmap_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_lightmap_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_data.html">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00093">93</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l00087">free_lightmap_atlas()</a>, <a class="el" href="lightmap_8c_source.html#l00077">init_lightmap_atlas()</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l00136">LIGHTMAP_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00135">LIGHTMAP_WIDTH</a>, and <a class="el" href="engine__types_8h_source.html#l01990">LightmapData::sample_cubemap</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00511">execute_globals_undo()</a>, <a class="el" href="lightmap_8h.html#abd68b4ec7384d22fccbc25c768e3a1bb">generate_uv_lightmap()</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
-
-</div>
-</div>
-<a id="ad0bc48ed982f9e2f7b38097967c0207d" name="ad0bc48ed982f9e2f7b38097967c0207d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0bc48ed982f9e2f7b38097967c0207d">&#9670;&#160;</a></span>init_uv_islands()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init_uv_islands </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_data.html">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00384">384</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="lightmap_8c_source.html#l00353">add_uv_island_to_lightmap()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l00384">init_uv_islands()</a>, and <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8h.html#abd68b4ec7384d22fccbc25c768e3a1bb">generate_uv_lightmap()</a>, and <a class="el" href="lightmap_8c_source.html#l00384">init_uv_islands()</a>.</p>
-
-</div>
-</div>
-<a id="a1017484a2b8b26c8a0513f03eeeec6e7" name="a1017484a2b8b26c8a0513f03eeeec6e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1017484a2b8b26c8a0513f03eeeec6e7">&#9670;&#160;</a></span>LM_allocate_empty_mns()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LM_allocate_empty_mns </td>
+          <td class="memname">void check_lighting_pv </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -702,260 +1221,46 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00502">502</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p>Determines which <a class="el" href="engine__types_8h.html#struct_l_p_v" title="A ProbeVolume for indirect lighting probes.">LPV</a>s we may need to replace due to distance to new ones. </p>
 
-<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, and <a class="el" href="engine__types_8h_source.html#l03384">Globals::vertex_layouts</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01391">1391</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00502">LM_allocate_empty_mns()</a>, <a class="el" href="lightmap_8h.html#a224e3ed3a70e6f3db3f7eec5d9634626">load_lightmap_image()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00050">OBB::center</a>, <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, <a class="el" href="lightmap_8c_source.html#l01379">compare_current_distances()</a>, <a class="el" href="lightmap_8c_source.html#l01370">compare_distances()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l01366">DistancePair::d</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l01367">DistancePair::id</a>, <a class="el" href="engine__types_8h_source.html#l03150">SceneData::lighting_probe_volumes</a>, <a class="el" href="lightmap_8c_source.html#l01344">load_lighting_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03163">SceneData::LOADED_LIGHTING_PV</a>, <a class="el" href="engine__types_8h_source.html#l03164">SceneData::LOADED_LIGHTING_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l03166">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00206">LPV_SLOTS</a>, <a class="el" href="engine__types_8h_source.html#l01326">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l03071">ProbeVolume::obb</a>, <a class="el" href="main_8c_source.html#l00282">player</a>, <a class="el" href="engine__types_8h_source.html#l01266">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l03099">LPV::pv_id</a>, <a class="el" href="acceleration_8c_source.html#l00136">ray_intersects_obb_with_point()</a>, <a class="el" href="lightmap_8c_source.html#l01319">remove_lighting_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, and <a class="el" href="engine__types_8h_source.html#l03049">Player::skeleton</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, and <a class="el" href="main_8c_source.html#l00483">main()</a>.</p>
 
 </div>
 </div>
-<a id="ab2af1a73b7856f95359d7333fdd77d00" name="ab2af1a73b7856f95359d7333fdd77d00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2af1a73b7856f95359d7333fdd77d00">&#9670;&#160;</a></span>LM_regenerate_texels()</h2>
+<a id="ae59e1e354b2903189ac4ebe97171a2cc" name="ae59e1e354b2903189ac4ebe97171a2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59e1e354b2903189ac4ebe97171a2cc">&#9670;&#160;</a></span>bake_lighting_probe_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LM_regenerate_texels </td>
+          <td class="memname">void bake_lighting_probe_volume </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__aprobe__group.html#struct_probe_volume">ProbeVolume</a> *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00486">486</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
+<p>Loads a UV lightmap and relevant <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> data fro, binary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td><a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> for the lightmap. </td></tr>
+    <tr><td class="paramname">The</td><td>path to and name of the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>This does not currently free the current <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s on load. </dd></dl>
 
-<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="engine__types_8h_source.html#l03136">SceneData::lightmap_data</a>, <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, and <a class="el" href="engine__types_8h_source.html#l03384">Globals::vertex_layouts</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01509">1509</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00486">LM_regenerate_texels()</a>, <a class="el" href="lightmap_8h.html#a224e3ed3a70e6f3db3f7eec5d9634626">load_lightmap_image()</a>, and <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8c_source.html#l01509">bake_lighting_probe_volume()</a>, <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03069">ProbeVolume::byte_offset</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03152">SceneData::light_bvh</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03166">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00213">LPV_PADDED_COUNT</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l03118">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l03071">ProbeVolume::obb</a>, <a class="el" href="engine__types_8h_source.html#l01843">SHDataGPU::pos</a>, <a class="el" href="main_8c_source.html#l00223">PROBE_BAKE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00798">EditorSettings::probe_iterations</a>, <a class="el" href="engine__types_8h_source.html#l03404">Globals::probe_spacing</a>, <a class="el" href="main_8c_source.html#l00154">PROBE_SSBO</a>, <a class="el" href="main_8c_source.html#l00225">PROBE_UNPACK_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00210">PROBE_VOLUME_DEPTH</a>, <a class="el" href="engine__types_8h_source.html#l00211">PROBE_VOLUME_DEPTH_PADDED</a>, <a class="el" href="engine__types_8h_source.html#l00209">PROBE_VOLUME_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00208">PROBE_VOLUME_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l00177">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l03070">ProbeVolume::size</a>, <a class="el" href="main_8c_source.html#l00297">SKYBOX</a>, <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>, <a class="el" href="lightmap_8c_source.html#l00943">upload_bake_lights_gpu()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-</div>
-</div>
-<a id="aed4358900d424108beab97457ed8fa8b" name="aed4358900d424108beab97457ed8fa8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed4358900d424108beab97457ed8fa8b">&#9670;&#160;</a></span>load_lighting_pv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_lighting_pv </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_l_p_v.html">LPV</a> *</td>          <td class="paramname"><span class="paramname"><em>lpv</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_probe_volume.html">ProbeVolume</a> *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>replacing_id</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01338">1338</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03034">ProbeVolume::byte_offset</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03071">LPV::lprobes</a>, <a class="el" href="engine__types_8h_source.html#l03131">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00188">LPV_PADDED_COUNT</a>, <a class="el" href="main_8c_source.html#l00272">LPV_TEXTURE</a>, <a class="el" href="engine__types_8h_source.html#l00186">PROBE_VOLUME_DEPTH_PADDED</a>, <a class="el" href="engine__types_8h_source.html#l00184">PROBE_VOLUME_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00183">PROBE_VOLUME_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, and <a class="el" href="engine__types_8h_source.html#l00152">SH_MAX</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01338">load_lighting_pv()</a>.</p>
-
-</div>
-</div>
-<a id="abfc795a19d238736194cecd5413980e6" name="abfc795a19d238736194cecd5413980e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfc795a19d238736194cecd5413980e6">&#9670;&#160;</a></span>load_lightmap_from_binary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_lightmap_from_binary </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_data.html">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00607">607</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="lightmap_8c_source.html#l00195">deallocate_lightmap_rect()</a>, <a class="el" href="main_8c_source.html#l00224">DIRECTIONAL_MAP_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="mesh_8c_source.html#l00191">find_mn_by_name()</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01966">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01968">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l01969">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l01990">LightmapData::sample_cubemap</a>, <a class="el" href="engine__types_8h_source.html#l00773">EditorSettings::texels_per_uv_unit</a>, <a class="el" href="engine__types_8h_source.html#l01989">LightmapData::texture_id</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, <a class="el" href="engine__types_8h_source.html#l03384">Globals::vertex_layouts</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="lightmap_8h.html#a224e3ed3a70e6f3db3f7eec5d9634626">load_lightmap_image()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="a3ede23e13dd3dd6ef57002c15685295d" name="a3ede23e13dd3dd6ef57002c15685295d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ede23e13dd3dd6ef57002c15685295d">&#9670;&#160;</a></span>remove_lighting_pv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void remove_lighting_pv </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_l_p_v.html">LPV</a> *</td>          <td class="paramname"><span class="paramname"><em>lpv</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>lpb</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01313">1313</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03071">LPV::lprobes</a>, <a class="el" href="engine__types_8h_source.html#l03064">LPV::pv_id</a>, and <a class="el" href="lightmap_8c_source.html#l01313">remove_lighting_pv()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01385">check_lighting_pv()</a>, and <a class="el" href="lightmap_8c_source.html#l01313">remove_lighting_pv()</a>.</p>
-
-</div>
-</div>
-<a id="afa28cec7d2db64a6913c31b56d54d7cf" name="afa28cec7d2db64a6913c31b56d54d7cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa28cec7d2db64a6913c31b56d54d7cf">&#9670;&#160;</a></span>reset_lighting_pvs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reset_lighting_pvs </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l01324">1324</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03128">SceneData::LOADED_LIGHTING_PV</a>, <a class="el" href="engine__types_8h_source.html#l03129">SceneData::LOADED_LIGHTING_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l03071">LPV::lprobes</a>, <a class="el" href="engine__types_8h_source.html#l00181">LPV_SLOTS</a>, <a class="el" href="lightmap_8c_source.html#l01324">reset_lighting_pvs()</a>, and <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00691">execute_lprobe_undo()</a>, <a class="el" href="lightmap_8h.html#a224e3ed3a70e6f3db3f7eec5d9634626">load_lightmap_image()</a>, <a class="el" href="load_8c_source.html#l02583">load_lprobes()</a>, <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, and <a class="el" href="lightmap_8c_source.html#l01324">reset_lighting_pvs()</a>.</p>
-
-</div>
-</div>
-<a id="af08be03d47d4982425d6708d79fe99f9" name="af08be03d47d4982425d6708d79fe99f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af08be03d47d4982425d6708d79fe99f9">&#9670;&#160;</a></span>save_lightmap_to_binary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void save_lightmap_to_binary </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lightmap_data.html">LightmapData</a> *</td>          <td class="paramname"><span class="paramname"><em>ld</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00525">525</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03379">Globals::assets</a>, <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00224">DIRECTIONAL_MAP_TEXTURE</a>, <a class="el" href="main_8c_source.html#l00335">EDITOR_SETTINGS</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l01966">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02327">MeshNode::name</a>, <a class="el" href="engine__types_8h_source.html#l01968">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l01969">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l01990">LightmapData::sample_cubemap</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="engine__types_8h_source.html#l00773">EditorSettings::texels_per_uv_unit</a>, <a class="el" href="engine__types_8h_source.html#l01989">LightmapData::texture_id</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, and <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8h.html#a224e3ed3a70e6f3db3f7eec5d9634626">load_lightmap_image()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
-
-</div>
-</div>
-<a id="a6b5f0957d548ba1283d2b36112c7bc69" name="a6b5f0957d548ba1283d2b36112c7bc69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b5f0957d548ba1283d2b36112c7bc69">&#9670;&#160;</a></span>upload_bake_lights_gpu()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void upload_bake_lights_gpu </td>
-          <td>(</td>
-          <td class="paramtype">GLuint *</td>          <td class="paramname"><span class="paramname"><em>lights_ssbo</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00937">937</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01119">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01500">LightGPU::bvh_index</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l01788">BVHNodeGPU::center</a>, <a class="el" href="render_8c_source.html#l00602">copy_light_to_gpu_light()</a>, <a class="el" href="engine__types_8h_source.html#l01121">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l01780">BVHNodeGPU::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="render_8c_source.html#l00025">current_frame</a>, <a class="el" href="engine__types_8h_source.html#l01123">BVHNode::emissive_flux</a>, <a class="el" href="engine__types_8h_source.html#l01785">BVHNodeGPU::emissive_flux</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="engine__types_8h_source.html#l01790">BVHNodeGPU::extents</a>, <a class="el" href="engine__types_8h_source.html#l01120">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01779">BVHNodeGPU::first_index</a>, <a class="el" href="engine__types_8h_source.html#l01122">BVHNode::flux</a>, <a class="el" href="engine__types_8h_source.html#l01782">BVHNodeGPU::flux</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03084">LightBVH::indices</a>, <a class="el" href="engine__types_8h_source.html#l03085">LightBVH::indices_count</a>, <a class="el" href="engine__types_8h_source.html#l01112">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l01774">BVHNodeGPU::left</a>, <a class="el" href="engine__types_8h_source.html#l03117">SceneData::light_bvh</a>, <a class="el" href="main_8c_source.html#l00151">LIGHT_SSBO</a>, <a class="el" href="main_8c_source.html#l00350">light_ssbo_ptr</a>, <a class="el" href="main_8c_source.html#l00349">light_ssbo_size</a>, <a class="el" href="engine__types_8h_source.html#l03086">LightBVH::lights</a>, <a class="el" href="engine__types_8h_source.html#l01786">BVHNodeGPU::max</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01784">BVHNodeGPU::min</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l01116">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l01781">BVHNodeGPU::next</a>, <a class="el" href="engine__types_8h_source.html#l03083">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01114">BVHNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l01776">BVHNodeGPU::parent</a>, <a class="el" href="engine__types_8h_source.html#l01113">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l01775">BVHNodeGPU::right</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01503">bake_lighting_probe_volume()</a>, <a class="el" href="lightmap_8c_source.html#l01003">bake_lightmap()</a>, and <a class="el" href="lightmap_8c_source.html#l00937">upload_bake_lights_gpu()</a>.</p>
-
-</div>
-</div>
-<a id="a6374f217972f2dff01da117ae732514c" name="a6374f217972f2dff01da117ae732514c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6374f217972f2dff01da117ae732514c">&#9670;&#160;</a></span>walk_coplanar_adjacency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void walk_coplanar_adjacency </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh.html">Mesh</a> *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_u_v_island.html">UVIsland</a> *</td>          <td class="paramname"><span class="paramname"><em>island</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_u_v_mapping.html">UVMapping</a> *</td>          <td class="paramname"><span class="paramname"><em>uv_map</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>island_idx</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>current_face_index</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>tri_list</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_triangle_adjacency.html">TriangleAdjacency</a> *</td>          <td class="paramname"><span class="paramname"><em>tri_adj</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvec3.html">vec3</a></td>          <td class="paramname"><span class="paramname"><em>ref_point</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>eps</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lightmap_8c_source.html#l00037">37</a> of file <a class="el" href="lightmap_8c_source.html">lightmap.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="engine__types_8h_source.html#l02432">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="types_8h_source.html#l00286">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00287">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00223">Point::pos</a>, <a class="el" href="utilities_8c_source.html#l00318">triangle_area()</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02005">UVMapping::uv_island</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01509">bake_lighting_probe_volume()</a>, and <a class="el" href="editor_8c_source.html#l04681">render_lprobe_menu()</a>.</p>
 
 </div>
 </div>

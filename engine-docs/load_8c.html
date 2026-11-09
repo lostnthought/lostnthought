@@ -1,6 +1,9 @@
+<!-- HTML header for doxygen 1.18.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
@@ -25,6 +28,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -136,280 +140,47 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('load_8c.html',
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad9b6ee41b834ed091b5bed23f98f214c" id="r_ad9b6ee41b834ed091b5bed23f98f214c"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#ad9b6ee41b834ed091b5bed23f98f214c">load_texture</a> (const char *path, GLint min_filter, GLint mag_filter, GLint wrap_s, GLint wrap_t, bool sRGB)</td></tr>
+<tr class="memdesc:ad9b6ee41b834ed091b5bed23f98f214c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a texture through OpenGL.  <br /></td></tr>
 <tr class="memitem:a7818b730c8e29e695878a3d5962b2992" id="r_a7818b730c8e29e695878a3d5962b2992"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#a7818b730c8e29e695878a3d5962b2992">load_cubemap</a> (const char *path)</td></tr>
+<tr class="memdesc:a7818b730c8e29e695878a3d5962b2992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a cubemap in OpenGL naming convention (must be HDR).  <br /></td></tr>
 <tr class="memitem:aeb1dd8ae0ac4050bef083e527a7e0b33" id="r_aeb1dd8ae0ac4050bef083e527a7e0b33"><td class="memItemLeft">GLuint&#160;</td><td class="memItemRight"><a class="el" href="#aeb1dd8ae0ac4050bef083e527a7e0b33">load_3d_lut</a> (const char *filepath)</td></tr>
-<tr class="memitem:a59a390aeb79196a8f91b99002abe636d" id="r_a59a390aeb79196a8f91b99002abe636d"><td class="memItemLeft">unsigned char *&#160;</td><td class="memItemRight"><a class="el" href="#a59a390aeb79196a8f91b99002abe636d">open_image</a> (<a class="el" href="struct_image.html">Image</a> *image)</td></tr>
+<tr class="memdesc:aeb1dd8ae0ac4050bef083e527a7e0b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a 3D LUT for postprocessing.  <br /></td></tr>
+<tr class="memitem:a59a390aeb79196a8f91b99002abe636d" id="r_a59a390aeb79196a8f91b99002abe636d"><td class="memItemLeft">unsigned char *&#160;</td><td class="memItemRight"><a class="el" href="#a59a390aeb79196a8f91b99002abe636d">open_image</a> (<a class="el" href="engine__types_8h.html#struct_image">Image</a> *image)</td></tr>
+<tr class="memdesc:a59a390aeb79196a8f91b99002abe636d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens an image in bytes via stb.  <br /></td></tr>
 <tr class="memitem:a7e21d814ab37df87f34c5599d8ff903e" id="r_a7e21d814ab37df87f34c5599d8ff903e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7e21d814ab37df87f34c5599d8ff903e">add_image_to_registry</a> (char *filename, GLint min_filter, GLint mag_filter, GLint wrap_s, GLint wrap_t, bool sRGB)</td></tr>
+<tr class="memdesc:a7e21d814ab37df87f34c5599d8ff903e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an adds an image to <a class="el" href="engine__types_8h.html#aabdc23335ba202335a993ee2168a6d61" title="Images.">Globals.images</a>.  <br /></td></tr>
 <tr class="memitem:a32e21883e68028214e6e6d7c7c5470ea" id="r_a32e21883e68028214e6e6d7c7c5470ea"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a32e21883e68028214e6e6d7c7c5470ea">save_ui</a> (const char *name)</td></tr>
 <tr class="memitem:a3911b6ff2c604464597aadf0b50f0cf2" id="r_a3911b6ff2c604464597aadf0b50f0cf2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3911b6ff2c604464597aadf0b50f0cf2">load_ui</a> (const char *name)</td></tr>
 <tr class="memitem:ada4d0082c9af7859aa52e04d7cfdc1cc" id="r_ada4d0082c9af7859aa52e04d7cfdc1cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ada4d0082c9af7859aa52e04d7cfdc1cc">reallocate_rprobe_array</a> ()</td></tr>
-<tr class="memitem:ac343ec45486d6835f71404d7024915cb" id="r_ac343ec45486d6835f71404d7024915cb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac343ec45486d6835f71404d7024915cb">write_mesh_node</a> (<a class="el" href="struct_mesh_node.html">MeshNode</a> *mn, FILE *f)</td></tr>
-<tr class="memitem:a4466dce782bdade1771827d4efe34740" id="r_a4466dce782bdade1771827d4efe34740"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4466dce782bdade1771827d4efe34740">write_skin</a> (<a class="el" href="struct_g_l_t_f_skin.html">GLTFSkin</a> *skin, FILE *f)</td></tr>
+<tr class="memdesc:ada4d0082c9af7859aa52e04d7cfdc1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reallocates <a class="el" href="main_8c.html#a35f325c5fdd111c789dc6d1a13e83c75">RPROBE_CUBE_MAP_ARRAY</a> to new dimensions or when loading.  <br /></td></tr>
+<tr class="memitem:ac343ec45486d6835f71404d7024915cb" id="r_ac343ec45486d6835f71404d7024915cb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac343ec45486d6835f71404d7024915cb">write_mesh_node</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn, FILE *f)</td></tr>
+<tr class="memitem:a4466dce782bdade1771827d4efe34740" id="r_a4466dce782bdade1771827d4efe34740"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4466dce782bdade1771827d4efe34740">write_skin</a> (<a class="el" href="engine__types_8h.html#struct_g_l_t_f_skin">GLTFSkin</a> *skin, FILE *f)</td></tr>
 <tr class="memitem:a43d297e87c7f1d1c637b727e672cdd9d" id="r_a43d297e87c7f1d1c637b727e672cdd9d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a43d297e87c7f1d1c637b727e672cdd9d">scene_save</a> (const char *name)</td></tr>
-<tr class="memitem:ad22cb204d0093ff1b16d80e0ca3eb641" id="r_ad22cb204d0093ff1b16d80e0ca3eb641"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad22cb204d0093ff1b16d80e0ca3eb641">read_mesh_node</a> (<a class="el" href="struct_mesh_node.html">MeshNode</a> *mn, FILE *f)</td></tr>
-<tr class="memitem:a12c1a8dda558aae66bca15d60d47ba02" id="r_a12c1a8dda558aae66bca15d60d47ba02"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a12c1a8dda558aae66bca15d60d47ba02">read_skin</a> (<a class="el" href="struct_g_l_t_f_skin.html">GLTFSkin</a> *skin, FILE *f)</td></tr>
-<tr class="memitem:addd49d2055db812705de34b3d69acdcf" id="r_addd49d2055db812705de34b3d69acdcf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addd49d2055db812705de34b3d69acdcf">read_vector</a> (<a class="el" href="struct_vector.html">Vector</a> *v, size_t byte_size, FILE *f)</td></tr>
-<tr class="memitem:a3470e91a35ac4c6cc5b07db4aee09752" id="r_a3470e91a35ac4c6cc5b07db4aee09752"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3470e91a35ac4c6cc5b07db4aee09752">read_alloc_vector</a> (<a class="el" href="struct_vector.html">Vector</a> *v, size_t byte_size, FILE *f)</td></tr>
-<tr class="memitem:a19218781c616f0084b9acd6dbb634781" id="r_a19218781c616f0084b9acd6dbb634781"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19218781c616f0084b9acd6dbb634781">free_mesh_node</a> (<a class="el" href="struct_mesh_node.html">MeshNode</a> *mn)</td></tr>
-<tr class="memitem:a4ad3a400d72a48575b673b89cacbef49" id="r_a4ad3a400d72a48575b673b89cacbef49"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4ad3a400d72a48575b673b89cacbef49">free_skin</a> (<a class="el" href="struct_g_l_t_f_skin.html">GLTFSkin</a> *skin)</td></tr>
+<tr class="memdesc:a43d297e87c7f1d1c637b727e672cdd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves an entire scene into separate files.  <br /></td></tr>
+<tr class="memitem:ad22cb204d0093ff1b16d80e0ca3eb641" id="r_ad22cb204d0093ff1b16d80e0ca3eb641"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad22cb204d0093ff1b16d80e0ca3eb641">read_mesh_node</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn, FILE *f)</td></tr>
+<tr class="memitem:a12c1a8dda558aae66bca15d60d47ba02" id="r_a12c1a8dda558aae66bca15d60d47ba02"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a12c1a8dda558aae66bca15d60d47ba02">read_skin</a> (<a class="el" href="engine__types_8h.html#struct_g_l_t_f_skin">GLTFSkin</a> *skin, FILE *f)</td></tr>
+<tr class="memitem:addd49d2055db812705de34b3d69acdcf" id="r_addd49d2055db812705de34b3d69acdcf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addd49d2055db812705de34b3d69acdcf">read_vector</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *v, size_t byte_size, FILE *f)</td></tr>
+<tr class="memitem:a3470e91a35ac4c6cc5b07db4aee09752" id="r_a3470e91a35ac4c6cc5b07db4aee09752"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3470e91a35ac4c6cc5b07db4aee09752">read_alloc_vector</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *v, size_t byte_size, FILE *f)</td></tr>
+<tr class="memitem:a19218781c616f0084b9acd6dbb634781" id="r_a19218781c616f0084b9acd6dbb634781"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19218781c616f0084b9acd6dbb634781">free_mesh_node</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn)</td></tr>
+<tr class="memitem:a4ad3a400d72a48575b673b89cacbef49" id="r_a4ad3a400d72a48575b673b89cacbef49"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4ad3a400d72a48575b673b89cacbef49">free_skin</a> (<a class="el" href="engine__types_8h.html#struct_g_l_t_f_skin">GLTFSkin</a> *skin)</td></tr>
 <tr class="memitem:ad45a3837b163562ccc24751f81a9533a" id="r_ad45a3837b163562ccc24751f81a9533a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad45a3837b163562ccc24751f81a9533a">scene_load</a> (const char *name)</td></tr>
+<tr class="memdesc:ad45a3837b163562ccc24751f81a9533a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an entire scene from separate files in <a class="el" href="engine__types_8h.html#struct_file_directory_registry" title="Registry for folders that are used for dropdowns in the editor UI.">FileDirectoryRegistry</a> directories.  <br /></td></tr>
 <tr class="memitem:a1b1be3f66d4fff09a7ae2f85d225e0fa" id="r_a1b1be3f66d4fff09a7ae2f85d225e0fa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1b1be3f66d4fff09a7ae2f85d225e0fa">scene_save_volumes</a> (const char *name)</td></tr>
+<tr class="memdesc:a1b1be3f66d4fff09a7ae2f85d225e0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves only <a class="el" href="group__aprobe__group.html#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, <a class="el" href="group__audio__group.html#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s, and <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s.  <br /></td></tr>
 <tr class="memitem:a635b6d3f09c8eaea6fd7b6cca5272fc8" id="r_a635b6d3f09c8eaea6fd7b6cca5272fc8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a635b6d3f09c8eaea6fd7b6cca5272fc8">scene_load_volumes</a> (const char *name)</td></tr>
-<tr class="memitem:a356f2f212294fcbee3b24ae7120385d5" id="r_a356f2f212294fcbee3b24ae7120385d5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a356f2f212294fcbee3b24ae7120385d5">save_vector</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
-<tr class="memitem:a9a09c17f39302e019e897939523ef36e" id="r_a9a09c17f39302e019e897939523ef36e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a09c17f39302e019e897939523ef36e">load_vector</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
-<tr class="memitem:af75afaccba74b99c047b0f0f769a611b" id="r_af75afaccba74b99c047b0f0f769a611b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af75afaccba74b99c047b0f0f769a611b">save_rprobes</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
-<tr class="memitem:a40fecd5fcffd2eb95836d8ef4613f924" id="r_a40fecd5fcffd2eb95836d8ef4613f924"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a40fecd5fcffd2eb95836d8ef4613f924">load_rprobes</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
-<tr class="memitem:a56254d4dc87c3d24430f7b9c4d6abf53" id="r_a56254d4dc87c3d24430f7b9c4d6abf53"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a56254d4dc87c3d24430f7b9c4d6abf53">save_lprobes</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
-<tr class="memitem:a7aaa4191ada4b271c4e3638514e883ba" id="r_a7aaa4191ada4b271c4e3638514e883ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7aaa4191ada4b271c4e3638514e883ba">load_lprobes</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
-<tr class="memitem:a823d1b0473b6835dbfb5a3560cd53262" id="r_a823d1b0473b6835dbfb5a3560cd53262"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a823d1b0473b6835dbfb5a3560cd53262">save_aportals</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
-<tr class="memitem:a7c209c656e8101d419dc2c54f6e60647" id="r_a7c209c656e8101d419dc2c54f6e60647"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c209c656e8101d419dc2c54f6e60647">load_aportals</a> (const char *filename, <a class="el" href="struct_vector.html">Vector</a> *vec)</td></tr>
+<tr class="memdesc:a635b6d3f09c8eaea6fd7b6cca5272fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads only <a class="el" href="group__aprobe__group.html#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, <a class="el" href="group__audio__group.html#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s, and <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s.  <br /></td></tr>
+<tr class="memitem:a356f2f212294fcbee3b24ae7120385d5" id="r_a356f2f212294fcbee3b24ae7120385d5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a356f2f212294fcbee3b24ae7120385d5">save_vector</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
+<tr class="memitem:a9a09c17f39302e019e897939523ef36e" id="r_a9a09c17f39302e019e897939523ef36e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a09c17f39302e019e897939523ef36e">load_vector</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
+<tr class="memitem:af75afaccba74b99c047b0f0f769a611b" id="r_af75afaccba74b99c047b0f0f769a611b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af75afaccba74b99c047b0f0f769a611b">save_rprobes</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
+<tr class="memitem:a40fecd5fcffd2eb95836d8ef4613f924" id="r_a40fecd5fcffd2eb95836d8ef4613f924"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a40fecd5fcffd2eb95836d8ef4613f924">load_rprobes</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
+<tr class="memitem:a56254d4dc87c3d24430f7b9c4d6abf53" id="r_a56254d4dc87c3d24430f7b9c4d6abf53"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a56254d4dc87c3d24430f7b9c4d6abf53">save_lprobes</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
+<tr class="memitem:a7aaa4191ada4b271c4e3638514e883ba" id="r_a7aaa4191ada4b271c4e3638514e883ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7aaa4191ada4b271c4e3638514e883ba">load_lprobes</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
+<tr class="memitem:a823d1b0473b6835dbfb5a3560cd53262" id="r_a823d1b0473b6835dbfb5a3560cd53262"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a823d1b0473b6835dbfb5a3560cd53262">save_aportals</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
+<tr class="memitem:a7c209c656e8101d419dc2c54f6e60647" id="r_a7c209c656e8101d419dc2c54f6e60647"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c209c656e8101d419dc2c54f6e60647">load_aportals</a> (const char *filename, <a class="el" href="types_8h.html#struct_vector">Vector</a> *vec)</td></tr>
 <tr class="memitem:aca041e97ff66ce6a3bd273555a7da98e" id="r_aca041e97ff66ce6a3bd273555a7da98e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aca041e97ff66ce6a3bd273555a7da98e">save_aprobes</a> (const char *filename)</td></tr>
 <tr class="memitem:a7cf412d3fadb333fdb401cbac887aa64" id="r_a7cf412d3fadb333fdb401cbac887aa64"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7cf412d3fadb333fdb401cbac887aa64">load_aprobes</a> (const char *filename)</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a7e21d814ab37df87f34c5599d8ff903e" name="a7e21d814ab37df87f34c5599d8ff903e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e21d814ab37df87f34c5599d8ff903e">&#9670;&#160;</a></span>add_image_to_registry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int add_image_to_registry </td>
-          <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>min_filter</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>mag_filter</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>wrap_s</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>wrap_t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>sRGB</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00292">292</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="engine__types_8h_source.html#l02494">Image::buf</a>, <a class="el" href="engine__types_8h_source.html#l02493">Image::channels</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02496">Image::handle</a>, <a class="el" href="engine__types_8h_source.html#l02495">Image::i</a>, <a class="el" href="engine__types_8h_source.html#l03381">Globals::images</a>, <a class="el" href="load_8c_source.html#l00020">load_texture()</a>, <a class="el" href="engine__types_8h_source.html#l02490">Image::path</a>, <a class="el" href="engine__types_8h_source.html#l02499">Image::sRGB</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>.</p>
-
-</div>
-</div>
-<a id="a19218781c616f0084b9acd6dbb634781" name="a19218781c616f0084b9acd6dbb634781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19218781c616f0084b9acd6dbb634781">&#9670;&#160;</a></span>free_mesh_node()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void free_mesh_node </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01248">1248</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="load_8c_source.html#l01248">free_mesh_node()</a>, and <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01248">free_mesh_node()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="a4ad3a400d72a48575b673b89cacbef49" name="a4ad3a400d72a48575b673b89cacbef49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ad3a400d72a48575b673b89cacbef49">&#9670;&#160;</a></span>free_skin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void free_skin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_g_l_t_f_skin.html">GLTFSkin</a> *</td>          <td class="paramname"><span class="paramname"><em>skin</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01254">1254</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02711">GLTFSkin::final_mat</a>, <a class="el" href="load_8c_source.html#l01254">free_skin()</a>, <a class="el" href="engine__types_8h_source.html#l02712">GLTFSkin::inverse_bind</a>, and <a class="el" href="engine__types_8h_source.html#l02710">GLTFSkin::joints</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01254">free_skin()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="aeb1dd8ae0ac4050bef083e527a7e0b33" name="aeb1dd8ae0ac4050bef083e527a7e0b33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1dd8ae0ac4050bef083e527a7e0b33">&#9670;&#160;</a></span>load_3d_lut()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLuint load_3d_lut </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00221">221</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="load_8c_source.html#l00221">load_3d_lut()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01991">init()</a>, and <a class="el" href="load_8c_source.html#l00221">load_3d_lut()</a>.</p>
-
-</div>
-</div>
-<a id="a7c209c656e8101d419dc2c54f6e60647" name="a7c209c656e8101d419dc2c54f6e60647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c209c656e8101d419dc2c54f6e60647">&#9670;&#160;</a></span>load_aportals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_aportals </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02635">2635</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00369">AudioPortal::adjacent_portals</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="load_8c_source.html#l02635">load_aportals()</a>, <a class="el" href="engine__types_8h_source.html#l00368">AudioPortal::pos</a>, and <a class="el" href="types_8h_source.html#l00212">Vector::type_size</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02635">load_aportals()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>.</p>
-
-</div>
-</div>
-<a id="a7cf412d3fadb333fdb401cbac887aa64" name="a7cf412d3fadb333fdb401cbac887aa64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cf412d3fadb333fdb401cbac887aa64">&#9670;&#160;</a></span>load_aprobes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_aprobes </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02700">2700</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03133">SceneData::APV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l03132">SceneData::APV_PATH</a>, <a class="el" href="engine__types_8h_source.html#l03114">SceneData::audio_probe_volumes</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="load_8c_source.html#l02700">load_aprobes()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="audio_8c_source.html#l00603">reset_audio_pvs()</a>, and <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02700">load_aprobes()</a>, <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>.</p>
-
-</div>
-</div>
-<a id="a7818b730c8e29e695878a3d5962b2992" name="a7818b730c8e29e695878a3d5962b2992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7818b730c8e29e695878a3d5962b2992">&#9670;&#160;</a></span>load_cubemap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLuint load_cubemap </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00160">160</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="load_8c_source.html#l00161">load_cubemap()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01991">init()</a>, and <a class="el" href="load_8c_source.html#l00161">load_cubemap()</a>.</p>
-
-</div>
-</div>
-<a id="a7aaa4191ada4b271c4e3638514e883ba" name="a7aaa4191ada4b271c4e3638514e883ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aaa4191ada4b271c4e3638514e883ba">&#9670;&#160;</a></span>load_lprobes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_lprobes </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02583">2583</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="load_8c_source.html#l02583">load_lprobes()</a>, <a class="el" href="engine__types_8h_source.html#l03131">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l03130">SceneData::LPV_PATH</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="lightmap_8c_source.html#l01324">reset_lighting_pvs()</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, and <a class="el" href="types_8h_source.html#l00212">Vector::type_size</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02583">load_lprobes()</a>, and <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>.</p>
-
-</div>
-</div>
-<a id="a40fecd5fcffd2eb95836d8ef4613f924" name="a40fecd5fcffd2eb95836d8ef4613f924"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40fecd5fcffd2eb95836d8ef4613f924">&#9670;&#160;</a></span>load_rprobes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_rprobes </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02556">2556</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="load_8c_source.html#l02556">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, and <a class="el" href="types_8h_source.html#l00212">Vector::type_size</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02556">load_rprobes()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>.</p>
-
-</div>
-</div>
 <a id="ad9b6ee41b834ed091b5bed23f98f214c" name="ad9b6ee41b834ed091b5bed23f98f214c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9b6ee41b834ed091b5bed23f98f214c">&#9670;&#160;</a></span>load_texture()</h2>
 
@@ -449,6 +220,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Loads a texture through OpenGL. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path and name of the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameter.xhtml">https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameter.xhtml</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sRGB</td><td>Indicates if we load this as sRGB. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Handle to the texture. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00019">19</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
 <p class="reference">References <a class="el" href="load_8c_source.html#l00020">load_texture()</a>, and <a class="el" href="mathf_8h_source.html#l00435">MIN</a>.</p>
@@ -457,53 +244,67 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3911b6ff2c604464597aadf0b50f0cf2" name="a3911b6ff2c604464597aadf0b50f0cf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3911b6ff2c604464597aadf0b50f0cf2">&#9670;&#160;</a></span>load_ui()</h2>
+<a id="a7818b730c8e29e695878a3d5962b2992" name="a7818b730c8e29e695878a3d5962b2992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7818b730c8e29e695878a3d5962b2992">&#9670;&#160;</a></span>load_cubemap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void load_ui </td>
+          <td class="memname">GLuint load_cubemap </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00348">348</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p>Loads a cubemap in OpenGL naming convention (must be HDR). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to cubemap folder. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Handle to the cubemap. </dd></dl>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00377">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03154">FileDirectoryRegistry::directory</a>, <a class="el" href="ui_8h_source.html#l00375">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00374">UIMenu::id</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="load_8c_source.html#l00348">load_ui()</a>, <a class="el" href="ui_8h_source.html#l00012">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00009">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8h_source.html#l00008">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00178">TextBox::text_cap</a>, <a class="el" href="editor_8c_source.html#l00057">ui_registry</a>, and <a class="el" href="ui_8h_source.html#l00373">UIMenu::uID</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00160">160</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00348">load_ui()</a>, and <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>.</p>
+<p class="reference">References <a class="el" href="load_8c_source.html#l00161">load_cubemap()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01988">init()</a>, and <a class="el" href="load_8c_source.html#l00161">load_cubemap()</a>.</p>
 
 </div>
 </div>
-<a id="a9a09c17f39302e019e897939523ef36e" name="a9a09c17f39302e019e897939523ef36e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a09c17f39302e019e897939523ef36e">&#9670;&#160;</a></span>load_vector()</h2>
+<a id="aeb1dd8ae0ac4050bef083e527a7e0b33" name="aeb1dd8ae0ac4050bef083e527a7e0b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1dd8ae0ac4050bef083e527a7e0b33">&#9670;&#160;</a></span>load_3d_lut()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void load_vector </td>
+          <td class="memname">GLuint load_3d_lut </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02530">2530</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p>Loads a 3D LUT for postprocessing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>The path to the LUT. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Handle to the 3D texture. </dd></dl>
 
-<p class="reference">References <a class="el" href="load_8c_source.html#l02530">load_vector()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, and <a class="el" href="types_8h_source.html#l00212">Vector::type_size</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00221">221</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02530">load_vector()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>.</p>
+<p class="reference">References <a class="el" href="load_8c_source.html#l00221">load_3d_lut()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01988">init()</a>, and <a class="el" href="load_8c_source.html#l00221">load_3d_lut()</a>.</p>
 
 </div>
 </div>
@@ -516,262 +317,88 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned char * open_image </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_image.html">Image</a> *</td>          <td class="paramname"><span class="paramname"><em>image</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_image">Image</a> *</td>          <td class="paramname"><span class="paramname"><em>image</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Opens an image in bytes via stb. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Pointer to <a class="el" href="engine__types_8h.html#struct_image" title="Where Material textures are saved upon loading from file.">Image</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00275">275</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02493">Image::channels</a>, <a class="el" href="engine__types_8h_source.html#l02498">Image::height</a>, <a class="el" href="load_8c_source.html#l00275">open_image()</a>, <a class="el" href="engine__types_8h_source.html#l02490">Image::path</a>, and <a class="el" href="engine__types_8h_source.html#l02497">Image::width</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02528">Image::channels</a>, <a class="el" href="engine__types_8h_source.html#l02533">Image::height</a>, <a class="el" href="load_8c_source.html#l00275">open_image()</a>, <a class="el" href="engine__types_8h_source.html#l02525">Image::path</a>, and <a class="el" href="engine__types_8h_source.html#l02532">Image::width</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00275">open_image()</a>.</p>
 
 </div>
 </div>
-<a id="a3470e91a35ac4c6cc5b07db4aee09752" name="a3470e91a35ac4c6cc5b07db4aee09752"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3470e91a35ac4c6cc5b07db4aee09752">&#9670;&#160;</a></span>read_alloc_vector()</h2>
+<a id="a7e21d814ab37df87f34c5599d8ff903e" name="a7e21d814ab37df87f34c5599d8ff903e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e21d814ab37df87f34c5599d8ff903e">&#9670;&#160;</a></span>add_image_to_registry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void read_alloc_vector </td>
+          <td class="memname">int add_image_to_registry </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>byte_size</em></span>, </td>
+          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>min_filter</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01224">1224</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::capacity</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, and <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="ad22cb204d0093ff1b16d80e0ca3eb641" name="ad22cb204d0093ff1b16d80e0ca3eb641"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad22cb204d0093ff1b16d80e0ca3eb641">&#9670;&#160;</a></span>read_mesh_node()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void read_mesh_node </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
+          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>mag_filter</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01096">1096</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02328">MeshNode::active</a>, <a class="el" href="engine__types_8h_source.html#l02345">MeshNode::asset</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02355">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02354">MeshNode::children</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02390">MeshNode::ent</a>, <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02330">MeshNode::id</a>, <a class="el" href="engine__types_8h_source.html#l02340">MeshNode::local_matrix</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02350">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02393">MeshNode::pc</a>, <a class="el" href="main_8c_source.html#l00319">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::physics_mode</a>, <a class="el" href="load_8c_source.html#l01096">read_mesh_node()</a>, <a class="el" href="engine__types_8h_source.html#l02338">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02339">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l02347">MeshNode::skin</a>, <a class="el" href="engine__types_8h_source.html#l02377">MeshNode::skip_directional_uv_lighting</a>, <a class="el" href="engine__types_8h_source.html#l02449">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02357">MeshNode::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02337">MeshNode::translation</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, and <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01096">read_mesh_node()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="a12c1a8dda558aae66bca15d60d47ba02" name="a12c1a8dda558aae66bca15d60d47ba02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12c1a8dda558aae66bca15d60d47ba02">&#9670;&#160;</a></span>read_skin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void read_skin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_g_l_t_f_skin.html">GLTFSkin</a> *</td>          <td class="paramname"><span class="paramname"><em>skin</em></span>, </td>
+          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>wrap_s</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01173">1173</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02714">GLTFSkin::animation_indices</a>, <a class="el" href="engine__types_8h_source.html#l02715">GLTFSkin::animation_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l02711">GLTFSkin::final_mat</a>, <a class="el" href="engine__types_8h_source.html#l02713">GLTFSkin::ibm_accessor</a>, <a class="el" href="engine__types_8h_source.html#l02712">GLTFSkin::inverse_bind</a>, <a class="el" href="engine__types_8h_source.html#l02709">GLTFSkin::joint_count</a>, <a class="el" href="engine__types_8h_source.html#l02710">GLTFSkin::joints</a>, and <a class="el" href="load_8c_source.html#l01173">read_skin()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01173">read_skin()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="addd49d2055db812705de34b3d69acdcf" name="addd49d2055db812705de34b3d69acdcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addd49d2055db812705de34b3d69acdcf">&#9670;&#160;</a></span>read_vector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void read_vector </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+          <td class="paramtype">GLint</td>          <td class="paramname"><span class="paramname"><em>wrap_t</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>byte_size</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>sRGB</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01200">1200</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p>Loads an adds an image to <a class="el" href="engine__types_8h.html#aabdc23335ba202335a993ee2168a6d61" title="Images.">Globals.images</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The name and path to the image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameter.xhtml">https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexParameter.xhtml</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sRGB</td><td>Indicates if we load this as sRGB. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of the texture in <a class="el" href="engine__types_8h.html#aabdc23335ba202335a993ee2168a6d61" title="Images.">Globals.images</a>. </dd></dl>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::capacity</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, and <a class="el" href="load_8c_source.html#l01200">read_vector()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00292">292</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02700">load_aprobes()</a>, <a class="el" href="load_8c_source.html#l02583">load_lprobes()</a>, <a class="el" href="load_8c_source.html#l02556">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l02530">load_vector()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+<p class="reference">References <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="engine__types_8h_source.html#l02529">Image::buf</a>, <a class="el" href="engine__types_8h_source.html#l02528">Image::channels</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02531">Image::handle</a>, <a class="el" href="engine__types_8h_source.html#l02530">Image::i</a>, <a class="el" href="engine__types_8h_source.html#l03416">Globals::images</a>, <a class="el" href="load_8c_source.html#l00020">load_texture()</a>, <a class="el" href="engine__types_8h_source.html#l02525">Image::path</a>, <a class="el" href="engine__types_8h_source.html#l02534">Image::sRGB</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
 
-</div>
-</div>
-<a id="ada4d0082c9af7859aa52e04d7cfdc1cc" name="ada4d0082c9af7859aa52e04d7cfdc1cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada4d0082c9af7859aa52e04d7cfdc1cc">&#9670;&#160;</a></span>reallocate_rprobe_array()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reallocate_rprobe_array </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00392">392</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l00154">MAX_RPROBE_MIPS</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="engine__types_8h_source.html#l03113">SceneData::reflection_probes</a>, <a class="el" href="main_8c_source.html#l00310">RPROBE_CUBE_MAP_ARRAY</a>, <a class="el" href="engine__types_8h_source.html#l00139">RPROBE_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00138">RPROBE_WIDTH</a>, and <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02556">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>.</p>
-
-</div>
-</div>
-<a id="a823d1b0473b6835dbfb5a3560cd53262" name="a823d1b0473b6835dbfb5a3560cd53262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a823d1b0473b6835dbfb5a3560cd53262">&#9670;&#160;</a></span>save_aportals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void save_aportals </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02608">2608</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00369">AudioPortal::adjacent_portals</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l00368">AudioPortal::pos</a>, and <a class="el" href="load_8c_source.html#l02608">save_aportals()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l02608">save_aportals()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02400">scene_save_volumes()</a>.</p>
-
-</div>
-</div>
-<a id="aca041e97ff66ce6a3bd273555a7da98e" name="aca041e97ff66ce6a3bd273555a7da98e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca041e97ff66ce6a3bd273555a7da98e">&#9670;&#160;</a></span>save_aprobes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void save_aprobes </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02680">2680</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03132">SceneData::APV_PATH</a>, <a class="el" href="engine__types_8h_source.html#l03114">SceneData::audio_probe_volumes</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="load_8c_source.html#l02680">save_aprobes()</a>, and <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04211">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l02680">save_aprobes()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02400">scene_save_volumes()</a>.</p>
-
-</div>
-</div>
-<a id="a56254d4dc87c3d24430f7b9c4d6abf53" name="a56254d4dc87c3d24430f7b9c4d6abf53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56254d4dc87c3d24430f7b9c4d6abf53">&#9670;&#160;</a></span>save_lprobes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void save_lprobes </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02569">2569</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03130">SceneData::LPV_PATH</a>, <a class="el" href="load_8c_source.html#l02569">save_lprobes()</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, and <a class="el" href="types_8h_source.html#l00212">Vector::type_size</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04676">render_lprobe_menu()</a>, and <a class="el" href="load_8c_source.html#l02569">save_lprobes()</a>.</p>
-
-</div>
-</div>
-<a id="af75afaccba74b99c047b0f0f769a611b" name="af75afaccba74b99c047b0f0f769a611b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af75afaccba74b99c047b0f0f769a611b">&#9670;&#160;</a></span>save_rprobes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void save_rprobes </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02544">2544</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="load_8c_source.html#l02544">save_rprobes()</a>, and <a class="el" href="types_8h_source.html#l00212">Vector::type_size</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02544">save_rprobes()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02400">scene_save_volumes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, and <a class="el" href="gltf_8c_source.html#l01113">load_gltf_texture()</a>.</p>
 
 </div>
 </div>
@@ -792,82 +419,111 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00315">315</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00377">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03154">FileDirectoryRegistry::directory</a>, <a class="el" href="ui_8h_source.html#l00375">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00374">UIMenu::id</a>, <a class="el" href="ui_8h_source.html#l00012">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00009">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8h_source.html#l00008">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="load_8c_source.html#l00315">save_ui()</a>, <a class="el" href="ui_8h_source.html#l00177">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00376">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00178">TextBox::text_cap</a>, <a class="el" href="editor_8c_source.html#l00057">ui_registry</a>, and <a class="el" href="ui_8h_source.html#l00373">UIMenu::uID</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03189">FileDirectoryRegistry::directory</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00565">UIMenu::id</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00034">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="load_8c_source.html#l00315">save_ui()</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00266">TextBox::text_cap</a>, <a class="el" href="editor_8c_source.html#l00062">ui_registry</a>, and <a class="el" href="ui_8h_source.html#l00564">UIMenu::uID</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l00315">save_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l00315">save_ui()</a>.</p>
 
 </div>
 </div>
-<a id="a356f2f212294fcbee3b24ae7120385d5" name="a356f2f212294fcbee3b24ae7120385d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a356f2f212294fcbee3b24ae7120385d5">&#9670;&#160;</a></span>save_vector()</h2>
+<a id="a3911b6ff2c604464597aadf0b50f0cf2" name="a3911b6ff2c604464597aadf0b50f0cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3911b6ff2c604464597aadf0b50f0cf2">&#9670;&#160;</a></span>load_ui()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void save_vector </td>
+          <td class="memname">void load_ui </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00348">348</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03189">FileDirectoryRegistry::directory</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00565">UIMenu::id</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="load_8c_source.html#l00348">load_ui()</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00034">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00266">TextBox::text_cap</a>, <a class="el" href="editor_8c_source.html#l00062">ui_registry</a>, and <a class="el" href="ui_8h_source.html#l00564">UIMenu::uID</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00348">load_ui()</a>, and <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>.</p>
+
+</div>
+</div>
+<a id="ada4d0082c9af7859aa52e04d7cfdc1cc" name="ada4d0082c9af7859aa52e04d7cfdc1cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4d0082c9af7859aa52e04d7cfdc1cc">&#9670;&#160;</a></span>reallocate_rprobe_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reallocate_rprobe_array </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reallocates <a class="el" href="main_8c.html#a35f325c5fdd111c789dc6d1a13e83c75">RPROBE_CUBE_MAP_ARRAY</a> to new dimensions or when loading. </p>
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00392">392</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l00179">MAX_RPROBE_MIPS</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="engine__types_8h_source.html#l03148">SceneData::reflection_probes</a>, <a class="el" href="main_8c_source.html#l00300">RPROBE_CUBE_MAP_ARRAY</a>, <a class="el" href="engine__types_8h_source.html#l00164">RPROBE_HEIGHT</a>, <a class="el" href="engine__types_8h_source.html#l00163">RPROBE_WIDTH</a>, and <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02555">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="ac343ec45486d6835f71404d7024915cb" name="ac343ec45486d6835f71404d7024915cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac343ec45486d6835f71404d7024915cb">&#9670;&#160;</a></span>write_mesh_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write_mesh_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_vector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02518">2518</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00407">407</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="load_8c_source.html#l02518">save_vector()</a>, and <a class="el" href="types_8h_source.html#l00212">Vector::type_size</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02363">MeshNode::active</a>, <a class="el" href="engine__types_8h_source.html#l02380">MeshNode::asset</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02390">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02389">MeshNode::children</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02425">MeshNode::ent</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02328">Entity::id</a>, <a class="el" href="engine__types_8h_source.html#l02365">MeshNode::id</a>, <a class="el" href="engine__types_8h_source.html#l02146">PhysicsComponent::id</a>, <a class="el" href="engine__types_8h_source.html#l02375">MeshNode::local_matrix</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02385">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02428">MeshNode::pc</a>, <a class="el" href="engine__types_8h_source.html#l02427">MeshNode::physics_mode</a>, <a class="el" href="engine__types_8h_source.html#l02373">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02374">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l02382">MeshNode::skin</a>, <a class="el" href="engine__types_8h_source.html#l02412">MeshNode::skip_directional_uv_lighting</a>, <a class="el" href="engine__types_8h_source.html#l02484">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::translation</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l05920">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, <a class="el" href="load_8c_source.html#l02518">save_vector()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02400">scene_save_volumes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
 
 </div>
 </div>
-<a id="ad45a3837b163562ccc24751f81a9533a" name="ad45a3837b163562ccc24751f81a9533a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad45a3837b163562ccc24751f81a9533a">&#9670;&#160;</a></span>scene_load()</h2>
+<a id="a4466dce782bdade1771827d4efe34740" name="a4466dce782bdade1771827d4efe34740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4466dce782bdade1771827d4efe34740">&#9670;&#160;</a></span>write_skin()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void scene_load </td>
+          <td class="memname">void write_skin </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_g_l_t_f_skin">GLTFSkin</a> *</td>          <td class="paramname"><span class="paramname"><em>skin</em></span>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01262">1262</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02846">Asset::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02823">AssetInstance::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01079">ConvexHull::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02298">Entity::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02450">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02135">PhysicsComponent::aabb</a>, <a class="el" href="engine__types_8h_source.html#l03100">SceneData::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01557">Material::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l02209">AnimationTrack::active</a>, <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="engine__types_8h_source.html#l02432">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="engine__types_8h_source.html#l01575">Material::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01574">Material::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l02131">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_BOOL</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_FLOAT</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_INT</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_VEC3</a>, <a class="el" href="main_8c_source.html#l00320">ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02843">Asset::animation_count</a>, <a class="el" href="engine__types_8h_source.html#l02842">Asset::animations</a>, <a class="el" href="engine__types_8h_source.html#l01553">Material::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01569">Material::ao_tex</a>, <a class="el" href="editor_8c_source.html#l00051">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00054">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l01568">Material::arm_tex</a>, <a class="el" href="engine__types_8h_source.html#l02680">Animation::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02845">Asset::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02806">AssetInstance::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02447">Mesh::asset_id</a>, <a class="el" href="main_8c_source.html#l00318">ASSET_INSTANCES</a>, <a class="el" href="engine__types_8h_source.html#l03379">Globals::assets</a>, <a class="el" href="engine__types_8h_source.html#l02113">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l00068">AUDIO_NUM_BANDS</a>, <a class="el" href="engine__types_8h_source.html#l03383">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="engine__types_8h_source.html#l02494">Image::buf</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03109">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03108">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l03107">SceneData::bvh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02448">Mesh::bvh_prim</a>, <a class="el" href="types_8h_source.html#l00212">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02137">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02124">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l01078">ConvexHull::centroid</a>, <a class="el" href="engine__types_8h_source.html#l02683">Animation::channel_count</a>, <a class="el" href="engine__types_8h_source.html#l02684">Animation::channels</a>, <a class="el" href="engine__types_8h_source.html#l02493">Image::channels</a>, <a class="el" href="engine__types_8h_source.html#l02208">AnimationTrack::completion_data</a>, <a class="el" href="engine__types_8h_source.html#l02626">AnimationSampler::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="editor_8c_source.html#l01669">create_performance_overlay()</a>, <a class="el" href="engine__types_8h_source.html#l02199">AnimationTrack::current_time</a>, <a class="el" href="engine__types_8h_source.html#l02206">AnimationTrack::data</a>, <a class="el" href="engine__types_8h_source.html#l02205">AnimationTrack::data_byte_offset</a>, <a class="el" href="engine__types_8h_source.html#l02204">AnimationTrack::data_index_offset</a>, <a class="el" href="engine__types_8h_source.html#l02203">AnimationTrack::data_type</a>, <a class="el" href="engine__types_8h_source.html#l00100">DEFAULT_TEXTURES</a>, <a class="el" href="engine__types_8h_source.html#l01565">Material::diffuse_tex</a>, <a class="el" href="engine__types_8h_source.html#l03154">FileDirectoryRegistry::directory</a>, <a class="el" href="engine__types_8h_source.html#l01578">Material::double_sided</a>, <a class="el" href="main_8c_source.html#l00393">draw_dirty</a>, <a class="el" href="engine__types_8h_source.html#l02200">AnimationTrack::duration</a>, <a class="el" href="engine__types_8h_source.html#l02629">AnimationSampler::elem_count</a>, <a class="el" href="engine__types_8h_source.html#l01554">Material::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01567">Material::emissive_tex</a>, <a class="el" href="engine__types_8h_source.html#l02229">AnimationComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02140">PhysicsComponent::ent</a>, <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l01076">ConvexHull::faces</a>, <a class="el" href="engine__types_8h_source.html#l02711">GLTFSkin::final_mat</a>, <a class="el" href="engine__types_8h_source.html#l02803">AssetInstance::first_skin</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="engine__types_8h_source.html#l02228">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02822">AssetInstance::free</a>, <a class="el" href="engine__types_8h_source.html#l02294">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l02111">PhysicsComponent::free</a>, <a class="el" href="load_8c_source.html#l01248">free_mesh_node()</a>, <a class="el" href="load_8c_source.html#l01254">free_skin()</a>, <a class="el" href="engine__types_8h_source.html#l01540">Material::fwd_shader</a>, <a class="el" href="engine__types_8h_source.html#l01541">Material::gbuffer_shader</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="ui_8h_source.html#l00030">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00029">Font::glyphs</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="engine__types_8h_source.html#l02496">Image::handle</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01077">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02461">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02495">Image::i</a>, <a class="el" href="engine__types_8h_source.html#l02293">Entity::id</a>, <a class="el" href="engine__types_8h_source.html#l02446">Mesh::id</a>, <a class="el" href="engine__types_8h_source.html#l02110">PhysicsComponent::id</a>, <a class="el" href="ui_8h_source.html#l00034">Font::image_id</a>, <a class="el" href="engine__types_8h_source.html#l03381">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l03084">LightBVH::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l02308">Entity::instance</a>, <a class="el" href="engine__types_8h_source.html#l02631">AnimationSampler::interpolation</a>, <a class="el" href="engine__types_8h_source.html#l02712">GLTFSkin::inverse_bind</a>, <a class="el" href="engine__types_8h_source.html#l02125">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02133">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l02710">GLTFSkin::joints</a>, <a class="el" href="engine__types_8h_source.html#l01547">Material::ka</a>, <a class="el" href="engine__types_8h_source.html#l01548">Material::kd</a>, <a class="el" href="engine__types_8h_source.html#l01550">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l02197">AnimationTrack::kf</a>, <a class="el" href="engine__types_8h_source.html#l02198">AnimationTrack::kf_count</a>, <a class="el" href="engine__types_8h_source.html#l01549">Material::ks</a>, <a class="el" href="engine__types_8h_source.html#l03117">SceneData::light_bvh</a>, <a class="el" href="editor_8c_source.html#l00049">light_registry</a>, <a class="el" href="engine__types_8h_source.html#l03136">SceneData::lightmap_data</a>, <a class="el" href="editor_8c_source.html#l00048">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03086">LightBVH::lights</a>, <a class="el" href="load_8c_source.html#l02635">load_aportals()</a>, <a class="el" href="load_8c_source.html#l02700">load_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00607">load_lightmap_from_binary()</a>, <a class="el" href="load_8c_source.html#l02556">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l00020">load_texture()</a>, <a class="el" href="load_8c_source.html#l02530">load_vector()</a>, <a class="el" href="engine__types_8h_source.html#l02201">AnimationTrack::loop</a>, <a class="el" href="editor_8c_source.html#l00053">lprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l02502">Image::mag_filter</a>, <a class="el" href="engine__types_8h_source.html#l02121">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l03380">Globals::materials</a>, <a class="el" href="init_8h_source.html#l00452">MAX_ANIMATION_COMPONENTS</a>, <a class="el" href="init_8h_source.html#l00438">MAX_ASSET_INSTANCES</a>, <a class="el" href="init_8h_source.html#l00434">MAX_ENTITIES</a>, <a class="el" href="init_8h_source.html#l00448">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02837">Asset::mesh_indices</a>, <a class="el" href="engine__types_8h_source.html#l02296">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l01966">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01551">Material::metallic</a>, <a class="el" href="engine__types_8h_source.html#l02491">Image::mime_type</a>, <a class="el" href="engine__types_8h_source.html#l02501">Image::min_filter</a>, <a class="el" href="engine__types_8h_source.html#l01570">Material::mr_tex</a>, <a class="el" href="engine__types_8h_source.html#l02123">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l02679">Animation::name</a>, <a class="el" href="engine__types_8h_source.html#l02492">Image::name</a>, <a class="el" href="engine__types_8h_source.html#l01539">Material::name</a>, <a class="el" href="engine__types_8h_source.html#l02445">Mesh::name</a>, <a class="el" href="engine__types_8h_source.html#l03099">SceneData::name</a>, <a class="el" href="engine__types_8h_source.html#l03363">Globals::noclip</a>, <a class="el" href="engine__types_8h_source.html#l02839">Asset::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02807">AssetInstance::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02838">Asset::nodes</a>, <a class="el" href="engine__types_8h_source.html#l03083">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l02475">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01968">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01573">Material::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01566">Material::normal_tex</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l02836">Asset::path</a>, <a class="el" href="engine__types_8h_source.html#l02490">Image::path</a>, <a class="el" href="engine__types_8h_source.html#l02309">Entity::pc</a>, <a class="el" href="main_8c_source.html#l00319">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02112">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l03369">Globals::probe_spacing</a>, <a class="el" href="engine__types_8h_source.html#l03368">Globals::probe_tex_size</a>, <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>, <a class="el" href="load_8c_source.html#l01096">read_mesh_node()</a>, <a class="el" href="load_8c_source.html#l01173">read_skin()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="engine__types_8h_source.html#l01969">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l03113">SceneData::reflection_probes</a>, <a class="el" href="engine__types_8h_source.html#l02122">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l01552">Material::roughness</a>, <a class="el" href="editor_8c_source.html#l00052">rprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l01990">LightmapData::sample_cubemap</a>, <a class="el" href="engine__types_8h_source.html#l02681">Animation::sampler_count</a>, <a class="el" href="engine__types_8h_source.html#l02682">Animation::samplers</a>, <a class="el" href="engine__types_8h_source.html#l01558">Material::scattering_coefficients</a>, <a class="el" href="editor_8c_source.html#l00055">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="editor_8c_source.html#l00047">scene_registry</a>, <a class="el" href="engine__types_8h_source.html#l02297">Entity::skin</a>, <a class="el" href="engine__types_8h_source.html#l02841">Asset::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02804">AssetInstance::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02840">Asset::skins</a>, <a class="el" href="engine__types_8h_source.html#l03378">Globals::skins</a>, <a class="el" href="engine__types_8h_source.html#l02499">Image::sRGB</a>, <a class="el" href="engine__types_8h_source.html#l02449">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02460">Mesh::submeshes</a>, <a class="el" href="ui_8h_source.html#l00028">Font::texture</a>, <a class="el" href="engine__types_8h_source.html#l02175">AnimationKeyframe::time</a>, <a class="el" href="engine__types_8h_source.html#l02627">AnimationSampler::times</a>, <a class="el" href="engine__types_8h_source.html#l02227">AnimationComponent::track_count</a>, <a class="el" href="engine__types_8h_source.html#l02226">AnimationComponent::tracks</a>, <a class="el" href="engine__types_8h_source.html#l02476">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02466">Mesh::tri_adjacency</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02196">AnimationTrack::type</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>, <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, <a class="el" href="struct_animation_keyframe.html#adc728fbc7b16945ef3e7761e5cb9774d">AnimationKeyframe::val</a>, <a class="el" href="engine__types_8h_source.html#l02630">AnimationSampler::values</a>, <a class="el" href="engine__types_8h_source.html#l02128">PhysicsComponent::vel</a>, <a class="el" href="engine__types_8h_source.html#l03384">Globals::vertex_layouts</a>, <a class="el" href="engine__types_8h_source.html#l01075">ConvexHull::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>, <a class="el" href="engine__types_8h_source.html#l03366">Globals::world_min</a>, <a class="el" href="engine__types_8h_source.html#l03367">Globals::world_size</a>, <a class="el" href="engine__types_8h_source.html#l02503">Image::wrap_s</a>, and <a class="el" href="engine__types_8h_source.html#l02504">Image::wrap_t</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
-
-</div>
-</div>
-<a id="a635b6d3f09c8eaea6fd7b6cca5272fc8" name="a635b6d3f09c8eaea6fd7b6cca5272fc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a635b6d3f09c8eaea6fd7b6cca5272fc8">&#9670;&#160;</a></span>scene_load_volumes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void scene_load_volumes </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02453">2453</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00480">480</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">References <a class="el" href="editor_8c_source.html#l00051">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00054">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03383">Globals::audio_portals</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03154">FileDirectoryRegistry::directory</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="editor_8c_source.html#l00049">light_registry</a>, <a class="el" href="engine__types_8h_source.html#l01438">Light::light_type</a>, <a class="el" href="editor_8c_source.html#l00048">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="load_8c_source.html#l02635">load_aportals()</a>, <a class="el" href="load_8c_source.html#l02700">load_aprobes()</a>, <a class="el" href="load_8c_source.html#l02556">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l02530">load_vector()</a>, <a class="el" href="editor_8c_source.html#l00053">lprobe_registry</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="engine__types_8h_source.html#l03113">SceneData::reflection_probes</a>, <a class="el" href="editor_8c_source.html#l00052">rprobe_registry</a>, <a class="el" href="editor_8c_source.html#l00055">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>, <a class="el" href="editor_8c_source.html#l00047">scene_registry</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02749">GLTFSkin::animation_indices</a>, <a class="el" href="engine__types_8h_source.html#l02750">GLTFSkin::animation_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l02746">GLTFSkin::final_mat</a>, <a class="el" href="engine__types_8h_source.html#l02748">GLTFSkin::ibm_accessor</a>, <a class="el" href="engine__types_8h_source.html#l02747">GLTFSkin::inverse_bind</a>, <a class="el" href="engine__types_8h_source.html#l02744">GLTFSkin::joint_count</a>, <a class="el" href="engine__types_8h_source.html#l02745">GLTFSkin::joints</a>, and <a class="el" href="load_8c_source.html#l00480">write_skin()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l02453">scene_load_volumes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00480">write_skin()</a>.</p>
 
 </div>
 </div>
@@ -886,11 +542,216 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Saves an entire scene into separate files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The scene directories and bin suffixes are prepended and appended, only the name is needed. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00502">502</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02846">Asset::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02823">AssetInstance::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01079">ConvexHull::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02298">Entity::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02450">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02135">PhysicsComponent::aabb</a>, <a class="el" href="engine__types_8h_source.html#l03100">SceneData::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01557">Material::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l02209">AnimationTrack::active</a>, <a class="el" href="engine__types_8h_source.html#l02432">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="engine__types_8h_source.html#l01575">Material::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01574">Material::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l02131">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_BOOL</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_FLOAT</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_INT</a>, <a class="el" href="engine__types_8h_source.html#l02153">ANIM_TARGET_VEC3</a>, <a class="el" href="main_8c_source.html#l00320">ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02843">Asset::animation_count</a>, <a class="el" href="engine__types_8h_source.html#l02842">Asset::animations</a>, <a class="el" href="engine__types_8h_source.html#l01553">Material::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01569">Material::ao_tex</a>, <a class="el" href="editor_8c_source.html#l00051">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00054">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l01568">Material::arm_tex</a>, <a class="el" href="engine__types_8h_source.html#l02680">Animation::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02845">Asset::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02806">AssetInstance::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02447">Mesh::asset_id</a>, <a class="el" href="main_8c_source.html#l00318">ASSET_INSTANCES</a>, <a class="el" href="engine__types_8h_source.html#l03379">Globals::assets</a>, <a class="el" href="engine__types_8h_source.html#l02113">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l01988">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l00068">AUDIO_NUM_BANDS</a>, <a class="el" href="engine__types_8h_source.html#l03383">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l01928">LightmapAtlas::block_size</a>, <a class="el" href="types_8h_source.html#l00213">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l02474">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03109">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03108">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l03107">SceneData::bvh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02448">Mesh::bvh_prim</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02137">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02124">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l01078">ConvexHull::centroid</a>, <a class="el" href="engine__types_8h_source.html#l02683">Animation::channel_count</a>, <a class="el" href="engine__types_8h_source.html#l02684">Animation::channels</a>, <a class="el" href="engine__types_8h_source.html#l02626">AnimationSampler::count</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02199">AnimationTrack::current_time</a>, <a class="el" href="engine__types_8h_source.html#l02205">AnimationTrack::data_byte_offset</a>, <a class="el" href="engine__types_8h_source.html#l02204">AnimationTrack::data_index_offset</a>, <a class="el" href="engine__types_8h_source.html#l02203">AnimationTrack::data_type</a>, <a class="el" href="engine__types_8h_source.html#l00100">DEFAULT_TEXTURES</a>, <a class="el" href="engine__types_8h_source.html#l01565">Material::diffuse_tex</a>, <a class="el" href="engine__types_8h_source.html#l03154">FileDirectoryRegistry::directory</a>, <a class="el" href="engine__types_8h_source.html#l01578">Material::double_sided</a>, <a class="el" href="engine__types_8h_source.html#l02200">AnimationTrack::duration</a>, <a class="el" href="engine__types_8h_source.html#l02629">AnimationSampler::elem_count</a>, <a class="el" href="engine__types_8h_source.html#l01554">Material::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01567">Material::emissive_tex</a>, <a class="el" href="engine__types_8h_source.html#l02229">AnimationComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02140">PhysicsComponent::ent</a>, <a class="el" href="main_8c_source.html#l00317">ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l01076">ConvexHull::faces</a>, <a class="el" href="engine__types_8h_source.html#l02803">AssetInstance::first_skin</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="engine__types_8h_source.html#l02228">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02822">AssetInstance::free</a>, <a class="el" href="engine__types_8h_source.html#l02294">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l02111">PhysicsComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l01540">Material::fwd_shader</a>, <a class="el" href="engine__types_8h_source.html#l01541">Material::gbuffer_shader</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="ui_8h_source.html#l00030">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00029">Font::glyphs</a>, <a class="el" href="engine__types_8h_source.html#l01927">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01077">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02461">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02802">AssetInstance::id</a>, <a class="el" href="engine__types_8h_source.html#l02293">Entity::id</a>, <a class="el" href="engine__types_8h_source.html#l02446">Mesh::id</a>, <a class="el" href="engine__types_8h_source.html#l02110">PhysicsComponent::id</a>, <a class="el" href="engine__types_8h_source.html#l03381">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l03084">LightBVH::indices</a>, <a class="el" href="engine__types_8h_source.html#l02308">Entity::instance</a>, <a class="el" href="engine__types_8h_source.html#l02631">AnimationSampler::interpolation</a>, <a class="el" href="engine__types_8h_source.html#l02125">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02133">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l01987">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l01547">Material::ka</a>, <a class="el" href="engine__types_8h_source.html#l01548">Material::kd</a>, <a class="el" href="engine__types_8h_source.html#l01550">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l02197">AnimationTrack::kf</a>, <a class="el" href="engine__types_8h_source.html#l02198">AnimationTrack::kf_count</a>, <a class="el" href="engine__types_8h_source.html#l01549">Material::ks</a>, <a class="el" href="engine__types_8h_source.html#l03117">SceneData::light_bvh</a>, <a class="el" href="editor_8c_source.html#l00049">light_registry</a>, <a class="el" href="engine__types_8h_source.html#l03136">SceneData::lightmap_data</a>, <a class="el" href="editor_8c_source.html#l00048">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03086">LightBVH::lights</a>, <a class="el" href="engine__types_8h_source.html#l02201">AnimationTrack::loop</a>, <a class="el" href="editor_8c_source.html#l00053">lprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l02502">Image::mag_filter</a>, <a class="el" href="engine__types_8h_source.html#l02121">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l03380">Globals::materials</a>, <a class="el" href="init_8h_source.html#l00452">MAX_ANIMATION_COMPONENTS</a>, <a class="el" href="init_8h_source.html#l00438">MAX_ASSET_INSTANCES</a>, <a class="el" href="init_8h_source.html#l00434">MAX_ENTITIES</a>, <a class="el" href="init_8h_source.html#l00448">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02837">Asset::mesh_indices</a>, <a class="el" href="engine__types_8h_source.html#l02296">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l01966">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03377">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01551">Material::metallic</a>, <a class="el" href="engine__types_8h_source.html#l02491">Image::mime_type</a>, <a class="el" href="engine__types_8h_source.html#l02501">Image::min_filter</a>, <a class="el" href="engine__types_8h_source.html#l01570">Material::mr_tex</a>, <a class="el" href="engine__types_8h_source.html#l02123">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l02679">Animation::name</a>, <a class="el" href="engine__types_8h_source.html#l02492">Image::name</a>, <a class="el" href="engine__types_8h_source.html#l01539">Material::name</a>, <a class="el" href="engine__types_8h_source.html#l02445">Mesh::name</a>, <a class="el" href="engine__types_8h_source.html#l03099">SceneData::name</a>, <a class="el" href="engine__types_8h_source.html#l03363">Globals::noclip</a>, <a class="el" href="engine__types_8h_source.html#l02839">Asset::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02807">AssetInstance::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02838">Asset::nodes</a>, <a class="el" href="engine__types_8h_source.html#l03083">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l02475">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01968">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01573">Material::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01566">Material::normal_tex</a>, <a class="el" href="engine__types_8h_source.html#l01929">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l02836">Asset::path</a>, <a class="el" href="engine__types_8h_source.html#l02490">Image::path</a>, <a class="el" href="engine__types_8h_source.html#l02309">Entity::pc</a>, <a class="el" href="main_8c_source.html#l00319">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02112">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l03369">Globals::probe_spacing</a>, <a class="el" href="engine__types_8h_source.html#l03368">Globals::probe_tex_size</a>, <a class="el" href="engine__types_8h_source.html#l01969">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l03113">SceneData::reflection_probes</a>, <a class="el" href="engine__types_8h_source.html#l02122">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l01552">Material::roughness</a>, <a class="el" href="editor_8c_source.html#l00052">rprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l01990">LightmapData::sample_cubemap</a>, <a class="el" href="engine__types_8h_source.html#l02681">Animation::sampler_count</a>, <a class="el" href="engine__types_8h_source.html#l02682">Animation::samplers</a>, <a class="el" href="load_8c_source.html#l02608">save_aportals()</a>, <a class="el" href="load_8c_source.html#l02680">save_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l02544">save_rprobes()</a>, <a class="el" href="load_8c_source.html#l02518">save_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01558">Material::scattering_coefficients</a>, <a class="el" href="editor_8c_source.html#l00055">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="editor_8c_source.html#l00047">scene_registry</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="engine__types_8h_source.html#l02297">Entity::skin</a>, <a class="el" href="engine__types_8h_source.html#l02841">Asset::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02804">AssetInstance::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02840">Asset::skins</a>, <a class="el" href="engine__types_8h_source.html#l03378">Globals::skins</a>, <a class="el" href="engine__types_8h_source.html#l02499">Image::sRGB</a>, <a class="el" href="engine__types_8h_source.html#l02449">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02460">Mesh::submeshes</a>, <a class="el" href="engine__types_8h_source.html#l02175">AnimationKeyframe::time</a>, <a class="el" href="engine__types_8h_source.html#l02627">AnimationSampler::times</a>, <a class="el" href="engine__types_8h_source.html#l02227">AnimationComponent::track_count</a>, <a class="el" href="engine__types_8h_source.html#l02226">AnimationComponent::tracks</a>, <a class="el" href="engine__types_8h_source.html#l02476">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02466">Mesh::tri_adjacency</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01967">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02196">AnimationTrack::type</a>, <a class="el" href="engine__types_8h_source.html#l01970">UVIsland::uvs</a>, <a class="el" href="struct_animation_keyframe.html#adc728fbc7b16945ef3e7761e5cb9774d">AnimationKeyframe::val</a>, <a class="el" href="engine__types_8h_source.html#l02630">AnimationSampler::values</a>, <a class="el" href="engine__types_8h_source.html#l02128">PhysicsComponent::vel</a>, <a class="el" href="engine__types_8h_source.html#l01075">ConvexHull::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02462">Mesh::vertices</a>, <a class="el" href="engine__types_8h_source.html#l01926">LightmapAtlas::width</a>, <a class="el" href="engine__types_8h_source.html#l03366">Globals::world_min</a>, <a class="el" href="engine__types_8h_source.html#l03367">Globals::world_size</a>, <a class="el" href="engine__types_8h_source.html#l02503">Image::wrap_s</a>, <a class="el" href="engine__types_8h_source.html#l02504">Image::wrap_t</a>, <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>, and <a class="el" href="load_8c_source.html#l00480">write_skin()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02881">Asset::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02858">AssetInstance::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01107">ConvexHull::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02333">Entity::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02485">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::aabb</a>, <a class="el" href="engine__types_8h_source.html#l03135">SceneData::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01587">Material::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l02245">AnimationTrack::active</a>, <a class="el" href="engine__types_8h_source.html#l02467">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="engine__types_8h_source.html#l01605">Material::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01604">Material::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_BOOL</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_FLOAT</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_INT</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_VEC3</a>, <a class="el" href="main_8c_source.html#l00310">ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02878">Asset::animation_count</a>, <a class="el" href="engine__types_8h_source.html#l02877">Asset::animations</a>, <a class="el" href="engine__types_8h_source.html#l01583">Material::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01599">Material::ao_tex</a>, <a class="el" href="editor_8c_source.html#l00056">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00059">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l01598">Material::arm_tex</a>, <a class="el" href="engine__types_8h_source.html#l02715">Animation::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02880">Asset::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02841">AssetInstance::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02482">Mesh::asset_id</a>, <a class="el" href="main_8c_source.html#l00308">ASSET_INSTANCES</a>, <a class="el" href="engine__types_8h_source.html#l03414">Globals::assets</a>, <a class="el" href="engine__types_8h_source.html#l02149">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l00087">AUDIO_NUM_BANDS</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03144">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03143">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l03142">SceneData::bvh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02483">Mesh::bvh_prim</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02173">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02160">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l01106">ConvexHull::centroid</a>, <a class="el" href="engine__types_8h_source.html#l02718">Animation::channel_count</a>, <a class="el" href="engine__types_8h_source.html#l02719">Animation::channels</a>, <a class="el" href="engine__types_8h_source.html#l02661">AnimationSampler::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02235">AnimationTrack::current_time</a>, <a class="el" href="engine__types_8h_source.html#l02241">AnimationTrack::data_byte_offset</a>, <a class="el" href="engine__types_8h_source.html#l02240">AnimationTrack::data_index_offset</a>, <a class="el" href="engine__types_8h_source.html#l02239">AnimationTrack::data_type</a>, <a class="el" href="engine__types_8h_source.html#l00119">DEFAULT_TEXTURES</a>, <a class="el" href="engine__types_8h_source.html#l01595">Material::diffuse_tex</a>, <a class="el" href="engine__types_8h_source.html#l03189">FileDirectoryRegistry::directory</a>, <a class="el" href="engine__types_8h_source.html#l01608">Material::double_sided</a>, <a class="el" href="engine__types_8h_source.html#l02236">AnimationTrack::duration</a>, <a class="el" href="engine__types_8h_source.html#l02664">AnimationSampler::elem_count</a>, <a class="el" href="engine__types_8h_source.html#l01584">Material::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01597">Material::emissive_tex</a>, <a class="el" href="engine__types_8h_source.html#l02265">AnimationComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::ent</a>, <a class="el" href="main_8c_source.html#l00307">ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l01104">ConvexHull::faces</a>, <a class="el" href="engine__types_8h_source.html#l02838">AssetInstance::first_skin</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="engine__types_8h_source.html#l02264">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02857">AssetInstance::free</a>, <a class="el" href="engine__types_8h_source.html#l02329">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l02147">PhysicsComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l01570">Material::fwd_shader</a>, <a class="el" href="engine__types_8h_source.html#l01571">Material::gbuffer_shader</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="ui_8h_source.html#l00079">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00078">Font::glyphs</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01105">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02496">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02837">AssetInstance::id</a>, <a class="el" href="engine__types_8h_source.html#l02328">Entity::id</a>, <a class="el" href="engine__types_8h_source.html#l02481">Mesh::id</a>, <a class="el" href="engine__types_8h_source.html#l02146">PhysicsComponent::id</a>, <a class="el" href="engine__types_8h_source.html#l03416">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l03119">LightBVH::indices</a>, <a class="el" href="engine__types_8h_source.html#l02343">Entity::instance</a>, <a class="el" href="engine__types_8h_source.html#l02666">AnimationSampler::interpolation</a>, <a class="el" href="engine__types_8h_source.html#l02161">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02169">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l01577">Material::ka</a>, <a class="el" href="engine__types_8h_source.html#l01578">Material::kd</a>, <a class="el" href="engine__types_8h_source.html#l01580">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l02233">AnimationTrack::kf</a>, <a class="el" href="engine__types_8h_source.html#l02234">AnimationTrack::kf_count</a>, <a class="el" href="engine__types_8h_source.html#l01579">Material::ks</a>, <a class="el" href="engine__types_8h_source.html#l03152">SceneData::light_bvh</a>, <a class="el" href="editor_8c_source.html#l00054">light_registry</a>, <a class="el" href="engine__types_8h_source.html#l03171">SceneData::lightmap_data</a>, <a class="el" href="editor_8c_source.html#l00053">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03121">LightBVH::lights</a>, <a class="el" href="engine__types_8h_source.html#l02237">AnimationTrack::loop</a>, <a class="el" href="editor_8c_source.html#l00058">lprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l02537">Image::mag_filter</a>, <a class="el" href="engine__types_8h_source.html#l02157">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l03415">Globals::materials</a>, <a class="el" href="init_8h_source.html#l00451">MAX_ANIMATION_COMPONENTS</a>, <a class="el" href="init_8h_source.html#l00442">MAX_ASSET_INSTANCES</a>, <a class="el" href="init_8h_source.html#l00439">MAX_ENTITIES</a>, <a class="el" href="init_8h_source.html#l00445">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02872">Asset::mesh_indices</a>, <a class="el" href="engine__types_8h_source.html#l02331">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l01996">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01581">Material::metallic</a>, <a class="el" href="engine__types_8h_source.html#l02526">Image::mime_type</a>, <a class="el" href="engine__types_8h_source.html#l02536">Image::min_filter</a>, <a class="el" href="engine__types_8h_source.html#l01600">Material::mr_tex</a>, <a class="el" href="engine__types_8h_source.html#l02159">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l02714">Animation::name</a>, <a class="el" href="engine__types_8h_source.html#l02527">Image::name</a>, <a class="el" href="engine__types_8h_source.html#l01569">Material::name</a>, <a class="el" href="engine__types_8h_source.html#l02480">Mesh::name</a>, <a class="el" href="engine__types_8h_source.html#l03134">SceneData::name</a>, <a class="el" href="engine__types_8h_source.html#l03398">Globals::noclip</a>, <a class="el" href="engine__types_8h_source.html#l02874">Asset::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02842">AssetInstance::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02873">Asset::nodes</a>, <a class="el" href="engine__types_8h_source.html#l03118">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l02510">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01998">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01603">Material::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01596">Material::normal_tex</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l02871">Asset::path</a>, <a class="el" href="engine__types_8h_source.html#l02525">Image::path</a>, <a class="el" href="engine__types_8h_source.html#l02344">Entity::pc</a>, <a class="el" href="main_8c_source.html#l00309">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02148">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l03404">Globals::probe_spacing</a>, <a class="el" href="engine__types_8h_source.html#l03403">Globals::probe_tex_size</a>, <a class="el" href="engine__types_8h_source.html#l01999">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l03148">SceneData::reflection_probes</a>, <a class="el" href="engine__types_8h_source.html#l02158">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l01582">Material::roughness</a>, <a class="el" href="editor_8c_source.html#l00057">rprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l02020">LightmapData::sample_cubemap</a>, <a class="el" href="engine__types_8h_source.html#l02716">Animation::sampler_count</a>, <a class="el" href="engine__types_8h_source.html#l02717">Animation::samplers</a>, <a class="el" href="load_8c_source.html#l02607">save_aportals()</a>, <a class="el" href="load_8c_source.html#l02679">save_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00525">save_lightmap_to_binary()</a>, <a class="el" href="load_8c_source.html#l02543">save_rprobes()</a>, <a class="el" href="load_8c_source.html#l02517">save_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01588">Material::scattering_coefficients</a>, <a class="el" href="editor_8c_source.html#l00060">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="editor_8c_source.html#l00052">scene_registry</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, <a class="el" href="engine__types_8h_source.html#l02332">Entity::skin</a>, <a class="el" href="engine__types_8h_source.html#l02876">Asset::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02839">AssetInstance::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02875">Asset::skins</a>, <a class="el" href="engine__types_8h_source.html#l03413">Globals::skins</a>, <a class="el" href="engine__types_8h_source.html#l02534">Image::sRGB</a>, <a class="el" href="engine__types_8h_source.html#l02484">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02495">Mesh::submeshes</a>, <a class="el" href="engine__types_8h_source.html#l02211">AnimationKeyframe::time</a>, <a class="el" href="engine__types_8h_source.html#l02662">AnimationSampler::times</a>, <a class="el" href="engine__types_8h_source.html#l02263">AnimationComponent::track_count</a>, <a class="el" href="engine__types_8h_source.html#l02262">AnimationComponent::tracks</a>, <a class="el" href="engine__types_8h_source.html#l02511">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02501">Mesh::tri_adjacency</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02232">AnimationTrack::type</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, <a class="el" href="engine__types_8h.html#adc728fbc7b16945ef3e7761e5cb9774d">AnimationKeyframe::val</a>, <a class="el" href="engine__types_8h_source.html#l02665">AnimationSampler::values</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::vel</a>, <a class="el" href="engine__types_8h_source.html#l01103">ConvexHull::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>, <a class="el" href="engine__types_8h_source.html#l03401">Globals::world_min</a>, <a class="el" href="engine__types_8h_source.html#l03402">Globals::world_size</a>, <a class="el" href="engine__types_8h_source.html#l02538">Image::wrap_s</a>, <a class="el" href="engine__types_8h_source.html#l02539">Image::wrap_t</a>, <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>, and <a class="el" href="load_8c_source.html#l00480">write_skin()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l00502">scene_save()</a>.</p>
+
+</div>
+</div>
+<a id="ad22cb204d0093ff1b16d80e0ca3eb641" name="ad22cb204d0093ff1b16d80e0ca3eb641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22cb204d0093ff1b16d80e0ca3eb641">&#9670;&#160;</a></span>read_mesh_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_mesh_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01096">1096</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02363">MeshNode::active</a>, <a class="el" href="engine__types_8h_source.html#l02380">MeshNode::asset</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02390">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02389">MeshNode::children</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02425">MeshNode::ent</a>, <a class="el" href="main_8c_source.html#l00307">ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l02376">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02365">MeshNode::id</a>, <a class="el" href="engine__types_8h_source.html#l02375">MeshNode::local_matrix</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02385">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02428">MeshNode::pc</a>, <a class="el" href="main_8c_source.html#l00309">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02427">MeshNode::physics_mode</a>, <a class="el" href="load_8c_source.html#l01096">read_mesh_node()</a>, <a class="el" href="engine__types_8h_source.html#l02373">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02374">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l02382">MeshNode::skin</a>, <a class="el" href="engine__types_8h_source.html#l02412">MeshNode::skip_directional_uv_lighting</a>, <a class="el" href="engine__types_8h_source.html#l02484">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::translation</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, and <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01096">read_mesh_node()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+
+</div>
+</div>
+<a id="a12c1a8dda558aae66bca15d60d47ba02" name="a12c1a8dda558aae66bca15d60d47ba02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c1a8dda558aae66bca15d60d47ba02">&#9670;&#160;</a></span>read_skin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_skin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_g_l_t_f_skin">GLTFSkin</a> *</td>          <td class="paramname"><span class="paramname"><em>skin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01173">1173</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02749">GLTFSkin::animation_indices</a>, <a class="el" href="engine__types_8h_source.html#l02750">GLTFSkin::animation_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l02746">GLTFSkin::final_mat</a>, <a class="el" href="engine__types_8h_source.html#l02748">GLTFSkin::ibm_accessor</a>, <a class="el" href="engine__types_8h_source.html#l02747">GLTFSkin::inverse_bind</a>, <a class="el" href="engine__types_8h_source.html#l02744">GLTFSkin::joint_count</a>, <a class="el" href="engine__types_8h_source.html#l02745">GLTFSkin::joints</a>, and <a class="el" href="load_8c_source.html#l01173">read_skin()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01173">read_skin()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+
+</div>
+</div>
+<a id="addd49d2055db812705de34b3d69acdcf" name="addd49d2055db812705de34b3d69acdcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd49d2055db812705de34b3d69acdcf">&#9670;&#160;</a></span>read_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>byte_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01200">1200</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, and <a class="el" href="load_8c_source.html#l01200">read_vector()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02699">load_aprobes()</a>, <a class="el" href="load_8c_source.html#l02582">load_lprobes()</a>, <a class="el" href="load_8c_source.html#l02555">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l02529">load_vector()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+
+</div>
+</div>
+<a id="a3470e91a35ac4c6cc5b07db4aee09752" name="a3470e91a35ac4c6cc5b07db4aee09752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3470e91a35ac4c6cc5b07db4aee09752">&#9670;&#160;</a></span>read_alloc_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_alloc_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>byte_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01224">1224</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, and <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+
+</div>
+</div>
+<a id="a19218781c616f0084b9acd6dbb634781" name="a19218781c616f0084b9acd6dbb634781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19218781c616f0084b9acd6dbb634781">&#9670;&#160;</a></span>free_mesh_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_mesh_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01248">1248</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="load_8c_source.html#l01248">free_mesh_node()</a>, and <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01248">free_mesh_node()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+
+</div>
+</div>
+<a id="a4ad3a400d72a48575b673b89cacbef49" name="a4ad3a400d72a48575b673b89cacbef49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad3a400d72a48575b673b89cacbef49">&#9670;&#160;</a></span>free_skin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_skin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_g_l_t_f_skin">GLTFSkin</a> *</td>          <td class="paramname"><span class="paramname"><em>skin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01254">1254</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02746">GLTFSkin::final_mat</a>, <a class="el" href="load_8c_source.html#l01254">free_skin()</a>, <a class="el" href="engine__types_8h_source.html#l02747">GLTFSkin::inverse_bind</a>, and <a class="el" href="engine__types_8h_source.html#l02745">GLTFSkin::joints</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l01254">free_skin()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
+
+</div>
+</div>
+<a id="ad45a3837b163562ccc24751f81a9533a" name="ad45a3837b163562ccc24751f81a9533a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad45a3837b163562ccc24751f81a9533a">&#9670;&#160;</a></span>scene_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scene_load </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads an entire scene from separate files in <a class="el" href="engine__types_8h.html#struct_file_directory_registry" title="Registry for folders that are used for dropdowns in the editor UI.">FileDirectoryRegistry</a> directories. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The scene directories and bin suffixes are prepended and appended, only the name is needed. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l01262">1262</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02881">Asset::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02858">AssetInstance::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01107">ConvexHull::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02333">Entity::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02485">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::aabb</a>, <a class="el" href="engine__types_8h_source.html#l03135">SceneData::aabb</a>, <a class="el" href="engine__types_8h_source.html#l01587">Material::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l02245">AnimationTrack::active</a>, <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="engine__types_8h_source.html#l02467">TriangleAdjacency::adjacent_indices</a>, <a class="el" href="engine__types_8h_source.html#l01605">Material::alpha_cutoff</a>, <a class="el" href="engine__types_8h_source.html#l01604">Material::alpha_mode</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_BOOL</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_FLOAT</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_INT</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_VEC3</a>, <a class="el" href="main_8c_source.html#l00310">ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02878">Asset::animation_count</a>, <a class="el" href="engine__types_8h_source.html#l02877">Asset::animations</a>, <a class="el" href="engine__types_8h_source.html#l01583">Material::ao_strength</a>, <a class="el" href="engine__types_8h_source.html#l01599">Material::ao_tex</a>, <a class="el" href="editor_8c_source.html#l00056">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00059">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l01598">Material::arm_tex</a>, <a class="el" href="engine__types_8h_source.html#l02715">Animation::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02880">Asset::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02841">AssetInstance::asset_id</a>, <a class="el" href="engine__types_8h_source.html#l02482">Mesh::asset_id</a>, <a class="el" href="main_8c_source.html#l00308">ASSET_INSTANCES</a>, <a class="el" href="engine__types_8h_source.html#l03414">Globals::assets</a>, <a class="el" href="engine__types_8h_source.html#l02149">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l02018">LightmapData::atlas</a>, <a class="el" href="engine__types_8h_source.html#l00087">AUDIO_NUM_BANDS</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l01958">LightmapAtlas::block_size</a>, <a class="el" href="engine__types_8h_source.html#l02529">Image::buf</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l02509">Mesh::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03144">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03143">SceneData::bvh_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l03142">SceneData::bvh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02483">Mesh::bvh_prim</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02173">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02160">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l01106">ConvexHull::centroid</a>, <a class="el" href="engine__types_8h_source.html#l02718">Animation::channel_count</a>, <a class="el" href="engine__types_8h_source.html#l02719">Animation::channels</a>, <a class="el" href="engine__types_8h_source.html#l02528">Image::channels</a>, <a class="el" href="engine__types_8h_source.html#l02244">AnimationTrack::completion_data</a>, <a class="el" href="engine__types_8h_source.html#l02661">AnimationSampler::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="editor_8c_source.html#l01674">create_performance_overlay()</a>, <a class="el" href="engine__types_8h_source.html#l02235">AnimationTrack::current_time</a>, <a class="el" href="engine__types_8h_source.html#l02242">AnimationTrack::data</a>, <a class="el" href="engine__types_8h_source.html#l02241">AnimationTrack::data_byte_offset</a>, <a class="el" href="engine__types_8h_source.html#l02240">AnimationTrack::data_index_offset</a>, <a class="el" href="engine__types_8h_source.html#l02239">AnimationTrack::data_type</a>, <a class="el" href="engine__types_8h_source.html#l00119">DEFAULT_TEXTURES</a>, <a class="el" href="engine__types_8h_source.html#l01595">Material::diffuse_tex</a>, <a class="el" href="engine__types_8h_source.html#l03189">FileDirectoryRegistry::directory</a>, <a class="el" href="engine__types_8h_source.html#l01608">Material::double_sided</a>, <a class="el" href="main_8c_source.html#l00383">draw_dirty</a>, <a class="el" href="engine__types_8h_source.html#l02236">AnimationTrack::duration</a>, <a class="el" href="engine__types_8h_source.html#l02664">AnimationSampler::elem_count</a>, <a class="el" href="engine__types_8h_source.html#l01584">Material::emissive_strength</a>, <a class="el" href="engine__types_8h_source.html#l01597">Material::emissive_tex</a>, <a class="el" href="engine__types_8h_source.html#l02265">AnimationComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::ent</a>, <a class="el" href="main_8c_source.html#l00307">ENTITIES</a>, <a class="el" href="engine__types_8h_source.html#l01104">ConvexHull::faces</a>, <a class="el" href="engine__types_8h_source.html#l02746">GLTFSkin::final_mat</a>, <a class="el" href="engine__types_8h_source.html#l02838">AssetInstance::first_skin</a>, <a class="el" href="fonts_8c_source.html#l00014">FONTS</a>, <a class="el" href="engine__types_8h_source.html#l02264">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02857">AssetInstance::free</a>, <a class="el" href="engine__types_8h_source.html#l02329">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l02147">PhysicsComponent::free</a>, <a class="el" href="load_8c_source.html#l01248">free_mesh_node()</a>, <a class="el" href="load_8c_source.html#l01254">free_skin()</a>, <a class="el" href="engine__types_8h_source.html#l01570">Material::fwd_shader</a>, <a class="el" href="engine__types_8h_source.html#l01571">Material::gbuffer_shader</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="ui_8h_source.html#l00079">Font::glyph_count</a>, <a class="el" href="ui_8h_source.html#l00078">Font::glyphs</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="engine__types_8h_source.html#l02531">Image::handle</a>, <a class="el" href="engine__types_8h_source.html#l01957">LightmapAtlas::height</a>, <a class="el" href="engine__types_8h_source.html#l01105">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02496">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02530">Image::i</a>, <a class="el" href="engine__types_8h_source.html#l02328">Entity::id</a>, <a class="el" href="engine__types_8h_source.html#l02481">Mesh::id</a>, <a class="el" href="engine__types_8h_source.html#l02146">PhysicsComponent::id</a>, <a class="el" href="engine__types_8h_source.html#l03416">Globals::images</a>, <a class="el" href="engine__types_8h_source.html#l03119">LightBVH::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l02343">Entity::instance</a>, <a class="el" href="engine__types_8h_source.html#l02666">AnimationSampler::interpolation</a>, <a class="el" href="engine__types_8h_source.html#l02747">GLTFSkin::inverse_bind</a>, <a class="el" href="engine__types_8h_source.html#l02161">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02169">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02017">LightmapData::islands</a>, <a class="el" href="engine__types_8h_source.html#l02745">GLTFSkin::joints</a>, <a class="el" href="engine__types_8h_source.html#l01577">Material::ka</a>, <a class="el" href="engine__types_8h_source.html#l01578">Material::kd</a>, <a class="el" href="engine__types_8h_source.html#l01580">Material::ke</a>, <a class="el" href="engine__types_8h_source.html#l02233">AnimationTrack::kf</a>, <a class="el" href="engine__types_8h_source.html#l02234">AnimationTrack::kf_count</a>, <a class="el" href="engine__types_8h_source.html#l01579">Material::ks</a>, <a class="el" href="engine__types_8h_source.html#l03152">SceneData::light_bvh</a>, <a class="el" href="editor_8c_source.html#l00054">light_registry</a>, <a class="el" href="engine__types_8h_source.html#l03171">SceneData::lightmap_data</a>, <a class="el" href="editor_8c_source.html#l00053">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="engine__types_8h_source.html#l03121">LightBVH::lights</a>, <a class="el" href="load_8c_source.html#l02634">load_aportals()</a>, <a class="el" href="load_8c_source.html#l02699">load_aprobes()</a>, <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>, <a class="el" href="load_8c_source.html#l02555">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l00020">load_texture()</a>, <a class="el" href="load_8c_source.html#l02529">load_vector()</a>, <a class="el" href="engine__types_8h_source.html#l02237">AnimationTrack::loop</a>, <a class="el" href="editor_8c_source.html#l00058">lprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l02537">Image::mag_filter</a>, <a class="el" href="engine__types_8h_source.html#l02157">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l03415">Globals::materials</a>, <a class="el" href="init_8h_source.html#l00451">MAX_ANIMATION_COMPONENTS</a>, <a class="el" href="init_8h_source.html#l00442">MAX_ASSET_INSTANCES</a>, <a class="el" href="init_8h_source.html#l00439">MAX_ENTITIES</a>, <a class="el" href="init_8h_source.html#l00445">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02872">Asset::mesh_indices</a>, <a class="el" href="engine__types_8h_source.html#l02331">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l01996">UVIsland::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03411">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01581">Material::metallic</a>, <a class="el" href="engine__types_8h_source.html#l02526">Image::mime_type</a>, <a class="el" href="engine__types_8h_source.html#l02536">Image::min_filter</a>, <a class="el" href="engine__types_8h_source.html#l01600">Material::mr_tex</a>, <a class="el" href="engine__types_8h_source.html#l02159">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l02714">Animation::name</a>, <a class="el" href="engine__types_8h_source.html#l02527">Image::name</a>, <a class="el" href="engine__types_8h_source.html#l01569">Material::name</a>, <a class="el" href="engine__types_8h_source.html#l02480">Mesh::name</a>, <a class="el" href="engine__types_8h_source.html#l03134">SceneData::name</a>, <a class="el" href="engine__types_8h_source.html#l03398">Globals::noclip</a>, <a class="el" href="engine__types_8h_source.html#l02874">Asset::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02842">AssetInstance::node_count</a>, <a class="el" href="engine__types_8h_source.html#l02873">Asset::nodes</a>, <a class="el" href="engine__types_8h_source.html#l03118">LightBVH::nodes</a>, <a class="el" href="engine__types_8h_source.html#l02510">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01998">UVIsland::normal</a>, <a class="el" href="engine__types_8h_source.html#l01603">Material::normal_scale</a>, <a class="el" href="engine__types_8h_source.html#l01596">Material::normal_tex</a>, <a class="el" href="engine__types_8h_source.html#l01959">LightmapAtlas::occupied</a>, <a class="el" href="engine__types_8h_source.html#l02871">Asset::path</a>, <a class="el" href="engine__types_8h_source.html#l02525">Image::path</a>, <a class="el" href="engine__types_8h_source.html#l02344">Entity::pc</a>, <a class="el" href="main_8c_source.html#l00309">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02148">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l03404">Globals::probe_spacing</a>, <a class="el" href="engine__types_8h_source.html#l03403">Globals::probe_tex_size</a>, <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>, <a class="el" href="load_8c_source.html#l01096">read_mesh_node()</a>, <a class="el" href="load_8c_source.html#l01173">read_skin()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="engine__types_8h_source.html#l01999">UVIsland::rect</a>, <a class="el" href="engine__types_8h_source.html#l03148">SceneData::reflection_probes</a>, <a class="el" href="engine__types_8h_source.html#l02158">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l01582">Material::roughness</a>, <a class="el" href="editor_8c_source.html#l00057">rprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l02020">LightmapData::sample_cubemap</a>, <a class="el" href="engine__types_8h_source.html#l02716">Animation::sampler_count</a>, <a class="el" href="engine__types_8h_source.html#l02717">Animation::samplers</a>, <a class="el" href="engine__types_8h_source.html#l01588">Material::scattering_coefficients</a>, <a class="el" href="editor_8c_source.html#l00060">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="editor_8c_source.html#l00052">scene_registry</a>, <a class="el" href="engine__types_8h_source.html#l02332">Entity::skin</a>, <a class="el" href="engine__types_8h_source.html#l02876">Asset::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02839">AssetInstance::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02875">Asset::skins</a>, <a class="el" href="engine__types_8h_source.html#l03413">Globals::skins</a>, <a class="el" href="engine__types_8h_source.html#l02534">Image::sRGB</a>, <a class="el" href="engine__types_8h_source.html#l02484">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02495">Mesh::submeshes</a>, <a class="el" href="engine__types_8h_source.html#l02211">AnimationKeyframe::time</a>, <a class="el" href="engine__types_8h_source.html#l02662">AnimationSampler::times</a>, <a class="el" href="engine__types_8h_source.html#l02263">AnimationComponent::track_count</a>, <a class="el" href="engine__types_8h_source.html#l02262">AnimationComponent::tracks</a>, <a class="el" href="engine__types_8h_source.html#l02511">Mesh::tri_aabbs</a>, <a class="el" href="engine__types_8h_source.html#l02501">Mesh::tri_adjacency</a>, <a class="el" href="engine__types_8h_source.html#l02498">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l01997">UVIsland::tris</a>, <a class="el" href="engine__types_8h_source.html#l02232">AnimationTrack::type</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>, <a class="el" href="engine__types_8h_source.html#l02413">MeshNode::uv_map</a>, <a class="el" href="engine__types_8h_source.html#l02000">UVIsland::uvs</a>, <a class="el" href="engine__types_8h.html#adc728fbc7b16945ef3e7761e5cb9774d">AnimationKeyframe::val</a>, <a class="el" href="engine__types_8h_source.html#l02665">AnimationSampler::values</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::vel</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::vertex_layouts</a>, <a class="el" href="engine__types_8h_source.html#l01103">ConvexHull::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02497">Mesh::vertices</a>, <a class="el" href="engine__types_8h_source.html#l01956">LightmapAtlas::width</a>, <a class="el" href="engine__types_8h_source.html#l03401">Globals::world_min</a>, <a class="el" href="engine__types_8h_source.html#l03402">Globals::world_size</a>, <a class="el" href="engine__types_8h_source.html#l02538">Image::wrap_s</a>, and <a class="el" href="engine__types_8h_source.html#l02539">Image::wrap_t</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l01262">scene_load()</a>.</p>
 
 </div>
 </div>
@@ -909,65 +770,314 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02400">2400</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p>Saves only <a class="el" href="group__aprobe__group.html#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, <a class="el" href="group__audio__group.html#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s, and <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The scene directories and bin suffixes are prepended and appended, only the name is needed. </dd></dl>
 
-<p class="reference">References <a class="el" href="editor_8c_source.html#l00051">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00054">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03383">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l03154">FileDirectoryRegistry::directory</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="editor_8c_source.html#l00049">light_registry</a>, <a class="el" href="editor_8c_source.html#l00048">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03382">Globals::lights</a>, <a class="el" href="editor_8c_source.html#l00053">lprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03113">SceneData::reflection_probes</a>, <a class="el" href="editor_8c_source.html#l00052">rprobe_registry</a>, <a class="el" href="load_8c_source.html#l02608">save_aportals()</a>, <a class="el" href="load_8c_source.html#l02680">save_aprobes()</a>, <a class="el" href="load_8c_source.html#l02544">save_rprobes()</a>, <a class="el" href="load_8c_source.html#l02518">save_vector()</a>, <a class="el" href="editor_8c_source.html#l00055">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03389">Globals::scene_data</a>, <a class="el" href="editor_8c_source.html#l00047">scene_registry</a>, and <a class="el" href="load_8c_source.html#l02400">scene_save_volumes()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02399">2399</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04927">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l02400">scene_save_volumes()</a>.</p>
+<p class="reference">References <a class="el" href="editor_8c_source.html#l00056">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00059">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::audio_portals</a>, <a class="el" href="engine__types_8h_source.html#l03189">FileDirectoryRegistry::directory</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="editor_8c_source.html#l00054">light_registry</a>, <a class="el" href="editor_8c_source.html#l00053">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="editor_8c_source.html#l00058">lprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03148">SceneData::reflection_probes</a>, <a class="el" href="editor_8c_source.html#l00057">rprobe_registry</a>, <a class="el" href="load_8c_source.html#l02607">save_aportals()</a>, <a class="el" href="load_8c_source.html#l02679">save_aprobes()</a>, <a class="el" href="load_8c_source.html#l02543">save_rprobes()</a>, <a class="el" href="load_8c_source.html#l02517">save_vector()</a>, <a class="el" href="editor_8c_source.html#l00060">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="editor_8c_source.html#l00052">scene_registry</a>, and <a class="el" href="load_8c_source.html#l02399">scene_save_volumes()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l02399">scene_save_volumes()</a>.</p>
 
 </div>
 </div>
-<a id="ac343ec45486d6835f71404d7024915cb" name="ac343ec45486d6835f71404d7024915cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac343ec45486d6835f71404d7024915cb">&#9670;&#160;</a></span>write_mesh_node()</h2>
+<a id="a635b6d3f09c8eaea6fd7b6cca5272fc8" name="a635b6d3f09c8eaea6fd7b6cca5272fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635b6d3f09c8eaea6fd7b6cca5272fc8">&#9670;&#160;</a></span>scene_load_volumes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void write_mesh_node </td>
+          <td class="memname">void scene_load_volumes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_mesh_node.html">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00407">407</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p>Loads only <a class="el" href="group__aprobe__group.html#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s, <a class="el" href="group__audio__group.html#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s, and <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The scene directories and bin suffixes are prepended and appended, only the name is needed. </dd></dl>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02328">MeshNode::active</a>, <a class="el" href="engine__types_8h_source.html#l02345">MeshNode::asset</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02355">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02354">MeshNode::children</a>, <a class="el" href="types_8h_source.html#l00212">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l02390">MeshNode::ent</a>, <a class="el" href="engine__types_8h_source.html#l02341">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00315">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02293">Entity::id</a>, <a class="el" href="engine__types_8h_source.html#l02330">MeshNode::id</a>, <a class="el" href="engine__types_8h_source.html#l02110">PhysicsComponent::id</a>, <a class="el" href="engine__types_8h_source.html#l02340">MeshNode::local_matrix</a>, <a class="el" href="engine__types_8h_source.html#l02344">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03376">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l02350">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02393">MeshNode::pc</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::physics_mode</a>, <a class="el" href="engine__types_8h_source.html#l02338">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02339">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l02347">MeshNode::skin</a>, <a class="el" href="engine__types_8h_source.html#l02377">MeshNode::skip_directional_uv_lighting</a>, <a class="el" href="engine__types_8h_source.html#l02449">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02357">MeshNode::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02337">MeshNode::translation</a>, <a class="el" href="engine__types_8h_source.html#l02463">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l02378">MeshNode::uv_map</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02452">2452</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00407">write_mesh_node()</a>.</p>
+<p class="reference">References <a class="el" href="editor_8c_source.html#l00056">aportal_registry</a>, <a class="el" href="editor_8c_source.html#l00059">aprobe_registry</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::audio_portals</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03189">FileDirectoryRegistry::directory</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="editor_8c_source.html#l00054">light_registry</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::light_type</a>, <a class="el" href="editor_8c_source.html#l00053">lightmap_registry</a>, <a class="el" href="engine__types_8h_source.html#l03417">Globals::lights</a>, <a class="el" href="load_8c_source.html#l02634">load_aportals()</a>, <a class="el" href="load_8c_source.html#l02699">load_aprobes()</a>, <a class="el" href="load_8c_source.html#l02555">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l02529">load_vector()</a>, <a class="el" href="editor_8c_source.html#l00058">lprobe_registry</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, <a class="el" href="engine__types_8h_source.html#l03148">SceneData::reflection_probes</a>, <a class="el" href="editor_8c_source.html#l00057">rprobe_registry</a>, <a class="el" href="editor_8c_source.html#l00060">scene_apv_registry</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>, <a class="el" href="editor_8c_source.html#l00052">scene_registry</a>, <a class="el" href="render_8c_source.html#l00634">upload_lights()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, and <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>.</p>
 
 </div>
 </div>
-<a id="a4466dce782bdade1771827d4efe34740" name="a4466dce782bdade1771827d4efe34740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4466dce782bdade1771827d4efe34740">&#9670;&#160;</a></span>write_skin()</h2>
+<a id="a356f2f212294fcbee3b24ae7120385d5" name="a356f2f212294fcbee3b24ae7120385d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356f2f212294fcbee3b24ae7120385d5">&#9670;&#160;</a></span>save_vector()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void write_skin </td>
+          <td class="memname">void save_vector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_g_l_t_f_skin.html">GLTFSkin</a> *</td>          <td class="paramname"><span class="paramname"><em>skin</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l00480">480</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02517">2517</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02714">GLTFSkin::animation_indices</a>, <a class="el" href="engine__types_8h_source.html#l02715">GLTFSkin::animation_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l02711">GLTFSkin::final_mat</a>, <a class="el" href="engine__types_8h_source.html#l02713">GLTFSkin::ibm_accessor</a>, <a class="el" href="engine__types_8h_source.html#l02712">GLTFSkin::inverse_bind</a>, <a class="el" href="engine__types_8h_source.html#l02709">GLTFSkin::joint_count</a>, <a class="el" href="engine__types_8h_source.html#l02710">GLTFSkin::joints</a>, and <a class="el" href="load_8c_source.html#l00480">write_skin()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="load_8c_source.html#l02517">save_vector()</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l00480">write_skin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, <a class="el" href="load_8c_source.html#l02517">save_vector()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02399">scene_save_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="a9a09c17f39302e019e897939523ef36e" name="a9a09c17f39302e019e897939523ef36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a09c17f39302e019e897939523ef36e">&#9670;&#160;</a></span>load_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_vector </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02529">2529</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="load_8c_source.html#l02529">load_vector()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02529">load_vector()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="af75afaccba74b99c047b0f0f769a611b" name="af75afaccba74b99c047b0f0f769a611b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75afaccba74b99c047b0f0f769a611b">&#9670;&#160;</a></span>save_rprobes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void save_rprobes </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02543">2543</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="load_8c_source.html#l02543">save_rprobes()</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02543">save_rprobes()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02399">scene_save_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="a40fecd5fcffd2eb95836d8ef4613f924" name="a40fecd5fcffd2eb95836d8ef4613f924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40fecd5fcffd2eb95836d8ef4613f924">&#9670;&#160;</a></span>load_rprobes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_rprobes </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02555">2555</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="load_8c_source.html#l02555">load_rprobes()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="load_8c_source.html#l00392">reallocate_rprobe_array()</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02555">load_rprobes()</a>, <a class="el" href="editor_8c_source.html#l04932">render_main_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="a56254d4dc87c3d24430f7b9c4d6abf53" name="a56254d4dc87c3d24430f7b9c4d6abf53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56254d4dc87c3d24430f7b9c4d6abf53">&#9670;&#160;</a></span>save_lprobes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void save_lprobes </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02568">2568</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03165">SceneData::LPV_PATH</a>, <a class="el" href="load_8c_source.html#l02568">save_lprobes()</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04681">render_lprobe_menu()</a>, and <a class="el" href="load_8c_source.html#l02568">save_lprobes()</a>.</p>
+
+</div>
+</div>
+<a id="a7aaa4191ada4b271c4e3638514e883ba" name="a7aaa4191ada4b271c4e3638514e883ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aaa4191ada4b271c4e3638514e883ba">&#9670;&#160;</a></span>load_lprobes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_lprobes </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02582">2582</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="load_8c_source.html#l02582">load_lprobes()</a>, <a class="el" href="engine__types_8h_source.html#l03166">SceneData::LPV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l03165">SceneData::LPV_PATH</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="lightmap_8c_source.html#l01330">reset_lighting_pvs()</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02582">load_lprobes()</a>, and <a class="el" href="editor_8c_source.html#l04681">render_lprobe_menu()</a>.</p>
+
+</div>
+</div>
+<a id="a823d1b0473b6835dbfb5a3560cd53262" name="a823d1b0473b6835dbfb5a3560cd53262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823d1b0473b6835dbfb5a3560cd53262">&#9670;&#160;</a></span>save_aportals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void save_aportals </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02607">2607</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00394">AudioPortal::adjacent_portals</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l00393">AudioPortal::pos</a>, and <a class="el" href="load_8c_source.html#l02607">save_aportals()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l02607">save_aportals()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02399">scene_save_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="a7c209c656e8101d419dc2c54f6e60647" name="a7c209c656e8101d419dc2c54f6e60647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c209c656e8101d419dc2c54f6e60647">&#9670;&#160;</a></span>load_aportals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_aportals </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#struct_vector">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02634">2634</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00394">AudioPortal::adjacent_portals</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="load_8c_source.html#l02634">load_aportals()</a>, <a class="el" href="engine__types_8h_source.html#l00393">AudioPortal::pos</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02634">load_aportals()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="aca041e97ff66ce6a3bd273555a7da98e" name="aca041e97ff66ce6a3bd273555a7da98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca041e97ff66ce6a3bd273555a7da98e">&#9670;&#160;</a></span>save_aprobes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void save_aprobes </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02679">2679</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03167">SceneData::APV_PATH</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::audio_probe_volumes</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="load_8c_source.html#l02679">save_aprobes()</a>, and <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l02679">save_aprobes()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="load_8c_source.html#l02399">scene_save_volumes()</a>.</p>
+
+</div>
+</div>
+<a id="a7cf412d3fadb333fdb401cbac887aa64" name="a7cf412d3fadb333fdb401cbac887aa64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf412d3fadb333fdb401cbac887aa64">&#9670;&#160;</a></span>load_aprobes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_aprobes </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="load_8c_source.html#l02699">2699</a> of file <a class="el" href="load_8c_source.html">load.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03168">SceneData::APV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l03167">SceneData::APV_PATH</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::audio_probe_volumes</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="load_8c_source.html#l02699">load_aprobes()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="audio_8c_source.html#l00605">reset_audio_pvs()</a>, and <a class="el" href="engine__types_8h_source.html#l03424">Globals::scene_data</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02699">load_aprobes()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, and <a class="el" href="load_8c_source.html#l02452">scene_load_volumes()</a>.</p>
 
 </div>
 </div>

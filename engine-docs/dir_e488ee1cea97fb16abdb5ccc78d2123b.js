@@ -27,6 +27,7 @@ var dir_e488ee1cea97fb16abdb5ccc78d2123b =
     [ "lightmap_denoise.comp", "render_2lightmap__denoise_8comp.html", null ],
     [ "lightmap_dilate.comp", "render_2lightmap__dilate_8comp.html", null ],
     [ "point_light_shadows.frag", "point__light__shadows_8frag.html", null ],
+    [ "point_light_shadows.geom", "point__light__shadows_8geom.html", null ],
     [ "point_light_shadows.vert", "point__light__shadows_8vert.html", null ],
     [ "postprocess.frag", "postprocess_8frag.html", null ],
     [ "postprocess.vert", "postprocess_8vert.html", null ],

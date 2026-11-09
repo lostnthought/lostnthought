@@ -1,0 +1,26 @@
+var group__aprobe__group_struct_audio_scratch_buffers =
+[
+    [ "aprobe_mutex", "group__aprobe__group.html#ab5c15c8f6e9637faa54b3cda7418ca4b", null ],
+    [ "block_size", "group__aprobe__group.html#ae4c3c1b960aedae2ff317e2b20f8f9b7", null ],
+    [ "padded_len", "group__aprobe__group.html#a7a43e65e400acf59c195e383bd1615b6", null ],
+    [ "complex_len", "group__aprobe__group.html#a83b075312614e0540893f5ef56aec46b", null ],
+    [ "final_ir_len", "group__aprobe__group.html#aff8053e21bbef20150514af0ca12f4eb", null ],
+    [ "ir_len", "group__aprobe__group.html#ac8b9f1b46d999bb0c6bd602a77d4d963", null ],
+    [ "complex_ir_len", "group__aprobe__group.html#a3906c1d07d60877890a525b89ada9047", null ],
+    [ "HRTF_IR_IN", "group__aprobe__group.html#a539a59c57be281eafd29bec12e217c2f", null ],
+    [ "fwd_plan", "group__aprobe__group.html#aebdebb4d5faa8505ae9d06c5f182c387", null ],
+    [ "static_fwd_plan", "group__aprobe__group.html#a51ade5c0f247889c3fc8371347cea8ca", null ],
+    [ "IR_fwd_plan", "group__aprobe__group.html#ab5970121b7693cb1bbc02ed5713779d8", null ],
+    [ "IR_bwd_plan", "group__aprobe__group.html#a26e0d24998294a1942537901b2c87d9c", null ],
+    [ "bwd_plan", "group__aprobe__group.html#a78ae1cab3db917bc4de7c222ed9a199d", null ],
+    [ "IR_SUM_L", "group__aprobe__group.html#a858d0577bc5268d71649cdba05ba1210", null ],
+    [ "IR_SUM_R", "group__aprobe__group.html#a842a981d7a1f6da9ac04fb5b785e1963", null ],
+    [ "IR_SUM_L_FWD", "group__aprobe__group.html#a5c79d6ed2ce6551b418c5edc05db4ab7", null ],
+    [ "IR_SUM_R_FWD", "group__aprobe__group.html#ad7c0e7a03bdae892668809bdde69eac1", null ],
+    [ "STATIC_HRTF_L", "group__aprobe__group.html#a3b9c39d768405e168135b66f8918c304", null ],
+    [ "STATIC_HRTF_R", "group__aprobe__group.html#a8f38cd6979abb65c69466f129a9eb767", null ],
+    [ "STATIC_HRTF_L_FWD", "group__aprobe__group.html#a19d993079b40eddd604dfecba7bf1083", null ],
+    [ "STATIC_HRTF_R_FWD", "group__aprobe__group.html#a10b2a38e15a02e04c3ad4dabaaa8014a", null ],
+    [ "IR_ROT", "group__aprobe__group.html#a4a700353c37c8743d5bd7faa5a7add6e", null ],
+    [ "IR_ROT_FWD", "group__aprobe__group.html#a94702539e0456198b6ad042c7dea3704", null ]
+];

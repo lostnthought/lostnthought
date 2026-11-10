@@ -303,7 +303,7 @@ Default Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
 UI Constants</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Sizes of UI arrays and UI Scale.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo</a></b></dt><dd>Make UI scale dynamic.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo</a></b></dt><dd>Make UI scale dynamic.</dd></dl>
 </td></tr>
 <tr class="memitem:ga2485b5aae328cd7c9e35859d07e9cef3" id="r_ga2485b5aae328cd7c9e35859d07e9cef3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ga2485b5aae328cd7c9e35859d07e9cef3">MAX_UI_ELEMENTS</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="memitem:ga5ef8fa0a03dc91ba262a7d9a0f59888a" id="r_ga5ef8fa0a03dc91ba262a7d9a0f59888a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ga5ef8fa0a03dc91ba262a7d9a0f59888a">MAX_UI_CONTAINERS</a>&#160;&#160;&#160;1024</td></tr>
@@ -413,7 +413,7 @@ How much the x advances when it is typed. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>A <a class="el" href="#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a> and its <a class="el" href="#struct_glyph" title="A single Glyph in a Font.">Glyph</a>s used for rendering <a class="el" href="#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo</a></b></dt><dd>Figure out if highest_y is actually used. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo</a></b></dt><dd>Figure out if highest_y is actually used. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#struct_glyph" title="A single Glyph in a Font.">Glyph</a> </dd>
 <dd>
 <a class="el" href="#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> </dd>
@@ -860,7 +860,7 @@ The name of this <a class="el" href="#struct_u_i_container" title="UIContainer t
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#struct_font" title="A Font and its Glyphs used for rendering TextBoxes.">Font</a> </dd>
 <dd>
 <a class="el" href="#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo</a></b></dt><dd>Go through some of these members like hovered and see if necessary. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo</a></b></dt><dd>Go through some of these members like hovered and see if necessary. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="text_8vert_source.html#l00005">5</a> of file <a class="el" href="text_8vert_source.html">text.vert</a>.</p>
 </div><table class="fieldtable">
@@ -1386,7 +1386,7 @@ The dropdown parent. <dl class="section note"><dt>Note</dt><dd>Defaults to -1. <
 <a class="el" href="#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a> </dd>
 <dd>
 <a class="el" href="#ga6ff1866c11b6d81483d0fe82d793f028" title="UIElement types for the union that describe unique functions.">UIInteractableType</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo</a></b></dt><dd>Clear unused fields. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo</a></b></dt><dd>Clear unused fields. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="text_8vert_source.html#l00031">31</a> of file <a class="el" href="text_8vert_source.html">text.vert</a>.</p>
 </div><table class="fieldtable">
@@ -2407,7 +2407,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo</a></b></dt><dd>menu_id should be the same as the <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s menu_id. Just use the <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo</a></b></dt><dd>menu_id should be the same as the <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s menu_id. Just use the <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The pointer to the <a class="el" href="#struct_u_i_container" title="UIContainer that contains both TextBoxes and UIElements and can mask and scroll them.">UIContainer</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00197">197</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
@@ -2476,7 +2476,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo</a></b></dt><dd>Possible that a pointer is too much to ask, but think through the cases. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo</a></b></dt><dd>Possible that a pointer is too much to ask, but think through the cases. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00068">68</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 
@@ -2843,7 +2843,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo</a></b></dt><dd>This still is off-center sometimes. It likely has to do with the resolution scaling. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo</a></b></dt><dd>This still is off-center sometimes. It likely has to do with the resolution scaling. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00410">410</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 

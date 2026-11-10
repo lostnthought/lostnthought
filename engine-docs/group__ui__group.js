@@ -146,6 +146,7 @@ var group__ui__group =
       [ "free_data", "group__ui__group.html#a1ed2f27258ead6a2ef2f102253eab846", null ],
       [ "id", "group__ui__group.html#adf9e39e877783c4d1d40817005a6f9bd", null ]
     ] ],
+    [ "UIDropdown", "group__ui__group.html#struct_u_i_dropdown", null ],
     [ "UILabel", "group__ui__group.html#struct_u_i_label", [
       [ "box", "group__ui__group.html#a110e54a88948fdd9431ced76c91b6cdf", null ],
       [ "align", "group__ui__group.html#a891ef056066678a0eb7377c8a52d9cb9", null ],
@@ -196,13 +197,6 @@ var group__ui__group =
       [ "label", "group__ui__group.html#a4427933e9cfdf17834cb19bc067b6e6f", null ],
       [ "slider", "group__ui__group.html#a74000041ea6981ec3465316cf79eefc2", null ]
     ] ],
-    [ "UIMenu", "group__ui__group.html#struct_u_i_menu", [
-      [ "uID", "group__ui__group.html#a7e1e9f89105410198edf99d205abd3cd", null ],
-      [ "id", "group__ui__group.html#ad6ce007a5fed1928bcd35433d9234561", null ],
-      [ "elements", "group__ui__group.html#a1cdb6ff27c9e03fd84a574936a914525", null ],
-      [ "text_boxes", "group__ui__group.html#aab14d461c55e851558b840a193876d25", null ],
-      [ "containers", "group__ui__group.html#ae8e032eccdb4668fe85a7fda979fd42b", null ]
-    ] ],
     [ "UISlider", "group__ui__group.html#struct_u_i_slider", [
       [ "dir", "group__ui__group.html#adab1d074a0a527eff8139640ac3595dd", null ],
       [ "min", "group__ui__group.html#a65e48c004e5a07c6d89df620a7923e52", null ],
@@ -220,7 +214,13 @@ var group__ui__group =
       [ "max_proj", "group__ui__group.html#ade5e8ff6c6f3f65e981c07ff5971a7c8", null ],
       [ "container", "group__ui__group.html#a5934e69f6eb7f95f6d9908125cb27431", null ]
     ] ],
-    [ "UIDropdown", "group__ui__group.html#struct_u_i_dropdown", null ],
+    [ "UIMenu", "group__ui__group.html#struct_u_i_menu", [
+      [ "uID", "group__ui__group.html#a7e1e9f89105410198edf99d205abd3cd", null ],
+      [ "id", "group__ui__group.html#ad6ce007a5fed1928bcd35433d9234561", null ],
+      [ "elements", "group__ui__group.html#a1cdb6ff27c9e03fd84a574936a914525", null ],
+      [ "text_boxes", "group__ui__group.html#aab14d461c55e851558b840a193876d25", null ],
+      [ "containers", "group__ui__group.html#ae8e032eccdb4668fe85a7fda979fd42b", null ]
+    ] ],
     [ "MAX_UI_ELEMENTS", "group__ui__group.html#ga2485b5aae328cd7c9e35859d07e9cef3", null ],
     [ "MAX_UI_CONTAINERS", "group__ui__group.html#ga5ef8fa0a03dc91ba262a7d9a0f59888a", null ],
     [ "UI_SCALE_WIDTH", "group__ui__group.html#gacafa72d68e847609ccceef8f5923b353", null ],

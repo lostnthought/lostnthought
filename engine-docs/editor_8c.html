@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -230,12 +239,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gab419b1432807cc8bd1572baf2634c148" id="r_gab419b1432807cc8bd1572baf2634c148"><td class="memItemLeft"><a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gab419b1432807cc8bd1572baf2634c148">mat3_rotation_x</a> (float angle_radians)</td></tr>
 <tr class="memitem:gac9351db23a07d078672a890db1c11c80" id="r_gac9351db23a07d078672a890db1c11c80"><td class="memItemLeft"><a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gac9351db23a07d078672a890db1c11c80">mat3_rotation_y</a> (float angle_radians)</td></tr>
 <tr class="memitem:ga6f2cd366e0b344d464d905219aa45413" id="r_ga6f2cd366e0b344d464d905219aa45413"><td class="memItemLeft"><a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga6f2cd366e0b344d464d905219aa45413">mat3_rotation_z</a> (float angle_radians)</td></tr>
-<tr class="memitem:ga81187ee6e32d795b81f03ebdd5104266" id="r_ga81187ee6e32d795b81f03ebdd5104266"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga81187ee6e32d795b81f03ebdd5104266">obb_orthonormalize</a> (<a class="el" href="types_8h.html#struct_o_b_b">OBB</a> *obb)</td></tr>
+<tr class="memitem:ga81187ee6e32d795b81f03ebdd5104266" id="r_ga81187ee6e32d795b81f03ebdd5104266"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga81187ee6e32d795b81f03ebdd5104266">obb_orthonormalize</a> (<a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a> *obb)</td></tr>
 <tr class="memitem:ga7be19348a6a4d3e1179a78706d82a1ab" id="r_ga7be19348a6a4d3e1179a78706d82a1ab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga7be19348a6a4d3e1179a78706d82a1ab">render_ivec3_widget</a> (const char *name, <a class="el" href="group__editor__group.html#gab1db91053f25b9236ef22203b0e5b8cb">UndoStructureType</a> undo_type, int id, <a class="el" href="types_8h.html#structivec3">ivec3</a> *vec, <a class="el" href="group__editor__group.html#struct_n_k_slider">NKSlider</a> *sliders)</td></tr>
 <tr class="memitem:ga69e2a4faa2697c4ee19328f0ced980ef" id="r_ga69e2a4faa2697c4ee19328f0ced980ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga69e2a4faa2697c4ee19328f0ced980ef">render_pos_widget</a> (const char *name, <a class="el" href="group__editor__group.html#gab1db91053f25b9236ef22203b0e5b8cb">UndoStructureType</a> undo_type, int id, <a class="el" href="types_8h.html#structvec3">vec3</a> *pos, <a class="el" href="group__editor__group.html#struct_n_k_slider">NKSlider</a> *sliders)</td></tr>
 <tr class="memitem:gad2a8eeacd2c57fbfac981eb6be582182" id="r_gad2a8eeacd2c57fbfac981eb6be582182"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gad2a8eeacd2c57fbfac981eb6be582182">render_aabb_widget</a> (const char *name, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *aabb)</td></tr>
 <tr class="memitem:gae4ce145885cb827e75f92ea4494713b9" id="r_gae4ce145885cb827e75f92ea4494713b9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gae4ce145885cb827e75f92ea4494713b9">render_mat4_widget</a> (const char *name, <a class="el" href="group__editor__group.html#gab1db91053f25b9236ef22203b0e5b8cb">UndoStructureType</a> undo_type, int id, <a class="el" href="types_8h.html#structmat4">mat4</a> *mat, <a class="el" href="types_8h.html#structvec3">vec3</a> *tr, <a class="el" href="types_8h.html#structvec4">vec4</a> *rot, <a class="el" href="types_8h.html#structvec3">vec3</a> *sc, <a class="el" href="group__editor__group.html#struct_n_k_slider">NKSlider</a> *sliders)</td></tr>
-<tr class="memitem:ga462ad3cf62ba1d99e151f7315f52d54e" id="r_ga462ad3cf62ba1d99e151f7315f52d54e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga462ad3cf62ba1d99e151f7315f52d54e">render_obb_widget</a> (const char *name, <a class="el" href="group__editor__group.html#gab1db91053f25b9236ef22203b0e5b8cb">UndoStructureType</a> undo_type, int id, <a class="el" href="types_8h.html#struct_o_b_b">OBB</a> *obb, <a class="el" href="group__editor__group.html#struct_n_k_slider">NKSlider</a> *sliders)</td></tr>
+<tr class="memitem:ga462ad3cf62ba1d99e151f7315f52d54e" id="r_ga462ad3cf62ba1d99e151f7315f52d54e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga462ad3cf62ba1d99e151f7315f52d54e">render_obb_widget</a> (const char *name, <a class="el" href="group__editor__group.html#gab1db91053f25b9236ef22203b0e5b8cb">UndoStructureType</a> undo_type, int id, <a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a> *obb, <a class="el" href="group__editor__group.html#struct_n_k_slider">NKSlider</a> *sliders)</td></tr>
 <tr class="memitem:ga9b266da7a1f40f6678ae101d117256a3" id="r_ga9b266da7a1f40f6678ae101d117256a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#ga9b266da7a1f40f6678ae101d117256a3">render_selection_menu</a> ()</td></tr>
 <tr class="memitem:gac73a4b10585662624d749041601b9a3a" id="r_gac73a4b10585662624d749041601b9a3a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gac73a4b10585662624d749041601b9a3a">render_text_menu</a> ()</td></tr>
 <tr class="memitem:gad8f6f876876f51361789b5bfc65ceb35" id="r_gad8f6f876876f51361789b5bfc65ceb35"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#gad8f6f876876f51361789b5bfc65ceb35">render_ui_menu</a> ()</td></tr>

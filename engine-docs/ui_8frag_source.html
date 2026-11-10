@@ -117,105 +117,112 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('ui_8frag_sourc
 </div><!--header-->
 <div class="contents">
 <a href="ui_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>#version 430 core</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#version 430 core</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>in vec2 vUV;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>flat in vec4 vColor;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>flat in uint vType;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>in vec4 vFill;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>flat in uint vState;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>flat in uint vHovered;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>in vec2 vShadowDir;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>flat in uint vShadow;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>uniform uint uShadowPass;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>in vec2 vPos;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>flat in uint vVisible;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>flat in float vRadius;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>flat in vec2 vCenter;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>flat in vec2 vSize;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>out vec4 fragColor;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>flat in vec4 vContPos;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>flat in vec4 vPadding;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>flat in float vContRadius;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>flat in vec2 vContSize;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>flat in uint vContType;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>flat in uint vMask;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>flat in vec2 vContScale;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>in vec4 vScreenPos;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>in vec2 vDist;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="ui_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">    6</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="ui_8frag.html#abd38262ae3d957651df2d9cc431cd134">    7</a></span>flat in <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="ui_8frag.html#a1638298e209b3b196abcc7c6f4797fc5">    8</a></span>flat in uint <a class="code hl_variable" href="ui_8frag.html#a1638298e209b3b196abcc7c6f4797fc5">vType</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="ui_8frag.html#ae845d047b7b72dde80b94b8e5533c283">    9</a></span>in <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="text_8frag.html#ae845d047b7b72dde80b94b8e5533c283">vFill</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="ui_8frag.html#a9ff365f98aec80d46fb737d095dc0801">   10</a></span>flat in uint <a class="code hl_variable" href="text_8frag.html#a9ff365f98aec80d46fb737d095dc0801">vState</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="ui_8frag.html#a5d0ac4f620a9dbb8ab83fdc05257bc9c">   11</a></span>flat in uint <a class="code hl_variable" href="text_8frag.html#a5d0ac4f620a9dbb8ab83fdc05257bc9c">vHovered</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="ui_8frag.html#abcbbdeaa6dc4a352a1f3c3d5faa93e03">   12</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="text_8frag.html#abcbbdeaa6dc4a352a1f3c3d5faa93e03">vShadowDir</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="ui_8frag.html#af1b1cbdd5f2ae3b8f9e4e3b95752dcb8">   13</a></span>flat in uint <a class="code hl_variable" href="text_8frag.html#af1b1cbdd5f2ae3b8f9e4e3b95752dcb8">vShadow</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="ui_8frag.html#aa51e8161a0cae0687f2f1c7af7a9591d">   14</a></span>uniform uint <a class="code hl_variable" href="text_8frag.html#aa51e8161a0cae0687f2f1c7af7a9591d">uShadowPass</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="ui_8frag.html#a057006ed0472aa6e20dd3004aba2ebe9">   15</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="sky_8frag.html#a981b826ec5ddd6ef38ae934e30dfceff">vPos</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="ui_8frag.html#a38a2f7b14de1f27fe83a407eaf5f76c8">   16</a></span>flat in uint <a class="code hl_variable" href="text_8frag.html#a38a2f7b14de1f27fe83a407eaf5f76c8">vVisible</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="ui_8frag.html#a35dde33cdb29ddee55d0d349a548704e">   17</a></span>flat in <span class="keywordtype">float</span> <a class="code hl_variable" href="ui_8frag.html#a35dde33cdb29ddee55d0d349a548704e">vRadius</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="ui_8frag.html#a17c8f52d57591e076c65979831b9c57a">   18</a></span>flat in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="ui_8frag.html#acaa114551ff4d570998b201b71665fc2">   19</a></span>flat in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="ui_8frag.html#acaa114551ff4d570998b201b71665fc2">vSize</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="ui_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">   20</a></span>out <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="ui_8frag.html#af4aa39c3ef18c673b9845ff9b1051d63">   21</a></span>flat in <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="text_8frag.html#af4aa39c3ef18c673b9845ff9b1051d63">vContPos</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="ui_8frag.html#a4a5a5eef097aef9a079dec417cc24a79">   22</a></span>flat in <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="text_8frag.html#a4a5a5eef097aef9a079dec417cc24a79">vPadding</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="ui_8frag.html#a04adbbd76df83c9ca2df94a877021d0e">   23</a></span>flat in <span class="keywordtype">float</span> <a class="code hl_variable" href="text_8frag.html#a04adbbd76df83c9ca2df94a877021d0e">vContRadius</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="ui_8frag.html#a4f96eed1cc97602d283e42624338aef1">   24</a></span>flat in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="text_8frag.html#a4f96eed1cc97602d283e42624338aef1">vContSize</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="ui_8frag.html#ab1651b44427b74232f0aeba2b47a5ead">   25</a></span>flat in uint <a class="code hl_variable" href="text_8frag.html#ab1651b44427b74232f0aeba2b47a5ead">vContType</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="ui_8frag.html#a3b0f0b05ea64e11d90899c6a4ba0d7af">   26</a></span>flat in uint <a class="code hl_variable" href="text_8frag.html#a3b0f0b05ea64e11d90899c6a4ba0d7af">vMask</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="ui_8frag.html#aab18ce8da9f17ad6899ee42820607d9e">   27</a></span>flat in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="text_8frag.html#aab18ce8da9f17ad6899ee42820607d9e">vContScale</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="ui_8frag.html#a8499f9e7db6eb96c5f32551bab48ed01">   28</a></span>in <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="text_8frag.html#a8499f9e7db6eb96c5f32551bab48ed01">vScreenPos</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="ui_8frag.html#a2abf1dd318c2e999323fc2fde32e05ba">   29</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="ui_8frag.html#a2abf1dd318c2e999323fc2fde32e05ba">vDist</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>float SDF_circle(vec2 p, vec2 center, float radius) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    return length(p - center) - radius;</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="ui_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">   33</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="text_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">SDF_circle</a>(<a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> p, <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> center, <span class="keywordtype">float</span> radius) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> length(p - center) - radius;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>float SDF_rect(vec2 p, vec2 center, vec2 size, float r) {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    vec2 q = abs(p - center) - size * 0.5 + vec2(r);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    return length(max(q, 0.0)) + min(max(q.x, q.y), 0.0) - r;</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="ui_8frag.html#a32c7959182a3e52b00551901a9504825">   40</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="text_8frag.html#a32c7959182a3e52b00551901a9504825">SDF_rect</a>(<a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> p, <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> center, <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="sky_8frag.html#aab938108caad0d0e47d6885b5ba2d23a">size</a>, <span class="keywordtype">float</span> r) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> q = abs(p - center) - <a class="code hl_variable" href="sky_8frag.html#aab938108caad0d0e47d6885b5ba2d23a">size</a> * 0.5 + <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(r);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> length(max(q, 0.0)) + min(max(q.<a class="code hl_variable" href="types_8h.html#a002d3519d48fe3cd79729b5b0ded74bf">x</a>, q.<a class="code hl_variable" href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">y</a>), 0.0) - r;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>float median(float r, float g, float b) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    return max(min(r, g), min(max(r, g), b));</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="ui_8frag.html#ac5f31d96ce998815f8cfc5839fe9531d">   45</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="text_8frag.html#ac5f31d96ce998815f8cfc5839fe9531d">median</a>(<span class="keywordtype">float</span> r, <span class="keywordtype">float</span> g, <span class="keywordtype">float</span> b) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> max(min(r, g), min(max(r, g), b));</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>void main() {</div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="ui_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>() {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    if (vVisible == 0) discard;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="text_8frag.html#a38a2f7b14de1f27fe83a407eaf5f76c8">vVisible</a> == 0) discard;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    float d = 0.0f;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    float d2 = 0.0f;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span> d = 0.0f;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">float</span> d2 = 0.0f;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    switch(vType)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">switch</span>(<a class="code hl_variable" href="ui_8frag.html#a1638298e209b3b196abcc7c6f4797fc5">vType</a>)</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        case 0:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            d = SDF_rect(vPos, vCenter, vSize, vRadius);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            d2 = SDF_rect(vPos, vCenter, vSize * 2, vRadius);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            break;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        case 1:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            d = SDF_circle(vPos, vCenter, vRadius);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            d2 = SDF_circle(vPos, vCenter, 2.0f);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            break;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            d = <a class="code hl_function" href="text_8frag.html#a32c7959182a3e52b00551901a9504825">SDF_rect</a>(<a class="code hl_variable" href="sky_8frag.html#a981b826ec5ddd6ef38ae934e30dfceff">vPos</a>, <a class="code hl_variable" href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a>, <a class="code hl_variable" href="ui_8frag.html#acaa114551ff4d570998b201b71665fc2">vSize</a>, <a class="code hl_variable" href="ui_8frag.html#a35dde33cdb29ddee55d0d349a548704e">vRadius</a>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            d2 = <a class="code hl_function" href="text_8frag.html#a32c7959182a3e52b00551901a9504825">SDF_rect</a>(<a class="code hl_variable" href="sky_8frag.html#a981b826ec5ddd6ef38ae934e30dfceff">vPos</a>, <a class="code hl_variable" href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a>, <a class="code hl_variable" href="ui_8frag.html#acaa114551ff4d570998b201b71665fc2">vSize</a> * 2, <a class="code hl_variable" href="ui_8frag.html#a35dde33cdb29ddee55d0d349a548704e">vRadius</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            d = <a class="code hl_function" href="text_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">SDF_circle</a>(<a class="code hl_variable" href="sky_8frag.html#a981b826ec5ddd6ef38ae934e30dfceff">vPos</a>, <a class="code hl_variable" href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a>, <a class="code hl_variable" href="ui_8frag.html#a35dde33cdb29ddee55d0d349a548704e">vRadius</a>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            d2 = <a class="code hl_function" href="text_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">SDF_circle</a>(<a class="code hl_variable" href="sky_8frag.html#a981b826ec5ddd6ef38ae934e30dfceff">vPos</a>, <a class="code hl_variable" href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a>, 2.0f);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    if (vMask == 1)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="text_8frag.html#a3b0f0b05ea64e11d90899c6a4ba0d7af">vMask</a> == 1)</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        float d_mask = 0.0f;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">float</span> d_mask = 0.0f;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        vec2 tr_pos = (vScreenPos.xy - vContPos.xy) / vContScale;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        switch(vContType)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> tr_pos = (<a class="code hl_variable" href="text_8frag.html#a8499f9e7db6eb96c5f32551bab48ed01">vScreenPos</a>.xy - <a class="code hl_variable" href="text_8frag.html#af4aa39c3ef18c673b9845ff9b1051d63">vContPos</a>.xy) / <a class="code hl_variable" href="text_8frag.html#aab18ce8da9f17ad6899ee42820607d9e">vContScale</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">switch</span>(<a class="code hl_variable" href="text_8frag.html#ab1651b44427b74232f0aeba2b47a5ead">vContType</a>)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            // if we have a center that needs to be different than 0,0 then pass it here</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            case 0:</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                d_mask = SDF_rect(tr_pos, vCenter, vContSize, vContRadius);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                break;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            case 1:</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                d_mask = SDF_circle(tr_pos, vCenter, vContRadius);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                break;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="comment">// if we have a center that needs to be different than 0,0 then pass it here</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                d_mask = <a class="code hl_function" href="text_8frag.html#a32c7959182a3e52b00551901a9504825">SDF_rect</a>(tr_pos, <a class="code hl_variable" href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a>, <a class="code hl_variable" href="text_8frag.html#a4f96eed1cc97602d283e42624338aef1">vContSize</a>, <a class="code hl_variable" href="text_8frag.html#a04adbbd76df83c9ca2df94a877021d0e">vContRadius</a>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                d_mask = <a class="code hl_function" href="text_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">SDF_circle</a>(tr_pos, <a class="code hl_variable" href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a>, <a class="code hl_variable" href="text_8frag.html#a04adbbd76df83c9ca2df94a877021d0e">vContRadius</a>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        if (d_mask + vPadding.x &gt; 0.0f)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">if</span> (d_mask + <a class="code hl_variable" href="text_8frag.html#a4a5a5eef097aef9a079dec417cc24a79">vPadding</a>.<a class="code hl_variable" href="types_8h.html#a36c650782a67137380c83b01545c94d6">x</a> &gt; 0.0f)</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            discard;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    if (d &gt; 0.0f) discard;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    if (vState == 3)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (d &gt; 0.0f) discard;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="text_8frag.html#a9ff365f98aec80d46fb737d095dc0801">vState</a> == 3)</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        if (d &gt; -0.1f)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">if</span> (d &gt; -0.1f)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            fragColor = vec4(0,1,0,1.0);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            return;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a> = <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>(0,1,0,1.0);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    d = clamp(d, -1, 0);</div>
@@ -223,11 +230,48 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('ui_8frag_sourc
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    d2 = clamp(d2, -1, 0);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    d2 += 1;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    vec3 color = mix(vColor.rgb, vec3(1, 1, 1), (d-d2) * (d-d2) * (d-d2));</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> <a class="code hl_variable" href="wireframe_8frag.html#a1b6b0074b43684c435f4275d6fb7bf1a">color</a> = mix(<a class="code hl_variable" href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a>.rgb, <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a>(1, 1, 1), (d-d2) * (d-d2) * (d-d2));</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    fragColor = vec4(vColor.rgb, 1.0);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a> = <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>(<a class="code hl_variable" href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a>.rgb, 1.0);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="abloom_8frag_html_a6d8dd0540ed9af35f34cd31b838cacce"><div class="ttname"><a href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></div><div class="ttdeci">out vec4 fragColor</div><div class="ttdef"><b>Definition</b> <a href="bloom_8frag_source.html#l00006">bloom.frag:6</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="lightmap_8frag_source.html#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="asky_8frag_html_a981b826ec5ddd6ef38ae934e30dfceff"><div class="ttname"><a href="sky_8frag.html#a981b826ec5ddd6ef38ae934e30dfceff">vPos</a></div><div class="ttdeci">in vec3 vPos</div><div class="ttdef"><b>Definition</b> <a href="sky_8frag_source.html#l00007">sky.frag:7</a></div></div>
+<div class="ttc" id="asky_8frag_html_aab938108caad0d0e47d6885b5ba2d23a"><div class="ttname"><a href="sky_8frag.html#aab938108caad0d0e47d6885b5ba2d23a">size</a></div><div class="ttdeci">const int size</div><div class="ttdef"><b>Definition</b> <a href="sky_8frag_source.html#l00009">sky.frag:9</a></div></div>
+<div class="ttc" id="atext_8frag_html_a04adbbd76df83c9ca2df94a877021d0e"><div class="ttname"><a href="text_8frag.html#a04adbbd76df83c9ca2df94a877021d0e">vContRadius</a></div><div class="ttdeci">flat in float vContRadius</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00020">text.frag:20</a></div></div>
+<div class="ttc" id="atext_8frag_html_a17c8f52d57591e076c65979831b9c57a"><div class="ttname"><a href="text_8frag.html#a17c8f52d57591e076c65979831b9c57a">vCenter</a></div><div class="ttdeci">flat in vec2 vCenter</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00017">text.frag:17</a></div></div>
+<div class="ttc" id="atext_8frag_html_a32c7959182a3e52b00551901a9504825"><div class="ttname"><a href="text_8frag.html#a32c7959182a3e52b00551901a9504825">SDF_rect</a></div><div class="ttdeci">float SDF_rect(vec2 p, vec2 center, vec2 size, float r)</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00035">text.frag:35</a></div></div>
+<div class="ttc" id="atext_8frag_html_a38a2f7b14de1f27fe83a407eaf5f76c8"><div class="ttname"><a href="text_8frag.html#a38a2f7b14de1f27fe83a407eaf5f76c8">vVisible</a></div><div class="ttdeci">flat in uint vVisible</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00011">text.frag:11</a></div></div>
+<div class="ttc" id="atext_8frag_html_a3b0f0b05ea64e11d90899c6a4ba0d7af"><div class="ttname"><a href="text_8frag.html#a3b0f0b05ea64e11d90899c6a4ba0d7af">vMask</a></div><div class="ttdeci">flat in uint vMask</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00023">text.frag:23</a></div></div>
+<div class="ttc" id="atext_8frag_html_a4a5a5eef097aef9a079dec417cc24a79"><div class="ttname"><a href="text_8frag.html#a4a5a5eef097aef9a079dec417cc24a79">vPadding</a></div><div class="ttdeci">flat in vec4 vPadding</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00019">text.frag:19</a></div></div>
+<div class="ttc" id="atext_8frag_html_a4f96eed1cc97602d283e42624338aef1"><div class="ttname"><a href="text_8frag.html#a4f96eed1cc97602d283e42624338aef1">vContSize</a></div><div class="ttdeci">flat in vec2 vContSize</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00021">text.frag:21</a></div></div>
+<div class="ttc" id="atext_8frag_html_a5d0ac4f620a9dbb8ab83fdc05257bc9c"><div class="ttname"><a href="text_8frag.html#a5d0ac4f620a9dbb8ab83fdc05257bc9c">vHovered</a></div><div class="ttdeci">flat in uint vHovered</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00014">text.frag:14</a></div></div>
+<div class="ttc" id="atext_8frag_html_a8499f9e7db6eb96c5f32551bab48ed01"><div class="ttname"><a href="text_8frag.html#a8499f9e7db6eb96c5f32551bab48ed01">vScreenPos</a></div><div class="ttdeci">in vec4 vScreenPos</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00025">text.frag:25</a></div></div>
+<div class="ttc" id="atext_8frag_html_a9ff365f98aec80d46fb737d095dc0801"><div class="ttname"><a href="text_8frag.html#a9ff365f98aec80d46fb737d095dc0801">vState</a></div><div class="ttdeci">flat in uint vState</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00010">text.frag:10</a></div></div>
+<div class="ttc" id="atext_8frag_html_aa51e8161a0cae0687f2f1c7af7a9591d"><div class="ttname"><a href="text_8frag.html#aa51e8161a0cae0687f2f1c7af7a9591d">uShadowPass</a></div><div class="ttdeci">uniform uint uShadowPass</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00016">text.frag:16</a></div></div>
+<div class="ttc" id="atext_8frag_html_aab18ce8da9f17ad6899ee42820607d9e"><div class="ttname"><a href="text_8frag.html#aab18ce8da9f17ad6899ee42820607d9e">vContScale</a></div><div class="ttdeci">flat in vec2 vContScale</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00024">text.frag:24</a></div></div>
+<div class="ttc" id="atext_8frag_html_ab03f86b056de905e02723eb2c98eb5f4"><div class="ttname"><a href="text_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">SDF_circle</a></div><div class="ttdeci">float SDF_circle(vec2 p, vec2 center, float radius)</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00030">text.frag:30</a></div></div>
+<div class="ttc" id="atext_8frag_html_ab1651b44427b74232f0aeba2b47a5ead"><div class="ttname"><a href="text_8frag.html#ab1651b44427b74232f0aeba2b47a5ead">vContType</a></div><div class="ttdeci">flat in uint vContType</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00022">text.frag:22</a></div></div>
+<div class="ttc" id="atext_8frag_html_abcbbdeaa6dc4a352a1f3c3d5faa93e03"><div class="ttname"><a href="text_8frag.html#abcbbdeaa6dc4a352a1f3c3d5faa93e03">vShadowDir</a></div><div class="ttdeci">in vec2 vShadowDir</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00012">text.frag:12</a></div></div>
+<div class="ttc" id="atext_8frag_html_ac5f31d96ce998815f8cfc5839fe9531d"><div class="ttname"><a href="text_8frag.html#ac5f31d96ce998815f8cfc5839fe9531d">median</a></div><div class="ttdeci">float median(float r, float g, float b)</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00040">text.frag:40</a></div></div>
+<div class="ttc" id="atext_8frag_html_ae845d047b7b72dde80b94b8e5533c283"><div class="ttname"><a href="text_8frag.html#ae845d047b7b72dde80b94b8e5533c283">vFill</a></div><div class="ttdeci">in vec4 vFill</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00009">text.frag:9</a></div></div>
+<div class="ttc" id="atext_8frag_html_af1b1cbdd5f2ae3b8f9e4e3b95752dcb8"><div class="ttname"><a href="text_8frag.html#af1b1cbdd5f2ae3b8f9e4e3b95752dcb8">vShadow</a></div><div class="ttdeci">flat in uint vShadow</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00013">text.frag:13</a></div></div>
+<div class="ttc" id="atext_8frag_html_af4aa39c3ef18c673b9845ff9b1051d63"><div class="ttname"><a href="text_8frag.html#af4aa39c3ef18c673b9845ff9b1051d63">vContPos</a></div><div class="ttdeci">flat in vec4 vContPos</div><div class="ttdef"><b>Definition</b> <a href="text_8frag_source.html#l00018">text.frag:18</a></div></div>
+<div class="ttc" id="atypes_8h_html_a002d3519d48fe3cd79729b5b0ded74bf"><div class="ttname"><a href="types_8h.html#a002d3519d48fe3cd79729b5b0ded74bf">vec2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_a36c650782a67137380c83b01545c94d6"><div class="ttname"><a href="types_8h.html#a36c650782a67137380c83b01545c94d6">vec4::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_a6d28b12b511da692550fc9d37b4e9b1d"><div class="ttname"><a href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">vec2::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec3"><div class="ttname"><a href="types_8h.html#structvec3">vec3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec4"><div class="ttname"><a href="types_8h.html#structvec4">vec4</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="aui_8frag_html_a1638298e209b3b196abcc7c6f4797fc5"><div class="ttname"><a href="ui_8frag.html#a1638298e209b3b196abcc7c6f4797fc5">vType</a></div><div class="ttdeci">flat in uint vType</div><div class="ttdef"><b>Definition</b> <a href="#l00008">ui.frag:8</a></div></div>
+<div class="ttc" id="aui_8frag_html_a2abf1dd318c2e999323fc2fde32e05ba"><div class="ttname"><a href="ui_8frag.html#a2abf1dd318c2e999323fc2fde32e05ba">vDist</a></div><div class="ttdeci">in vec2 vDist</div><div class="ttdef"><b>Definition</b> <a href="#l00029">ui.frag:29</a></div></div>
+<div class="ttc" id="aui_8frag_html_a35dde33cdb29ddee55d0d349a548704e"><div class="ttname"><a href="ui_8frag.html#a35dde33cdb29ddee55d0d349a548704e">vRadius</a></div><div class="ttdeci">flat in float vRadius</div><div class="ttdef"><b>Definition</b> <a href="#l00017">ui.frag:17</a></div></div>
+<div class="ttc" id="aui_8frag_html_acaa114551ff4d570998b201b71665fc2"><div class="ttname"><a href="ui_8frag.html#acaa114551ff4d570998b201b71665fc2">vSize</a></div><div class="ttdeci">flat in vec2 vSize</div><div class="ttdef"><b>Definition</b> <a href="#l00019">ui.frag:19</a></div></div>
+<div class="ttc" id="awireframe_8frag_html_a1b6b0074b43684c435f4275d6fb7bf1a"><div class="ttname"><a href="wireframe_8frag.html#a1b6b0074b43684c435f4275d6fb7bf1a">color</a></div><div class="ttdeci">uniform vec3 color</div><div class="ttdef"><b>Definition</b> <a href="wireframe_8frag_source.html#l00006">wireframe.frag:6</a></div></div>
+<div class="ttc" id="awireframe_8frag_html_a1ec666fc8acfd1ba7a92932fea4b2ad1"><div class="ttname"><a href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a></div><div class="ttdeci">in vec3 vColor</div><div class="ttdef"><b>Definition</b> <a href="wireframe_8frag_source.html#l00005">wireframe.frag:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

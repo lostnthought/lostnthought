@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,373 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('cull__clusters
 <div class="contents">
 
 <p><a href="cull__clusters_8comp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:Light_5Fstruct_5Flight" id="r_Light_5Fstruct_5Flight"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_light">Light</a></td></tr>
+<tr class="memdesc:struct_light"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CPU side structure for <a class="el" href="group__shader__structs__group.html#struct_light" title="The CPU side structure for Lights.">Light</a>s.  <a href="group__shader__structs__group.html#struct_light">More...</a><br /></td></tr>
+<tr class="memitem:AABB_5Fstruct_5Fa_5Fa_5Fb_5Fb" id="r_AABB_5Fstruct_5Fa_5Fa_5Fb_5Fb"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td></tr>
+<tr class="memitem:Cluster_5Fstruct_5Fcluster" id="r_Cluster_5Fstruct_5Fcluster"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_cluster">Cluster</a></td></tr>
+<tr class="memdesc:struct_cluster"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPU-side <a class="el" href="group__shader__structs__group.html#struct_cluster" title="GPU-side Clusters for clustered forward.">Cluster</a>s for clustered forward.  <a href="group__shader__structs__group.html#struct_cluster">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac6f4574ef632d6deecd82d79e96b8153" id="r_ac6f4574ef632d6deecd82d79e96b8153"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac6f4574ef632d6deecd82d79e96b8153">layout</a> (local_size_x=1, local_size_y=1, local_size_z=1) in</td></tr>
+<tr class="memitem:a251ff7187aa6805e7027554c86b34307" id="r_a251ff7187aa6805e7027554c86b34307"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a251ff7187aa6805e7027554c86b34307">layout</a> (std140, binding=0) uniform CameraData</td></tr>
+<tr class="memitem:a15905184e63ebc166416ba14f5c751c1" id="r_a15905184e63ebc166416ba14f5c751c1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a15905184e63ebc166416ba14f5c751c1">layout</a> (std430, binding=0) buffer LightData</td></tr>
+<tr class="memitem:a373bd78f2cd817614ba1b1d2ac5f27ea" id="r_a373bd78f2cd817614ba1b1d2ac5f27ea"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a373bd78f2cd817614ba1b1d2ac5f27ea">test_sphere_aabb</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> light_pos, float light_radius, <a class="el" href="types_8h.html#structvec4">vec4</a> min, <a class="el" href="types_8h.html#structvec4">vec4</a> max)</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8d026cdee329e0beecf1cc442ec21f1d" id="r_a8d026cdee329e0beecf1cc442ec21f1d"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structuvec3">uvec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8d026cdee329e0beecf1cc442ec21f1d">uGridSize</a></td></tr>
+<tr class="memitem:ab24a49a9c8108b3693e6690acc54aaa7" id="r_ab24a49a9c8108b3693e6690acc54aaa7"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ab24a49a9c8108b3693e6690acc54aaa7">uNear</a></td></tr>
+<tr class="memitem:a39a07c027d376eebacd6553dc047021d" id="r_a39a07c027d376eebacd6553dc047021d"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#a39a07c027d376eebacd6553dc047021d">uFar</a></td></tr>
+<tr class="memitem:af972cc058649327b0ef498a3bcedd2d3" id="r_af972cc058649327b0ef498a3bcedd2d3"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#af972cc058649327b0ef498a3bcedd2d3">uMaxLightsPerCluster</a></td></tr>
+<tr class="memitem:af17be7e23af36446ba531b28c9295035" id="r_af17be7e23af36446ba531b28c9295035"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#af17be7e23af36446ba531b28c9295035">uLightCount</a></td></tr>
+</table>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Data Structure Documentation</h2>
+<a name="struct_a_a_b_b" id="struct_a_a_b_b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_a_a_b_b">&#9670;&#160;</a></span>AABB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct AABB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00110">110</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ac67e4a162acbb3fe663d55795990b1be" name="ac67e4a162acbb3fe663d55795990b1be"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa63ab3ed5fdb1989d64aa0fde847b7fb" name="aa63ab3ed5fdb1989d64aa0fde847b7fb"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac966b0bb96cf30d85d5313f2dce3df0c" name="ac966b0bb96cf30d85d5313f2dce3df0c"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a85407f9ff3d6624b49e746f77500c831" name="a85407f9ff3d6624b49e746f77500c831"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae23a405b8b4656aea13188e696250260" name="ae23a405b8b4656aea13188e696250260"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+center</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aecfc5fafbd1db3c297bf0c583282eed2" name="aecfc5fafbd1db3c297bf0c583282eed2"></a>uint</td>
+<td class="fieldname">
+pad2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7310cd50a8940891814341a93decf227" name="a7310cd50a8940891814341a93decf227"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+extents</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a110d9ae88d523431f9196a276675b0e4" name="a110d9ae88d523431f9196a276675b0e4"></a>uint</td>
+<td class="fieldname">
+pad3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac67e4a162acbb3fe663d55795990b1be" name="ac67e4a162acbb3fe663d55795990b1be"></a><a class="el" href="types_8h.html#structvec4">vec4</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac966b0bb96cf30d85d5313f2dce3df0c" name="ac966b0bb96cf30d85d5313f2dce3df0c"></a><a class="el" href="types_8h.html#structvec4">vec4</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5e1a7f703f4bcdbbff92fb7770dd9661" name="a5e1a7f703f4bcdbbff92fb7770dd9661"></a>float</td>
+<td class="fieldname">
+min_x</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="afe4c0ee38a0f9a1ba4b219f81e547d2c" name="afe4c0ee38a0f9a1ba4b219f81e547d2c"></a>float</td>
+<td class="fieldname">
+max_x</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac2370cacd9869bfd3b2c1628d6c88262" name="ac2370cacd9869bfd3b2c1628d6c88262"></a>float</td>
+<td class="fieldname">
+min_y</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a63ffed95566942162af6ce6b45168ef2" name="a63ffed95566942162af6ce6b45168ef2"></a>float</td>
+<td class="fieldname">
+max_y</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aaa6f3feb41a0c1b18796ded5ef153a8d" name="aaa6f3feb41a0c1b18796ded5ef153a8d"></a>float</td>
+<td class="fieldname">
+min_z</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a568972a7d19277185f8cf2c08a2ab928" name="a568972a7d19277185f8cf2c08a2ab928"></a>float</td>
+<td class="fieldname">
+max_z</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="ac6f4574ef632d6deecd82d79e96b8153" name="ac6f4574ef632d6deecd82d79e96b8153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f4574ef632d6deecd82d79e96b8153">&#9670;&#160;</a></span>layout() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">local_size_x</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">local_size_y</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">local_size_z</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a251ff7187aa6805e7027554c86b34307" name="a251ff7187aa6805e7027554c86b34307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ff7187aa6805e7027554c86b34307">&#9670;&#160;</a></span>layout() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std140</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00005">5</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, and <a class="el" href="shadow_8vert_source.html#l00016">view</a>.</p>
+
+</div>
+</div>
+<a id="a15905184e63ebc166416ba14f5c751c1" name="a15905184e63ebc166416ba14f5c751c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15905184e63ebc166416ba14f5c751c1">&#9670;&#160;</a></span>layout() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00069">69</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a373bd78f2cd817614ba1b1d2ac5f27ea" name="a373bd78f2cd817614ba1b1d2ac5f27ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a373bd78f2cd817614ba1b1d2ac5f27ea">&#9670;&#160;</a></span>test_sphere_aabb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_sphere_aabb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>light_pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>light_radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec4">vec4</a></td>          <td class="paramname"><span class="paramname"><em>min</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec4">vec4</a></td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00108">108</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="cull__clusters_8comp_source.html#l00117">main()</a>, <a class="el" href="utilities_8c_source.html#l00246">test_sphere_aabb()</a>, <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>, and <a class="el" href="physics_8c_source.html#l01605">update_physics_components()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00117">117</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01474">Light::light_type</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00115">AABB::max</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00113">AABB::min</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::pos</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::radius</a>, <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>, <a class="el" href="cull__clusters_8comp_source.html#l00100">uGridSize</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00249">uLightCount</a>, <a class="el" href="cull__clusters_8comp_source.html#l00105">uMaxLightsPerCluster</a>, <a class="el" href="shadow_8vert_source.html#l00016">view</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::x</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::y</a>, and <a class="el" href="types_8h_source.html#l00018">uvec3::z</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a8d026cdee329e0beecf1cc442ec21f1d" name="a8d026cdee329e0beecf1cc442ec21f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d026cdee329e0beecf1cc442ec21f1d">&#9670;&#160;</a></span>uGridSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structuvec3">uvec3</a> uGridSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00100">100</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00518">get_cluster_index()</a>, and <a class="el" href="cull__clusters_8comp_source.html#l00117">main()</a>.</p>
+
+</div>
+</div>
+<a id="ab24a49a9c8108b3693e6690acc54aaa7" name="ab24a49a9c8108b3693e6690acc54aaa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24a49a9c8108b3693e6690acc54aaa7">&#9670;&#160;</a></span>uNear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uNear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00101">101</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00518">get_cluster_index()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a39a07c027d376eebacd6553dc047021d" name="a39a07c027d376eebacd6553dc047021d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a07c027d376eebacd6553dc047021d">&#9670;&#160;</a></span>uFar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uFar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00102">102</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="af972cc058649327b0ef498a3bcedd2d3" name="af972cc058649327b0ef498a3bcedd2d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af972cc058649327b0ef498a3bcedd2d3">&#9670;&#160;</a></span>uMaxLightsPerCluster</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uMaxLightsPerCluster</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00105">105</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="cull__clusters_8comp_source.html#l00117">main()</a>.</p>
+
+</div>
+</div>
+<a id="af17be7e23af36446ba531b28c9295035" name="af17be7e23af36446ba531b28c9295035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17be7e23af36446ba531b28c9295035">&#9670;&#160;</a></span>uLightCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uLightCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__clusters_8comp_source.html#l00106">106</a> of file <a class="el" href="cull__clusters_8comp_source.html">cull_clusters.comp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

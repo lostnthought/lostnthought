@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -127,9 +136,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('dir_a63dedf81f
 <tr class="heading"><td colspan="2"><h2 id="header-files" class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:audio_2Ec" id="r_audio_2Ec"><td class="memItemLeft"><a href="audio_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="audio_8c.html">audio.c</a></td></tr>
+<tr class="memdesc:audio_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio probe baking, portal creation, probe volumes, and emitter functions. <br /></td></tr>
 <tr class="memitem:audio_2Eh" id="r_audio_2Eh"><td class="memItemLeft"><a href="audio_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="audio_8h.html">audio.h</a></td></tr>
 <tr class="memdesc:audio_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio probe baking, portal creation, probe volumes, and emitter functions. <br /></td></tr>
 <tr class="memitem:audio_5Fir_2Ec" id="r_audio_5Fir_2Ec"><td class="memItemLeft"><a href="audio__ir_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="audio__ir_8c.html">audio_ir.c</a></td></tr>
+<tr class="memdesc:audio__ir_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio IR processing, hrtf loading and parsing, and audio threading. <br /></td></tr>
 <tr class="memitem:audio_5Fir_2Eh" id="r_audio_5Fir_2Eh"><td class="memItemLeft"><a href="audio__ir_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="audio__ir_8h.html">audio_ir.h</a></td></tr>
 <tr class="memdesc:audio__ir_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio IR processing, hrtf loading and parsing, and audio threading. <br /></td></tr>
 <tr class="memitem:audio_5Fprobe_5Fbake_2Ecomp" id="r_audio_5Fprobe_5Fbake_2Ecomp"><td class="memItemLeft"><a href="audio__probe__bake_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="audio__probe__bake_8comp.html">audio_probe_bake.comp</a></td></tr>

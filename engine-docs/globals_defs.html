@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -194,7 +203,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_defs.h
 <li>LPF_ORDER&#160;:&#160;<a class="el" href="group__audio__group.html#ga4b93f5d1240898a745d17d16ae61d611">engine_types.h</a></li>
 <li>LPV_COUNT&#160;:&#160;<a class="el" href="engine__types_8h.html#a90efb17d5049a0fe2786dc3548b2dd76">engine_types.h</a></li>
 <li>LPV_PADDED_COUNT&#160;:&#160;<a class="el" href="engine__types_8h.html#ae1350353211d758cc6dc688ffc149526">engine_types.h</a></li>
-<li>LPV_SLOTS&#160;:&#160;<a class="el" href="engine__types_8h.html#a54a15c7759ae27bb73c7d63affa1bd9c">engine_types.h</a></li>
+<li>LPV_SLOTS&#160;:&#160;<a class="el" href="engine__types_8h.html#a54a15c7759ae27bb73c7d63affa1bd9c">engine_types.h</a>, <a class="el" href="dynamic_8frag.html#a54a15c7759ae27bb73c7d63affa1bd9c">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a54a15c7759ae27bb73c7d63affa1bd9c">dynamic.vert</a></li>
 </ul>
 
 
@@ -227,7 +236,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_defs.h
 <li>MAX_GLTF_NAMES&#160;:&#160;<a class="el" href="group__editor__group.html#ga4b3bd53f7e1bf0aa9b59f969e3c8f43b">editor.c</a></li>
 <li>MAX_GLYPHS&#160;:&#160;<a class="el" href="group__ui__group.html#ga1a1d1da8a5f6da54d749399b173c9bfc">ui.h</a></li>
 <li>MAX_HULL_FACE_VERTICES&#160;:&#160;<a class="el" href="types_8h.html#aead97a24bf560764c047d0199c2583c7">types.h</a></li>
-<li>MAX_INSTANCES&#160;:&#160;<a class="el" href="engine__types_8h.html#ad71fdd6e64912b84771dda0b80389ad9">engine_types.h</a></li>
+<li>MAX_INSTANCES&#160;:&#160;<a class="el" href="engine__types_8h.html#ad71fdd6e64912b84771dda0b80389ad9">engine_types.h</a>, <a class="el" href="cull__draw__calls_8comp.html#ad71fdd6e64912b84771dda0b80389ad9">cull_draw_calls.comp</a>, <a class="el" href="cull__point__light__shadows_8comp.html#ad71fdd6e64912b84771dda0b80389ad9">cull_point_light_shadows.comp</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8vert.html#ad71fdd6e64912b84771dda0b80389ad9">depth_pre_pass_no_gbuffer.vert</a>, <a class="el" href="dynamic_8vert.html#ad71fdd6e64912b84771dda0b80389ad9">dynamic.vert</a>, <a class="el" href="point__light__shadows_8vert.html#ad71fdd6e64912b84771dda0b80389ad9">point_light_shadows.vert</a>, <a class="el" href="shadow_8vert.html#ad71fdd6e64912b84771dda0b80389ad9">shadow.vert</a></li>
 <li>MAX_INTERP_APROBES&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga55c402339f73606f807da9836758e96b">engine_types.h</a></li>
 <li>MAX_IR_SAMPLES&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga225f44ec988a9c2caae009cb0df16706">engine_types.h</a></li>
 <li>MAX_JOINT_MATRICES&#160;:&#160;<a class="el" href="engine__types_8h.html#ac6436549277d6b24002f90b2304ddc22">engine_types.h</a></li>
@@ -237,7 +246,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_defs.h
 <li>MAX_LIGHTS_PER_MESH&#160;:&#160;<a class="el" href="engine__types_8h.html#a9f3fd80d7ad38941e65f4f01e7f9b5f4">engine_types.h</a></li>
 <li>MAX_MANIFOLDS&#160;:&#160;<a class="el" href="init_8h.html#afa08373d2f8bf4977271b2c35f261574">init.h</a></li>
 <li>MAX_MATERIALS&#160;:&#160;<a class="el" href="engine__types_8h.html#a7aa308231ff3dcfd43ac19023e2e6e15">engine_types.h</a></li>
-<li>MAX_MESH_NODES&#160;:&#160;<a class="el" href="engine__types_8h.html#adc37d28f8277783604a65482c40e0200">engine_types.h</a></li>
+<li>MAX_MESH_NODES&#160;:&#160;<a class="el" href="engine__types_8h.html#adc37d28f8277783604a65482c40e0200">engine_types.h</a>, <a class="el" href="coc_8frag.html#adc37d28f8277783604a65482c40e0200">coc.frag</a>, <a class="el" href="cull__draw__calls_8comp.html#adc37d28f8277783604a65482c40e0200">cull_draw_calls.comp</a>, <a class="el" href="cull__point__light__shadows_8comp.html#adc37d28f8277783604a65482c40e0200">cull_point_light_shadows.comp</a>, <a class="el" href="depth__pre__pass_8vert.html#adc37d28f8277783604a65482c40e0200">depth_pre_pass.vert</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8vert.html#adc37d28f8277783604a65482c40e0200">depth_pre_pass_no_gbuffer.vert</a>, <a class="el" href="dynamic_8vert.html#adc37d28f8277783604a65482c40e0200">dynamic.vert</a>, <a class="el" href="focal__distance_8comp.html#adc37d28f8277783604a65482c40e0200">focal_distance.comp</a>, <a class="el" href="point__light__shadows_8vert.html#adc37d28f8277783604a65482c40e0200">point_light_shadows.vert</a>, <a class="el" href="postprocess_8frag.html#adc37d28f8277783604a65482c40e0200">postprocess.frag</a>, <a class="el" href="shadow_8vert.html#adc37d28f8277783604a65482c40e0200">shadow.vert</a></li>
 <li>MAX_MESHES&#160;:&#160;<a class="el" href="engine__types_8h.html#a1af4a3ff50ec5381b3559aadaec907ac">engine_types.h</a></li>
 <li>MAX_MESHES_PER_PT_LIGHT_SHADOW&#160;:&#160;<a class="el" href="render_8c.html#aaa3b7aa58040027a5fb0ab42b5a7c31c">render.c</a></li>
 <li>MAX_NODE_CHILDREN&#160;:&#160;<a class="el" href="engine__types_8h.html#a54ac09062d2a7b10f41f0dacb23101e0">engine_types.h</a></li>
@@ -251,7 +260,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_defs.h
 <li>MAX_RPROBE_NAMES&#160;:&#160;<a class="el" href="group__editor__group.html#gae0cd447636933cf604bc1da3621eeab0">editor.c</a></li>
 <li>MAX_RPROBES&#160;:&#160;<a class="el" href="engine__types_8h.html#a4a65ac5a8ff080cd38dae03e5f9d438d">engine_types.h</a></li>
 <li>MAX_RPROBES_PER_FRAME&#160;:&#160;<a class="el" href="engine__types_8h.html#a33f329b47a2259e884df4dd969d040b3">engine_types.h</a></li>
-<li>MAX_SAMPLES&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga78f316da3a87bf72cb1647786b64bf0e">engine_types.h</a></li>
+<li>MAX_SAMPLES&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a78f316da3a87bf72cb1647786b64bf0e">audio_probe_bake.comp</a>, <a class="el" href="group__aprobe__group.html#ga78f316da3a87bf72cb1647786b64bf0e">engine_types.h</a></li>
 <li>MAX_SDL_EVENTS&#160;:&#160;<a class="el" href="engine__types_8h.html#a0332ac40c4e55cc095efbb4c283967a2">engine_types.h</a></li>
 <li>MAX_TEX_LABELS&#160;:&#160;<a class="el" href="engine__types_8h.html#a3efe763bce012c49de8766945ad60965">engine_types.h</a></li>
 <li>MAX_TEXT_BOX_CHARACTERS&#160;:&#160;<a class="el" href="group__ui__group.html#ga7603c771c88089985f8eab85fc725f70">ui.h</a></li>
@@ -268,7 +277,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_defs.h
 <li>MIN_LEAF_AMT&#160;:&#160;<a class="el" href="acceleration_8c.html#a11feae468ba6dd44e8406a7fa29e1d24">acceleration.c</a></li>
 <li>MIN_WALKABLE_SURFACE&#160;:&#160;<a class="el" href="camera_8c.html#a8f0caca57c692c1db6718bbd657f85df">camera.c</a></li>
 <li>MINIAUDIO_IMPLEMENTATION&#160;:&#160;<a class="el" href="miniaudio__impl_8c.html#abf77f70dc931f91a9f09e7b54d8278f5">miniaudio_impl.c</a></li>
-<li>MINIMUM_LIGHT_VISIBILITY_DIST&#160;:&#160;<a class="el" href="engine__types_8h.html#a3fae9f31c0605bd1e90fc171551b6557">engine_types.h</a></li>
+<li>MINIMUM_LIGHT_VISIBILITY_DIST&#160;:&#160;<a class="el" href="engine__types_8h.html#a3fae9f31c0605bd1e90fc171551b6557">engine_types.h</a>, <a class="el" href="lightmap__bounce_8comp.html#a3fae9f31c0605bd1e90fc171551b6557">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a3fae9f31c0605bd1e90fc171551b6557">probe_bake.comp</a></li>
 <li>MN_STARTING_SIZE&#160;:&#160;<a class="el" href="init_8c.html#ab5835803bf228729b8a5a05d7bde3491">init.c</a></li>
 </ul>
 
@@ -285,6 +294,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_defs.h
 <li>NK_SDL_GL3_IMPLEMENTATION&#160;:&#160;<a class="el" href="nk__impl_8c.html#af3136319bd0cd6ec4833eec630237924">nk_impl.c</a></li>
 <li>NUM_PARTITIONS&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga062d85bdfe1a34810ed2efaf341b8d24">engine_types.h</a></li>
 <li>NUM_PARTITIONS_MAX&#160;:&#160;<a class="el" href="group__aprobe__group.html#gaf1b997de109c9801e828bba3fb0fd385">engine_types.h</a></li>
+<li>NUM_RAYS&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a4c8a4014b56ef918f72d8c2c2098b151">audio_probe_bake.comp</a></li>
 </ul>
 
 
@@ -319,12 +329,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_defs.h
 
 <h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>SAMPLE_IDX&#160;:&#160;<a class="el" href="audio_8c.html#aa3a40056b1b6b3613fda8d9ac47ba34e">audio.c</a></li>
-<li>SAMPLE_RATE&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga4b76a0c2859cfd819a343a780070ee2b">engine_types.h</a></li>
-<li>SH_MAX&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">engine_types.h</a></li>
+<li>SAMPLE_RATE&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a4b76a0c2859cfd819a343a780070ee2b">audio_probe_bake.comp</a>, <a class="el" href="group__aprobe__group.html#ga4b76a0c2859cfd819a343a780070ee2b">engine_types.h</a></li>
+<li>SH_MAX&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">engine_types.h</a>, <a class="el" href="dynamic_8frag.html#a11a427cb1228a62dee06e50c466d4804">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a11a427cb1228a62dee06e50c466d4804">dynamic.vert</a></li>
 <li>SHIFT_VEC_RIGHT&#160;:&#160;<a class="el" href="utilities_8h.html#ac2192d556d03a347de51da16d9e87e82">utilities.h</a></li>
 <li>SKIN_STARTING_SIZE&#160;:&#160;<a class="el" href="init_8c.html#ae83f8d92e9e6b6826edbdb87025e1e0e">init.c</a></li>
 <li>SLEEP&#160;:&#160;<a class="el" href="lightmap_8c.html#a625a1fd738808effb30aa6ce5cfc8a51">lightmap.c</a></li>
-<li>SPEED_OF_SOUND&#160;:&#160;<a class="el" href="group__aprobe__group.html#gac9f9f9d25bbf964365102f1ef77d359e">engine_types.h</a></li>
+<li>SPEED_OF_SOUND&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#ac9f9f9d25bbf964365102f1ef77d359e">audio_probe_bake.comp</a>, <a class="el" href="group__aprobe__group.html#gac9f9f9d25bbf964365102f1ef77d359e">engine_types.h</a></li>
 <li>SSAO_KERNEL_SIZE&#160;:&#160;<a class="el" href="engine__types_8h.html#a01a53671ac814032ac5df6d520f106b6">engine_types.h</a></li>
 <li>STB_IMAGE_IMPLEMENTATION&#160;:&#160;<a class="el" href="stb__impl_8c.html#a18372412ad2fc3ce1e3240b3cf0efe78">stb_impl.c</a></li>
 <li>STB_IMAGE_WRITE_IMPLEMENTATION&#160;:&#160;<a class="el" href="stb__impl_8c.html#aefe397a94e8feddc652f92ef40ce9597">stb_impl.c</a></li>

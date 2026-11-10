@@ -116,17 +116,29 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('depth__downsam
   <div class="headertitle"><div class="title">depth_downsample.frag</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="depth__downsample_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>#version 430 core</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>uniform sampler2D uDepth;</div>
+<a href="depth__downsample_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#version 430 core</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">    2</a></span>uniform sampler2D <a class="code hl_variable" href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">uDepth</a>;</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>in vec2 vUV;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>out float outDepth;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="depth__downsample_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">    4</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="depth__downsample_8frag.html#a7eeb27213560317b07a4e8469f4fa120">    5</a></span>out <span class="keywordtype">float</span> <a class="code hl_variable" href="depth__downsample_8frag.html#a7eeb27213560317b07a4e8469f4fa120">outDepth</a>;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>void main() {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    vec4 depths = textureGather(uDepth, vUV, 0);</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="depth__downsample_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">    7</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>() {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> depths = textureGather(<a class="code hl_variable" href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">uDepth</a>, <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>, 0);</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    outDepth = max(max(depths.x, depths.y), max(depths.z, depths.w));</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_variable" href="depth__downsample_8frag.html#a7eeb27213560317b07a4e8469f4fa120">outDepth</a> = max(max(depths.<a class="code hl_variable" href="types_8h.html#a36c650782a67137380c83b01545c94d6">x</a>, depths.<a class="code hl_variable" href="types_8h.html#a7328fe0e502fce92fa32016193052e92">y</a>), max(depths.<a class="code hl_variable" href="types_8h.html#a12b318751110db034dddc450cdec455d">z</a>, depths.<a class="code hl_variable" href="types_8h.html#a0c92fe67e490d9768217a00c2e8abd49">w</a>));</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="adepth__downsample_8frag_html_a7eeb27213560317b07a4e8469f4fa120"><div class="ttname"><a href="depth__downsample_8frag.html#a7eeb27213560317b07a4e8469f4fa120">outDepth</a></div><div class="ttdeci">out float outDepth</div><div class="ttdef"><b>Definition</b> <a href="#l00005">depth_downsample.frag:5</a></div></div>
+<div class="ttc" id="adepth__downsample_8frag_html_abedf364922afc432663845334cd7880e"><div class="ttname"><a href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">uDepth</a></div><div class="ttdeci">uniform sampler2D uDepth</div><div class="ttdef"><b>Definition</b> <a href="#l00002">depth_downsample.frag:2</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="lightmap_8frag_source.html#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_a0c92fe67e490d9768217a00c2e8abd49"><div class="ttname"><a href="types_8h.html#a0c92fe67e490d9768217a00c2e8abd49">vec4::w</a></div><div class="ttdeci">float w</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_a12b318751110db034dddc450cdec455d"><div class="ttname"><a href="types_8h.html#a12b318751110db034dddc450cdec455d">vec4::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_a36c650782a67137380c83b01545c94d6"><div class="ttname"><a href="types_8h.html#a36c650782a67137380c83b01545c94d6">vec4::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_a7328fe0e502fce92fa32016193052e92"><div class="ttname"><a href="types_8h.html#a7328fe0e502fce92fa32016193052e92">vec4::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec4"><div class="ttname"><a href="types_8h.html#structvec4">vec4</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

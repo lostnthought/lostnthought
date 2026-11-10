@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,7 +134,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_r.ht
 
 
 <h3 class="doxsection"><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>radius&#160;:&#160;<a class="el" href="group__physics__group.html#ab54ea02cee642f6fc80b4cc837cf9ed0">CapsuleData</a>, <a class="el" href="engine__types_8h.html#ab9a87981b02f4612c872c49efa6b6e53">Light</a>, <a class="el" href="engine__types_8h.html#a41388568d1f0aac0e16632b1333840bb">LightGPU</a>, <a class="el" href="engine__types_8h.html#a9bb3da6cfcb057fb879b5e22f22bf3b7">Player</a>, <a class="el" href="group__ui__group.html#ae6ace748eccf1ec89e10d394d7e042e3">UIElement</a>, <a class="el" href="group__editor__group.html#a11f7595dd3aef99f274fb4411774ce7f">UIElementEditorMenu</a>, <a class="el" href="group__ui__group.html#a7376885bf66f4ce56753da8ed2244220">UIElementGPU</a></li>
+<li>radius&#160;:&#160;<a class="el" href="group__physics__group.html#ab54ea02cee642f6fc80b4cc837cf9ed0">CapsuleData</a>, <a class="el" href="group__shader__structs__group.html#ab9a87981b02f4612c872c49efa6b6e53">Light</a>, <a class="el" href="engine__types_8h.html#a41388568d1f0aac0e16632b1333840bb">LightGPU</a>, <a class="el" href="engine__types_8h.html#a9bb3da6cfcb057fb879b5e22f22bf3b7">Player</a>, <a class="el" href="group__ui__group.html#ae6ace748eccf1ec89e10d394d7e042e3">UIElement</a>, <a class="el" href="group__editor__group.html#a11f7595dd3aef99f274fb4411774ce7f">UIElementEditorMenu</a>, <a class="el" href="group__ui__group.html#a7376885bf66f4ce56753da8ed2244220">UIElementGPU</a></li>
 <li>rbo_count&#160;:&#160;<a class="el" href="engine__types_8h.html#a1c027f6252591212a5420d05118d1cbf">Framebuffer</a></li>
 <li>rect&#160;:&#160;<a class="el" href="engine__types_8h.html#afb0d543de558259e01192ffe0f918a15">UVIsland</a></li>
 <li>ref_point&#160;:&#160;<a class="el" href="group__physics__group.html#a8d11427ea531a50d40a94663328fb4f9">TriangleGroup</a></li>
@@ -139,17 +148,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_r.ht
 <li>rest_counter&#160;:&#160;<a class="el" href="group__physics__group.html#a0f63f8044eff762aa894c30699fcdf05">PhysicsComponent</a></li>
 <li>restitution&#160;:&#160;<a class="el" href="group__physics__group.html#af81cd69feb71255025176817fc3df275">PhysicsComponent</a></li>
 <li>reverb_wet&#160;:&#160;<a class="el" href="group__editor__group.html#a57e77ad5138fcbfa5518d0c1453d0bc7">EditorSettings</a></li>
-<li>rgb&#160;:&#160;<a class="el" href="engine__types_8h.html#adb7dba4465cdc1cb8c8f6ce834c4f59c">Light</a>, <a class="el" href="engine__types_8h.html#af5c978580ed61e7be0b3f7a5fc19aa6d">LightGPU</a></li>
-<li>right&#160;:&#160;<a class="el" href="engine__types_8h.html#aa340df7faf570839084184b705c8f62d">BVHNode</a>, <a class="el" href="engine__types_8h.html#acf9d5a1eb4f6057c6745bd2516f971af">BVHNodeGPU</a>, <a class="el" href="engine__types_8h.html#ab85197df3b54a775327630d16219922a">Camera</a></li>
+<li>rgb&#160;:&#160;<a class="el" href="group__shader__structs__group.html#adb7dba4465cdc1cb8c8f6ce834c4f59c">Light</a>, <a class="el" href="engine__types_8h.html#af5c978580ed61e7be0b3f7a5fc19aa6d">LightGPU</a></li>
+<li>right&#160;:&#160;<a class="el" href="probe__bake_8comp.html#aa340df7faf570839084184b705c8f62d">BVHNode</a>, <a class="el" href="engine__types_8h.html#acf9d5a1eb4f6057c6745bd2516f971af">BVHNodeGPU</a>, <a class="el" href="engine__types_8h.html#ab85197df3b54a775327630d16219922a">Camera</a></li>
 <li>right_hip_pos&#160;:&#160;<a class="el" href="engine__types_8h.html#a1a3699ab47184c7717d82dae6526d6d4">Skeleton</a></li>
 <li>right_leg&#160;:&#160;<a class="el" href="engine__types_8h.html#a5a5e81645c3224590beac30c7d88786b">Skeleton</a></li>
 <li>RIGHT_OUT&#160;:&#160;<a class="el" href="group__aprobe__group.html#a6eebd03e7aee49d37ff771abe24008a7">ConvolverNode</a></li>
 <li>roll&#160;:&#160;<a class="el" href="engine__types_8h.html#a08d9c6119a859e664d74ca07db4fe3d3">Camera</a></li>
-<li>rot&#160;:&#160;<a class="el" href="engine__types_8h.html#a48386973954df65e3115497942953a08">AssetInstance</a>, <a class="el" href="types_8h.html#ac4877cc37f8a28a7e06422fb59ebedb1">OBB</a></li>
-<li>rotation&#160;:&#160;<a class="el" href="engine__types_8h.html#a9356fcc4bb573bdf50bf02c536171975">MeshNode</a>, <a class="el" href="engine__types_8h.html#a75ed0582baf511395fcead6a8701f17d">Spring</a></li>
+<li>rot&#160;:&#160;<a class="el" href="engine__types_8h.html#a48386973954df65e3115497942953a08">AssetInstance</a>, <a class="el" href="group__shader__structs__group.html#ac4877cc37f8a28a7e06422fb59ebedb1">OBB</a></li>
+<li>rotation&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a9356fcc4bb573bdf50bf02c536171975">MeshNode</a>, <a class="el" href="engine__types_8h.html#a75ed0582baf511395fcead6a8701f17d">Spring</a></li>
 <li>rotation_angle&#160;:&#160;<a class="el" href="group__editor__group.html#a261d1f280fe7146f17210c2b91591d16">EditorSettings</a></li>
 <li>rotation_axis&#160;:&#160;<a class="el" href="group__editor__group.html#a9d8b2a3ce580a77982b771cd4de0ab67">EditorSettings</a></li>
-<li>roughness&#160;:&#160;<a class="el" href="engine__types_8h.html#abbaeac8374986ca82670ff0d7749c566">Material</a>, <a class="el" href="engine__types_8h.html#a7c65599ecd6636e9283576a477cbdc83">MaterialGPU</a></li>
+<li>roughness&#160;:&#160;<a class="el" href="group__shader__structs__group.html#abbaeac8374986ca82670ff0d7749c566">Material</a>, <a class="el" href="engine__types_8h.html#a7c65599ecd6636e9283576a477cbdc83">MaterialGPU</a></li>
 <li>roughness_factor&#160;:&#160;<a class="el" href="engine__types_8h.html#aee620eaaf6bcb2388111331a1e44981d">GLTFMaterial</a></li>
 <li>rp_aabbe_x&#160;:&#160;<a class="el" href="group__editor__group.html#a9d7401e360e25fe722a816bf5b7e461d">LightEditorMenu</a></li>
 <li>rp_aabbe_y&#160;:&#160;<a class="el" href="group__editor__group.html#a98e788be7ebc8d9e579fe932bba5135d">LightEditorMenu</a></li>

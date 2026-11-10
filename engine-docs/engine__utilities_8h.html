@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -133,10 +142,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('engine__utilit
 Functions</h2></td></tr>
 <tr class="memitem:a0dc9b18849faf4cdeef2983fe507b9e9" id="r_a0dc9b18849faf4cdeef2983fe507b9e9"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0dc9b18849faf4cdeef2983fe507b9e9">start_timer</a> (<a class="el" href="types_8h.html#struct_timer">Timer</a> *t)</td></tr>
 <tr class="memitem:ae527c7c487ec6387400af46102f662a1" id="r_ae527c7c487ec6387400af46102f662a1"><td class="memItemLeft">static double&#160;</td><td class="memItemRight"><a class="el" href="#ae527c7c487ec6387400af46102f662a1">end_timer</a> (<a class="el" href="types_8h.html#struct_timer">Timer</a> *t)</td></tr>
-<tr class="memitem:acff887ccd26f80b7304db59e6a803259" id="r_acff887ccd26f80b7304db59e6a803259"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acff887ccd26f80b7304db59e6a803259">mn_inside_of_root_tree</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mns, int check_id, int id)</td></tr>
-<tr class="memitem:a718f396bc11f6be72aad08cf38cacc10" id="r_a718f396bc11f6be72aad08cf38cacc10"><td class="memItemLeft">static <a class="el" href="types_8h.html#structmat4">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a718f396bc11f6be72aad08cf38cacc10">compose_trs_from_mesh_node</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn)</td></tr>
+<tr class="memitem:acff887ccd26f80b7304db59e6a803259" id="r_acff887ccd26f80b7304db59e6a803259"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acff887ccd26f80b7304db59e6a803259">mn_inside_of_root_tree</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mns, int check_id, int id)</td></tr>
+<tr class="memitem:a718f396bc11f6be72aad08cf38cacc10" id="r_a718f396bc11f6be72aad08cf38cacc10"><td class="memItemLeft">static <a class="el" href="types_8h.html#structmat4">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a718f396bc11f6be72aad08cf38cacc10">compose_trs_from_mesh_node</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn)</td></tr>
 <tr class="memitem:a7dd19a6f4baecb1f79dde3e4c66c68a0" id="r_a7dd19a6f4baecb1f79dde3e4c66c68a0"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a7dd19a6f4baecb1f79dde3e4c66c68a0">PV_step_size</a> (<a class="el" href="group__aprobe__group.html#struct_probe_volume">ProbeVolume</a> *pv, <a class="el" href="types_8h.html#structvec3">vec3</a> *step_x, <a class="el" href="types_8h.html#structvec3">vec3</a> *step_y, <a class="el" href="types_8h.html#structvec3">vec3</a> *step_z)</td></tr>
-<tr class="memitem:afb2df275055f9cc377952c9054915869" id="r_afb2df275055f9cc377952c9054915869"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *&#160;</td><td class="memItemRight"><a class="el" href="#afb2df275055f9cc377952c9054915869">get_root_node</a> (<a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mns, <a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *mn)</td></tr>
+<tr class="memitem:afb2df275055f9cc377952c9054915869" id="r_afb2df275055f9cc377952c9054915869"><td class="memItemLeft"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *&#160;</td><td class="memItemRight"><a class="el" href="#afb2df275055f9cc377952c9054915869">get_root_node</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mns, <a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn)</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a0dc9b18849faf4cdeef2983fe507b9e9" name="a0dc9b18849faf4cdeef2983fe507b9e9"></a>
@@ -206,7 +215,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool mn_inside_of_root_tree </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mns</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mns</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -223,7 +232,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__utilities_8c_source.html#l00005">5</a> of file <a class="el" href="engine__utilities_8c_source.html">engine_utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02390">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02389">MeshNode::children</a>, <a class="el" href="engine__types_8h_source.html#l02365">MeshNode::id</a>, and <a class="el" href="engine__utilities_8c_source.html#l00005">mn_inside_of_root_tree()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02397">MeshNode::child_count</a>, <a class="el" href="engine__types_8h_source.html#l02396">MeshNode::children</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::id</a>, and <a class="el" href="engine__utilities_8c_source.html#l00005">mn_inside_of_root_tree()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="engine__utilities_8c_source.html#l00005">mn_inside_of_root_tree()</a>.</p>
 
@@ -241,7 +250,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#structmat4">mat4</a> compose_trs_from_mesh_node </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -254,7 +263,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__utilities_8h_source.html#l00018">18</a> of file <a class="el" href="engine__utilities_8h_source.html">engine_utilities.h</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02373">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02374">MeshNode::scale</a>, and <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::translation</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02380">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02381">MeshNode::scale</a>, and <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::translation</a>.</p>
 
 </div>
 </div>
@@ -297,7 +306,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__utilities_8h_source.html#l00027">27</a> of file <a class="el" href="engine__utilities_8h_source.html">engine_utilities.h</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00051">OBB::extents</a>, <a class="el" href="engine__types_8h_source.html#l03071">ProbeVolume::obb</a>, <a class="el" href="engine__types_8h_source.html#l03072">ProbeVolume::resolution</a>, <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00023">OBB::extents</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="engine__types_8h_source.html#l03079">ProbeVolume::resolution</a>, <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 </div>
 </div>
@@ -308,21 +317,21 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> * get_root_node </td>
+          <td class="memname"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> * get_root_node </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mns</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mns</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="engine__utilities_8c_source.html#l00019">19</a> of file <a class="el" href="engine__utilities_8c_source.html">engine_utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__utilities_8c_source.html#l00019">get_root_node()</a>, and <a class="el" href="engine__types_8h_source.html#l02385">MeshNode::parent</a>.</p>
+<p class="reference">References <a class="el" href="engine__utilities_8c_source.html#l00019">get_root_node()</a>, and <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::parent</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="engine__utilities_8c_source.html#l00019">get_root_node()</a>, and <a class="el" href="physics_8c_source.html#l00631">PC_traverse_scene_bvh()</a>.</p>
 

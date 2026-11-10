@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -140,10 +149,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 <li>up&#160;:&#160;<a class="el" href="engine__types_8h.html#aff4fd1aa62994840f7742b698f15313e">Camera</a></li>
 <li>upper_leg_length&#160;:&#160;<a class="el" href="engine__types_8h.html#a98eece4dc6334a3de84126e72dff06e6">Skeleton</a></li>
 <li>uri&#160;:&#160;<a class="el" href="engine__types_8h.html#a6afb4a9c1f1684bf5108e6d1b57a9ef3">GLTFBuffer</a>, <a class="el" href="engine__types_8h.html#a697c194b5e04a93dfc5ff3768187e12c">GLTFImage</a></li>
-<li>uv&#160;:&#160;<a class="el" href="engine__types_8h.html#a7b916f039e5dcf4374192a2e1d72e88f">LightmapGPU</a>, <a class="el" href="engine__types_8h.html#aaa1dc5d93d650ed2d4f37b15a85ee9a7">LightmapVertex</a>, <a class="el" href="engine__types_8h.html#a62a299d10bb6fb24a018f89262ddcfa9">MainVertex</a>, <a class="el" href="types_8h.html#aded54b137bbdc3f10a7b3cbe154e5aad">Point</a>, <a class="el" href="engine__types_8h.html#a90bad3d93c33ea2d28f58cc445f3b687">TextVertex</a>, <a class="el" href="engine__types_8h.html#a5ffaab677495f7acc1f715bf56eb8bf5">VertexGPU</a></li>
+<li>uv&#160;:&#160;<a class="el" href="engine__types_8h.html#a7b916f039e5dcf4374192a2e1d72e88f">LightmapGPU</a>, <a class="el" href="engine__types_8h.html#aaa1dc5d93d650ed2d4f37b15a85ee9a7">LightmapVertex</a>, <a class="el" href="engine__types_8h.html#a62a299d10bb6fb24a018f89262ddcfa9">MainVertex</a>, <a class="el" href="types_8h.html#aded54b137bbdc3f10a7b3cbe154e5aad">Point</a>, <a class="el" href="engine__types_8h.html#a90bad3d93c33ea2d28f58cc445f3b687">TextVertex</a>, <a class="el" href="probe__bake_8comp.html#a0be747b4a0efbeb6d4dcc41b466c95bf">Vertex</a>, <a class="el" href="engine__types_8h.html#a5ffaab677495f7acc1f715bf56eb8bf5">VertexGPU</a></li>
 <li>uv_idx&#160;:&#160;<a class="el" href="engine__types_8h.html#ad8c0599f56550cff9179b727daa3389e">UVMapping</a></li>
 <li>uv_island&#160;:&#160;<a class="el" href="engine__types_8h.html#ab0eed2fe7256cf234faa2514c4c05a9e">UVMapping</a></li>
-<li>uv_map&#160;:&#160;<a class="el" href="engine__types_8h.html#ae07cd9e27cdb471c165ee4c9c8124dd7">MeshNode</a></li>
+<li>uv_map&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ae07cd9e27cdb471c165ee4c9c8124dd7">MeshNode</a></li>
 <li>uvs&#160;:&#160;<a class="el" href="engine__types_8h.html#a285b450324945166567a1080490ae1b0">LightmapSSBO</a>, <a class="el" href="engine__types_8h.html#a1dec7eecb4b99b26a2d8a0b38cb78b21">UVIsland</a></li>
 </ul>
 </div><!-- contents -->

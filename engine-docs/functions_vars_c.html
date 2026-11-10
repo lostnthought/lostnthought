@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,7 +134,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 
 
 <h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>C&#160;:&#160;<a class="el" href="engine__types_8h.html#a435ea9232078ff16b190485fd2031312">Light</a></li>
+<li>C&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a435ea9232078ff16b190485fd2031312">Light</a></li>
 <li>c0&#160;:&#160;<a class="el" href="types_8h.html#a3ac89cab16775b03ba9bd332b4e78fb8">mat3</a>, <a class="el" href="types_8h.html#aa3e3ab7d22cda65556d24640eb035b93">mat4</a></li>
 <li>c1&#160;:&#160;<a class="el" href="types_8h.html#aee79bc614f2e66e414d2ae9ed7a7cccb">mat3</a>, <a class="el" href="types_8h.html#a349a87583ea5430f39e74984bcf199f6">mat4</a></li>
 <li>c2&#160;:&#160;<a class="el" href="types_8h.html#a0dd1a262c686c7b9b72291c3cef8a80d">mat3</a>, <a class="el" href="types_8h.html#a1dbdeb46942b9bf6f1181ebe289876ff">mat4</a></li>
@@ -139,34 +148,34 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 <li>capsule&#160;:&#160;<a class="el" href="group__physics__group.html#ab4560ccf64a9a3a97b654cf2d427886a">CollisionData::[union].data</a></li>
 <li>capture_pos&#160;:&#160;<a class="el" href="engine__types_8h.html#a44ac5ebb6f0d742f314650989cec7ee8">ReflectionProbe</a></li>
 <li>cd&#160;:&#160;<a class="el" href="group__physics__group.html#a01ff18046b9f8ae164887ac912a6ecb2">PhysicsComponent</a></li>
-<li>center&#160;:&#160;<a class="el" href="types_8h.html#ae23a405b8b4656aea13188e696250260">AABB</a>, <a class="el" href="engine__types_8h.html#a72ff0bac3695a036476af653d7d9d491">AABBGPU</a>, <a class="el" href="engine__types_8h.html#a038354d2f1d6f3079f2d48b9916dff02">BVHNodeGPU</a>, <a class="el" href="engine__types_8h.html#aadd94c14a295803c3cd79530dbbc49af">MeshNodeDataGPU</a>, <a class="el" href="types_8h.html#a4386f76bca7ec2058d745ad67ed1b590">OBB</a>, <a class="el" href="engine__types_8h.html#aaeed4effeacfa39bc039db0fbd6c44a6">OBBGPU</a>, <a class="el" href="engine__types_8h.html#a73f29d8e5fcf933144a9ea08d1b34cc0">RProbe</a>, <a class="el" href="group__ui__group.html#a84c80beb97c8a914c7794ee1d38435c7">TextBox</a>, <a class="el" href="engine__types_8h.html#aa8eb595dda1914ae8147bc4ea31ab10e">TextVertex</a>, <a class="el" href="group__ui__group.html#a93819874efb86e069b745d960f3af487">UIElement</a></li>
+<li>center&#160;:&#160;<a class="el" href="types_8h.html#ae23a405b8b4656aea13188e696250260">AABB</a>, <a class="el" href="engine__types_8h.html#a72ff0bac3695a036476af653d7d9d491">AABBGPU</a>, <a class="el" href="probe__bake_8comp.html#a89831bbfb5d67d46c31c474d059e3a16">BVHNode</a>, <a class="el" href="engine__types_8h.html#a038354d2f1d6f3079f2d48b9916dff02">BVHNodeGPU</a>, <a class="el" href="group__shader__structs__group.html#add0d1de13bd7b945f21ee5bf309a57c7">MeshNode</a>, <a class="el" href="engine__types_8h.html#aadd94c14a295803c3cd79530dbbc49af">MeshNodeDataGPU</a>, <a class="el" href="group__shader__structs__group.html#a4386f76bca7ec2058d745ad67ed1b590">OBB</a>, <a class="el" href="engine__types_8h.html#aaeed4effeacfa39bc039db0fbd6c44a6">OBBGPU</a>, <a class="el" href="group__shader__structs__group.html#a73f29d8e5fcf933144a9ea08d1b34cc0">RProbe</a>, <a class="el" href="group__ui__group.html#a84c80beb97c8a914c7794ee1d38435c7">TextBox</a>, <a class="el" href="engine__types_8h.html#aa8eb595dda1914ae8147bc4ea31ab10e">TextVertex</a>, <a class="el" href="group__ui__group.html#a93819874efb86e069b745d960f3af487">UIElement</a></li>
 <li>center_of_mass&#160;:&#160;<a class="el" href="group__physics__group.html#ae38dd03e4844a97368c71d09fb5fbbd7">PhysicsComponent</a></li>
 <li>center_pos&#160;:&#160;<a class="el" href="group__editor__group.html#aac8803bf90ba6658f7ff9facfd29b53e">LightEditorMenu</a></li>
 <li>centroid&#160;:&#160;<a class="el" href="group__physics__group.html#a3019024789c2c884bb45eaac596e92d3">ConvexHull</a>, <a class="el" href="types_8h.html#a7b30ea8a007ff2dff0fb0ae3aa6a85d7">Simplex</a>, <a class="el" href="engine__types_8h.html#a449eef8663383462b3839afafc3ad865">UVIsland</a></li>
 <li>channel_count&#160;:&#160;<a class="el" href="engine__types_8h.html#a70601791f9319ae765565c3c5aaeb8cb">Animation</a>, <a class="el" href="engine__types_8h.html#a7c0ac360285b8caec7d7e62cc83ae8cc">GLTFAnimation</a></li>
 <li>channels&#160;:&#160;<a class="el" href="engine__types_8h.html#abd634873cf083bc9f58e0ce65769ee7a">Animation</a>, <a class="el" href="engine__types_8h.html#ae0e3a1e23b20b63b42b218a37b8c32a6">GLTFAnimation</a>, <a class="el" href="engine__types_8h.html#a73572ed4b7f15054c5a598c6aabffd86">Image</a></li>
-<li>child_count&#160;:&#160;<a class="el" href="engine__types_8h.html#ac44cecf797eaedd61a44a610a95132be">MeshNode</a>, <a class="el" href="group__ui__group.html#acdb96230383d7370598b52796a316494">UIContainer</a></li>
-<li>children&#160;:&#160;<a class="el" href="engine__types_8h.html#a2c30498e928cc2cc11b005c6a278e60d">MeshNode</a>, <a class="el" href="group__ui__group.html#a9373d2bcb5f607874a17ae79e02f4af9">UIContainer</a></li>
-<li>coefficients&#160;:&#160;<a class="el" href="engine__types_8h.html#a85f04e811333de6c7fda9a170ec317f4">SHDataGPU</a></li>
+<li>child_count&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ac44cecf797eaedd61a44a610a95132be">MeshNode</a>, <a class="el" href="group__ui__group.html#acdb96230383d7370598b52796a316494">UIContainer</a></li>
+<li>children&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a2c30498e928cc2cc11b005c6a278e60d">MeshNode</a>, <a class="el" href="group__ui__group.html#a9373d2bcb5f607874a17ae79e02f4af9">UIContainer</a></li>
+<li>coefficients&#160;:&#160;<a class="el" href="probe__unpack_8comp.html#a28c3fdaba83b825c0f93eff3c65de27b">SHData</a>, <a class="el" href="engine__types_8h.html#a85f04e811333de6c7fda9a170ec317f4">SHDataGPU</a></li>
 <li>collision&#160;:&#160;<a class="el" href="group__physics__group.html#aa4a92f0ef430c0dd9b80a7eaaa948082">CollisionPoints</a></li>
-<li>collision_type&#160;:&#160;<a class="el" href="engine__types_8h.html#a69978b6a90fe3e4f2f9cbc159ddff961">MeshNode</a></li>
-<li>color&#160;:&#160;<a class="el" href="engine__types_8h.html#a5ba8b2057c7894eafb854afddcd9148a">DebugVertex</a>, <a class="el" href="types_8h.html#a2673ca638069196c138bd6e512d9239f">Point</a>, <a class="el" href="group__ui__group.html#a86e4102b61a3ea103a136b2805c47b8e">TextBox</a>, <a class="el" href="group__editor__group.html#a8a13b92cdaabcc9425b5051f60201e4b">TextBoxEditorMenu</a>, <a class="el" href="group__ui__group.html#a5569986c0e481b1141208323361387da">TextBoxGPU</a>, <a class="el" href="engine__types_8h.html#a56218dfd3ac4a2698e47def70861774e">TextVertex</a>, <a class="el" href="group__ui__group.html#af8a137cf8bac87dd4152f4125216f915">UIElement</a>, <a class="el" href="group__editor__group.html#a5cf3d9660e2128b3c55f820083ace6c0">UIElementEditorMenu</a>, <a class="el" href="group__ui__group.html#a5c1cedbbee538be221172d8e2584cb02">UIElementGPU</a></li>
+<li>collision_type&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a69978b6a90fe3e4f2f9cbc159ddff961">MeshNode</a></li>
+<li>color&#160;:&#160;<a class="el" href="engine__types_8h.html#a5ba8b2057c7894eafb854afddcd9148a">DebugVertex</a>, <a class="el" href="group__shader__structs__group.html#a4de55f2ffad274ae9f37045d975125a4">Light</a>, <a class="el" href="types_8h.html#a2673ca638069196c138bd6e512d9239f">Point</a>, <a class="el" href="group__ui__group.html#a86e4102b61a3ea103a136b2805c47b8e">TextBox</a>, <a class="el" href="group__editor__group.html#a8a13b92cdaabcc9425b5051f60201e4b">TextBoxEditorMenu</a>, <a class="el" href="group__ui__group.html#a5569986c0e481b1141208323361387da">TextBoxGPU</a>, <a class="el" href="engine__types_8h.html#a56218dfd3ac4a2698e47def70861774e">TextVertex</a>, <a class="el" href="group__ui__group.html#af8a137cf8bac87dd4152f4125216f915">UIElement</a>, <a class="el" href="group__editor__group.html#a5cf3d9660e2128b3c55f820083ace6c0">UIElementEditorMenu</a>, <a class="el" href="group__ui__group.html#a5c1cedbbee538be221172d8e2584cb02">UIElementGPU</a></li>
 <li>color_b&#160;:&#160;<a class="el" href="group__editor__group.html#a8c882fdc0a4558f521225cba43a69d46">LightEditorMenu</a></li>
 <li>color_g&#160;:&#160;<a class="el" href="group__editor__group.html#a6d34d20db3c075cd8cda88319f1fd294">LightEditorMenu</a></li>
 <li>color_r&#160;:&#160;<a class="el" href="group__editor__group.html#a18e153991be1bc9df353fbd8e5c3bfdd">LightEditorMenu</a></li>
-<li>command_id&#160;:&#160;<a class="el" href="engine__types_8h.html#a07a453b0106825372df9086e88b7879b">MeshNode</a>, <a class="el" href="engine__types_8h.html#a577ddafcb69a3e459c2a0c107ad0d8f9">SubMesh</a>, <a class="el" href="engine__types_8h.html#a5b705acb331ab7dd9db3965b5bad8d0d">TransformGPU</a></li>
+<li>command_id&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a07a453b0106825372df9086e88b7879b">MeshNode</a>, <a class="el" href="engine__types_8h.html#a577ddafcb69a3e459c2a0c107ad0d8f9">SubMesh</a>, <a class="el" href="group__shader__structs__group.html#a98907a7d58b0732641a3c36c4c061b5a">Transform</a>, <a class="el" href="engine__types_8h.html#a5b705acb331ab7dd9db3965b5bad8d0d">TransformGPU</a></li>
 <li>completion_data&#160;:&#160;<a class="el" href="engine__types_8h.html#aee049afb24469de0cb0259182f767d68">AnimationTrack</a></li>
 <li>completion_type&#160;:&#160;<a class="el" href="engine__types_8h.html#a7ffb8ae7baf68ca03bd28fc8b9e4ad15">AnimationTrack</a></li>
 <li>complex_ir_len&#160;:&#160;<a class="el" href="group__aprobe__group.html#a3906c1d07d60877890a525b89ada9047">AudioScratchBuffers</a></li>
 <li>complex_len&#160;:&#160;<a class="el" href="group__aprobe__group.html#a83b075312614e0540893f5ef56aec46b">AudioScratchBuffers</a>, <a class="el" href="group__aprobe__group.html#ac4729a5e9cd4bab742ea92ef09396f49">ConvolverNode</a></li>
 <li>componentType&#160;:&#160;<a class="el" href="engine__types_8h.html#a5c4af265e2391dabbbe18e0954510b12">GLTFAccessor</a></li>
-<li>cone_angle&#160;:&#160;<a class="el" href="engine__types_8h.html#a9319504b498910b3e9dbe8f5126da629">Light</a>, <a class="el" href="group__editor__group.html#aedce88ca7bffca82d6352c575d2603ad">LightEditorMenu</a></li>
+<li>cone_angle&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a9319504b498910b3e9dbe8f5126da629">Light</a>, <a class="el" href="group__editor__group.html#aedce88ca7bffca82d6352c575d2603ad">LightEditorMenu</a></li>
 <li>contacts&#160;:&#160;<a class="el" href="group__physics__group.html#a94dba5ffe34779ed586fafa3506c9555">Manifold</a></li>
 <li>container&#160;:&#160;<a class="el" href="group__ui__group.html#a4cd1c3b12ef6334ff0783673e9bfdd46">UIElement</a>, <a class="el" href="group__ui__group.html#a5934e69f6eb7f95f6d9908125cb27431">UISlider</a></li>
-<li>container_id&#160;:&#160;<a class="el" href="group__ui__group.html#a7c8e2b157b736e3744e83485c053eea3">TextBoxGPU</a>, <a class="el" href="group__ui__group.html#a308de4c1f68c5966e0972ca83e547378">UIElementGPU</a></li>
+<li>container_id&#160;:&#160;<a class="el" href="group__ui__group.html#a68bb50a29e2fddc65dff71817a5da1e6">TextBox</a>, <a class="el" href="group__ui__group.html#a7c8e2b157b736e3744e83485c053eea3">TextBoxGPU</a>, <a class="el" href="group__ui__group.html#a5dbdeff2bbac19ca2ade12f05168509c">UIElement</a>, <a class="el" href="group__ui__group.html#a308de4c1f68c5966e0972ca83e547378">UIElementGPU</a></li>
 <li>containers&#160;:&#160;<a class="el" href="group__ui__group.html#ae8e032eccdb4668fe85a7fda979fd42b">UIMenu</a></li>
-<li>cos_diff&#160;:&#160;<a class="el" href="engine__types_8h.html#a61d9f653b2077f56add228e0a5b8d471">LightGPU</a></li>
-<li>count&#160;:&#160;<a class="el" href="engine__types_8h.html#ac9d5c7a745c506f70783d0a453cb8345">AnimationSampler</a>, <a class="el" href="group__aprobe__group.html#aea8b83a5523bb3dc2cbbeb66c111c024">AudioProbeWeights</a>, <a class="el" href="engine__types_8h.html#af363789fa2f9bdd79ef4d737d23ec52e">BVHNode</a>, <a class="el" href="engine__types_8h.html#a6d2a343146a9ee77399967161f318943">BVHNodeGPU</a>, <a class="el" href="engine__types_8h.html#a2bb9276028f088090f9bc58710173153">ClusterGPU</a>, <a class="el" href="engine__types_8h.html#a37f71176fcfaa6d8e7ddd6014315ea7f">DrawArraysIndirectCommand</a>, <a class="el" href="engine__types_8h.html#a8b2cfade2d661bf5186e3d67c21d056e">DrawElementsIndirectCommand</a>, <a class="el" href="engine__types_8h.html#a962f331bc9dbfd9e90e6decbc22fd7c0">GLTFAccessor</a>, <a class="el" href="group__physics__group.html#acb1c1ce2f3426071281c4300e2ad5c79">HullData</a>, <a class="el" href="types_8h.html#acdfa8d85024c157fd08682a22731c065">HullFace</a>, <a class="el" href="group__physics__group.html#a133fda0f6bc9c07095f1fa942db2f9f2">Manifold</a>, <a class="el" href="engine__types_8h.html#a61e587c797de86a90da1f7afc00b454d">Mesh</a>, <a class="el" href="engine__types_8h.html#a2351e3c688aa215d3902fc0c183883e1">MeshNode</a>, <a class="el" href="engine__types_8h.html#a78cba5d206ade76d380a9edf732ed5d6">MeshNodeDataGPU</a>, <a class="el" href="types_8h.html#af25a46bb1c60a6eda849e30bc4917767">Simplex</a>, <a class="el" href="types_8h.html#aaa2fad1bda55aa3852988c62b0563913">Vector</a></li>
+<li>cos_diff&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ab2ad6a5d3d5e37aae660080389b76d53">Light</a>, <a class="el" href="engine__types_8h.html#a61d9f653b2077f56add228e0a5b8d471">LightGPU</a></li>
+<li>count&#160;:&#160;<a class="el" href="engine__types_8h.html#ac9d5c7a745c506f70783d0a453cb8345">AnimationSampler</a>, <a class="el" href="group__aprobe__group.html#aea8b83a5523bb3dc2cbbeb66c111c024">AudioProbeWeights</a>, <a class="el" href="probe__bake_8comp.html#a3b4c0173bc085e4d145d65ec106f99d3">BVHNode</a>, <a class="el" href="engine__types_8h.html#a6d2a343146a9ee77399967161f318943">BVHNodeGPU</a>, <a class="el" href="group__shader__structs__group.html#a2bac8373f584e2feb052348c067c4ba2">Cluster</a>, <a class="el" href="engine__types_8h.html#a2bb9276028f088090f9bc58710173153">ClusterGPU</a>, <a class="el" href="group__shader__structs__group.html#a9c7d6755b2dfc8538a372c69650af5a9">DrawArraysIndirectCommand</a>, <a class="el" href="elements__prefix_8comp.html#a677472d87854825d43abbdd3f89c1322">DrawElementsIndirectCommand</a>, <a class="el" href="engine__types_8h.html#a962f331bc9dbfd9e90e6decbc22fd7c0">GLTFAccessor</a>, <a class="el" href="group__physics__group.html#acb1c1ce2f3426071281c4300e2ad5c79">HullData</a>, <a class="el" href="types_8h.html#acdfa8d85024c157fd08682a22731c065">HullFace</a>, <a class="el" href="group__physics__group.html#a133fda0f6bc9c07095f1fa942db2f9f2">Manifold</a>, <a class="el" href="lightmap_8vert.html#a61e587c797de86a90da1f7afc00b454d">Mesh</a>, <a class="el" href="group__shader__structs__group.html#ae964ec5d590e77bd47b140b106540aed">MeshNode</a>, <a class="el" href="engine__types_8h.html#a78cba5d206ade76d380a9edf732ed5d6">MeshNodeDataGPU</a>, <a class="el" href="types_8h.html#af25a46bb1c60a6eda849e30bc4917767">Simplex</a>, <a class="el" href="types_8h.html#aaa2fad1bda55aa3852988c62b0563913">Vector</a></li>
 <li>cpad&#160;:&#160;<a class="el" href="group__editor__group.html#aee1af9441d144e588c379e916d275c0e">UIElementEditorMenu</a></li>
 <li>cpadd&#160;:&#160;<a class="el" href="group__editor__group.html#ac2a1240c1b34653fc7ca4443dfef38b5">UIElementEditorMenu</a></li>
 <li>cpadl&#160;:&#160;<a class="el" href="group__editor__group.html#a5f5bca3d25bdde8330964f3c06d68776">UIElementEditorMenu</a></li>

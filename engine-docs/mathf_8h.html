@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -204,7 +213,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="mathf_8h_source.html#l00433">433</a> of file <a class="el" href="mathf_8h_source.html">mathf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="audio_8c_source.html#l01304">bake_audio_probe_volume()</a>, <a class="el" href="render_8c_source.html#l02915">find_depth()</a>, <a class="el" href="audio_8c_source.html#l00907">generate_synthetic_IR_tail()</a>, <a class="el" href="render_8c_source.html#l01260">GPU_upload_singular_text_box()</a>, <a class="el" href="audio_8c_source.html#l01054">process_probe_chunk()</a>, <a class="el" href="ui_8c_source.html#l00611">process_ui_event()</a>, <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>, <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>, and <a class="el" href="utilities_8h_source.html#l00083">vec3_max()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00230">assign_uvs()</a>, <a class="el" href="audio_8c_source.html#l01660">bake_audio_probe_volume()</a>, <a class="el" href="render_8c_source.html#l02915">find_depth()</a>, <a class="el" href="audio_8c_source.html#l01265">generate_synthetic_IR_tail()</a>, <a class="el" href="render_8c_source.html#l01260">GPU_upload_singular_text_box()</a>, <a class="el" href="audio_8c_source.html#l01410">process_probe_chunk()</a>, <a class="el" href="ui_8c_source.html#l00611">process_ui_event()</a>, <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>, <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>, and <a class="el" href="utilities_8h_source.html#l00083">vec3_max()</a>.</p>
 
 </div>
 </div>
@@ -230,7 +239,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="mathf_8h_source.html#l00435">435</a> of file <a class="el" href="mathf_8h_source.html">mathf.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01009">bake_lightmap()</a>, <a class="el" href="camera_8c_source.html#l00454">calculate_stride_governor()</a>, <a class="el" href="physics_8c_source.html#l00092">clip_manifold()</a>, <a class="el" href="render_8c_source.html#l01260">GPU_upload_singular_text_box()</a>, <a class="el" href="load_8c_source.html#l00020">load_texture()</a>, <a class="el" href="audio_8c_source.html#l01054">process_probe_chunk()</a>, <a class="el" href="ui_8c_source.html#l00611">process_ui_event()</a>, <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>, and <a class="el" href="utilities_8h_source.html#l00075">vec3_min()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l01009">bake_lightmap()</a>, <a class="el" href="camera_8c_source.html#l00454">calculate_stride_governor()</a>, <a class="el" href="physics_8c_source.html#l00092">clip_manifold()</a>, <a class="el" href="render_8c_source.html#l01260">GPU_upload_singular_text_box()</a>, <a class="el" href="load_8c_source.html#l00020">load_texture()</a>, <a class="el" href="audio_8c_source.html#l01410">process_probe_chunk()</a>, <a class="el" href="ui_8c_source.html#l00611">process_ui_event()</a>, <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>, and <a class="el" href="utilities_8h_source.html#l00075">vec3_min()</a>.</p>
 
 </div>
 </div>
@@ -299,10 +308,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="mathf_8h_source.html#l00027">27</a> of file <a class="el" href="mathf_8h_source.html">mathf.h</a>.</p>
-
-<p class="reference">References <a class="el" href="mathf_8h_source.html#l00027">smoothstep()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mathf_8h_source.html#l00027">smoothstep()</a>.</p>
 
 </div>
 </div>
@@ -526,7 +531,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mathf_8h_source.html#l00108">108</a> of file <a class="el" href="mathf_8h_source.html">mathf.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mathf_8h_source.html#l00108">m9_inverse()</a>.</p>
+<p class="reference">References <a class="el" href="mathf_8h_source.html#l00108">m9_inverse()</a>, and <a class="el" href="elements__prefix_8comp_source.html#l00027">temp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mathf_8h_source.html#l00108">m9_inverse()</a>.</p>
 

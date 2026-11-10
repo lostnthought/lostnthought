@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,169 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('lightmap_8frag
 <div class="contents">
 
 <p><a href="lightmap_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1ae463f4af4c25f55133a7547f7c89eb" id="r_a1ae463f4af4c25f55133a7547f7c89eb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1ae463f4af4c25f55133a7547f7c89eb">layout</a> (location=0) out <a class="el" href="types_8h.html#structvec4">vec4</a> outWorldPosition</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae18169c1f4b5370bb68b96d77eb5945d" id="r_ae18169c1f4b5370bb68b96d77eb5945d"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae18169c1f4b5370bb68b96d77eb5945d">WorldPos</a></td></tr>
+<tr class="memitem:a06a5a0549debd5eb89121b929d8d1a35" id="r_a06a5a0549debd5eb89121b929d8d1a35"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a06a5a0549debd5eb89121b929d8d1a35">WorldNormal</a></td></tr>
+<tr class="memitem:a39fca2c8fe34ab0c307cdd0f7e7f53d6" id="r_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></td></tr>
+<tr class="memitem:ab82729570a1ca826f4f2b37a60c75067" id="r_ab82729570a1ca826f4f2b37a60c75067"><td class="memItemLeft">in flat int&#160;</td><td class="memItemRight"><a class="el" href="#ab82729570a1ca826f4f2b37a60c75067">MeshNode</a></td></tr>
+<tr class="memitem:a17422cb421744d707a5f40aa1984265b" id="r_a17422cb421744d707a5f40aa1984265b"><td class="memItemLeft">in flat int&#160;</td><td class="memItemRight"><a class="el" href="#a17422cb421744d707a5f40aa1984265b">MaterialID</a></td></tr>
+<tr class="memitem:ab5246b5884a14cad832e5226dd891ead" id="r_ab5246b5884a14cad832e5226dd891ead"><td class="memItemLeft">in flat int&#160;</td><td class="memItemRight"><a class="el" href="#ab5246b5884a14cad832e5226dd891ead">TriID</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a1ae463f4af4c25f55133a7547f7c89eb" name="a1ae463f4af4c25f55133a7547f7c89eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae463f4af4c25f55133a7547f7c89eb">&#9670;&#160;</a></span>layout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">location</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8frag_source.html#l00018">18</a> of file <a class="el" href="lightmap_8frag_source.html">lightmap.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="lightmap_8frag_source.html#l00015">MaterialID</a>, <a class="el" href="lightmap_8frag_source.html#l00016">TriID</a>, <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>, <a class="el" href="lightmap_8frag_source.html#l00009">WorldNormal</a>, <a class="el" href="lightmap_8frag_source.html#l00008">WorldPos</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="ae18169c1f4b5370bb68b96d77eb5945d" name="ae18169c1f4b5370bb68b96d77eb5945d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18169c1f4b5370bb68b96d77eb5945d">&#9670;&#160;</a></span>WorldPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> WorldPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8frag_source.html#l00008">8</a> of file <a class="el" href="lightmap_8frag_source.html">lightmap.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8frag_source.html#l00018">main()</a>.</p>
+
+</div>
+</div>
+<a id="a06a5a0549debd5eb89121b929d8d1a35" name="a06a5a0549debd5eb89121b929d8d1a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a5a0549debd5eb89121b929d8d1a35">&#9670;&#160;</a></span>WorldNormal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> WorldNormal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8frag_source.html#l00009">9</a> of file <a class="el" href="lightmap_8frag_source.html">lightmap.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8frag_source.html#l00018">main()</a>.</p>
+
+</div>
+</div>
+<a id="a39fca2c8fe34ab0c307cdd0f7e7f53d6" name="a39fca2c8fe34ab0c307cdd0f7e7f53d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8frag_source.html#l00013">13</a> of file <a class="el" href="lightmap_8frag_source.html">lightmap.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8frag_source.html#l00018">main()</a>, and <a class="el" href="postprocess_8frag_source.html#l00077">vignette()</a>.</p>
+
+</div>
+</div>
+<a id="ab82729570a1ca826f4f2b37a60c75067" name="ab82729570a1ca826f4f2b37a60c75067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab82729570a1ca826f4f2b37a60c75067">&#9670;&#160;</a></span>MeshNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in flat int MeshNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8frag_source.html#l00014">14</a> of file <a class="el" href="lightmap_8frag_source.html">lightmap.frag</a>.</p>
+
+</div>
+</div>
+<a id="a17422cb421744d707a5f40aa1984265b" name="a17422cb421744d707a5f40aa1984265b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17422cb421744d707a5f40aa1984265b">&#9670;&#160;</a></span>MaterialID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in flat int MaterialID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8frag_source.html#l00015">15</a> of file <a class="el" href="lightmap_8frag_source.html">lightmap.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8frag_source.html#l00018">main()</a>.</p>
+
+</div>
+</div>
+<a id="ab5246b5884a14cad832e5226dd891ead" name="ab5246b5884a14cad832e5226dd891ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5246b5884a14cad832e5226dd891ead">&#9670;&#160;</a></span>TriID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in flat int TriID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8frag_source.html#l00016">16</a> of file <a class="el" href="lightmap_8frag_source.html">lightmap.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8frag_source.html#l00018">main()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

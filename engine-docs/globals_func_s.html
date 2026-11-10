@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -126,6 +135,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_s
 
 <h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>sample_animation()&#160;:&#160;<a class="el" href="animation_8c.html#ab994e07940f84d1eee57961346bb8f03">animation.c</a>, <a class="el" href="animation_8h.html#ab994e07940f84d1eee57961346bb8f03">animation.h</a></li>
+<li>sample_weighted_rprobes()&#160;:&#160;<a class="el" href="dynamic_8frag.html#aa024b820e3473eb178168a363432f098">dynamic.frag</a></li>
 <li>save_aportals()&#160;:&#160;<a class="el" href="load_8c.html#a823d1b0473b6835dbfb5a3560cd53262">load.c</a>, <a class="el" href="load_8h.html#a823d1b0473b6835dbfb5a3560cd53262">load.h</a></li>
 <li>save_aprobes()&#160;:&#160;<a class="el" href="load_8c.html#aca041e97ff66ce6a3bd273555a7da98e">load.c</a>, <a class="el" href="load_8h.html#aca041e97ff66ce6a3bd273555a7da98e">load.h</a></li>
 <li>save_lightmap_to_binary()&#160;:&#160;<a class="el" href="lightmap_8c.html#af08be03d47d4982425d6708d79fe99f9">lightmap.c</a>, <a class="el" href="lightmap_8h.html#af08be03d47d4982425d6708d79fe99f9">lightmap.h</a></li>
@@ -137,11 +147,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_s
 <li>scene_load_volumes()&#160;:&#160;<a class="el" href="load_8c.html#a635b6d3f09c8eaea6fd7b6cca5272fc8">load.c</a>, <a class="el" href="load_8h.html#a635b6d3f09c8eaea6fd7b6cca5272fc8">load.h</a></li>
 <li>scene_save()&#160;:&#160;<a class="el" href="load_8c.html#a43d297e87c7f1d1c637b727e672cdd9d">load.c</a>, <a class="el" href="load_8h.html#a43d297e87c7f1d1c637b727e672cdd9d">load.h</a></li>
 <li>scene_save_volumes()&#160;:&#160;<a class="el" href="load_8c.html#a1b1be3f66d4fff09a7ae2f85d225e0fa">load.c</a>, <a class="el" href="load_8h.html#a1b1be3f66d4fff09a7ae2f85d225e0fa">load.h</a></li>
+<li>screen_to_view_space()&#160;:&#160;<a class="el" href="init__cluster__aabbs_8comp.html#a7a9a03bbf2d90eec10cad401edbc4c54">init_cluster_aabbs.comp</a></li>
 <li>screenspace_to_ui()&#160;:&#160;<a class="el" href="group__ui__group.html#ga2427144a9c3308b28d927dd8d2f25215">ui.h</a></li>
 <li>screenspace_to_ui_element_local()&#160;:&#160;<a class="el" href="ui_8c.html#a89596e68c407ec9b00e23f7b1d08c2f6">ui.c</a></li>
 <li>scroll_container()&#160;:&#160;<a class="el" href="ui_8c.html#aab48689aebbf5da509625142c60c7355">ui.c</a></li>
-<li>SDF_circle()&#160;:&#160;<a class="el" href="utilities_8h.html#a754d5cf18c678b17b574377dae92e2e6">utilities.h</a></li>
-<li>SDF_rect()&#160;:&#160;<a class="el" href="utilities_8h.html#a4ac8afb3010a3fcba2417d3310be041b">utilities.h</a></li>
+<li>SDF_circle()&#160;:&#160;<a class="el" href="text_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">text.frag</a>, <a class="el" href="ui_8frag.html#ab03f86b056de905e02723eb2c98eb5f4">ui.frag</a>, <a class="el" href="utilities_8h.html#a754d5cf18c678b17b574377dae92e2e6">utilities.h</a></li>
+<li>SDF_rect()&#160;:&#160;<a class="el" href="text_8frag.html#a32c7959182a3e52b00551901a9504825">text.frag</a>, <a class="el" href="ui_8frag.html#a32c7959182a3e52b00551901a9504825">ui.frag</a>, <a class="el" href="utilities_8h.html#a4ac8afb3010a3fcba2417d3310be041b">utilities.h</a></li>
 <li>SDLAudioCallback()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga88c62d0a6ccb47dd48c2049e87c690d8">audio.c</a>, <a class="el" href="group__aprobe__group.html#ga88c62d0a6ccb47dd48c2049e87c690d8">audio.h</a></li>
 <li>search_collisions_from_hull()&#160;:&#160;<a class="el" href="group__physics__group.html#gae1860b61b03c93b0bf5f8d000397f0a5">physics.c</a></li>
 <li>search_collisions_from_pc()&#160;:&#160;<a class="el" href="group__physics__group.html#ga413c84236fb56efd8b6bfdd12ed2cd65">physics.c</a></li>
@@ -149,9 +160,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_s
 <li>set_mn_components_to_children()&#160;:&#160;<a class="el" href="init_8c.html#a6727130ecad8f3df851558d971ee2a40">init.c</a></li>
 <li>setup_initial_hull_points()&#160;:&#160;<a class="el" href="mesh_8c.html#a96507f5c0da565087ca318e5da7a38ed">mesh.c</a></li>
 <li>SHADERS_INIT()&#160;:&#160;<a class="el" href="shaders_8c.html#a6379c354cc1b7464697bf1441f9f3541">shaders.c</a>, <a class="el" href="shaders_8h.html#a6379c354cc1b7464697bf1441f9f3541">shaders.h</a></li>
+<li>shadow_calculation()&#160;:&#160;<a class="el" href="dynamic_8frag.html#ad91199e82ab7ab66b647b6075573482d">dynamic.frag</a></li>
 <li>SKIN_INIT()&#160;:&#160;<a class="el" href="init_8c.html#a2ce13ccb82ddb3a5655e849e3406caab">init.c</a></li>
+<li>slab_test()&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a64ba83c44e55606d8104dbcc8d42755e">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#a622f6fcbc1fdd459165a945bca1373a1">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a64ba83c44e55606d8104dbcc8d42755e">probe_bake.comp</a></li>
 <li>smoothstep()&#160;:&#160;<a class="el" href="mathf_8h.html#af6cd1ccb7a7e74c778dd6824bb1a0351">mathf.h</a></li>
+<li>solve_light_source()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#adf39a3c81e33c8acf16c22c67a702cf9">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#abd397537d9aa36b9fbdba7c329af8871">probe_bake.comp</a></li>
 <li>solve_Q()&#160;:&#160;<a class="el" href="camera_8c.html#ab6dd905223afde3464ce480a13072a2e">camera.c</a></li>
+<li>solve_SH()&#160;:&#160;<a class="el" href="probe__bake_8comp.html#a0e80e4ed04d48e5deb57f560f81d2807">probe_bake.comp</a></li>
 <li>spherical_to_cartesian()&#160;:&#160;<a class="el" href="utilities_8c.html#adab4064a530d38359af8a99f73ca6466">utilities.c</a></li>
 <li>start_timer()&#160;:&#160;<a class="el" href="engine__utilities_8h.html#a0dc9b18849faf4cdeef2983fe507b9e9">engine_utilities.h</a></li>
 <li>STATES_INIT()&#160;:&#160;<a class="el" href="entity_8c.html#ac301288b8bbd4156e4b29e02f35af7bb">entity.c</a>, <a class="el" href="entity_8h.html#ac301288b8bbd4156e4b29e02f35af7bb">entity.h</a></li>

@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -140,25 +149,21 @@ Files</h2></td></tr>
 <tr class="memitem:depth_5Fpre_5Fpass_2Evert" id="r_depth_5Fpre_5Fpass_2Evert"><td class="memItemLeft"><a href="depth__pre__pass_8vert_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="depth__pre__pass_8vert.html">depth_pre_pass.vert</a></td></tr>
 <tr class="memitem:depth_5Fpre_5Fpass_5Fno_5Fgbuffer_2Efrag" id="r_depth_5Fpre_5Fpass_5Fno_5Fgbuffer_2Efrag"><td class="memItemLeft"><a href="depth__pre__pass__no__gbuffer_8frag_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="depth__pre__pass__no__gbuffer_8frag.html">depth_pre_pass_no_gbuffer.frag</a></td></tr>
 <tr class="memitem:depth_5Fpre_5Fpass_5Fno_5Fgbuffer_2Evert" id="r_depth_5Fpre_5Fpass_5Fno_5Fgbuffer_2Evert"><td class="memItemLeft"><a href="depth__pre__pass__no__gbuffer_8vert_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="depth__pre__pass__no__gbuffer_8vert.html">depth_pre_pass_no_gbuffer.vert</a></td></tr>
-<tr class="memitem:directional_5Fmap_5Fnormalize_2Ecomp" id="r_directional_5Fmap_5Fnormalize_2Ecomp"><td class="memItemLeft"><a href="render_2directional__map__normalize_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_2directional__map__normalize_8comp.html">directional_map_normalize.comp</a></td></tr>
 <tr class="memitem:dynamic_2Efrag" id="r_dynamic_2Efrag"><td class="memItemLeft"><a href="dynamic_8frag_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="dynamic_8frag.html">dynamic.frag</a></td></tr>
+<tr class="memdesc:dynamic_8frag"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main forward fragment shader. <br /></td></tr>
 <tr class="memitem:dynamic_2Evert" id="r_dynamic_2Evert"><td class="memItemLeft"><a href="dynamic_8vert_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="dynamic_8vert.html">dynamic.vert</a></td></tr>
+<tr class="memdesc:dynamic_8vert"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main forward vertex shader. <br /></td></tr>
 <tr class="memitem:elements_5Fprefix_2Ecomp" id="r_elements_5Fprefix_2Ecomp"><td class="memItemLeft"><a href="elements__prefix_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="elements__prefix_8comp.html">elements_prefix.comp</a></td></tr>
 <tr class="memitem:focal_5Fdistance_2Ecomp" id="r_focal_5Fdistance_2Ecomp"><td class="memItemLeft"><a href="focal__distance_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="focal__distance_8comp.html">focal_distance.comp</a></td></tr>
 <tr class="memitem:fullscreen_2Efrag" id="r_fullscreen_2Efrag"><td class="memItemLeft"><a href="fullscreen_8frag_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="fullscreen_8frag.html">fullscreen.frag</a></td></tr>
 <tr class="memitem:fullscreen_2Evert" id="r_fullscreen_2Evert"><td class="memItemLeft"><a href="fullscreen_8vert_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="fullscreen_8vert.html">fullscreen.vert</a></td></tr>
 <tr class="memitem:indirect_5Fprefix_2Ecomp" id="r_indirect_5Fprefix_2Ecomp"><td class="memItemLeft"><a href="indirect__prefix_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="indirect__prefix_8comp.html">indirect_prefix.comp</a></td></tr>
 <tr class="memitem:init_5Fcluster_5Faabbs_2Ecomp" id="r_init_5Fcluster_5Faabbs_2Ecomp"><td class="memItemLeft"><a href="init__cluster__aabbs_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="init__cluster__aabbs_8comp.html">init_cluster_aabbs.comp</a></td></tr>
-<tr class="memitem:lightmap_5Fbounce_2Ecomp" id="r_lightmap_5Fbounce_2Ecomp"><td class="memItemLeft"><a href="render_2lightmap__bounce_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_2lightmap__bounce_8comp.html">lightmap_bounce.comp</a></td></tr>
-<tr class="memitem:lightmap_5Fdenoise_2Ecomp" id="r_lightmap_5Fdenoise_2Ecomp"><td class="memItemLeft"><a href="render_2lightmap__denoise_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_2lightmap__denoise_8comp.html">lightmap_denoise.comp</a></td></tr>
-<tr class="memitem:lightmap_5Fdilate_2Ecomp" id="r_lightmap_5Fdilate_2Ecomp"><td class="memItemLeft"><a href="render_2lightmap__dilate_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_2lightmap__dilate_8comp.html">lightmap_dilate.comp</a></td></tr>
 <tr class="memitem:point_5Flight_5Fshadows_2Efrag" id="r_point_5Flight_5Fshadows_2Efrag"><td class="memItemLeft"><a href="point__light__shadows_8frag_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="point__light__shadows_8frag.html">point_light_shadows.frag</a></td></tr>
 <tr class="memitem:point_5Flight_5Fshadows_2Egeom" id="r_point_5Flight_5Fshadows_2Egeom"><td class="memItemLeft"><a href="point__light__shadows_8geom_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="point__light__shadows_8geom.html">point_light_shadows.geom</a></td></tr>
 <tr class="memitem:point_5Flight_5Fshadows_2Evert" id="r_point_5Flight_5Fshadows_2Evert"><td class="memItemLeft"><a href="point__light__shadows_8vert_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="point__light__shadows_8vert.html">point_light_shadows.vert</a></td></tr>
 <tr class="memitem:postprocess_2Efrag" id="r_postprocess_2Efrag"><td class="memItemLeft"><a href="postprocess_8frag_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="postprocess_8frag.html">postprocess.frag</a></td></tr>
 <tr class="memitem:postprocess_2Evert" id="r_postprocess_2Evert"><td class="memItemLeft"><a href="postprocess_8vert_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="postprocess_8vert.html">postprocess.vert</a></td></tr>
-<tr class="memitem:probe_5Fbake_2Ecomp" id="r_probe_5Fbake_2Ecomp"><td class="memItemLeft"><a href="render_2probe__bake_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_2probe__bake_8comp.html">probe_bake.comp</a></td></tr>
-<tr class="memitem:probe_5Funpack_2Ecomp" id="r_probe_5Funpack_2Ecomp"><td class="memItemLeft"><a href="render_2probe__unpack_8comp_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_2probe__unpack_8comp.html">probe_unpack.comp</a></td></tr>
 <tr class="memitem:render_2Ec" id="r_render_2Ec"><td class="memItemLeft"><a href="render_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_8c.html">render.c</a></td></tr>
 <tr class="memitem:render_2Eh" id="r_render_2Eh"><td class="memItemLeft"><a href="render_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="render_8h.html">render.h</a></td></tr>
 <tr class="memdesc:render_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main render pass, data GPU uploads, and SSBO management. <br /></td></tr>

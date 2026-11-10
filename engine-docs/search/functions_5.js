@@ -40,5 +40,7 @@ var searchData=
   ['free_5fmesh_5fnode_37',['free_mesh_node',['../load_8c.html#a19218781c616f0084b9acd6dbb634781',1,'load.c']]],
   ['free_5fskin_38',['free_skin',['../load_8c.html#a4ad3a400d72a48575b673b89cacbef49',1,'load.c']]],
   ['free_5fvector_39',['free_vector',['../utilities_8c.html#a6505b2fc5c436a8a63c859b0cc07997f',1,'utilities.c']]],
-  ['frisvad_5fbasis_40',['frisvad_basis',['../utilities_8h.html#a71525d1e21b958de061e700f5746e1f4',1,'utilities.h']]]
+  ['fresnel_5fschlick_40',['fresnel_schlick',['../dynamic_8frag.html#a1bdde41461278f1cd5708f55a1d1c3d2',1,'dynamic.frag']]],
+  ['fresnel_5fschlick_5froughness_41',['fresnel_schlick_roughness',['../dynamic_8frag.html#a4ad8f51a3b5ffde15f127285ac499f77',1,'dynamic.frag']]],
+  ['frisvad_5fbasis_42',['frisvad_basis',['../audio__probe__bake_8comp.html#aa90be9e7aba1059252da1ac423c6c795',1,'frisvad_basis(in vec3 n, out vec3 b1, out vec3 b2):&#160;audio_probe_bake.comp'],['../lightmap__bounce_8comp.html#aa90be9e7aba1059252da1ac423c6c795',1,'frisvad_basis(in vec3 n, out vec3 b1, out vec3 b2):&#160;lightmap_bounce.comp'],['../probe__bake_8comp.html#aa90be9e7aba1059252da1ac423c6c795',1,'frisvad_basis(in vec3 n, out vec3 b1, out vec3 b2):&#160;probe_bake.comp'],['../utilities_8h.html#a71525d1e21b958de061e700f5746e1f4',1,'frisvad_basis(const vec3 n, vec3 *b1, vec3 *b2):&#160;utilities.h']]]
 ];

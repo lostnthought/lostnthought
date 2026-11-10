@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -163,6 +172,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_v
 <li>vector_alloc()&#160;:&#160;<a class="el" href="utilities_8c.html#a4188735054e47dce943dfa572bcc3dbe">utilities.c</a></li>
 <li>vector_expand()&#160;:&#160;<a class="el" href="utilities_8c.html#aed46a5c438d6d92fe586f23f6833442d">utilities.c</a>, <a class="el" href="utilities_8h.html#aed46a5c438d6d92fe586f23f6833442d">utilities.h</a></li>
 <li>vector_push()&#160;:&#160;<a class="el" href="utilities_8c.html#af924689ebaa76d8dbfd980475a817a08">utilities.c</a>, <a class="el" href="utilities_8h.html#af924689ebaa76d8dbfd980475a817a08">utilities.h</a></li>
+<li>vignette()&#160;:&#160;<a class="el" href="postprocess_8frag.html#a4e5dbe4c14e826d3bab404a35e95cd0d">postprocess.frag</a></li>
+<li>visibility()&#160;:&#160;<a class="el" href="dynamic_8frag.html#abb4e90638594bc278f59465b23df4128">dynamic.frag</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,111 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('sky_8frag.html
 <div class="contents">
 
 <p><a href="sky_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6d8dd0540ed9af35f34cd31b838cacce" id="r_a6d8dd0540ed9af35f34cd31b838cacce"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+<tr class="memitem:a981b826ec5ddd6ef38ae934e30dfceff" id="r_a981b826ec5ddd6ef38ae934e30dfceff"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a981b826ec5ddd6ef38ae934e30dfceff">vPos</a></td></tr>
+<tr class="memitem:acd13515f083396c7ce08f8d41582ec55" id="r_acd13515f083396c7ce08f8d41582ec55"><td class="memItemLeft">uniform samplerCube&#160;</td><td class="memItemRight"><a class="el" href="#acd13515f083396c7ce08f8d41582ec55">uCubemap</a></td></tr>
+<tr class="memitem:aab938108caad0d0e47d6885b5ba2d23a" id="r_aab938108caad0d0e47d6885b5ba2d23a"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#aab938108caad0d0e47d6885b5ba2d23a">size</a> = 128</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sky_8frag_source.html#l00010">10</a> of file <a class="el" href="sky_8frag_source.html">sky.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="wireframe_8frag_source.html#l00006">color</a>, <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="sky_8frag_source.html#l00008">uCubemap</a>, and <a class="el" href="sky_8frag_source.html#l00007">vPos</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a6d8dd0540ed9af35f34cd31b838cacce" name="a6d8dd0540ed9af35f34cd31b838cacce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8dd0540ed9af35f34cd31b838cacce">&#9670;&#160;</a></span>fragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec4">vec4</a> fragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sky_8frag_source.html#l00003">3</a> of file <a class="el" href="sky_8frag_source.html">sky.frag</a>.</p>
+
+</div>
+</div>
+<a id="a981b826ec5ddd6ef38ae934e30dfceff" name="a981b826ec5ddd6ef38ae934e30dfceff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a981b826ec5ddd6ef38ae934e30dfceff">&#9670;&#160;</a></span>vPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> vPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sky_8frag_source.html#l00007">7</a> of file <a class="el" href="sky_8frag_source.html">sky.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sky_8frag_source.html#l00010">main()</a>.</p>
+
+</div>
+</div>
+<a id="acd13515f083396c7ce08f8d41582ec55" name="acd13515f083396c7ce08f8d41582ec55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd13515f083396c7ce08f8d41582ec55">&#9670;&#160;</a></span>uCubemap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform samplerCube uCubemap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sky_8frag_source.html#l00008">8</a> of file <a class="el" href="sky_8frag_source.html">sky.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sky_8frag_source.html#l00010">main()</a>.</p>
+
+</div>
+</div>
+<a id="aab938108caad0d0e47d6885b5ba2d23a" name="aab938108caad0d0e47d6885b5ba2d23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab938108caad0d0e47d6885b5ba2d23a">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int size = 128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sky_8frag_source.html#l00009">9</a> of file <a class="el" href="sky_8frag_source.html">sky.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00696">execute_lprobe_undo()</a>, <a class="el" href="shaders_8c_source.html#l00010">read_file()</a>, <a class="el" href="editor_8c_source.html#l04681">render_lprobe_menu()</a>, <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>, <a class="el" href="text_8frag_source.html#l00035">SDF_rect()</a>, and <a class="el" href="utilities_8h_source.html#l00068">SDF_rect()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

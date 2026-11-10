@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -293,7 +302,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>, <a class="el" href="utilities_8c_source.html#l00012">vector_alloc()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00217">a_star_aportal()</a>, <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="utilities_8c_source.html#l00932">clip_tri_against_plane()</a>, <a class="el" href="mesh_8c_source.html#l00924">compute_mesh_hulls()</a>, <a class="el" href="ui_8h_source.html#l00875">create_menu()</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="init_8c_source.html#l00183">find_free_in_vector()</a>, <a class="el" href="init_8c_source.html#l00153">find_free_mn()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00794">init_default_textures()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>, <a class="el" href="audio_8c_source.html#l00378">init_new_audio_portal()</a>, <a class="el" href="init_8c_source.html#l00041">init_new_material()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="init_8c_source.html#l01159">init_vertex_layouts()</a>, <a class="el" href="editor_8c_source.html#l01929">load_filenames()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="utilities_8c_source.html#l01078">perform_clip()</a>, <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>, <a class="el" href="audio_8c_source.html#l00054">recalculate_audio_portal_paths()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04681">render_lprobe_menu()</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00854">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00575">a_star_aportal()</a>, <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="load_8c_source.html#l00292">add_image_to_registry()</a>, <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="render_8c_source.html#l01154">add_text_box()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="mesh_8c_source.html#l00311">check_face_visibility()</a>, <a class="el" href="mesh_8c_source.html#l00332">check_horizon_edges()</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="utilities_8c_source.html#l00932">clip_tri_against_plane()</a>, <a class="el" href="mesh_8c_source.html#l00924">compute_mesh_hulls()</a>, <a class="el" href="ui_8h_source.html#l00875">create_menu()</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="init_8c_source.html#l00183">find_free_in_vector()</a>, <a class="el" href="init_8c_source.html#l00153">find_free_mn()</a>, <a class="el" href="init_8c_source.html#l00589">GPU_unwrap_mesh_to_buffers()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00794">init_default_textures()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>, <a class="el" href="audio_8c_source.html#l00736">init_new_audio_portal()</a>, <a class="el" href="init_8c_source.html#l00041">init_new_material()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="init_8c_source.html#l01159">init_vertex_layouts()</a>, <a class="el" href="editor_8c_source.html#l01929">load_filenames()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="utilities_8c_source.html#l01078">perform_clip()</a>, <a class="el" href="fonts_8c_source.html#l00033">read_json_msdf()</a>, <a class="el" href="audio_8c_source.html#l00417">recalculate_audio_portal_paths()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, <a class="el" href="editor_8c_source.html#l04681">render_lprobe_menu()</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00854">subdivide_mesh_tri_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>, and <a class="el" href="lightmap_8c_source.html#l00037">walk_coplanar_adjacency()</a>.</p>
 
 </div>
 </div>
@@ -325,7 +334,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, and <a class="el" href="types_8h_source.html#l00209">Vector::type_size</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00217">a_star_aportal()</a>, <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="utilities_8c_source.html#l01122">clip_triangle()</a>, <a class="el" href="mesh_8c_source.html#l00924">compute_mesh_hulls()</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="editor_8c_source.html#l01858">FILE_DIR_REGISTRY_INIT()</a>, <a class="el" href="fonts_8h_source.html#l00021">FONTS_INIT()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>, <a class="el" href="audio_8c_source.html#l00378">init_new_audio_portal()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="init_8c_source.html#l01159">init_vertex_layouts()</a>, <a class="el" href="load_8c_source.html#l02634">load_aportals()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>, <a class="el" href="load_8c_source.html#l00348">load_ui()</a>, <a class="el" href="init_8c_source.html#l00122">MN_INIT()</a>, <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="audio_8c_source.html#l00054">recalculate_audio_portal_paths()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="init_8c_source.html#l00138">SKIN_INIT()</a>, and <a class="el" href="ui_8h_source.html#l00864">UI_INIT()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00575">a_star_aportal()</a>, <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="render_8c_source.html#l01220">add_all_text_boxes_to_draw_buffer()</a>, <a class="el" href="mesh_8c_source.html#l00058">build_adjacency_map()</a>, <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="lightmap_8c_source.html#l00400">build_uv_islands()</a>, <a class="el" href="mesh_8c_source.html#l00259">clean_up_hull()</a>, <a class="el" href="utilities_8c_source.html#l01122">clip_triangle()</a>, <a class="el" href="mesh_8c_source.html#l00924">compute_mesh_hulls()</a>, <a class="el" href="mesh_8c_source.html#l00210">deduplicate()</a>, <a class="el" href="editor_8c_source.html#l01858">FILE_DIR_REGISTRY_INIT()</a>, <a class="el" href="fonts_8h_source.html#l00021">FONTS_INIT()</a>, <a class="el" href="init_8c_source.html#l00661">GPU_upload_scene_data()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="lightmap_8c_source.html#l00093">init_lightmap_data()</a>, <a class="el" href="init_8c_source.html#l00068">init_mesh()</a>, <a class="el" href="acceleration_8c_source.html#l01157">init_mesh_tri_bvh()</a>, <a class="el" href="audio_8c_source.html#l00736">init_new_audio_portal()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="init_8c_source.html#l01159">init_vertex_layouts()</a>, <a class="el" href="load_8c_source.html#l02634">load_aportals()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="lightmap_8c_source.html#l00610">load_lightmap_from_binary()</a>, <a class="el" href="load_8c_source.html#l00348">load_ui()</a>, <a class="el" href="init_8c_source.html#l00122">MN_INIT()</a>, <a class="el" href="load_8c_source.html#l01224">read_alloc_vector()</a>, <a class="el" href="load_8c_source.html#l01200">read_vector()</a>, <a class="el" href="audio_8c_source.html#l00417">recalculate_audio_portal_paths()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="mesh_8c_source.html#l00563">setup_initial_hull_points()</a>, <a class="el" href="init_8c_source.html#l00138">SKIN_INIT()</a>, and <a class="el" href="ui_8h_source.html#l00864">UI_INIT()</a>.</p>
 
 </div>
 </div>
@@ -576,9 +585,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00246">246</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00246">test_sphere_aabb()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="utilities_8c_source.html#l00246">test_sphere_aabb()</a>, and <a class="el" href="physics_8c_source.html#l01605">update_physics_components()</a>.</p>
+<p class="reference">References <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>.</p>
 
 </div>
 </div>
@@ -608,7 +615,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00258">258</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="utilities_8c_source.html#l00258">init_aabb()</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00119">AABB::extents</a>, <a class="el" href="utilities_8c_source.html#l00258">init_aabb()</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="utilities_8c_source.html#l00258">init_aabb()</a>.</p>
 
@@ -658,7 +665,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00298">298</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00119">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00298">calculate_aabb_extents()</a>, <a class="el" href="utilities_8c_source.html#l00768">compute_aabb_from_points()</a>, <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="acceleration_8c_source.html#l01204">subdivide_light_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00854">subdivide_mesh_tri_bvh()</a>, and <a class="el" href="acceleration_8c_source.html#l00480">subdivide_scene_bvh()</a>.</p>
 
@@ -681,7 +688,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00305">305</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00305">calculate_aabb_bounds()</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8c_source.html#l00305">calculate_aabb_bounds()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00119">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01526">build_light_bvh()</a>, <a class="el" href="utilities_8c_source.html#l00305">calculate_aabb_bounds()</a>, <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, <a class="el" href="init_8c_source.html#l00485">init_player()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="editor_8c_source.html#l02600">render_aabb_widget()</a>, <a class="el" href="editor_8c_source.html#l05925">render_light_menu()</a>, and <a class="el" href="utilities_8c_source.html#l00466">transform_aabb_by_position()</a>.</p>
 
@@ -812,9 +819,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00341">341</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00341">ray_intersects_triangle()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, <a class="el" href="utilities_8c_source.html#l00341">ray_intersects_triangle()</a>, and <a class="el" href="acceleration_8c_source.html#l00215">ray_traverse_mesh_bvh()</a>.</p>
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00289">ray_intersects_triangle()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 </div>
 </div>
@@ -916,9 +921,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00409">409</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00409">compute_3d_barycentric()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="utilities_8c_source.html#l00409">compute_3d_barycentric()</a>, <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00242">epa()</a>.</p>
+<p class="reference">References <a class="el" href="lightmap__bounce_8comp_source.html#l00644">compute_3d_barycentric()</a>.</p>
 
 </div>
 </div>
@@ -943,7 +946,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00429">429</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00429">generate_bounce()</a>, and <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8c_source.html#l00429">generate_bounce()</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, and <a class="el" href="utilities_8c_source.html#l00429">generate_bounce()</a>.</p>
 
@@ -970,9 +973,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00449">449</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00449">generate_sphere_dir()</a>, and <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, and <a class="el" href="utilities_8c_source.html#l00449">generate_sphere_dir()</a>.</p>
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00258">generate_sphere_dir()</a>, and <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>.</p>
 
 </div>
 </div>
@@ -997,7 +998,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00466">466</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00305">calculate_aabb_bounds()</a>, <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, and <a class="el" href="utilities_8c_source.html#l00466">transform_aabb_by_position()</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8c_source.html#l00305">calculate_aabb_bounds()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, and <a class="el" href="utilities_8c_source.html#l00466">transform_aabb_by_position()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>, and <a class="el" href="utilities_8c_source.html#l00466">transform_aabb_by_position()</a>.</p>
 
@@ -1024,9 +1025,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00474">474</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, <a class="el" href="render_8c_source.html#l01008">determine_mesh_visibility()</a>, <a class="el" href="acceleration_8c_source.html#l00768">init_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l00631">PC_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="render_8c_source.html#l02931">render_tree()</a>, <a class="el" href="physics_8c_source.html#l00902">search_collisions_from_hull()</a>, <a class="el" href="physics_8c_source.html#l00886">search_collisions_from_pc()</a>, <a class="el" href="utilities_8c_source.html#l00474">transform_aabb_by_model_matrix()</a>, and <a class="el" href="physics_8c_source.html#l01605">update_physics_components()</a>.</p>
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00119">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1050,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l00499">499</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00041">AABB::center</a>, <a class="el" href="types_8h_source.html#l00042">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="utilities_8c_source.html#l00499">transform_aabb_by_model_matrix_rotation()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00119">AABB::extents</a>, <a class="el" href="types_8h_source.html#l00037">AABB::max_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::max_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="types_8h_source.html#l00037">AABB::min_x</a>, <a class="el" href="types_8h_source.html#l00038">AABB::min_y</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="utilities_8c_source.html#l00499">transform_aabb_by_model_matrix_rotation()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, and <a class="el" href="utilities_8c_source.html#l00499">transform_aabb_by_model_matrix_rotation()</a>.</p>
 
@@ -1719,7 +1718,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l01078">1078</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8c_source.html#l00794">clip_against_plane()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="utilities_8c_source.html#l01078">perform_clip()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8c_source.html#l00794">clip_against_plane()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="utilities_8c_source.html#l01078">perform_clip()</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00089">planes</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="utilities_8c_source.html#l01122">clip_triangle()</a>, and <a class="el" href="utilities_8c_source.html#l01078">perform_clip()</a>.</p>
 
@@ -1776,7 +1775,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="utilities_8c_source.html#l01122">1122</a> of file <a class="el" href="utilities_8c_source.html">utilities.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="utilities_8c_source.html#l01122">clip_triangle()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, and <a class="el" href="utilities_8c_source.html#l01078">perform_clip()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="types_8h_source.html#l00209">Vector::capacity</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="utilities_8c_source.html#l01122">clip_triangle()</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="utilities_8c_source.html#l01078">perform_clip()</a>, and <a class="el" href="cull__draw__calls_8comp_source.html#l00089">planes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="utilities_8c_source.html#l01122">clip_triangle()</a>.</p>
 

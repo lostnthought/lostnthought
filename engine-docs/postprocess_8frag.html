@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,903 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('postprocess_8f
 <div class="contents">
 
 <p><a href="postprocess_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:MeshNode_5Fstruct_5Fmesh_5Fnode" id="r_MeshNode_5Fstruct_5Fmesh_5Fnode"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a></td></tr>
+<tr class="memdesc:struct_mesh_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s that describe the position of <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es, GLTF nodes for <a class="el" href="engine__types_8h.html#struct_g_l_t_f_animation" title="The GLTF structure of an Animation.">GLTFAnimation</a>s, or hold references to other <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <a href="group__shader__structs__group.html#struct_mesh_node">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:adc37d28f8277783604a65482c40e0200" id="r_adc37d28f8277783604a65482c40e0200"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adc37d28f8277783604a65482c40e0200">MAX_MESH_NODES</a>&#160;&#160;&#160;1024</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a251ff7187aa6805e7027554c86b34307" id="r_a251ff7187aa6805e7027554c86b34307"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a251ff7187aa6805e7027554c86b34307">layout</a> (std140, binding=0) uniform CameraData</td></tr>
+<tr class="memitem:ae58f56339150a5e532e1cd37454713fa" id="r_ae58f56339150a5e532e1cd37454713fa"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae58f56339150a5e532e1cd37454713fa">applyLUT</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> color)</td></tr>
+<tr class="memitem:ab101bb362b047c51d4c75783b6f3e2fa" id="r_ab101bb362b047c51d4c75783b6f3e2fa"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab101bb362b047c51d4c75783b6f3e2fa">calculateExposure</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> avgColor)</td></tr>
+<tr class="memitem:ad9ba5b963e8db5c13b200d7183bafaeb" id="r_ad9ba5b963e8db5c13b200d7183bafaeb"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad9ba5b963e8db5c13b200d7183bafaeb">ACESFilm</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> x)</td></tr>
+<tr class="memitem:a4e5dbe4c14e826d3bab404a35e95cd0d" id="r_a4e5dbe4c14e826d3bab404a35e95cd0d"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4e5dbe4c14e826d3bab404a35e95cd0d">vignette</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> color, float u, float v)</td></tr>
+<tr class="memitem:aab16ab379fd3e96ac760bbe55968c114" id="r_aab16ab379fd3e96ac760bbe55968c114"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aab16ab379fd3e96ac760bbe55968c114">linear_to_acescct</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> linearRGB)</td></tr>
+<tr class="memitem:a3376ee9b106519ca607a80114c8da5a6" id="r_a3376ee9b106519ca607a80114c8da5a6"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3376ee9b106519ca607a80114c8da5a6">acescct_to_linear</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> graded)</td></tr>
+<tr class="memitem:a5569891c923e9245baf934c12b6f18b6" id="r_a5569891c923e9245baf934c12b6f18b6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5569891c923e9245baf934c12b6f18b6">linear_to_acescct_channel</a> (float x)</td></tr>
+<tr class="memitem:ad6a5254ac33b9d211a050a8f02958da9" id="r_ad6a5254ac33b9d211a050a8f02958da9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad6a5254ac33b9d211a050a8f02958da9">acescct_to_linear_channel</a> (float x)</td></tr>
+<tr class="memitem:a64cc87ffeefaa9d6a3525f88ae7e50f7" id="r_a64cc87ffeefaa9d6a3525f88ae7e50f7"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a64cc87ffeefaa9d6a3525f88ae7e50f7">processLUT</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> color)</td></tr>
+<tr class="memitem:a5d44c5035762137cf3fe25b8baad04a5" id="r_a5d44c5035762137cf3fe25b8baad04a5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5d44c5035762137cf3fe25b8baad04a5">layout</a> (std430, binding=15) buffer MeshNodeData</td></tr>
+<tr class="memitem:a7c96623b88d2b1e72ab5b83680801684" id="r_a7c96623b88d2b1e72ab5b83680801684"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7c96623b88d2b1e72ab5b83680801684">get_view_pos_from_depth</a> (<a class="el" href="types_8h.html#structvec2">vec2</a> uv, float depth, <a class="el" href="types_8h.html#structmat4">mat4</a> invProjMatrix)</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a39fca2c8fe34ab0c307cdd0f7e7f53d6" id="r_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></td></tr>
+<tr class="memitem:a158d8798faed156b59adf6d29d4ee947" id="r_a158d8798faed156b59adf6d29d4ee947"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a158d8798faed156b59adf6d29d4ee947">uScene</a></td></tr>
+<tr class="memitem:a191955ad74c69e81f7ede69eeb6b76c5" id="r_a191955ad74c69e81f7ede69eeb6b76c5"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a191955ad74c69e81f7ede69eeb6b76c5">uHistory</a></td></tr>
+<tr class="memitem:a256640423d7a3364ce432b1b5c92a1f6" id="r_a256640423d7a3364ce432b1b5c92a1f6"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a256640423d7a3364ce432b1b5c92a1f6">uFBM</a></td></tr>
+<tr class="memitem:a8db02fb2cfd4e53a6702f98dc360a50d" id="r_a8db02fb2cfd4e53a6702f98dc360a50d"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a8db02fb2cfd4e53a6702f98dc360a50d">uDPP</a></td></tr>
+<tr class="memitem:af273de65c6949f88b2ee7dfbc27d078b" id="r_af273de65c6949f88b2ee7dfbc27d078b"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#af273de65c6949f88b2ee7dfbc27d078b">uText</a></td></tr>
+<tr class="memitem:afc75720fa63a8f73470d04566e35ef49" id="r_afc75720fa63a8f73470d04566e35ef49"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#afc75720fa63a8f73470d04566e35ef49">uSSR</a></td></tr>
+<tr class="memitem:a4ad4c3842c14a515b591508b188b4b43" id="r_a4ad4c3842c14a515b591508b188b4b43"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a4ad4c3842c14a515b591508b188b4b43">uCurrentSSR</a></td></tr>
+<tr class="memitem:a3a525c12daff7b300c8e2223390045ba" id="r_a3a525c12daff7b300c8e2223390045ba"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a3a525c12daff7b300c8e2223390045ba">gVel</a></td></tr>
+<tr class="memitem:a39b7f2cc0fbc040feb92c73c6d860494" id="r_a39b7f2cc0fbc040feb92c73c6d860494"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a39b7f2cc0fbc040feb92c73c6d860494">uBokeh</a></td></tr>
+<tr class="memitem:a6f6fa00d8e99340327be0e1f506104bc" id="r_a6f6fa00d8e99340327be0e1f506104bc"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a></td></tr>
+<tr class="memitem:a1eba03d357199c0f1ce922195aa4e543" id="r_a1eba03d357199c0f1ce922195aa4e543"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a1eba03d357199c0f1ce922195aa4e543">uBloom</a></td></tr>
+<tr class="memitem:a49f808fe342b8b5bb9e74d38ee841eba" id="r_a49f808fe342b8b5bb9e74d38ee841eba"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a49f808fe342b8b5bb9e74d38ee841eba">uLM</a></td></tr>
+<tr class="memitem:a99124d33c032840081c18b7b582dfd3b" id="r_a99124d33c032840081c18b7b582dfd3b"><td class="memItemLeft">uniform sampler3D&#160;</td><td class="memItemRight"><a class="el" href="#a99124d33c032840081c18b7b582dfd3b">uLUT</a></td></tr>
+<tr class="memitem:a0e3e9e417c155f3b7fe48937f8c68441" id="r_a0e3e9e417c155f3b7fe48937f8c68441"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a0e3e9e417c155f3b7fe48937f8c68441">uMBLUR</a></td></tr>
+<tr class="memitem:a4b78fb2fe80f75ee3d0df2537d33f4be" id="r_a4b78fb2fe80f75ee3d0df2537d33f4be"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a4b78fb2fe80f75ee3d0df2537d33f4be">uDOF</a></td></tr>
+<tr class="memitem:ab0ce214e900fba3dca566d7df2b1bd79" id="r_ab0ce214e900fba3dca566d7df2b1bd79"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ab0ce214e900fba3dca566d7df2b1bd79">uPhysicsFramerate</a></td></tr>
+<tr class="memitem:a08f16202e86665c961fa97073cb849fa" id="r_a08f16202e86665c961fa97073cb849fa"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#a08f16202e86665c961fa97073cb849fa">uRenderFramerate</a></td></tr>
+<tr class="memitem:ab598389004858028ea6d95567b928a83" id="r_ab598389004858028ea6d95567b928a83"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#ab598389004858028ea6d95567b928a83">uWireframeToggled</a></td></tr>
+<tr class="memitem:a09dbae5845df5994c7cc4a99aeac2a81" id="r_a09dbae5845df5994c7cc4a99aeac2a81"><td class="memItemLeft">uniform sampler3D&#160;</td><td class="memItemRight"><a class="el" href="#a09dbae5845df5994c7cc4a99aeac2a81">uColorLUT</a></td></tr>
+<tr class="memitem:afb71fce18283c491e78eba8fc6add1a2" id="r_afb71fce18283c491e78eba8fc6add1a2"><td class="memItemLeft">const <a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="#afb71fce18283c491e78eba8fc6add1a2">srgb_to_ap1</a></td></tr>
+<tr class="memitem:a9e574677e75a87f71b3948b653cb42de" id="r_a9e574677e75a87f71b3948b653cb42de"><td class="memItemLeft">const <a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9e574677e75a87f71b3948b653cb42de">ap1_to_srgb</a></td></tr>
+<tr class="memitem:ab1aa235bdcf4fdd0281c206e503f17e3" id="r_ab1aa235bdcf4fdd0281c206e503f17e3"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ab1aa235bdcf4fdd0281c206e503f17e3">uTime</a></td></tr>
+<tr class="memitem:a6d8dd0540ed9af35f34cd31b838cacce" id="r_a6d8dd0540ed9af35f34cd31b838cacce"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+<tr class="memitem:a51b373bb6e576a874a82de94fa3ce715" id="r_a51b373bb6e576a874a82de94fa3ce715"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a51b373bb6e576a874a82de94fa3ce715">samples</a> = 16</td></tr>
+<tr class="memitem:a62e4f486b21610b8d8aae616676954d8" id="r_a62e4f486b21610b8d8aae616676954d8"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#a62e4f486b21610b8d8aae616676954d8">uFocalLength</a></td></tr>
+<tr class="memitem:aed94d51d95f30e519969156472b59f47" id="r_aed94d51d95f30e519969156472b59f47"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#aed94d51d95f30e519969156472b59f47">uFStop</a></td></tr>
+<tr class="memitem:aab7aaf8b3432b550d246091e846483cf" id="r_aab7aaf8b3432b550d246091e846483cf"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#aab7aaf8b3432b550d246091e846483cf">uSensorHeight</a></td></tr>
+<tr class="memitem:a92c955d695791400893b2f213d10aa81" id="r_a92c955d695791400893b2f213d10aa81"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#a92c955d695791400893b2f213d10aa81">uDOFMaxBlurRadius</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="adc37d28f8277783604a65482c40e0200" name="adc37d28f8277783604a65482c40e0200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc37d28f8277783604a65482c40e0200">&#9670;&#160;</a></span>MAX_MESH_NODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MESH_NODES&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00200">200</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a251ff7187aa6805e7027554c86b34307" name="a251ff7187aa6805e7027554c86b34307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ff7187aa6805e7027554c86b34307">&#9670;&#160;</a></span>layout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std140</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00002">2</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, and <a class="el" href="shadow_8vert_source.html#l00016">view</a>.</p>
+
+</div>
+</div>
+<a id="ae58f56339150a5e532e1cd37454713fa" name="ae58f56339150a5e532e1cd37454713fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58f56339150a5e532e1cd37454713fa">&#9670;&#160;</a></span>applyLUT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> applyLUT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00041">41</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00041">applyLUT()</a>, <a class="el" href="wireframe_8frag_source.html#l00006">color</a>, and <a class="el" href="postprocess_8frag_source.html#l00027">uLUT</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00041">applyLUT()</a>, and <a class="el" href="postprocess_8frag_source.html#l00154">processLUT()</a>.</p>
+
+</div>
+</div>
+<a id="ab101bb362b047c51d4c75783b6f3e2fa" name="ab101bb362b047c51d4c75783b6f3e2fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab101bb362b047c51d4c75783b6f3e2fa">&#9670;&#160;</a></span>calculateExposure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float calculateExposure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>avgColor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00052">52</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00052">calculateExposure()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00052">calculateExposure()</a>, and <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="ad9ba5b963e8db5c13b200d7183bafaeb" name="ad9ba5b963e8db5c13b200d7183bafaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ba5b963e8db5c13b200d7183bafaeb">&#9670;&#160;</a></span>ACESFilm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> ACESFilm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00068">68</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00068">ACESFilm()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00068">ACESFilm()</a>, and <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="a4e5dbe4c14e826d3bab404a35e95cd0d" name="a4e5dbe4c14e826d3bab404a35e95cd0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5dbe4c14e826d3bab404a35e95cd0d">&#9670;&#160;</a></span>vignette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> vignette </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>u</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00077">77</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="wireframe_8frag_source.html#l00006">color</a>, <a class="el" href="postprocess_8frag_source.html#l00077">vignette()</a>, and <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00077">vignette()</a>.</p>
+
+</div>
+</div>
+<a id="aab16ab379fd3e96ac760bbe55968c114" name="aab16ab379fd3e96ac760bbe55968c114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab16ab379fd3e96ac760bbe55968c114">&#9670;&#160;</a></span>linear_to_acescct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> linear_to_acescct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>linearRGB</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00100">100</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00100">linear_to_acescct()</a>, and <a class="el" href="postprocess_8frag_source.html#l00087">srgb_to_ap1</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00100">linear_to_acescct()</a>, and <a class="el" href="postprocess_8frag_source.html#l00154">processLUT()</a>.</p>
+
+</div>
+</div>
+<a id="a3376ee9b106519ca607a80114c8da5a6" name="a3376ee9b106519ca607a80114c8da5a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3376ee9b106519ca607a80114c8da5a6">&#9670;&#160;</a></span>acescct_to_linear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> acescct_to_linear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>graded</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00113">113</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00113">acescct_to_linear()</a>, and <a class="el" href="postprocess_8frag_source.html#l00094">ap1_to_srgb</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00113">acescct_to_linear()</a>, and <a class="el" href="postprocess_8frag_source.html#l00154">processLUT()</a>.</p>
+
+</div>
+</div>
+<a id="a5569891c923e9245baf934c12b6f18b6" name="a5569891c923e9245baf934c12b6f18b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5569891c923e9245baf934c12b6f18b6">&#9670;&#160;</a></span>linear_to_acescct_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float linear_to_acescct_channel </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00131">131</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00131">linear_to_acescct_channel()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00131">linear_to_acescct_channel()</a>.</p>
+
+</div>
+</div>
+<a id="ad6a5254ac33b9d211a050a8f02958da9" name="ad6a5254ac33b9d211a050a8f02958da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a5254ac33b9d211a050a8f02958da9">&#9670;&#160;</a></span>acescct_to_linear_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float acescct_to_linear_channel </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00142">142</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00142">acescct_to_linear_channel()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00142">acescct_to_linear_channel()</a>.</p>
+
+</div>
+</div>
+<a id="a64cc87ffeefaa9d6a3525f88ae7e50f7" name="a64cc87ffeefaa9d6a3525f88ae7e50f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64cc87ffeefaa9d6a3525f88ae7e50f7">&#9670;&#160;</a></span>processLUT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> processLUT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00154">154</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00113">acescct_to_linear()</a>, <a class="el" href="postprocess_8frag_source.html#l00041">applyLUT()</a>, <a class="el" href="wireframe_8frag_source.html#l00006">color</a>, <a class="el" href="postprocess_8frag_source.html#l00100">linear_to_acescct()</a>, and <a class="el" href="postprocess_8frag_source.html#l00154">processLUT()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>, and <a class="el" href="postprocess_8frag_source.html#l00154">processLUT()</a>.</p>
+
+</div>
+</div>
+<a id="a5d44c5035762137cf3fe25b8baad04a5" name="a5d44c5035762137cf3fe25b8baad04a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d44c5035762137cf3fe25b8baad04a5">&#9670;&#160;</a></span>layout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">15</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00201">201</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, and <a class="el" href="engine__types_8h_source.html#l00108">MAX_MESH_NODES</a>.</p>
+
+</div>
+</div>
+<a id="a7c96623b88d2b1e72ab5b83680801684" name="a7c96623b88d2b1e72ab5b83680801684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c96623b88d2b1e72ab5b83680801684">&#9670;&#160;</a></span>get_view_pos_from_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> get_view_pos_from_depth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec2">vec2</a></td>          <td class="paramname"><span class="paramname"><em>uv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>depth</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structmat4">mat4</a></td>          <td class="paramname"><span class="paramname"><em>invProjMatrix</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00211">211</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="coc_8frag_source.html#l00022">get_view_pos_from_depth()</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, and <a class="el" href="types_8h_source.html#l00013">vec4::w</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00219">219</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00068">ACESFilm()</a>, <a class="el" href="postprocess_8frag_source.html#l00052">calculateExposure()</a>, <a class="el" href="wireframe_8frag_source.html#l00006">color</a>, <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="coc_8frag_source.html#l00022">get_view_pos_from_depth()</a>, <a class="el" href="postprocess_8frag_source.html#l00022">gVel</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="postprocess_8frag_source.html#l00154">processLUT()</a>, <a class="el" href="postprocess_8frag_source.html#l00177">samples</a>, <a class="el" href="bloom__blur_8frag_source.html#l00007">uBloom</a>, <a class="el" href="postprocess_8frag_source.html#l00023">uBokeh</a>, <a class="el" href="postprocess_8frag_source.html#l00183">uDOFMaxBlurRadius</a>, <a class="el" href="postprocess_8frag_source.html#l00018">uDPP</a>, <a class="el" href="coc_8frag_source.html#l00037">uFocalLength</a>, <a class="el" href="coc_8frag_source.html#l00038">uFStop</a>, <a class="el" href="postprocess_8frag_source.html#l00026">uLM</a>, <a class="el" href="postprocess_8frag_source.html#l00030">uPhysicsFramerate</a>, <a class="el" href="postprocess_8frag_source.html#l00031">uRenderFramerate</a>, <a class="el" href="bloom_8frag_source.html#l00003">uScene</a>, <a class="el" href="coc_8frag_source.html#l00039">uSensorHeight</a>, <a class="el" href="dynamic_8frag_source.html#l00229">uSSR</a>, <a class="el" href="postprocess_8frag_source.html#l00019">uText</a>, <a class="el" href="postprocess_8frag_source.html#l00174">uTime</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a39fca2c8fe34ab0c307cdd0f7e7f53d6" name="a39fca2c8fe34ab0c307cdd0f7e7f53d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00013">13</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a158d8798faed156b59adf6d29d4ee947" name="a158d8798faed156b59adf6d29d4ee947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158d8798faed156b59adf6d29d4ee947">&#9670;&#160;</a></span>uScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uScene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00014">14</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a191955ad74c69e81f7ede69eeb6b76c5" name="a191955ad74c69e81f7ede69eeb6b76c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a191955ad74c69e81f7ede69eeb6b76c5">&#9670;&#160;</a></span>uHistory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uHistory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00015">15</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a256640423d7a3364ce432b1b5c92a1f6" name="a256640423d7a3364ce432b1b5c92a1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256640423d7a3364ce432b1b5c92a1f6">&#9670;&#160;</a></span>uFBM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uFBM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00016">16</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a8db02fb2cfd4e53a6702f98dc360a50d" name="a8db02fb2cfd4e53a6702f98dc360a50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db02fb2cfd4e53a6702f98dc360a50d">&#9670;&#160;</a></span>uDPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uDPP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00018">18</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="af273de65c6949f88b2ee7dfbc27d078b" name="af273de65c6949f88b2ee7dfbc27d078b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af273de65c6949f88b2ee7dfbc27d078b">&#9670;&#160;</a></span>uText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00019">19</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="afc75720fa63a8f73470d04566e35ef49" name="afc75720fa63a8f73470d04566e35ef49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc75720fa63a8f73470d04566e35ef49">&#9670;&#160;</a></span>uSSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uSSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00020">20</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a4ad4c3842c14a515b591508b188b4b43" name="a4ad4c3842c14a515b591508b188b4b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad4c3842c14a515b591508b188b4b43">&#9670;&#160;</a></span>uCurrentSSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uCurrentSSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00021">21</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a3a525c12daff7b300c8e2223390045ba" name="a3a525c12daff7b300c8e2223390045ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a525c12daff7b300c8e2223390045ba">&#9670;&#160;</a></span>gVel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D gVel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00022">22</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="depth__pre__pass_8frag.html#aaad5c946d47e5ca89ea960ba47e53210">layout()</a>, and <a class="el" href="depth__pre__pass_8frag_source.html#l00142">main()</a>.</p>
+
+</div>
+</div>
+<a id="a39b7f2cc0fbc040feb92c73c6d860494" name="a39b7f2cc0fbc040feb92c73c6d860494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b7f2cc0fbc040feb92c73c6d860494">&#9670;&#160;</a></span>uBokeh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uBokeh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00023">23</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="a6f6fa00d8e99340327be0e1f506104bc" name="a6f6fa00d8e99340327be0e1f506104bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6fa00d8e99340327be0e1f506104bc">&#9670;&#160;</a></span>uCOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uCOC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00024">24</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a1eba03d357199c0f1ce922195aa4e543" name="a1eba03d357199c0f1ce922195aa4e543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eba03d357199c0f1ce922195aa4e543">&#9670;&#160;</a></span>uBloom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uBloom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00025">25</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a49f808fe342b8b5bb9e74d38ee841eba" name="a49f808fe342b8b5bb9e74d38ee841eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f808fe342b8b5bb9e74d38ee841eba">&#9670;&#160;</a></span>uLM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uLM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00026">26</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="a99124d33c032840081c18b7b582dfd3b" name="a99124d33c032840081c18b7b582dfd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99124d33c032840081c18b7b582dfd3b">&#9670;&#160;</a></span>uLUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler3D uLUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00027">27</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00041">applyLUT()</a>.</p>
+
+</div>
+</div>
+<a id="a0e3e9e417c155f3b7fe48937f8c68441" name="a0e3e9e417c155f3b7fe48937f8c68441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3e9e417c155f3b7fe48937f8c68441">&#9670;&#160;</a></span>uMBLUR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uMBLUR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00028">28</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a4b78fb2fe80f75ee3d0df2537d33f4be" name="a4b78fb2fe80f75ee3d0df2537d33f4be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b78fb2fe80f75ee3d0df2537d33f4be">&#9670;&#160;</a></span>uDOF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uDOF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00029">29</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="ab0ce214e900fba3dca566d7df2b1bd79" name="ab0ce214e900fba3dca566d7df2b1bd79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ce214e900fba3dca566d7df2b1bd79">&#9670;&#160;</a></span>uPhysicsFramerate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uPhysicsFramerate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00030">30</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="a08f16202e86665c961fa97073cb849fa" name="a08f16202e86665c961fa97073cb849fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f16202e86665c961fa97073cb849fa">&#9670;&#160;</a></span>uRenderFramerate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uRenderFramerate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00031">31</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="ab598389004858028ea6d95567b928a83" name="ab598389004858028ea6d95567b928a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab598389004858028ea6d95567b928a83">&#9670;&#160;</a></span>uWireframeToggled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uWireframeToggled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00032">32</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a09dbae5845df5994c7cc4a99aeac2a81" name="a09dbae5845df5994c7cc4a99aeac2a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09dbae5845df5994c7cc4a99aeac2a81">&#9670;&#160;</a></span>uColorLUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler3D uColorLUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00039">39</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="afb71fce18283c491e78eba8fc6add1a2" name="afb71fce18283c491e78eba8fc6add1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb71fce18283c491e78eba8fc6add1a2">&#9670;&#160;</a></span>srgb_to_ap1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="types_8h.html#structmat3">mat3</a> srgb_to_ap1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">                       = <a class="code hl_struct" href="types_8h.html#structmat3">mat3</a></div>
+<div class="line">(</div>
+<div class="line">    0.613097, 0.070194, 0.020585, </div>
+<div class="line">    0.339523, 0.916394, 0.109572, </div>
+<div class="line">    0.047379, 0.013412, 0.869843  </div>
+<div class="line">)</div>
+<div class="ttc" id="atypes_8h_html_structmat3"><div class="ttname"><a href="types_8h.html#structmat3">mat3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00020">types.h:20</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00087">87</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00100">linear_to_acescct()</a>.</p>
+
+</div>
+</div>
+<a id="a9e574677e75a87f71b3948b653cb42de" name="a9e574677e75a87f71b3948b653cb42de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e574677e75a87f71b3948b653cb42de">&#9670;&#160;</a></span>ap1_to_srgb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="types_8h.html#structmat3">mat3</a> ap1_to_srgb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">                       = <a class="code hl_struct" href="types_8h.html#structmat3">mat3</a></div>
+<div class="line">(</div>
+<div class="line">    1.704859, -0.130258, -0.024003, </div>
+<div class="line">   -0.621714,  1.140733, -0.128963, </div>
+<div class="line">   -0.083145, -0.010475,  1.152966  </div>
+<div class="line">)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00094">94</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00113">acescct_to_linear()</a>.</p>
+
+</div>
+</div>
+<a id="ab1aa235bdcf4fdd0281c206e503f17e3" name="ab1aa235bdcf4fdd0281c206e503f17e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1aa235bdcf4fdd0281c206e503f17e3">&#9670;&#160;</a></span>uTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00174">174</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
+<a id="a6d8dd0540ed9af35f34cd31b838cacce" name="a6d8dd0540ed9af35f34cd31b838cacce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8dd0540ed9af35f34cd31b838cacce">&#9670;&#160;</a></span>fragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec4">vec4</a> fragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00175">175</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a51b373bb6e576a874a82de94fa3ce715" name="a51b373bb6e576a874a82de94fa3ce715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b373bb6e576a874a82de94fa3ce715">&#9670;&#160;</a></span>samples</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int samples = 16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00177">177</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01694">init_gl_renderbuffer()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, and <a class="el" href="audio_8c_source.html#l01410">process_probe_chunk()</a>.</p>
+
+</div>
+</div>
+<a id="a62e4f486b21610b8d8aae616676954d8" name="a62e4f486b21610b8d8aae616676954d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e4f486b21610b8d8aae616676954d8">&#9670;&#160;</a></span>uFocalLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uFocalLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00180">180</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="aed94d51d95f30e519969156472b59f47" name="aed94d51d95f30e519969156472b59f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed94d51d95f30e519969156472b59f47">&#9670;&#160;</a></span>uFStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uFStop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00181">181</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="aab7aaf8b3432b550d246091e846483cf" name="aab7aaf8b3432b550d246091e846483cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7aaf8b3432b550d246091e846483cf">&#9670;&#160;</a></span>uSensorHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uSensorHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00182">182</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+</div>
+</div>
+<a id="a92c955d695791400893b2f213d10aa81" name="a92c955d695791400893b2f213d10aa81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c955d695791400893b2f213d10aa81">&#9670;&#160;</a></span>uDOFMaxBlurRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uDOFMaxBlurRadius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="postprocess_8frag_source.html#l00183">183</a> of file <a class="el" href="postprocess_8frag_source.html">postprocess.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00219">main()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

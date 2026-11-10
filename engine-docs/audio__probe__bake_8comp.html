@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,1338 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('audio__probe__
 <div class="contents">
 
 <p><a href="audio__probe__bake_8comp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:Material_5Fstruct_5Fmaterial" id="r_Material_5Fstruct_5Fmaterial"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_material">Material</a></td></tr>
+<tr class="memdesc:struct_material"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Materials parsed in from scene files that determine rendering pipeline setup, uploads, and ordering.  <a href="group__shader__structs__group.html#struct_material">More...</a><br /></td></tr>
+<tr class="memitem:Vertex_5Fstruct_5Fvertex" id="r_Vertex_5Fstruct_5Fvertex"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="probe__bake_8comp.html#struct_vertex">Vertex</a></td></tr>
+<tr class="memitem:Face_5Fstruct_5Fface" id="r_Face_5Fstruct_5Fface"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="probe__bake_8comp.html#struct_face">Face</a></td></tr>
+<tr class="memitem:MeshNode_5Fstruct_5Fmesh_5Fnode" id="r_MeshNode_5Fstruct_5Fmesh_5Fnode"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a></td></tr>
+<tr class="memdesc:struct_mesh_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s that describe the position of <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es, GLTF nodes for <a class="el" href="engine__types_8h.html#struct_g_l_t_f_animation" title="The GLTF structure of an Animation.">GLTFAnimation</a>s, or hold references to other <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <a href="group__shader__structs__group.html#struct_mesh_node">More...</a><br /></td></tr>
+<tr class="memitem:AABB_5Fstruct_5Fa_5Fa_5Fb_5Fb" id="r_AABB_5Fstruct_5Fa_5Fa_5Fb_5Fb"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td></tr>
+<tr class="memitem:BVHNode_5Fstruct_5Fb_5Fv_5Fh_5Fnode" id="r_BVHNode_5Fstruct_5Fb_5Fv_5Fh_5Fnode"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="probe__bake_8comp.html#struct_b_v_h_node">BVHNode</a></td></tr>
+<tr class="memdesc:struct_b_v_h_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodes for the acceleration structures of BVHs.  <a href="probe__bake_8comp.html#struct_b_v_h_node">More...</a><br /></td></tr>
+<tr class="memitem:AudioProbe_5Fstruct_5Faudio_5Fprobe" id="r_AudioProbe_5Fstruct_5Faudio_5Fprobe"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#struct_audio_probe">AudioProbe</a></td></tr>
+<tr class="memdesc:struct_audio_probe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Baked IR samples loaded in from binary into <a class="el" href="group__aprobe__group.html#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a>s from <a class="el" href="group__aprobe__group.html#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a>s.  <a href="group__aprobe__group.html#struct_audio_probe">More...</a><br /></td></tr>
+<tr class="memitem:AudioSample_5Fstruct_5Faudio_5Fsample" id="r_AudioSample_5Fstruct_5Faudio_5Fsample"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_audio_sample">AudioSample</a></td></tr>
+<tr class="memitem:RayHit_5Fstruct_5Fray_5Fhit" id="r_RayHit_5Fstruct_5Fray_5Fhit"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a4b76a0c2859cfd819a343a780070ee2b" id="r_a4b76a0c2859cfd819a343a780070ee2b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4b76a0c2859cfd819a343a780070ee2b">SAMPLE_RATE</a>&#160;&#160;&#160;48000</td></tr>
+<tr class="memitem:ac9f9f9d25bbf964365102f1ef77d359e" id="r_ac9f9f9d25bbf964365102f1ef77d359e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac9f9f9d25bbf964365102f1ef77d359e">SPEED_OF_SOUND</a>&#160;&#160;&#160;343.0f</td></tr>
+<tr class="memitem:a78f316da3a87bf72cb1647786b64bf0e" id="r_a78f316da3a87bf72cb1647786b64bf0e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a78f316da3a87bf72cb1647786b64bf0e">MAX_SAMPLES</a>&#160;&#160;&#160;(<a class="el" href="#a4b76a0c2859cfd819a343a780070ee2b">SAMPLE_RATE</a> * 1)</td></tr>
+<tr class="memitem:a4c8a4014b56ef918f72d8c2c2098b151" id="r_a4c8a4014b56ef918f72d8c2c2098b151"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4c8a4014b56ef918f72d8c2c2098b151">NUM_RAYS</a>&#160;&#160;&#160;100000</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a38d7d2d84fb7cc382da7b98797a4c70d" id="r_a38d7d2d84fb7cc382da7b98797a4c70d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a> (local_size_x=16, local_size_y=16) in</td></tr>
+<tr class="memitem:a29581687ebc1264eb63c6047f2aef3e2" id="r_a29581687ebc1264eb63c6047f2aef3e2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a29581687ebc1264eb63c6047f2aef3e2">layout</a> (std430, binding=2) buffer <a class="el" href="engine__types_8h.html#struct_material_data">MaterialData</a></td></tr>
+<tr class="memitem:a9ba408678d69e5b3d4bcc9dc5e423943" id="r_a9ba408678d69e5b3d4bcc9dc5e423943"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a9ba408678d69e5b3d4bcc9dc5e423943">pcg_hash</a> ()</td></tr>
+<tr class="memitem:a865aa450405d51d7db826b11a336ffe8" id="r_a865aa450405d51d7db826b11a336ffe8"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a865aa450405d51d7db826b11a336ffe8">wang_hash</a> (uint seed)</td></tr>
+<tr class="memitem:ac065bd1fd6625630a0de19c6e1c8ce0a" id="r_ac065bd1fd6625630a0de19c6e1c8ce0a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac065bd1fd6625630a0de19c6e1c8ce0a">rand</a> ()</td></tr>
+<tr class="memitem:aa90be9e7aba1059252da1ac423c6c795" id="r_aa90be9e7aba1059252da1ac423c6c795"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa90be9e7aba1059252da1ac423c6c795">frisvad_basis</a> (in <a class="el" href="types_8h.html#structvec3">vec3</a> n, out <a class="el" href="types_8h.html#structvec3">vec3</a> b1, out <a class="el" href="types_8h.html#structvec3">vec3</a> b2)</td></tr>
+<tr class="memitem:a77484d55384c798f91d59d1c37778fc2" id="r_a77484d55384c798f91d59d1c37778fc2"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a77484d55384c798f91d59d1c37778fc2">get_bounce_direction</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> normal)</td></tr>
+<tr class="memitem:a15a49df5a1d235c64034ddf5e512a293" id="r_a15a49df5a1d235c64034ddf5e512a293"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a15a49df5a1d235c64034ddf5e512a293">generate_sphere_dir</a> (int i, int N)</td></tr>
+<tr class="memitem:a0525efa96d313b82ed55cac3ea607345" id="r_a0525efa96d313b82ed55cac3ea607345"><td class="memItemLeft"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0525efa96d313b82ed55cac3ea607345">ray_intersects_triangle</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> origin, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> a, <a class="el" href="types_8h.html#structvec3">vec3</a> b, <a class="el" href="types_8h.html#structvec3">vec3</a> c)</td></tr>
+<tr class="memitem:a64ba83c44e55606d8104dbcc8d42755e" id="r_a64ba83c44e55606d8104dbcc8d42755e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a64ba83c44e55606d8104dbcc8d42755e">slab_test</a> (<a class="el" href="probe__bake_8comp.html#struct_b_v_h_node">BVHNode</a> n, <a class="el" href="types_8h.html#structvec3">vec3</a> pos, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_dir)</td></tr>
+<tr class="memitem:a91aed0669798c705c5d7e654c5c7ba20" id="r_a91aed0669798c705c5d7e654c5c7ba20"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a91aed0669798c705c5d7e654c5c7ba20">traverse_mesh_bvh</a> (uint node_offset, uint mn_id, <a class="el" href="types_8h.html#structvec3">vec3</a> pp, <a class="el" href="types_8h.html#structvec3">vec3</a> pm, <a class="el" href="types_8h.html#structvec3">vec3</a> original_dir, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> md, uint mesh, uint tri)</td></tr>
+<tr class="memitem:a4d5ddb5990a1449aa382414468e3c1ae" id="r_a4d5ddb5990a1449aa382414468e3c1ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4d5ddb5990a1449aa382414468e3c1ae">traverse_scene_bvh</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pp, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structvec3">vec3</a> inv_dir, uint light_type, uint mesh, uint tri)</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5e73da37ecdde38efd7215c987de292e" id="r_a5e73da37ecdde38efd7215c987de292e"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a5e73da37ecdde38efd7215c987de292e">state</a> = 0</td></tr>
+<tr class="memitem:aa7650aa68a61dca88c0096d70fed609a" id="r_aa7650aa68a61dca88c0096d70fed609a"><td class="memItemLeft"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa7650aa68a61dca88c0096d70fed609a">hit</a></td></tr>
+<tr class="memitem:a4349f1279ca6b8e6a2d4121e2f9c1f5f" id="r_a4349f1279ca6b8e6a2d4121e2f9c1f5f"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a4349f1279ca6b8e6a2d4121e2f9c1f5f">uProbeSize</a></td></tr>
+<tr class="memitem:ac2a7856a0e5064212f1f25691e35b8a4" id="r_ac2a7856a0e5064212f1f25691e35b8a4"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#ac2a7856a0e5064212f1f25691e35b8a4">uRayOffset</a></td></tr>
+<tr class="memitem:aa6a4aaa4fbcb83458fa64550bf29627a" id="r_aa6a4aaa4fbcb83458fa64550bf29627a"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#aa6a4aaa4fbcb83458fa64550bf29627a">uIterations</a></td></tr>
+<tr class="memitem:a11a2ecbc8fec8ef51fd6cb033bd57782" id="r_a11a2ecbc8fec8ef51fd6cb033bd57782"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a11a2ecbc8fec8ef51fd6cb033bd57782">uMaxSamplesPerProbe</a></td></tr>
+<tr class="memitem:a8eb588818e04e6b29e0c14107432f506" id="r_a8eb588818e04e6b29e0c14107432f506"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a8eb588818e04e6b29e0c14107432f506">uBounces</a></td></tr>
+<tr class="memitem:ae1133bbb41c01426d56c039f7480397c" id="r_ae1133bbb41c01426d56c039f7480397c"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#ae1133bbb41c01426d56c039f7480397c">uBatchSize</a></td></tr>
+<tr class="memitem:ac5993a90e54f4b61a84bb6d48a80ab01" id="r_ac5993a90e54f4b61a84bb6d48a80ab01"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#ac5993a90e54f4b61a84bb6d48a80ab01">uProbeOffset</a></td></tr>
+<tr class="memitem:a6f268da119f3aa2849e26cf9666c036d" id="r_a6f268da119f3aa2849e26cf9666c036d"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a6f268da119f3aa2849e26cf9666c036d">AUDIO_NUM_BANDS</a> = 6</td></tr>
+</table>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Data Structure Documentation</h2>
+<a name="struct_vertex" id="struct_vertex"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_vertex">&#9670;&#160;</a></span>Vertex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct Vertex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00049">49</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ab7602d33d0aca370ecd74f53eb0cc400" name="ab7602d33d0aca370ecd74f53eb0cc400"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+pos</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5422c6b92fbf9f9e1663c214b1d73d5f" name="a5422c6b92fbf9f9e1663c214b1d73d5f"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae02d1c228b7ffcfb1c5eeec3973fe802" name="ae02d1c228b7ffcfb1c5eeec3973fe802"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+normal</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af3c8aa3de827c1fba194318477acd7cf" name="af3c8aa3de827c1fba194318477acd7cf"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a0be747b4a0efbeb6d4dcc41b466c95bf" name="a0be747b4a0efbeb6d4dcc41b466c95bf"></a><a class="el" href="types_8h.html#structvec2">vec2</a></td>
+<td class="fieldname">
+uv</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab89843b7389d7258e08fb6325c01dabc" name="ab89843b7389d7258e08fb6325c01dabc"></a>uint</td>
+<td class="fieldname">
+pad2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aefdf56d9f65c3e95ba969ccc7fe86e7d" name="aefdf56d9f65c3e95ba969ccc7fe86e7d"></a>uint</td>
+<td class="fieldname">
+pad3</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_face" id="struct_face"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_face">&#9670;&#160;</a></span>Face</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct Face</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00065">65</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a7493f856ce8e3343fd22756c496fe1cd" name="a7493f856ce8e3343fd22756c496fe1cd"></a><a class="el" href="types_8h.html#structuvec3">uvec3</a></td>
+<td class="fieldname">
+indices</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a09a47606c3506269b6ec2b791aac5c08" name="a09a47606c3506269b6ec2b791aac5c08"></a>uint</td>
+<td class="fieldname">
+material_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aadee42298a6d74becc01e4e78d31494f" name="aadee42298a6d74becc01e4e78d31494f"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+normal</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a6b8f741db9fada2058881cece227bd1c" name="a6b8f741db9fada2058881cece227bd1c"></a>uint</td>
+<td class="fieldname">
+mesh_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ad19d1bb602f3c39ea21d03cb72a12768" name="ad19d1bb602f3c39ea21d03cb72a12768"></a>uint</td>
+<td class="fieldname">
+bvh_index</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae09dfae368489573f2bb69113106215d" name="ae09dfae368489573f2bb69113106215d"></a>uint</td>
+<td class="fieldname">
+tri_idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a001eb68a0199fafa4355374c4b65830a" name="a001eb68a0199fafa4355374c4b65830a"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a24490115c5f0effc253a50447099ad8c" name="a24490115c5f0effc253a50447099ad8c"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a89141f5c174cd50caa7e953f65ab8793" name="a89141f5c174cd50caa7e953f65ab8793"></a><a class="el" href="probe__bake_8comp.html#struct_vertex">Vertex</a></td>
+<td class="fieldname">
+v0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac6b13e3c0907b2036de439d429e42ba8" name="ac6b13e3c0907b2036de439d429e42ba8"></a><a class="el" href="probe__bake_8comp.html#struct_vertex">Vertex</a></td>
+<td class="fieldname">
+v1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aca7982ce98a47e83bb29f70d57a21ade" name="aca7982ce98a47e83bb29f70d57a21ade"></a><a class="el" href="probe__bake_8comp.html#struct_vertex">Vertex</a></td>
+<td class="fieldname">
+v2</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_a_a_b_b" id="struct_a_a_b_b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_a_a_b_b">&#9670;&#160;</a></span>AABB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct AABB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00110">110</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ac67e4a162acbb3fe663d55795990b1be" name="ac67e4a162acbb3fe663d55795990b1be"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa63ab3ed5fdb1989d64aa0fde847b7fb" name="aa63ab3ed5fdb1989d64aa0fde847b7fb"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac966b0bb96cf30d85d5313f2dce3df0c" name="ac966b0bb96cf30d85d5313f2dce3df0c"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a85407f9ff3d6624b49e746f77500c831" name="a85407f9ff3d6624b49e746f77500c831"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae23a405b8b4656aea13188e696250260" name="ae23a405b8b4656aea13188e696250260"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+center</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aecfc5fafbd1db3c297bf0c583282eed2" name="aecfc5fafbd1db3c297bf0c583282eed2"></a>uint</td>
+<td class="fieldname">
+pad2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7310cd50a8940891814341a93decf227" name="a7310cd50a8940891814341a93decf227"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+extents</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a110d9ae88d523431f9196a276675b0e4" name="a110d9ae88d523431f9196a276675b0e4"></a>uint</td>
+<td class="fieldname">
+pad3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac67e4a162acbb3fe663d55795990b1be" name="ac67e4a162acbb3fe663d55795990b1be"></a><a class="el" href="types_8h.html#structvec4">vec4</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac966b0bb96cf30d85d5313f2dce3df0c" name="ac966b0bb96cf30d85d5313f2dce3df0c"></a><a class="el" href="types_8h.html#structvec4">vec4</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5e1a7f703f4bcdbbff92fb7770dd9661" name="a5e1a7f703f4bcdbbff92fb7770dd9661"></a>float</td>
+<td class="fieldname">
+min_x</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="afe4c0ee38a0f9a1ba4b219f81e547d2c" name="afe4c0ee38a0f9a1ba4b219f81e547d2c"></a>float</td>
+<td class="fieldname">
+max_x</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac2370cacd9869bfd3b2c1628d6c88262" name="ac2370cacd9869bfd3b2c1628d6c88262"></a>float</td>
+<td class="fieldname">
+min_y</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a63ffed95566942162af6ce6b45168ef2" name="a63ffed95566942162af6ce6b45168ef2"></a>float</td>
+<td class="fieldname">
+max_y</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aaa6f3feb41a0c1b18796ded5ef153a8d" name="aaa6f3feb41a0c1b18796ded5ef153a8d"></a>float</td>
+<td class="fieldname">
+min_z</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a568972a7d19277185f8cf2c08a2ab928" name="a568972a7d19277185f8cf2c08a2ab928"></a>float</td>
+<td class="fieldname">
+max_z</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_b_v_h_node" id="struct_b_v_h_node"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_b_v_h_node">&#9670;&#160;</a></span>BVHNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct BVHNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Nodes for the acceleration structures of BVHs. </p>
+<dl class="section see"><dt>See also</dt><dd>Scene <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> BVH: Globals.scene_data.bvh_nodes </dd>
+<dd>
+<a class="el" href="group__shader__structs__group.html#struct_light" title="The CPU side structure for Lights.">Light</a> BVH: Globals.scene_data.light_bvh.nodes </dd>
+<dd>
+<a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a> BVH: <a class="el" href="lightmap_8vert.html#ab4a0f6a8913a512af20dedd7192b8234" title="BVHNodes.">Mesh.nodes</a> </dd>
+<dd>
+<a class="el" href="acceleration_8c.html">core/acceleration.c</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00125">125</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="af9f73980168d0555f2174aa369912005" name="af9f73980168d0555f2174aa369912005"></a>int</td>
+<td class="fieldname">
+left</td>
+<td class="fielddoc">
+Left child. <p>-1 if empty. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa340df7faf570839084184b705c8f62d" name="aa340df7faf570839084184b705c8f62d"></a>int</td>
+<td class="fieldname">
+right</td>
+<td class="fielddoc">
+Right child. <p>-1 if empty. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab2b52a3c4b1721f22e320a7cada804f6" name="ab2b52a3c4b1721f22e320a7cada804f6"></a>int</td>
+<td class="fieldname">
+parent</td>
+<td class="fielddoc">
+Parent. <p>-1 if empty. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9e7d3d7ae25769f9489fc72107aedc4c" name="a9e7d3d7ae25769f9489fc72107aedc4c"></a>int</td>
+<td class="fieldname">
+index</td>
+<td class="fielddoc">
+The index of the node inside of the array. </td></tr>
+<tr><td class="fieldtype">
+<a id="a12f667eef60bf564138aacf1a80003c7" name="a12f667eef60bf564138aacf1a80003c7"></a>int</td>
+<td class="fieldname">
+first_index</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3b4c0173bc085e4d145d65ec106f99d3" name="a3b4c0173bc085e4d145d65ec106f99d3"></a>int</td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4b214b5a6667ef8bf3516611dbdfce88" name="a4b214b5a6667ef8bf3516611dbdfce88"></a>int</td>
+<td class="fieldname">
+next</td>
+<td class="fielddoc">
+The pointer to the next node (either right child or parent's right child) for recursion-less traversal. <p>See: assign_next_nodes(). </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a31dc15cf2cd10ad89bd5738abfb27e63" name="a31dc15cf2cd10ad89bd5738abfb27e63"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae5f70a5887f82df7bd49ce2368d3a72a" name="ae5f70a5887f82df7bd49ce2368d3a72a"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac828c15af1a19b6e8e9a48244b1c5056" name="ac828c15af1a19b6e8e9a48244b1c5056"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ade69e446c80e05d24aadf8c5b43fe513" name="ade69e446c80e05d24aadf8c5b43fe513"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a081a07bde9f78ffa3ae9dfba70afcd78" name="a081a07bde9f78ffa3ae9dfba70afcd78"></a>uint</td>
+<td class="fieldname">
+pad2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a89831bbfb5d67d46c31c474d059e3a16" name="a89831bbfb5d67d46c31c474d059e3a16"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+center</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5b9b7b32233c52abc88807d2dc5e9c27" name="a5b9b7b32233c52abc88807d2dc5e9c27"></a>uint</td>
+<td class="fieldname">
+pad3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab490bc5e2e1babca089dd12026c6a521" name="ab490bc5e2e1babca089dd12026c6a521"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+extents</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a85654a74472147825cd55ae1881e7d3d" name="a85654a74472147825cd55ae1881e7d3d"></a>uint</td>
+<td class="fieldname">
+pad4</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab8ccbdebbea62d51da193f3e96f0b862" name="ab8ccbdebbea62d51da193f3e96f0b862"></a><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td>
+<td class="fieldname">
+aabb</td>
+<td class="fielddoc">
+The bounding box of all of this node's children. </td></tr>
+<tr><td class="fieldtype">
+<a id="a0f989055913ca5b55a3ee8177ad3b55a" name="a0f989055913ca5b55a3ee8177ad3b55a"></a>size_t</td>
+<td class="fieldname">
+first_index</td>
+<td class="fielddoc">
+The first index into the bvh_indices array. </td></tr>
+<tr><td class="fieldtype">
+<a id="af363789fa2f9bdd79ef4d737d23ec52e" name="af363789fa2f9bdd79ef4d737d23ec52e"></a>size_t</td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+How many children are inside this node. </td></tr>
+<tr><td class="fieldtype">
+<a id="a24b3d553c0580e89e0a86d8bc439146c" name="a24b3d553c0580e89e0a86d8bc439146c"></a>float</td>
+<td class="fieldname">
+flux</td>
+<td class="fielddoc">
+The total light flux of this node. <p>Used for <a class="el" href="group__shader__structs__group.html#struct_light" title="The CPU side structure for Lights.">Light</a> BVH importance sampling. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="afee77e11ce023a57172221fd33705d7a" name="afee77e11ce023a57172221fd33705d7a"></a>float</td>
+<td class="fieldname">
+emissive_flux</td>
+<td class="fielddoc">
+The only-emissive flux. <p>Used for <a class="el" href="group__shader__structs__group.html#struct_light" title="The CPU side structure for Lights.">Light</a> BVH importance sampling. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_audio_sample" id="struct_audio_sample"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_audio_sample">&#9670;&#160;</a></span>AudioSample</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct AudioSample</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00168">168</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a5160299bb3e67cac8fb36a7030c723f6" name="a5160299bb3e67cac8fb36a7030c723f6"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+arrival_dir</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aad86225fd232bd7125c031c6dc9adf32" name="aad86225fd232bd7125c031c6dc9adf32"></a>float</td>
+<td class="fieldname">
+time_of_flight</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4d34ba9630e0080e3acd94f7d7fe1c94" name="a4d34ba9630e0080e3acd94f7d7fe1c94"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+pos</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a966cba790c3d74193707d173417980a3" name="a966cba790c3d74193707d173417980a3"></a>uint</td>
+<td class="fieldname">
+valid</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ade17e44e925613d946ecd3ee9dec092e" name="ade17e44e925613d946ecd3ee9dec092e"></a>float</td>
+<td class="fieldname">
+energy[6]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ad4582b61777ddf06e2ea9dfd3cb610f8" name="ad4582b61777ddf06e2ea9dfd3cb610f8"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a56245f4ca36dd7df0c1d8aefce5e4ef6" name="a56245f4ca36dd7df0c1d8aefce5e4ef6"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a44fefe03337a0f1e6fa2f5cefc65b354" name="a44fefe03337a0f1e6fa2f5cefc65b354"></a>float</td>
+<td class="fieldname">
+abs_energy[6]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a363b2324ebc085667dfd7eba312fd66a" name="a363b2324ebc085667dfd7eba312fd66a"></a>uint</td>
+<td class="fieldname">
+pad4</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3aea05383e9abb2a7e2085a391be3633" name="a3aea05383e9abb2a7e2085a391be3633"></a>uint</td>
+<td class="fieldname">
+pad5</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct_ray_hit" id="struct_ray_hit"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_ray_hit">&#9670;&#160;</a></span>RayHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RayHit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00271">271</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a6b1576d8851f5b49d5f38fe12cc64af0" name="a6b1576d8851f5b49d5f38fe12cc64af0"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+pos</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aaae6d81662468c795fca056a9c04e8b1" name="aaae6d81662468c795fca056a9c04e8b1"></a>float</td>
+<td class="fieldname">
+t</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1a76386b6eb4edac313b3c54387377e1" name="a1a76386b6eb4edac313b3c54387377e1"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+barycentrics</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a6cdd80bf03781a91e715901f7b504fe9" name="a6cdd80bf03781a91e715901f7b504fe9"></a>uint</td>
+<td class="fieldname">
+mn_idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a091b1e1b6940eee0c70671f7965e2bfe" name="a091b1e1b6940eee0c70671f7965e2bfe"></a><a class="el" href="types_8h.html#structvec3">vec3</a></td>
+<td class="fieldname">
+normal</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8ffd779c8f68721d00d87a7e1a4bf912" name="a8ffd779c8f68721d00d87a7e1a4bf912"></a>uint</td>
+<td class="fieldname">
+tri_idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af518cffcf46312b3abb858a6ec56683c" name="af518cffcf46312b3abb858a6ec56683c"></a>float</td>
+<td class="fieldname">
+best_t</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="afb68cb487650171e28638a9e0b17240d" name="afb68cb487650171e28638a9e0b17240d"></a>float</td>
+<td class="fieldname">
+blocked_t</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aac76e56088e68dccf0d4c1d734228240" name="aac76e56088e68dccf0d4c1d734228240"></a>bool</td>
+<td class="fieldname">
+hit</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae84280d5df692152bd05cfed21e7564d" name="ae84280d5df692152bd05cfed21e7564d"></a>bool</td>
+<td class="fieldname">
+occluded</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1ce923752fce1ecdfdee82fcca3e7785" name="a1ce923752fce1ecdfdee82fcca3e7785"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5bcd2ea56b3a6bc3be2ad3347f8c55fd" name="a5bcd2ea56b3a6bc3be2ad3347f8c55fd"></a>size_t</td>
+<td class="fieldname">
+mesh_node_idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac5c15bab1712c46fe2fbbf4658608dc7" name="ac5c15bab1712c46fe2fbbf4658608dc7"></a>size_t</td>
+<td class="fieldname">
+tri</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a6b4f3b952518496bda1b524db0c8350d" name="a6b4f3b952518496bda1b524db0c8350d"></a><a class="el" href="types_8h.html#ae44f100e04e667fcd1c9a7dedcae5386">HitType</a></td>
+<td class="fieldname">
+hit</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aadad27db84749622b5ce8b7e4223d827" name="aadad27db84749622b5ce8b7e4223d827"></a>float</td>
+<td class="fieldname">
+b0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4e55d285b57ff1e1cc95af8b7777f01f" name="a4e55d285b57ff1e1cc95af8b7777f01f"></a>float</td>
+<td class="fieldname">
+b1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa5eebb548515c1d73cc11bff2080228f" name="aa5eebb548515c1d73cc11bff2080228f"></a>float</td>
+<td class="fieldname">
+b2</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a4b76a0c2859cfd819a343a780070ee2b" name="a4b76a0c2859cfd819a343a780070ee2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b76a0c2859cfd819a343a780070ee2b">&#9670;&#160;</a></span>SAMPLE_RATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAMPLE_RATE&#160;&#160;&#160;48000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00007">7</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01265">generate_synthetic_IR_tail()</a>, and <a class="el" href="audio_8c_source.html#l01410">process_probe_chunk()</a>.</p>
+
+</div>
+</div>
+<a id="ac9f9f9d25bbf964365102f1ef77d359e" name="ac9f9f9d25bbf964365102f1ef77d359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f9f9d25bbf964365102f1ef77d359e">&#9670;&#160;</a></span>SPEED_OF_SOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEED_OF_SOUND&#160;&#160;&#160;343.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00008">8</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>.</p>
+
+</div>
+</div>
+<a id="a78f316da3a87bf72cb1647786b64bf0e" name="a78f316da3a87bf72cb1647786b64bf0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f316da3a87bf72cb1647786b64bf0e">&#9670;&#160;</a></span>MAX_SAMPLES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_SAMPLES&#160;&#160;&#160;(<a class="el" href="#a4b76a0c2859cfd819a343a780070ee2b">SAMPLE_RATE</a> * 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00009">9</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00067">allocate_audio_scratch_hrtf()</a>, <a class="el" href="audio_8c_source.html#l01410">process_probe_chunk()</a>, and <a class="el" href="audio__ir_8c_source.html#l00326">update_player_ir()</a>.</p>
+
+</div>
+</div>
+<a id="a4c8a4014b56ef918f72d8c2c2098b151" name="a4c8a4014b56ef918f72d8c2c2098b151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8a4014b56ef918f72d8c2c2098b151">&#9670;&#160;</a></span>NUM_RAYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUM_RAYS&#160;&#160;&#160;100000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00010">10</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a38d7d2d84fb7cc382da7b98797a4c70d" name="a38d7d2d84fb7cc382da7b98797a4c70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d7d2d84fb7cc382da7b98797a4c70d">&#9670;&#160;</a></span>layout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">local_size_x</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">16</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">local_size_y</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">16</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00441">add_all_meshes_to_buffer()</a>, <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, <a class="el" href="cull__clusters_8comp.html#ac6f4574ef632d6deecd82d79e96b8153">layout()</a>, <a class="el" href="elements__prefix_8comp.html#a175745ef9ff5c2e01c1c678e32e1de7a">layout()</a>, <a class="el" href="#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="directional__map__normalize_8comp.html#a3a134a3011f6103df230bd7fc657d318">layout()</a>, <a class="el" href="cull__draw__calls_8comp.html#ad210c3d68883c208ad7b17d1d98a4656">layout()</a>, <a class="el" href="probe__bake_8comp.html#a2cee6138867c81067acbd2d1cb6bcbc0">layout()</a>, <a class="el" href="ui_8vert.html#a2681335cc0440ad7b2bcf9802cde9502">layout()</a>, <a class="el" href="text_8vert.html#a813e8ed864cd33457ada32ca2b52c0f0">layout()</a>, <a class="el" href="lightmap_8vert.html#a3a88ac681ca472981d8ef1bb973ba524">layout()</a>, <a class="el" href="depth__pre__pass_8vert.html#ad0c81e55ff781f0f9d8adc1522a82c6e">layout()</a>, <a class="el" href="depth__pre__pass_8frag.html#aaad5c946d47e5ca89ea960ba47e53210">layout()</a>, <a class="el" href="dynamic_8frag.html#a14faaaca45684b615b722b3f3d790868">layout()</a>, <a class="el" href="lightmap_8frag.html#a1ae463f4af4c25f55133a7547f7c89eb">layout()</a>, <a class="el" href="lightmap__dilate_8comp.html#a0c59932733adaaf3d94b9d270898a945">layout()</a>, <a class="el" href="lightmap__denoise_8comp.html#a1c877c8945bb0a1bbdd946989067d7f0">layout()</a>, <a class="el" href="directional__map__normalize_8comp.html#a738b064db501528ff82e8daf9c9255d6">layout()</a>, <a class="el" href="lightmap__bounce_8comp.html#ae448689fd07c4c445ad94128f30932bc">layout()</a>, <a class="el" href="lightmap__denoise_8comp.html#a95f4fcc41a9a598bffdfd10b9b307c21">layout()</a>, <a class="el" href="lightmap__dilate_8comp.html#a909334eb1c84921b6b722a499efe337f">layout()</a>, <a class="el" href="directional__map__normalize_8comp.html#a1ed3c2242220e9aa04bd2fe82a8d84c7">layout()</a>, <a class="el" href="coc_8frag_source.html#l00004">layout()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00039">layout()</a>, <a class="el" href="init__cluster__aabbs_8comp_source.html#l00039">layout()</a>, <a class="el" href="coc_8frag_source.html#l00059">layout()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00043">layout()</a>, <a class="el" href="dynamic_8vert_source.html#l00120">layout()</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00015">layout()</a>, <a class="el" href="elements__prefix_8comp_source.html#l00015">layout()</a>, <a class="el" href="lightmap_8vert_source.html#l00031">layout()</a>, <a class="el" href="text_8vert_source.html#l00025">layout()</a>, <a class="el" href="probe__unpack_8comp_source.html#l00016">layout()</a>, and <a class="el" href="ui_8vert_source.html#l00030">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a29581687ebc1264eb63c6047f2aef3e2" name="a29581687ebc1264eb63c6047f2aef3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29581687ebc1264eb63c6047f2aef3e2">&#9670;&#160;</a></span>layout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">2</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00043">43</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a9ba408678d69e5b3d4bcc9dc5e423943" name="a9ba408678d69e5b3d4bcc9dc5e423943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba408678d69e5b3d4bcc9dc5e423943">&#9670;&#160;</a></span>pcg_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint pcg_hash </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00190">190</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00190">pcg_hash()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00188">state</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00190">pcg_hash()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>.</p>
+
+</div>
+</div>
+<a id="a865aa450405d51d7db826b11a336ffe8" name="a865aa450405d51d7db826b11a336ffe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865aa450405d51d7db826b11a336ffe8">&#9670;&#160;</a></span>wang_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint wang_hash </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>seed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00197">197</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00197">wang_hash()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00197">wang_hash()</a>.</p>
+
+</div>
+</div>
+<a id="ac065bd1fd6625630a0de19c6e1c8ce0a" name="ac065bd1fd6625630a0de19c6e1c8ce0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac065bd1fd6625630a0de19c6e1c8ce0a">&#9670;&#160;</a></span>rand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rand </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00206">206</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00190">pcg_hash()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="utilities_8c_source.html#l00429">generate_bounce()</a>, <a class="el" href="audio_8c_source.html#l01265">generate_synthetic_IR_tail()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00228">get_bounce_direction()</a>, <a class="el" href="init_8c_source.html#l01988">init()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="init_8c_source.html#l01219">precompute_ssao_kernel()</a>, <a class="el" href="audio_8c_source.html#l01410">process_probe_chunk()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00833">random_pos_on_triangle()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01277">resolve_transparents()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01015">traverse_light_bvh()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01191">traverse_light_bvh_direct_emissives()</a>, and <a class="el" href="physics_8c_source.html#l01605">update_physics_components()</a>.</p>
+
+</div>
+</div>
+<a id="aa90be9e7aba1059252da1ac423c6c795" name="aa90be9e7aba1059252da1ac423c6c795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90be9e7aba1059252da1ac423c6c795">&#9670;&#160;</a></span>frisvad_basis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frisvad_basis </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>b1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>b2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00209">209</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00209">frisvad_basis()</a>, and <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="utilities_8h_source.html#l00183">frisvad_basis()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00209">frisvad_basis()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00228">get_bounce_direction()</a>.</p>
+
+</div>
+</div>
+<a id="a77484d55384c798f91d59d1c37778fc2" name="a77484d55384c798f91d59d1c37778fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77484d55384c798f91d59d1c37778fc2">&#9670;&#160;</a></span>get_bounce_direction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> get_bounce_direction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00228">228</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00209">frisvad_basis()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00228">get_bounce_direction()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00068">TBN</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00228">get_bounce_direction()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="probe__bake_8comp_source.html#l01077">trace_path()</a>, and <a class="el" href="lightmap__bounce_8comp_source.html#l01342">trace_path()</a>.</p>
+
+</div>
+</div>
+<a id="a15a49df5a1d235c64034ddf5e512a293" name="a15a49df5a1d235c64034ddf5e512a293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a49df5a1d235c64034ddf5e512a293">&#9670;&#160;</a></span>generate_sphere_dir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> generate_sphere_dir </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00258">258</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00258">generate_sphere_dir()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00258">generate_sphere_dir()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, and <a class="el" href="probe__bake_8comp_source.html#l01077">trace_path()</a>.</p>
+
+</div>
+</div>
+<a id="a0525efa96d313b82ed55cac3ea607345" name="a0525efa96d313b82ed55cac3ea607345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0525efa96d313b82ed55cac3ea607345">&#9670;&#160;</a></span>ray_intersects_triangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> ray_intersects_triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00289">289</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00275">RayHit::barycentrics</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00289">ray_intersects_triangle()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="utilities_8h.html#a5720772dcdb9117e69a4a9ad7dbb96b3">compute_hull_centroid()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00289">ray_intersects_triangle()</a>, <a class="el" href="utilities_8c_source.html#l00341">ray_intersects_triangle()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00403">ray_intersects_triangle()</a>, <a class="el" href="acceleration_8c_source.html#l00215">ray_traverse_mesh_bvh()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00346">traverse_mesh_bvh()</a>.</p>
+
+</div>
+</div>
+<a id="a64ba83c44e55606d8104dbcc8d42755e" name="a64ba83c44e55606d8104dbcc8d42755e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ba83c44e55606d8104dbcc8d42755e">&#9670;&#160;</a></span>slab_test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool slab_test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="probe__bake_8comp.html#struct_b_v_h_node">BVHNode</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00333">333</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00280">RayHit::blocked_t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00333">slab_test()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00333">slab_test()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00445">slab_test()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00346">traverse_mesh_bvh()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00410">traverse_scene_bvh()</a>.</p>
+
+</div>
+</div>
+<a id="a91aed0669798c705c5d7e654c5c7ba20" name="a91aed0669798c705c5d7e654c5c7ba20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91aed0669798c705c5d7e654c5c7ba20">&#9670;&#160;</a></span>traverse_mesh_bvh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void traverse_mesh_bvh </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>node_offset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>mn_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>original_dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>md</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>tri</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00346">346</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00279">RayHit::best_t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00280">RayHit::blocked_t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00276">RayHit::mn_idx</a>, <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00069">Face::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00277">RayHit::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00282">RayHit::occluded</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00051">Vertex::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00289">ray_intersects_triangle()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00333">slab_test()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00346">traverse_mesh_bvh()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00278">RayHit::tri_idx</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00075">Face::v0</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00076">Face::v1</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00077">Face::v2</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00346">traverse_mesh_bvh()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00410">traverse_scene_bvh()</a>.</p>
+
+</div>
+</div>
+<a id="a4d5ddb5990a1449aa382414468e3c1ae" name="a4d5ddb5990a1449aa382414468e3c1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5ddb5990a1449aa382414468e3c1ae">&#9670;&#160;</a></span>traverse_scene_bvh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void traverse_scene_bvh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>inv_dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>light_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>tri</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00410">410</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00102">MeshNode::inverse_global_matrix</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00097">MeshNode::is_static</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00088">MeshNode::mesh_id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00087">MeshNode::mesh_node_id</a>, <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00091">MeshNode::node_offset</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00333">slab_test()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00346">traverse_mesh_bvh()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00410">traverse_scene_bvh()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00844">process_area_light()</a>, <a class="el" href="probe__bake_8comp_source.html#l00698">process_area_light()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01277">resolve_transparents()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00686">solve_light_source()</a>, <a class="el" href="probe__bake_8comp_source.html#l00572">solve_light_source()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01342">trace_path()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00410">traverse_scene_bvh()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00465">465</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00020">Material::absorption_coefficients</a>, <a class="el" href="engine__types_8h_source.html#l00094">AUDIO_NUM_BANDS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00279">RayHit::best_t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00280">RayHit::blocked_t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00258">generate_sphere_dir()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00228">get_bounce_direction()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00102">MeshNode::inverse_global_matrix</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00068">Face::material_id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00276">RayHit::mn_idx</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00069">Face::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00277">RayHit::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00282">RayHit::occluded</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00159">AudioProbe::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="postprocess_8frag_source.html#l00177">samples</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00023">Material::scattering_coefficients</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00008">SPEED_OF_SOUND</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00188">state</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00410">traverse_scene_bvh()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00278">RayHit::tri_idx</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00456">uBatchSize</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00455">uBounces</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00453">uIterations</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00454">uMaxSamplesPerProbe</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00457">uProbeOffset</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00451">uProbeSize</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00452">uRayOffset</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00197">wang_hash()</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, and <a class="el" href="main_8c_source.html#l00520">main()</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a5e73da37ecdde38efd7215c987de292e" name="a5e73da37ecdde38efd7215c987de292e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e73da37ecdde38efd7215c987de292e">&#9670;&#160;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint state = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00188">188</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00190">pcg_hash()</a>.</p>
+
+</div>
+</div>
+<a id="aa7650aa68a61dca88c0096d70fed609a" name="aa7650aa68a61dca88c0096d70fed609a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7650aa68a61dca88c0096d70fed609a">&#9670;&#160;</a></span>hit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#struct_ray_hit">RayHit</a> hit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00287">287</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l00050">BVH_slab_test_aabb()</a>, <a class="el" href="lightmap_8c_source.html#l01391">check_lighting_pv()</a>, <a class="el" href="audio_8c_source.html#l00474">find_closest_visible_aportal()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00462">get_hit_uvs()</a>, <a class="el" href="audio_8c_source.html#l01097">interpolate_nearest_aprobes()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="audio_8c_source.html#l00660">pathfind_audio_occlusion()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00844">process_area_light()</a>, <a class="el" href="probe__bake_8comp_source.html#l00698">process_area_light()</a>, <a class="el" href="input_8c_source.html#l00107">process_sdl_event()</a>, <a class="el" href="acceleration_8c_source.html#l00215">ray_traverse_mesh_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00289">ray_traverse_scene_bvh()</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="audio_8c_source.html#l00417">recalculate_audio_portal_paths()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01277">resolve_transparents()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00333">slab_test()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00445">slab_test()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00686">solve_light_source()</a>, <a class="el" href="probe__bake_8comp_source.html#l00572">solve_light_source()</a>, <a class="el" href="probe__bake_8comp_source.html#l01077">trace_path()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01342">trace_path()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00346">traverse_mesh_bvh()</a>, <a class="el" href="audio_8c_source.html#l01790">update_audio_occlusion()</a>, <a class="el" href="camera_8c_source.html#l00910">update_body_from_legs()</a>, and <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>.</p>
+
+</div>
+</div>
+<a id="a4349f1279ca6b8e6a2d4121e2f9c1f5f" name="a4349f1279ca6b8e6a2d4121e2f9c1f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4349f1279ca6b8e6a2d4121e2f9c1f5f">&#9670;&#160;</a></span>uProbeSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uProbeSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00451">451</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>.</p>
+
+</div>
+</div>
+<a id="ac2a7856a0e5064212f1f25691e35b8a4" name="ac2a7856a0e5064212f1f25691e35b8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a7856a0e5064212f1f25691e35b8a4">&#9670;&#160;</a></span>uRayOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uRayOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00452">452</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>.</p>
+
+</div>
+</div>
+<a id="aa6a4aaa4fbcb83458fa64550bf29627a" name="aa6a4aaa4fbcb83458fa64550bf29627a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a4aaa4fbcb83458fa64550bf29627a">&#9670;&#160;</a></span>uIterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uIterations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00453">453</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, and <a class="el" href="probe__bake_8comp_source.html#l01077">trace_path()</a>.</p>
+
+</div>
+</div>
+<a id="a11a2ecbc8fec8ef51fd6cb033bd57782" name="a11a2ecbc8fec8ef51fd6cb033bd57782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a2ecbc8fec8ef51fd6cb033bd57782">&#9670;&#160;</a></span>uMaxSamplesPerProbe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uMaxSamplesPerProbe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00454">454</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>.</p>
+
+</div>
+</div>
+<a id="a8eb588818e04e6b29e0c14107432f506" name="a8eb588818e04e6b29e0c14107432f506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb588818e04e6b29e0c14107432f506">&#9670;&#160;</a></span>uBounces</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uBounces</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00455">455</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>.</p>
+
+</div>
+</div>
+<a id="ae1133bbb41c01426d56c039f7480397c" name="ae1133bbb41c01426d56c039f7480397c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1133bbb41c01426d56c039f7480397c">&#9670;&#160;</a></span>uBatchSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uBatchSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00456">456</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>.</p>
+
+</div>
+</div>
+<a id="ac5993a90e54f4b61a84bb6d48a80ab01" name="ac5993a90e54f4b61a84bb6d48a80ab01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5993a90e54f4b61a84bb6d48a80ab01">&#9670;&#160;</a></span>uProbeOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uProbeOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00457">457</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>.</p>
+
+</div>
+</div>
+<a id="a6f268da119f3aa2849e26cf9666c036d" name="a6f268da119f3aa2849e26cf9666c036d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f268da119f3aa2849e26cf9666c036d">&#9670;&#160;</a></span>AUDIO_NUM_BANDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int AUDIO_NUM_BANDS = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00462">462</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

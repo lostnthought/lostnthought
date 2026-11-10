@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -134,7 +143,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_o.ht
 <li>occlusion_strength&#160;:&#160;<a class="el" href="engine__types_8h.html#a6b8be8392c7614a793d99dcccf5ac708">GLTFMaterial</a></li>
 <li>occlusion_tex&#160;:&#160;<a class="el" href="engine__types_8h.html#a6bde41d63b10f1dc4ba27e00a19aa215">GLTFMaterial</a></li>
 <li>occupied&#160;:&#160;<a class="el" href="engine__types_8h.html#a1ac8c16743ed509c2aedd0f335d0e648">LightmapAtlas</a></li>
-<li>offset&#160;:&#160;<a class="el" href="engine__types_8h.html#a7557e30b943a85ab874af4b209c59efe">ClusterGPU</a>, <a class="el" href="engine__types_8h.html#abb0a8a8728cda7e1a6dab43f1685446a">Mesh</a>, <a class="el" href="engine__types_8h.html#a46646b06450a7e9f176ad29ea0c8771f">MeshNode</a></li>
+<li>offset&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ac96ed952f4c7e20ab2752802b3cc1205">Cluster</a>, <a class="el" href="engine__types_8h.html#a7557e30b943a85ab874af4b209c59efe">ClusterGPU</a>, <a class="el" href="lightmap_8vert.html#abb0a8a8728cda7e1a6dab43f1685446a">Mesh</a>, <a class="el" href="group__shader__structs__group.html#a46646b06450a7e9f176ad29ea0c8771f">MeshNode</a></li>
 <li>old_angular&#160;:&#160;<a class="el" href="group__physics__group.html#abe5ae15182beda454a63aa4b8b42415f">PhysicsComponent</a></li>
 <li>old_vel&#160;:&#160;<a class="el" href="group__physics__group.html#a09e54e6a28683f04cb9319d06685e4c3">PhysicsComponent</a></li>
 <li>on_ground&#160;:&#160;<a class="el" href="engine__types_8h.html#a0bee9a7b1606f635a367c1044b74db1b">Camera</a></li>
@@ -143,11 +152,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_o.ht
 <li>open&#160;:&#160;<a class="el" href="engine__types_8h.html#a3a12acbfa8be71caa14b44bc86bf07ef">FileDirectoryRegistry</a></li>
 <li>opening_menu&#160;:&#160;<a class="el" href="group__editor__group.html#a46360735d46a45969ea3d067c0c1252f">EditorSettings</a></li>
 <li>origin&#160;:&#160;<a class="el" href="lightmap_8c.html#a264a0d824c95b72838d2020cffdf2d84">LMDebug</a></li>
-<li>outer_angle&#160;:&#160;<a class="el" href="engine__types_8h.html#a7d485736bb90f467703a3a39f1b743da">Light</a>, <a class="el" href="engine__types_8h.html#ad92a3950c3fc77507a071a22668d6a4d">LightGPU</a></li>
-<li>outer_cos&#160;:&#160;<a class="el" href="engine__types_8h.html#a4818a21edf755a786d46efe9147ef98d">LightGPU</a></li>
+<li>outer_angle&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a7d485736bb90f467703a3a39f1b743da">Light</a>, <a class="el" href="engine__types_8h.html#ad92a3950c3fc77507a071a22668d6a4d">LightGPU</a></li>
+<li>outer_cos&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a9d61176080300752f5565e5518be4b71">Light</a>, <a class="el" href="engine__types_8h.html#a4818a21edf755a786d46efe9147ef98d">LightGPU</a></li>
 <li>output&#160;:&#160;<a class="el" href="engine__types_8h.html#a8cbff2343f75852c9066b4c6cb089bb8">GLTFAnimationSampler</a></li>
-<li>override_arm&#160;:&#160;<a class="el" href="engine__types_8h.html#ac01ed015869a9eb03bd3c7e405e188d2">Material</a></li>
-<li>override_transparent&#160;:&#160;<a class="el" href="engine__types_8h.html#a0ec464246905bb29648c1aa6403fc264">GLTFMaterial</a>, <a class="el" href="engine__types_8h.html#a53040b8398f4df35d128705ca7022f04">Material</a></li>
+<li>override_arm&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ac01ed015869a9eb03bd3c7e405e188d2">Material</a></li>
+<li>override_transparent&#160;:&#160;<a class="el" href="engine__types_8h.html#a0ec464246905bb29648c1aa6403fc264">GLTFMaterial</a>, <a class="el" href="group__shader__structs__group.html#a53040b8398f4df35d128705ca7022f04">Material</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

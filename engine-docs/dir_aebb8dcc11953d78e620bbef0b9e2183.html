@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -141,9 +150,10 @@ Files</h2></td></tr>
 <tr class="memitem:input_2Eh" id="r_input_2Eh"><td class="memItemLeft"><a href="input_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="input_8h.html">input.h</a></td></tr>
 <tr class="memdesc:input_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives input events from SDL and processes them. <br /></td></tr>
 <tr class="memitem:main_2Ec" id="r_main_2Ec"><td class="memItemLeft"><a href="main_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="main_8c.html">main.c</a></td></tr>
+<tr class="memdesc:main_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio probe baking, portal creation, probe volumes, and emitter functions. <br /></td></tr>
 <tr class="memitem:mesh_2Ec" id="r_mesh_2Ec"><td class="memItemLeft"><a href="mesh_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="mesh_8c.html">mesh.c</a></td></tr>
 <tr class="memitem:mesh_2Eh" id="r_mesh_2Eh"><td class="memItemLeft"><a href="mesh_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="mesh_8h.html">mesh.h</a></td></tr>
-<tr class="memdesc:mesh_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> functions that modify and initialize <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> data. <br /></td></tr>
+<tr class="memdesc:mesh_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> functions that modify and initialize <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> data. <br /></td></tr>
 <tr class="memitem:nk_5Fconfig_2Eh" id="r_nk_5Fconfig_2Eh"><td class="memItemLeft"><a href="nk__config_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="nk__config_8h.html">nk_config.h</a></td></tr>
 <tr class="memitem:nk_5Fimpl_2Ec" id="r_nk_5Fimpl_2Ec"><td class="memItemLeft"><a href="nk__impl_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="nk__impl_8c.html">nk_impl.c</a></td></tr>
 <tr class="memitem:shaders_2Ec" id="r_shaders_2Ec"><td class="memItemLeft"><a href="shaders_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="shaders_8c.html">shaders.c</a></td></tr>

@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,204 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('ssao_8frag.htm
 <div class="contents">
 
 <p><a href="ssao_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a251ff7187aa6805e7027554c86b34307" id="r_a251ff7187aa6805e7027554c86b34307"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a251ff7187aa6805e7027554c86b34307">layout</a> (std140, binding=0) uniform CameraData</td></tr>
+<tr class="memitem:a0fd953679077e442cee0d69fb35a429f" id="r_a0fd953679077e442cee0d69fb35a429f"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0fd953679077e442cee0d69fb35a429f">get_view_pos</a> (<a class="el" href="types_8h.html#structvec2">vec2</a> uv)</td></tr>
+<tr class="memitem:a8cdb1c4e299969b253d5c56dc5f35e51" id="r_a8cdb1c4e299969b253d5c56dc5f35e51"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8cdb1c4e299969b253d5c56dc5f35e51">reconstruct_normal</a> (<a class="el" href="types_8h.html#structvec2">vec2</a> uv, <a class="el" href="types_8h.html#structvec3">vec3</a> view_pos)</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a39fca2c8fe34ab0c307cdd0f7e7f53d6" id="r_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></td></tr>
+<tr class="memitem:abedf364922afc432663845334cd7880e" id="r_abedf364922afc432663845334cd7880e"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#abedf364922afc432663845334cd7880e">uDepth</a></td></tr>
+<tr class="memitem:a2c15aad415bdcfb8677eb3610741fc4d" id="r_a2c15aad415bdcfb8677eb3610741fc4d"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a2c15aad415bdcfb8677eb3610741fc4d">uNoise</a></td></tr>
+<tr class="memitem:ae244f98be978a6984bf12ddb5c28519e" id="r_ae244f98be978a6984bf12ddb5c28519e"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structivec2">ivec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae244f98be978a6984bf12ddb5c28519e">uSSAOResolution</a></td></tr>
+<tr class="memitem:aa3d609333e8829116ebeab7387833d66" id="r_aa3d609333e8829116ebeab7387833d66"><td class="memItemLeft">out float&#160;</td><td class="memItemRight"><a class="el" href="#aa3d609333e8829116ebeab7387833d66">fragColor</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a251ff7187aa6805e7027554c86b34307" name="a251ff7187aa6805e7027554c86b34307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ff7187aa6805e7027554c86b34307">&#9670;&#160;</a></span>layout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std140</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00006">6</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, and <a class="el" href="shadow_8vert_source.html#l00016">view</a>.</p>
+
+</div>
+</div>
+<a id="a0fd953679077e442cee0d69fb35a429f" name="a0fd953679077e442cee0d69fb35a429f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd953679077e442cee0d69fb35a429f">&#9670;&#160;</a></span>get_view_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> get_view_pos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec2">vec2</a></td>          <td class="paramname"><span class="paramname"><em>uv</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00050">50</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="ssao_8frag_source.html#l00050">get_view_pos()</a>, <a class="el" href="depth__downsample_8frag_source.html#l00002">uDepth</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, and <a class="el" href="types_8h_source.html#l00013">vec4::w</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ssao_8frag_source.html#l00050">get_view_pos()</a>, <a class="el" href="ssao_8frag_source.html#l00074">main()</a>, and <a class="el" href="ssao_8frag_source.html#l00059">reconstruct_normal()</a>.</p>
+
+</div>
+</div>
+<a id="a8cdb1c4e299969b253d5c56dc5f35e51" name="a8cdb1c4e299969b253d5c56dc5f35e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cdb1c4e299969b253d5c56dc5f35e51">&#9670;&#160;</a></span>reconstruct_normal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> reconstruct_normal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec2">vec2</a></td>          <td class="paramname"><span class="paramname"><em>uv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>view_pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00059">59</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="ssao_8frag_source.html#l00050">get_view_pos()</a>, <a class="el" href="ssao_8frag_source.html#l00059">reconstruct_normal()</a>, <a class="el" href="ssao_8frag_source.html#l00046">uSSAOResolution</a>, <a class="el" href="bokeh_8frag_source.html#l00018">uTexelSize</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ssao_8frag_source.html#l00074">main()</a>, and <a class="el" href="ssao_8frag_source.html#l00059">reconstruct_normal()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00074">74</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="ssao_8frag_source.html#l00050">get_view_pos()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="ssao_8frag_source.html#l00059">reconstruct_normal()</a>, <a class="el" href="postprocess_8frag_source.html#l00177">samples</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00068">TBN</a>, <a class="el" href="ssao_8frag_source.html#l00045">uNoise</a>, <a class="el" href="ssao_8frag_source.html#l00046">uSSAOResolution</a>, <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>, <a class="el" href="types_8h_source.html#l00013">vec4::w</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a39fca2c8fe34ab0c307cdd0f7e7f53d6" name="a39fca2c8fe34ab0c307cdd0f7e7f53d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00004">4</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+</div>
+</div>
+<a id="abedf364922afc432663845334cd7880e" name="abedf364922afc432663845334cd7880e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abedf364922afc432663845334cd7880e">&#9670;&#160;</a></span>uDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00044">44</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+</div>
+</div>
+<a id="a2c15aad415bdcfb8677eb3610741fc4d" name="a2c15aad415bdcfb8677eb3610741fc4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c15aad415bdcfb8677eb3610741fc4d">&#9670;&#160;</a></span>uNoise</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uNoise</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00045">45</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ssao_8frag_source.html#l00074">main()</a>.</p>
+
+</div>
+</div>
+<a id="ae244f98be978a6984bf12ddb5c28519e" name="ae244f98be978a6984bf12ddb5c28519e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae244f98be978a6984bf12ddb5c28519e">&#9670;&#160;</a></span>uSSAOResolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structivec2">ivec2</a> uSSAOResolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00046">46</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ssao_8frag_source.html#l00074">main()</a>, and <a class="el" href="ssao_8frag_source.html#l00059">reconstruct_normal()</a>.</p>
+
+</div>
+</div>
+<a id="aa3d609333e8829116ebeab7387833d66" name="aa3d609333e8829116ebeab7387833d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d609333e8829116ebeab7387833d66">&#9670;&#160;</a></span>fragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out float fragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ssao_8frag_source.html#l00048">48</a> of file <a class="el" href="ssao_8frag_source.html">ssao.frag</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

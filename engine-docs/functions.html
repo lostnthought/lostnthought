@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,19 +134,19 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions.html
 
 
 <h3 class="doxsection"><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>A&#160;:&#160;<a class="el" href="engine__types_8h.html#a786003ff47f97df9574c1fb858044273">Light</a></li>
+<li>A&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a786003ff47f97df9574c1fb858044273">Light</a></li>
 <li>a&#160;:&#160;<a class="el" href="group__physics__group.html#a5b49c1bda07d449eefab7f19170cc4ec">CapsuleData</a>, <a class="el" href="group__physics__group.html#adb7806e9245a0f3f5e763d9c7d266868">CollisionPoints</a>, <a class="el" href="types_8h.html#a7c356a0cbd25fa9a5b111ee769664836">Edge</a>, <a class="el" href="mesh_8c.html#af5b7478238b58232b75d179fbb92bbe5">EdgePairKey</a>, <a class="el" href="group__physics__group.html#a31897aaa072c10749ffdceeaea252b24">Manifold</a>, <a class="el" href="types_8h.html#a05b46a0fc449ba850c4477d63979f7a4">SupportVertex</a></li>
 <li>a0&#160;:&#160;<a class="el" href="engine__types_8h.html#a0fb70c385a8f9d7e231744d6d46504c7">Biquad</a>, <a class="el" href="types_8h.html#a0ebd4b2136911cead188929076dbf0de">mat3</a>, <a class="el" href="types_8h.html#ae65789b4c69a0521ea419498c8bf6d83">mat4</a></li>
 <li>a1&#160;:&#160;<a class="el" href="engine__types_8h.html#a8298f5e0871449dc6bd6741231c1d3fb">Biquad</a>, <a class="el" href="types_8h.html#a1f0666917d474d97b6a6a06f955256ba">mat3</a>, <a class="el" href="types_8h.html#a080e1e3779390945ca7f203e09a7c941">mat4</a></li>
 <li>a2&#160;:&#160;<a class="el" href="engine__types_8h.html#ae7beb3858e3230b81fc9aff882f04431">Biquad</a>, <a class="el" href="types_8h.html#ad6e3fdc3a1487ed4d18a15586dd61502">mat3</a>, <a class="el" href="types_8h.html#a444127db952ff79baf41addd543d19ca">mat4</a></li>
 <li>a3&#160;:&#160;<a class="el" href="types_8h.html#a9d505367dc01f3b3080218c5567e4daa">mat4</a></li>
-<li>aabb&#160;:&#160;<a class="el" href="engine__types_8h.html#a777d094692db043ed7ca1fad17ac550a">Asset</a>, <a class="el" href="engine__types_8h.html#a6debd3ed22be2c0533ff283d6b68f0f1">AssetInstance</a>, <a class="el" href="engine__types_8h.html#ab8ccbdebbea62d51da193f3e96f0b862">BVHNode</a>, <a class="el" href="group__physics__group.html#a3098a289e3c552ecb7b426bef82b7a3c">ConvexHull</a>, <a class="el" href="engine__types_8h.html#acc8f3e434f1ef26c373ee69727fe0069">Entity</a>, <a class="el" href="engine__types_8h.html#a54a8c2a2e354651e84a8c83ea96e48a4">Mesh</a>, <a class="el" href="engine__types_8h.html#ad56a89779d58df404ef918d1edf46b4d">MeshNode</a>, <a class="el" href="group__physics__group.html#a5ebbcc3aa4f6004a5ccfa9ebbac57bae">PhysicsComponent</a>, <a class="el" href="engine__types_8h.html#a0557f4ae3f7e444421baa5f212e1fe3e">ReflectionProbe</a>, <a class="el" href="engine__types_8h.html#abd70860c3dc2de368b925beda9783161">SceneData</a></li>
+<li>aabb&#160;:&#160;<a class="el" href="engine__types_8h.html#a777d094692db043ed7ca1fad17ac550a">Asset</a>, <a class="el" href="engine__types_8h.html#a6debd3ed22be2c0533ff283d6b68f0f1">AssetInstance</a>, <a class="el" href="probe__bake_8comp.html#ab8ccbdebbea62d51da193f3e96f0b862">BVHNode</a>, <a class="el" href="group__physics__group.html#a3098a289e3c552ecb7b426bef82b7a3c">ConvexHull</a>, <a class="el" href="engine__types_8h.html#acc8f3e434f1ef26c373ee69727fe0069">Entity</a>, <a class="el" href="lightmap_8vert.html#a54a8c2a2e354651e84a8c83ea96e48a4">Mesh</a>, <a class="el" href="group__shader__structs__group.html#ad56a89779d58df404ef918d1edf46b4d">MeshNode</a>, <a class="el" href="group__physics__group.html#a5ebbcc3aa4f6004a5ccfa9ebbac57bae">PhysicsComponent</a>, <a class="el" href="engine__types_8h.html#a0557f4ae3f7e444421baa5f212e1fe3e">ReflectionProbe</a>, <a class="el" href="engine__types_8h.html#abd70860c3dc2de368b925beda9783161">SceneData</a></li>
 <li>aabbe_x&#160;:&#160;<a class="el" href="group__editor__group.html#a4709994c93212b579e207c78f8d0cf96">LightEditorMenu</a></li>
 <li>aabbe_y&#160;:&#160;<a class="el" href="group__editor__group.html#a466247777a1932dc464ba51ca6c2a3d8">LightEditorMenu</a></li>
 <li>aabbe_z&#160;:&#160;<a class="el" href="group__editor__group.html#afa0d8ab42f490e20f555bda10b692722">LightEditorMenu</a></li>
 <li>ab&#160;:&#160;<a class="el" href="types_8h.html#a4359b13f641f9fac2e848218b131c549">HorizonEdge</a></li>
-<li>abs_energy&#160;:&#160;<a class="el" href="group__aprobe__group.html#a03413870303f53da9e2290bb4579bf9e">AudioSampleGPU</a></li>
-<li>absorption_coefficients&#160;:&#160;<a class="el" href="engine__types_8h.html#a590ad845a61691fa0006cf3a2befc557">GLTFMaterial</a>, <a class="el" href="engine__types_8h.html#acaac01f686e387f9dececd910849485e">Material</a>, <a class="el" href="engine__types_8h.html#a0712b29180d7a62c6ab53142b55c32c2">MaterialGPU</a></li>
+<li>abs_energy&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a44fefe03337a0f1e6fa2f5cefc65b354">AudioSample</a>, <a class="el" href="group__aprobe__group.html#a03413870303f53da9e2290bb4579bf9e">AudioSampleGPU</a></li>
+<li>absorption_coefficients&#160;:&#160;<a class="el" href="engine__types_8h.html#a590ad845a61691fa0006cf3a2befc557">GLTFMaterial</a>, <a class="el" href="group__shader__structs__group.html#af37bbe0957839325943f24411c066dda">Material</a>, <a class="el" href="engine__types_8h.html#a0712b29180d7a62c6ab53142b55c32c2">MaterialGPU</a></li>
 <li>ac&#160;:&#160;<a class="el" href="engine__types_8h.html#a435a53983ad479d11b94be39192d8374">Entity</a></li>
 <li>accel&#160;:&#160;<a class="el" href="group__physics__group.html#a32402b58a146afd640cc2ea1e9862636">PhysicsComponent</a></li>
 <li>accessorCount&#160;:&#160;<a class="el" href="engine__types_8h.html#a25fa3813165065899ca62095f63fcdb4">GLTFDoc</a></li>
@@ -145,15 +154,16 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions.html
 <li>ACES&#160;:&#160;<a class="el" href="group__editor__group.html#a9b930c7545bbd4d545112e127633dcce">EditorSettings</a></li>
 <li>action_callback&#160;:&#160;<a class="el" href="group__ui__group.html#a7b0419ce923d23d250cc47538b191a10">UIElement</a></li>
 <li>action_fn&#160;:&#160;<a class="el" href="group__ui__group.html#ac26b6308aa052ed118100e67413812ef">UICallback</a></li>
-<li>active&#160;:&#160;<a class="el" href="engine__types_8h.html#af13c2ddda19608864a999debc5a8b1a2">AnimationTrack</a>, <a class="el" href="engine__types_8h.html#ab1499efb991cbd431510581665e4bec7">MeshNode</a></li>
+<li>active&#160;:&#160;<a class="el" href="engine__types_8h.html#af13c2ddda19608864a999debc5a8b1a2">AnimationTrack</a>, <a class="el" href="group__shader__structs__group.html#ab1499efb991cbd431510581665e4bec7">MeshNode</a></li>
 <li>adjacent_indices&#160;:&#160;<a class="el" href="engine__types_8h.html#a8b8d260d517e96b99a60f33e4f3f1751">TriangleAdjacency</a></li>
 <li>adjacent_portals&#160;:&#160;<a class="el" href="group__audio__group.html#a14aa9f39dfc6d0217d349a1de57db96f">AudioPortal</a></li>
 <li>albedo_handle&#160;:&#160;<a class="el" href="engine__types_8h.html#a432d2afe3d8d3c818c71b7a5872ff410">MaterialGPU</a></li>
+<li>albedo_tex&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a135b342a74601e9ea80c358dade2d760">Material</a></li>
 <li>align&#160;:&#160;<a class="el" href="group__ui__group.html#a891ef056066678a0eb7377c8a52d9cb9">UILabel</a></li>
-<li>alpha_cutoff&#160;:&#160;<a class="el" href="engine__types_8h.html#a9cf41109e740eabaa81212f5e666481b">GLTFMaterial</a>, <a class="el" href="engine__types_8h.html#aee3d96a88db4eb861cb0864cc0a47514">Material</a>, <a class="el" href="engine__types_8h.html#a8c6190b9efd2e9c0b7163aa516f83c51">MaterialGPU</a></li>
-<li>alpha_mode&#160;:&#160;<a class="el" href="engine__types_8h.html#a1116697d593fd2fa0da81cb01d5e1e85">GLTFMaterial</a>, <a class="el" href="engine__types_8h.html#a8b10fb290f7ff5671aac0d1313fbf5f3">Material</a>, <a class="el" href="engine__types_8h.html#a235cb7331611256096a2dc27dbd82bd8">MaterialGPU</a></li>
+<li>alpha_cutoff&#160;:&#160;<a class="el" href="engine__types_8h.html#a9cf41109e740eabaa81212f5e666481b">GLTFMaterial</a>, <a class="el" href="group__shader__structs__group.html#aee3d96a88db4eb861cb0864cc0a47514">Material</a>, <a class="el" href="engine__types_8h.html#a8c6190b9efd2e9c0b7163aa516f83c51">MaterialGPU</a></li>
+<li>alpha_mode&#160;:&#160;<a class="el" href="engine__types_8h.html#a1116697d593fd2fa0da81cb01d5e1e85">GLTFMaterial</a>, <a class="el" href="group__shader__structs__group.html#a5d87a5e64e0e204f548df3f750a4ff81">Material</a>, <a class="el" href="engine__types_8h.html#a235cb7331611256096a2dc27dbd82bd8">MaterialGPU</a></li>
 <li>already_hovered&#160;:&#160;<a class="el" href="group__ui__group.html#a3028dc5f002486dcaf7bde5f7a5aaae7">UIElement</a></li>
-<li>ambient&#160;:&#160;<a class="el" href="engine__types_8h.html#aea667bfa0043c300818e5e34c2f0f00d">MaterialGPU</a></li>
+<li>ambient&#160;:&#160;<a class="el" href="group__shader__structs__group.html#addd1d1e5d189085f2a6a7b8e044a74a0">Material</a>, <a class="el" href="engine__types_8h.html#aea667bfa0043c300818e5e34c2f0f00d">MaterialGPU</a></li>
 <li>angle&#160;:&#160;<a class="el" href="group__ui__group.html#a3ddcaf4e09909403205caaffd12f617c">TextBox</a>, <a class="el" href="group__editor__group.html#ab15e6ac1020c54103a52e23f9f6123ab">TextBoxEditorMenu</a>, <a class="el" href="group__ui__group.html#a332dcd5a02a9c8c2bc4e86bddecf52b5">UIElement</a>, <a class="el" href="group__editor__group.html#ac145d102dac240a422dc830f53718d01">UIElementEditorMenu</a></li>
 <li>angular_vel&#160;:&#160;<a class="el" href="engine__types_8h.html#a46c8f9c3ecb37a9bdbf1f33f19a6ebb9">Spring</a></li>
 <li>angular_velocity&#160;:&#160;<a class="el" href="group__physics__group.html#a893c3801ca2f5f977588ef8599b24950">PhysicsComponent</a></li>
@@ -162,8 +172,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions.html
 <li>animation_indices_count&#160;:&#160;<a class="el" href="engine__types_8h.html#a5c1585ebda9fb33ea3ea2c9c817f42c4">GLTFSkin</a></li>
 <li>animations&#160;:&#160;<a class="el" href="engine__types_8h.html#ac7e70c548eba228fdf19356a3706b515">Asset</a>, <a class="el" href="engine__types_8h.html#a6a3ff2c31b35143def33b150593ebddd">GLTFDoc</a></li>
 <li>ao_iterations&#160;:&#160;<a class="el" href="group__editor__group.html#a191b6b5d706fbca9a30468d08daa4ddb">EditorSettings</a>, <a class="el" href="group__editor__group.html#a9e4083a8a7c7f05ee3264d27f902f4f7">LightEditorMenu</a></li>
-<li>ao_strength&#160;:&#160;<a class="el" href="engine__types_8h.html#a21cbb4b2ea332d560bfadf355e22cde3">Material</a>, <a class="el" href="engine__types_8h.html#aac44eb0b6b95e25ffa59a6ece4f41eec">MaterialGPU</a></li>
-<li>ao_tex&#160;:&#160;<a class="el" href="engine__types_8h.html#a1961a62dccb3fcf5eb92c2281a8a78a3">Material</a></li>
+<li>ao_strength&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a21cbb4b2ea332d560bfadf355e22cde3">Material</a>, <a class="el" href="engine__types_8h.html#aac44eb0b6b95e25ffa59a6ece4f41eec">MaterialGPU</a></li>
+<li>ao_tex&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a1961a62dccb3fcf5eb92c2281a8a78a3">Material</a></li>
 <li>ao_threshold&#160;:&#160;<a class="el" href="group__editor__group.html#a30fb4bb63dfa8659fd6e658a83ca7495">EditorSettings</a>, <a class="el" href="group__editor__group.html#a3b6a8d767914046ebf4e9c0e4098a50d">LightEditorMenu</a></li>
 <li>aportal_pos&#160;:&#160;<a class="el" href="group__editor__group.html#a0d37ccfdc5ca7225b975c559b24a5a59">AProbeEditorMenu</a></li>
 <li>aprobe_mutex&#160;:&#160;<a class="el" href="group__aprobe__group.html#ab5c15c8f6e9637faa54b3cda7418ca4b">AudioScratchBuffers</a></li>
@@ -171,15 +181,15 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions.html
 <li>APV_id&#160;:&#160;<a class="el" href="group__aprobe__group.html#ad49d1bca1eae13d8e9f5aa54f8c4fdad">AudioProbeWeights</a></li>
 <li>APV_PATH&#160;:&#160;<a class="el" href="engine__types_8h.html#ab4bb490de6c6799549fbe3c29bbaf60c">SceneData</a></li>
 <li>apv_res&#160;:&#160;<a class="el" href="group__editor__group.html#a1d66425e56af910f3b090de793c1762f">AProbeEditorMenu</a></li>
-<li>area&#160;:&#160;<a class="el" href="engine__types_8h.html#adf7e8d06b417dd38315b8dbcf56cd40d">Light</a>, <a class="el" href="engine__types_8h.html#a3e8f641ebad249e253663f23bcb6f8bc">LightGPU</a></li>
+<li>area&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ae788aff672913e469b1a279348f2a3cd">Light</a>, <a class="el" href="engine__types_8h.html#a3e8f641ebad249e253663f23bcb6f8bc">LightGPU</a></li>
 <li>arm_handle&#160;:&#160;<a class="el" href="engine__types_8h.html#a7c47a97db12a1b00b30c00cbb93af2e0">MaterialGPU</a></li>
-<li>arm_tex&#160;:&#160;<a class="el" href="engine__types_8h.html#aaa0cba6688aea159271bf10fdf2a25c6">Material</a></li>
+<li>arm_tex&#160;:&#160;<a class="el" href="group__shader__structs__group.html#aca0248557f5418f7043ad747831e08a0">Material</a></li>
 <li>array_offset&#160;:&#160;<a class="el" href="engine__types_8h.html#a066e23a012993f4935054e3f7a61a3b6">DrawCommand</a></li>
-<li>arrival_dir&#160;:&#160;<a class="el" href="group__aprobe__group.html#a54c1a2c599a4005b679ecd422287caee">AudioSampleGPU</a></li>
+<li>arrival_dir&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a5160299bb3e67cac8fb36a7030c723f6">AudioSample</a>, <a class="el" href="group__aprobe__group.html#a54c1a2c599a4005b679ecd422287caee">AudioSampleGPU</a></li>
 <li>as&#160;:&#160;<a class="el" href="engine__types_8h.html#a2cd119742886669a110051ec2b071d36">Entity</a>, <a class="el" href="group__ui__group.html#a4f5f6025805fc25ad5d0ca8c1aa1f8f2">UIElement</a></li>
-<li>asset&#160;:&#160;<a class="el" href="engine__types_8h.html#aed29b9d676e9911cc3be990a2a1e8772">MeshNode</a></li>
-<li>asset_id&#160;:&#160;<a class="el" href="engine__types_8h.html#ae6b5410229553f5228d8a2f1b8e40e7a">Animation</a>, <a class="el" href="engine__types_8h.html#a3b7c83cf16e0695d6446442270dc319e">Asset</a>, <a class="el" href="engine__types_8h.html#a6cb4cd0e20d1ad038e1fb013085f8126">AssetInstance</a>, <a class="el" href="engine__types_8h.html#a33107abef56ba33a9c5ed41120ccba3c">Mesh</a></li>
-<li>asset_instance&#160;:&#160;<a class="el" href="engine__types_8h.html#ad6b97f6f8ce1c43b0c3bc12084d52d74">MeshNode</a></li>
+<li>asset&#160;:&#160;<a class="el" href="group__shader__structs__group.html#aed29b9d676e9911cc3be990a2a1e8772">MeshNode</a></li>
+<li>asset_id&#160;:&#160;<a class="el" href="engine__types_8h.html#ae6b5410229553f5228d8a2f1b8e40e7a">Animation</a>, <a class="el" href="engine__types_8h.html#a3b7c83cf16e0695d6446442270dc319e">Asset</a>, <a class="el" href="engine__types_8h.html#a6cb4cd0e20d1ad038e1fb013085f8126">AssetInstance</a>, <a class="el" href="lightmap_8vert.html#a33107abef56ba33a9c5ed41120ccba3c">Mesh</a></li>
+<li>asset_instance&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ad6b97f6f8ce1c43b0c3bc12084d52d74">MeshNode</a></li>
 <li>asset_instance_menu_open&#160;:&#160;<a class="el" href="group__editor__group.html#aaf1009d7804b427b6dd2f9a9dcc5763f">EditorSettings</a></li>
 <li>assets&#160;:&#160;<a class="el" href="engine__types_8h.html#abae58930c10e53514261af91ca6f173d">Globals</a></li>
 <li>at_rest&#160;:&#160;<a class="el" href="group__physics__group.html#a979c7bc51f2c9bb4f698daedf6697f29">PhysicsComponent</a></li>
@@ -193,9 +203,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions.html
 <li>audio_probe_volume_overlay&#160;:&#160;<a class="el" href="group__editor__group.html#ac08de631b4d8f2ba032abdc8c1ce119a">EditorSettings</a></li>
 <li>audio_probe_volumes&#160;:&#160;<a class="el" href="engine__types_8h.html#aa2d9068ca16ea120ad4c993d32213f65">SceneData</a></li>
 <li>audio_probes&#160;:&#160;<a class="el" href="group__aprobe__group.html#a2bf207bd4dca1e01d3778775907802b2">APV</a>, <a class="el" href="engine__types_8h.html#a60c5f6324b96336a23e1c6640074e10f">Globals</a></li>
-<li>axis_x&#160;:&#160;<a class="el" href="engine__types_8h.html#aee7af0a5768ce95d043d1ea8880103a1">OBBGPU</a></li>
-<li>axis_y&#160;:&#160;<a class="el" href="engine__types_8h.html#a7dc3b443df847bdcbef1d924f0a14fce">OBBGPU</a></li>
-<li>axis_z&#160;:&#160;<a class="el" href="engine__types_8h.html#a6f11ae61a43ac3a627b349aa859308bd">OBBGPU</a></li>
+<li>axis_x&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ad802f1f3c88c82218c730bc56e641eed">OBB</a>, <a class="el" href="engine__types_8h.html#aee7af0a5768ce95d043d1ea8880103a1">OBBGPU</a></li>
+<li>axis_y&#160;:&#160;<a class="el" href="group__shader__structs__group.html#aa233e4e4627a648a984c1ad41a3f0785">OBB</a>, <a class="el" href="engine__types_8h.html#a7dc3b443df847bdcbef1d924f0a14fce">OBBGPU</a></li>
+<li>axis_z&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a49e26b6b760594b41b651775888f4529">OBB</a>, <a class="el" href="engine__types_8h.html#a6f11ae61a43ac3a627b349aa859308bd">OBBGPU</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

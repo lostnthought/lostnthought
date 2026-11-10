@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -144,7 +153,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:mat3_5Fstructmat3" id="r_mat3_5Fstructmat3"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#structmat3">mat3</a></td></tr>
 <tr class="memitem:mat4_5Fstructmat4" id="r_mat4_5Fstructmat4"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#structmat4">mat4</a></td></tr>
 <tr class="memitem:AABB_5Fstruct_5Fa_5Fa_5Fb_5Fb" id="r_AABB_5Fstruct_5Fa_5Fa_5Fb_5Fb"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_a_a_b_b">AABB</a></td></tr>
-<tr class="memitem:OBB_5Fstruct_5Fo_5Fb_5Fb" id="r_OBB_5Fstruct_5Fo_5Fb_5Fb"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_o_b_b">OBB</a></td></tr>
+<tr class="memitem:OBB_5Fstruct_5Fo_5Fb_5Fb" id="r_OBB_5Fstruct_5Fo_5Fb_5Fb"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a></td></tr>
+<tr class="memdesc:struct_o_b_b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oriented Bounding Boxes.  <a href="group__shader__structs__group.html#struct_o_b_b">More...</a><br /></td></tr>
 <tr class="memitem:UndoStructure_5Fstruct_5Fundo_5Fstructure" id="r_UndoStructure_5Fstruct_5Fundo_5Fstructure"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#struct_undo_structure">UndoStructure</a></td></tr>
 <tr class="memitem:Undo_5Fstruct_5Fundo" id="r_Undo_5Fstruct_5Fundo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#struct_undo">Undo</a></td></tr>
 <tr class="memitem:NKSlider_5Fstruct_5Fn_5Fk_5Fslider" id="r_NKSlider_5Fstruct_5Fn_5Fk_5Fslider"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__editor__group.html#struct_n_k_slider">NKSlider</a></td></tr>
@@ -811,9 +821,69 @@ d3</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="types_8h_source.html#l00035">35</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00110">110</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ac67e4a162acbb3fe663d55795990b1be" name="ac67e4a162acbb3fe663d55795990b1be"></a><a class="el" href="#structvec3">vec3</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa63ab3ed5fdb1989d64aa0fde847b7fb" name="aa63ab3ed5fdb1989d64aa0fde847b7fb"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac966b0bb96cf30d85d5313f2dce3df0c" name="ac966b0bb96cf30d85d5313f2dce3df0c"></a><a class="el" href="#structvec3">vec3</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a85407f9ff3d6624b49e746f77500c831" name="a85407f9ff3d6624b49e746f77500c831"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae23a405b8b4656aea13188e696250260" name="ae23a405b8b4656aea13188e696250260"></a><a class="el" href="#structvec3">vec3</a></td>
+<td class="fieldname">
+center</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aecfc5fafbd1db3c297bf0c583282eed2" name="aecfc5fafbd1db3c297bf0c583282eed2"></a>uint</td>
+<td class="fieldname">
+pad2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7310cd50a8940891814341a93decf227" name="a7310cd50a8940891814341a93decf227"></a><a class="el" href="#structvec3">vec3</a></td>
+<td class="fieldname">
+extents</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a110d9ae88d523431f9196a276675b0e4" name="a110d9ae88d523431f9196a276675b0e4"></a>uint</td>
+<td class="fieldname">
+pad3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac67e4a162acbb3fe663d55795990b1be" name="ac67e4a162acbb3fe663d55795990b1be"></a><a class="el" href="#structvec4">vec4</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac966b0bb96cf30d85d5313f2dce3df0c" name="ac966b0bb96cf30d85d5313f2dce3df0c"></a><a class="el" href="#structvec4">vec4</a></td>
+<td class="fieldname">
+max</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="a5e1a7f703f4bcdbbff92fb7770dd9661" name="a5e1a7f703f4bcdbbff92fb7770dd9661"></a>float</td>
 <td class="fieldname">
@@ -848,55 +918,6 @@ min_z</td>
 <a id="a568972a7d19277185f8cf2c08a2ab928" name="a568972a7d19277185f8cf2c08a2ab928"></a>float</td>
 <td class="fieldname">
 max_z</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ae23a405b8b4656aea13188e696250260" name="ae23a405b8b4656aea13188e696250260"></a><a class="el" href="#structvec3">vec3</a></td>
-<td class="fieldname">
-center</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a7310cd50a8940891814341a93decf227" name="a7310cd50a8940891814341a93decf227"></a><a class="el" href="#structvec3">vec3</a></td>
-<td class="fieldname">
-extents</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="struct_o_b_b" id="struct_o_b_b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#struct_o_b_b">&#9670;&#160;</a></span>OBB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct OBB</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="types_8h_source.html#l00046">46</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ac4877cc37f8a28a7e06422fb59ebedb1" name="ac4877cc37f8a28a7e06422fb59ebedb1"></a><a class="el" href="#structmat3">mat3</a></td>
-<td class="fieldname">
-rot</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a4386f76bca7ec2058d745ad67ed1b590" name="a4386f76bca7ec2058d745ad67ed1b590"></a><a class="el" href="#structvec3">vec3</a></td>
-<td class="fieldname">
-center</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a2624d6f59fc1279a052c410444b2b06d" name="a2624d6f59fc1279a052c410444b2b06d"></a><a class="el" href="#structvec3">vec3</a></td>
-<td class="fieldname">
-extents</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -1075,9 +1096,15 @@ ab[2]</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="types_8h_source.html#l00255">255</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00271">271</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a6b1576d8851f5b49d5f38fe12cc64af0" name="a6b1576d8851f5b49d5f38fe12cc64af0"></a><a class="el" href="#structvec3">vec3</a></td>
+<td class="fieldname">
+pos</td>
+<td class="fielddoc">
+</td></tr>
 <tr><td class="fieldtype">
 <a id="aaae6d81662468c795fca056a9c04e8b1" name="aaae6d81662468c795fca056a9c04e8b1"></a>float</td>
 <td class="fieldname">
@@ -1085,9 +1112,57 @@ t</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a6b1576d8851f5b49d5f38fe12cc64af0" name="a6b1576d8851f5b49d5f38fe12cc64af0"></a><a class="el" href="#structvec3">vec3</a></td>
+<a id="a1a76386b6eb4edac313b3c54387377e1" name="a1a76386b6eb4edac313b3c54387377e1"></a><a class="el" href="#structvec3">vec3</a></td>
 <td class="fieldname">
-pos</td>
+barycentrics</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a6cdd80bf03781a91e715901f7b504fe9" name="a6cdd80bf03781a91e715901f7b504fe9"></a>uint</td>
+<td class="fieldname">
+mn_idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a091b1e1b6940eee0c70671f7965e2bfe" name="a091b1e1b6940eee0c70671f7965e2bfe"></a><a class="el" href="#structvec3">vec3</a></td>
+<td class="fieldname">
+normal</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8ffd779c8f68721d00d87a7e1a4bf912" name="a8ffd779c8f68721d00d87a7e1a4bf912"></a>uint</td>
+<td class="fieldname">
+tri_idx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af518cffcf46312b3abb858a6ec56683c" name="af518cffcf46312b3abb858a6ec56683c"></a>float</td>
+<td class="fieldname">
+best_t</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="afb68cb487650171e28638a9e0b17240d" name="afb68cb487650171e28638a9e0b17240d"></a>float</td>
+<td class="fieldname">
+blocked_t</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aac76e56088e68dccf0d4c1d734228240" name="aac76e56088e68dccf0d4c1d734228240"></a>bool</td>
+<td class="fieldname">
+hit</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae84280d5df692152bd05cfed21e7564d" name="ae84280d5df692152bd05cfed21e7564d"></a>bool</td>
+<td class="fieldname">
+occluded</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1ce923752fce1ecdfdee82fcca3e7785" name="a1ce923752fce1ecdfdee82fcca3e7785"></a>uint</td>
+<td class="fieldname">
+pad1</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -1124,12 +1199,6 @@ b1</td>
 <a id="aa5eebb548515c1d73cc11bff2080228f" name="aa5eebb548515c1d73cc11bff2080228f"></a>float</td>
 <td class="fieldname">
 b2</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ae84280d5df692152bd05cfed21e7564d" name="ae84280d5df692152bd05cfed21e7564d"></a>bool</td>
-<td class="fieldname">
-occluded</td>
 <td class="fielddoc">
 </td></tr>
 </table>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['legik_0',['LegIK',['../engine__types_8h.html#struct_leg_i_k',1,'']]],
-  ['light_1',['Light',['../engine__types_8h.html#struct_light',1,'']]],
+  ['light_1',['Light',['../group__shader__structs__group.html#struct_light',1,'']]],
   ['lightbvh_2',['LightBVH',['../engine__types_8h.html#struct_light_b_v_h',1,'']]],
   ['lighteditormenu_3',['LightEditorMenu',['../group__editor__group.html#struct_light_editor_menu',1,'']]],
   ['lightgpu_4',['LightGPU',['../engine__types_8h.html#struct_light_g_p_u',1,'']]],

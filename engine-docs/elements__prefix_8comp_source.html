@@ -117,75 +117,78 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('elements__pref
 </div><!--header-->
 <div class="contents">
 <a href="elements__prefix_8comp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>#version 430 core</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#version 430 core</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>layout (local_size_x = 128, local_size_y = 1, local_size_z = 1) in;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="elements__prefix_8comp.html#a175745ef9ff5c2e01c1c678e32e1de7a">    4</a></span><a class="code hl_function" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a> (local_size_x = 128, local_size_y = 1, local_size_z = 1) in;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>struct DrawElementsIndirectCommand {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>struct <a class="code hl_struct" href="elements__prefix_8comp.html#struct_draw_elements_indirect_command">DrawElementsIndirectCommand</a> {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    uint count;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    uint instanceCount;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    uint firstIndex;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    uint baseVertex;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    uint baseInstance;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    uint instanceOffset; // the amount of instances pushed this frame</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    uint instanceOffset; <span class="comment">// the amount of instances pushed this frame</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>layout(std430, binding = 5) buffer DrawElementsData {</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="elements__prefix_8comp.html#a24b9db320fce243be173072cf54ae23c">   15</a></span><a class="code hl_function" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a>(std430, binding = 5) buffer DrawElementsData {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    DrawElementsIndirectCommand in_arr[];</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_struct" href="elements__prefix_8comp.html#struct_draw_elements_indirect_command">DrawElementsIndirectCommand</a> in_arr[];</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>layout(std430, binding = 6) buffer DrawElementsOutData {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_function" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a>(std430, binding = 6) buffer DrawElementsOutData {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    DrawElementsIndirectCommand out_arr[];</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="elements__prefix_8comp.html#struct_draw_elements_indirect_command">DrawElementsIndirectCommand</a> out_arr[];</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>uniform uint n;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="elements__prefix_8comp.html#a31b9d7143dea128628bf9707d10fb430">   25</a></span>uniform uint <a class="code hl_variable" href="elements__prefix_8comp.html#a31b9d7143dea128628bf9707d10fb430">n</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>shared uint temp[1024];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">   27</a></span>shared uint <a class="code hl_variable" href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">temp</a>[1024];</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>void main()</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="elements__prefix_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>()</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    uint id = gl_GlobalInvocationID.x;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    bool worker = (id &lt; n);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    int pin = 1;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    int pout = 0;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    // if (id &gt;= n) return;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    uint <span class="keywordtype">id</span> = gl_GlobalInvocationID.x;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">bool</span> worker = (<span class="keywordtype">id</span> &lt; <a class="code hl_variable" href="elements__prefix_8comp.html#a31b9d7143dea128628bf9707d10fb430">n</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">int</span> pin = 1;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">int</span> pout = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// if (id &gt;= n) return;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    if (id &lt; n)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> &lt; <a class="code hl_variable" href="elements__prefix_8comp.html#a31b9d7143dea128628bf9707d10fb430">n</a>)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        temp[id] = (id &gt; 0) ? in_arr[id - 1].instanceOffset : 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_variable" href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">temp</a>[id] = (<span class="keywordtype">id</span> &gt; 0) ? in_arr[<span class="keywordtype">id</span> - 1].instanceOffset : 0;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    else</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        temp[id] = 0;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_variable" href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">temp</a>[id] = 0;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    // temp[id] = in_arr[id].instanceCount;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// temp[id] = in_arr[id].instanceCount;</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    memoryBarrierShared();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    barrier();</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    for (int i = 1; i &lt; n; i *= 2)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; <a class="code hl_variable" href="elements__prefix_8comp.html#a31b9d7143dea128628bf9707d10fb430">n</a>; i *= 2)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        pout = 1 - pout;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        pin = 1 - pout;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        uint val = 0;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        if (id &gt;= i)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">if</span> (<span class="keywordtype">id</span> &gt;= i)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            val = temp[id - i];</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            // temp[pout * n + id] += temp[pin * n + id - i];</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            val = <a class="code hl_variable" href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">temp</a>[<span class="keywordtype">id</span> - i];</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="comment">// temp[pout * n + id] += temp[pin * n + id - i];</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        else</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            // temp[pout * n + id] = temp[pin * n + id];</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="comment">// temp[pout * n + id] = temp[pin * n + id];</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        memoryBarrierShared();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        barrier();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        temp[id] += val;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_variable" href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">temp</a>[id] += val;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        memoryBarrierShared();</div>
@@ -193,14 +196,20 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('elements__pref
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    out_arr[id] = in_arr[id];</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    // out_arr[id].baseInstance = temp[pout * n + id];</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    out_arr[id].baseInstance = temp[id];</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// out_arr[id].baseInstance = temp[pout * n + id];</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    out_arr[id].baseInstance = <a class="code hl_variable" href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">temp</a>[id];</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    in_arr[id].instanceCount = 0;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    in_arr[id].baseInstance = 0;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    in_arr[id].instanceOffset = 0;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_a38d7d2d84fb7cc382da7b98797a4c70d"><div class="ttname"><a href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a></div><div class="ttdeci">layout(local_size_x=16, local_size_y=16) in</div></div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="aelements__prefix_8comp_html_a31b9d7143dea128628bf9707d10fb430"><div class="ttname"><a href="elements__prefix_8comp.html#a31b9d7143dea128628bf9707d10fb430">n</a></div><div class="ttdeci">uniform uint n</div><div class="ttdef"><b>Definition</b> <a href="#l00025">elements_prefix.comp:25</a></div></div>
+<div class="ttc" id="aelements__prefix_8comp_html_ab537e4378926852c42ba1c9056f38fe8"><div class="ttname"><a href="elements__prefix_8comp.html#ab537e4378926852c42ba1c9056f38fe8">temp</a></div><div class="ttdeci">shared uint temp[1024]</div><div class="ttdef"><b>Definition</b> <a href="#l00027">elements_prefix.comp:27</a></div></div>
+<div class="ttc" id="aelements__prefix_8comp_html_struct_draw_elements_indirect_command"><div class="ttname"><a href="elements__prefix_8comp.html#struct_draw_elements_indirect_command">DrawElementsIndirectCommand</a></div><div class="ttdoc">DrawArraysIndirect commands are used for non-static meshes.</div><div class="ttdef"><b>Definition</b> <a href="engine__types_8h_source.html#l00857">engine_types.h:857</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

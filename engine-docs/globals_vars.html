@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -121,7 +130,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars.h
 
 <div class="contents">
 <div class="textblock">Here is a list of all variables with links to the files they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
+<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
 
 
 <h3 class="doxsection"><a id="index_a" name="index_a"></a>- a -</h3><ul>
@@ -131,6 +140,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars.h
 <li>ang_impulse_sum&#160;:&#160;<a class="el" href="group__physics__group.html#ga6c50219d147f98de5e95030155f7c7ec">physics.c</a></li>
 <li>angle_tr&#160;:&#160;<a class="el" href="render_8c.html#a7907ced1e5325bf35a112e530edf54bd">render.c</a></li>
 <li>ANIMATION_COMPONENTS&#160;:&#160;<a class="el" href="main_8c.html#a557fff5cb8cd3e5eb549836723bee3b6">main.c</a>, <a class="el" href="init_8h.html#a557fff5cb8cd3e5eb549836723bee3b6">init.h</a></li>
+<li>ao_hits&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#a36a0a9bd11e7870fbb6df83a2c95194e">lightmap_bounce.comp</a></li>
+<li>ap1_to_srgb&#160;:&#160;<a class="el" href="postprocess_8frag.html#a9e574677e75a87f71b3948b653cb42de">postprocess.frag</a></li>
 <li>aportal_flags&#160;:&#160;<a class="el" href="group__editor__group.html#ga0ba4949b3618009c43b5e3ff0546bb8c">editor.c</a></li>
 <li>aportal_name_buffer&#160;:&#160;<a class="el" href="group__editor__group.html#ga62d8b562e092e02290f1f335c02dad82">editor.c</a></li>
 <li>aportal_registry&#160;:&#160;<a class="el" href="group__editor__group.html#ga37c0e93116fcf4dffe6198681e118610">editor.c</a>, <a class="el" href="group__editor__group.html#ga37c0e93116fcf4dffe6198681e118610">init.h</a></li>
@@ -145,6 +156,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars.h
 <li>AUDIO_BAND_FREQ&#160;:&#160;<a class="el" href="group__aprobe__group.html#gaefcb57f596841e5ec15d98e7b9c5631e">engine_types.h</a></li>
 <li>AUDIO_EMITTERS&#160;:&#160;<a class="el" href="main_8c.html#ab6e8e06d25f1c3725fe2be293a97a170">main.c</a>, <a class="el" href="init_8h.html#ab6e8e06d25f1c3725fe2be293a97a170">init.h</a></li>
 <li>AUDIO_ENGINE&#160;:&#160;<a class="el" href="main_8c.html#a20b8f67d43dd4cceba0071d516b1c614">main.c</a>, <a class="el" href="init_8h.html#a20b8f67d43dd4cceba0071d516b1c614">init.h</a></li>
+<li>AUDIO_NUM_BANDS&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a6f268da119f3aa2849e26cf9666c036d">audio_probe_bake.comp</a></li>
 <li>AUDIO_PROBE_BAKE_SHADER&#160;:&#160;<a class="el" href="main_8c.html#aa035450ceb121b2a86e1959e7a42d233">main.c</a>, <a class="el" href="init_8h.html#aa035450ceb121b2a86e1959e7a42d233">init.h</a></li>
 <li>AUDIO_SCRATCH&#160;:&#160;<a class="el" href="main_8c.html#a164f3d953f3464013633ea77e299eb83">main.c</a>, <a class="el" href="init_8h.html#a164f3d953f3464013633ea77e299eb83">init.h</a></li>
 <li>AW&#160;:&#160;<a class="el" href="main_8c.html#a5443891077df5bfb162db85ccd062027">main.c</a>, <a class="el" href="init_8h.html#a5443891077df5bfb162db85ccd062027">init.h</a></li>

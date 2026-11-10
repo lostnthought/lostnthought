@@ -2,7 +2,7 @@ var index =
 [
     [ "Introduction", "index.html#intro_sec", null ],
     [ "Features and Systems", "index.html#features_sec", [
-      [ "Audio (<a href=\"https://lostnthought.github.io/lostnthought/articles/path-traced-audio-probes.html\"><em>Article</em></a>)", "index.html#audio_ss", null ],
+      [ "Audio (<a class=\"el\" href=\"group__aprobe__group.html#probe_bake_anchor\" title=\"probe_bake_anchor\">Formulas</a> | <a href=\"https://lostnthought.github.io/lostnthought/articles/path-traced-audio-probes.html\"><em>Article</em></a>)", "index.html#audio_ss", null ],
       [ "Physics", "index.html#physics_ss", null ],
       [ "Collision", "index.html#collision_ss", null ],
       [ "Lighting", "index.html#lighting_ss", null ],

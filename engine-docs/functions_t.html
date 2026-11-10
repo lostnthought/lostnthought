@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -152,26 +161,26 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_t.ht
 <li>texture_count&#160;:&#160;<a class="el" href="engine__types_8h.html#aa0c56cd3c207c72387bf633e82fe03f8">Framebuffer</a>, <a class="el" href="engine__types_8h.html#a75a7e0babb60f93ec743a258fa2f7b65">GLTFDoc</a></li>
 <li>texture_id&#160;:&#160;<a class="el" href="engine__types_8h.html#a1a5f46adfcf078dd0dae392cfef1f7a2">LightmapData</a></li>
 <li>textures&#160;:&#160;<a class="el" href="engine__types_8h.html#a71ae25db7cb9b5a92709703b9d4e65ea">GLTFDoc</a></li>
-<li>threshold&#160;:&#160;<a class="el" href="engine__types_8h.html#ae74e4d755f626db931859716b4353f47">Light</a>, <a class="el" href="group__editor__group.html#a65882334e2812e825f864bbc4aaf40e6">LightEditorMenu</a></li>
+<li>threshold&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ae74e4d755f626db931859716b4353f47">Light</a>, <a class="el" href="group__editor__group.html#a65882334e2812e825f864bbc4aaf40e6">LightEditorMenu</a></li>
 <li>time&#160;:&#160;<a class="el" href="engine__types_8h.html#a0291ecd2d390c17cd3faf0ac804776f1">AnimationKeyframe</a>, <a class="el" href="engine__types_8h.html#abdb2bf89ee6b5d9ab5a8568866a79206">LegIK</a></li>
-<li>time_of_flight&#160;:&#160;<a class="el" href="group__aprobe__group.html#a1f6d81895466a719a4a86edbe82475e3">AudioSampleGPU</a></li>
+<li>time_of_flight&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#aad86225fd232bd7125c031c6dc9adf32">AudioSample</a>, <a class="el" href="group__aprobe__group.html#a1f6d81895466a719a4a86edbe82475e3">AudioSampleGPU</a></li>
 <li>times&#160;:&#160;<a class="el" href="engine__types_8h.html#a99beb87d4b42f6130bec390a3f2a0a7d">AnimationSampler</a></li>
 <li>total_power&#160;:&#160;<a class="el" href="lightmap_8c.html#ab1fa947355689d98688343b934c9fce3">LightGPUData</a></li>
 <li>tr&#160;:&#160;<a class="el" href="engine__types_8h.html#ab958e45b5d2ea0c7517f300dfed7bf87">AssetInstance</a>, <a class="el" href="engine__types_8h.html#a2066b2c37e9bb52352424722cce56728">TransformGPU</a></li>
 <li>track_count&#160;:&#160;<a class="el" href="engine__types_8h.html#abbccc9b9a5dadb12307de704b32e3fcf">AnimationComponent</a></li>
 <li>tracks&#160;:&#160;<a class="el" href="engine__types_8h.html#a600c572c77cefe65b2f1c16f5442e6eb">AnimationComponent</a></li>
-<li>translation&#160;:&#160;<a class="el" href="engine__types_8h.html#a1fccf9aa782971ac8405c07743f1a3ba">MeshNode</a>, <a class="el" href="group__ui__group.html#a787e007a724132b1885c82747ac8fea2">TextBox</a>, <a class="el" href="group__editor__group.html#afea611116281cab5f1759025b2785ece">TextBoxEditorMenu</a>, <a class="el" href="group__ui__group.html#a747568d1ec83520e1524658bb2175395">UIElement</a>, <a class="el" href="group__ui__group.html#a45170642eb7a04c4bd79d7ca235723a2">UIElementGPU</a></li>
-<li>tri&#160;:&#160;<a class="el" href="engine__types_8h.html#a59c5139147c5b1e1c8c9c34669c61fb0">Light</a>, <a class="el" href="engine__types_8h.html#aec62f42e7891a0c42510eb821093a6b0">LightGPU</a>, <a class="el" href="types_8h.html#ac5c15bab1712c46fe2fbbf4658608dc7">RayHit</a></li>
-<li>tri_aabbs&#160;:&#160;<a class="el" href="engine__types_8h.html#a645fda72a8620d78a03bcb18a5280765">Mesh</a></li>
-<li>tri_adjacency&#160;:&#160;<a class="el" href="engine__types_8h.html#a08b2a615f6244ea11bba1b3064ef0b7d">Mesh</a></li>
-<li>tri_count&#160;:&#160;<a class="el" href="lightmap_8c.html#acafdedffe4f5d2816622cb59a827064f">LightGPUData</a>, <a class="el" href="engine__types_8h.html#afe21c251f46f1341d0f02578cf7fe27b">MeshGPU</a></li>
+<li>translation&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a1fccf9aa782971ac8405c07743f1a3ba">MeshNode</a>, <a class="el" href="group__ui__group.html#a787e007a724132b1885c82747ac8fea2">TextBox</a>, <a class="el" href="group__editor__group.html#afea611116281cab5f1759025b2785ece">TextBoxEditorMenu</a>, <a class="el" href="group__ui__group.html#a747568d1ec83520e1524658bb2175395">UIElement</a>, <a class="el" href="group__ui__group.html#a45170642eb7a04c4bd79d7ca235723a2">UIElementGPU</a></li>
+<li>tri&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a7bf28cc5569c0dc50b9972ca54f4af75">Light</a>, <a class="el" href="engine__types_8h.html#aec62f42e7891a0c42510eb821093a6b0">LightGPU</a>, <a class="el" href="types_8h.html#ac5c15bab1712c46fe2fbbf4658608dc7">RayHit</a></li>
+<li>tri_aabbs&#160;:&#160;<a class="el" href="lightmap_8vert.html#a645fda72a8620d78a03bcb18a5280765">Mesh</a></li>
+<li>tri_adjacency&#160;:&#160;<a class="el" href="lightmap_8vert.html#a08b2a615f6244ea11bba1b3064ef0b7d">Mesh</a></li>
+<li>tri_count&#160;:&#160;<a class="el" href="lightmap_8c.html#acafdedffe4f5d2816622cb59a827064f">LightGPUData</a>, <a class="el" href="lightmap_8vert.html#ac062d020fbe7128308449dbd9ba05ec6">Mesh</a>, <a class="el" href="engine__types_8h.html#afe21c251f46f1341d0f02578cf7fe27b">MeshGPU</a>, <a class="el" href="group__shader__structs__group.html#a5e246c540e67487578e6e9e9c8db1d45">MeshNode</a></li>
 <li>tri_id&#160;:&#160;<a class="el" href="engine__types_8h.html#a207c324e164c7c6320be1bae8cf3f3b3">LightmapVertex</a></li>
-<li>tri_idx&#160;:&#160;<a class="el" href="engine__types_8h.html#a187d6b8bc8ccc5799411077707eff219">TriGPU</a></li>
-<li>tri_offset&#160;:&#160;<a class="el" href="engine__types_8h.html#a2eaa9eaca9cedf90f81c84f366f7dd4e">MeshGPU</a></li>
+<li>tri_idx&#160;:&#160;<a class="el" href="probe__bake_8comp.html#ae09dfae368489573f2bb69113106215d">Face</a>, <a class="el" href="types_8h.html#a8ffd779c8f68721d00d87a7e1a4bf912">RayHit</a>, <a class="el" href="engine__types_8h.html#a187d6b8bc8ccc5799411077707eff219">TriGPU</a></li>
+<li>tri_offset&#160;:&#160;<a class="el" href="lightmap_8vert.html#a3d17b5d91124939eb0c6169a1469a5fb">Mesh</a>, <a class="el" href="engine__types_8h.html#a2eaa9eaca9cedf90f81c84f366f7dd4e">MeshGPU</a>, <a class="el" href="group__shader__structs__group.html#a4f8a55a1d471ac01e3ef90397d19335f">MeshNode</a></li>
 <li>tri_w&#160;:&#160;<a class="el" href="lightmap_8c.html#a9210ee56037244c0bf3cf5e26704deb3">LightGPUData</a></li>
 <li>trigger&#160;:&#160;<a class="el" href="engine__types_8h.html#a26e8ccb96e05e48fa156a5226d092904">Entity::[union].as</a></li>
-<li>tris&#160;:&#160;<a class="el" href="mesh_8c.html#a9cc0cdebbf262df42d087726d5c9bab3">EdgePairEntry</a>, <a class="el" href="engine__types_8h.html#aed0c3f96e81f11095ecef1e744fd1232">Mesh</a>, <a class="el" href="engine__types_8h.html#a9d884bd33501d8b22e14871708912751">TriData</a>, <a class="el" href="engine__types_8h.html#a71240225367fc54b7ee7605eaa304f41">UVIsland</a></li>
-<li>type&#160;:&#160;<a class="el" href="engine__types_8h.html#af108e4f887166901d020e28f7271357c">AnimationTrack</a>, <a class="el" href="group__physics__group.html#ae0fee6a30c85ea5ac22adefa406baec5">CollisionData</a>, <a class="el" href="engine__types_8h.html#a4bc4656e671f86ebd33eaa78d1855ea9">Entity</a>, <a class="el" href="engine__types_8h.html#a00136847f8a9f10afd0b2b39319606a9">GLTexture</a>, <a class="el" href="engine__types_8h.html#a07ab29ae121ae2644166fce7c7e06df9">GLTFAccessor</a>, <a class="el" href="engine__types_8h.html#a9e29763722e34327c7b237ede84e1355">Trigger</a>, <a class="el" href="group__ui__group.html#a732b85998487a9cd111fcf8e5697ccd0">UIElement</a>, <a class="el" href="group__ui__group.html#a8e1510ede448f4bda7e8439f0d7e3afd">UIElementGPU</a>, <a class="el" href="group__ui__group.html#a3e75f04548a3e4a1f163bebbeaade740">UIValue</a>, <a class="el" href="group__editor__group.html#aa31f0483b751f5b66f0f7b3b8d5a54f5">UndoStructure</a></li>
+<li>tris&#160;:&#160;<a class="el" href="mesh_8c.html#a9cc0cdebbf262df42d087726d5c9bab3">EdgePairEntry</a>, <a class="el" href="lightmap_8vert.html#aed0c3f96e81f11095ecef1e744fd1232">Mesh</a>, <a class="el" href="engine__types_8h.html#a9d884bd33501d8b22e14871708912751">TriData</a>, <a class="el" href="engine__types_8h.html#a71240225367fc54b7ee7605eaa304f41">UVIsland</a></li>
+<li>type&#160;:&#160;<a class="el" href="engine__types_8h.html#af108e4f887166901d020e28f7271357c">AnimationTrack</a>, <a class="el" href="group__physics__group.html#ae0fee6a30c85ea5ac22adefa406baec5">CollisionData</a>, <a class="el" href="engine__types_8h.html#a4bc4656e671f86ebd33eaa78d1855ea9">Entity</a>, <a class="el" href="engine__types_8h.html#a00136847f8a9f10afd0b2b39319606a9">GLTexture</a>, <a class="el" href="engine__types_8h.html#a07ab29ae121ae2644166fce7c7e06df9">GLTFAccessor</a>, <a class="el" href="engine__types_8h.html#a9e29763722e34327c7b237ede84e1355">Trigger</a>, <a class="el" href="group__ui__group.html#a1585507728bbd359fa24b475cfdd00b1">UIElement</a>, <a class="el" href="group__ui__group.html#a8e1510ede448f4bda7e8439f0d7e3afd">UIElementGPU</a>, <a class="el" href="group__ui__group.html#a3e75f04548a3e4a1f163bebbeaade740">UIValue</a>, <a class="el" href="group__editor__group.html#aa31f0483b751f5b66f0f7b3b8d5a54f5">UndoStructure</a></li>
 <li>type_size&#160;:&#160;<a class="el" href="types_8h.html#a633dd1605a3f29e8aeff70f52f954c81">Vector</a></li>
 </ul>
 </div><!-- contents -->

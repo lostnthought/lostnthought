@@ -7,6 +7,6 @@ var searchData=
   ['point_5flight_5fshadows_2evert_4',['point_light_shadows.vert',['../point__light__shadows_8vert.html',1,'']]],
   ['postprocess_2efrag_5',['postprocess.frag',['../postprocess_8frag.html',1,'']]],
   ['postprocess_2evert_6',['postprocess.vert',['../postprocess_8vert.html',1,'']]],
-  ['probe_5fbake_2ecomp_7',['probe_bake.comp',['../light_2probe__bake_8comp.html',1,'(Global Namespace)'],['../render_2probe__bake_8comp.html',1,'(Global Namespace)']]],
-  ['probe_5funpack_2ecomp_8',['probe_unpack.comp',['../light_2probe__unpack_8comp.html',1,'(Global Namespace)'],['../render_2probe__unpack_8comp.html',1,'(Global Namespace)']]]
+  ['probe_5fbake_2ecomp_7',['probe_bake.comp',['../probe__bake_8comp.html',1,'']]],
+  ['probe_5funpack_2ecomp_8',['probe_unpack.comp',['../probe__unpack_8comp.html',1,'']]]
 ];

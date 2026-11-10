@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,131 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('indirect__pref
 <div class="contents">
 
 <p><a href="indirect__prefix_8comp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:DrawArraysIndirectCommand_5Fstruct_5Fdraw_5Farrays_5Findirect_5Fcommand" id="r_DrawArraysIndirectCommand_5Fstruct_5Fdraw_5Farrays_5Findirect_5Fcommand"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_draw_arrays_indirect_command">DrawArraysIndirectCommand</a></td></tr>
+<tr class="memdesc:struct_draw_arrays_indirect_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">DrawArraysIndirect commands are used for static meshes (eg.  <a href="group__shader__structs__group.html#struct_draw_arrays_indirect_command">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a175745ef9ff5c2e01c1c678e32e1de7a" id="r_a175745ef9ff5c2e01c1c678e32e1de7a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a175745ef9ff5c2e01c1c678e32e1de7a">layout</a> (local_size_x=128, local_size_y=1, local_size_z=1) in</td></tr>
+<tr class="memitem:aa16b6bd8354203c6420302627f2c106f" id="r_aa16b6bd8354203c6420302627f2c106f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa16b6bd8354203c6420302627f2c106f">layout</a> (std430, binding=5) buffer DrawArraysData</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a31b9d7143dea128628bf9707d10fb430" id="r_a31b9d7143dea128628bf9707d10fb430"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a31b9d7143dea128628bf9707d10fb430">n</a></td></tr>
+<tr class="memitem:ab537e4378926852c42ba1c9056f38fe8" id="r_ab537e4378926852c42ba1c9056f38fe8"><td class="memItemLeft">shared uint&#160;</td><td class="memItemRight"><a class="el" href="#ab537e4378926852c42ba1c9056f38fe8">temp</a> [1024]</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a175745ef9ff5c2e01c1c678e32e1de7a" name="a175745ef9ff5c2e01c1c678e32e1de7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175745ef9ff5c2e01c1c678e32e1de7a">&#9670;&#160;</a></span>layout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">local_size_x</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">128</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">local_size_y</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">local_size_z</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="aa16b6bd8354203c6420302627f2c106f" name="aa16b6bd8354203c6420302627f2c106f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16b6bd8354203c6420302627f2c106f">&#9670;&#160;</a></span>layout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="indirect__prefix_8comp_source.html#l00014">14</a> of file <a class="el" href="indirect__prefix_8comp_source.html">indirect_prefix.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="indirect__prefix_8comp_source.html#l00028">28</a> of file <a class="el" href="indirect__prefix_8comp_source.html">indirect_prefix.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>, and <a class="el" href="elements__prefix_8comp_source.html#l00027">temp</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a31b9d7143dea128628bf9707d10fb430" name="a31b9d7143dea128628bf9707d10fb430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b9d7143dea128628bf9707d10fb430">&#9670;&#160;</a></span>n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint n</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="indirect__prefix_8comp_source.html#l00024">24</a> of file <a class="el" href="indirect__prefix_8comp_source.html">indirect_prefix.comp</a>.</p>
+
+</div>
+</div>
+<a id="ab537e4378926852c42ba1c9056f38fe8" name="ab537e4378926852c42ba1c9056f38fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab537e4378926852c42ba1c9056f38fe8">&#9670;&#160;</a></span>temp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared uint temp[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="indirect__prefix_8comp_source.html#l00026">26</a> of file <a class="el" href="indirect__prefix_8comp_source.html">indirect_prefix.comp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

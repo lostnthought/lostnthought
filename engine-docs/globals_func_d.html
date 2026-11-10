@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -144,6 +153,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_d
 <li>determine_light_visibility_per_mesh()&#160;:&#160;<a class="el" href="render_8c.html#a6a9c9873306f1c75beed246fa6a2e18a">render.c</a></li>
 <li>determine_mesh_visibility()&#160;:&#160;<a class="el" href="render_8c.html#a92641ff004236b597d394ab4d1115fa3">render.c</a></li>
 <li>determine_text_box_dimensions()&#160;:&#160;<a class="el" href="fonts_8c.html#aada1f2f4d89d5a5db992fd8da328008c">fonts.c</a>, <a class="el" href="fonts_8h.html#aada1f2f4d89d5a5db992fd8da328008c">fonts.h</a></li>
+<li>distribution_GGX()&#160;:&#160;<a class="el" href="dynamic_8frag.html#a188c170d14e42dd51cef9d30793dbe2e">dynamic.frag</a></li>
 <li>draw_arrays_elements()&#160;:&#160;<a class="el" href="render_8c.html#aecf024a7fe419c5eb482d175abe61224">render.c</a></li>
 </ul>
 </div><!-- contents -->

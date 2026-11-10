@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -139,9 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gafc1586a6cbdd12ac7aaa7e7084b8ac57" id="r_gafc1586a6cbdd12ac7aaa7e7084b8ac57"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__physics__group.html#gafc1586a6cbdd12ac7aaa7e7084b8ac57">player_resolve_impulse</a> (<a class="el" href="group__physics__group.html#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="group__physics__group.html#struct_physics_component">PhysicsComponent</a> *pcB, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *p)</td></tr>
 <tr class="memdesc:gafc1586a6cbdd12ac7aaa7e7084b8ac57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves an impulse for a <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> <a class="el" href="group__physics__group.html#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> against another <a class="el" href="group__physics__group.html#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a>.  <br /></td></tr>
 <tr class="memitem:ga58931446c6162614b54828ef099b37b7" id="r_ga58931446c6162614b54828ef099b37b7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__physics__group.html#ga58931446c6162614b54828ef099b37b7">player_resolve_impulse_static</a> (<a class="el" href="group__physics__group.html#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *p)</td></tr>
-<tr class="memdesc:ga58931446c6162614b54828ef099b37b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves an impulse for a <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> <a class="el" href="group__physics__group.html#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> against a static <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
+<tr class="memdesc:ga58931446c6162614b54828ef099b37b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves an impulse for a <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> <a class="el" href="group__physics__group.html#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> against a static <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
 <tr class="memitem:ga4adc32bc8432da8f13120f23b5aab846" id="r_ga4adc32bc8432da8f13120f23b5aab846"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__physics__group.html#ga4adc32bc8432da8f13120f23b5aab846">PC_resolve_impulse_static</a> (<a class="el" href="group__physics__group.html#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *p)</td></tr>
-<tr class="memdesc:ga4adc32bc8432da8f13120f23b5aab846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves an impulse for a <a class="el" href="group__physics__group.html#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> against a static <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
+<tr class="memdesc:ga4adc32bc8432da8f13120f23b5aab846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves an impulse for a <a class="el" href="group__physics__group.html#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> against a static <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
 <tr class="memitem:gac8fa4aebf5d870d4eb0399bd82d05c52" id="r_gac8fa4aebf5d870d4eb0399bd82d05c52"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__physics__group.html#gac8fa4aebf5d870d4eb0399bd82d05c52">PC_resolve_impulse</a> (<a class="el" href="group__physics__group.html#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="group__physics__group.html#struct_physics_component">PhysicsComponent</a> *pcB, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> *p)</td></tr>
 <tr class="memdesc:gac8fa4aebf5d870d4eb0399bd82d05c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves an impulse for a <a class="el" href="group__physics__group.html#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> against another.  <br /></td></tr>
 <tr class="memitem:gab0fdb116d0edddc1db8ea76579323a8f" id="r_gab0fdb116d0edddc1db8ea76579323a8f"><td class="memItemLeft"><a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="group__physics__group.html#gab0fdb116d0edddc1db8ea76579323a8f">calc_inverse_inertia</a> (<a class="el" href="group__physics__group.html#struct_physics_component">PhysicsComponent</a> *pc)</td></tr>

@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -133,17 +142,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 <li>highest_y&#160;:&#160;<a class="el" href="group__ui__group.html#affa5e8655443a390037cd3316f1f53c7">Font</a></li>
 <li>hip_height&#160;:&#160;<a class="el" href="engine__types_8h.html#ac2557b08ea9e3795622813481f285a47">Skeleton</a></li>
 <li>history_head&#160;:&#160;<a class="el" href="group__aprobe__group.html#af57526feaa88097a00abee8509fd5548">ConvolverNode</a></li>
-<li>hit&#160;:&#160;<a class="el" href="types_8h.html#a6b4f3b952518496bda1b524db0c8350d">RayHit</a></li>
+<li>hit&#160;:&#160;<a class="el" href="types_8h.html#aac76e56088e68dccf0d4c1d734228240">RayHit</a></li>
 <li>horizon_counts&#160;:&#160;<a class="el" href="engine__types_8h.html#accfd8f035b948ae624ea01a914dd15d4">EPAWorkspace</a></li>
 <li>horizon_counts_count&#160;:&#160;<a class="el" href="engine__types_8h.html#ade38ecc5931d6a11789787f50ae8209b">EPAWorkspace</a></li>
 <li>horizon_edges&#160;:&#160;<a class="el" href="engine__types_8h.html#ae9ad99d19aa83439cb34d3372c6d3da6">EPAWorkspace</a></li>
 <li>horizon_edges_count&#160;:&#160;<a class="el" href="engine__types_8h.html#a34335bc99f9126b717cf96d1fc48900e">EPAWorkspace</a></li>
 <li>hover_callback&#160;:&#160;<a class="el" href="group__ui__group.html#aa177e719025a4a0f6fee689796387659">UIElement</a></li>
-<li>hovered&#160;:&#160;<a class="el" href="group__ui__group.html#a720076f201f4f206388c8e8e63d2be45">TextBox</a>, <a class="el" href="group__ui__group.html#aed3cb8907df7622dc7fcf71ac41b0cdd">TextBoxGPU</a>, <a class="el" href="group__ui__group.html#a150f017d88f75bfdd21a7d0fbef9188b">UIElementGPU</a></li>
+<li>hovered&#160;:&#160;<a class="el" href="group__ui__group.html#a02815c18724cdc5b75d436188db137e4">TextBox</a>, <a class="el" href="group__ui__group.html#aed3cb8907df7622dc7fcf71ac41b0cdd">TextBoxGPU</a>, <a class="el" href="group__ui__group.html#a83408e64e773a4acaa2ff9809f9b8903">UIElement</a>, <a class="el" href="group__ui__group.html#a150f017d88f75bfdd21a7d0fbef9188b">UIElementGPU</a></li>
 <li>HRTF_IR_IN&#160;:&#160;<a class="el" href="group__aprobe__group.html#a539a59c57be281eafd29bec12e217c2f">AudioScratchBuffers</a></li>
 <li>hull&#160;:&#160;<a class="el" href="group__physics__group.html#ab26e7eaf7f2d0e80e3183ef293bfaeec">CollisionData::[union].data</a></li>
 <li>hull_faces&#160;:&#160;<a class="el" href="group__physics__group.html#a0021d81049afda51b375c590545c7815">ConvexHull</a></li>
-<li>hulls&#160;:&#160;<a class="el" href="engine__types_8h.html#a0455deccb0ffc7d1fb6fcb10ad8e8395">Mesh</a></li>
+<li>hulls&#160;:&#160;<a class="el" href="lightmap_8vert.html#a0455deccb0ffc7d1fb6fcb10ad8e8395">Mesh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

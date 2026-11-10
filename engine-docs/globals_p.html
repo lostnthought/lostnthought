@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -121,16 +130,19 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_p.html
 
 <div class="contents">
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="globals.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="globals_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="globals_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="globals_z.html#index_z">Z</a></div>
+<div class="qindex"><a class="qindex" href="globals.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="globals_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="globals_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="globals_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="globals_z.html#index_z">Z</a></div>
 
 
 <h3 class="doxsection"><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>palette()&#160;:&#160;<a class="el" href="dynamic_8frag.html#a3884765c2265f47ab1dd740a297562d4">dynamic.frag</a></li>
+<li>parallax_mapping()&#160;:&#160;<a class="el" href="dynamic_8frag.html#a80ec32c1f311b5362e2f013c3f71e191">dynamic.frag</a></li>
+<li>ParallaxMapping()&#160;:&#160;<a class="el" href="depth__pre__pass_8frag.html#adb9c3a7621b758c86c8c70e434ea1ed4">depth_pre_pass.frag</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8frag.html#adb9c3a7621b758c86c8c70e434ea1ed4">depth_pre_pass_no_gbuffer.frag</a></li>
 <li>parse_gltf_json()&#160;:&#160;<a class="el" href="gltf_8c.html#acaa423bb803f9f377c2ba40cbae81124">gltf.c</a></li>
 <li>parse_gltf_materials()&#160;:&#160;<a class="el" href="gltf_8c.html#a49f201011dec980d797c9a6cf1d414ef">gltf.c</a></li>
 <li>PARTITION_BUFFERS&#160;:&#160;<a class="el" href="engine__types_8h.html#a90908d2e75bf3ee04a2d8c2ce9ca3967">engine_types.h</a></li>
 <li>PartitionTable&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga7fae4736b00b65e477b230a17d018cee">engine_types.h</a></li>
 <li>PartitionTableChannel&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga2d95f263ad6f7e50959898ef9e3e281b">engine_types.h</a></li>
-<li>pathfind_audio_occlusion()&#160;:&#160;<a class="el" href="audio_8c.html#a43f9cf94d3a482f9608a49e32b7a018d">audio.c</a></li>
+<li>pathfind_audio_occlusion()&#160;:&#160;<a class="el" href="group__audio__group.html#ga43f9cf94d3a482f9608a49e32b7a018d">audio.c</a></li>
 <li>PC_apply_velocity()&#160;:&#160;<a class="el" href="group__physics__group.html#ga5d6fdab680a9e1d6d2237203f4934459">physics.c</a></li>
 <li>PC_find_collision()&#160;:&#160;<a class="el" href="group__physics__group.html#ga3d683e5384a3a36f014b499e8cc26207">physics.c</a></li>
 <li>PC_process_collision_node()&#160;:&#160;<a class="el" href="group__physics__group.html#gadf5e50953ebf13aaa11dad9efb04b5e3">physics.c</a></li>
@@ -138,6 +150,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_p.html
 <li>PC_resolve_impulse_static()&#160;:&#160;<a class="el" href="group__physics__group.html#ga4adc32bc8432da8f13120f23b5aab846">physics.c</a>, <a class="el" href="group__physics__group.html#ga4adc32bc8432da8f13120f23b5aab846">physics.h</a></li>
 <li>PC_traverse_collision_bvh()&#160;:&#160;<a class="el" href="group__physics__group.html#ga5e86e691e7e59b9cf665a437a5c928d9">physics.c</a></li>
 <li>PC_traverse_scene_bvh()&#160;:&#160;<a class="el" href="group__physics__group.html#ga6f9da5542d8c47f5bce4e640c992ae51">physics.c</a></li>
+<li>pcg_hash()&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a9ba408678d69e5b3d4bcc9dc5e423943">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#a9ba408678d69e5b3d4bcc9dc5e423943">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a9ba408678d69e5b3d4bcc9dc5e423943">probe_bake.comp</a></li>
 <li>perform_clip()&#160;:&#160;<a class="el" href="utilities_8c.html#a1e54195a6671d92ff8e2c1b143e2e0cc">utilities.c</a></li>
 <li>perform_newest_redo()&#160;:&#160;<a class="el" href="group__editor__group.html#ga5e21c32bd7ee3cda49110a01e0ffcaee">editor.c</a>, <a class="el" href="group__editor__group.html#ga5e21c32bd7ee3cda49110a01e0ffcaee">editor.h</a></li>
 <li>perform_newest_undo()&#160;:&#160;<a class="el" href="group__editor__group.html#gacf7abdab47e1e8bb34237eaf78caadbc">editor.c</a>, <a class="el" href="group__editor__group.html#gacf7abdab47e1e8bb34237eaf78caadbc">editor.h</a></li>
@@ -153,9 +166,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_p.html
 <li>PHYSICS_NO_ROT&#160;:&#160;<a class="el" href="group__physics__group.html#ggaeddf82ed35ca048aebb27f515d143292abba922b08f008f329d9da78b07b76cc5">engine_types.h</a></li>
 <li>PHYSICS_NONE&#160;:&#160;<a class="el" href="group__physics__group.html#ggaeddf82ed35ca048aebb27f515d143292a43c2d253de572a18bb88122471444f48">engine_types.h</a></li>
 <li>PhysicsType&#160;:&#160;<a class="el" href="group__physics__group.html#gaeddf82ed35ca048aebb27f515d143292">engine_types.h</a></li>
-<li>PI&#160;:&#160;<a class="el" href="engine__types_8h.html#a598a3330b3c21701223ee0ca14316eca">engine_types.h</a></li>
+<li>PI&#160;:&#160;<a class="el" href="engine__types_8h.html#a598a3330b3c21701223ee0ca14316eca">engine_types.h</a>, <a class="el" href="dynamic_8frag.html#aa08a577393243b86dfd2a97e61443673">dynamic.frag</a></li>
 <li>pick_lowest_point()&#160;:&#160;<a class="el" href="mesh_8c.html#abf457aa663b3ad2d67de968bd1b5e011">mesh.c</a></li>
 <li>pl_queries&#160;:&#160;<a class="el" href="main_8c.html#ab8f36712ae1ff71754635458898ed896">main.c</a>, <a class="el" href="init_8h.html#ab8f36712ae1ff71754635458898ed896">init.h</a></li>
+<li>planes&#160;:&#160;<a class="el" href="cull__draw__calls_8comp.html#a3650960787b87e2b11eecfb4a6e2804a">cull_draw_calls.comp</a></li>
 <li>play_animation()&#160;:&#160;<a class="el" href="animation_8c.html#a0e8d40cc275edcfdecd8cc28e9d52721">animation.c</a>, <a class="el" href="animation_8h.html#a6d17d32ebf805ffa8a65226623bd61ff">animation.h</a></li>
 <li>play_emitter()&#160;:&#160;<a class="el" href="group__audio__group.html#ga4db7ac89766cda88ad330730d96e6ffa">audio.c</a>, <a class="el" href="group__audio__group.html#ga4db7ac89766cda88ad330730d96e6ffa">audio.h</a></li>
 <li>player&#160;:&#160;<a class="el" href="main_8c.html#af61d6983a9396a11078805087518af88">main.c</a>, <a class="el" href="init_8h.html#af61d6983a9396a11078805087518af88">init.h</a></li>
@@ -171,8 +185,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_p.html
 <li>POINT_LIGHT_SHADOWS_FBO&#160;:&#160;<a class="el" href="main_8c.html#afa4f8228bfd5d96285efc18fdb11cdb2">main.c</a>, <a class="el" href="init_8h.html#afa4f8228bfd5d96285efc18fdb11cdb2">init.h</a></li>
 <li>point_to_segment_dist()&#160;:&#160;<a class="el" href="utilities_8c.html#a81a147715f3b177490aeddc50bb8b097">utilities.c</a></li>
 <li>point_triangle_distance()&#160;:&#160;<a class="el" href="utilities_8c.html#a1a5d3cad349733b92fbcb8c846762c02">utilities.c</a></li>
+<li>PointLight&#160;:&#160;<a class="el" href="dynamic_8frag.html#aad64d4574c77f5434c92150b16cf78f0">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a820b5ba11dd1fdc55257ed3ec8f983b5">dynamic.vert</a></li>
 <li>populate_draw_commands()&#160;:&#160;<a class="el" href="render_8c.html#abc1aa3165ac728cc5fb5d5b7b2434be2">render.c</a></li>
-<li>pos_to_pv_local()&#160;:&#160;<a class="el" href="audio_8c.html#a03765470e0bef38997d4b3dffb7d2f56">audio.c</a></li>
+<li>Pos&#160;:&#160;<a class="el" href="dynamic_8frag.html#a04bdd5bf135fc4206a52aea5d08b4726">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a3ede6b3ffe12fbc16373d7e04db074a3">dynamic.vert</a></li>
+<li>pos_inside_aabb()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#aec6d4f0fcb152839dc58331080cc5eb4">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#aec6d4f0fcb152839dc58331080cc5eb4">probe_bake.comp</a></li>
+<li>pos_to_pv_local()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga03765470e0bef38997d4b3dffb7d2f56">audio.c</a>, <a class="el" href="dynamic_8frag.html#ae1ab2c1037f999d17d674a4b11b680ad">dynamic.frag</a></li>
 <li>POSTPROCESS_SHADER&#160;:&#160;<a class="el" href="main_8c.html#a55b09f15548f746a904ae34656ac9f00">main.c</a>, <a class="el" href="init_8h.html#a55b09f15548f746a904ae34656ac9f00">init.h</a></li>
 <li>PostprocessDView&#160;:&#160;<a class="el" href="engine__types_8h.html#aac0f3131ec3f6c55dc4d77da7a02b480">engine_types.h</a></li>
 <li>PostprocessToggles&#160;:&#160;<a class="el" href="engine__types_8h.html#a397e1f1e65663df8b2ce191f4f27dfb9">engine_types.h</a></li>
@@ -205,6 +222,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_p.html
 <li>PQUERY_TAA&#160;:&#160;<a class="el" href="engine__types_8h.html#a010f3f7fe8abd214eab5a2c03c6e182aadad089208a3dc3cfd674959ccdfbd650">engine_types.h</a></li>
 <li>precompute_fbm_texture()&#160;:&#160;<a class="el" href="init_8c.html#a80e12c4369302ba72eb70712d1d412de">init.c</a></li>
 <li>precompute_ssao_kernel()&#160;:&#160;<a class="el" href="init_8c.html#adf0d7fa03a2221bd6dcf13085d0992a7">init.c</a></li>
+<li>PrevClipPos&#160;:&#160;<a class="el" href="depth__pre__pass_8frag.html#afaa3169d7dd26addf96bd34eb6441350">depth_pre_pass.frag</a>, <a class="el" href="depth__pre__pass_8vert.html#a614f9fb129655656b0de0a8326aa3e67">depth_pre_pass.vert</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8frag.html#afaa3169d7dd26addf96bd34eb6441350">depth_pre_pass_no_gbuffer.frag</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8vert.html#a614f9fb129655656b0de0a8326aa3e67">depth_pre_pass_no_gbuffer.vert</a></li>
 <li>print_aabb()&#160;:&#160;<a class="el" href="utilities_8h.html#a674c9a0f44c759d0b0a56d0088ac0f98">utilities.h</a></li>
 <li>print_mat3()&#160;:&#160;<a class="el" href="utilities_8h.html#a1a7155d1f9b45158a48c1c844bcb5f2c">utilities.h</a></li>
 <li>print_mat4()&#160;:&#160;<a class="el" href="utilities_8h.html#a6337e341b9a3c065111149a45e272e0c">utilities.h</a></li>
@@ -215,8 +233,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_p.html
 <li>PRINT_VEC3&#160;:&#160;<a class="el" href="utilities_8h.html#a6827e55c4d538e68a956abbbc1470312">utilities.h</a></li>
 <li>PRINT_VEC3N&#160;:&#160;<a class="el" href="utilities_8h.html#a54e4f8ef891b2ba43dcc588504a69bfe">utilities.h</a></li>
 <li>PRINT_VEC4N&#160;:&#160;<a class="el" href="utilities_8h.html#a93cc16a4053979c9035a59e71c177d99">utilities.h</a></li>
+<li>probe_bake&#160;:&#160;<a class="el" href="dynamic_8frag.html#acbafd155e0724b4930283f5e42f370c6">dynamic.frag</a></li>
 <li>PROBE_BAKE_SHADER&#160;:&#160;<a class="el" href="main_8c.html#aff9453fdf8abe4dbffd436b30729b454">main.c</a>, <a class="el" href="init_8h.html#aff9453fdf8abe4dbffd436b30729b454">init.h</a></li>
+<li>probe_grid_size&#160;:&#160;<a class="el" href="dynamic_8frag.html#a3824743a6779e68701678fb066c4e4a1">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a3824743a6779e68701678fb066c4e4a1">dynamic.vert</a></li>
+<li>probe_origin&#160;:&#160;<a class="el" href="dynamic_8frag.html#a2411081518a70d0234b645bd2ab5453c">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a2411081518a70d0234b645bd2ab5453c">dynamic.vert</a></li>
+<li>probe_spacing&#160;:&#160;<a class="el" href="dynamic_8frag.html#ab27e76a88ac98d986b44798c6a57f9a8">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#ab27e76a88ac98d986b44798c6a57f9a8">dynamic.vert</a></li>
 <li>PROBE_SSBO&#160;:&#160;<a class="el" href="main_8c.html#a0ad533eb9f24626a925124a584faf2c5">main.c</a>, <a class="el" href="init_8h.html#a0ad533eb9f24626a925124a584faf2c5">init.h</a></li>
+<li>probe_tex&#160;:&#160;<a class="el" href="dynamic_8frag.html#a66c06ef03a9cf4e372de8d5ab82bc7fe">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a66c06ef03a9cf4e372de8d5ab82bc7fe">dynamic.vert</a></li>
 <li>PROBE_UNPACK_SHADER&#160;:&#160;<a class="el" href="main_8c.html#a8dbd8ffa7dc2009fdb32e80bb169d47c">main.c</a>, <a class="el" href="init_8h.html#a8dbd8ffa7dc2009fdb32e80bb169d47c">init.h</a></li>
 <li>PROBE_VOLUME_DEPTH&#160;:&#160;<a class="el" href="engine__types_8h.html#a053011e2546279678a1a8c4e934762b1">engine_types.h</a></li>
 <li>PROBE_VOLUME_DEPTH_PADDED&#160;:&#160;<a class="el" href="engine__types_8h.html#adf48d7a07be4d9be028b3795d584b8c6">engine_types.h</a></li>
@@ -225,13 +248,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_p.html
 <li>probe_volume_ubo_padded&#160;:&#160;<a class="el" href="main_8c.html#a54e4404d98e22e90655d45f326f5183a">main.c</a>, <a class="el" href="init_8h.html#a54e4404d98e22e90655d45f326f5183a">init.h</a></li>
 <li>probe_volume_ubo_ptr&#160;:&#160;<a class="el" href="main_8c.html#a2d62ae489af6731eb050a9ae69e2e003">main.c</a>, <a class="el" href="init_8h.html#a2d62ae489af6731eb050a9ae69e2e003">init.h</a></li>
 <li>PROBE_VOLUME_WIDTH&#160;:&#160;<a class="el" href="engine__types_8h.html#a352ad4bc1c821def89934c7206e31d2f">engine_types.h</a></li>
-<li>process_biquad()&#160;:&#160;<a class="el" href="audio_8c.html#a595600f8e10746c92204e774711767f8">audio.c</a></li>
+<li>process_area_light()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#aba29f5492e975564bde38fd1d7fc8dc9">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#af0dda8cddfa0a285475c54edef4ab612">probe_bake.comp</a></li>
+<li>process_biquad()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga595600f8e10746c92204e774711767f8">audio.c</a></li>
 <li>process_collision_node()&#160;:&#160;<a class="el" href="acceleration_8c.html#a32dd225f1c6dbf0f663768bce919df15">acceleration.c</a></li>
 <li>process_input()&#160;:&#160;<a class="el" href="input_8c.html#a8831d3087a9d2abf364d68672cd0fdf6">input.c</a>, <a class="el" href="input_8h.html#a8831d3087a9d2abf364d68672cd0fdf6">input.h</a></li>
-<li>process_probe_chunk()&#160;:&#160;<a class="el" href="audio_8c.html#aab357e10157bb948224bfd4dbc21046d">audio.c</a></li>
+<li>process_light()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#acf142e6914010208b5313151deb8e293">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#acf142e6914010208b5313151deb8e293">probe_bake.comp</a></li>
+<li>process_probe_chunk()&#160;:&#160;<a class="el" href="group__aprobe__group.html#gadaa04ca6973f2add78bb099a29432255">audio.c</a></li>
 <li>process_sdl_event()&#160;:&#160;<a class="el" href="input_8c.html#a4dbaa942fb40b3156c5c99893d370db3">input.c</a>, <a class="el" href="input_8h.html#a4dbaa942fb40b3156c5c99893d370db3">input.h</a></li>
 <li>process_ui_event()&#160;:&#160;<a class="el" href="ui_8c.html#a028b8e4747c83d012050dd25e5a9cc3b">ui.c</a></li>
+<li>processLUT()&#160;:&#160;<a class="el" href="postprocess_8frag.html#a64cc87ffeefaa9d6a3525f88ae7e50f7">postprocess.frag</a></li>
 <li>project_point_plane()&#160;:&#160;<a class="el" href="utilities_8c.html#afae181fccc78f8516839dbf5f0a1d821">utilities.c</a>, <a class="el" href="utilities_8h.html#afae181fccc78f8516839dbf5f0a1d821">utilities.h</a></li>
+<li>projection&#160;:&#160;<a class="el" href="shadow_8vert.html#a6f89a4fbf1a53a21ada7ca66387463a1">shadow.vert</a></li>
 <li>push_nk_slider_undo()&#160;:&#160;<a class="el" href="group__editor__group.html#ga153d4a9f15a435cc212b9f0fc53e04a8">editor.c</a></li>
 <li>push_raw_bytes_undo()&#160;:&#160;<a class="el" href="group__editor__group.html#ga9b4d312ecb5fa3fd9eb3dcc2015f1cc0">editor.c</a></li>
 <li>push_special_undo()&#160;:&#160;<a class="el" href="group__editor__group.html#gab3674a803f0ede4a8b29923af5fe18e0">editor.c</a></li>

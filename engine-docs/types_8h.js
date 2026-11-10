@@ -75,19 +75,22 @@ var types_8h =
       [ "d3", "types_8h.html#a1d5d07a0f6bd15c99a0e115058d36aa6", null ]
     ] ],
     [ "AABB", "types_8h.html#struct_a_a_b_b", [
+      [ "min", "types_8h.html#ac67e4a162acbb3fe663d55795990b1be", null ],
+      [ "pad0", "types_8h.html#aa63ab3ed5fdb1989d64aa0fde847b7fb", null ],
+      [ "max", "types_8h.html#ac966b0bb96cf30d85d5313f2dce3df0c", null ],
+      [ "pad1", "types_8h.html#a85407f9ff3d6624b49e746f77500c831", null ],
+      [ "center", "types_8h.html#ae23a405b8b4656aea13188e696250260", null ],
+      [ "pad2", "types_8h.html#aecfc5fafbd1db3c297bf0c583282eed2", null ],
+      [ "extents", "types_8h.html#a7310cd50a8940891814341a93decf227", null ],
+      [ "pad3", "types_8h.html#a110d9ae88d523431f9196a276675b0e4", null ],
+      [ "min", "types_8h.html#ac67e4a162acbb3fe663d55795990b1be", null ],
+      [ "max", "types_8h.html#ac966b0bb96cf30d85d5313f2dce3df0c", null ],
       [ "min_x", "types_8h.html#a5e1a7f703f4bcdbbff92fb7770dd9661", null ],
       [ "max_x", "types_8h.html#afe4c0ee38a0f9a1ba4b219f81e547d2c", null ],
       [ "min_y", "types_8h.html#ac2370cacd9869bfd3b2c1628d6c88262", null ],
       [ "max_y", "types_8h.html#a63ffed95566942162af6ce6b45168ef2", null ],
       [ "min_z", "types_8h.html#aaa6f3feb41a0c1b18796ded5ef153a8d", null ],
-      [ "max_z", "types_8h.html#a568972a7d19277185f8cf2c08a2ab928", null ],
-      [ "center", "types_8h.html#ae23a405b8b4656aea13188e696250260", null ],
-      [ "extents", "types_8h.html#a7310cd50a8940891814341a93decf227", null ]
-    ] ],
-    [ "OBB", "types_8h.html#struct_o_b_b", [
-      [ "rot", "types_8h.html#ac4877cc37f8a28a7e06422fb59ebedb1", null ],
-      [ "center", "types_8h.html#a4386f76bca7ec2058d745ad67ed1b590", null ],
-      [ "extents", "types_8h.html#a2624d6f59fc1279a052c410444b2b06d", null ]
+      [ "max_z", "types_8h.html#a568972a7d19277185f8cf2c08a2ab928", null ]
     ] ],
     [ "Vector", "types_8h.html#struct_vector", [
       [ "count", "types_8h.html#aaa2fad1bda55aa3852988c62b0563913", null ],
@@ -112,15 +115,23 @@ var types_8h =
       [ "ab", "types_8h.html#a4359b13f641f9fac2e848218b131c549", null ]
     ] ],
     [ "RayHit", "types_8h.html#struct_ray_hit", [
-      [ "t", "types_8h.html#aaae6d81662468c795fca056a9c04e8b1", null ],
       [ "pos", "types_8h.html#a6b1576d8851f5b49d5f38fe12cc64af0", null ],
+      [ "t", "types_8h.html#aaae6d81662468c795fca056a9c04e8b1", null ],
+      [ "barycentrics", "types_8h.html#a1a76386b6eb4edac313b3c54387377e1", null ],
+      [ "mn_idx", "types_8h.html#a6cdd80bf03781a91e715901f7b504fe9", null ],
+      [ "normal", "types_8h.html#a091b1e1b6940eee0c70671f7965e2bfe", null ],
+      [ "tri_idx", "types_8h.html#a8ffd779c8f68721d00d87a7e1a4bf912", null ],
+      [ "best_t", "types_8h.html#af518cffcf46312b3abb858a6ec56683c", null ],
+      [ "blocked_t", "types_8h.html#afb68cb487650171e28638a9e0b17240d", null ],
+      [ "hit", "types_8h.html#aac76e56088e68dccf0d4c1d734228240", null ],
+      [ "occluded", "types_8h.html#ae84280d5df692152bd05cfed21e7564d", null ],
+      [ "pad1", "types_8h.html#a1ce923752fce1ecdfdee82fcca3e7785", null ],
       [ "mesh_node_idx", "types_8h.html#a5bcd2ea56b3a6bc3be2ad3347f8c55fd", null ],
       [ "tri", "types_8h.html#ac5c15bab1712c46fe2fbbf4658608dc7", null ],
       [ "hit", "types_8h.html#a6b4f3b952518496bda1b524db0c8350d", null ],
       [ "b0", "types_8h.html#aadad27db84749622b5ce8b7e4223d827", null ],
       [ "b1", "types_8h.html#a4e55d285b57ff1e1cc95af8b7777f01f", null ],
-      [ "b2", "types_8h.html#aa5eebb548515c1d73cc11bff2080228f", null ],
-      [ "occluded", "types_8h.html#ae84280d5df692152bd05cfed21e7564d", null ]
+      [ "b2", "types_8h.html#aa5eebb548515c1d73cc11bff2080228f", null ]
     ] ],
     [ "Triangle", "types_8h.html#struct_triangle", [
       [ "pts", "types_8h.html#acc1d7f2cfd0e8b37fada6942375a3be7", null ],

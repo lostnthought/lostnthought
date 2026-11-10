@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,14 +134,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 
 
 <h3 class="doxsection"><a id="index_k" name="index_k"></a>- k -</h3><ul>
-<li>ka&#160;:&#160;<a class="el" href="engine__types_8h.html#a7e7f914739368a651fe526f7d619b8bd">Material</a></li>
-<li>kd&#160;:&#160;<a class="el" href="engine__types_8h.html#afb460bde77d85ff8ce1a3ce8dc4502f1">Material</a></li>
-<li>ke&#160;:&#160;<a class="el" href="engine__types_8h.html#aa46321afbfe9130defea1c668b18e015">Material</a></li>
+<li>ka&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a7e7f914739368a651fe526f7d619b8bd">Material</a></li>
+<li>kd&#160;:&#160;<a class="el" href="group__shader__structs__group.html#afb460bde77d85ff8ce1a3ce8dc4502f1">Material</a></li>
+<li>ke&#160;:&#160;<a class="el" href="group__shader__structs__group.html#aa46321afbfe9130defea1c668b18e015">Material</a></li>
 <li>key&#160;:&#160;<a class="el" href="mesh_8c.html#acb959fbe13a0acdd388aaf597ce75260">EdgePairEntry</a>, <a class="el" href="mesh_8c.html#adfdf86f3b8c18406584b39c7b463b3cc">WeldedEntry</a></li>
 <li>keyboard_locked&#160;:&#160;<a class="el" href="engine__types_8h.html#a7c542779e65a11a96b162355cdae06c3">Globals</a></li>
 <li>kf&#160;:&#160;<a class="el" href="engine__types_8h.html#a1789a4a30b4cbd280028115e99420462">AnimationTrack</a></li>
 <li>kf_count&#160;:&#160;<a class="el" href="engine__types_8h.html#a6d4d8d7e88bca6f0a4c50d4a7ce1456b">AnimationTrack</a></li>
-<li>ks&#160;:&#160;<a class="el" href="engine__types_8h.html#ae4c24ab57823c4c026a05eb55d1cb730">Material</a></li>
+<li>ks&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ae4c24ab57823c4c026a05eb55d1cb730">Material</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

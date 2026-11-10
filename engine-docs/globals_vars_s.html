@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -121,10 +130,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars_s
 
 <div class="contents">
 <div class="textblock">Here is a list of all variables with links to the files they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
+<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
 
 
 <h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>SAMPLE_COUNT&#160;:&#160;<a class="el" href="brdf_8frag.html#af63480c89a929e95b13879677976d560">brdf.frag</a></li>
+<li>samples&#160;:&#160;<a class="el" href="postprocess_8frag.html#a51b373bb6e576a874a82de94fa3ce715">postprocess.frag</a></li>
+<li>scene&#160;:&#160;<a class="el" href="fullscreen_8frag.html#a190da328c5733bff34b5a707a0cf8e7a">fullscreen.frag</a></li>
 <li>scene_apv_flags&#160;:&#160;<a class="el" href="group__editor__group.html#gab56c527a53ba08298fe1aa7493c53c2f">editor.c</a></li>
 <li>scene_apv_name_buffer&#160;:&#160;<a class="el" href="group__editor__group.html#gaa843fcbad8e0f7264d3d83460c823f58">editor.c</a></li>
 <li>scene_apv_registry&#160;:&#160;<a class="el" href="group__editor__group.html#ga4dd7bba7a83d06c8cf76cfef4f156108">editor.c</a>, <a class="el" href="group__editor__group.html#ga4dd7bba7a83d06c8cf76cfef4f156108">init.h</a></li>
@@ -156,6 +168,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars_s
 <li>shadow_meshes_this_frame&#160;:&#160;<a class="el" href="render_8c.html#a1b00a9fc963358b98dd665e7c7b231ce">render.c</a></li>
 <li>SHADOW_VAO&#160;:&#160;<a class="el" href="main_8c.html#aa3acefbb66815155ff6e98ed0c1a9bcb">main.c</a>, <a class="el" href="init_8h.html#aa3acefbb66815155ff6e98ed0c1a9bcb">init.h</a></li>
 <li>SHADOWMAP_FRAME_DATA&#160;:&#160;<a class="el" href="render_8c.html#a14c3e0224f7a659296e5ca1fdf9aacee">render.c</a></li>
+<li>size&#160;:&#160;<a class="el" href="sky_8frag.html#aab938108caad0d0e47d6885b5ba2d23a">sky.frag</a></li>
 <li>SKY_SHADER&#160;:&#160;<a class="el" href="main_8c.html#a86ba0176cd62991e505ecb031d5e1f6f">main.c</a>, <a class="el" href="init_8h.html#a86ba0176cd62991e505ecb031d5e1f6f">init.h</a></li>
 <li>SKY_VAO&#160;:&#160;<a class="el" href="main_8c.html#a97ba84250059cde29d497ded12ca2736">main.c</a>, <a class="el" href="init_8h.html#a97ba84250059cde29d497ded12ca2736">init.h</a></li>
 <li>SKY_VBO&#160;:&#160;<a class="el" href="main_8c.html#a9364151ac1886976f950720637660bcf">main.c</a>, <a class="el" href="init_8h.html#a9364151ac1886976f950720637660bcf">init.h</a></li>
@@ -165,6 +178,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars_s
 <li>SOBEL_TEXTURE&#160;:&#160;<a class="el" href="main_8c.html#a077c7d5fe590e8825f3b92a2fc8c7544">main.c</a>, <a class="el" href="init_8h.html#a077c7d5fe590e8825f3b92a2fc8c7544">init.h</a></li>
 <li>sound_registry&#160;:&#160;<a class="el" href="group__editor__group.html#ga3d430ef05b049c39c68973bbc111ed8b">editor.c</a>, <a class="el" href="group__editor__group.html#ga3d430ef05b049c39c68973bbc111ed8b">init.h</a></li>
 <li>spawn_point&#160;:&#160;<a class="el" href="main_8c.html#a9dd5abfdf2766f832e17f4fd8c092a45">main.c</a>, <a class="el" href="init_8h.html#a9dd5abfdf2766f832e17f4fd8c092a45">init.h</a></li>
+<li>SpotLight&#160;:&#160;<a class="el" href="dynamic_8frag.html#a2d80562bd9b28ba702ff8cd8400e1ee1">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#a151a75780fbcd75b7aa1c55d35e379e7">dynamic.vert</a></li>
+<li>srcTexture&#160;:&#160;<a class="el" href="bloom__downscale_8frag.html#a54baa6c59f107ffa02d72d3bb6747231">bloom_downscale.frag</a>, <a class="el" href="bloom__upscale_8frag.html#a54baa6c59f107ffa02d72d3bb6747231">bloom_upscale.frag</a></li>
+<li>srgb_to_ap1&#160;:&#160;<a class="el" href="postprocess_8frag.html#afb71fce18283c491e78eba8fc6add1a2">postprocess.frag</a></li>
 <li>SSAO_BLUR_FBO&#160;:&#160;<a class="el" href="main_8c.html#ad09c65285cafaac81f6a8afbd2e3c45a">main.c</a>, <a class="el" href="init_8h.html#ad09c65285cafaac81f6a8afbd2e3c45a">init.h</a></li>
 <li>SSAO_BLUR_SHADER&#160;:&#160;<a class="el" href="main_8c.html#a1e7b6bb80afe3216c2fcd8a8b842f706">main.c</a>, <a class="el" href="init_8h.html#a1e7b6bb80afe3216c2fcd8a8b842f706">init.h</a></li>
 <li>SSAO_FBO&#160;:&#160;<a class="el" href="main_8c.html#a357600a047df562d9205d54e2f3e0071">main.c</a>, <a class="el" href="init_8h.html#a357600a047df562d9205d54e2f3e0071">init.h</a></li>
@@ -184,8 +200,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars_s
 <li>ssr_queries&#160;:&#160;<a class="el" href="main_8c.html#ade0501c632858845d684bfd156ad1c63">main.c</a>, <a class="el" href="init_8h.html#ade0501c632858845d684bfd156ad1c63">init.h</a></li>
 <li>SSR_SHADER&#160;:&#160;<a class="el" href="main_8c.html#ae607ebb6f8b11424f471e2fc06a7c4c6">main.c</a>, <a class="el" href="init_8h.html#ae607ebb6f8b11424f471e2fc06a7c4c6">init.h</a></li>
 <li>SSR_WIDTH&#160;:&#160;<a class="el" href="main_8c.html#a4b9a39f2a0791f8b55acb0c43dd57ead">main.c</a>, <a class="el" href="init_8h.html#a4b9a39f2a0791f8b55acb0c43dd57ead">init.h</a></li>
+<li>state&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a5e73da37ecdde38efd7215c987de292e">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#a5e73da37ecdde38efd7215c987de292e">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a5e73da37ecdde38efd7215c987de292e">probe_bake.comp</a></li>
 <li>STATE_COUNT&#160;:&#160;<a class="el" href="entity_8c.html#a2c9ea1620780725d1fb7ab2fa197b0ee">entity.c</a>, <a class="el" href="entity_8h.html#a2c9ea1620780725d1fb7ab2fa197b0ee">entity.h</a></li>
 <li>STATE_REGISTRY&#160;:&#160;<a class="el" href="entity_8c.html#a6f1525b9ed892900210d1fbdea71eaf2">entity.c</a>, <a class="el" href="entity_8h.html#a6f1525b9ed892900210d1fbdea71eaf2">entity.h</a></li>
+<li>Static&#160;:&#160;<a class="el" href="dynamic_8frag.html#a73aa8de87d5181c24b7e99a41d20f30f">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#ace2b72b32d97f6175a954127ff0050ea">dynamic.vert</a></li>
 <li>static_count&#160;:&#160;<a class="el" href="render_8c.html#a0dcae3bc9c4a418e08ec3fa6304c4dab">render.c</a></li>
 <li>STATIC_HRTF_LEFT&#160;:&#160;<a class="el" href="main_8c.html#a9d973b02f8a94df1f89c53f26d9c979a">main.c</a>, <a class="el" href="init_8h.html#a9d973b02f8a94df1f89c53f26d9c979a">init.h</a></li>
 <li>STATIC_HRTF_RIGHT&#160;:&#160;<a class="el" href="main_8c.html#af2550f34dc66cc7464a056c51df580d9">main.c</a>, <a class="el" href="init_8h.html#af2550f34dc66cc7464a056c51df580d9">init.h</a></li>

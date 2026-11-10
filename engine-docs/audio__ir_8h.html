@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -133,7 +142,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('audio__ir_8h.h
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad7b112adefb25363ce2cac8d90f519cc" id="r_gad7b112adefb25363ce2cac8d90f519cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#gad7b112adefb25363ce2cac8d90f519cc">rotate_sh</a> (float *OUT, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>], <a class="el" href="types_8h.html#structmat3">mat3</a> rot)</td></tr>
-<tr class="memdesc:gad7b112adefb25363ce2cac8d90f519cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the SH.  <br /></td></tr>
+<tr class="memdesc:gad7b112adefb25363ce2cac8d90f519cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position to local <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a> space and returns the coord as if it was a texture from \(0 \rightarrow 1\).  <br /></td></tr>
 <tr class="memitem:ga3b6731fb91c35d5c834c0addcf0753ef" id="r_ga3b6731fb91c35d5c834c0addcf0753ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga3b6731fb91c35d5c834c0addcf0753ef">fft_channels</a> (<a class="el" href="group__aprobe__group.html#struct_convolver_node">ConvolverNode</a> *node, bool crossfading)</td></tr>
 <tr class="memdesc:ga3b6731fb91c35d5c834c0addcf0753ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFTs the newest audio chunk with the partitioned overlap-add buffer.  <br /></td></tr>
 <tr class="memitem:ga33cb3214a18859fbac84b5832d4ec433" id="r_ga33cb3214a18859fbac84b5832d4ec433"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433">evaluate_sh</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> dir, float SH[<a class="el" href="group__aprobe__group.html#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>])</td></tr>

@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,354 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('depth__pre__pa
 <div class="contents">
 
 <p><a href="depth__pre__pass__no__gbuffer_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:Material_5Fstruct_5Fmaterial" id="r_Material_5Fstruct_5Fmaterial"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_material">Material</a></td></tr>
+<tr class="memdesc:struct_material"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Materials parsed in from scene files that determine rendering pipeline setup, uploads, and ordering.  <a href="group__shader__structs__group.html#struct_material">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aaad5c946d47e5ca89ea960ba47e53210" id="r_aaad5c946d47e5ca89ea960ba47e53210"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaad5c946d47e5ca89ea960ba47e53210">layout</a> (location=0) out <a class="el" href="types_8h.html#structvec2">vec2</a> <a class="el" href="postprocess_8frag.html#a3a525c12daff7b300c8e2223390045ba">gVel</a></td></tr>
+<tr class="memitem:a251ff7187aa6805e7027554c86b34307" id="r_a251ff7187aa6805e7027554c86b34307"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a251ff7187aa6805e7027554c86b34307">layout</a> (std140, binding=0) uniform CameraData</td></tr>
+<tr class="memitem:a29581687ebc1264eb63c6047f2aef3e2" id="r_a29581687ebc1264eb63c6047f2aef3e2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a29581687ebc1264eb63c6047f2aef3e2">layout</a> (std430, binding=2) buffer <a class="el" href="engine__types_8h.html#struct_material_data">MaterialData</a></td></tr>
+<tr class="memitem:adb9c3a7621b758c86c8c70e434ea1ed4" id="r_adb9c3a7621b758c86c8c70e434ea1ed4"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#adb9c3a7621b758c86c8c70e434ea1ed4">ParallaxMapping</a> (sampler2D normal_map, <a class="el" href="types_8h.html#structvec2">vec2</a> texCoords, <a class="el" href="types_8h.html#structvec3">vec3</a> viewDir, out float final_depth)</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a18b7801c2dc257a0ddc2e74f0b320e78" id="r_a18b7801c2dc257a0ddc2e74f0b320e78"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a18b7801c2dc257a0ddc2e74f0b320e78">Normal</a></td></tr>
+<tr class="memitem:ade0ed141ad92e0db1cdc8d474765a03f" id="r_ade0ed141ad92e0db1cdc8d474765a03f"><td class="memItemLeft">in <a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ade0ed141ad92e0db1cdc8d474765a03f">TBN</a></td></tr>
+<tr class="memitem:a6a7c450f534931a81d3c99b42be9c126" id="r_a6a7c450f534931a81d3c99b42be9c126"><td class="memItemLeft">flat in uint&#160;</td><td class="memItemRight"><a class="el" href="#a6a7c450f534931a81d3c99b42be9c126">Mat</a></td></tr>
+<tr class="memitem:a5d59c7b23932264c2d62ef3be626fc34" id="r_a5d59c7b23932264c2d62ef3be626fc34"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5d59c7b23932264c2d62ef3be626fc34">UV</a></td></tr>
+<tr class="memitem:a921525e1ccbafd33f722a836b516644b" id="r_a921525e1ccbafd33f722a836b516644b"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a921525e1ccbafd33f722a836b516644b">ViewPos</a></td></tr>
+<tr class="memitem:a40460bcbe33f798a350a1bd72d8c8e54" id="r_a40460bcbe33f798a350a1bd72d8c8e54"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a40460bcbe33f798a350a1bd72d8c8e54">ClipPos</a></td></tr>
+<tr class="memitem:afaa3169d7dd26addf96bd34eb6441350" id="r_afaa3169d7dd26addf96bd34eb6441350"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#afaa3169d7dd26addf96bd34eb6441350">PrevClipPos</a></td></tr>
+<tr class="memitem:a54f45bafa6f9e4c5deb2493dded39873" id="r_a54f45bafa6f9e4c5deb2493dded39873"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a54f45bafa6f9e4c5deb2493dded39873">ViewDirTanSpace</a></td></tr>
+<tr class="memitem:abf33b7cfe32e3ae64202d6428f6052ee" id="r_abf33b7cfe32e3ae64202d6428f6052ee"><td class="memItemLeft">const float&#160;</td><td class="memItemRight"><a class="el" href="#abf33b7cfe32e3ae64202d6428f6052ee">height_scale</a> = 0.02f</td></tr>
+<tr class="memitem:a6a6b139769641ecb723de6472111d15c" id="r_a6a6b139769641ecb723de6472111d15c"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a6a6b139769641ecb723de6472111d15c">uAlbedo</a></td></tr>
+<tr class="memitem:ab571caacb4834153c989fab08fe5937e" id="r_ab571caacb4834153c989fab08fe5937e"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#ab571caacb4834153c989fab08fe5937e">uARM</a></td></tr>
+<tr class="memitem:acec7f35a3c3e8d1ba7acd9470d9dcb5c" id="r_acec7f35a3c3e8d1ba7acd9470d9dcb5c"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#acec7f35a3c3e8d1ba7acd9470d9dcb5c">uNormal</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="aaad5c946d47e5ca89ea960ba47e53210" name="aaad5c946d47e5ca89ea960ba47e53210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad5c946d47e5ca89ea960ba47e53210">&#9670;&#160;</a></span>layout() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">location</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="postprocess_8frag_source.html#l00022">gVel</a>, and <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a251ff7187aa6805e7027554c86b34307" name="a251ff7187aa6805e7027554c86b34307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ff7187aa6805e7027554c86b34307">&#9670;&#160;</a></span>layout() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std140</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00005">5</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, and <a class="el" href="shadow_8vert_source.html#l00016">view</a>.</p>
+
+</div>
+</div>
+<a id="a29581687ebc1264eb63c6047f2aef3e2" name="a29581687ebc1264eb63c6047f2aef3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29581687ebc1264eb63c6047f2aef3e2">&#9670;&#160;</a></span>layout() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">2</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00046">46</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="adb9c3a7621b758c86c8c70e434ea1ed4" name="adb9c3a7621b758c86c8c70e434ea1ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9c3a7621b758c86c8c70e434ea1ed4">&#9670;&#160;</a></span>ParallaxMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec2">vec2</a> ParallaxMapping </td>
+          <td>(</td>
+          <td class="paramtype">sampler2D</td>          <td class="paramname"><span class="paramname"><em>normal_map</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec2">vec2</a></td>          <td class="paramname"><span class="paramname"><em>texCoords</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>viewDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float</td>          <td class="paramname"><span class="paramname"><em>final_depth</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00068">68</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="depth__pre__pass_8frag_source.html#l00076">height_scale</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00082">ParallaxMapping()</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00126">126</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00027">Material::albedo_tex</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00073">ClipPos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00016">Material::diffuse</a>, <a class="el" href="postprocess_8frag_source.html#l00022">gVel</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00069">Mat</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00074">PrevClipPos</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00070">UV</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00075">ViewDirTanSpace</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00072">ViewPos</a>, and <a class="el" href="types_8h_source.html#l00013">vec4::w</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a18b7801c2dc257a0ddc2e74f0b320e78" name="a18b7801c2dc257a0ddc2e74f0b320e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b7801c2dc257a0ddc2e74f0b320e78">&#9670;&#160;</a></span>Normal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> Normal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00054">54</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="ade0ed141ad92e0db1cdc8d474765a03f" name="ade0ed141ad92e0db1cdc8d474765a03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0ed141ad92e0db1cdc8d474765a03f">&#9670;&#160;</a></span>TBN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structmat3">mat3</a> TBN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00055">55</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="a6a7c450f534931a81d3c99b42be9c126" name="a6a7c450f534931a81d3c99b42be9c126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7c450f534931a81d3c99b42be9c126">&#9670;&#160;</a></span>Mat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat in uint Mat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00056">56</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="a5d59c7b23932264c2d62ef3be626fc34" name="a5d59c7b23932264c2d62ef3be626fc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d59c7b23932264c2d62ef3be626fc34">&#9670;&#160;</a></span>UV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> UV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00057">57</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="a921525e1ccbafd33f722a836b516644b" name="a921525e1ccbafd33f722a836b516644b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921525e1ccbafd33f722a836b516644b">&#9670;&#160;</a></span>ViewPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> ViewPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00059">59</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="a40460bcbe33f798a350a1bd72d8c8e54" name="a40460bcbe33f798a350a1bd72d8c8e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40460bcbe33f798a350a1bd72d8c8e54">&#9670;&#160;</a></span>ClipPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec4">vec4</a> ClipPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00060">60</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="afaa3169d7dd26addf96bd34eb6441350" name="afaa3169d7dd26addf96bd34eb6441350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa3169d7dd26addf96bd34eb6441350">&#9670;&#160;</a></span>PrevClipPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec4">vec4</a> PrevClipPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00061">61</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="a54f45bafa6f9e4c5deb2493dded39873" name="a54f45bafa6f9e4c5deb2493dded39873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f45bafa6f9e4c5deb2493dded39873">&#9670;&#160;</a></span>ViewDirTanSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> ViewDirTanSpace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00062">62</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="abf33b7cfe32e3ae64202d6428f6052ee" name="abf33b7cfe32e3ae64202d6428f6052ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf33b7cfe32e3ae64202d6428f6052ee">&#9670;&#160;</a></span>height_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float height_scale = 0.02f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00063">63</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="a6a6b139769641ecb723de6472111d15c" name="a6a6b139769641ecb723de6472111d15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6b139769641ecb723de6472111d15c">&#9670;&#160;</a></span>uAlbedo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uAlbedo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00064">64</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="ab571caacb4834153c989fab08fe5937e" name="ab571caacb4834153c989fab08fe5937e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab571caacb4834153c989fab08fe5937e">&#9670;&#160;</a></span>uARM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uARM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00065">65</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
+<a id="acec7f35a3c3e8d1ba7acd9470d9dcb5c" name="acec7f35a3c3e8d1ba7acd9470d9dcb5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec7f35a3c3e8d1ba7acd9470d9dcb5c">&#9670;&#160;</a></span>uNormal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uNormal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html#l00066">66</a> of file <a class="el" href="depth__pre__pass__no__gbuffer_8frag_source.html">depth_pre_pass_no_gbuffer.frag</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

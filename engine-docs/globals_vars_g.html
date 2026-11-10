@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -121,22 +130,29 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars_g
 
 <div class="contents">
 <div class="textblock">Here is a list of all variables with links to the files they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
+<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
 
 
 <h3 class="doxsection"><a id="index_g" name="index_g"></a>- g -</h3><ul>
+<li>gAlbedo&#160;:&#160;<a class="el" href="dynamic_8frag.html#a6c3b8afdf0f4a6aa4995522bb0b7f3b0">dynamic.frag</a></li>
 <li>GBUFFER_FBO&#160;:&#160;<a class="el" href="main_8c.html#a352358d0798cd1a0a049b68c84a776a3">main.c</a>, <a class="el" href="init_8h.html#a352358d0798cd1a0a049b68c84a776a3">init.h</a></li>
 <li>gbuffer_queries&#160;:&#160;<a class="el" href="main_8c.html#a051fb0367f38ba365e35ff2542d8633c">main.c</a>, <a class="el" href="init_8h.html#a051fb0367f38ba365e35ff2542d8633c">init.h</a></li>
 <li>GBUFFER_RESOLVE_FBO&#160;:&#160;<a class="el" href="main_8c.html#a21ff966aee02744f0a5f46be9f312dc9">main.c</a>, <a class="el" href="init_8h.html#a21ff966aee02744f0a5f46be9f312dc9">init.h</a></li>
+<li>gDepth&#160;:&#160;<a class="el" href="coc_8frag.html#a4f588aa537b960aadd2d3a441a3a8d47">coc.frag</a>, <a class="el" href="focal__distance_8comp.html#a4f588aa537b960aadd2d3a441a3a8d47">focal_distance.comp</a></li>
+<li>gExtra&#160;:&#160;<a class="el" href="dynamic_8frag.html#af9105292fdee754f8842d11af64e6484">dynamic.frag</a></li>
 <li>GLOBAL_INSTANCE_SSBO&#160;:&#160;<a class="el" href="main_8c.html#a2494ea07458853c839c3cd3b412d3379">main.c</a>, <a class="el" href="init_8h.html#a2494ea07458853c839c3cd3b412d3379">init.h</a></li>
 <li>GLOBAL_LIGHT_INDICES_SSBO&#160;:&#160;<a class="el" href="main_8c.html#a4eeee3dab8c91c671da989692fa728e1">main.c</a>, <a class="el" href="init_8h.html#a4eeee3dab8c91c671da989692fa728e1">init.h</a></li>
 <li>GLOBALS&#160;:&#160;<a class="el" href="engine__types_8h.html#a790e507162ed259d78e359ecf0c320d6">engine_types.h</a>, <a class="el" href="main_8c.html#a790e507162ed259d78e359ecf0c320d6">main.c</a></li>
 <li>gltf_file_names_open&#160;:&#160;<a class="el" href="group__editor__group.html#ga68398488ff7838c1834b190a92b3a361">editor.c</a></li>
 <li>gltf_names&#160;:&#160;<a class="el" href="group__editor__group.html#ga0552c36b94c96d60400fa017ae9a7e85">editor.c</a></li>
 <li>gltf_names_count&#160;:&#160;<a class="el" href="group__editor__group.html#ga4715a479c186eaca00ce764338e84eca">editor.c</a></li>
+<li>gNormal&#160;:&#160;<a class="el" href="dynamic_8frag.html#a6e15101167e2b37e1a218a9f886e4b64">dynamic.frag</a></li>
 <li>gpu_light_count&#160;:&#160;<a class="el" href="render_8c.html#acc22a7ab39e6347f88ea80cad4aef9f8">render.c</a></li>
 <li>GPU_LIGHTS&#160;:&#160;<a class="el" href="render_8c.html#a3648d35e377da83ad86bd8a49b31b249">render.c</a></li>
 <li>ground_hit&#160;:&#160;<a class="el" href="camera_8c.html#a0bc0619c0b9b664e28e6a32dc90d6cf9">camera.c</a></li>
+<li>gs_in&#160;:&#160;<a class="el" href="point__light__shadows_8vert.html#a94ab3139f485422a7726c8ee467d9c3f">point_light_shadows.vert</a></li>
+<li>gUV&#160;:&#160;<a class="el" href="dynamic_8frag.html#aa83365ec51e14056c5ba92d482c3597e">dynamic.frag</a></li>
+<li>gVel&#160;:&#160;<a class="el" href="postprocess_8frag.html#a3a525c12daff7b300c8e2223390045ba">postprocess.frag</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

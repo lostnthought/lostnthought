@@ -116,43 +116,51 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('ssao__blur_8fr
   <div class="headertitle"><div class="title">ssao_blur.frag</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="ssao__blur_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>#version 330 core</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>out float FragColor;</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>in vec2 vUV;</div>
+<a href="ssao__blur_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#version 330 core</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">    2</a></span>out <span class="keywordtype">float</span> <a class="code hl_variable" href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">FragColor</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="ssao__blur_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">    3</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>uniform sampler2D uSSAOInput;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>uniform sampler2D uDepth;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="ssao__blur_8frag.html#a3ffd9611941932066ef1ce8711e14aee">    5</a></span>uniform sampler2D <a class="code hl_variable" href="ssao__blur_8frag.html#a3ffd9611941932066ef1ce8711e14aee">uSSAOInput</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="ssao__blur_8frag.html#abedf364922afc432663845334cd7880e">    6</a></span>uniform sampler2D <a class="code hl_variable" href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">uDepth</a>;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>void main() {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    vec2 texelSize = 1.0 / vec2(textureSize(uSSAOInput, 0));</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="ssao__blur_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">    8</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>() {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> texelSize = 1.0 / <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(textureSize(<a class="code hl_variable" href="ssao__blur_8frag.html#a3ffd9611941932066ef1ce8711e14aee">uSSAOInput</a>, 0));</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    float result = 0.0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    float weightSum = 0.0;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">float</span> result = 0.0;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">float</span> weightSum = 0.0;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    float centerDepth = texture(uDepth, vUV).r;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">float</span> centerDepth = texture(<a class="code hl_variable" href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">uDepth</a>, <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>).r;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    for (int x = -2; x &lt;= 2; ++x) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        for (int y = -2; y &lt;= 2; ++y) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = -2; x &lt;= 2; ++x) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = -2; y &lt;= 2; ++y) {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            vec2 offset = vec2(float(x), float(y)) * texelSize;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            vec2 sampleUV = vUV + offset;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> offset = <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(<span class="keywordtype">float</span>(x), <span class="keywordtype">float</span>(y)) * texelSize;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> sampleUV = <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a> + offset;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            float sampleAO = texture(uSSAOInput, sampleUV).r;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            float sampleDepth = texture(uDepth, sampleUV).r;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordtype">float</span> sampleAO = texture(<a class="code hl_variable" href="ssao__blur_8frag.html#a3ffd9611941932066ef1ce8711e14aee">uSSAOInput</a>, sampleUV).r;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordtype">float</span> sampleDepth = texture(<a class="code hl_variable" href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">uDepth</a>, sampleUV).r;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            float depthDiff = abs(centerDepth - sampleDepth);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordtype">float</span> depthDiff = abs(centerDepth - sampleDepth);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            float weight = exp(-depthDiff * 1000.0);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">float</span> weight = exp(-depthDiff * 1000.0);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            result += sampleAO * weight;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            weightSum += weight;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    FragColor = result / weightSum;    </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">FragColor</a> = result / weightSum;    </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="adepth__downsample_8frag_html_abedf364922afc432663845334cd7880e"><div class="ttname"><a href="depth__downsample_8frag.html#abedf364922afc432663845334cd7880e">uDepth</a></div><div class="ttdeci">uniform sampler2D uDepth</div><div class="ttdef"><b>Definition</b> <a href="depth__downsample_8frag_source.html#l00002">depth_downsample.frag:2</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="lightmap_8frag_source.html#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="assao__blur_8frag_html_a3ffd9611941932066ef1ce8711e14aee"><div class="ttname"><a href="ssao__blur_8frag.html#a3ffd9611941932066ef1ce8711e14aee">uSSAOInput</a></div><div class="ttdeci">uniform sampler2D uSSAOInput</div><div class="ttdef"><b>Definition</b> <a href="#l00005">ssao_blur.frag:5</a></div></div>
+<div class="ttc" id="assao__blur_8frag_html_a9fb9ff60bb02989b1604a64cb2da6094"><div class="ttname"><a href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">FragColor</a></div><div class="ttdeci">out float FragColor</div><div class="ttdef"><b>Definition</b> <a href="#l00002">ssao_blur.frag:2</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

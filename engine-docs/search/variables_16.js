@@ -1,7 +1,7 @@
 var searchData=
 [
   ['w_0',['w',['../group__aprobe__group.html#af90473ed0f6ab382f4722c487309c05b',1,'HRTFThreadData::w'],['../engine__types_8h.html#acd3dd3692835dc7fa9610eb8f0f45ddc',1,'GLTexture::w'],['../engine__types_8h.html#a405d505360205660cac5bfc4f2a15311',1,'GLRenderbuffer::w'],['../engine__types_8h.html#abf9bcb931e5afe2e5b5d72e053c5aa17',1,'Framebuffer::w'],['../engine__types_8h.html#a6f9497da71ddff701ba90d536220dd46',1,'LightmapRect::w'],['../group__ui__group.html#a3cc521cc3bd6b4ba5592e898e0eaa863',1,'TextBox::w'],['../types_8h.html#a0c92fe67e490d9768217a00c2e8abd49',1,'vec4::w'],['../types_8h.html#a4568e01b0af9be7c3a7ef66b26675397',1,'ivec4::w'],['../types_8h.html#acc923a7ebe0c0ef7751571046253cfb1',1,'uvec4::w']]],
-  ['weights_1',['weights',['../group__aprobe__group.html#afdbd6693654e45837c1e935d36b1a7a1',1,'AudioProbeWeights::weights'],['../engine__types_8h.html#a57d9d399cf0a41d170a8259debc6e122',1,'MainVertex::weights'],['../types_8h.html#a1550f6a2b3745037df232c6de5405b7e',1,'Point::weights']]],
+  ['weights_1',['weights',['../group__aprobe__group.html#afdbd6693654e45837c1e935d36b1a7a1',1,'AudioProbeWeights::weights'],['../engine__types_8h.html#a57d9d399cf0a41d170a8259debc6e122',1,'MainVertex::weights'],['../types_8h.html#a1550f6a2b3745037df232c6de5405b7e',1,'Point::weights'],['../bloom__blur_8frag.html#a77a6ea5797d7c0e635a14d8db75665f0',1,'weights:&#160;bloom_blur.frag']]],
   ['weights0_2',['weights0',['../engine__types_8h.html#aaa0da0a05869079bd655f6020d971d60',1,'GLTFPrimitive']]],
   ['welded_5ftable_3',['welded_table',['../mesh_8c.html#a5b6e9ee683a112c6ea8751d4d40419d1',1,'mesh.c']]],
   ['wet_4',['wet',['../group__editor__group.html#a112a5598bc50fd2c749ddd37bb173167',1,'AProbeEditorMenu']]],
@@ -14,8 +14,10 @@ var searchData=
   ['work_5fcond_11',['work_cond',['../group__aprobe__group.html#afa9f96f857890b966be5bfccb4491aeb',1,'HRTFThreadData']]],
   ['world_5fmin_12',['world_min',['../engine__types_8h.html#a75d54c4152e392d08cdfc15b07febd09',1,'Globals']]],
   ['world_5fsize_13',['world_size',['../engine__types_8h.html#a94e802189cf4af0f9f9736294090d713',1,'Globals']]],
-  ['wrap_14',['wrap',['../group__ui__group.html#a4ed0665a12f7edc3d630660fabf7a590',1,'UIContainer']]],
-  ['wrap_5fr_15',['wrap_r',['../engine__types_8h.html#adeae52d30e3e4ac6d1ea4d6684ab69a7',1,'GLTexture']]],
-  ['wrap_5fs_16',['wrap_s',['../engine__types_8h.html#ada7c57dea47e49b41a9e1769d29ded4d',1,'GLTexture::wrap_s'],['../engine__types_8h.html#a8a36286826186546fa17c5c75acd062a',1,'Image::wrap_s'],['../engine__types_8h.html#a1f4fa5ebcd5005e9b79c162f1b7a46e4',1,'GLTFSampler::wrap_s']]],
-  ['wrap_5ft_17',['wrap_t',['../engine__types_8h.html#a3bf436758cca0de09810b631239de0e1',1,'GLTexture::wrap_t'],['../engine__types_8h.html#a65cc270c8c72ff4e39be71651733e135',1,'Image::wrap_t'],['../engine__types_8h.html#a625f509e19cb1a03c5392c98b7225a2c',1,'GLTFSampler::wrap_t']]]
+  ['worldnormal_14',['WorldNormal',['../lightmap_8frag.html#a06a5a0549debd5eb89121b929d8d1a35',1,'WorldNormal:&#160;lightmap.frag'],['../lightmap_8vert.html#a859f231db9ca6867a17b40d47b977b56',1,'WorldNormal:&#160;lightmap.vert']]],
+  ['worldpos_15',['WorldPos',['../lightmap_8frag.html#ae18169c1f4b5370bb68b96d77eb5945d',1,'WorldPos:&#160;lightmap.frag'],['../lightmap_8vert.html#a40a54042e7011c70f327a189b55c2453',1,'WorldPos:&#160;lightmap.vert']]],
+  ['wrap_16',['wrap',['../group__ui__group.html#a4ed0665a12f7edc3d630660fabf7a590',1,'UIContainer']]],
+  ['wrap_5fr_17',['wrap_r',['../engine__types_8h.html#adeae52d30e3e4ac6d1ea4d6684ab69a7',1,'GLTexture']]],
+  ['wrap_5fs_18',['wrap_s',['../engine__types_8h.html#ada7c57dea47e49b41a9e1769d29ded4d',1,'GLTexture::wrap_s'],['../engine__types_8h.html#a8a36286826186546fa17c5c75acd062a',1,'Image::wrap_s'],['../engine__types_8h.html#a1f4fa5ebcd5005e9b79c162f1b7a46e4',1,'GLTFSampler::wrap_s']]],
+  ['wrap_5ft_19',['wrap_t',['../engine__types_8h.html#a3bf436758cca0de09810b631239de0e1',1,'GLTexture::wrap_t'],['../engine__types_8h.html#a65cc270c8c72ff4e39be71651733e135',1,'Image::wrap_t'],['../engine__types_8h.html#a625f509e19cb1a03c5392c98b7225a2c',1,'GLTFSampler::wrap_t']]]
 ];

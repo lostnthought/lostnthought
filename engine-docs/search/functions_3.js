@@ -19,5 +19,6 @@ var searchData=
   ['determine_5flight_5fvisibility_5fper_5fmesh_16',['determine_light_visibility_per_mesh',['../render_8c.html#a6a9c9873306f1c75beed246fa6a2e18a',1,'render.c']]],
   ['determine_5fmesh_5fvisibility_17',['determine_mesh_visibility',['../render_8c.html#a92641ff004236b597d394ab4d1115fa3',1,'render.c']]],
   ['determine_5ftext_5fbox_5fdimensions_18',['determine_text_box_dimensions',['../fonts_8c.html#aada1f2f4d89d5a5db992fd8da328008c',1,'determine_text_box_dimensions(TextBox *tb, float *width, float *height):&#160;fonts.c'],['../fonts_8h.html#aada1f2f4d89d5a5db992fd8da328008c',1,'determine_text_box_dimensions(TextBox *tb, float *width, float *height):&#160;fonts.c']]],
-  ['draw_5farrays_5felements_19',['draw_arrays_elements',['../render_8c.html#aecf024a7fe419c5eb482d175abe61224',1,'render.c']]]
+  ['distribution_5fggx_19',['distribution_GGX',['../dynamic_8frag.html#a188c170d14e42dd51cef9d30793dbe2e',1,'dynamic.frag']]],
+  ['draw_5farrays_5felements_20',['draw_arrays_elements',['../render_8c.html#aecf024a7fe419c5eb482d175abe61224',1,'render.c']]]
 ];

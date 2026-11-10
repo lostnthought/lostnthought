@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,107 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('bloom__upscale
 <div class="contents">
 
 <p><a href="bloom__upscale_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a54baa6c59f107ffa02d72d3bb6747231" id="r_a54baa6c59f107ffa02d72d3bb6747231"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a54baa6c59f107ffa02d72d3bb6747231">srcTexture</a></td></tr>
+<tr class="memitem:ac32f016af01e3702baa463e269e18ca6" id="r_ac32f016af01e3702baa463e269e18ca6"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ac32f016af01e3702baa463e269e18ca6">uFilterRadius</a></td></tr>
+<tr class="memitem:a39fca2c8fe34ab0c307cdd0f7e7f53d6" id="r_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></td></tr>
+<tr class="memitem:a6d8dd0540ed9af35f34cd31b838cacce" id="r_a6d8dd0540ed9af35f34cd31b838cacce"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bloom__upscale_8frag_source.html#l00009">9</a> of file <a class="el" href="bloom__upscale_8frag_source.html">bloom_upscale.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="bloom__downscale_8frag_source.html#l00003">srcTexture</a>, <a class="el" href="bloom__upscale_8frag_source.html#l00004">uFilterRadius</a>, <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a54baa6c59f107ffa02d72d3bb6747231" name="a54baa6c59f107ffa02d72d3bb6747231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54baa6c59f107ffa02d72d3bb6747231">&#9670;&#160;</a></span>srcTexture</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D srcTexture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bloom__upscale_8frag_source.html#l00003">3</a> of file <a class="el" href="bloom__upscale_8frag_source.html">bloom_upscale.frag</a>.</p>
+
+</div>
+</div>
+<a id="ac32f016af01e3702baa463e269e18ca6" name="ac32f016af01e3702baa463e269e18ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32f016af01e3702baa463e269e18ca6">&#9670;&#160;</a></span>uFilterRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uFilterRadius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bloom__upscale_8frag_source.html#l00004">4</a> of file <a class="el" href="bloom__upscale_8frag_source.html">bloom_upscale.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="bloom__upscale_8frag_source.html#l00009">main()</a>.</p>
+
+</div>
+</div>
+<a id="a39fca2c8fe34ab0c307cdd0f7e7f53d6" name="a39fca2c8fe34ab0c307cdd0f7e7f53d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bloom__upscale_8frag_source.html#l00006">6</a> of file <a class="el" href="bloom__upscale_8frag_source.html">bloom_upscale.frag</a>.</p>
+
+</div>
+</div>
+<a id="a6d8dd0540ed9af35f34cd31b838cacce" name="a6d8dd0540ed9af35f34cd31b838cacce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8dd0540ed9af35f34cd31b838cacce">&#9670;&#160;</a></span>fragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec4">vec4</a> fragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bloom__upscale_8frag_source.html#l00007">7</a> of file <a class="el" href="bloom__upscale_8frag_source.html">bloom_upscale.frag</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

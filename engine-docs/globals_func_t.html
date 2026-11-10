@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,13 +134,18 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_t
 
 
 <h3 class="doxsection"><a id="index_t" name="index_t"></a>- t -</h3><ul>
-<li>test_sphere_aabb()&#160;:&#160;<a class="el" href="utilities_8c.html#a1d63a2bbedff6cc9cc7dfbb6bdffae56">utilities.c</a>, <a class="el" href="utilities_8h.html#a1d63a2bbedff6cc9cc7dfbb6bdffae56">utilities.h</a></li>
+<li>test_sphere_aabb()&#160;:&#160;<a class="el" href="cull__clusters_8comp.html#a373bd78f2cd817614ba1b1d2ac5f27ea">cull_clusters.comp</a>, <a class="el" href="cull__point__light__shadows_8comp.html#a373bd78f2cd817614ba1b1d2ac5f27ea">cull_point_light_shadows.comp</a>, <a class="el" href="utilities_8c.html#a1d63a2bbedff6cc9cc7dfbb6bdffae56">utilities.c</a>, <a class="el" href="utilities_8h.html#a1d63a2bbedff6cc9cc7dfbb6bdffae56">utilities.h</a></li>
 <li>toggle_performance_overlay()&#160;:&#160;<a class="el" href="group__editor__group.html#gae0196eb41530938b8ce76540c9d52ddf">editor.c</a>, <a class="el" href="group__editor__group.html#gae0196eb41530938b8ce76540c9d52ddf">editor.h</a></li>
-<li>transform_aabb_by_model_matrix()&#160;:&#160;<a class="el" href="utilities_8c.html#a43c9ecb8485b094fd2cd211ad2176205">utilities.c</a>, <a class="el" href="utilities_8h.html#a43c9ecb8485b094fd2cd211ad2176205">utilities.h</a></li>
+<li>trace_path()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#a316d22bc21644c08be860674936f41e2">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a5eaba68b32001b88ac9ce53c8a962b0e">probe_bake.comp</a></li>
+<li>transform_aabb_by_model_matrix()&#160;:&#160;<a class="el" href="cull__draw__calls_8comp.html#aaa6cf24db5d10b13924e4269274c486c">cull_draw_calls.comp</a>, <a class="el" href="utilities_8c.html#a43c9ecb8485b094fd2cd211ad2176205">utilities.c</a>, <a class="el" href="utilities_8h.html#a43c9ecb8485b094fd2cd211ad2176205">utilities.h</a></li>
 <li>transform_aabb_by_model_matrix_rotation()&#160;:&#160;<a class="el" href="utilities_8c.html#a03ac7eff5bf1a7e6b47941fd38ab0ab0">utilities.c</a>, <a class="el" href="utilities_8h.html#a03ac7eff5bf1a7e6b47941fd38ab0ab0">utilities.h</a></li>
 <li>transform_aabb_by_position()&#160;:&#160;<a class="el" href="utilities_8c.html#a742f2e3291a3d75b10a0aaa44667aea9">utilities.c</a>, <a class="el" href="utilities_8h.html#a742f2e3291a3d75b10a0aaa44667aea9">utilities.h</a></li>
 <li>translate_aabb()&#160;:&#160;<a class="el" href="utilities_8h.html#a6396fcbb98455b5731b5a20a3115f0e3">utilities.h</a></li>
 <li>traverse_collision_bvh()&#160;:&#160;<a class="el" href="acceleration_8c.html#aee1ae2d343af7f959bda05f54c48b426">acceleration.c</a>, <a class="el" href="acceleration_8h.html#aee1ae2d343af7f959bda05f54c48b426">acceleration.h</a></li>
+<li>traverse_light_bvh()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#a3be07cbe9ef23a4c86e59311f9424274">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a3be07cbe9ef23a4c86e59311f9424274">probe_bake.comp</a></li>
+<li>traverse_light_bvh_direct_emissives()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#acab348eae896cf8b40ee2b70dda8762d">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#acab348eae896cf8b40ee2b70dda8762d">probe_bake.comp</a></li>
+<li>traverse_mesh_bvh()&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a91aed0669798c705c5d7e654c5c7ba20">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#a91aed0669798c705c5d7e654c5c7ba20">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a91aed0669798c705c5d7e654c5c7ba20">probe_bake.comp</a></li>
+<li>traverse_scene_bvh()&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a4d5ddb5990a1449aa382414468e3c1ae">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#a4d5ddb5990a1449aa382414468e3c1ae">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a4d5ddb5990a1449aa382414468e3c1ae">probe_bake.comp</a></li>
 <li>triangle_area()&#160;:&#160;<a class="el" href="utilities_8c.html#a603d3c58e2c94e1a85c3a608d28aafa8">utilities.c</a>, <a class="el" href="utilities_8h.html#a603d3c58e2c94e1a85c3a608d28aafa8">utilities.h</a></li>
 <li>triangle_centroid()&#160;:&#160;<a class="el" href="utilities_8h.html#ac9fa29c20b375fb09145206a8b9363ed">utilities.h</a></li>
 <li>triangles_are_contiguous()&#160;:&#160;<a class="el" href="utilities_8c.html#a9f259d4098c72269a37f634c4728a007">utilities.c</a>, <a class="el" href="utilities_8h.html#a9f259d4098c72269a37f634c4728a007">utilities.h</a></li>

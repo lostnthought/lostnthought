@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -178,7 +187,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ui__callbacks_8c_source.html#l00022">22</a> of file <a class="el" href="ui__callbacks_8c_source.html">ui_callbacks.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ui__callbacks_8c_source.html#l00012">ACTION_CALLBACK_COUNT</a>, <a class="el" href="ui__callbacks_8c_source.html#l00010">ACTION_CALLBACKS</a>, <a class="el" href="ui_8h_source.html#l00346">UIValue::behavior</a>, <a class="el" href="ui_8h_source.html#l00372">UIValue::data</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="ui_8h_source.html#l00392">UICallback::id</a>, <a class="el" href="group__ui__group.html#a7531a43599fcf7e44ac6b8e922b13510">UIValue::inc_val</a>, <a class="el" href="ui__callbacks_8c_source.html#l00022">init_action_callbacks()</a>, <a class="el" href="engine__types_8h_source.html#l00716">EditorSettings::LUT</a>, <a class="el" href="ui_8h_source.html#l00385">UICallback::one_shot</a>, <a class="el" href="main_8c_source.html#l00282">player</a>, <a class="el" href="engine__types_8h_source.html#l03048">Player::pos</a>, <a class="el" href="ui_8h_source.html#l00345">UIValue::type</a>, <a class="el" href="ui_8h_source.html#l00316">UIVAL_BOOL</a>, <a class="el" href="ui_8h_source.html#l00318">UIVAL_FLOAT</a>, <a class="el" href="ui_8h_source.html#l00315">UIVAL_NONE</a>, <a class="el" href="ui_8h_source.html#l00331">UIVALBEHAVIOR_NONE</a>, <a class="el" href="ui_8h_source.html#l00386">UICallback::val</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="ui__callbacks_8c_source.html#l00012">ACTION_CALLBACK_COUNT</a>, <a class="el" href="ui__callbacks_8c_source.html#l00010">ACTION_CALLBACKS</a>, <a class="el" href="ui_8h_source.html#l00346">UIValue::behavior</a>, <a class="el" href="ui_8h_source.html#l00372">UIValue::data</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="ui_8h_source.html#l00392">UICallback::id</a>, <a class="el" href="group__ui__group.html#a7531a43599fcf7e44ac6b8e922b13510">UIValue::inc_val</a>, <a class="el" href="ui__callbacks_8c_source.html#l00022">init_action_callbacks()</a>, <a class="el" href="engine__types_8h_source.html#l00723">EditorSettings::LUT</a>, <a class="el" href="ui_8h_source.html#l00385">UICallback::one_shot</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="ui_8h_source.html#l00345">UIValue::type</a>, <a class="el" href="ui_8h_source.html#l00316">UIVAL_BOOL</a>, <a class="el" href="ui_8h_source.html#l00318">UIVAL_FLOAT</a>, <a class="el" href="ui_8h_source.html#l00315">UIVAL_NONE</a>, <a class="el" href="ui_8h_source.html#l00331">UIVALBEHAVIOR_NONE</a>, <a class="el" href="ui_8h_source.html#l00386">UICallback::val</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01988">init()</a>, and <a class="el" href="ui__callbacks_8c_source.html#l00022">init_action_callbacks()</a>.</p>
 
@@ -201,7 +210,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ui__callbacks_8c_source.html#l00047">47</a> of file <a class="el" href="ui__callbacks_8c_source.html">ui_callbacks.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ui_8h_source.html#l00372">UIValue::data</a>, <a class="el" href="engine__types_8h_source.html#l00709">EditorSettings::DOF</a>, <a class="el" href="main_8c_source.html#l00325">EDITOR_SETTINGS</a>, <a class="el" href="ui__callbacks_8c_source.html#l00013">HOVER_CALLBACK_COUNT</a>, <a class="el" href="ui__callbacks_8c_source.html#l00011">HOVER_CALLBACKS</a>, <a class="el" href="ui_8h_source.html#l00392">UICallback::id</a>, <a class="el" href="ui__callbacks_8c_source.html#l00047">init_hover_callbacks()</a>, <a class="el" href="ui_8h_source.html#l00385">UICallback::one_shot</a>, <a class="el" href="ui_8h_source.html#l00345">UIValue::type</a>, <a class="el" href="ui_8h_source.html#l00316">UIVAL_BOOL</a>, <a class="el" href="ui_8h_source.html#l00315">UIVAL_NONE</a>, and <a class="el" href="ui_8h_source.html#l00386">UICallback::val</a>.</p>
+<p class="reference">References <a class="el" href="ui_8h_source.html#l00372">UIValue::data</a>, <a class="el" href="engine__types_8h_source.html#l00716">EditorSettings::DOF</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="ui__callbacks_8c_source.html#l00013">HOVER_CALLBACK_COUNT</a>, <a class="el" href="ui__callbacks_8c_source.html#l00011">HOVER_CALLBACKS</a>, <a class="el" href="ui_8h_source.html#l00392">UICallback::id</a>, <a class="el" href="ui__callbacks_8c_source.html#l00047">init_hover_callbacks()</a>, <a class="el" href="ui_8h_source.html#l00385">UICallback::one_shot</a>, <a class="el" href="ui_8h_source.html#l00345">UIValue::type</a>, <a class="el" href="ui_8h_source.html#l00316">UIVAL_BOOL</a>, <a class="el" href="ui_8h_source.html#l00315">UIVAL_NONE</a>, and <a class="el" href="ui_8h_source.html#l00386">UICallback::val</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01988">init()</a>, and <a class="el" href="ui__callbacks_8c_source.html#l00047">init_hover_callbacks()</a>.</p>
 

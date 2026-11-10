@@ -116,63 +116,75 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('bokeh_8frag_so
   <div class="headertitle"><div class="title">bokeh.frag</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="bokeh_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>#version 430 core</div>
+<a href="bokeh_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#version 430 core</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>in vec2 vUV;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>out vec4 fragColor;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="bokeh_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">    4</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="bokeh_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">    5</a></span>out <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a>;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>const vec2 hex_taps[19] = vec2[](</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    vec2( 0.00,  0.00),</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    vec2( 0.50,  0.86), vec2( 1.00,  0.00), vec2( 0.50, -0.86), </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    vec2(-0.50, -0.86), vec2(-1.00,  0.00), vec2(-0.50,  0.86),</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    vec2( 1.00,  1.73), vec2( 2.00,  0.00), vec2( 1.00, -1.73), </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    vec2(-1.00, -1.73), vec2(-2.00,  0.00), vec2(-1.00,  1.73),</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    vec2( 1.50,  0.86), vec2( 1.50, -0.86), vec2( 0.00, -1.73), </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    vec2(-1.50, -0.86), vec2(-1.50,  0.86), vec2( 0.00,  1.73)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="bokeh_8frag.html#ae6f5477f760c9a7631b4f3aa14eb152a">    7</a></span><span class="keyword">const</span> <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="bokeh_8frag.html#ae6f5477f760c9a7631b4f3aa14eb152a">hex_taps</a>[19] = <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>[](</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.00,  0.00),</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.50,  0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.50, -0.86), </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-0.50, -0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-0.50,  0.86),</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.00,  1.73), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 2.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.00, -1.73), </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.00, -1.73), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-2.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.00,  1.73),</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.50,  0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.50, -0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.00, -1.73), </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.50, -0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.50,  0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.00,  1.73)</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>uniform sampler2D uCOC;          </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>uniform vec2 uTexelSize;         </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">   17</a></span>uniform sampler2D <a class="code hl_variable" href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a>;          </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="bokeh_8frag.html#a368375d738db1cdfacb851f85827feea">   18</a></span>uniform <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="bokeh_8frag.html#a368375d738db1cdfacb851f85827feea">uTexelSize</a>;         </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>void main() {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    vec2 uv = vUV;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    vec4 center = texture(uCOC, uv);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    float centerCoC = center.a;</div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="bokeh_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>() {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a> = <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> center = texture(<a class="code hl_variable" href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a>, <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">float</span> centerCoC = center.a;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    const float max_blur_pixels = 20.0; </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    float radius = abs(centerCoC) * max_blur_pixels;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> max_blur_pixels = 20.0; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">float</span> radius = abs(centerCoC) * max_blur_pixels;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    vec3 total_color = vec3(0.0);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    float total_weight = 0.0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> total_color = <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a>(0.0);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">float</span> total_weight = 0.0;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    for (int i = 0; i &lt; 19; i++) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 19; i++) {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        vec2 tap_offset = hex_taps[i] * 0.5 * radius * uTexelSize;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        vec2 sampleUV = uv + tap_offset;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> tap_offset = <a class="code hl_variable" href="bokeh_8frag.html#ae6f5477f760c9a7631b4f3aa14eb152a">hex_taps</a>[i] * 0.5 * radius * <a class="code hl_variable" href="bokeh_8frag.html#a368375d738db1cdfacb851f85827feea">uTexelSize</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> sampleUV = <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a> + tap_offset;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        vec4 tap = texture(uCOC, sampleUV);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        float tapCoC = tap.a;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        float sample_dist = length(hex_taps[i] * 0.5 * radius);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> tap = texture(<a class="code hl_variable" href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a>, sampleUV);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">float</span> tapCoC = tap.a;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">float</span> sample_dist = length(<a class="code hl_variable" href="bokeh_8frag.html#ae6f5477f760c9a7631b4f3aa14eb152a">hex_taps</a>[i] * 0.5 * radius);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        float weight = 1.0;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        if (tapCoC &gt; centerCoC) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            float tapRadius = abs(tapCoC) * max_blur_pixels;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">float</span> weight = 1.0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">if</span> (tapCoC &gt; centerCoC) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordtype">float</span> tapRadius = abs(tapCoC) * max_blur_pixels;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            weight = clamp(tapRadius - sample_dist + 1.0, 0.0, 1.0);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        float r = texture(uCOC, uv + tap_offset).r;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        float g = texture(uCOC, uv + tap_offset * 2.0).g;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        float b = texture(uCOC, uv + tap_offset * 1.5).b;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">float</span> r = texture(<a class="code hl_variable" href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a>, <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a> + tap_offset).r;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">float</span> g = texture(<a class="code hl_variable" href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a>, <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a> + tap_offset * 2.0).g;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">float</span> b = texture(<a class="code hl_variable" href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a>, <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a> + tap_offset * 1.5).b;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        vec3 tap_color = vec3(r, g, b);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> tap_color = <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a>(r, g, b);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        total_color += tap_color * weight;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        total_weight += weight;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    fragColor = vec4(total_color / max(total_weight, 0.0001), 1.0);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a> = <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>(total_color / max(total_weight, 0.0001), 1.0);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="abloom_8frag_html_a6d8dd0540ed9af35f34cd31b838cacce"><div class="ttname"><a href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></div><div class="ttdeci">out vec4 fragColor</div><div class="ttdef"><b>Definition</b> <a href="bloom_8frag_source.html#l00006">bloom.frag:6</a></div></div>
+<div class="ttc" id="abokeh_8frag_html_a368375d738db1cdfacb851f85827feea"><div class="ttname"><a href="bokeh_8frag.html#a368375d738db1cdfacb851f85827feea">uTexelSize</a></div><div class="ttdeci">uniform vec2 uTexelSize</div><div class="ttdef"><b>Definition</b> <a href="#l00018">bokeh.frag:18</a></div></div>
+<div class="ttc" id="abokeh_8frag_html_a6f6fa00d8e99340327be0e1f506104bc"><div class="ttname"><a href="bokeh_8frag.html#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a></div><div class="ttdeci">uniform sampler2D uCOC</div><div class="ttdef"><b>Definition</b> <a href="#l00017">bokeh.frag:17</a></div></div>
+<div class="ttc" id="abokeh_8frag_html_ae6f5477f760c9a7631b4f3aa14eb152a"><div class="ttname"><a href="bokeh_8frag.html#ae6f5477f760c9a7631b4f3aa14eb152a">hex_taps</a></div><div class="ttdeci">const vec2 hex_taps[19]</div><div class="ttdef"><b>Definition</b> <a href="#l00007">bokeh.frag:7</a></div></div>
+<div class="ttc" id="afullscreen_8frag_html_a5142f4b3324e5177e8a4701b40967765"><div class="ttname"><a href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a></div><div class="ttdeci">in vec2 uv</div><div class="ttdef"><b>Definition</b> <a href="fullscreen_8frag_source.html#l00004">fullscreen.frag:4</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="lightmap_8frag_source.html#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec3"><div class="ttname"><a href="types_8h.html#structvec3">vec3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec4"><div class="ttname"><a href="types_8h.html#structvec4">vec4</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

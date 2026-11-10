@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,415 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('lightmap_8vert
 <div class="contents">
 
 <p><a href="lightmap_8vert_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:Mesh_5Fstruct_5Fmesh" id="r_Mesh_5Fstruct_5Fmesh"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="#struct_mesh">Mesh</a></td></tr>
+<tr class="memdesc:struct_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> with geometry data that is either initialized as static or dynamic and split into <a class="el" href="engine__types_8h.html#struct_sub_mesh" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>es.  <a href="#struct_mesh">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3a88ac681ca472981d8ef1bb973ba524" id="r_a3a88ac681ca472981d8ef1bb973ba524"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3a88ac681ca472981d8ef1bb973ba524">layout</a> (location=0) in <a class="el" href="types_8h.html#structvec3">vec3</a> aPos</td></tr>
+<tr class="memitem:aab9494f4d9d542214fcc4c8c6007990f" id="r_aab9494f4d9d542214fcc4c8c6007990f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aab9494f4d9d542214fcc4c8c6007990f">layout</a> (std430, binding=6) buffer <a class="el" href="engine__types_8h.html#struct_mesh_data">MeshData</a></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1a69428993644794cba5ef9784a6682f" id="r_a1a69428993644794cba5ef9784a6682f"><td class="memItemLeft">uniform int&#160;</td><td class="memItemRight"><a class="el" href="#a1a69428993644794cba5ef9784a6682f">uMeshNode</a></td></tr>
+<tr class="memitem:a40a54042e7011c70f327a189b55c2453" id="r_a40a54042e7011c70f327a189b55c2453"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a40a54042e7011c70f327a189b55c2453">WorldPos</a></td></tr>
+<tr class="memitem:a859f231db9ca6867a17b40d47b977b56" id="r_a859f231db9ca6867a17b40d47b977b56"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a859f231db9ca6867a17b40d47b977b56">WorldNormal</a></td></tr>
+<tr class="memitem:ace76a4317d4c3bca0c463eeb635e48f3" id="r_ace76a4317d4c3bca0c463eeb635e48f3"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ace76a4317d4c3bca0c463eeb635e48f3">vUV</a></td></tr>
+<tr class="memitem:adca16911a46da09a137568fbbced5ccc" id="r_adca16911a46da09a137568fbbced5ccc"><td class="memItemLeft">out flat int&#160;</td><td class="memItemRight"><a class="el" href="#adca16911a46da09a137568fbbced5ccc">TriID</a></td></tr>
+<tr class="memitem:a47bd883121b73cdf13663f5c4ca64d4a" id="r_a47bd883121b73cdf13663f5c4ca64d4a"><td class="memItemLeft">out flat int&#160;</td><td class="memItemRight"><a class="el" href="#a47bd883121b73cdf13663f5c4ca64d4a">MeshNode</a></td></tr>
+<tr class="memitem:ab8f9b588a98c0112be572496dc8df892" id="r_ab8f9b588a98c0112be572496dc8df892"><td class="memItemLeft">out flat int&#160;</td><td class="memItemRight"><a class="el" href="#ab8f9b588a98c0112be572496dc8df892">MaterialID</a></td></tr>
+</table>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Data Structure Documentation</h2>
+<a name="struct_mesh" id="struct_mesh"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_mesh">&#9670;&#160;</a></span>Mesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct Mesh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>A <a class="el" href="#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> with geometry data that is either initialized as static or dynamic and split into <a class="el" href="engine__types_8h.html#struct_sub_mesh" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>es. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> </dd>
+<dd>
+<a class="el" href="engine__types_8h.html#struct_globals" title="Global settings and structures for each system in the engine.">Globals</a> </dd>
+<dd>
+<a class="el" href="init_8c.html#adb1dbedb42e4b75e9ab92182d66ade7f" title="Initializes a static or dynamic Mesh.">init_mesh()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l02484">2484</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a95f7a20f3621ad8da6aae006a7cec0f2" name="a95f7a20f3621ad8da6aae006a7cec0f2"></a>char</td>
+<td class="fieldname">
+name[256]</td>
+<td class="fielddoc">
+The <a class="el" href="#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> name assigned on load. </td></tr>
+<tr><td class="fieldtype">
+<a id="a30c9835c2b3346c1c514c72aa074c4c6" name="a30c9835c2b3346c1c514c72aa074c4c6"></a>size_t</td>
+<td class="fieldname">
+id</td>
+<td class="fielddoc">
+The ID into <a class="el" href="engine__types_8h.html#a5b9df227c573055f2ee43ad17e7fcec1" title="Meshes.">Globals.meshes</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="a33107abef56ba33a9c5ed41120ccba3c" name="a33107abef56ba33a9c5ed41120ccba3c"></a>size_t</td>
+<td class="fieldname">
+asset_id</td>
+<td class="fielddoc">
+The <a class="el" href="engine__types_8h.html#struct_asset" title="An Asset after it is loaded in from file into Globals.assets.">Asset</a> ID into <a class="el" href="engine__types_8h.html#abae58930c10e53514261af91ca6f173d" title="Assets.">Globals.assets</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="aa3e444fee0f872df184f7ce3c3f40f7e" name="aa3e444fee0f872df184f7ce3c3f40f7e"></a>bool</td>
+<td class="fieldname">
+bvh_prim</td>
+<td class="fielddoc">
+This <a class="el" href="#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> has a BVH computed. </td></tr>
+<tr><td class="fieldtype">
+<a id="a457a2f94fda2033667fe1e177ceb7d44" name="a457a2f94fda2033667fe1e177ceb7d44"></a>bool</td>
+<td class="fieldname">
+static_mesh</td>
+<td class="fielddoc">
+This <a class="el" href="#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> is static and must create a BVH or if not it must perform incremental_hull. </td></tr>
+<tr><td class="fieldtype">
+<a id="a54a8c2a2e354651e84a8c83ea96e48a4" name="a54a8c2a2e354651e84a8c83ea96e48a4"></a><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td>
+<td class="fieldname">
+aabb</td>
+<td class="fielddoc">
+The <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> of the mesh. </td></tr>
+<tr><td class="fieldtype">
+<a id="abb0a8a8728cda7e1a6dab43f1685446a" name="abb0a8a8728cda7e1a6dab43f1685446a"></a>size_t</td>
+<td class="fieldname">
+offset</td>
+<td class="fielddoc">
+The offset into <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="a61e587c797de86a90da1f7afc00b454d" name="a61e587c797de86a90da1f7afc00b454d"></a>size_t</td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+The count pushed into <a class="el" href="main_8c.html#a3ed2088bbbefdcf8c77c04c8bd522f72">MAIN_VBO</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="a61f7948a8df894e0984950149bfa8209" name="a61f7948a8df894e0984950149bfa8209"></a><a class="el" href="types_8h.html#struct_vector">Vector</a></td>
+<td class="fieldname">
+submeshes</td>
+<td class="fielddoc">
+The <a class="el" href="engine__types_8h.html#struct_sub_mesh" title="Sections of Meshes that are divided based on Material for batching and DrawCommand ordering purposes.">SubMesh</a>es split via <a class="el" href="group__shader__structs__group.html#struct_material" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a>s. </td></tr>
+<tr><td class="fieldtype">
+<a id="a0455deccb0ffc7d1fb6fcb10ad8e8395" name="a0455deccb0ffc7d1fb6fcb10ad8e8395"></a><a class="el" href="types_8h.html#struct_vector">Vector</a></td>
+<td class="fieldname">
+hulls</td>
+<td class="fielddoc">
+The <a class="el" href="group__physics__group.html#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a>s generated if this <a class="el" href="#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> is dynamic. </td></tr>
+<tr><td class="fieldtype">
+<a id="aeecd06af64f0f9e8bde9a323303290ae" name="aeecd06af64f0f9e8bde9a323303290ae"></a><a class="el" href="types_8h.html#struct_vector">Vector</a></td>
+<td class="fieldname">
+vertices</td>
+<td class="fielddoc">
+The <a class="el" href="types_8h.html#struct_point">Point</a>s. </td></tr>
+<tr><td class="fieldtype">
+<a id="aed0c3f96e81f11095ecef1e744fd1232" name="aed0c3f96e81f11095ecef1e744fd1232"></a><a class="el" href="types_8h.html#struct_vector">Vector</a></td>
+<td class="fieldname">
+tris</td>
+<td class="fielddoc">
+The <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a>s. </td></tr>
+<tr><td class="fieldtype">
+<a id="a08b2a615f6244ea11bba1b3064ef0b7d" name="a08b2a615f6244ea11bba1b3064ef0b7d"></a><a class="el" href="engine__types_8h.html#struct_triangle_adjacency">TriangleAdjacency</a> *</td>
+<td class="fieldname">
+tri_adjacency</td>
+<td class="fielddoc">
+Adjacent triangles allocated per <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="a53c2ab5a4050e5241c1e77b6ace0bea2" name="a53c2ab5a4050e5241c1e77b6ace0bea2"></a>size_t *</td>
+<td class="fieldname">
+bvh_indices</td>
+<td class="fielddoc">
+Indices for the BVH, sorted as the BVH is generated. </td></tr>
+<tr><td class="fieldtype">
+<a id="ab4a0f6a8913a512af20dedd7192b8234" name="ab4a0f6a8913a512af20dedd7192b8234"></a><a class="el" href="types_8h.html#struct_vector">Vector</a></td>
+<td class="fieldname">
+nodes</td>
+<td class="fielddoc">
+<a class="el" href="probe__bake_8comp.html#struct_b_v_h_node" title="Nodes for the acceleration structures of BVHs.">BVHNode</a>s. </td></tr>
+<tr><td class="fieldtype">
+<a id="a645fda72a8620d78a03bcb18a5280765" name="a645fda72a8620d78a03bcb18a5280765"></a><a class="el" href="types_8h.html#struct_vector">Vector</a></td>
+<td class="fieldname">
+tri_aabbs</td>
+<td class="fielddoc">
+<a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a>s for each triangle inside of this <a class="el" href="#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="aa9efef15fc02253a2d653022573df9a3" name="aa9efef15fc02253a2d653022573df9a3"></a>uint</td>
+<td class="fieldname">
+mesh_node_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7fcfe398db8ba56ed51b4625b5caed6a" name="a7fcfe398db8ba56ed51b4625b5caed6a"></a>uint</td>
+<td class="fieldname">
+mesh_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5e6c67a22197b1cf98d819c6c467b0d5" name="a5e6c67a22197b1cf98d819c6c467b0d5"></a>uint</td>
+<td class="fieldname">
+node_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a2995a10a666ef840129b79863a463fc9" name="a2995a10a666ef840129b79863a463fc9"></a>uint</td>
+<td class="fieldname">
+node_offset</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1126c423f55bc32a14b7cd65471fbded" name="a1126c423f55bc32a14b7cd65471fbded"></a>uint</td>
+<td class="fieldname">
+vertex_offset</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a95f3044c774a3df73616e42c9b4f8a5e" name="a95f3044c774a3df73616e42c9b4f8a5e"></a>uint</td>
+<td class="fieldname">
+vertex_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3d17b5d91124939eb0c6169a1469a5fb" name="a3d17b5d91124939eb0c6169a1469a5fb"></a>uint</td>
+<td class="fieldname">
+tri_offset</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac062d020fbe7128308449dbd9ba05ec6" name="ac062d020fbe7128308449dbd9ba05ec6"></a>uint</td>
+<td class="fieldname">
+tri_count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab5fb69653d6f7cb0ff00179cf7e22b45" name="ab5fb69653d6f7cb0ff00179cf7e22b45"></a>uint</td>
+<td class="fieldname">
+bvh_index</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a84dfaa5676aab5d002f117648d2db555" name="a84dfaa5676aab5d002f117648d2db555"></a>uint</td>
+<td class="fieldname">
+is_static</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aafef1790c5209ff173eafcbfbbd198c1" name="aafef1790c5209ff173eafcbfbbd198c1"></a>uint</td>
+<td class="fieldname">
+pad0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a4300c3e9a5b36b51958f546008602a1b" name="a4300c3e9a5b36b51958f546008602a1b"></a>uint</td>
+<td class="fieldname">
+pad1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a0df0d3dc9892124f6ba14aa96f0e9000" name="a0df0d3dc9892124f6ba14aa96f0e9000"></a><a class="el" href="types_8h.html#structmat4">mat4</a></td>
+<td class="fieldname">
+global_matrix</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aaffaa10c5fb1bb4dbec281532868c69e" name="aaffaa10c5fb1bb4dbec281532868c69e"></a><a class="el" href="types_8h.html#structmat4">mat4</a></td>
+<td class="fieldname">
+inverse_global_matrix</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a3a88ac681ca472981d8ef1bb973ba524" name="a3a88ac681ca472981d8ef1bb973ba524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a88ac681ca472981d8ef1bb973ba524">&#9670;&#160;</a></span>layout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">location</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="aab9494f4d9d542214fcc4c8c6007990f" name="aab9494f4d9d542214fcc4c8c6007990f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9494f4d9d542214fcc4c8c6007990f">&#9670;&#160;</a></span>layout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">6</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00031">31</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00049">49</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="lightmap_8frag_source.html#l00015">MaterialID</a>, <a class="el" href="lightmap_8frag_source.html#l00016">TriID</a>, <a class="el" href="lightmap_8vert_source.html#l00038">uMeshNode</a>, <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>, <a class="el" href="lightmap_8frag_source.html#l00009">WorldNormal</a>, and <a class="el" href="lightmap_8frag_source.html#l00008">WorldPos</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a1a69428993644794cba5ef9784a6682f" name="a1a69428993644794cba5ef9784a6682f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a69428993644794cba5ef9784a6682f">&#9670;&#160;</a></span>uMeshNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform int uMeshNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00038">38</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="lightmap_8vert_source.html#l00049">main()</a>.</p>
+
+</div>
+</div>
+<a id="a40a54042e7011c70f327a189b55c2453" name="a40a54042e7011c70f327a189b55c2453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a54042e7011c70f327a189b55c2453">&#9670;&#160;</a></span>WorldPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> WorldPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00040">40</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+</div>
+</div>
+<a id="a859f231db9ca6867a17b40d47b977b56" name="a859f231db9ca6867a17b40d47b977b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a859f231db9ca6867a17b40d47b977b56">&#9670;&#160;</a></span>WorldNormal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> WorldNormal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00041">41</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+</div>
+</div>
+<a id="ace76a4317d4c3bca0c463eeb635e48f3" name="ace76a4317d4c3bca0c463eeb635e48f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace76a4317d4c3bca0c463eeb635e48f3">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00042">42</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+</div>
+</div>
+<a id="adca16911a46da09a137568fbbced5ccc" name="adca16911a46da09a137568fbbced5ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca16911a46da09a137568fbbced5ccc">&#9670;&#160;</a></span>TriID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out flat int TriID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00043">43</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+</div>
+</div>
+<a id="a47bd883121b73cdf13663f5c4ca64d4a" name="a47bd883121b73cdf13663f5c4ca64d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bd883121b73cdf13663f5c4ca64d4a">&#9670;&#160;</a></span>MeshNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out flat int MeshNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00045">45</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+</div>
+</div>
+<a id="ab8f9b588a98c0112be572496dc8df892" name="ab8f9b588a98c0112be572496dc8df892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f9b588a98c0112be572496dc8df892">&#9670;&#160;</a></span>MaterialID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out flat int MaterialID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lightmap_8vert_source.html#l00046">46</a> of file <a class="el" href="lightmap_8vert_source.html">lightmap.vert</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

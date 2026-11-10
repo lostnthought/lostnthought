@@ -117,26 +117,39 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('bloom__blur_8f
 </div><!--header-->
 <div class="contents">
 <a href="bloom__blur_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>#version 430 core</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#version 430 core</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>in vec2 vUV;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>out vec4 fragColor;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="bloom__blur_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">    4</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="bloom__blur_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">    5</a></span>out <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a>;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>uniform sampler2D uBloom;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>uniform vec2 uDirection; </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>uniform vec2 uTexel;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="bloom__blur_8frag.html#a1eba03d357199c0f1ce922195aa4e543">    7</a></span>uniform sampler2D <a class="code hl_variable" href="bloom__blur_8frag.html#a1eba03d357199c0f1ce922195aa4e543">uBloom</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="bloom__blur_8frag.html#a1ac189197df5bd034097744983651120">    8</a></span>uniform <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="bloom__blur_8frag.html#a1ac189197df5bd034097744983651120">uDirection</a>; </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="bloom__blur_8frag.html#aea8c8969b5cef535a6c7172a6ec2f1ae">    9</a></span>uniform <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="bloom__blur_8frag.html#aea8c8969b5cef535a6c7172a6ec2f1ae">uTexel</a>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>const float weights[5] = float[](0.227027f, 0.1945946f, 0.1216216f, 0.054054f, 0.016216f);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>void main() {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    vec3 result = vec3(0.0);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="bloom__blur_8frag.html#a77a6ea5797d7c0e635a14d8db75665f0">   11</a></span><span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="bloom__blur_8frag.html#a77a6ea5797d7c0e635a14d8db75665f0">weights</a>[5] = <span class="keywordtype">float</span>[](0.227027f, 0.1945946f, 0.1216216f, 0.054054f, 0.016216f);</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="bloom__blur_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">   12</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>() {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> result = <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a>(0.0);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    for (int i = -4; i &lt;= 4; ++i) {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        vec2 uv = vUV + uDirection * uTexel * float(i);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        result += texture(uBloom, uv).rgb * weights[abs(i)];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = -4; i &lt;= 4; ++i) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a> = <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a> + <a class="code hl_variable" href="bloom__blur_8frag.html#a1ac189197df5bd034097744983651120">uDirection</a> * <a class="code hl_variable" href="bloom__blur_8frag.html#aea8c8969b5cef535a6c7172a6ec2f1ae">uTexel</a> * float(i);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        result += texture(<a class="code hl_variable" href="bloom__blur_8frag.html#a1eba03d357199c0f1ce922195aa4e543">uBloom</a>, <a class="code hl_variable" href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a>).rgb * <a class="code hl_variable" href="bloom__blur_8frag.html#a77a6ea5797d7c0e635a14d8db75665f0">weights</a>[abs(i)];</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    fragColor = vec4(result, 1.0);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a> = <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>(result, 1.0);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="abloom_8frag_html_a6d8dd0540ed9af35f34cd31b838cacce"><div class="ttname"><a href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></div><div class="ttdeci">out vec4 fragColor</div><div class="ttdef"><b>Definition</b> <a href="bloom_8frag_source.html#l00006">bloom.frag:6</a></div></div>
+<div class="ttc" id="abloom__blur_8frag_html_a1ac189197df5bd034097744983651120"><div class="ttname"><a href="bloom__blur_8frag.html#a1ac189197df5bd034097744983651120">uDirection</a></div><div class="ttdeci">uniform vec2 uDirection</div><div class="ttdef"><b>Definition</b> <a href="#l00008">bloom_blur.frag:8</a></div></div>
+<div class="ttc" id="abloom__blur_8frag_html_a1eba03d357199c0f1ce922195aa4e543"><div class="ttname"><a href="bloom__blur_8frag.html#a1eba03d357199c0f1ce922195aa4e543">uBloom</a></div><div class="ttdeci">uniform sampler2D uBloom</div><div class="ttdef"><b>Definition</b> <a href="#l00007">bloom_blur.frag:7</a></div></div>
+<div class="ttc" id="abloom__blur_8frag_html_a77a6ea5797d7c0e635a14d8db75665f0"><div class="ttname"><a href="bloom__blur_8frag.html#a77a6ea5797d7c0e635a14d8db75665f0">weights</a></div><div class="ttdeci">const float weights[5]</div><div class="ttdef"><b>Definition</b> <a href="#l00011">bloom_blur.frag:11</a></div></div>
+<div class="ttc" id="abloom__blur_8frag_html_aea8c8969b5cef535a6c7172a6ec2f1ae"><div class="ttname"><a href="bloom__blur_8frag.html#aea8c8969b5cef535a6c7172a6ec2f1ae">uTexel</a></div><div class="ttdeci">uniform vec2 uTexel</div><div class="ttdef"><b>Definition</b> <a href="#l00009">bloom_blur.frag:9</a></div></div>
+<div class="ttc" id="afullscreen_8frag_html_a5142f4b3324e5177e8a4701b40967765"><div class="ttname"><a href="fullscreen_8frag.html#a5142f4b3324e5177e8a4701b40967765">uv</a></div><div class="ttdeci">in vec2 uv</div><div class="ttdef"><b>Definition</b> <a href="fullscreen_8frag_source.html#l00004">fullscreen.frag:4</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="lightmap_8frag_source.html#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec3"><div class="ttname"><a href="types_8h.html#structvec3">vec3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec4"><div class="ttname"><a href="types_8h.html#structvec4">vec4</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

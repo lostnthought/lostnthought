@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -121,19 +130,24 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_h.html
 
 <div class="contents">
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="globals.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="globals_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="globals_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="globals_z.html#index_z">Z</a></div>
+<div class="qindex"><a class="qindex" href="globals.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="globals_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="globals_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="globals_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="globals_z.html#index_z">Z</a></div>
 
 
 <h3 class="doxsection"><a id="index_h" name="index_h"></a>- h -</h3><ul>
 <li>HALTON_8&#160;:&#160;<a class="el" href="camera_8c.html#ab0ad4dff47d7c85a0a22582883d66ceb">camera.c</a></li>
+<li>Hammersley()&#160;:&#160;<a class="el" href="brdf_8frag.html#a912ce449d0fe81d2e79ff57a93f013d2">brdf.frag</a></li>
 <li>handle_held_events()&#160;:&#160;<a class="el" href="input_8c.html#a0a977411dc32bac0e6ebb0b359401e78">input.c</a>, <a class="el" href="input_8h.html#a0a977411dc32bac0e6ebb0b359401e78">input.h</a></li>
 <li>handle_ui_event()&#160;:&#160;<a class="el" href="group__ui__group.html#gae99fd0e529a7fe3bf49cb3954420d05b">ui.c</a>, <a class="el" href="group__ui__group.html#gae99fd0e529a7fe3bf49cb3954420d05b">ui.h</a></li>
 <li>handle_ui_selection_event()&#160;:&#160;<a class="el" href="input_8c.html#a63c5cfbdbe6897fbece507c75f4d90cb">input.c</a></li>
-<li>heap_pop()&#160;:&#160;<a class="el" href="audio_8c.html#a523f30dc0b1ef89244c290e97782f07d">audio.c</a></li>
-<li>heap_push()&#160;:&#160;<a class="el" href="audio_8c.html#a7c079b4e651f7b5f65e3305338adac9e">audio.c</a></li>
-<li>heap_swap()&#160;:&#160;<a class="el" href="audio_8c.html#afb615badfa6e3d167cdd3af384b6ef1a">audio.c</a></li>
+<li>hash()&#160;:&#160;<a class="el" href="dynamic_8frag.html#a19e48e7f882c74497ad7845b110d4cb8">dynamic.frag</a></li>
+<li>heap_pop()&#160;:&#160;<a class="el" href="group__audio__group.html#ga523f30dc0b1ef89244c290e97782f07d">audio.c</a></li>
+<li>heap_push()&#160;:&#160;<a class="el" href="group__audio__group.html#ga7c079b4e651f7b5f65e3305338adac9e">audio.c</a></li>
+<li>heap_swap()&#160;:&#160;<a class="el" href="group__audio__group.html#gafb615badfa6e3d167cdd3af384b6ef1a">audio.c</a></li>
+<li>height_scale&#160;:&#160;<a class="el" href="depth__pre__pass_8frag.html#abf33b7cfe32e3ae64202d6428f6052ee">depth_pre_pass.frag</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8frag.html#abf33b7cfe32e3ae64202d6428f6052ee">depth_pre_pass_no_gbuffer.frag</a>, <a class="el" href="dynamic_8frag.html#abf33b7cfe32e3ae64202d6428f6052ee">dynamic.frag</a></li>
+<li>hex_taps&#160;:&#160;<a class="el" href="bokeh_8frag.html#ae6f5477f760c9a7631b4f3aa14eb152a">bokeh.frag</a></li>
 <li>HISTORY_FBO&#160;:&#160;<a class="el" href="main_8c.html#a7e04bfb346e3275d98fc618a5492fe3b">main.c</a>, <a class="el" href="init_8h.html#a7e04bfb346e3275d98fc618a5492fe3b">init.h</a></li>
 <li>HISTORY_TEXTURE&#160;:&#160;<a class="el" href="main_8c.html#a3dbdc484df45689931f5fa722b31144c">main.c</a>, <a class="el" href="init_8h.html#a3dbdc484df45689931f5fa722b31144c">init.h</a></li>
+<li>hit&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#aa7650aa68a61dca88c0096d70fed609a">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#aa7650aa68a61dca88c0096d70fed609a">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#aa7650aa68a61dca88c0096d70fed609a">probe_bake.comp</a></li>
 <li>HIT_DYNAMIC&#160;:&#160;<a class="el" href="types_8h.html#ae44f100e04e667fcd1c9a7dedcae5386a148ee675db63ed4835b38962af497fc2">types.h</a></li>
 <li>HIT_NONE&#160;:&#160;<a class="el" href="types_8h.html#ae44f100e04e667fcd1c9a7dedcae5386a10836d1bdd28942779a9bc402c3153bd">types.h</a></li>
 <li>HIT_STATIC&#160;:&#160;<a class="el" href="types_8h.html#ae44f100e04e667fcd1c9a7dedcae5386a82dcfa02943e0dd091a6ff6e40b96575">types.h</a></li>
@@ -142,7 +156,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_h.html
 <li>HOVER_CALLBACKS&#160;:&#160;<a class="el" href="ui__callbacks_8c.html#a1618aed80514b76772ad2da2cf864103">ui_callbacks.c</a>, <a class="el" href="ui__callbacks_8h.html#a1618aed80514b76772ad2da2cf864103">ui_callbacks.h</a></li>
 <li>HRTF_LENGTH&#160;:&#160;<a class="el" href="main_8c.html#abf4bbac4ecce69e376dcb76f2ed9426c">main.c</a>, <a class="el" href="init_8h.html#abf4bbac4ecce69e376dcb76f2ed9426c">init.h</a></li>
 <li>HRTF_TD&#160;:&#160;<a class="el" href="main_8c.html#ac0ba57e734b0f4b50b779b0c92c118c6">main.c</a>, <a class="el" href="init_8h.html#ac0ba57e734b0f4b50b779b0c92c118c6">init.h</a></li>
-<li>hrtf_worker()&#160;:&#160;<a class="el" href="audio__ir_8c.html#aaca326df599f9db4a505794b1260a961">audio_ir.c</a></li>
+<li>hrtf_worker()&#160;:&#160;<a class="el" href="group__aprobe__group.html#gaaca326df599f9db4a505794b1260a961">audio_ir.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

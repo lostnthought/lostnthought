@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,10 +134,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_r
 
 
 <h3 class="doxsection"><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>RadicalInverse_VdC()&#160;:&#160;<a class="el" href="brdf_8frag.html#a520cf6a67180365d37ec465480339a47">brdf.frag</a></li>
+<li>rand()&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#ac065bd1fd6625630a0de19c6e1c8ce0a">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#ac065bd1fd6625630a0de19c6e1c8ce0a">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#ac065bd1fd6625630a0de19c6e1c8ce0a">probe_bake.comp</a></li>
+<li>random_pos_on_triangle()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#a5e9f65d5145dcb653a04365a4259ca1b">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a5e9f65d5145dcb653a04365a4259ca1b">probe_bake.comp</a></li>
 <li>ray_intersects_aabb()&#160;:&#160;<a class="el" href="acceleration_8c.html#a264e79089ffaf93cf2d29b5f68077714">acceleration.c</a>, <a class="el" href="acceleration_8h.html#a264e79089ffaf93cf2d29b5f68077714">acceleration.h</a></li>
 <li>ray_intersects_aabb_with_point()&#160;:&#160;<a class="el" href="acceleration_8c.html#ae6754056c0b5a5d1261149f188a9be8e">acceleration.c</a>, <a class="el" href="acceleration_8h.html#ae6754056c0b5a5d1261149f188a9be8e">acceleration.h</a></li>
 <li>ray_intersects_obb_with_point()&#160;:&#160;<a class="el" href="acceleration_8c.html#ac1fdb91beaaefc8aeb49df8c37962d57">acceleration.c</a>, <a class="el" href="acceleration_8h.html#ac1fdb91beaaefc8aeb49df8c37962d57">acceleration.h</a></li>
-<li>ray_intersects_triangle()&#160;:&#160;<a class="el" href="utilities_8c.html#afb3dedf4613bf4c305a26fcd602da5d3">utilities.c</a>, <a class="el" href="utilities_8h.html#afb3dedf4613bf4c305a26fcd602da5d3">utilities.h</a></li>
+<li>ray_intersects_triangle()&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a0525efa96d313b82ed55cac3ea607345">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#a2488e1dc3edfa08a8f00b973653784d8">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#a2488e1dc3edfa08a8f00b973653784d8">probe_bake.comp</a>, <a class="el" href="utilities_8c.html#afb3dedf4613bf4c305a26fcd602da5d3">utilities.c</a>, <a class="el" href="utilities_8h.html#afb3dedf4613bf4c305a26fcd602da5d3">utilities.h</a></li>
 <li>ray_traverse_mesh_bvh()&#160;:&#160;<a class="el" href="acceleration_8c.html#a7d92c57b410c08bfe725f9abb5c50460">acceleration.c</a></li>
 <li>ray_traverse_scene_bvh()&#160;:&#160;<a class="el" href="acceleration_8c.html#a2c111901695b00440d9a06068bdddb17">acceleration.c</a></li>
 <li>raycast_scene()&#160;:&#160;<a class="el" href="acceleration_8c.html#a14d2ae40fcc4811acb5bcca2e8e9fe92">acceleration.c</a>, <a class="el" href="acceleration_8h.html#a14d2ae40fcc4811acb5bcca2e8e9fe92">acceleration.h</a></li>
@@ -141,10 +153,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_r
 <li>reallocate_rprobe_array()&#160;:&#160;<a class="el" href="load_8c.html#ada4d0082c9af7859aa52e04d7cfdc1cc">load.c</a>, <a class="el" href="load_8h.html#ada4d0082c9af7859aa52e04d7cfdc1cc">load.h</a></li>
 <li>reassign_elements_to_container()&#160;:&#160;<a class="el" href="group__ui__group.html#gabd11e903cb4f008dfdd3a415f9be82a0">ui.c</a>, <a class="el" href="group__ui__group.html#gabd11e903cb4f008dfdd3a415f9be82a0">ui.h</a></li>
 <li>recalculate_audio_portal_paths()&#160;:&#160;<a class="el" href="group__audio__group.html#gaf793fc09f037febdd4a4783c155d3306">audio.c</a>, <a class="el" href="group__audio__group.html#gaf793fc09f037febdd4a4783c155d3306">audio.h</a></li>
-<li>reconstruct_path_aportal()&#160;:&#160;<a class="el" href="audio_8c.html#a8b36d58689df80c946bce67ba65eee57">audio.c</a></li>
+<li>reconstruct_normal()&#160;:&#160;<a class="el" href="ssao_8frag.html#a8cdb1c4e299969b253d5c56dc5f35e51">ssao.frag</a></li>
+<li>reconstruct_path_aportal()&#160;:&#160;<a class="el" href="group__audio__group.html#ga8b36d58689df80c946bce67ba65eee57">audio.c</a></li>
 <li>remap_joints_to_skin()&#160;:&#160;<a class="el" href="gltf_8c.html#a7f7e9bd130d26959974d74b12e101f9f">gltf.c</a></li>
 <li>remove_audio_portal()&#160;:&#160;<a class="el" href="group__audio__group.html#gaea560bb02a38895b4115cd47a3254c73">audio.c</a>, <a class="el" href="group__audio__group.html#gaea560bb02a38895b4115cd47a3254c73">audio.h</a></li>
-<li>remove_audio_pv()&#160;:&#160;<a class="el" href="audio_8c.html#a2dd0e72bce7e0f74f4e0bfce818fd173">audio.c</a></li>
+<li>remove_audio_pv()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga2dd0e72bce7e0f74f4e0bfce818fd173">audio.c</a></li>
 <li>remove_element_from_container()&#160;:&#160;<a class="el" href="group__ui__group.html#ga4eb6d20a8cc5abbd50d1bc0f153c2d91">ui.c</a>, <a class="el" href="group__ui__group.html#ga4eb6d20a8cc5abbd50d1bc0f153c2d91">ui.h</a></li>
 <li>remove_lighting_pv()&#160;:&#160;<a class="el" href="lightmap_8c.html#a3ede23e13dd3dd6ef57002c15685295d">lightmap.c</a></li>
 <li>remove_point_from_simplex()&#160;:&#160;<a class="el" href="group__physics__group.html#gad50725990b69d44c6b2391a1b7ce1476">GJK.c</a></li>
@@ -181,11 +194,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_r
 <li>reset_lighting_pvs()&#160;:&#160;<a class="el" href="lightmap_8c.html#afa28cec7d2db64a6913c31b56d54d7cf">lightmap.c</a>, <a class="el" href="lightmap_8h.html#afa28cec7d2db64a6913c31b56d54d7cf">lightmap.h</a></li>
 <li>reset_skeleton()&#160;:&#160;<a class="el" href="camera_8c.html#a395be4aaa382b4c6bff21645a5a3464b">camera.c</a>, <a class="el" href="camera_8h.html#a395be4aaa382b4c6bff21645a5a3464b">camera.h</a></li>
 <li>resolve_collisions()&#160;:&#160;<a class="el" href="camera_8c.html#a8596f4228798d990fb049cc8a548b5b9">camera.c</a>, <a class="el" href="camera_8h.html#a0fecd17ef295112f65457d2108936161">camera.h</a></li>
+<li>resolve_transparents()&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#ad8671dcd00468705c0f794f94f11f635">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#ad8671dcd00468705c0f794f94f11f635">probe_bake.comp</a></li>
 <li>retrieve_asset_by_name()&#160;:&#160;<a class="el" href="init_8c.html#a44e67773b1e42d2b55b281962c547f0f">init.c</a></li>
 <li>retrieve_gl_query()&#160;:&#160;<a class="el" href="main_8c.html#ab5ed7df28cd5105a55539d26ed7ded54">main.c</a></li>
 <li>retrieve_mesh_by_name()&#160;:&#160;<a class="el" href="init_8c.html#a7364e3c514b83de348d00beb4afde3c5">init.c</a>, <a class="el" href="init_8h.html#a7364e3c514b83de348d00beb4afde3c5">init.h</a></li>
 <li>rot()&#160;:&#160;<a class="el" href="camera_8c.html#a878b96b8fa3ef736f5404b2e3f0674b9">camera.c</a></li>
-<li>rotate_sh()&#160;:&#160;<a class="el" href="group__aprobe__group.html#gad7b112adefb25363ce2cac8d90f519cc">audio_ir.c</a>, <a class="el" href="group__aprobe__group.html#gad7b112adefb25363ce2cac8d90f519cc">audio_ir.h</a></li>
+<li>rotate_sh()&#160;:&#160;<a class="el" href="group__aprobe__group.html#gad7b112adefb25363ce2cac8d90f519cc">audio_ir.c</a></li>
 <li>rotation_matrix_r()&#160;:&#160;<a class="el" href="mathf_8h.html#a45f6718b2f3847f8c5c893e828fd6ace">mathf.h</a></li>
 <li>round_up_power_of_two()&#160;:&#160;<a class="el" href="mathf_8h.html#ad3b9b9dc071812bed76c82b51e82c516">mathf.h</a></li>
 </ul>

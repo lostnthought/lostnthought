@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,95 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('wireframe_8fra
 <div class="contents">
 
 <p><a href="wireframe_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a14faaaca45684b615b722b3f3d790868" id="r_a14faaaca45684b615b722b3f3d790868"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a14faaaca45684b615b722b3f3d790868">layout</a> (location=0) out <a class="el" href="types_8h.html#structvec4">vec4</a> <a class="el" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1ec666fc8acfd1ba7a92932fea4b2ad1" id="r_a1ec666fc8acfd1ba7a92932fea4b2ad1"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a></td></tr>
+<tr class="memitem:a1b6b0074b43684c435f4275d6fb7bf1a" id="r_a1b6b0074b43684c435f4275d6fb7bf1a"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1b6b0074b43684c435f4275d6fb7bf1a">color</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a14faaaca45684b615b722b3f3d790868" name="a14faaaca45684b615b722b3f3d790868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14faaaca45684b615b722b3f3d790868">&#9670;&#160;</a></span>layout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">location</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, and <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="wireframe_8frag_source.html#l00007">7</a> of file <a class="el" href="wireframe_8frag_source.html">wireframe.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, and <a class="el" href="wireframe_8frag_source.html#l00005">vColor</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a1ec666fc8acfd1ba7a92932fea4b2ad1" name="a1ec666fc8acfd1ba7a92932fea4b2ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec666fc8acfd1ba7a92932fea4b2ad1">&#9670;&#160;</a></span>vColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> vColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="wireframe_8frag_source.html#l00005">5</a> of file <a class="el" href="wireframe_8frag_source.html">wireframe.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="wireframe_8frag_source.html#l00007">main()</a>.</p>
+
+</div>
+</div>
+<a id="a1b6b0074b43684c435f4275d6fb7bf1a" name="a1b6b0074b43684c435f4275d6fb7bf1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6b0074b43684c435f4275d6fb7bf1a">&#9670;&#160;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structvec3">vec3</a> color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="wireframe_8frag_source.html#l00006">6</a> of file <a class="el" href="wireframe_8frag_source.html">wireframe.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="postprocess_8frag_source.html#l00041">applyLUT()</a>, <a class="el" href="probe__bake_8comp.html#a2cee6138867c81067acbd2d1cb6bcbc0">layout()</a>, <a class="el" href="lightmap__dilate_8comp_source.html#l00013">main()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00844">process_area_light()</a>, <a class="el" href="probe__bake_8comp_source.html#l00698">process_area_light()</a>, <a class="el" href="postprocess_8frag_source.html#l00154">processLUT()</a>, <a class="el" href="render_8c_source.html#l02979">render_probe_volume()</a>, <a class="el" href="editor_8c_source.html#l03040">render_text_menu()</a>, <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>, <a class="el" href="dynamic_8frag_source.html#l00475">sample_weighted_rprobes()</a>, <a class="el" href="probe__bake_8comp_source.html#l01229">solve_SH()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01015">traverse_light_bvh()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01191">traverse_light_bvh_direct_emissives()</a>, and <a class="el" href="postprocess_8frag_source.html#l00077">vignette()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

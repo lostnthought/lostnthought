@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,92 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('fullscreen_8fr
 <div class="contents">
 
 <p><a href="fullscreen_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5142f4b3324e5177e8a4701b40967765" id="r_a5142f4b3324e5177e8a4701b40967765"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5142f4b3324e5177e8a4701b40967765">uv</a></td></tr>
+<tr class="memitem:a6d8dd0540ed9af35f34cd31b838cacce" id="r_a6d8dd0540ed9af35f34cd31b838cacce"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+<tr class="memitem:a190da328c5733bff34b5a707a0cf8e7a" id="r_a190da328c5733bff34b5a707a0cf8e7a"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a190da328c5733bff34b5a707a0cf8e7a">scene</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fullscreen_8frag_source.html#l00011">11</a> of file <a class="el" href="fullscreen_8frag_source.html">fullscreen.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="fullscreen_8frag_source.html#l00007">scene</a>, and <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a5142f4b3324e5177e8a4701b40967765" name="a5142f4b3324e5177e8a4701b40967765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5142f4b3324e5177e8a4701b40967765">&#9670;&#160;</a></span>uv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> uv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fullscreen_8frag_source.html#l00004">4</a> of file <a class="el" href="fullscreen_8frag_source.html">fullscreen.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00080">fill_buffer_with_mesh_tri()</a>, <a class="el" href="render_8c_source.html#l00156">fill_vertex_buffer_mesh()</a>, <a class="el" href="ssao_8frag_source.html#l00050">get_view_pos()</a>, <a class="el" href="coc_8frag_source.html#l00022">get_view_pos_from_depth()</a>, <a class="el" href="mesh_8c_source.html#l00744">incremental_hull()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l01598">main()</a>, and <a class="el" href="ssao_8frag_source.html#l00059">reconstruct_normal()</a>.</p>
+
+</div>
+</div>
+<a id="a6d8dd0540ed9af35f34cd31b838cacce" name="a6d8dd0540ed9af35f34cd31b838cacce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8dd0540ed9af35f34cd31b838cacce">&#9670;&#160;</a></span>fragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec4">vec4</a> fragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fullscreen_8frag_source.html#l00005">5</a> of file <a class="el" href="fullscreen_8frag_source.html">fullscreen.frag</a>.</p>
+
+</div>
+</div>
+<a id="a190da328c5733bff34b5a707a0cf8e7a" name="a190da328c5733bff34b5a707a0cf8e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190da328c5733bff34b5a707a0cf8e7a">&#9670;&#160;</a></span>scene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D scene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fullscreen_8frag_source.html#l00007">7</a> of file <a class="el" href="fullscreen_8frag_source.html">fullscreen.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="fullscreen_8frag_source.html#l00011">main()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

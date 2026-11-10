@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -156,8 +165,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_e
 <li>expand_hull()&#160;:&#160;<a class="el" href="mesh_8c.html#a8c42c7ffd76896258674548548f7f989">mesh.c</a></li>
 <li>expand_sampler()&#160;:&#160;<a class="el" href="gltf_8c.html#a76ee6098e4d93b2651501699c9866647">gltf.c</a></li>
 <li>extent()&#160;:&#160;<a class="el" href="gltf_8c.html#acc0107409529a33ddc465e1da1290a19">gltf.c</a></li>
-<li>extract_rms()&#160;:&#160;<a class="el" href="audio_8c.html#abe2006e8b2052a0a8d175b4e6b5ff071">audio.c</a></li>
-<li>extract_t60()&#160;:&#160;<a class="el" href="audio_8c.html#a29684eaf012554ebbe1bbbe2e8252adc">audio.c</a></li>
+<li>extract_rms()&#160;:&#160;<a class="el" href="group__aprobe__group.html#gabe2006e8b2052a0a8d175b4e6b5ff071">audio.c</a></li>
+<li>extract_t60()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga29684eaf012554ebbe1bbbe2e8252adc">audio.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

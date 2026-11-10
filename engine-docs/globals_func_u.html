@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -141,7 +150,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_u
 <li>update_performance_overlay()&#160;:&#160;<a class="el" href="group__editor__group.html#ga182cd2856674e29c9d97f0538bf090e4">editor.c</a>, <a class="el" href="group__editor__group.html#ga182cd2856674e29c9d97f0538bf090e4">editor.h</a></li>
 <li>update_physics_components()&#160;:&#160;<a class="el" href="group__physics__group.html#ga536d177f45b424f59031bd1ec481ac3f">physics.c</a>, <a class="el" href="group__physics__group.html#ga536d177f45b424f59031bd1ec481ac3f">physics.h</a></li>
 <li>update_player_audio_probe()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga87c9086910fb559205a3fdbcd2c975b3">audio.c</a>, <a class="el" href="group__aprobe__group.html#ga87c9086910fb559205a3fdbcd2c975b3">audio.h</a></li>
-<li>update_player_ir()&#160;:&#160;<a class="el" href="audio__ir_8c.html#acd477621219feb356830a792be5987fd">audio_ir.c</a></li>
+<li>update_player_ir()&#160;:&#160;<a class="el" href="group__aprobe__group.html#gacd477621219feb356830a792be5987fd">audio_ir.c</a></li>
 <li>update_scene_nodes()&#160;:&#160;<a class="el" href="render_8c.html#a02123ec5b782178f8f3ea20928624d53">render.c</a></li>
 <li>update_skeleton()&#160;:&#160;<a class="el" href="camera_8c.html#a7bbb3168afc972a9c345d9db09eff3d4">camera.c</a>, <a class="el" href="camera_8h.html#a7bbb3168afc972a9c345d9db09eff3d4">camera.h</a></li>
 <li>update_skin_matrices()&#160;:&#160;<a class="el" href="render_8c.html#aff4199c743019070aa461897bd97586a">render.c</a></li>

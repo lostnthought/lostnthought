@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -124,7 +133,642 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('dynamic_8vert.
 </div><!--header-->
 <div class="contents">
 
+<p>The main forward vertex shader.  
+<a href="#details">More...</a></p>
+
 <p><a href="dynamic_8vert_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:OBB_5Fstruct_5Fo_5Fb_5Fb" id="r_OBB_5Fstruct_5Fo_5Fb_5Fb"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a></td></tr>
+<tr class="memdesc:struct_o_b_b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oriented Bounding Boxes.  <a href="group__shader__structs__group.html#struct_o_b_b">More...</a><br /></td></tr>
+<tr class="memitem:DrawArraysIndirectCommand_5Fstruct_5Fdraw_5Farrays_5Findirect_5Fcommand" id="r_DrawArraysIndirectCommand_5Fstruct_5Fdraw_5Farrays_5Findirect_5Fcommand"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_draw_arrays_indirect_command">DrawArraysIndirectCommand</a></td></tr>
+<tr class="memdesc:struct_draw_arrays_indirect_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">DrawArraysIndirect commands are used for static meshes (eg.  <a href="group__shader__structs__group.html#struct_draw_arrays_indirect_command">More...</a><br /></td></tr>
+<tr class="memitem:MeshNode_5Fstruct_5Fmesh_5Fnode" id="r_MeshNode_5Fstruct_5Fmesh_5Fnode"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a></td></tr>
+<tr class="memdesc:struct_mesh_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s that describe the position of <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es, GLTF nodes for <a class="el" href="engine__types_8h.html#struct_g_l_t_f_animation" title="The GLTF structure of an Animation.">GLTFAnimation</a>s, or hold references to other <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <a href="group__shader__structs__group.html#struct_mesh_node">More...</a><br /></td></tr>
+<tr class="memitem:Transform_5Fstruct_5Ftransform" id="r_Transform_5Fstruct_5Ftransform"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_transform">Transform</a></td></tr>
+<tr class="memdesc:struct_transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms for <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> models.  <a href="group__shader__structs__group.html#struct_transform">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad71fdd6e64912b84771dda0b80389ad9" id="r_ad71fdd6e64912b84771dda0b80389ad9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad71fdd6e64912b84771dda0b80389ad9">MAX_INSTANCES</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memitem:adc37d28f8277783604a65482c40e0200" id="r_adc37d28f8277783604a65482c40e0200"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adc37d28f8277783604a65482c40e0200">MAX_MESH_NODES</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memitem:a54a15c7759ae27bb73c7d63affa1bd9c" id="r_a54a15c7759ae27bb73c7d63affa1bd9c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a54a15c7759ae27bb73c7d63affa1bd9c">LPV_SLOTS</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:a11a427cb1228a62dee06e50c466d4804" id="r_a11a427cb1228a62dee06e50c466d4804"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a11a427cb1228a62dee06e50c466d4804">SH_MAX</a>&#160;&#160;&#160;9</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad0c81e55ff781f0f9d8adc1522a82c6e" id="r_ad0c81e55ff781f0f9d8adc1522a82c6e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad0c81e55ff781f0f9d8adc1522a82c6e">layout</a> (location=0) in <a class="el" href="types_8h.html#structvec3">vec3</a> aPosition</td></tr>
+<tr class="memitem:a251ff7187aa6805e7027554c86b34307" id="r_a251ff7187aa6805e7027554c86b34307"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a251ff7187aa6805e7027554c86b34307">layout</a> (std140, binding=0) uniform CameraData</td></tr>
+<tr class="memitem:a12e93476e5c655d5c3478f4b2c12d6fe" id="r_a12e93476e5c655d5c3478f4b2c12d6fe"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a12e93476e5c655d5c3478f4b2c12d6fe">layout</a> (std430, binding=3) buffer <a class="el" href="engine__types_8h.html#struct_lightmap_data">LightmapData</a></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9026a84d148196ad2263e453207af63d" id="r_a9026a84d148196ad2263e453207af63d"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9026a84d148196ad2263e453207af63d">ViewPos</a></td></tr>
+<tr class="memitem:a08e557a66ed99db8f20a778d7c34d2bd" id="r_a08e557a66ed99db8f20a778d7c34d2bd"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a08e557a66ed99db8f20a778d7c34d2bd">Normal</a></td></tr>
+<tr class="memitem:ac1484d5e1f70192213d5595d8d00fcdf" id="r_ac1484d5e1f70192213d5595d8d00fcdf"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac1484d5e1f70192213d5595d8d00fcdf">Tangent</a></td></tr>
+<tr class="memitem:a84316e3d4ba8e6b8ef2a223f4059be4c" id="r_a84316e3d4ba8e6b8ef2a223f4059be4c"><td class="memItemLeft">out float&#160;</td><td class="memItemRight"><a class="el" href="#a84316e3d4ba8e6b8ef2a223f4059be4c">TangentSign</a></td></tr>
+<tr class="memitem:a3ede6b3ffe12fbc16373d7e04db074a3" id="r_a3ede6b3ffe12fbc16373d7e04db074a3"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3ede6b3ffe12fbc16373d7e04db074a3">Pos</a></td></tr>
+<tr class="memitem:a97961e530f4f7f9aa529d567525b4872" id="r_a97961e530f4f7f9aa529d567525b4872"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a97961e530f4f7f9aa529d567525b4872">UV</a></td></tr>
+<tr class="memitem:a862224033cde70e3e77249f9f752c017" id="r_a862224033cde70e3e77249f9f752c017"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a862224033cde70e3e77249f9f752c017">LMUV</a></td></tr>
+<tr class="memitem:a74e2ff62f989e6a80917fd8bfdf95ce5" id="r_a74e2ff62f989e6a80917fd8bfdf95ce5"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a74e2ff62f989e6a80917fd8bfdf95ce5">Color</a></td></tr>
+<tr class="memitem:ab7961cfe0e9910783829bbec92f249b7" id="r_ab7961cfe0e9910783829bbec92f249b7"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab7961cfe0e9910783829bbec92f249b7">FragPosLightSpace</a> [4]</td></tr>
+<tr class="memitem:ad909f143fb4b153e8ceba13110e09c25" id="r_ad909f143fb4b153e8ceba13110e09c25"><td class="memItemLeft">out <a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad909f143fb4b153e8ceba13110e09c25">TBN</a></td></tr>
+<tr class="memitem:a58477e071cb0019e9f4dd368b4f52e7f" id="r_a58477e071cb0019e9f4dd368b4f52e7f"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a58477e071cb0019e9f4dd368b4f52e7f">ViewDirTanSpace</a></td></tr>
+<tr class="memitem:a820b5ba11dd1fdc55257ed3ec8f983b5" id="r_a820b5ba11dd1fdc55257ed3ec8f983b5"><td class="memItemLeft">flat out <a class="el" href="types_8h.html#structivec2">ivec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a820b5ba11dd1fdc55257ed3ec8f983b5">PointLight</a></td></tr>
+<tr class="memitem:a9e9e14d7e3420101519418d107a15d9a" id="r_a9e9e14d7e3420101519418d107a15d9a"><td class="memItemLeft">flat out <a class="el" href="types_8h.html#structuvec2">uvec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9e9e14d7e3420101519418d107a15d9a">DirectionalLight</a></td></tr>
+<tr class="memitem:a151a75780fbcd75b7aa1c55d35e379e7" id="r_a151a75780fbcd75b7aa1c55d35e379e7"><td class="memItemLeft">flat out <a class="el" href="types_8h.html#structuvec2">uvec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a151a75780fbcd75b7aa1c55d35e379e7">SpotLight</a></td></tr>
+<tr class="memitem:a9e98a719f31e9ed206252293e672d5d2" id="r_a9e98a719f31e9ed206252293e672d5d2"><td class="memItemLeft">flat out uint&#160;</td><td class="memItemRight"><a class="el" href="#a9e98a719f31e9ed206252293e672d5d2">Instance</a></td></tr>
+<tr class="memitem:a9c930a2594d46bde6fae5121b023fa72" id="r_a9c930a2594d46bde6fae5121b023fa72"><td class="memItemLeft">flat out uint&#160;</td><td class="memItemRight"><a class="el" href="#a9c930a2594d46bde6fae5121b023fa72">Mat</a></td></tr>
+<tr class="memitem:ace2b72b32d97f6175a954127ff0050ea" id="r_ace2b72b32d97f6175a954127ff0050ea"><td class="memItemLeft">flat out uint&#160;</td><td class="memItemRight"><a class="el" href="#ace2b72b32d97f6175a954127ff0050ea">Static</a></td></tr>
+<tr class="memitem:a45649c2e23f589087cc1aebd4e737189" id="r_a45649c2e23f589087cc1aebd4e737189"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a45649c2e23f589087cc1aebd4e737189">uOffset</a></td></tr>
+<tr class="memitem:a1dd8ab391c1f96de29464966a7831893" id="r_a1dd8ab391c1f96de29464966a7831893"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a1dd8ab391c1f96de29464966a7831893">uDynamicPass</a></td></tr>
+<tr class="memitem:a2411081518a70d0234b645bd2ab5453c" id="r_a2411081518a70d0234b645bd2ab5453c"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2411081518a70d0234b645bd2ab5453c">probe_origin</a></td></tr>
+<tr class="memitem:ab27e76a88ac98d986b44798c6a57f9a8" id="r_ab27e76a88ac98d986b44798c6a57f9a8"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ab27e76a88ac98d986b44798c6a57f9a8">probe_spacing</a></td></tr>
+<tr class="memitem:a3824743a6779e68701678fb066c4e4a1" id="r_a3824743a6779e68701678fb066c4e4a1"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structivec3">ivec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3824743a6779e68701678fb066c4e4a1">probe_grid_size</a></td></tr>
+<tr class="memitem:a20d83a5eb5939b3a47b6cf9c17a27c6e" id="r_a20d83a5eb5939b3a47b6cf9c17a27c6e"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a20d83a5eb5939b3a47b6cf9c17a27c6e">uStartArr</a></td></tr>
+<tr class="memitem:a6ff52266cb058086370ad88da4a19d88" id="r_a6ff52266cb058086370ad88da4a19d88"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a6ff52266cb058086370ad88da4a19d88">uStartEle</a></td></tr>
+<tr class="memitem:aa0853334956e510efc05665c9891c040" id="r_aa0853334956e510efc05665c9891c040"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#aa0853334956e510efc05665c9891c040">uLPVDepthPadded</a></td></tr>
+<tr class="memitem:a66c06ef03a9cf4e372de8d5ab82bc7fe" id="r_a66c06ef03a9cf4e372de8d5ab82bc7fe"><td class="memItemLeft">uniform sampler3D&#160;</td><td class="memItemRight"><a class="el" href="#a66c06ef03a9cf4e372de8d5ab82bc7fe">probe_tex</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The main forward vertex shader. </p>
+
+<p class="definition">Definition in file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="ad71fdd6e64912b84771dda0b80389ad9" name="ad71fdd6e64912b84771dda0b80389ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71fdd6e64912b84771dda0b80389ad9">&#9670;&#160;</a></span>MAX_INSTANCES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_INSTANCES&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00126">126</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="adc37d28f8277783604a65482c40e0200" name="adc37d28f8277783604a65482c40e0200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc37d28f8277783604a65482c40e0200">&#9670;&#160;</a></span>MAX_MESH_NODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MESH_NODES&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00155">155</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a54a15c7759ae27bb73c7d63affa1bd9c" name="a54a15c7759ae27bb73c7d63affa1bd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a15c7759ae27bb73c7d63affa1bd9c">&#9670;&#160;</a></span>LPV_SLOTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPV_SLOTS&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00203">203</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a11a427cb1228a62dee06e50c466d4804" name="a11a427cb1228a62dee06e50c466d4804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a427cb1228a62dee06e50c466d4804">&#9670;&#160;</a></span>SH_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SH_MAX&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00204">204</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="ad0c81e55ff781f0f9d8adc1522a82c6e" name="ad0c81e55ff781f0f9d8adc1522a82c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c81e55ff781f0f9d8adc1522a82c6e">&#9670;&#160;</a></span>layout() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">location</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a251ff7187aa6805e7027554c86b34307" name="a251ff7187aa6805e7027554c86b34307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ff7187aa6805e7027554c86b34307">&#9670;&#160;</a></span>layout() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std140</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00021">21</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, and <a class="el" href="shadow_8vert_source.html#l00016">view</a>.</p>
+
+</div>
+</div>
+<a id="a12e93476e5c655d5c3478f4b2c12d6fe" name="a12e93476e5c655d5c3478f4b2c12d6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e93476e5c655d5c3478f4b2c12d6fe">&#9670;&#160;</a></span>layout() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00120">120</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00207">207</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00074">Transform::command_id</a>, <a class="el" href="engine__types_8h_source.html#l02402">MeshNode::count</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00075">Transform::directional_lights</a>, <a class="el" href="dynamic_8frag_source.html#l00209">DirectionalLight</a>, <a class="el" href="coc_8frag_source.html#l00052">MeshNode::first</a>, <a class="el" href="dynamic_8frag_source.html#l00204">FragPosLightSpace</a>, <a class="el" href="dynamic_8frag_source.html#l00234">index_offset</a>, <a class="el" href="coc_8frag_source.html#l00050">MeshNode::lm_offset</a>, <a class="el" href="dynamic_8frag_source.html#l00202">LMUV</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00069">Mat</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00079">Transform::mat</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00078">Transform::material</a>, <a class="el" href="engine__types_8h_source.html#l00111">MAX_INSTANCES</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00073">Transform::mn_id</a>, <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00067">Normal</a>, <a class="el" href="dynamic_8frag_source.html#l00208">PointLight</a>, <a class="el" href="dynamic_8frag_source.html#l00199">Pos</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00077">Transform::skin_offset</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00076">Transform::spot_lights</a>, <a class="el" href="dynamic_8frag_source.html#l00210">SpotLight</a>, <a class="el" href="dynamic_8frag_source.html#l00212">Static</a>, <a class="el" href="engine__types_8h_source.html#l02399">MeshNode::static_mesh</a>, <a class="el" href="dynamic_8frag_source.html#l00197">Tangent</a>, <a class="el" href="dynamic_8frag_source.html#l00198">TangentSign</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00068">TBN</a>, <a class="el" href="depth__pre__pass_8vert_source.html#l00114">uDynamicPass</a>, <a class="el" href="depth__pre__pass_8vert_source.html#l00113">uOffset</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8vert_source.html#l00129">uStartArr</a>, <a class="el" href="depth__pre__pass__no__gbuffer_8vert_source.html#l00130">uStartEle</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00070">UV</a>, <a class="el" href="shadow_8vert_source.html#l00016">view</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00075">ViewDirTanSpace</a>, and <a class="el" href="depth__pre__pass_8frag_source.html#l00072">ViewPos</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a9026a84d148196ad2263e453207af63d" name="a9026a84d148196ad2263e453207af63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9026a84d148196ad2263e453207af63d">&#9670;&#160;</a></span>ViewPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> ViewPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00170">170</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a08e557a66ed99db8f20a778d7c34d2bd" name="a08e557a66ed99db8f20a778d7c34d2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e557a66ed99db8f20a778d7c34d2bd">&#9670;&#160;</a></span>Normal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> Normal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00171">171</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="ac1484d5e1f70192213d5595d8d00fcdf" name="ac1484d5e1f70192213d5595d8d00fcdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1484d5e1f70192213d5595d8d00fcdf">&#9670;&#160;</a></span>Tangent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> Tangent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00172">172</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a84316e3d4ba8e6b8ef2a223f4059be4c" name="a84316e3d4ba8e6b8ef2a223f4059be4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84316e3d4ba8e6b8ef2a223f4059be4c">&#9670;&#160;</a></span>TangentSign</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out float TangentSign</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00173">173</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a3ede6b3ffe12fbc16373d7e04db074a3" name="a3ede6b3ffe12fbc16373d7e04db074a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ede6b3ffe12fbc16373d7e04db074a3">&#9670;&#160;</a></span>Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> Pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00174">174</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a97961e530f4f7f9aa529d567525b4872" name="a97961e530f4f7f9aa529d567525b4872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97961e530f4f7f9aa529d567525b4872">&#9670;&#160;</a></span>UV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec2">vec2</a> UV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00175">175</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a862224033cde70e3e77249f9f752c017" name="a862224033cde70e3e77249f9f752c017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862224033cde70e3e77249f9f752c017">&#9670;&#160;</a></span>LMUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec2">vec2</a> LMUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00176">176</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a74e2ff62f989e6a80917fd8bfdf95ce5" name="a74e2ff62f989e6a80917fd8bfdf95ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74e2ff62f989e6a80917fd8bfdf95ce5">&#9670;&#160;</a></span>Color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> Color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00177">177</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="ab7961cfe0e9910783829bbec92f249b7" name="ab7961cfe0e9910783829bbec92f249b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7961cfe0e9910783829bbec92f249b7">&#9670;&#160;</a></span>FragPosLightSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec4">vec4</a> FragPosLightSpace[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00178">178</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="ad909f143fb4b153e8ceba13110e09c25" name="ad909f143fb4b153e8ceba13110e09c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad909f143fb4b153e8ceba13110e09c25">&#9670;&#160;</a></span>TBN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structmat3">mat3</a> TBN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00179">179</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a58477e071cb0019e9f4dd368b4f52e7f" name="a58477e071cb0019e9f4dd368b4f52e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58477e071cb0019e9f4dd368b4f52e7f">&#9670;&#160;</a></span>ViewDirTanSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec3">vec3</a> ViewDirTanSpace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00180">180</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a820b5ba11dd1fdc55257ed3ec8f983b5" name="a820b5ba11dd1fdc55257ed3ec8f983b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820b5ba11dd1fdc55257ed3ec8f983b5">&#9670;&#160;</a></span>PointLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat out <a class="el" href="types_8h.html#structivec2">ivec2</a> PointLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00181">181</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a9e9e14d7e3420101519418d107a15d9a" name="a9e9e14d7e3420101519418d107a15d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9e14d7e3420101519418d107a15d9a">&#9670;&#160;</a></span>DirectionalLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat out <a class="el" href="types_8h.html#structuvec2">uvec2</a> DirectionalLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00182">182</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a151a75780fbcd75b7aa1c55d35e379e7" name="a151a75780fbcd75b7aa1c55d35e379e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151a75780fbcd75b7aa1c55d35e379e7">&#9670;&#160;</a></span>SpotLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat out <a class="el" href="types_8h.html#structuvec2">uvec2</a> SpotLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00183">183</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a9e98a719f31e9ed206252293e672d5d2" name="a9e98a719f31e9ed206252293e672d5d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e98a719f31e9ed206252293e672d5d2">&#9670;&#160;</a></span>Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat out uint Instance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00184">184</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a9c930a2594d46bde6fae5121b023fa72" name="a9c930a2594d46bde6fae5121b023fa72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c930a2594d46bde6fae5121b023fa72">&#9670;&#160;</a></span>Mat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat out uint Mat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00185">185</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="ace2b72b32d97f6175a954127ff0050ea" name="ace2b72b32d97f6175a954127ff0050ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2b72b32d97f6175a954127ff0050ea">&#9670;&#160;</a></span>Static</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat out uint Static</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00186">186</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a45649c2e23f589087cc1aebd4e737189" name="a45649c2e23f589087cc1aebd4e737189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45649c2e23f589087cc1aebd4e737189">&#9670;&#160;</a></span>uOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00188">188</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a1dd8ab391c1f96de29464966a7831893" name="a1dd8ab391c1f96de29464966a7831893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd8ab391c1f96de29464966a7831893">&#9670;&#160;</a></span>uDynamicPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uDynamicPass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00189">189</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a2411081518a70d0234b645bd2ab5453c" name="a2411081518a70d0234b645bd2ab5453c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2411081518a70d0234b645bd2ab5453c">&#9670;&#160;</a></span>probe_origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structvec3">vec3</a> probe_origin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00191">191</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="ab27e76a88ac98d986b44798c6a57f9a8" name="ab27e76a88ac98d986b44798c6a57f9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27e76a88ac98d986b44798c6a57f9a8">&#9670;&#160;</a></span>probe_spacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float probe_spacing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00192">192</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a3824743a6779e68701678fb066c4e4a1" name="a3824743a6779e68701678fb066c4e4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3824743a6779e68701678fb066c4e4a1">&#9670;&#160;</a></span>probe_grid_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structivec3">ivec3</a> probe_grid_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00193">193</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a20d83a5eb5939b3a47b6cf9c17a27c6e" name="a20d83a5eb5939b3a47b6cf9c17a27c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d83a5eb5939b3a47b6cf9c17a27c6e">&#9670;&#160;</a></span>uStartArr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uStartArr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00195">195</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a6ff52266cb058086370ad88da4a19d88" name="a6ff52266cb058086370ad88da4a19d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff52266cb058086370ad88da4a19d88">&#9670;&#160;</a></span>uStartEle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uStartEle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00196">196</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="aa0853334956e510efc05665c9891c040" name="aa0853334956e510efc05665c9891c040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0853334956e510efc05665c9891c040">&#9670;&#160;</a></span>uLPVDepthPadded</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uLPVDepthPadded</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00197">197</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
+<a id="a66c06ef03a9cf4e372de8d5ab82bc7fe" name="a66c06ef03a9cf4e372de8d5ab82bc7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c06ef03a9cf4e372de8d5ab82bc7fe">&#9670;&#160;</a></span>probe_tex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler3D probe_tex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8vert_source.html#l00199">199</a> of file <a class="el" href="dynamic_8vert_source.html">dynamic.vert</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

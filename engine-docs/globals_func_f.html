@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -165,7 +174,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_f
 <li>free_mesh_node()&#160;:&#160;<a class="el" href="load_8c.html#a19218781c616f0084b9acd6dbb634781">load.c</a></li>
 <li>free_skin()&#160;:&#160;<a class="el" href="load_8c.html#a4ad3a400d72a48575b673b89cacbef49">load.c</a></li>
 <li>free_vector()&#160;:&#160;<a class="el" href="utilities_8c.html#a6505b2fc5c436a8a63c859b0cc07997f">utilities.c</a></li>
-<li>frisvad_basis()&#160;:&#160;<a class="el" href="utilities_8h.html#a71525d1e21b958de061e700f5746e1f4">utilities.h</a></li>
+<li>fresnel_schlick()&#160;:&#160;<a class="el" href="dynamic_8frag.html#a1bdde41461278f1cd5708f55a1d1c3d2">dynamic.frag</a></li>
+<li>fresnel_schlick_roughness()&#160;:&#160;<a class="el" href="dynamic_8frag.html#a4ad8f51a3b5ffde15f127285ac499f77">dynamic.frag</a></li>
+<li>frisvad_basis()&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#aa90be9e7aba1059252da1ac423c6c795">audio_probe_bake.comp</a>, <a class="el" href="lightmap__bounce_8comp.html#aa90be9e7aba1059252da1ac423c6c795">lightmap_bounce.comp</a>, <a class="el" href="probe__bake_8comp.html#aa90be9e7aba1059252da1ac423c6c795">probe_bake.comp</a>, <a class="el" href="utilities_8h.html#a71525d1e21b958de061e700f5746e1f4">utilities.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

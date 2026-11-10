@@ -117,89 +117,122 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('brdf_8frag_sou
 </div><!--header-->
 <div class="contents">
 <a href="brdf_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>#version 330 core</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>out vec2 FragColor;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>in vec2 vUV;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#version 330 core</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a64dccd911a71deebb50a14395eea3103">    3</a></span>out <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">FragColor</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">    4</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>const uint SAMPLE_COUNT = 1024u;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="brdf_8frag.html#af63480c89a929e95b13879677976d560">    6</a></span><span class="keyword">const</span> uint <a class="code hl_variable" href="brdf_8frag.html#af63480c89a929e95b13879677976d560">SAMPLE_COUNT</a> = 1024u;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>float RadicalInverse_VdC(uint bits) {</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a520cf6a67180365d37ec465480339a47">    8</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="brdf_8frag.html#a520cf6a67180365d37ec465480339a47">RadicalInverse_VdC</a>(uint bits) {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    bits = (bits &lt;&lt; 16u) | (bits &gt;&gt; 16u);</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    bits = ((bits &amp; 0x55555555u) &lt;&lt; 1u) | ((bits &amp; 0xAAAAAAAAu) &gt;&gt; 1u);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    bits = ((bits &amp; 0x33333333u) &lt;&lt; 2u) | ((bits &amp; 0xCCCCCCCCu) &gt;&gt; 2u);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    bits = ((bits &amp; 0x0F0F0F0Fu) &lt;&lt; 4u) | ((bits &amp; 0xF0F0F0F0u) &gt;&gt; 4u);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    bits = ((bits &amp; 0x00FF00FFu) &lt;&lt; 8u) | ((bits &amp; 0xFF00FF00u) &gt;&gt; 8u);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    return float(bits) * 2.3283064365386963e-10; </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> float(bits) * 2.3283064365386963e-10; </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>vec2 Hammersley(uint i, uint N) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    return vec2(float(i)/float(N), RadicalInverse_VdC(i));</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a912ce449d0fe81d2e79ff57a93f013d2">   17</a></span><a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_function" href="brdf_8frag.html#a912ce449d0fe81d2e79ff57a93f013d2">Hammersley</a>(uint i, uint N) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(<span class="keywordtype">float</span>(i)/<span class="keywordtype">float</span>(N), <a class="code hl_function" href="brdf_8frag.html#a520cf6a67180365d37ec465480339a47">RadicalInverse_VdC</a>(i));</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>vec3 ImportanceSampleGGX(vec2 Xi, vec3 N, float roughness) {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    float a = roughness*roughness;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    float phi = 2.0 * 3.14159265359 * Xi.x;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    float cosTheta = sqrt((1.0 - Xi.y) / (1.0 + (a*a - 1.0) * Xi.y));</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    float sinTheta = sqrt(1.0 - cosTheta*cosTheta);</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a3a576765e155d70c61c8e053b71baabc">   21</a></span><a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> <a class="code hl_function" href="brdf_8frag.html#a3a576765e155d70c61c8e053b71baabc">ImportanceSampleGGX</a>(<a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> Xi, <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> N, <span class="keywordtype">float</span> roughness) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">float</span> a = roughness*roughness;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">float</span> phi = 2.0 * 3.14159265359 * Xi.<a class="code hl_variable" href="types_8h.html#a002d3519d48fe3cd79729b5b0ded74bf">x</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">float</span> cosTheta = sqrt((1.0 - Xi.<a class="code hl_variable" href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">y</a>) / (1.0 + (a*a - 1.0) * Xi.<a class="code hl_variable" href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">y</a>));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">float</span> sinTheta = sqrt(1.0 - cosTheta*cosTheta);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    vec3 H;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    H.x = cos(phi) * sinTheta;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    H.y = sin(phi) * sinTheta;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    H.z = cosTheta;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> H;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    H.<a class="code hl_variable" href="types_8h.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a> = cos(phi) * sinTheta;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    H.<a class="code hl_variable" href="types_8h.html#a891379795a14c80936cde4170239a138">y</a> = sin(phi) * sinTheta;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    H.<a class="code hl_variable" href="types_8h.html#aa76213efcc5d656cc14b71db80a92162">z</a> = cosTheta;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    vec3 up          = abs(N.z) &lt; 0.999 ? vec3(0.0, 0.0, 1.0) : vec3(1.0, 0.0, 0.0);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    vec3 tangent   = normalize(cross(up, N));</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    vec3 bitangent = cross(N, tangent);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> up          = abs(N.<a class="code hl_variable" href="types_8h.html#aa76213efcc5d656cc14b71db80a92162">z</a>) &lt; 0.999 ? <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a>(0.0, 0.0, 1.0) : <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a>(1.0, 0.0, 0.0);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> tangent   = normalize(cross(up, N));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> bitangent = cross(N, tangent);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    vec3 sampleVec = tangent * H.x + bitangent * H.y + N * H.z;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    return normalize(sampleVec);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> sampleVec = tangent * H.<a class="code hl_variable" href="types_8h.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a> + bitangent * H.<a class="code hl_variable" href="types_8h.html#a891379795a14c80936cde4170239a138">y</a> + N * H.<a class="code hl_variable" href="types_8h.html#aa76213efcc5d656cc14b71db80a92162">z</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> normalize(sampleVec);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>float GeometrySchlickGGX(float NdotV, float roughness) {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    float k = (roughness * roughness) / 2.0;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    return NdotV / (NdotV * (1.0 - k) + k);</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a11d15ca10e984be6dd53497282809249">   40</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="brdf_8frag.html#a11d15ca10e984be6dd53497282809249">GeometrySchlickGGX</a>(<span class="keywordtype">float</span> NdotV, <span class="keywordtype">float</span> roughness) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">float</span> k = (roughness * roughness) / 2.0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> NdotV / (NdotV * (1.0 - k) + k);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>float GeometrySmith(vec3 N, vec3 V, vec3 L, float roughness) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    float NdotV = max(dot(N, V), 0.0);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    float NdotL = max(dot(N, L), 0.0);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    return GeometrySchlickGGX(NdotV, roughness) * GeometrySchlickGGX(NdotL, roughness);</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a53c57f52e5919cb9d2ea848a3a1f915f">   45</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="brdf_8frag.html#a53c57f52e5919cb9d2ea848a3a1f915f">GeometrySmith</a>(<a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> N, <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> V, <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> L, <span class="keywordtype">float</span> roughness) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">float</span> NdotV = max(dot(N, V), 0.0);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">float</span> NdotL = max(dot(N, L), 0.0);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="brdf_8frag.html#a11d15ca10e984be6dd53497282809249">GeometrySchlickGGX</a>(NdotV, roughness) * <a class="code hl_function" href="brdf_8frag.html#a11d15ca10e984be6dd53497282809249">GeometrySchlickGGX</a>(NdotL, roughness);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>vec2 IntegrateBRDF(float NdotV, float roughness) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    vec3 V;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    V.x = sqrt(1.0 - NdotV*NdotV);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    V.y = 0.0;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    V.z = NdotV;</div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="brdf_8frag.html#a58c0674da08f1382d1afdd77ec97ce9f">   51</a></span><a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_function" href="brdf_8frag.html#a58c0674da08f1382d1afdd77ec97ce9f">IntegrateBRDF</a>(<span class="keywordtype">float</span> NdotV, <span class="keywordtype">float</span> roughness) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> V;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    V.<a class="code hl_variable" href="types_8h.html#a4ee2cfd5c2698031a47ab7f898d8d47b">x</a> = sqrt(1.0 - NdotV*NdotV);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    V.<a class="code hl_variable" href="types_8h.html#a891379795a14c80936cde4170239a138">y</a> = 0.0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    V.<a class="code hl_variable" href="types_8h.html#aa76213efcc5d656cc14b71db80a92162">z</a> = NdotV;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    float A = 0.0;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    float B = 0.0;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    vec3 N = vec3(0.0, 0.0, 1.0);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">float</span> <a class="code hl_enumvalue" href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba42a4ade1acd55a49164099104990e09f">A</a> = 0.0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">float</span> <a class="code hl_enumvalue" href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba3f2a77ecd272aa6d6b5902faa5e5fc68">B</a> = 0.0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> N = <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a>(0.0, 0.0, 1.0);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    for(uint i = 0u; i &lt; SAMPLE_COUNT; ++i) {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        vec2 Xi = Hammersley(i, SAMPLE_COUNT);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        vec3 H  = ImportanceSampleGGX(Xi, N, roughness);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        vec3 L  = normalize(2.0 * dot(V, H) * H - V);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">for</span>(uint i = 0u; i &lt; <a class="code hl_variable" href="brdf_8frag.html#af63480c89a929e95b13879677976d560">SAMPLE_COUNT</a>; ++i) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> Xi = <a class="code hl_function" href="brdf_8frag.html#a912ce449d0fe81d2e79ff57a93f013d2">Hammersley</a>(i, <a class="code hl_variable" href="brdf_8frag.html#af63480c89a929e95b13879677976d560">SAMPLE_COUNT</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> H  = <a class="code hl_function" href="brdf_8frag.html#a3a576765e155d70c61c8e053b71baabc">ImportanceSampleGGX</a>(Xi, N, roughness);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> L  = normalize(2.0 * dot(V, H) * H - V);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        float NdotL = max(L.z, 0.0);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        float NdotH = max(H.z, 0.0);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        float VdotH = max(dot(V, H), 0.0);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordtype">float</span> NdotL = max(L.<a class="code hl_variable" href="types_8h.html#aa76213efcc5d656cc14b71db80a92162">z</a>, 0.0);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">float</span> NdotH = max(H.<a class="code hl_variable" href="types_8h.html#aa76213efcc5d656cc14b71db80a92162">z</a>, 0.0);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">float</span> VdotH = max(dot(V, H), 0.0);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        if(NdotL &gt; 0.0) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            float G = GeometrySmith(N, V, L, roughness);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            float G_Vis = (G * VdotH) / (NdotH * NdotV);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            float Fc = pow(1.0 - VdotH, 5.0);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span>(NdotL &gt; 0.0) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordtype">float</span> G = <a class="code hl_function" href="brdf_8frag.html#a53c57f52e5919cb9d2ea848a3a1f915f">GeometrySmith</a>(N, V, L, roughness);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordtype">float</span> G_Vis = (G * VdotH) / (NdotH * NdotV);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordtype">float</span> Fc = pow(1.0 - VdotH, 5.0);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            A += (1.0 - Fc) * G_Vis;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            B += Fc * G_Vis;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_enumvalue" href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba42a4ade1acd55a49164099104990e09f">A</a> += (1.0 - Fc) * G_Vis;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_enumvalue" href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba3f2a77ecd272aa6d6b5902faa5e5fc68">B</a> += Fc * G_Vis;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    return vec2(A, B) / float(SAMPLE_COUNT);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(<a class="code hl_enumvalue" href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba42a4ade1acd55a49164099104990e09f">A</a>, <a class="code hl_enumvalue" href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba3f2a77ecd272aa6d6b5902faa5e5fc68">B</a>) / float(<a class="code hl_variable" href="brdf_8frag.html#af63480c89a929e95b13879677976d560">SAMPLE_COUNT</a>);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>void main() {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    FragColor = IntegrateBRDF(vUV.x, vUV.y);</div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="brdf_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">   82</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>() {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_variable" href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">FragColor</a> = <a class="code hl_function" href="brdf_8frag.html#a58c0674da08f1382d1afdd77ec97ce9f">IntegrateBRDF</a>(<a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>.<a class="code hl_variable" href="types_8h.html#a002d3519d48fe3cd79729b5b0ded74bf">x</a>, <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>.<a class="code hl_variable" href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">y</a>);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="abrdf_8frag_html_a11d15ca10e984be6dd53497282809249"><div class="ttname"><a href="brdf_8frag.html#a11d15ca10e984be6dd53497282809249">GeometrySchlickGGX</a></div><div class="ttdeci">float GeometrySchlickGGX(float NdotV, float roughness)</div><div class="ttdef"><b>Definition</b> <a href="#l00040">brdf.frag:40</a></div></div>
+<div class="ttc" id="abrdf_8frag_html_a3a576765e155d70c61c8e053b71baabc"><div class="ttname"><a href="brdf_8frag.html#a3a576765e155d70c61c8e053b71baabc">ImportanceSampleGGX</a></div><div class="ttdeci">vec3 ImportanceSampleGGX(vec2 Xi, vec3 N, float roughness)</div><div class="ttdef"><b>Definition</b> <a href="#l00021">brdf.frag:21</a></div></div>
+<div class="ttc" id="abrdf_8frag_html_a520cf6a67180365d37ec465480339a47"><div class="ttname"><a href="brdf_8frag.html#a520cf6a67180365d37ec465480339a47">RadicalInverse_VdC</a></div><div class="ttdeci">float RadicalInverse_VdC(uint bits)</div><div class="ttdef"><b>Definition</b> <a href="#l00008">brdf.frag:8</a></div></div>
+<div class="ttc" id="abrdf_8frag_html_a53c57f52e5919cb9d2ea848a3a1f915f"><div class="ttname"><a href="brdf_8frag.html#a53c57f52e5919cb9d2ea848a3a1f915f">GeometrySmith</a></div><div class="ttdeci">float GeometrySmith(vec3 N, vec3 V, vec3 L, float roughness)</div><div class="ttdef"><b>Definition</b> <a href="#l00045">brdf.frag:45</a></div></div>
+<div class="ttc" id="abrdf_8frag_html_a58c0674da08f1382d1afdd77ec97ce9f"><div class="ttname"><a href="brdf_8frag.html#a58c0674da08f1382d1afdd77ec97ce9f">IntegrateBRDF</a></div><div class="ttdeci">vec2 IntegrateBRDF(float NdotV, float roughness)</div><div class="ttdef"><b>Definition</b> <a href="#l00051">brdf.frag:51</a></div></div>
+<div class="ttc" id="abrdf_8frag_html_a912ce449d0fe81d2e79ff57a93f013d2"><div class="ttname"><a href="brdf_8frag.html#a912ce449d0fe81d2e79ff57a93f013d2">Hammersley</a></div><div class="ttdeci">vec2 Hammersley(uint i, uint N)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">brdf.frag:17</a></div></div>
+<div class="ttc" id="abrdf_8frag_html_af63480c89a929e95b13879677976d560"><div class="ttname"><a href="brdf_8frag.html#af63480c89a929e95b13879677976d560">SAMPLE_COUNT</a></div><div class="ttdeci">const uint SAMPLE_COUNT</div><div class="ttdef"><b>Definition</b> <a href="#l00006">brdf.frag:6</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="lightmap_8frag_source.html#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="assao__blur_8frag_html_a9fb9ff60bb02989b1604a64cb2da6094"><div class="ttname"><a href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">FragColor</a></div><div class="ttdeci">out float FragColor</div><div class="ttdef"><b>Definition</b> <a href="ssao__blur_8frag_source.html#l00002">ssao_blur.frag:2</a></div></div>
+<div class="ttc" id="atypes_8h_html_a002d3519d48fe3cd79729b5b0ded74bf"><div class="ttname"><a href="types_8h.html#a002d3519d48fe3cd79729b5b0ded74bf">vec2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_a4a9d761d3c1b2196fefb868018d2ccfba3f2a77ecd272aa6d6b5902faa5e5fc68"><div class="ttname"><a href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba3f2a77ecd272aa6d6b5902faa5e5fc68">B</a></div><div class="ttdeci">@ B</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00026">types.h:26</a></div></div>
+<div class="ttc" id="atypes_8h_html_a4a9d761d3c1b2196fefb868018d2ccfba42a4ade1acd55a49164099104990e09f"><div class="ttname"><a href="types_8h.html#a4a9d761d3c1b2196fefb868018d2ccfba42a4ade1acd55a49164099104990e09f">A</a></div><div class="ttdeci">@ A</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00026">types.h:26</a></div></div>
+<div class="ttc" id="atypes_8h_html_a4ee2cfd5c2698031a47ab7f898d8d47b"><div class="ttname"><a href="types_8h.html#a4ee2cfd5c2698031a47ab7f898d8d47b">vec3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_a6d28b12b511da692550fc9d37b4e9b1d"><div class="ttname"><a href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">vec2::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_a891379795a14c80936cde4170239a138"><div class="ttname"><a href="types_8h.html#a891379795a14c80936cde4170239a138">vec3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_aa76213efcc5d656cc14b71db80a92162"><div class="ttname"><a href="types_8h.html#aa76213efcc5d656cc14b71db80a92162">vec3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec3"><div class="ttname"><a href="types_8h.html#structvec3">vec3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

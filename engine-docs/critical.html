@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,9 +134,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('critical.html'
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Global <a class="el" href="lightmap_8h.html#abfc795a19d238736194cecd5413980e6">load_lightmap_from_binary</a>  (<a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> *ld, const char *name)</dt>
-<dd><a class="anchor" id="_critical000002"></a> This does not free the current <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s and may be a memory leak.  </dd>
+<dd><a class="anchor" id="_critical000003"></a> This does not free the current <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a>s and may be a memory leak.  </dd>
+<dt>Global <a class="el" href="group__audio__group.html#ga8b36d58689df80c946bce67ba65eee57">reconstruct_path_aportal</a>  (<a class="el" href="engine__types_8h.html#struct_a_star_workspace" title="The workspace for conducting a-star pathfinding/.">AStarWorkspace</a> *WS, int start, int end)</dt>
+<dd><a class="anchor" id="_critical000001"></a> The prev index here looks very suspicious, it should not be tied to end, as end should be an index into the array of portals.  </dd>
 <dt>Global <a class="el" href="lightmap_8h.html#af08be03d47d4982425d6708d79fe99f9">save_lightmap_to_binary</a>  (<a class="el" href="engine__types_8h.html#struct_lightmap_data" title="The metadata for the lightmap settings.">LightmapData</a> *ld, const char *name)</dt>
-<dd><a class="anchor" id="_critical000001"></a> This is a bug. There is no need to write all <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> <a class="el" href="engine__types_8h.html#struct_u_v_mapping" title="This bridges from MeshNode&#39;s MeshFaces to their respective UVIslands.">UVMapping</a>s per <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and it will explode data. </dd>
+<dd><a class="anchor" id="_critical000002"></a> This is a bug. There is no need to write all <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> <a class="el" href="engine__types_8h.html#struct_u_v_mapping" title="This bridges from MeshNode&#39;s MeshFaces to their respective UVIslands.">UVMapping</a>s per <a class="el" href="engine__types_8h.html#struct_u_v_island" title="The UVIslands that are generated from contiguous MeshFaces with similar planes for UV lightmapping.">UVIsland</a> and it will explode data. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

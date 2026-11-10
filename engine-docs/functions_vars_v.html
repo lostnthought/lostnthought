@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -126,30 +135,30 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 
 <h3 class="doxsection"><a id="index_v" name="index_v"></a>- v -</h3><ul>
 <li>v&#160;:&#160;<a class="el" href="engine__types_8h.html#a2ba088f6009da5e57ebe99d7a0903dbe">AnimationKeyframe::[union].val</a>, <a class="el" href="engine__types_8h.html#a08d6a9c55d65e04462aa3c8c5d6bc466">LightmapRect</a></li>
-<li>v0&#160;:&#160;<a class="el" href="group__ui__group.html#a303a9c5971823d01673ce5a1e6dd871d">Glyph</a>, <a class="el" href="engine__types_8h.html#ac264de6d3f185ebd94b9831c702f048f">TriGPU</a></li>
-<li>v1&#160;:&#160;<a class="el" href="group__ui__group.html#a487dd3ca7c2a85671cc88b00730af0ed">Glyph</a>, <a class="el" href="engine__types_8h.html#a33124a3ce2e9c891ad32b8c67cfd7506">TriGPU</a></li>
-<li>v2&#160;:&#160;<a class="el" href="engine__types_8h.html#a03a3fc72abe1b312f5ebb01ad94526ba">TriGPU</a></li>
+<li>v0&#160;:&#160;<a class="el" href="probe__bake_8comp.html#a89141f5c174cd50caa7e953f65ab8793">Face</a>, <a class="el" href="group__ui__group.html#a303a9c5971823d01673ce5a1e6dd871d">Glyph</a>, <a class="el" href="engine__types_8h.html#ac264de6d3f185ebd94b9831c702f048f">TriGPU</a></li>
+<li>v1&#160;:&#160;<a class="el" href="probe__bake_8comp.html#ac6b13e3c0907b2036de439d429e42ba8">Face</a>, <a class="el" href="group__ui__group.html#a487dd3ca7c2a85671cc88b00730af0ed">Glyph</a>, <a class="el" href="engine__types_8h.html#a33124a3ce2e9c891ad32b8c67cfd7506">TriGPU</a></li>
+<li>v2&#160;:&#160;<a class="el" href="probe__bake_8comp.html#aca7982ce98a47e83bb29f70d57a21ade">Face</a>, <a class="el" href="engine__types_8h.html#a03a3fc72abe1b312f5ebb01ad94526ba">TriGPU</a></li>
 <li>v3&#160;:&#160;<a class="el" href="engine__types_8h.html#ac3e3f4244a6cbc3c86587d62695a9d19">AnimationKeyframe::[union].val</a></li>
 <li>val&#160;:&#160;<a class="el" href="engine__types_8h.html#adc728fbc7b16945ef3e7761e5cb9774d">AnimationKeyframe</a>, <a class="el" href="engine__types_8h.html#ad2d11d8ebfecf3b2a0f975618cc432cc">Filter</a>, <a class="el" href="engine__types_8h.html#a3fbfd1ba470cc593557bb7a67dd7301a">RProbeUBO::Align16</a>, <a class="el" href="group__ui__group.html#add37a43c5a229632a84fee1220c5a026">UICallback</a>, <a class="el" href="group__ui__group.html#a740a02baea102fbff47dcb9749e70221">UISlider</a></li>
-<li>valid&#160;:&#160;<a class="el" href="group__aprobe__group.html#aa6d688f661882190ff15b0bb1b353145">AudioSampleGPU</a>, <a class="el" href="engine__types_8h.html#a576f8d646c9dafa4f6008612e8c32ee1">UVIsland</a>, <a class="el" href="engine__types_8h.html#ae48429781c2c21093e8a40befa3b19c1">UVMapping</a></li>
+<li>valid&#160;:&#160;<a class="el" href="audio__probe__bake_8comp.html#a966cba790c3d74193707d173417980a3">AudioSample</a>, <a class="el" href="group__aprobe__group.html#aa6d688f661882190ff15b0bb1b353145">AudioSampleGPU</a>, <a class="el" href="engine__types_8h.html#a576f8d646c9dafa4f6008612e8c32ee1">UVIsland</a>, <a class="el" href="engine__types_8h.html#ae48429781c2c21093e8a40befa3b19c1">UVMapping</a></li>
 <li>values&#160;:&#160;<a class="el" href="engine__types_8h.html#a21041b7e0e998988e9a4c3be2b61519e">AnimationSampler</a></li>
 <li>vao&#160;:&#160;<a class="el" href="engine__types_8h.html#a9883fea588d689eb1f4073ea0533ef56">VertexLayout</a></li>
 <li>vbo&#160;:&#160;<a class="el" href="engine__types_8h.html#a0f32bd82582964c7023918fce844dfb7">VertexLayout</a></li>
 <li>vel&#160;:&#160;<a class="el" href="group__physics__group.html#a2b63c3dd9dd5957013e69252967eb6e6">PhysicsComponent</a></li>
 <li>velocity&#160;:&#160;<a class="el" href="engine__types_8h.html#a3c5f7ffc2916a44f879e4635c24b93c4">Spring</a></li>
 <li>vert_path&#160;:&#160;<a class="el" href="engine__types_8h.html#a99059a335b32681ff6993a3533c7cbd8">ShaderProgram</a></li>
-<li>vertex_count&#160;:&#160;<a class="el" href="engine__types_8h.html#abf12a35e505a839ce68e9d9a5c2b5624">MeshGPU</a>, <a class="el" href="engine__types_8h.html#adb1c1b495e9c207a8cc4bf45515e7352">SubMesh</a></li>
+<li>vertex_count&#160;:&#160;<a class="el" href="lightmap_8vert.html#a95f3044c774a3df73616e42c9b4f8a5e">Mesh</a>, <a class="el" href="engine__types_8h.html#abf12a35e505a839ce68e9d9a5c2b5624">MeshGPU</a>, <a class="el" href="group__shader__structs__group.html#acaaff85e90367cd5158dce8eb5e3ecf2">MeshNode</a>, <a class="el" href="engine__types_8h.html#adb1c1b495e9c207a8cc4bf45515e7352">SubMesh</a></li>
 <li>vertex_layouts&#160;:&#160;<a class="el" href="engine__types_8h.html#a4997410d34052c76a153ccb96e14a0c0">Globals</a></li>
-<li>vertex_offset&#160;:&#160;<a class="el" href="engine__types_8h.html#abdb15808b61de6e502e8be37d93f8346">MeshGPU</a></li>
+<li>vertex_offset&#160;:&#160;<a class="el" href="lightmap_8vert.html#a1126c423f55bc32a14b7cd65471fbded">Mesh</a>, <a class="el" href="engine__types_8h.html#abdb15808b61de6e502e8be37d93f8346">MeshGPU</a>, <a class="el" href="group__shader__structs__group.html#a3c7394c8137cb3eb21b2cdd5d0662c3e">MeshNode</a></li>
 <li>vertex_size&#160;:&#160;<a class="el" href="engine__types_8h.html#aa53478f4927ffea4dc056f2a3554431f">VertexLayout</a></li>
-<li>vertices&#160;:&#160;<a class="el" href="group__physics__group.html#a0a8744845a20dfdd1f7ad934d294ccae">ConvexHull</a>, <a class="el" href="engine__types_8h.html#a153a0a3907ca3f05cdd5adcab1e1dbc1">EPAWorkspace</a>, <a class="el" href="engine__types_8h.html#aeecd06af64f0f9e8bde9a323303290ae">Mesh</a>, <a class="el" href="engine__types_8h.html#acd57e7e662f6ec55a809b32a7026d912">VertexData</a></li>
+<li>vertices&#160;:&#160;<a class="el" href="group__physics__group.html#a0a8744845a20dfdd1f7ad934d294ccae">ConvexHull</a>, <a class="el" href="engine__types_8h.html#a153a0a3907ca3f05cdd5adcab1e1dbc1">EPAWorkspace</a>, <a class="el" href="lightmap_8vert.html#aeecd06af64f0f9e8bde9a323303290ae">Mesh</a>, <a class="el" href="engine__types_8h.html#acd57e7e662f6ec55a809b32a7026d912">VertexData</a></li>
 <li>vertices_count&#160;:&#160;<a class="el" href="engine__types_8h.html#ae155fac1308720ea4c8337a7dd3fe59f">EPAWorkspace</a></li>
 <li>view&#160;:&#160;<a class="el" href="engine__types_8h.html#ab45512950ebd01e334f479f83d6208c0">CamData</a>, <a class="el" href="engine__types_8h.html#a19b463d53d75456c23220a89edf67525">ShadowmapUBO</a></li>
 <li>viewCount&#160;:&#160;<a class="el" href="engine__types_8h.html#a951adb6ae1c516ab350a18bbfc56cb47">GLTFDoc</a></li>
 <li>views&#160;:&#160;<a class="el" href="engine__types_8h.html#ab7957f7f5fb3ba1a30d08713a070a11f">GLTFDoc</a></li>
 <li>virtual_pos&#160;:&#160;<a class="el" href="group__audio__group.html#a9809c518e72e9df1ca0cd86e66dfef9e">AudioEmitter</a></li>
 <li>visibility&#160;:&#160;<a class="el" href="engine__types_8h.html#ab7830762de88415489995442cb931141">GlobalInstanceGPU</a></li>
-<li>visible&#160;:&#160;<a class="el" href="group__ui__group.html#a31b0a6fea719038001f5d291341d2923">TextBox</a>, <a class="el" href="group__ui__group.html#a5979f2a5185ed176181bff92d651af4e">TextBoxGPU</a>, <a class="el" href="group__ui__group.html#a9cb92e4437c1e275b2db3651091390d8">UIElement</a>, <a class="el" href="group__ui__group.html#a0a3f43ccc6b4f43deb16bff20e066294">UIElementGPU</a></li>
+<li>visible&#160;:&#160;<a class="el" href="group__ui__group.html#af383248980008401981485e949ff39e1">TextBox</a>, <a class="el" href="group__ui__group.html#a5979f2a5185ed176181bff92d651af4e">TextBoxGPU</a>, <a class="el" href="group__ui__group.html#ad79bbb4aa7a4d19edb4d649a15a97530">UIElement</a>, <a class="el" href="group__ui__group.html#a0a3f43ccc6b4f43deb16bff20e066294">UIElementGPU</a></li>
 <li>visible_faces_count&#160;:&#160;<a class="el" href="engine__types_8h.html#a8ebc74ec1f3dfcfb7ee8d727308338fb">EPAWorkspace</a></li>
 <li>visible_faces_indices&#160;:&#160;<a class="el" href="engine__types_8h.html#ae693d9f5f5562821053a745f271c39a7">EPAWorkspace</a></li>
 <li>volume&#160;:&#160;<a class="el" href="group__editor__group.html#aeff0860cb4303eaf8ebe4593666e5c6d">AProbeEditorMenu</a>, <a class="el" href="group__editor__group.html#a6785b419f8d66ed400d1d1fcde7c8fbb">EditorSettings</a></li>

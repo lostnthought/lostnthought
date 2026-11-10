@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,138 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('bokeh_8frag.ht
 <div class="contents">
 
 <p><a href="bokeh_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a39fca2c8fe34ab0c307cdd0f7e7f53d6" id="r_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></td></tr>
+<tr class="memitem:a6d8dd0540ed9af35f34cd31b838cacce" id="r_a6d8dd0540ed9af35f34cd31b838cacce"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+<tr class="memitem:ae6f5477f760c9a7631b4f3aa14eb152a" id="r_ae6f5477f760c9a7631b4f3aa14eb152a"><td class="memItemLeft">const <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae6f5477f760c9a7631b4f3aa14eb152a">hex_taps</a> [19]</td></tr>
+<tr class="memitem:a6f6fa00d8e99340327be0e1f506104bc" id="r_a6f6fa00d8e99340327be0e1f506104bc"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a6f6fa00d8e99340327be0e1f506104bc">uCOC</a></td></tr>
+<tr class="memitem:a368375d738db1cdfacb851f85827feea" id="r_a368375d738db1cdfacb851f85827feea"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a368375d738db1cdfacb851f85827feea">uTexelSize</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bokeh_8frag_source.html#l00020">20</a> of file <a class="el" href="bokeh_8frag_source.html">bokeh.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="bokeh_8frag_source.html#l00007">hex_taps</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="bokeh_8frag_source.html#l00017">uCOC</a>, <a class="el" href="bokeh_8frag_source.html#l00018">uTexelSize</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, and <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a39fca2c8fe34ab0c307cdd0f7e7f53d6" name="a39fca2c8fe34ab0c307cdd0f7e7f53d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bokeh_8frag_source.html#l00004">4</a> of file <a class="el" href="bokeh_8frag_source.html">bokeh.frag</a>.</p>
+
+</div>
+</div>
+<a id="a6d8dd0540ed9af35f34cd31b838cacce" name="a6d8dd0540ed9af35f34cd31b838cacce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8dd0540ed9af35f34cd31b838cacce">&#9670;&#160;</a></span>fragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec4">vec4</a> fragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bokeh_8frag_source.html#l00005">5</a> of file <a class="el" href="bokeh_8frag_source.html">bokeh.frag</a>.</p>
+
+</div>
+</div>
+<a id="ae6f5477f760c9a7631b4f3aa14eb152a" name="ae6f5477f760c9a7631b4f3aa14eb152a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f5477f760c9a7631b4f3aa14eb152a">&#9670;&#160;</a></span>hex_taps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="types_8h.html#structvec2">vec2</a> hex_taps[19]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">                    = <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>[](</div>
+<div class="line">    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.00,  0.00),</div>
+<div class="line">    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.50,  0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.50, -0.86), </div>
+<div class="line">    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-0.50, -0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-0.50,  0.86),</div>
+<div class="line">    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.00,  1.73), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 2.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.00, -1.73), </div>
+<div class="line">    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.00, -1.73), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-2.00,  0.00), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.00,  1.73),</div>
+<div class="line">    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.50,  0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 1.50, -0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.00, -1.73), </div>
+<div class="line">    <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.50, -0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>(-1.50,  0.86), <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a>( 0.00,  1.73)</div>
+<div class="line">)</div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="bokeh_8frag_source.html#l00007">7</a> of file <a class="el" href="bokeh_8frag_source.html">bokeh.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="bokeh_8frag_source.html#l00020">main()</a>.</p>
+
+</div>
+</div>
+<a id="a6f6fa00d8e99340327be0e1f506104bc" name="a6f6fa00d8e99340327be0e1f506104bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6fa00d8e99340327be0e1f506104bc">&#9670;&#160;</a></span>uCOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uCOC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bokeh_8frag_source.html#l00017">17</a> of file <a class="el" href="bokeh_8frag_source.html">bokeh.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="bokeh_8frag_source.html#l00020">main()</a>.</p>
+
+</div>
+</div>
+<a id="a368375d738db1cdfacb851f85827feea" name="a368375d738db1cdfacb851f85827feea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a368375d738db1cdfacb851f85827feea">&#9670;&#160;</a></span>uTexelSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structvec2">vec2</a> uTexelSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bokeh_8frag_source.html#l00018">18</a> of file <a class="el" href="bokeh_8frag_source.html">bokeh.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="bokeh_8frag_source.html#l00020">main()</a>, and <a class="el" href="ssao_8frag_source.html#l00059">reconstruct_normal()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

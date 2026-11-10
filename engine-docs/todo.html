@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,42 +134,46 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('todo.html','',
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Global <a class="el" href="render_8h.html#ac0ba48c0ba031eef701f0ba7494ca19b">aabb_to_vertices</a>  (<a class="el" href="engine__types_8h.html#struct_debug_vertex" title="The structure used for debug wireframes.">DebugVertex</a> *out, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *aabb, <a class="el" href="types_8h.html#structvec3">vec3</a> offset)</dt>
-<dd><a class="anchor" id="_todo000013"></a>Make a matrix transform instead of an offset. Or instance the AABBs and transform on the GPU.  </dd>
+<dd><a class="anchor" id="_todo000015"></a>Make a matrix transform instead of an offset. Or instance the AABBs and transform on the GPU.  </dd>
 <dt>Global <a class="el" href="render_8h.html#a187fdef1c8e91bed6d022d63fc468be2">add_text_box</a>  (<a class="el" href="types_8h.html#struct_vector">Vector</a> *tvs, <a class="el" href="types_8h.html#struct_vector">Vector</a> *tis, <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> *tb, int current_box)</dt>
-<dd><a class="anchor" id="_todo000014"></a>This current_box variable makes it so we can never reorder our <a class="el" href="main_8c.html#a891e5e5dcfb44e0cf47da377e33cfac5">TEXT_BOX_SSBO</a> or else every vertex will be pointing to the wrong data. Resolve this.  </dd>
+<dd><a class="anchor" id="_todo000016"></a>This current_box variable makes it so we can never reorder our <a class="el" href="main_8c.html#a891e5e5dcfb44e0cf47da377e33cfac5">TEXT_BOX_SSBO</a> or else every vertex will be pointing to the wrong data. Resolve this.  </dd>
 <dt>Global <a class="el" href="group__ui__group.html#ga82a85acaa489a9e79f17073dea4c93be">align_text_box_label</a>  (<a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a> *el)</dt>
-<dd><a class="anchor" id="_todo000021"></a>This still is off-center sometimes. It likely has to do with the resolution scaling.  </dd>
+<dd><a class="anchor" id="_todo000023"></a>This still is off-center sometimes. It likely has to do with the resolution scaling.  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">AssetInstance</a>  </dt>
-<dd><a class="anchor" id="_todo000002"></a>Very important: The first_skin is not actually in use and needs to be resolved to use skin_indices instead in <a class="el" href="init_8c.html#ac1c505fa384e621b6e9e445d9f2477f2" title="Initializes and spawns a new AssetInstance based on an Asset name, and places the AssetInstance....">init_new_asset_instance()</a>  </dd>
+<dd><a class="anchor" id="_todo000004"></a>Very important: The first_skin is not actually in use and needs to be resolved to use skin_indices instead in <a class="el" href="init_8c.html#ac1c505fa384e621b6e9e445d9f2477f2" title="Initializes and spawns a new AssetInstance based on an Asset name, and places the AssetInstance....">init_new_asset_instance()</a>  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">AStarWorkspace</a>  </dt>
-<dd><a class="anchor" id="_todo000004"></a>Expand path size or make it reallocatable because the current limit is minimal.  </dd>
+<dd><a class="anchor" id="_todo000006"></a>Expand path size or make it reallocatable because the current limit is minimal.  </dd>
 <dt>Global <a class="el" href="group__ui__group.html#gaca118e444c8d0e7abe5a0d014b5ff343">create_ui_container</a>  (<a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a> *el, int menu_id)</dt>
-<dd><a class="anchor" id="_todo000019"></a>menu_id should be the same as the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s menu_id. Just use the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s.  </dd>
+<dd><a class="anchor" id="_todo000021"></a>menu_id should be the same as the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s menu_id. Just use the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s.  </dd>
 <dt>Global <a class="el" href="group__ui__group.html#ga948fd918289e648600e2641fda200f93">delete_ui_container</a>  (<a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a> *el)</dt>
-<dd><a class="anchor" id="_todo000020"></a>Possible that a pointer is too much to ask, but think through the cases.  </dd>
+<dd><a class="anchor" id="_todo000022"></a>Possible that a pointer is too much to ask, but think through the cases.  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">DrawCommand</a>  </dt>
-<dd><a class="anchor" id="_todo000003"></a>Possibly sort 128 keys instead of 64  </dd>
+<dd><a class="anchor" id="_todo000005"></a>Possibly sort 128 keys instead of 64  </dd>
+<dt>Global <a class="el" href="group__aprobe__group.html#ga29684eaf012554ebbe1bbbe2e8252adc">extract_t60</a>  (float *edc_db, <a class="el" href="group__aprobe__group.html#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> *probe, int band, float bin_duration_seconds, int last_sample)</dt>
+<dd><a class="anchor" id="_todo000002"></a>Make sure it's safe to return early.  </dd>
 <dt>Struct <a class="el" href="group__ui__group.html">Font</a>  </dt>
-<dd><a class="anchor" id="_todo000016"></a>Figure out if highest_y is actually used.  </dd>
+<dd><a class="anchor" id="_todo000018"></a>Figure out if highest_y is actually used.  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">Globals</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000005"></a>rename noclip </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000007"></a>rename noclip </p>
 <p class="interdd"></p>
 <p class="interdd">change world min and size </p>
 <p class="interdd"></p>
 <p class="enddd">remove probe spacing - should no longer be needed, use resolution  </p>
 </dd>
 <dt>Global <a class="el" href="engine__types_8h.html#ab7789c482b0b240ed2587ecdfe95c333">MAX_ANIMATION_INDICES</a>  </dt>
-<dd><a class="anchor" id="_todo000001"></a>Remove this maximum or increase it.  </dd>
-<dt>Global <a class="el" href="engine__types_8h.html#a2c30498e928cc2cc11b005c6a278e60d">MeshNode::children</a>  [MAX_NODE_CHILDREN]</dt>
-<dd><a class="anchor" id="_todo000007"></a>Remove this static array and replace it with a safer memory system for larger node graphs.  </dd>
+<dd><a class="anchor" id="_todo000003"></a>Remove this maximum or increase it.  </dd>
+<dt>Global <a class="el" href="group__shader__structs__group.html#a2c30498e928cc2cc11b005c6a278e60d">MeshNode::children</a>  [MAX_NODE_CHILDREN]</dt>
+<dd><a class="anchor" id="_todo000009"></a>Remove this static array and replace it with a safer memory system for larger node graphs.  </dd>
+<dt>Global <a class="el" href="group__aprobe__group.html#ga544d529155250722aedf702d339bc204">query_probe_volume</a>  (<a class="el" href="types_8h.html#structvec3">vec3</a> pos)</dt>
+<dd><a class="anchor" id="_todo000001"></a>Handle multiple <a class="el" href="group__aprobe__group.html#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a>s and bordering <a class="el" href="group__aprobe__group.html#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a>s.  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">ShaderProgram</a>  </dt>
-<dd><a class="anchor" id="_todo000006"></a>Expand uniform count or make it dynamic?  </dd>
+<dd><a class="anchor" id="_todo000008"></a>Expand uniform count or make it dynamic?  </dd>
 <dt>Global <a class="el" href="init_8h.html#a9dd5abfdf2766f832e17f4fd8c092a45">spawn_point</a>  </dt>
-<dd><a class="anchor" id="_todo000011"></a>encapsulate.  </dd>
+<dd><a class="anchor" id="_todo000013"></a>encapsulate.  </dd>
 <dt>Struct <a class="el" href="group__ui__group.html">TextBox</a>  </dt>
-<dd><a class="anchor" id="_todo000017"></a>Go through some of these members like hovered and see if necessary.  </dd>
+<dd><a class="anchor" id="_todo000019"></a>Go through some of these members like hovered and see if necessary.  </dd>
 <dt>Struct <a class="el" href="group__ui__group.html">UIElement</a>  </dt>
-<dd><a class="anchor" id="_todo000018"></a>Clear unused fields. </dd>
+<dd><a class="anchor" id="_todo000020"></a>Clear unused fields. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

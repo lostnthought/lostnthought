@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,269 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('brdf_8frag.htm
 <div class="contents">
 
 <p><a href="brdf_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a520cf6a67180365d37ec465480339a47" id="r_a520cf6a67180365d37ec465480339a47"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a520cf6a67180365d37ec465480339a47">RadicalInverse_VdC</a> (uint bits)</td></tr>
+<tr class="memitem:a912ce449d0fe81d2e79ff57a93f013d2" id="r_a912ce449d0fe81d2e79ff57a93f013d2"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a912ce449d0fe81d2e79ff57a93f013d2">Hammersley</a> (uint i, uint N)</td></tr>
+<tr class="memitem:a3a576765e155d70c61c8e053b71baabc" id="r_a3a576765e155d70c61c8e053b71baabc"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3a576765e155d70c61c8e053b71baabc">ImportanceSampleGGX</a> (<a class="el" href="types_8h.html#structvec2">vec2</a> Xi, <a class="el" href="types_8h.html#structvec3">vec3</a> N, float roughness)</td></tr>
+<tr class="memitem:a11d15ca10e984be6dd53497282809249" id="r_a11d15ca10e984be6dd53497282809249"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a11d15ca10e984be6dd53497282809249">GeometrySchlickGGX</a> (float NdotV, float roughness)</td></tr>
+<tr class="memitem:a53c57f52e5919cb9d2ea848a3a1f915f" id="r_a53c57f52e5919cb9d2ea848a3a1f915f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a53c57f52e5919cb9d2ea848a3a1f915f">GeometrySmith</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> N, <a class="el" href="types_8h.html#structvec3">vec3</a> V, <a class="el" href="types_8h.html#structvec3">vec3</a> L, float roughness)</td></tr>
+<tr class="memitem:a58c0674da08f1382d1afdd77ec97ce9f" id="r_a58c0674da08f1382d1afdd77ec97ce9f"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a58c0674da08f1382d1afdd77ec97ce9f">IntegrateBRDF</a> (float NdotV, float roughness)</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a64dccd911a71deebb50a14395eea3103" id="r_a64dccd911a71deebb50a14395eea3103"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a64dccd911a71deebb50a14395eea3103">FragColor</a></td></tr>
+<tr class="memitem:a39fca2c8fe34ab0c307cdd0f7e7f53d6" id="r_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></td></tr>
+<tr class="memitem:af63480c89a929e95b13879677976d560" id="r_af63480c89a929e95b13879677976d560"><td class="memItemLeft">const uint&#160;</td><td class="memItemRight"><a class="el" href="#af63480c89a929e95b13879677976d560">SAMPLE_COUNT</a> = 1024u</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a520cf6a67180365d37ec465480339a47" name="a520cf6a67180365d37ec465480339a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520cf6a67180365d37ec465480339a47">&#9670;&#160;</a></span>RadicalInverse_VdC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RadicalInverse_VdC </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>bits</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00008">8</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="brdf_8frag_source.html#l00008">RadicalInverse_VdC()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="brdf_8frag_source.html#l00017">Hammersley()</a>, and <a class="el" href="brdf_8frag_source.html#l00008">RadicalInverse_VdC()</a>.</p>
+
+</div>
+</div>
+<a id="a912ce449d0fe81d2e79ff57a93f013d2" name="a912ce449d0fe81d2e79ff57a93f013d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912ce449d0fe81d2e79ff57a93f013d2">&#9670;&#160;</a></span>Hammersley()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec2">vec2</a> Hammersley </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00017">17</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="brdf_8frag_source.html#l00017">Hammersley()</a>, and <a class="el" href="brdf_8frag_source.html#l00008">RadicalInverse_VdC()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="brdf_8frag_source.html#l00017">Hammersley()</a>, and <a class="el" href="brdf_8frag_source.html#l00051">IntegrateBRDF()</a>.</p>
+
+</div>
+</div>
+<a id="a3a576765e155d70c61c8e053b71baabc" name="a3a576765e155d70c61c8e053b71baabc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a576765e155d70c61c8e053b71baabc">&#9670;&#160;</a></span>ImportanceSampleGGX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> ImportanceSampleGGX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec2">vec2</a></td>          <td class="paramname"><span class="paramname"><em>Xi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00021">21</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="brdf_8frag_source.html#l00021">ImportanceSampleGGX()</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="brdf_8frag_source.html#l00021">ImportanceSampleGGX()</a>, and <a class="el" href="brdf_8frag_source.html#l00051">IntegrateBRDF()</a>.</p>
+
+</div>
+</div>
+<a id="a11d15ca10e984be6dd53497282809249" name="a11d15ca10e984be6dd53497282809249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d15ca10e984be6dd53497282809249">&#9670;&#160;</a></span>GeometrySchlickGGX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GeometrySchlickGGX </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>NdotV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00040">40</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="brdf_8frag_source.html#l00040">GeometrySchlickGGX()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="brdf_8frag_source.html#l00040">GeometrySchlickGGX()</a>, and <a class="el" href="brdf_8frag_source.html#l00045">GeometrySmith()</a>.</p>
+
+</div>
+</div>
+<a id="a53c57f52e5919cb9d2ea848a3a1f915f" name="a53c57f52e5919cb9d2ea848a3a1f915f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c57f52e5919cb9d2ea848a3a1f915f">&#9670;&#160;</a></span>GeometrySmith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GeometrySmith </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>V</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>L</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00045">45</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="brdf_8frag_source.html#l00040">GeometrySchlickGGX()</a>, and <a class="el" href="brdf_8frag_source.html#l00045">GeometrySmith()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="brdf_8frag_source.html#l00045">GeometrySmith()</a>, and <a class="el" href="brdf_8frag_source.html#l00051">IntegrateBRDF()</a>.</p>
+
+</div>
+</div>
+<a id="a58c0674da08f1382d1afdd77ec97ce9f" name="a58c0674da08f1382d1afdd77ec97ce9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c0674da08f1382d1afdd77ec97ce9f">&#9670;&#160;</a></span>IntegrateBRDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec2">vec2</a> IntegrateBRDF </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>NdotV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00051">51</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="brdf_8frag_source.html#l00045">GeometrySmith()</a>, <a class="el" href="brdf_8frag_source.html#l00017">Hammersley()</a>, <a class="el" href="brdf_8frag_source.html#l00021">ImportanceSampleGGX()</a>, <a class="el" href="brdf_8frag_source.html#l00051">IntegrateBRDF()</a>, <a class="el" href="brdf_8frag_source.html#l00006">SAMPLE_COUNT</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="brdf_8frag_source.html#l00051">IntegrateBRDF()</a>, and <a class="el" href="brdf_8frag_source.html#l00082">main()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00082">82</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="ssao__blur_8frag_source.html#l00002">FragColor</a>, <a class="el" href="brdf_8frag_source.html#l00051">IntegrateBRDF()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a64dccd911a71deebb50a14395eea3103" name="a64dccd911a71deebb50a14395eea3103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64dccd911a71deebb50a14395eea3103">&#9670;&#160;</a></span>FragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec2">vec2</a> FragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00003">3</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+</div>
+</div>
+<a id="a39fca2c8fe34ab0c307cdd0f7e7f53d6" name="a39fca2c8fe34ab0c307cdd0f7e7f53d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00004">4</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+</div>
+</div>
+<a id="af63480c89a929e95b13879677976d560" name="af63480c89a929e95b13879677976d560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af63480c89a929e95b13879677976d560">&#9670;&#160;</a></span>SAMPLE_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint SAMPLE_COUNT = 1024u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="brdf_8frag_source.html#l00006">6</a> of file <a class="el" href="brdf_8frag_source.html">brdf.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="brdf_8frag_source.html#l00051">IntegrateBRDF()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

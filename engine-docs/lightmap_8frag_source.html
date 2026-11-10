@@ -116,30 +116,46 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('lightmap_8frag
   <div class="headertitle"><div class="title">lightmap.frag</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="lightmap_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>#version 430 core</div>
+<a href="lightmap_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#version 430 core</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>// gbuffer</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>layout(location = 0) out vec4 outWorldPosition;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>layout(location = 1) out vec4 outWorldNormal;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>layout(location = 2) out ivec3 outMaterialMeshTriID;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// gbuffer</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#a1ae463f4af4c25f55133a7547f7c89eb">    4</a></span><a class="code hl_function" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a>(location = 0) out <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> outWorldPosition;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><a class="code hl_function" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a>(location = 1) out <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> outWorldNormal;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><a class="code hl_function" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a>(location = 2) out <a class="code hl_struct" href="types_8h.html#structivec3">ivec3</a> outMaterialMeshTriID;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>in vec3 WorldPos;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>in vec3 WorldNormal;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#ae18169c1f4b5370bb68b96d77eb5945d">    8</a></span>in <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> <a class="code hl_variable" href="lightmap_8frag.html#ae18169c1f4b5370bb68b96d77eb5945d">WorldPos</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#a06a5a0549debd5eb89121b929d8d1a35">    9</a></span>in <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> <a class="code hl_variable" href="lightmap_8frag.html#a06a5a0549debd5eb89121b929d8d1a35">WorldNormal</a>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>// uvs are stored in pos and normal</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>in vec2 vUV;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>in flat int MeshNode;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>in flat int MaterialID;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>in flat int TriID;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// uvs are stored in pos and normal</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">   13</a></span>in <a class="code hl_struct" href="types_8h.html#structvec2">vec2</a> <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#ab82729570a1ca826f4f2b37a60c75067">   14</a></span>in flat <span class="keywordtype">int</span> <a class="code hl_struct" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#a17422cb421744d707a5f40aa1984265b">   15</a></span>in flat <span class="keywordtype">int</span> <a class="code hl_variable" href="lightmap_8frag.html#a17422cb421744d707a5f40aa1984265b">MaterialID</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#ab5246b5884a14cad832e5226dd891ead">   16</a></span>in flat <span class="keywordtype">int</span> <a class="code hl_variable" href="lightmap_8frag.html#ab5246b5884a14cad832e5226dd891ead">TriID</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>void main() {</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="lightmap_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">   18</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>() {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    outWorldPosition = vec4(WorldPos, vUV.x);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    outWorldNormal = vec4((WorldNormal), vUV.y);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    outMaterialMeshTriID = ivec3(MaterialID, MeshNode, TriID);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    outWorldPosition = <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>(<a class="code hl_variable" href="lightmap_8frag.html#ae18169c1f4b5370bb68b96d77eb5945d">WorldPos</a>, <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>.<a class="code hl_variable" href="types_8h.html#a002d3519d48fe3cd79729b5b0ded74bf">x</a>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    outWorldNormal = <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>((<a class="code hl_variable" href="lightmap_8frag.html#a06a5a0549debd5eb89121b929d8d1a35">WorldNormal</a>), <a class="code hl_variable" href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a>.<a class="code hl_variable" href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">y</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    outMaterialMeshTriID = <a class="code hl_struct" href="types_8h.html#structivec3">ivec3</a>(<a class="code hl_variable" href="lightmap_8frag.html#a17422cb421744d707a5f40aa1984265b">MaterialID</a>, <a class="code hl_struct" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a>, <a class="code hl_variable" href="lightmap_8frag.html#ab5246b5884a14cad832e5226dd891ead">TriID</a>);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_a38d7d2d84fb7cc382da7b98797a4c70d"><div class="ttname"><a href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a></div><div class="ttdeci">layout(local_size_x=16, local_size_y=16) in</div></div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="agroup__shader__structs__group_html_struct_mesh_node"><div class="ttname"><a href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a></div><div class="ttdoc">MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00085">audio_probe_bake.comp:85</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a06a5a0549debd5eb89121b929d8d1a35"><div class="ttname"><a href="lightmap_8frag.html#a06a5a0549debd5eb89121b929d8d1a35">WorldNormal</a></div><div class="ttdeci">in vec3 WorldNormal</div><div class="ttdef"><b>Definition</b> <a href="#l00009">lightmap.frag:9</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a17422cb421744d707a5f40aa1984265b"><div class="ttname"><a href="lightmap_8frag.html#a17422cb421744d707a5f40aa1984265b">MaterialID</a></div><div class="ttdeci">in flat int MaterialID</div><div class="ttdef"><b>Definition</b> <a href="#l00015">lightmap.frag:15</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_ab5246b5884a14cad832e5226dd891ead"><div class="ttname"><a href="lightmap_8frag.html#ab5246b5884a14cad832e5226dd891ead">TriID</a></div><div class="ttdeci">in flat int TriID</div><div class="ttdef"><b>Definition</b> <a href="#l00016">lightmap.frag:16</a></div></div>
+<div class="ttc" id="alightmap_8frag_html_ae18169c1f4b5370bb68b96d77eb5945d"><div class="ttname"><a href="lightmap_8frag.html#ae18169c1f4b5370bb68b96d77eb5945d">WorldPos</a></div><div class="ttdeci">in vec3 WorldPos</div><div class="ttdef"><b>Definition</b> <a href="#l00008">lightmap.frag:8</a></div></div>
+<div class="ttc" id="atypes_8h_html_a002d3519d48fe3cd79729b5b0ded74bf"><div class="ttname"><a href="types_8h.html#a002d3519d48fe3cd79729b5b0ded74bf">vec2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_a6d28b12b511da692550fc9d37b4e9b1d"><div class="ttname"><a href="types_8h.html#a6d28b12b511da692550fc9d37b4e9b1d">vec2::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structivec3"><div class="ttname"><a href="types_8h.html#structivec3">ivec3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00015">types.h:15</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec3"><div class="ttname"><a href="types_8h.html#structvec3">vec3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec4"><div class="ttname"><a href="types_8h.html#structvec4">vec4</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

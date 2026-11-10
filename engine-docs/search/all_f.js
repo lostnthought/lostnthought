@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['obb_0',['OBB',['../types_8h.html#struct_o_b_b',1,'']]],
+  ['obb_0',['OBB',['../group__shader__structs__group.html#struct_o_b_b',1,'']]],
   ['obb_1',['obb',['../engine__types_8h.html#a6a9eca652a4268917112c3a1bda2abf6',1,'Trigger::obb'],['../engine__types_8h.html#aa182f982d6240230013b340bbef3141a',1,'ProbeVolumeUBO::obb'],['../group__aprobe__group.html#a9fa4e06f8a19048d9599fefb82959e79',1,'ProbeVolume::obb']]],
   ['obb_5faxis_5fx_5fangle_2',['obb_axis_x_angle',['../group__editor__group.html#ae9739ab0f815ea8a60f2d0732ee550c9',1,'EditorSettings']]],
   ['obb_5faxis_5fy_5fangle_3',['obb_axis_y_angle',['../group__editor__group.html#a6062045baeec4db2f9431e1f1943cc8b',1,'EditorSettings']]],
@@ -16,7 +16,7 @@ var searchData=
   ['occlusion_5ftex_13',['occlusion_tex',['../engine__types_8h.html#a6bde41d63b10f1dc4ba27e00a19aa215',1,'GLTFMaterial']]],
   ['occupied_14',['occupied',['../engine__types_8h.html#a1ac8c16743ed509c2aedd0f335d0e648',1,'LightmapAtlas']]],
   ['of_20contents_15',['Table of Contents',['../index.html#toc_sec',1,'']]],
-  ['offset_16',['offset',['../engine__types_8h.html#a7557e30b943a85ab874af4b209c59efe',1,'ClusterGPU::offset'],['../engine__types_8h.html#a46646b06450a7e9f176ad29ea0c8771f',1,'MeshNode::offset'],['../engine__types_8h.html#abb0a8a8728cda7e1a6dab43f1685446a',1,'Mesh::offset']]],
+  ['offset_16',['offset',['../engine__types_8h.html#a7557e30b943a85ab874af4b209c59efe',1,'ClusterGPU::offset'],['../group__shader__structs__group.html#a46646b06450a7e9f176ad29ea0c8771f',1,'MeshNode::offset'],['../lightmap_8vert.html#abb0a8a8728cda7e1a6dab43f1685446a',1,'Mesh::offset'],['../group__shader__structs__group.html#ac96ed952f4c7e20ab2752802b3cc1205',1,'Cluster::offset']]],
   ['old_5fangular_17',['old_angular',['../group__physics__group.html#abe5ae15182beda454a63aa4b8b42415f',1,'PhysicsComponent']]],
   ['old_5fvel_18',['old_vel',['../group__physics__group.html#a09e54e6a28683f04cb9319d06685e4c3',1,'PhysicsComponent']]],
   ['on_5fground_19',['on_ground',['../engine__types_8h.html#a0bee9a7b1606f635a367c1044b74db1b',1,'Camera']]],
@@ -27,9 +27,10 @@ var searchData=
   ['opening_5fmenu_24',['opening_menu',['../group__editor__group.html#a46360735d46a45969ea3d067c0c1252f',1,'EditorSettings']]],
   ['opennode_25',['OpenNode',['../engine__types_8h.html#struct_open_node',1,'']]],
   ['origin_26',['origin',['../lightmap_8c.html#a264a0d824c95b72838d2020cffdf2d84',1,'LMDebug']]],
-  ['outer_5fangle_27',['outer_angle',['../engine__types_8h.html#a7d485736bb90f467703a3a39f1b743da',1,'Light::outer_angle'],['../engine__types_8h.html#ad92a3950c3fc77507a071a22668d6a4d',1,'LightGPU::outer_angle']]],
-  ['outer_5fcos_28',['outer_cos',['../engine__types_8h.html#a4818a21edf755a786d46efe9147ef98d',1,'LightGPU']]],
-  ['output_29',['output',['../engine__types_8h.html#a8cbff2343f75852c9066b4c6cb089bb8',1,'GLTFAnimationSampler']]],
-  ['override_5farm_30',['override_arm',['../engine__types_8h.html#ac01ed015869a9eb03bd3c7e405e188d2',1,'Material']]],
-  ['override_5ftransparent_31',['override_transparent',['../engine__types_8h.html#a53040b8398f4df35d128705ca7022f04',1,'Material::override_transparent'],['../engine__types_8h.html#a0ec464246905bb29648c1aa6403fc264',1,'GLTFMaterial::override_transparent']]]
+  ['outdepth_27',['outDepth',['../depth__downsample_8frag.html#a7eeb27213560317b07a4e8469f4fa120',1,'depth_downsample.frag']]],
+  ['outer_5fangle_28',['outer_angle',['../group__shader__structs__group.html#a7d485736bb90f467703a3a39f1b743da',1,'Light::outer_angle'],['../engine__types_8h.html#ad92a3950c3fc77507a071a22668d6a4d',1,'LightGPU::outer_angle']]],
+  ['outer_5fcos_29',['outer_cos',['../engine__types_8h.html#a4818a21edf755a786d46efe9147ef98d',1,'LightGPU::outer_cos'],['../group__shader__structs__group.html#a9d61176080300752f5565e5518be4b71',1,'Light::outer_cos']]],
+  ['output_30',['output',['../engine__types_8h.html#a8cbff2343f75852c9066b4c6cb089bb8',1,'GLTFAnimationSampler']]],
+  ['override_5farm_31',['override_arm',['../group__shader__structs__group.html#ac01ed015869a9eb03bd3c7e405e188d2',1,'Material']]],
+  ['override_5ftransparent_32',['override_transparent',['../group__shader__structs__group.html#a53040b8398f4df35d128705ca7022f04',1,'Material::override_transparent'],['../engine__types_8h.html#a0ec464246905bb29648c1aa6403fc264',1,'GLTFMaterial::override_transparent']]]
 ];

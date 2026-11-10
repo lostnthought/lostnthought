@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -128,7 +137,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('dir_2ce0126117
 Files</h2></td></tr>
 <tr class="memitem:gltf_2Ec" id="r_gltf_2Ec"><td class="memItemLeft"><a href="gltf_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="gltf_8c.html">gltf.c</a></td></tr>
 <tr class="memitem:gltf_2Eh" id="r_gltf_2Eh"><td class="memItemLeft"><a href="gltf_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="gltf_8h.html">gltf.h</a></td></tr>
-<tr class="memdesc:gltf_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">GLTF parsing related utilities and important initialization data for <a class="el" href="engine__types_8h.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es, <a class="el" href="engine__types_8h.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s, and <a class="el" href="engine__types_8h.html#struct_material" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a>s. <br /></td></tr>
+<tr class="memdesc:gltf_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">GLTF parsing related utilities and important initialization data for <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es, <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s, and <a class="el" href="group__shader__structs__group.html#struct_material" title="The Materials parsed in from scene files that determine rendering pipeline setup, uploads,...">Material</a>s. <br /></td></tr>
 <tr class="memitem:init_2Ec" id="r_init_2Ec"><td class="memItemLeft"><a href="init_8c_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="init_8c.html">init.c</a></td></tr>
 <tr class="memitem:init_2Eh" id="r_init_2Eh"><td class="memItemLeft"><a href="init_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight"><a class="el" href="init_8h.html">init.h</a></td></tr>
 <tr class="memdesc:init_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Important globals for the entire engine and initialization functions that are mainly called on engine start. <br /></td></tr>

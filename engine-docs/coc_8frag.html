@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,318 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('coc_8frag.html
 <div class="contents">
 
 <p><a href="coc_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:MeshNode_5Fstruct_5Fmesh_5Fnode" id="r_MeshNode_5Fstruct_5Fmesh_5Fnode"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a></td></tr>
+<tr class="memdesc:struct_mesh_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s that describe the position of <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es, GLTF nodes for <a class="el" href="engine__types_8h.html#struct_g_l_t_f_animation" title="The GLTF structure of an Animation.">GLTFAnimation</a>s, or hold references to other <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <a href="group__shader__structs__group.html#struct_mesh_node">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:adc37d28f8277783604a65482c40e0200" id="r_adc37d28f8277783604a65482c40e0200"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adc37d28f8277783604a65482c40e0200">MAX_MESH_NODES</a>&#160;&#160;&#160;1024</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a251ff7187aa6805e7027554c86b34307" id="r_a251ff7187aa6805e7027554c86b34307"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a251ff7187aa6805e7027554c86b34307">layout</a> (std140, binding=0) uniform CameraData</td></tr>
+<tr class="memitem:a7c96623b88d2b1e72ab5b83680801684" id="r_a7c96623b88d2b1e72ab5b83680801684"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7c96623b88d2b1e72ab5b83680801684">get_view_pos_from_depth</a> (<a class="el" href="types_8h.html#structvec2">vec2</a> uv, float depth, <a class="el" href="types_8h.html#structmat4">mat4</a> invProjMatrix)</td></tr>
+<tr class="memitem:a9d181d2ecc74af53f4e67c4c588ea5e7" id="r_a9d181d2ecc74af53f4e67c4c588ea5e7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9d181d2ecc74af53f4e67c4c588ea5e7">linearize</a> (float z)</td></tr>
+<tr class="memitem:a5d44c5035762137cf3fe25b8baad04a5" id="r_a5d44c5035762137cf3fe25b8baad04a5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5d44c5035762137cf3fe25b8baad04a5">layout</a> (std430, binding=15) buffer MeshNodeData</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a39fca2c8fe34ab0c307cdd0f7e7f53d6" id="r_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></td></tr>
+<tr class="memitem:a6d8dd0540ed9af35f34cd31b838cacce" id="r_a6d8dd0540ed9af35f34cd31b838cacce"><td class="memItemLeft">out <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+<tr class="memitem:a4f588aa537b960aadd2d3a441a3a8d47" id="r_a4f588aa537b960aadd2d3a441a3a8d47"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a4f588aa537b960aadd2d3a441a3a8d47">gDepth</a></td></tr>
+<tr class="memitem:a158d8798faed156b59adf6d29d4ee947" id="r_a158d8798faed156b59adf6d29d4ee947"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a158d8798faed156b59adf6d29d4ee947">uScene</a></td></tr>
+<tr class="memitem:a62e4f486b21610b8d8aae616676954d8" id="r_a62e4f486b21610b8d8aae616676954d8"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#a62e4f486b21610b8d8aae616676954d8">uFocalLength</a></td></tr>
+<tr class="memitem:aed94d51d95f30e519969156472b59f47" id="r_aed94d51d95f30e519969156472b59f47"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#aed94d51d95f30e519969156472b59f47">uFStop</a></td></tr>
+<tr class="memitem:aab7aaf8b3432b550d246091e846483cf" id="r_aab7aaf8b3432b550d246091e846483cf"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#aab7aaf8b3432b550d246091e846483cf">uSensorHeight</a></td></tr>
+<tr class="memitem:adf664ca5c645d88ee7512f16d99a0526" id="r_adf664ca5c645d88ee7512f16d99a0526"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#adf664ca5c645d88ee7512f16d99a0526">uMaxBlurRadius</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="adc37d28f8277783604a65482c40e0200" name="adc37d28f8277783604a65482c40e0200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc37d28f8277783604a65482c40e0200">&#9670;&#160;</a></span>MAX_MESH_NODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MESH_NODES&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00058">58</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a251ff7187aa6805e7027554c86b34307" name="a251ff7187aa6805e7027554c86b34307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ff7187aa6805e7027554c86b34307">&#9670;&#160;</a></span>layout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std140</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00004">4</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, and <a class="el" href="shadow_8vert_source.html#l00016">view</a>.</p>
+
+</div>
+</div>
+<a id="a7c96623b88d2b1e72ab5b83680801684" name="a7c96623b88d2b1e72ab5b83680801684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c96623b88d2b1e72ab5b83680801684">&#9670;&#160;</a></span>get_view_pos_from_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> get_view_pos_from_depth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec2">vec2</a></td>          <td class="paramname"><span class="paramname"><em>uv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>depth</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structmat4">mat4</a></td>          <td class="paramname"><span class="paramname"><em>invProjMatrix</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00022">22</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="coc_8frag_source.html#l00022">get_view_pos_from_depth()</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, and <a class="el" href="types_8h_source.html#l00013">vec4::w</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="coc_8frag_source.html#l00022">get_view_pos_from_depth()</a>, and <a class="el" href="coc_8frag_source.html#l00069">main()</a>.</p>
+
+</div>
+</div>
+<a id="a9d181d2ecc74af53f4e67c4c588ea5e7" name="a9d181d2ecc74af53f4e67c4c588ea5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d181d2ecc74af53f4e67c4c588ea5e7">&#9670;&#160;</a></span>linearize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float linearize </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00030">30</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="coc_8frag_source.html#l00030">linearize()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="coc_8frag_source.html#l00030">linearize()</a>.</p>
+
+</div>
+</div>
+<a id="a5d44c5035762137cf3fe25b8baad04a5" name="a5d44c5035762137cf3fe25b8baad04a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d44c5035762137cf3fe25b8baad04a5">&#9670;&#160;</a></span>layout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">15</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00059">59</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, and <a class="el" href="engine__types_8h_source.html#l00108">MAX_MESH_NODES</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00069">69</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="coc_8frag_source.html#l00019">gDepth</a>, <a class="el" href="coc_8frag_source.html#l00022">get_view_pos_from_depth()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="coc_8frag_source.html#l00037">uFocalLength</a>, <a class="el" href="coc_8frag_source.html#l00038">uFStop</a>, <a class="el" href="coc_8frag_source.html#l00040">uMaxBlurRadius</a>, <a class="el" href="bloom_8frag_source.html#l00003">uScene</a>, <a class="el" href="coc_8frag_source.html#l00039">uSensorHeight</a>, <a class="el" href="lightmap_8frag_source.html#l00013">vUV</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a39fca2c8fe34ab0c307cdd0f7e7f53d6" name="a39fca2c8fe34ab0c307cdd0f7e7f53d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fca2c8fe34ab0c307cdd0f7e7f53d6">&#9670;&#160;</a></span>vUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> vUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00015">15</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+</div>
+</div>
+<a id="a6d8dd0540ed9af35f34cd31b838cacce" name="a6d8dd0540ed9af35f34cd31b838cacce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8dd0540ed9af35f34cd31b838cacce">&#9670;&#160;</a></span>fragColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">out <a class="el" href="types_8h.html#structvec4">vec4</a> fragColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00017">17</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+</div>
+</div>
+<a id="a4f588aa537b960aadd2d3a441a3a8d47" name="a4f588aa537b960aadd2d3a441a3a8d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f588aa537b960aadd2d3a441a3a8d47">&#9670;&#160;</a></span>gDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D gDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00019">19</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="coc_8frag_source.html#l00069">main()</a>.</p>
+
+</div>
+</div>
+<a id="a158d8798faed156b59adf6d29d4ee947" name="a158d8798faed156b59adf6d29d4ee947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158d8798faed156b59adf6d29d4ee947">&#9670;&#160;</a></span>uScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uScene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00020">20</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+</div>
+</div>
+<a id="a62e4f486b21610b8d8aae616676954d8" name="a62e4f486b21610b8d8aae616676954d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e4f486b21610b8d8aae616676954d8">&#9670;&#160;</a></span>uFocalLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uFocalLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00037">37</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="coc_8frag_source.html#l00069">main()</a>.</p>
+
+</div>
+</div>
+<a id="aed94d51d95f30e519969156472b59f47" name="aed94d51d95f30e519969156472b59f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed94d51d95f30e519969156472b59f47">&#9670;&#160;</a></span>uFStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uFStop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00038">38</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="coc_8frag_source.html#l00069">main()</a>.</p>
+
+</div>
+</div>
+<a id="aab7aaf8b3432b550d246091e846483cf" name="aab7aaf8b3432b550d246091e846483cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7aaf8b3432b550d246091e846483cf">&#9670;&#160;</a></span>uSensorHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uSensorHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00039">39</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="coc_8frag_source.html#l00069">main()</a>.</p>
+
+</div>
+</div>
+<a id="adf664ca5c645d88ee7512f16d99a0526" name="adf664ca5c645d88ee7512f16d99a0526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf664ca5c645d88ee7512f16d99a0526">&#9670;&#160;</a></span>uMaxBlurRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uMaxBlurRadius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coc_8frag_source.html#l00040">40</a> of file <a class="el" href="coc_8frag_source.html">coc.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="coc_8frag_source.html#l00069">main()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

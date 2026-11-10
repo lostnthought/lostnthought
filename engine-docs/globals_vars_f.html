@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -121,15 +130,21 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_vars_f
 
 <div class="contents">
 <div class="textblock">Here is a list of all variables with links to the files they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
+<div class="qindex"><a class="qindex" href="globals_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_q.html#index_q">Q</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="globals_vars_w.html#index_w">W</a></div>
 
 
 <h3 class="doxsection"><a id="index_f" name="index_f"></a>- f -</h3><ul>
 <li>fbm_tex&#160;:&#160;<a class="el" href="init_8c.html#a3f95bbb6dcc05c27b64375fe4eda36fc">init.c</a></li>
 <li>FBM_TEXTURE&#160;:&#160;<a class="el" href="main_8c.html#aa943acb2b5c1cb73acf416187e262587">main.c</a>, <a class="el" href="init_8h.html#aa943acb2b5c1cb73acf416187e262587">init.h</a></li>
+<li>first_bounce_dir&#160;:&#160;<a class="el" href="lightmap__bounce_8comp.html#a2e43a263165ab793e674712865ac52dd">lightmap_bounce.comp</a></li>
+<li>first_dir&#160;:&#160;<a class="el" href="probe__bake_8comp.html#a4c65072b285144d4271b7bbea9d7832e">probe_bake.comp</a></li>
 <li>FOCAL_DISTANCE_SHADER&#160;:&#160;<a class="el" href="main_8c.html#afefe5cc662826c41d898e949623d37e4">main.c</a>, <a class="el" href="init_8h.html#afefe5cc662826c41d898e949623d37e4">init.h</a></li>
 <li>FONTS&#160;:&#160;<a class="el" href="fonts_8c.html#a30f17acd13d2e00562e734e7d5ff85ae">fonts.c</a>, <a class="el" href="fonts_8h.html#a30f17acd13d2e00562e734e7d5ff85ae">fonts.h</a></li>
 <li>FOOTSTEP_EMITTER&#160;:&#160;<a class="el" href="main_8c.html#a63baaad8c5fcc63d2e7cd95dd8553b2d">main.c</a>, <a class="el" href="init_8h.html#a63baaad8c5fcc63d2e7cd95dd8553b2d">init.h</a></li>
+<li>FragColor&#160;:&#160;<a class="el" href="ssao__blur_8frag.html#a9fb9ff60bb02989b1604a64cb2da6094">ssao_blur.frag</a>, <a class="el" href="brdf_8frag.html#a64dccd911a71deebb50a14395eea3103">brdf.frag</a></li>
+<li>fragColor&#160;:&#160;<a class="el" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">bloom.frag</a>, <a class="el" href="bloom__blur_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">bloom_blur.frag</a>, <a class="el" href="bloom__downscale_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">bloom_downscale.frag</a>, <a class="el" href="bloom__upscale_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">bloom_upscale.frag</a>, <a class="el" href="bokeh_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">bokeh.frag</a>, <a class="el" href="coc_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">coc.frag</a>, <a class="el" href="fullscreen_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fullscreen.frag</a>, <a class="el" href="postprocess_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">postprocess.frag</a>, <a class="el" href="sky_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">sky.frag</a>, <a class="el" href="ssao_8frag.html#aa3d609333e8829116ebeab7387833d66">ssao.frag</a>, <a class="el" href="text_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">text.frag</a>, <a class="el" href="ui_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">ui.frag</a></li>
+<li>FragPosLightSpace&#160;:&#160;<a class="el" href="dynamic_8frag.html#a2cc15add67135193c6a1d8b48f9338a3">dynamic.frag</a>, <a class="el" href="dynamic_8vert.html#ab7961cfe0e9910783829bbec92f249b7">dynamic.vert</a></li>
+<li>FragWorldPos&#160;:&#160;<a class="el" href="point__light__shadows_8frag.html#a88956234dc2a5ff6965025605c7bdcba">point_light_shadows.frag</a>, <a class="el" href="shadow_8frag.html#a88956234dc2a5ff6965025605c7bdcba">shadow.frag</a>, <a class="el" href="shadow_8vert.html#a34fb5f093a46f7e09074fa2683371207">shadow.vert</a></li>
 <li>frame_time&#160;:&#160;<a class="el" href="main_8c.html#a47f7d1070258252dbcba30b27558c3ca">main.c</a>, <a class="el" href="init_8h.html#a47f7d1070258252dbcba30b27558c3ca">init.h</a></li>
 <li>friction_sum&#160;:&#160;<a class="el" href="group__physics__group.html#gafcc63423b85e4e7b6f6df07f4d459267">physics.c</a></li>
 <li>FS_VAO&#160;:&#160;<a class="el" href="main_8c.html#a048ac1930a3a3b1af3109dee272faab8">main.c</a>, <a class="el" href="init_8h.html#a048ac1930a3a3b1af3109dee272faab8">init.h</a></li>

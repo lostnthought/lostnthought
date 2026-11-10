@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_i
 
 
 <h3 class="doxsection"><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>ImportanceSampleGGX()&#160;:&#160;<a class="el" href="brdf_8frag.html#a3a576765e155d70c61c8e053b71baabc">brdf.frag</a></li>
 <li>incremental_hull()&#160;:&#160;<a class="el" href="mesh_8c.html#a5c35f44de283319fcf3a05b6b422bb1f">mesh.c</a>, <a class="el" href="mesh_8h.html#a5c35f44de283319fcf3a05b6b422bb1f">mesh.h</a></li>
 <li>init()&#160;:&#160;<a class="el" href="init_8c.html#aa264c885bb6bfa5e630f24a679ffe281">init.c</a>, <a class="el" href="init_8h.html#aa264c885bb6bfa5e630f24a679ffe281">init.h</a></li>
 <li>init_aabb()&#160;:&#160;<a class="el" href="utilities_8c.html#a4c7947d09e6e14ad759f6cdfde0bc0d5">utilities.c</a></li>
@@ -132,7 +142,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_i
 <li>init_audio_scratch_buffers()&#160;:&#160;<a class="el" href="init_8c.html#a8159dfaaf3b9976f159cea782c39e2ce">init.c</a></li>
 <li>init_audio_shader()&#160;:&#160;<a class="el" href="shaders_8c.html#a104379c5d26d3ad1cada7837d2b79493">shaders.c</a></li>
 <li>init_band_kernels()&#160;:&#160;<a class="el" href="group__aprobe__group.html#gaa39ed3927af8deb0936c5b4888388374">audio.c</a>, <a class="el" href="group__aprobe__group.html#gaa39ed3927af8deb0936c5b4888388374">audio.h</a></li>
-<li>init_bandpass()&#160;:&#160;<a class="el" href="audio_8c.html#a56185d684139ab2497dd29fccd09c463">audio.c</a></li>
+<li>init_bandpass()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga56185d684139ab2497dd29fccd09c463">audio.c</a></li>
 <li>init_bloom_shader()&#160;:&#160;<a class="el" href="shaders_8c.html#aa26f6028d11947c07f4815c92c87f051">shaders.c</a></li>
 <li>init_brdf_shader()&#160;:&#160;<a class="el" href="shaders_8c.html#a5ae70bbcab740787dbee2023f144b337">shaders.c</a></li>
 <li>init_cull_clusers_compute_shader()&#160;:&#160;<a class="el" href="shaders_8c.html#ae4d8b70b0254b14aea10ea6de40c515b">shaders.c</a></li>
@@ -174,7 +184,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('globals_func_i
 <li>init_vector()&#160;:&#160;<a class="el" href="utilities_8c.html#a27bc1745bc25c888ec8004e1617e5b24">utilities.c</a>, <a class="el" href="utilities_8h.html#a27bc1745bc25c888ec8004e1617e5b24">utilities.h</a></li>
 <li>init_vertex_layouts()&#160;:&#160;<a class="el" href="init_8c.html#a1116d7ba0ba93690492401d7a3355e92">init.c</a></li>
 <li>init_wireframe_shader()&#160;:&#160;<a class="el" href="shaders_8c.html#ad43912c4b564f49960f327f21e0b76df">shaders.c</a></li>
-<li>interpolate_nearest_aprobes()&#160;:&#160;<a class="el" href="audio_8c.html#a169531920158e88e90005fde7c719fac">audio.c</a></li>
+<li>IntegrateBRDF()&#160;:&#160;<a class="el" href="brdf_8frag.html#a58c0674da08f1382d1afdd77ec97ce9f">brdf.frag</a></li>
+<li>interpolate_nearest_aprobes()&#160;:&#160;<a class="el" href="group__aprobe__group.html#ga169531920158e88e90005fde7c719fac">audio.c</a></li>
 <li>is_hovering_ui_element()&#160;:&#160;<a class="el" href="ui_8c.html#af6010291dc5bb8b6eb45c554d99461e5">ui.c</a></li>
 <li>is_similar_plane()&#160;:&#160;<a class="el" href="utilities_8c.html#a267100d1f79e5671d1dc98b86deeaa93">utilities.c</a>, <a class="el" href="utilities_8h.html#a267100d1f79e5671d1dc98b86deeaa93">utilities.h</a></li>
 <li>ivec3_add()&#160;:&#160;<a class="el" href="mathf_8h.html#a7ebeaa7f64e91ad19289775cc5c3fb27">mathf.h</a></li>

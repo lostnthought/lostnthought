@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,6 +134,343 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('cull__point__l
 <div class="contents">
 
 <p><a href="cull__point__light__shadows_8comp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:DrawArraysIndirectCommand_5Fstruct_5Fdraw_5Farrays_5Findirect_5Fcommand" id="r_DrawArraysIndirectCommand_5Fstruct_5Fdraw_5Farrays_5Findirect_5Fcommand"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_draw_arrays_indirect_command">DrawArraysIndirectCommand</a></td></tr>
+<tr class="memdesc:struct_draw_arrays_indirect_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">DrawArraysIndirect commands are used for static meshes (eg.  <a href="group__shader__structs__group.html#struct_draw_arrays_indirect_command">More...</a><br /></td></tr>
+<tr class="memitem:DrawElementsIndirectCommand_5Fstruct_5Fdraw_5Felements_5Findirect_5Fcommand" id="r_DrawElementsIndirectCommand_5Fstruct_5Fdraw_5Felements_5Findirect_5Fcommand"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="elements__prefix_8comp.html#struct_draw_elements_indirect_command">DrawElementsIndirectCommand</a></td></tr>
+<tr class="memdesc:struct_draw_elements_indirect_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">DrawArraysIndirect commands are used for non-static meshes.  <a href="elements__prefix_8comp.html#struct_draw_elements_indirect_command">More...</a><br /></td></tr>
+<tr class="memitem:MeshNode_5Fstruct_5Fmesh_5Fnode" id="r_MeshNode_5Fstruct_5Fmesh_5Fnode"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a></td></tr>
+<tr class="memdesc:struct_mesh_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s that describe the position of <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>es, GLTF nodes for <a class="el" href="engine__types_8h.html#struct_g_l_t_f_animation" title="The GLTF structure of an Animation.">GLTFAnimation</a>s, or hold references to other <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <a href="group__shader__structs__group.html#struct_mesh_node">More...</a><br /></td></tr>
+<tr class="memitem:Transform_5Fstruct_5Ftransform" id="r_Transform_5Fstruct_5Ftransform"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_transform">Transform</a></td></tr>
+<tr class="memdesc:struct_transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms for <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> models.  <a href="group__shader__structs__group.html#struct_transform">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:adc37d28f8277783604a65482c40e0200" id="r_adc37d28f8277783604a65482c40e0200"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adc37d28f8277783604a65482c40e0200">MAX_MESH_NODES</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memitem:ad71fdd6e64912b84771dda0b80389ad9" id="r_ad71fdd6e64912b84771dda0b80389ad9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad71fdd6e64912b84771dda0b80389ad9">MAX_INSTANCES</a>&#160;&#160;&#160;1024</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad210c3d68883c208ad7b17d1d98a4656" id="r_ad210c3d68883c208ad7b17d1d98a4656"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad210c3d68883c208ad7b17d1d98a4656">layout</a> (local_size_x=64, local_size_y=1, local_size_z=1) in</td></tr>
+<tr class="memitem:aa16b6bd8354203c6420302627f2c106f" id="r_aa16b6bd8354203c6420302627f2c106f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa16b6bd8354203c6420302627f2c106f">layout</a> (std430, binding=5) buffer DrawArraysData</td></tr>
+<tr class="memitem:a373bd78f2cd817614ba1b1d2ac5f27ea" id="r_a373bd78f2cd817614ba1b1d2ac5f27ea"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a373bd78f2cd817614ba1b1d2ac5f27ea">test_sphere_aabb</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> light_pos, float light_radius, <a class="el" href="types_8h.html#structvec4">vec4</a> min, <a class="el" href="types_8h.html#structvec4">vec4</a> max)</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa56325f7f12aecc0bee1a1ef98b33c38" id="r_aa56325f7f12aecc0bee1a1ef98b33c38"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa56325f7f12aecc0bee1a1ef98b33c38">uLightPos</a></td></tr>
+<tr class="memitem:ae16ea61576ae91ac260a607d14cbef5d" id="r_ae16ea61576ae91ac260a607d14cbef5d"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ae16ea61576ae91ac260a607d14cbef5d">uLightRadius</a></td></tr>
+<tr class="memitem:a6bbcea102a098a4e30e9417ab4f7477a" id="r_a6bbcea102a098a4e30e9417ab4f7477a"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a6bbcea102a098a4e30e9417ab4f7477a">uInstanceCount</a></td></tr>
+<tr class="memitem:a147618217982c54d7d8866d5555550ef" id="r_a147618217982c54d7d8866d5555550ef"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#a147618217982c54d7d8866d5555550ef">uArrayOffset</a></td></tr>
+</table>
+<hr/><h2 id="header-inline_5Fclasses" class="groupheader">Data Structure Documentation</h2>
+<a name="struct_draw_elements_indirect_command" id="struct_draw_elements_indirect_command"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#struct_draw_elements_indirect_command">&#9670;&#160;</a></span>DrawElementsIndirectCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct DrawElementsIndirectCommand</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>DrawArraysIndirect commands are used for non-static meshes. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawElementsIndirect.xhtml">https://registry.khronos.org/OpenGL-Refpages/gl4/html/glDrawElementsIndirect.xhtml</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00857">857</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a677472d87854825d43abbdd3f89c1322" name="a677472d87854825d43abbdd3f89c1322"></a>uint32_t</td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a45382d45156d80144216ce5c704986f2" name="a45382d45156d80144216ce5c704986f2"></a>uint32_t</td>
+<td class="fieldname">
+instanceCount</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a694224e72795f58ae96dd3c11149af19" name="a694224e72795f58ae96dd3c11149af19"></a>uint32_t</td>
+<td class="fieldname">
+firstIndex</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac6655abbc809b7952743b2f3c3f6a182" name="ac6655abbc809b7952743b2f3c3f6a182"></a>uint32_t</td>
+<td class="fieldname">
+baseVertex</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7da567f6121efa6d507b050b6abd92ea" name="a7da567f6121efa6d507b050b6abd92ea"></a>uint32_t</td>
+<td class="fieldname">
+baseInstance</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa9490c131aa67c550745e2909ae2804d" name="aa9490c131aa67c550745e2909ae2804d"></a>uint32_t</td>
+<td class="fieldname">
+instanceOffset</td>
+<td class="fielddoc">
+This tracks how many offsets were pushed in a frame and is used in the prefix sum. </td></tr>
+<tr><td class="fieldtype">
+<a id="a677472d87854825d43abbdd3f89c1322" name="a677472d87854825d43abbdd3f89c1322"></a>uint</td>
+<td class="fieldname">
+count</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a45382d45156d80144216ce5c704986f2" name="a45382d45156d80144216ce5c704986f2"></a>uint</td>
+<td class="fieldname">
+instanceCount</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a694224e72795f58ae96dd3c11149af19" name="a694224e72795f58ae96dd3c11149af19"></a>uint</td>
+<td class="fieldname">
+firstIndex</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac6655abbc809b7952743b2f3c3f6a182" name="ac6655abbc809b7952743b2f3c3f6a182"></a>uint</td>
+<td class="fieldname">
+baseVertex</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7da567f6121efa6d507b050b6abd92ea" name="a7da567f6121efa6d507b050b6abd92ea"></a>uint</td>
+<td class="fieldname">
+baseInstance</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa9490c131aa67c550745e2909ae2804d" name="aa9490c131aa67c550745e2909ae2804d"></a>uint</td>
+<td class="fieldname">
+instanceOffset</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="adc37d28f8277783604a65482c40e0200" name="adc37d28f8277783604a65482c40e0200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc37d28f8277783604a65482c40e0200">&#9670;&#160;</a></span>MAX_MESH_NODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MESH_NODES&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00052">52</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+</div>
+</div>
+<a id="ad71fdd6e64912b84771dda0b80389ad9" name="ad71fdd6e64912b84771dda0b80389ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71fdd6e64912b84771dda0b80389ad9">&#9670;&#160;</a></span>MAX_INSTANCES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_INSTANCES&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00080">80</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="ad210c3d68883c208ad7b17d1d98a4656" name="ad210c3d68883c208ad7b17d1d98a4656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad210c3d68883c208ad7b17d1d98a4656">&#9670;&#160;</a></span>layout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">local_size_x</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">64</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">local_size_y</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">local_size_z</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="aa16b6bd8354203c6420302627f2c106f" name="aa16b6bd8354203c6420302627f2c106f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16b6bd8354203c6420302627f2c106f">&#9670;&#160;</a></span>layout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00016">16</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a373bd78f2cd817614ba1b1d2ac5f27ea" name="a373bd78f2cd817614ba1b1d2ac5f27ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a373bd78f2cd817614ba1b1d2ac5f27ea">&#9670;&#160;</a></span>test_sphere_aabb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_sphere_aabb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>light_pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>light_radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec4">vec4</a></td>          <td class="paramname"><span class="paramname"><em>min</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec4">vec4</a></td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00090">90</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00100">100</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+<p class="reference">References <a class="el" href="cull__draw__calls_8comp_source.html#l00074">Transform::command_id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00079">Transform::mat</a>, <a class="el" href="coc_8frag_source.html#l00045">MeshNode::max</a>, <a class="el" href="engine__types_8h_source.html#l00111">MAX_INSTANCES</a>, <a class="el" href="coc_8frag_source.html#l00044">MeshNode::min</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00073">Transform::mn_id</a>, <a class="el" href="engine__types_8h_source.html#l02399">MeshNode::static_mesh</a>, <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00090">uArrayOffset</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00088">uInstanceCount</a>, <a class="el" href="cull__point__light__shadows_8comp_source.html#l00086">uLightPos</a>, and <a class="el" href="cull__point__light__shadows_8comp_source.html#l00087">uLightRadius</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="aa56325f7f12aecc0bee1a1ef98b33c38" name="aa56325f7f12aecc0bee1a1ef98b33c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56325f7f12aecc0bee1a1ef98b33c38">&#9670;&#160;</a></span>uLightPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structvec3">vec3</a> uLightPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00086">86</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="cull__point__light__shadows_8comp_source.html#l00100">main()</a>.</p>
+
+</div>
+</div>
+<a id="ae16ea61576ae91ac260a607d14cbef5d" name="ae16ea61576ae91ac260a607d14cbef5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16ea61576ae91ac260a607d14cbef5d">&#9670;&#160;</a></span>uLightRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uLightRadius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00087">87</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="cull__point__light__shadows_8comp_source.html#l00100">main()</a>.</p>
+
+</div>
+</div>
+<a id="a6bbcea102a098a4e30e9417ab4f7477a" name="a6bbcea102a098a4e30e9417ab4f7477a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbcea102a098a4e30e9417ab4f7477a">&#9670;&#160;</a></span>uInstanceCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uInstanceCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00088">88</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+</div>
+</div>
+<a id="a147618217982c54d7d8866d5555550ef" name="a147618217982c54d7d8866d5555550ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147618217982c54d7d8866d5555550ef">&#9670;&#160;</a></span>uArrayOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uArrayOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cull__point__light__shadows_8comp_source.html#l00089">89</a> of file <a class="el" href="cull__point__light__shadows_8comp_source.html">cull_point_light_shadows.comp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

@@ -31,6 +31,6 @@ var searchData=
   ['expand_5fhull_28',['expand_hull',['../mesh_8c.html#a8c42c7ffd76896258674548548f7f989',1,'mesh.c']]],
   ['expand_5fsampler_29',['expand_sampler',['../gltf_8c.html#a76ee6098e4d93b2651501699c9866647',1,'gltf.c']]],
   ['extent_30',['extent',['../gltf_8c.html#acc0107409529a33ddc465e1da1290a19',1,'gltf.c']]],
-  ['extract_5frms_31',['extract_rms',['../audio_8c.html#abe2006e8b2052a0a8d175b4e6b5ff071',1,'audio.c']]],
-  ['extract_5ft60_32',['extract_t60',['../audio_8c.html#a29684eaf012554ebbe1bbbe2e8252adc',1,'audio.c']]]
+  ['extract_5frms_31',['extract_rms',['../group__aprobe__group.html#gabe2006e8b2052a0a8d175b4e6b5ff071',1,'audio.c']]],
+  ['extract_5ft60_32',['extract_t60',['../group__aprobe__group.html#ga29684eaf012554ebbe1bbbe2e8252adc',1,'audio.c']]]
 ];

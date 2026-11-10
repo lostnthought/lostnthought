@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -124,7 +133,1635 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('dynamic_8frag.
 </div><!--header-->
 <div class="contents">
 
+<p>The main forward fragment shader.  
+<a href="#details">More...</a></p>
+
 <p><a href="dynamic_8frag_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:OBB_5Fstruct_5Fo_5Fb_5Fb" id="r_OBB_5Fstruct_5Fo_5Fb_5Fb"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a></td></tr>
+<tr class="memdesc:struct_o_b_b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oriented Bounding Boxes.  <a href="group__shader__structs__group.html#struct_o_b_b">More...</a><br /></td></tr>
+<tr class="memitem:Light_5Fstruct_5Flight" id="r_Light_5Fstruct_5Flight"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_light">Light</a></td></tr>
+<tr class="memdesc:struct_light"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CPU side structure for <a class="el" href="group__shader__structs__group.html#struct_light" title="The CPU side structure for Lights.">Light</a>s.  <a href="group__shader__structs__group.html#struct_light">More...</a><br /></td></tr>
+<tr class="memitem:Material_5Fstruct_5Fmaterial" id="r_Material_5Fstruct_5Fmaterial"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_material">Material</a></td></tr>
+<tr class="memdesc:struct_material"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Materials parsed in from scene files that determine rendering pipeline setup, uploads, and ordering.  <a href="group__shader__structs__group.html#struct_material">More...</a><br /></td></tr>
+<tr class="memitem:RProbe_5Fstruct_5Fr_5Fprobe" id="r_RProbe_5Fstruct_5Fr_5Fprobe"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_r_probe">RProbe</a></td></tr>
+<tr class="memdesc:struct_r_probe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure for <a class="el" href="engine__types_8h.html#struct_reflection_probe" title="ReflectionProbes used for parallax corrected cubemaps.">ReflectionProbe</a>s padded for the GPU.  <a href="group__shader__structs__group.html#struct_r_probe">More...</a><br /></td></tr>
+<tr class="memitem:Cluster_5Fstruct_5Fcluster" id="r_Cluster_5Fstruct_5Fcluster"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="group__shader__structs__group.html#struct_cluster">Cluster</a></td></tr>
+<tr class="memdesc:struct_cluster"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPU-side <a class="el" href="group__shader__structs__group.html#struct_cluster" title="GPU-side Clusters for clustered forward.">Cluster</a>s for clustered forward.  <a href="group__shader__structs__group.html#struct_cluster">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a54a15c7759ae27bb73c7d63affa1bd9c" id="r_a54a15c7759ae27bb73c7d63affa1bd9c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a54a15c7759ae27bb73c7d63affa1bd9c">LPV_SLOTS</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:a11a427cb1228a62dee06e50c466d4804" id="r_a11a427cb1228a62dee06e50c466d4804"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a11a427cb1228a62dee06e50c466d4804">SH_MAX</a>&#160;&#160;&#160;9</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a14faaaca45684b615b722b3f3d790868" id="r_a14faaaca45684b615b722b3f3d790868"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a14faaaca45684b615b722b3f3d790868">layout</a> (location=0) out <a class="el" href="types_8h.html#structvec4">vec4</a> <a class="el" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></td></tr>
+<tr class="memitem:a251ff7187aa6805e7027554c86b34307" id="r_a251ff7187aa6805e7027554c86b34307"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a251ff7187aa6805e7027554c86b34307">layout</a> (std140, binding=0) uniform CameraData</td></tr>
+<tr class="memitem:a15905184e63ebc166416ba14f5c751c1" id="r_a15905184e63ebc166416ba14f5c751c1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a15905184e63ebc166416ba14f5c751c1">layout</a> (std430, binding=0) buffer LightData</td></tr>
+<tr class="memitem:a80ec32c1f311b5362e2f013c3f71e191" id="r_a80ec32c1f311b5362e2f013c3f71e191"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a80ec32c1f311b5362e2f013c3f71e191">parallax_mapping</a> (sampler2D normal_map, <a class="el" href="types_8h.html#structvec2">vec2</a> texCoords, <a class="el" href="types_8h.html#structvec3">vec3</a> viewDir, out float final_depth)</td></tr>
+<tr class="memitem:a2f02ba7c17ef6094904ef9afb717b289" id="r_a2f02ba7c17ef6094904ef9afb717b289"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2f02ba7c17ef6094904ef9afb717b289">get_parallax_corrected_vector</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> worldPos, <a class="el" href="types_8h.html#structvec3">vec3</a> viewDir, <a class="el" href="types_8h.html#structvec3">vec3</a> normal, <a class="el" href="types_8h.html#structvec3">vec3</a> boxMin, <a class="el" href="types_8h.html#structvec3">vec3</a> boxMax, <a class="el" href="types_8h.html#structvec3">vec3</a> probeCenter)</td></tr>
+<tr class="memitem:ad91199e82ab7ab66b647b6075573482d" id="r_ad91199e82ab7ab66b647b6075573482d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad91199e82ab7ab66b647b6075573482d">shadow_calculation</a> (uint layer, <a class="el" href="types_8h.html#structvec4">vec4</a> pos, float diff)</td></tr>
+<tr class="memitem:a188c170d14e42dd51cef9d30793dbe2e" id="r_a188c170d14e42dd51cef9d30793dbe2e"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a188c170d14e42dd51cef9d30793dbe2e">distribution_GGX</a> (float NdotH, float roughness)</td></tr>
+<tr class="memitem:a1bdde41461278f1cd5708f55a1d1c3d2" id="r_a1bdde41461278f1cd5708f55a1d1c3d2"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1bdde41461278f1cd5708f55a1d1c3d2">fresnel_schlick</a> (float CosTheta, <a class="el" href="types_8h.html#structvec3">vec3</a> F0)</td></tr>
+<tr class="memdesc:a1bdde41461278f1cd5708f55a1d1c3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes Schlick's approximation for Fresnel reflectance.  <br /></td></tr>
+<tr class="memitem:a4ad8f51a3b5ffde15f127285ac499f77" id="r_a4ad8f51a3b5ffde15f127285ac499f77"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4ad8f51a3b5ffde15f127285ac499f77">fresnel_schlick_roughness</a> (float cosTheta, <a class="el" href="types_8h.html#structvec3">vec3</a> albedo, float roughness, float metallic)</td></tr>
+<tr class="memitem:abb4e90638594bc278f59465b23df4128" id="r_abb4e90638594bc278f59465b23df4128"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#abb4e90638594bc278f59465b23df4128">visibility</a> (float NdotV, float NdotL, float roughness)</td></tr>
+<tr class="memitem:a513f4c9c6e1780bb35cfe594e936367a" id="r_a513f4c9c6e1780bb35cfe594e936367a"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a513f4c9c6e1780bb35cfe594e936367a">calculate_light</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> N, <a class="el" href="types_8h.html#structvec3">vec3</a> V, <a class="el" href="types_8h.html#structvec3">vec3</a> L, <a class="el" href="types_8h.html#structvec3">vec3</a> albedo, float roughness, float metallic, <a class="el" href="types_8h.html#structvec3">vec3</a> light_color)</td></tr>
+<tr class="memitem:a3ebfb737c43cd0e222b89e42153763df" id="r_a3ebfb737c43cd0e222b89e42153763df"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a3ebfb737c43cd0e222b89e42153763df">normal_filtering</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> N, float roughness)</td></tr>
+<tr class="memitem:a3884765c2265f47ab1dd740a297562d4" id="r_a3884765c2265f47ab1dd740a297562d4"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3884765c2265f47ab1dd740a297562d4">palette</a> (in float t, in <a class="el" href="types_8h.html#structvec3">vec3</a> a, in <a class="el" href="types_8h.html#structvec3">vec3</a> b, in <a class="el" href="types_8h.html#structvec3">vec3</a> c, in <a class="el" href="types_8h.html#structvec3">vec3</a> d)</td></tr>
+<tr class="memitem:a19e48e7f882c74497ad7845b110d4cb8" id="r_a19e48e7f882c74497ad7845b110d4cb8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a19e48e7f882c74497ad7845b110d4cb8">hash</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> p)</td></tr>
+<tr class="memitem:a3d4562924b38c15bc9c291574b0e355f" id="r_a3d4562924b38c15bc9c291574b0e355f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a3d4562924b38c15bc9c291574b0e355f">compute_probe_weight</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> world_pos, <a class="el" href="group__shader__structs__group.html#struct_r_probe">RProbe</a> rp)</td></tr>
+<tr class="memitem:aa024b820e3473eb178168a363432f098" id="r_aa024b820e3473eb178168a363432f098"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa024b820e3473eb178168a363432f098">sample_weighted_rprobes</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pos, <a class="el" href="types_8h.html#structvec3">vec3</a> view_dir, <a class="el" href="types_8h.html#structvec3">vec3</a> normal, float roughness_lod)</td></tr>
+<tr class="memitem:a9005121deddc6f1c3fe44757c9f9e378" id="r_a9005121deddc6f1c3fe44757c9f9e378"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9005121deddc6f1c3fe44757c9f9e378">calculate_attenuation</a> (float distance, float radius, float intensity)</td></tr>
+<tr class="memitem:ae4ee102b99c5cb1257f14d9a6cb916af" id="r_ae4ee102b99c5cb1257f14d9a6cb916af"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#ae4ee102b99c5cb1257f14d9a6cb916af">get_cluster_index</a> ()</td></tr>
+<tr class="memitem:a2038f602490a4839dfe110bcccb2b344" id="r_a2038f602490a4839dfe110bcccb2b344"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a2038f602490a4839dfe110bcccb2b344">calculate_specular_occlusion</a> (float NdotV, float ao, float roughness)</td></tr>
+<tr class="memitem:a9d181d2ecc74af53f4e67c4c588ea5e7" id="r_a9d181d2ecc74af53f4e67c4c588ea5e7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9d181d2ecc74af53f4e67c4c588ea5e7">linearize</a> (float z)</td></tr>
+<tr class="memitem:ae1ab2c1037f999d17d674a4b11b680ad" id="r_ae1ab2c1037f999d17d674a4b11b680ad"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae1ab2c1037f999d17d674a4b11b680ad">pos_to_pv_local</a> (<a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a> obb, <a class="el" href="types_8h.html#structvec3">vec3</a> pos)</td></tr>
+<tr class="memdesc:ae1ab2c1037f999d17d674a4b11b680ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position to local <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a> space and returns the coord as if it was a texture from \(0 \rightarrow 1\).  <br /></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3" id="r_acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a18b7801c2dc257a0ddc2e74f0b320e78" id="r_a18b7801c2dc257a0ddc2e74f0b320e78"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a18b7801c2dc257a0ddc2e74f0b320e78">Normal</a></td></tr>
+<tr class="memitem:adabf3fc4e6715d6105b58d9216383fc2" id="r_adabf3fc4e6715d6105b58d9216383fc2"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#adabf3fc4e6715d6105b58d9216383fc2">Tangent</a></td></tr>
+<tr class="memitem:a7a9ab1a8b6b8081b51f1206934375125" id="r_a7a9ab1a8b6b8081b51f1206934375125"><td class="memItemLeft">in float&#160;</td><td class="memItemRight"><a class="el" href="#a7a9ab1a8b6b8081b51f1206934375125">TangentSign</a></td></tr>
+<tr class="memitem:a04bdd5bf135fc4206a52aea5d08b4726" id="r_a04bdd5bf135fc4206a52aea5d08b4726"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a04bdd5bf135fc4206a52aea5d08b4726">Pos</a></td></tr>
+<tr class="memitem:a921525e1ccbafd33f722a836b516644b" id="r_a921525e1ccbafd33f722a836b516644b"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a921525e1ccbafd33f722a836b516644b">ViewPos</a></td></tr>
+<tr class="memitem:a5d59c7b23932264c2d62ef3be626fc34" id="r_a5d59c7b23932264c2d62ef3be626fc34"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5d59c7b23932264c2d62ef3be626fc34">UV</a></td></tr>
+<tr class="memitem:a158e9c040d8a5574e1ec6a3d5620f211" id="r_a158e9c040d8a5574e1ec6a3d5620f211"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a158e9c040d8a5574e1ec6a3d5620f211">LMUV</a></td></tr>
+<tr class="memitem:a41309d5a8684250889191c62d6ac455f" id="r_a41309d5a8684250889191c62d6ac455f"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a41309d5a8684250889191c62d6ac455f">Color</a></td></tr>
+<tr class="memitem:a2cc15add67135193c6a1d8b48f9338a3" id="r_a2cc15add67135193c6a1d8b48f9338a3"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec4">vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2cc15add67135193c6a1d8b48f9338a3">FragPosLightSpace</a> [4]</td></tr>
+<tr class="memitem:ade0ed141ad92e0db1cdc8d474765a03f" id="r_ade0ed141ad92e0db1cdc8d474765a03f"><td class="memItemLeft">in <a class="el" href="types_8h.html#structmat3">mat3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ade0ed141ad92e0db1cdc8d474765a03f">TBN</a></td></tr>
+<tr class="memitem:a54f45bafa6f9e4c5deb2493dded39873" id="r_a54f45bafa6f9e4c5deb2493dded39873"><td class="memItemLeft">in <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a54f45bafa6f9e4c5deb2493dded39873">ViewDirTanSpace</a></td></tr>
+<tr class="memitem:aad64d4574c77f5434c92150b16cf78f0" id="r_aad64d4574c77f5434c92150b16cf78f0"><td class="memItemLeft">flat in <a class="el" href="types_8h.html#structivec2">ivec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aad64d4574c77f5434c92150b16cf78f0">PointLight</a></td></tr>
+<tr class="memitem:a16b913c4d0ef96c4fa864fa3c0a52e95" id="r_a16b913c4d0ef96c4fa864fa3c0a52e95"><td class="memItemLeft">flat in <a class="el" href="types_8h.html#structuvec2">uvec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a16b913c4d0ef96c4fa864fa3c0a52e95">DirectionalLight</a></td></tr>
+<tr class="memitem:a2d80562bd9b28ba702ff8cd8400e1ee1" id="r_a2d80562bd9b28ba702ff8cd8400e1ee1"><td class="memItemLeft">flat in <a class="el" href="types_8h.html#structuvec2">uvec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2d80562bd9b28ba702ff8cd8400e1ee1">SpotLight</a></td></tr>
+<tr class="memitem:a73aa8de87d5181c24b7e99a41d20f30f" id="r_a73aa8de87d5181c24b7e99a41d20f30f"><td class="memItemLeft">flat in uint&#160;</td><td class="memItemRight"><a class="el" href="#a73aa8de87d5181c24b7e99a41d20f30f">Static</a></td></tr>
+<tr class="memitem:a6a7c450f534931a81d3c99b42be9c126" id="r_a6a7c450f534931a81d3c99b42be9c126"><td class="memItemLeft">flat in uint&#160;</td><td class="memItemRight"><a class="el" href="#a6a7c450f534931a81d3c99b42be9c126">Mat</a></td></tr>
+<tr class="memitem:aed99416ffbe7000edc541d3f9d3a1660" id="r_aed99416ffbe7000edc541d3f9d3a1660"><td class="memItemLeft">uniform int&#160;</td><td class="memItemRight"><a class="el" href="#aed99416ffbe7000edc541d3f9d3a1660">material</a></td></tr>
+<tr class="memitem:a97dd6372f4aea7bf84d3e2e795bfa751" id="r_a97dd6372f4aea7bf84d3e2e795bfa751"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a97dd6372f4aea7bf84d3e2e795bfa751">uLightmap</a></td></tr>
+<tr class="memitem:a262aa47c644fcefeb1c8478bbb9ee4db" id="r_a262aa47c644fcefeb1c8478bbb9ee4db"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a262aa47c644fcefeb1c8478bbb9ee4db">uDirectionalmap</a></td></tr>
+<tr class="memitem:a17edaa0e4a1bcfef3fa28c84e282749b" id="r_a17edaa0e4a1bcfef3fa28c84e282749b"><td class="memItemLeft">uniform sampler2DArrayShadow&#160;</td><td class="memItemRight"><a class="el" href="#a17edaa0e4a1bcfef3fa28c84e282749b">uShadowmap</a></td></tr>
+<tr class="memitem:a6c3b8afdf0f4a6aa4995522bb0b7f3b0" id="r_a6c3b8afdf0f4a6aa4995522bb0b7f3b0"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a6c3b8afdf0f4a6aa4995522bb0b7f3b0">gAlbedo</a></td></tr>
+<tr class="memitem:a6e15101167e2b37e1a218a9f886e4b64" id="r_a6e15101167e2b37e1a218a9f886e4b64"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a6e15101167e2b37e1a218a9f886e4b64">gNormal</a></td></tr>
+<tr class="memitem:af9105292fdee754f8842d11af64e6484" id="r_af9105292fdee754f8842d11af64e6484"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#af9105292fdee754f8842d11af64e6484">gExtra</a></td></tr>
+<tr class="memitem:a0eada0750d044bed2a53e90b81fdc735" id="r_a0eada0750d044bed2a53e90b81fdc735"><td class="memItemLeft">uniform samplerCubeArray&#160;</td><td class="memItemRight"><a class="el" href="#a0eada0750d044bed2a53e90b81fdc735">uRProbe</a></td></tr>
+<tr class="memitem:a529602ba0926e9ae071538c32aae67b2" id="r_a529602ba0926e9ae071538c32aae67b2"><td class="memItemLeft">uniform samplerCubeArrayShadow&#160;</td><td class="memItemRight"><a class="el" href="#a529602ba0926e9ae071538c32aae67b2">uPLSCMA</a></td></tr>
+<tr class="memitem:a930ec1ffaba286dc5de0429209f6a66f" id="r_a930ec1ffaba286dc5de0429209f6a66f"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a930ec1ffaba286dc5de0429209f6a66f">uBRDFLUT</a></td></tr>
+<tr class="memitem:a905fe619df43d85ea46278044d332311" id="r_a905fe619df43d85ea46278044d332311"><td class="memItemLeft">uniform samplerCube&#160;</td><td class="memItemRight"><a class="el" href="#a905fe619df43d85ea46278044d332311">uSkybox</a></td></tr>
+<tr class="memitem:a256640423d7a3364ce432b1b5c92a1f6" id="r_a256640423d7a3364ce432b1b5c92a1f6"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a256640423d7a3364ce432b1b5c92a1f6">uFBM</a></td></tr>
+<tr class="memitem:a3451a1adde97f77ce0b32a0d88eff068" id="r_a3451a1adde97f77ce0b32a0d88eff068"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#a3451a1adde97f77ce0b32a0d88eff068">uSSAO</a></td></tr>
+<tr class="memitem:abedf364922afc432663845334cd7880e" id="r_abedf364922afc432663845334cd7880e"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#abedf364922afc432663845334cd7880e">uDepth</a></td></tr>
+<tr class="memitem:afc75720fa63a8f73470d04566e35ef49" id="r_afc75720fa63a8f73470d04566e35ef49"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#afc75720fa63a8f73470d04566e35ef49">uSSR</a></td></tr>
+<tr class="memitem:aa83365ec51e14056c5ba92d482c3597e" id="r_aa83365ec51e14056c5ba92d482c3597e"><td class="memItemLeft">uniform sampler2D&#160;</td><td class="memItemRight"><a class="el" href="#aa83365ec51e14056c5ba92d482c3597e">gUV</a></td></tr>
+<tr class="memitem:a2411081518a70d0234b645bd2ab5453c" id="r_a2411081518a70d0234b645bd2ab5453c"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2411081518a70d0234b645bd2ab5453c">probe_origin</a></td></tr>
+<tr class="memitem:ab27e76a88ac98d986b44798c6a57f9a8" id="r_ab27e76a88ac98d986b44798c6a57f9a8"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ab27e76a88ac98d986b44798c6a57f9a8">probe_spacing</a></td></tr>
+<tr class="memitem:a3824743a6779e68701678fb066c4e4a1" id="r_a3824743a6779e68701678fb066c4e4a1"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structivec3">ivec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3824743a6779e68701678fb066c4e4a1">probe_grid_size</a></td></tr>
+<tr class="memitem:a170df8dc2e182930ca9bbb54009503f6" id="r_a170df8dc2e182930ca9bbb54009503f6"><td class="memItemLeft">uniform int&#160;</td><td class="memItemRight"><a class="el" href="#a170df8dc2e182930ca9bbb54009503f6">index_offset</a></td></tr>
+<tr class="memitem:acbafd155e0724b4930283f5e42f370c6" id="r_acbafd155e0724b4930283f5e42f370c6"><td class="memItemLeft">uniform int&#160;</td><td class="memItemRight"><a class="el" href="#acbafd155e0724b4930283f5e42f370c6">probe_bake</a></td></tr>
+<tr class="memitem:aa0853334956e510efc05665c9891c040" id="r_aa0853334956e510efc05665c9891c040"><td class="memItemLeft">uniform uint&#160;</td><td class="memItemRight"><a class="el" href="#aa0853334956e510efc05665c9891c040">uLPVDepthPadded</a></td></tr>
+<tr class="memitem:a66c06ef03a9cf4e372de8d5ab82bc7fe" id="r_a66c06ef03a9cf4e372de8d5ab82bc7fe"><td class="memItemLeft">uniform sampler3D&#160;</td><td class="memItemRight"><a class="el" href="#a66c06ef03a9cf4e372de8d5ab82bc7fe">probe_tex</a></td></tr>
+<tr class="memitem:a320460a11c7b3fe06f38d43548a080a8" id="r_a320460a11c7b3fe06f38d43548a080a8"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a320460a11c7b3fe06f38d43548a080a8">uScreenRes</a></td></tr>
+<tr class="memitem:a8d026cdee329e0beecf1cc442ec21f1d" id="r_a8d026cdee329e0beecf1cc442ec21f1d"><td class="memItemLeft">uniform <a class="el" href="types_8h.html#structuvec3">uvec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8d026cdee329e0beecf1cc442ec21f1d">uGridSize</a></td></tr>
+<tr class="memitem:ab24a49a9c8108b3693e6690acc54aaa7" id="r_ab24a49a9c8108b3693e6690acc54aaa7"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#ab24a49a9c8108b3693e6690acc54aaa7">uNear</a></td></tr>
+<tr class="memitem:a39a07c027d376eebacd6553dc047021d" id="r_a39a07c027d376eebacd6553dc047021d"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#a39a07c027d376eebacd6553dc047021d">uFar</a></td></tr>
+<tr class="memitem:acd8b0d46531b98678e595636a245a50e" id="r_acd8b0d46531b98678e595636a245a50e"><td class="memItemLeft">uniform float&#160;</td><td class="memItemRight"><a class="el" href="#acd8b0d46531b98678e595636a245a50e">uLogScale</a></td></tr>
+<tr class="memitem:abf33b7cfe32e3ae64202d6428f6052ee" id="r_abf33b7cfe32e3ae64202d6428f6052ee"><td class="memItemLeft">const float&#160;</td><td class="memItemRight"><a class="el" href="#abf33b7cfe32e3ae64202d6428f6052ee">height_scale</a> = 0.02f</td></tr>
+<tr class="memitem:a69f1e6f8ed5b08a6425d72d2491af1fe" id="r_a69f1e6f8ed5b08a6425d72d2491af1fe"><td class="memItemLeft">const <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a69f1e6f8ed5b08a6425d72d2491af1fe">DIELECTRIC_F0</a> = <a class="el" href="types_8h.html#structvec3">vec3</a>(0.04)</td></tr>
+<tr class="memitem:aa08a577393243b86dfd2a97e61443673" id="r_aa08a577393243b86dfd2a97e61443673"><td class="memItemLeft">const float&#160;</td><td class="memItemRight"><a class="el" href="#aa08a577393243b86dfd2a97e61443673">PI</a> = 3.14159265359</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The main forward fragment shader. </p>
+
+<p class="definition">Definition in file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a54a15c7759ae27bb73c7d63affa1bd9c" name="a54a15c7759ae27bb73c7d63affa1bd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a15c7759ae27bb73c7d63affa1bd9c">&#9670;&#160;</a></span>LPV_SLOTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPV_SLOTS&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00571">571</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a11a427cb1228a62dee06e50c466d4804" name="a11a427cb1228a62dee06e50c466d4804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a427cb1228a62dee06e50c466d4804">&#9670;&#160;</a></span>SH_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SH_MAX&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00572">572</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a14faaaca45684b615b722b3f3d790868" name="a14faaaca45684b615b722b3f3d790868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14faaaca45684b615b722b3f3d790868">&#9670;&#160;</a></span>layout() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">location</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, and <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a251ff7187aa6805e7027554c86b34307" name="a251ff7187aa6805e7027554c86b34307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251ff7187aa6805e7027554c86b34307">&#9670;&#160;</a></span>layout() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std140</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00125">125</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>, <a class="el" href="shadow_8vert_source.html#l00015">projection</a>, and <a class="el" href="shadow_8vert_source.html#l00016">view</a>.</p>
+
+</div>
+</div>
+<a id="a15905184e63ebc166416ba14f5c751c1" name="a15905184e63ebc166416ba14f5c751c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15905184e63ebc166416ba14f5c751c1">&#9670;&#160;</a></span>layout() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">layout </td>
+          <td>(</td>
+          <td class="paramtype">std430</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">binding</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00160">160</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout()</a>.</p>
+
+</div>
+</div>
+<a id="a80ec32c1f311b5362e2f013c3f71e191" name="a80ec32c1f311b5362e2f013c3f71e191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ec32c1f311b5362e2f013c3f71e191">&#9670;&#160;</a></span>parallax_mapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec2">vec2</a> parallax_mapping </td>
+          <td>(</td>
+          <td class="paramtype">sampler2D</td>          <td class="paramname"><span class="paramname"><em>normal_map</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec2">vec2</a></td>          <td class="paramname"><span class="paramname"><em>texCoords</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>viewDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float</td>          <td class="paramname"><span class="paramname"><em>final_depth</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00253">253</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="depth__pre__pass_8frag_source.html#l00076">height_scale</a>, <a class="el" href="dynamic_8frag_source.html#l00253">parallax_mapping()</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>, and <a class="el" href="dynamic_8frag_source.html#l00253">parallax_mapping()</a>.</p>
+
+</div>
+</div>
+<a id="a2f02ba7c17ef6094904ef9afb717b289" name="a2f02ba7c17ef6094904ef9afb717b289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f02ba7c17ef6094904ef9afb717b289">&#9670;&#160;</a></span>get_parallax_corrected_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> get_parallax_corrected_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>worldPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>viewDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>boxMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>boxMax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>probeCenter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00311">311</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00311">get_parallax_corrected_vector()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00311">get_parallax_corrected_vector()</a>, and <a class="el" href="dynamic_8frag_source.html#l00475">sample_weighted_rprobes()</a>.</p>
+
+</div>
+</div>
+<a id="ad91199e82ab7ab66b647b6075573482d" name="ad91199e82ab7ab66b647b6075573482d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91199e82ab7ab66b647b6075573482d">&#9670;&#160;</a></span>shadow_calculation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float shadow_calculation </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>layer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec4">vec4</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>diff</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00331">331</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00331">shadow_calculation()</a>, <a class="el" href="dynamic_8frag_source.html#l00218">uShadowmap</a>, <a class="el" href="types_8h_source.html#l00013">vec4::w</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>, and <a class="el" href="dynamic_8frag_source.html#l00331">shadow_calculation()</a>.</p>
+
+</div>
+</div>
+<a id="a188c170d14e42dd51cef9d30793dbe2e" name="a188c170d14e42dd51cef9d30793dbe2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188c170d14e42dd51cef9d30793dbe2e">&#9670;&#160;</a></span>distribution_GGX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distribution_GGX </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>NdotH</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00354">354</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00354">distribution_GGX()</a>, and <a class="el" href="engine__types_8h_source.html#l00068">PI</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00394">calculate_light()</a>, and <a class="el" href="dynamic_8frag_source.html#l00354">distribution_GGX()</a>.</p>
+
+</div>
+</div>
+<a id="a1bdde41461278f1cd5708f55a1d1c3d2" name="a1bdde41461278f1cd5708f55a1d1c3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bdde41461278f1cd5708f55a1d1c3d2">&#9670;&#160;</a></span>fresnel_schlick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> fresnel_schlick </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>CosTheta</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>F0</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes Schlick's approximation for Fresnel reflectance. </p>
+<p class="formulaDsp">
+\begin{eqnarray*}F(\theta) &amp;=&amp; F_0 + (1 - F_0)(1 - \cos\theta)^5 \\
+\text{where } \cos\theta &amp;=&amp; \max(0, \omega_h \cdot v)
+\end{eqnarray*}
+</p>
+ 
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00369">369</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00369">fresnel_schlick()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00394">calculate_light()</a>, <a class="el" href="dynamic_8frag_source.html#l00369">fresnel_schlick()</a>, and <a class="el" href="dynamic_8frag_source.html#l00377">fresnel_schlick_roughness()</a>.</p>
+
+</div>
+</div>
+<a id="a4ad8f51a3b5ffde15f127285ac499f77" name="a4ad8f51a3b5ffde15f127285ac499f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad8f51a3b5ffde15f127285ac499f77">&#9670;&#160;</a></span>fresnel_schlick_roughness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> fresnel_schlick_roughness </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>cosTheta</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>albedo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>metallic</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00377">377</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00351">DIELECTRIC_F0</a>, <a class="el" href="dynamic_8frag_source.html#l00369">fresnel_schlick()</a>, and <a class="el" href="dynamic_8frag_source.html#l00377">fresnel_schlick_roughness()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00377">fresnel_schlick_roughness()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="abb4e90638594bc278f59465b23df4128" name="abb4e90638594bc278f59465b23df4128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4e90638594bc278f59465b23df4128">&#9670;&#160;</a></span>visibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float visibility </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>NdotV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>NdotL</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00386">386</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00386">visibility()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00394">calculate_light()</a>, and <a class="el" href="dynamic_8frag_source.html#l00386">visibility()</a>.</p>
+
+</div>
+</div>
+<a id="a513f4c9c6e1780bb35cfe594e936367a" name="a513f4c9c6e1780bb35cfe594e936367a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513f4c9c6e1780bb35cfe594e936367a">&#9670;&#160;</a></span>calculate_light()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> calculate_light </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>V</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>L</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>albedo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>metallic</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>light_color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00394">394</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00394">calculate_light()</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="dynamic_8frag_source.html#l00351">DIELECTRIC_F0</a>, <a class="el" href="dynamic_8frag_source.html#l00354">distribution_GGX()</a>, <a class="el" href="dynamic_8frag_source.html#l00369">fresnel_schlick()</a>, <a class="el" href="engine__types_8h_source.html#l00068">PI</a>, and <a class="el" href="dynamic_8frag_source.html#l00386">visibility()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00394">calculate_light()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a3ebfb737c43cd0e222b89e42153763df" name="a3ebfb737c43cd0e222b89e42153763df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebfb737c43cd0e222b89e42153763df">&#9670;&#160;</a></span>normal_filtering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float normal_filtering </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>N</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00424">424</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00424">normal_filtering()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>, and <a class="el" href="dynamic_8frag_source.html#l00424">normal_filtering()</a>.</p>
+
+</div>
+</div>
+<a id="a3884765c2265f47ab1dd740a297562d4" name="a3884765c2265f47ab1dd740a297562d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3884765c2265f47ab1dd740a297562d4">&#9670;&#160;</a></span>palette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> palette </td>
+          <td>(</td>
+          <td class="paramtype">in float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in <a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in <a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in <a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">in <a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00440">440</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00440">palette()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00440">palette()</a>.</p>
+
+</div>
+</div>
+<a id="a19e48e7f882c74497ad7845b110d4cb8" name="a19e48e7f882c74497ad7845b110d4cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e48e7f882c74497ad7845b110d4cb8">&#9670;&#160;</a></span>hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00444">444</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00444">hash()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00444">hash()</a>.</p>
+
+</div>
+</div>
+<a id="a3d4562924b38c15bc9c291574b0e355f" name="a3d4562924b38c15bc9c291574b0e355f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4562924b38c15bc9c291574b0e355f">&#9670;&#160;</a></span>compute_probe_weight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float compute_probe_weight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>world_pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__shader__structs__group.html#struct_r_probe">RProbe</a></td>          <td class="paramname"><span class="paramname"><em>rp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00450">450</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00450">compute_probe_weight()</a>, <a class="el" href="engine__types_8h_source.html#l01365">RProbe::max</a>, <a class="el" href="engine__types_8h_source.html#l01363">RProbe::min</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00450">compute_probe_weight()</a>, and <a class="el" href="dynamic_8frag_source.html#l00475">sample_weighted_rprobes()</a>.</p>
+
+</div>
+</div>
+<a id="aa024b820e3473eb178168a363432f098" name="aa024b820e3473eb178168a363432f098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa024b820e3473eb178168a363432f098">&#9670;&#160;</a></span>sample_weighted_rprobes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> sample_weighted_rprobes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>view_dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness_lod</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00475">475</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01361">RProbe::center</a>, <a class="el" href="wireframe_8frag_source.html#l00006">color</a>, <a class="el" href="dynamic_8frag_source.html#l00450">compute_probe_weight()</a>, <a class="el" href="dynamic_8frag_source.html#l00311">get_parallax_corrected_vector()</a>, <a class="el" href="engine__types_8h_source.html#l01365">RProbe::max</a>, <a class="el" href="engine__types_8h_source.html#l01363">RProbe::min</a>, <a class="el" href="dynamic_8frag_source.html#l00475">sample_weighted_rprobes()</a>, <a class="el" href="dynamic_8frag_source.html#l00222">uRProbe</a>, <a class="el" href="bloom__blur_8frag_source.html#l00011">weights</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>, and <a class="el" href="dynamic_8frag_source.html#l00475">sample_weighted_rprobes()</a>.</p>
+
+</div>
+</div>
+<a id="a9005121deddc6f1c3fe44757c9f9e378" name="a9005121deddc6f1c3fe44757c9f9e378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9005121deddc6f1c3fe44757c9f9e378">&#9670;&#160;</a></span>calculate_attenuation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float calculate_attenuation </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>distance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>radius</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensity</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00508">508</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00508">calculate_attenuation()</a>, and <a class="el" href="main_8c_source.html#l00519">window</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00508">calculate_attenuation()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="ae4ee102b99c5cb1257f14d9a6cb916af" name="ae4ee102b99c5cb1257f14d9a6cb916af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ee102b99c5cb1257f14d9a6cb916af">&#9670;&#160;</a></span>get_cluster_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint get_cluster_index </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00518">518</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00518">get_cluster_index()</a>, <a class="el" href="cull__clusters_8comp_source.html#l00100">uGridSize</a>, <a class="el" href="dynamic_8frag_source.html#l00247">uLogScale</a>, <a class="el" href="cull__clusters_8comp_source.html#l00101">uNear</a>, <a class="el" href="dynamic_8frag_source.html#l00243">uScreenRes</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00072">ViewPos</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::x</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::y</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00518">get_cluster_index()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a2038f602490a4839dfe110bcccb2b344" name="a2038f602490a4839dfe110bcccb2b344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2038f602490a4839dfe110bcccb2b344">&#9670;&#160;</a></span>calculate_specular_occlusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float calculate_specular_occlusion </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>NdotV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ao</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>roughness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00536">536</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00536">calculate_specular_occlusion()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00536">calculate_specular_occlusion()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a9d181d2ecc74af53f4e67c4c588ea5e7" name="a9d181d2ecc74af53f4e67c4c588ea5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d181d2ecc74af53f4e67c4c588ea5e7">&#9670;&#160;</a></span>linearize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float linearize </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00543">543</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="coc_8frag_source.html#l00030">linearize()</a>.</p>
+
+</div>
+</div>
+<a id="ae1ab2c1037f999d17d674a4b11b680ad" name="ae1ab2c1037f999d17d674a4b11b680ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ab2c1037f999d17d674a4b11b680ad">&#9670;&#160;</a></span>pos_to_pv_local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> pos_to_pv_local </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a></td>          <td class="paramname"><span class="paramname"><em>obb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a position to local <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a> space and returns the coord as if it was a texture from \(0 \rightarrow 1\). </p>
+<p>\begin{align} p &amp;= \mathrm{Position} \\ c &amp;= \mathrm{Center} \\ l &amp;= \mathrm{Length} \\ \Delta &amp;= p - c \\ n &amp;= \mathbf{M^r}\mathbf{\Delta} \\ &amp;= (\frac{n}{l}) * 0.5 \end{align} </p>
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00561">561</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00017">OBB::axis_x</a>, <a class="el" href="dynamic_8frag_source.html#l00019">OBB::axis_y</a>, <a class="el" href="dynamic_8frag_source.html#l00021">OBB::axis_z</a>, <a class="el" href="dynamic_8frag_source.html#l00015">OBB::center</a>, <a class="el" href="dynamic_8frag_source.html#l00023">OBB::extents</a>, and <a class="el" href="audio_8c_source.html#l00919">pos_to_pv_local()</a>.</p>
+
+</div>
+</div>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00573">573</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00027">Material::albedo_tex</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00029">Material::arm_tex</a>, <a class="el" href="dynamic_8frag_source.html#l00508">calculate_attenuation()</a>, <a class="el" href="dynamic_8frag_source.html#l00394">calculate_light()</a>, <a class="el" href="dynamic_8frag_source.html#l00536">calculate_specular_occlusion()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00019">Light::color</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00020">Light::cos_diff</a>, <a class="el" href="cull__clusters_8comp_source.html#l00091">Cluster::count</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00016">Material::diffuse</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::dir</a>, <a class="el" href="dynamic_8frag_source.html#l00209">DirectionalLight</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00018">Material::emissive</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00039">Material::emissive_strength</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00030">Material::emissive_tex</a>, <a class="el" href="bloom_8frag_source.html#l00006">fragColor</a>, <a class="el" href="dynamic_8frag_source.html#l00204">FragPosLightSpace</a>, <a class="el" href="dynamic_8frag_source.html#l00377">fresnel_schlick_roughness()</a>, <a class="el" href="dynamic_8frag_source.html#l00518">get_cluster_index()</a>, <a class="el" href="engine__types_8h_source.html#l01473">Light::intensity</a>, <a class="el" href="engine__types_8h_source.html#l01483">Light::layer</a>, <a class="el" href="dynamic_8frag_source.html#l00202">LMUV</a>, <a class="el" href="engine__types_8h_source.html#l00213">LPV_SLOTS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00069">Mat</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00032">Material::metallic</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00067">Normal</a>, <a class="el" href="dynamic_8frag_source.html#l00424">normal_filtering()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00028">Material::normal_tex</a>, <a class="el" href="cull__clusters_8comp_source.html#l00090">Cluster::offset</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00017">Light::outer_cos</a>, <a class="el" href="dynamic_8frag_source.html#l00253">parallax_mapping()</a>, <a class="el" href="engine__types_8h_source.html#l00068">PI</a>, <a class="el" href="dynamic_8frag_source.html#l00199">Pos</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::pos</a>, <a class="el" href="audio_8c_source.html#l00919">pos_to_pv_local()</a>, <a class="el" href="dynamic_8frag_source.html#l00235">probe_bake</a>, <a class="el" href="dynamic_8frag_source.html#l00240">probe_tex</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::radius</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00033">Material::roughness</a>, <a class="el" href="dynamic_8frag_source.html#l00475">sample_weighted_rprobes()</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="dynamic_8frag_source.html#l00331">shadow_calculation()</a>, <a class="el" href="dynamic_8frag_source.html#l00210">SpotLight</a>, <a class="el" href="dynamic_8frag_source.html#l00212">Static</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00068">TBN</a>, <a class="el" href="dynamic_8frag_source.html#l00224">uBRDFLUT</a>, <a class="el" href="dynamic_8frag_source.html#l00217">uDirectionalmap</a>, <a class="el" href="cull__clusters_8comp_source.html#l00102">uFar</a>, <a class="el" href="cull__clusters_8comp_source.html#l00100">uGridSize</a>, <a class="el" href="dynamic_8frag_source.html#l00216">uLightmap</a>, <a class="el" href="dynamic_8frag_source.html#l00247">uLogScale</a>, <a class="el" href="dynamic_8frag_source.html#l00239">uLPVDepthPadded</a>, <a class="el" href="cull__clusters_8comp_source.html#l00101">uNear</a>, <a class="el" href="dynamic_8frag_source.html#l00223">uPLSCMA</a>, <a class="el" href="dynamic_8frag_source.html#l00243">uScreenRes</a>, <a class="el" href="dynamic_8frag_source.html#l00227">uSSAO</a>, <a class="el" href="dynamic_8frag_source.html#l00229">uSSR</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00070">UV</a>, <a class="el" href="fullscreen_8frag_source.html#l00004">uv</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00075">ViewDirTanSpace</a>, <a class="el" href="depth__pre__pass_8frag_source.html#l00072">ViewPos</a>, <a class="el" href="types_8h_source.html#l00017">uvec2::x</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::x</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00017">uvec2::y</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::y</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00018">uvec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a18b7801c2dc257a0ddc2e74f0b320e78" name="a18b7801c2dc257a0ddc2e74f0b320e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b7801c2dc257a0ddc2e74f0b320e78">&#9670;&#160;</a></span>Normal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> Normal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00196">196</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="adabf3fc4e6715d6105b58d9216383fc2" name="adabf3fc4e6715d6105b58d9216383fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adabf3fc4e6715d6105b58d9216383fc2">&#9670;&#160;</a></span>Tangent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> Tangent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00197">197</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8vert_source.html#l00207">main()</a>.</p>
+
+</div>
+</div>
+<a id="a7a9ab1a8b6b8081b51f1206934375125" name="a7a9ab1a8b6b8081b51f1206934375125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a9ab1a8b6b8081b51f1206934375125">&#9670;&#160;</a></span>TangentSign</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in float TangentSign</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00198">198</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8vert_source.html#l00207">main()</a>.</p>
+
+</div>
+</div>
+<a id="a04bdd5bf135fc4206a52aea5d08b4726" name="a04bdd5bf135fc4206a52aea5d08b4726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04bdd5bf135fc4206a52aea5d08b4726">&#9670;&#160;</a></span>Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> Pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00199">199</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a921525e1ccbafd33f722a836b516644b" name="a921525e1ccbafd33f722a836b516644b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921525e1ccbafd33f722a836b516644b">&#9670;&#160;</a></span>ViewPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> ViewPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00200">200</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a5d59c7b23932264c2d62ef3be626fc34" name="a5d59c7b23932264c2d62ef3be626fc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d59c7b23932264c2d62ef3be626fc34">&#9670;&#160;</a></span>UV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> UV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00201">201</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a158e9c040d8a5574e1ec6a3d5620f211" name="a158e9c040d8a5574e1ec6a3d5620f211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158e9c040d8a5574e1ec6a3d5620f211">&#9670;&#160;</a></span>LMUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec2">vec2</a> LMUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00202">202</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a41309d5a8684250889191c62d6ac455f" name="a41309d5a8684250889191c62d6ac455f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41309d5a8684250889191c62d6ac455f">&#9670;&#160;</a></span>Color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> Color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00203">203</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a2cc15add67135193c6a1d8b48f9338a3" name="a2cc15add67135193c6a1d8b48f9338a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc15add67135193c6a1d8b48f9338a3">&#9670;&#160;</a></span>FragPosLightSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec4">vec4</a> FragPosLightSpace[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00204">204</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="ade0ed141ad92e0db1cdc8d474765a03f" name="ade0ed141ad92e0db1cdc8d474765a03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0ed141ad92e0db1cdc8d474765a03f">&#9670;&#160;</a></span>TBN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structmat3">mat3</a> TBN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00205">205</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a54f45bafa6f9e4c5deb2493dded39873" name="a54f45bafa6f9e4c5deb2493dded39873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f45bafa6f9e4c5deb2493dded39873">&#9670;&#160;</a></span>ViewDirTanSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in <a class="el" href="types_8h.html#structvec3">vec3</a> ViewDirTanSpace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00206">206</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="aad64d4574c77f5434c92150b16cf78f0" name="aad64d4574c77f5434c92150b16cf78f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad64d4574c77f5434c92150b16cf78f0">&#9670;&#160;</a></span>PointLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat in <a class="el" href="types_8h.html#structivec2">ivec2</a> PointLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00208">208</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8vert_source.html#l00207">main()</a>.</p>
+
+</div>
+</div>
+<a id="a16b913c4d0ef96c4fa864fa3c0a52e95" name="a16b913c4d0ef96c4fa864fa3c0a52e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b913c4d0ef96c4fa864fa3c0a52e95">&#9670;&#160;</a></span>DirectionalLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat in <a class="el" href="types_8h.html#structuvec2">uvec2</a> DirectionalLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00209">209</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a2d80562bd9b28ba702ff8cd8400e1ee1" name="a2d80562bd9b28ba702ff8cd8400e1ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d80562bd9b28ba702ff8cd8400e1ee1">&#9670;&#160;</a></span>SpotLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat in <a class="el" href="types_8h.html#structuvec2">uvec2</a> SpotLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00210">210</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a73aa8de87d5181c24b7e99a41d20f30f" name="a73aa8de87d5181c24b7e99a41d20f30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73aa8de87d5181c24b7e99a41d20f30f">&#9670;&#160;</a></span>Static</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat in uint Static</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00212">212</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a6a7c450f534931a81d3c99b42be9c126" name="a6a7c450f534931a81d3c99b42be9c126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7c450f534931a81d3c99b42be9c126">&#9670;&#160;</a></span>Mat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat in uint Mat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00213">213</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="aed99416ffbe7000edc541d3f9d3a1660" name="aed99416ffbe7000edc541d3f9d3a1660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed99416ffbe7000edc541d3f9d3a1660">&#9670;&#160;</a></span>material</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform int material</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00215">215</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, and <a class="el" href="render_8c_source.html#l01033">populate_draw_commands()</a>.</p>
+
+</div>
+</div>
+<a id="a97dd6372f4aea7bf84d3e2e795bfa751" name="a97dd6372f4aea7bf84d3e2e795bfa751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97dd6372f4aea7bf84d3e2e795bfa751">&#9670;&#160;</a></span>uLightmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uLightmap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00216">216</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a262aa47c644fcefeb1c8478bbb9ee4db" name="a262aa47c644fcefeb1c8478bbb9ee4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262aa47c644fcefeb1c8478bbb9ee4db">&#9670;&#160;</a></span>uDirectionalmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uDirectionalmap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00217">217</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a17edaa0e4a1bcfef3fa28c84e282749b" name="a17edaa0e4a1bcfef3fa28c84e282749b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17edaa0e4a1bcfef3fa28c84e282749b">&#9670;&#160;</a></span>uShadowmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2DArrayShadow uShadowmap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00218">218</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00331">shadow_calculation()</a>.</p>
+
+</div>
+</div>
+<a id="a6c3b8afdf0f4a6aa4995522bb0b7f3b0" name="a6c3b8afdf0f4a6aa4995522bb0b7f3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3b8afdf0f4a6aa4995522bb0b7f3b0">&#9670;&#160;</a></span>gAlbedo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D gAlbedo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00219">219</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="depth__pre__pass_8frag.html#aaad5c946d47e5ca89ea960ba47e53210">layout()</a>, and <a class="el" href="depth__pre__pass_8frag_source.html#l00142">main()</a>.</p>
+
+</div>
+</div>
+<a id="a6e15101167e2b37e1a218a9f886e4b64" name="a6e15101167e2b37e1a218a9f886e4b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e15101167e2b37e1a218a9f886e4b64">&#9670;&#160;</a></span>gNormal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D gNormal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00220">220</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="depth__pre__pass_8frag.html#aaad5c946d47e5ca89ea960ba47e53210">layout()</a>, and <a class="el" href="depth__pre__pass_8frag_source.html#l00142">main()</a>.</p>
+
+</div>
+</div>
+<a id="af9105292fdee754f8842d11af64e6484" name="af9105292fdee754f8842d11af64e6484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9105292fdee754f8842d11af64e6484">&#9670;&#160;</a></span>gExtra</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D gExtra</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00221">221</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="depth__pre__pass_8frag.html#aaad5c946d47e5ca89ea960ba47e53210">layout()</a>, and <a class="el" href="depth__pre__pass_8frag_source.html#l00142">main()</a>.</p>
+
+</div>
+</div>
+<a id="a0eada0750d044bed2a53e90b81fdc735" name="a0eada0750d044bed2a53e90b81fdc735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eada0750d044bed2a53e90b81fdc735">&#9670;&#160;</a></span>uRProbe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform samplerCubeArray uRProbe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00222">222</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00475">sample_weighted_rprobes()</a>.</p>
+
+</div>
+</div>
+<a id="a529602ba0926e9ae071538c32aae67b2" name="a529602ba0926e9ae071538c32aae67b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529602ba0926e9ae071538c32aae67b2">&#9670;&#160;</a></span>uPLSCMA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform samplerCubeArrayShadow uPLSCMA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00223">223</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a930ec1ffaba286dc5de0429209f6a66f" name="a930ec1ffaba286dc5de0429209f6a66f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930ec1ffaba286dc5de0429209f6a66f">&#9670;&#160;</a></span>uBRDFLUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uBRDFLUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00224">224</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a905fe619df43d85ea46278044d332311" name="a905fe619df43d85ea46278044d332311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905fe619df43d85ea46278044d332311">&#9670;&#160;</a></span>uSkybox</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform samplerCube uSkybox</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00225">225</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a256640423d7a3364ce432b1b5c92a1f6" name="a256640423d7a3364ce432b1b5c92a1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256640423d7a3364ce432b1b5c92a1f6">&#9670;&#160;</a></span>uFBM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uFBM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00226">226</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a3451a1adde97f77ce0b32a0d88eff068" name="a3451a1adde97f77ce0b32a0d88eff068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3451a1adde97f77ce0b32a0d88eff068">&#9670;&#160;</a></span>uSSAO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uSSAO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00227">227</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="abedf364922afc432663845334cd7880e" name="abedf364922afc432663845334cd7880e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abedf364922afc432663845334cd7880e">&#9670;&#160;</a></span>uDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00228">228</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="afc75720fa63a8f73470d04566e35ef49" name="afc75720fa63a8f73470d04566e35ef49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc75720fa63a8f73470d04566e35ef49">&#9670;&#160;</a></span>uSSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D uSSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00229">229</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="aa83365ec51e14056c5ba92d482c3597e" name="aa83365ec51e14056c5ba92d482c3597e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83365ec51e14056c5ba92d482c3597e">&#9670;&#160;</a></span>gUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler2D gUV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00230">230</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="depth__pre__pass_8frag.html#aaad5c946d47e5ca89ea960ba47e53210">layout()</a>, and <a class="el" href="depth__pre__pass_8frag_source.html#l00142">main()</a>.</p>
+
+</div>
+</div>
+<a id="a2411081518a70d0234b645bd2ab5453c" name="a2411081518a70d0234b645bd2ab5453c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2411081518a70d0234b645bd2ab5453c">&#9670;&#160;</a></span>probe_origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structvec3">vec3</a> probe_origin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00231">231</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="ab27e76a88ac98d986b44798c6a57f9a8" name="ab27e76a88ac98d986b44798c6a57f9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27e76a88ac98d986b44798c6a57f9a8">&#9670;&#160;</a></span>probe_spacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float probe_spacing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00232">232</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a3824743a6779e68701678fb066c4e4a1" name="a3824743a6779e68701678fb066c4e4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3824743a6779e68701678fb066c4e4a1">&#9670;&#160;</a></span>probe_grid_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structivec3">ivec3</a> probe_grid_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00233">233</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a170df8dc2e182930ca9bbb54009503f6" name="a170df8dc2e182930ca9bbb54009503f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170df8dc2e182930ca9bbb54009503f6">&#9670;&#160;</a></span>index_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform int index_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00234">234</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l00343">add_mesh_to_buffer()</a>, and <a class="el" href="depth__pre__pass__no__gbuffer_8vert_source.html#l00132">main()</a>.</p>
+
+</div>
+</div>
+<a id="acbafd155e0724b4930283f5e42f370c6" name="acbafd155e0724b4930283f5e42f370c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbafd155e0724b4930283f5e42f370c6">&#9670;&#160;</a></span>probe_bake</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform int probe_bake</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00235">235</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="render_8c_source.html#l01589">bind_dynamic_shader()</a>, <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>, <a class="el" href="render_8c_source.html#l02089">render_all_draw_commands()</a>, and <a class="el" href="render_8c_source.html#l02278">render_to_cubemap_face()</a>.</p>
+
+</div>
+</div>
+<a id="aa0853334956e510efc05665c9891c040" name="aa0853334956e510efc05665c9891c040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0853334956e510efc05665c9891c040">&#9670;&#160;</a></span>uLPVDepthPadded</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform uint uLPVDepthPadded</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00239">239</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a66c06ef03a9cf4e372de8d5ab82bc7fe" name="a66c06ef03a9cf4e372de8d5ab82bc7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c06ef03a9cf4e372de8d5ab82bc7fe">&#9670;&#160;</a></span>probe_tex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform sampler3D probe_tex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00240">240</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a320460a11c7b3fe06f38d43548a080a8" name="a320460a11c7b3fe06f38d43548a080a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320460a11c7b3fe06f38d43548a080a8">&#9670;&#160;</a></span>uScreenRes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structvec2">vec2</a> uScreenRes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00243">243</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00518">get_cluster_index()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="a8d026cdee329e0beecf1cc442ec21f1d" name="a8d026cdee329e0beecf1cc442ec21f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d026cdee329e0beecf1cc442ec21f1d">&#9670;&#160;</a></span>uGridSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform <a class="el" href="types_8h.html#structuvec3">uvec3</a> uGridSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00244">244</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="ab24a49a9c8108b3693e6690acc54aaa7" name="ab24a49a9c8108b3693e6690acc54aaa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24a49a9c8108b3693e6690acc54aaa7">&#9670;&#160;</a></span>uNear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uNear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00245">245</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a39a07c027d376eebacd6553dc047021d" name="a39a07c027d376eebacd6553dc047021d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a07c027d376eebacd6553dc047021d">&#9670;&#160;</a></span>uFar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uFar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00246">246</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="acd8b0d46531b98678e595636a245a50e" name="acd8b0d46531b98678e595636a245a50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8b0d46531b98678e595636a245a50e">&#9670;&#160;</a></span>uLogScale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uniform float uLogScale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00247">247</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00518">get_cluster_index()</a>, and <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>.</p>
+
+</div>
+</div>
+<a id="abf33b7cfe32e3ae64202d6428f6052ee" name="abf33b7cfe32e3ae64202d6428f6052ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf33b7cfe32e3ae64202d6428f6052ee">&#9670;&#160;</a></span>height_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float height_scale = 0.02f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00249">249</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
+<a id="a69f1e6f8ed5b08a6425d72d2491af1fe" name="a69f1e6f8ed5b08a6425d72d2491af1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f1e6f8ed5b08a6425d72d2491af1fe">&#9670;&#160;</a></span>DIELECTRIC_F0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="types_8h.html#structvec3">vec3</a> DIELECTRIC_F0 = <a class="el" href="types_8h.html#structvec3">vec3</a>(0.04)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00351">351</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00394">calculate_light()</a>, and <a class="el" href="dynamic_8frag_source.html#l00377">fresnel_schlick_roughness()</a>.</p>
+
+</div>
+</div>
+<a id="aa08a577393243b86dfd2a97e61443673" name="aa08a577393243b86dfd2a97e61443673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08a577393243b86dfd2a97e61443673">&#9670;&#160;</a></span>PI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float PI = 3.14159265359</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dynamic_8frag_source.html#l00352">352</a> of file <a class="el" href="dynamic_8frag_source.html">dynamic.frag</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

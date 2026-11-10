@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -185,7 +194,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animation_8c_source.html#l00023">23</a> of file <a class="el" href="animation_8c_source.html">animation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02661">AnimationSampler::count</a>, <a class="el" href="engine__types_8h_source.html#l02645">CUBICSPLINE</a>, <a class="el" href="engine__types_8h_source.html#l02664">AnimationSampler::elem_count</a>, <a class="el" href="engine__types_8h_source.html#l02666">AnimationSampler::interpolation</a>, <a class="el" href="engine__types_8h_source.html#l02645">LINEAR</a>, <a class="el" href="animation_8c_source.html#l00023">sample_animation()</a>, <a class="el" href="engine__types_8h_source.html#l02645">STEP</a>, <a class="el" href="engine__types_8h_source.html#l02662">AnimationSampler::times</a>, and <a class="el" href="engine__types_8h_source.html#l02665">AnimationSampler::values</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02668">AnimationSampler::count</a>, <a class="el" href="engine__types_8h_source.html#l02652">CUBICSPLINE</a>, <a class="el" href="engine__types_8h_source.html#l02671">AnimationSampler::elem_count</a>, <a class="el" href="engine__types_8h_source.html#l02673">AnimationSampler::interpolation</a>, <a class="el" href="engine__types_8h_source.html#l02652">LINEAR</a>, <a class="el" href="animation_8c_source.html#l00023">sample_animation()</a>, <a class="el" href="engine__types_8h_source.html#l02652">STEP</a>, <a class="el" href="engine__types_8h_source.html#l02669">AnimationSampler::times</a>, and <a class="el" href="engine__types_8h_source.html#l02672">AnimationSampler::values</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, and <a class="el" href="animation_8c_source.html#l00023">sample_animation()</a>.</p>
 
@@ -227,7 +236,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animation_8c_source.html#l00068">68</a> of file <a class="el" href="animation_8c_source.html">animation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main_8c_source.html#l00308">ASSET_INSTANCES</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02718">Animation::channel_count</a>, <a class="el" href="engine__types_8h_source.html#l02719">Animation::channels</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03412">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02843">AssetInstance::node_indices</a>, <a class="el" href="engine__types_8h_source.html#l02688">GLTFAnimationChannel::path</a>, <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, <a class="el" href="engine__types_8h_source.html#l02373">MeshNode::rotation</a>, <a class="el" href="animation_8c_source.html#l00023">sample_animation()</a>, <a class="el" href="engine__types_8h_source.html#l02686">GLTFAnimationChannel::sampler</a>, <a class="el" href="engine__types_8h_source.html#l02717">Animation::samplers</a>, <a class="el" href="engine__types_8h_source.html#l02374">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l02687">GLTFAnimationChannel::target_node</a>, <a class="el" href="engine__types_8h_source.html#l02652">TARGET_ROTATION</a>, <a class="el" href="engine__types_8h_source.html#l02652">TARGET_SCALE</a>, <a class="el" href="engine__types_8h_source.html#l02652">TARGET_TRANSLATION</a>, <a class="el" href="engine__types_8h_source.html#l02652">TARGET_WEIGHTS</a>, <a class="el" href="main_8c_source.html#l00315">time</a>, and <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::translation</a>.</p>
+<p class="reference">References <a class="el" href="main_8c_source.html#l00313">ASSET_INSTANCES</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02725">Animation::channel_count</a>, <a class="el" href="engine__types_8h_source.html#l02726">Animation::channels</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02850">AssetInstance::node_indices</a>, <a class="el" href="engine__types_8h_source.html#l02695">GLTFAnimationChannel::path</a>, <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, <a class="el" href="engine__types_8h_source.html#l02380">MeshNode::rotation</a>, <a class="el" href="animation_8c_source.html#l00023">sample_animation()</a>, <a class="el" href="engine__types_8h_source.html#l02693">GLTFAnimationChannel::sampler</a>, <a class="el" href="engine__types_8h_source.html#l02724">Animation::samplers</a>, <a class="el" href="engine__types_8h_source.html#l02381">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l02694">GLTFAnimationChannel::target_node</a>, <a class="el" href="engine__types_8h_source.html#l02659">TARGET_ROTATION</a>, <a class="el" href="engine__types_8h_source.html#l02659">TARGET_SCALE</a>, <a class="el" href="engine__types_8h_source.html#l02659">TARGET_TRANSLATION</a>, <a class="el" href="engine__types_8h_source.html#l02659">TARGET_WEIGHTS</a>, <a class="el" href="main_8c_source.html#l00320">time</a>, and <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::translation</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animation_8c_source.html#l00068">play_animation()</a>, and <a class="el" href="render_8c_source.html#l03057">render()</a>.</p>
 
@@ -258,7 +267,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animation_8c_source.html#l00010">10</a> of file <a class="el" href="animation_8c_source.html">animation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="animation_8c_source.html#l00010">animation_length()</a>, <a class="el" href="engine__types_8h_source.html#l02661">AnimationSampler::count</a>, <a class="el" href="engine__types_8h_source.html#l02716">Animation::sampler_count</a>, <a class="el" href="engine__types_8h_source.html#l02717">Animation::samplers</a>, and <a class="el" href="engine__types_8h_source.html#l02662">AnimationSampler::times</a>.</p>
+<p class="reference">References <a class="el" href="animation_8c_source.html#l00010">animation_length()</a>, <a class="el" href="engine__types_8h_source.html#l02668">AnimationSampler::count</a>, <a class="el" href="engine__types_8h_source.html#l02723">Animation::sampler_count</a>, <a class="el" href="engine__types_8h_source.html#l02724">Animation::samplers</a>, and <a class="el" href="engine__types_8h_source.html#l02669">AnimationSampler::times</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animation_8c_source.html#l00010">animation_length()</a>, and <a class="el" href="render_8c_source.html#l03057">render()</a>.</p>
 
@@ -294,7 +303,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animation_8c_source.html#l00091">91</a> of file <a class="el" href="animation_8c_source.html">animation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02749">GLTFSkin::animation_indices</a>, <a class="el" href="engine__types_8h_source.html#l02750">GLTFSkin::animation_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l02877">Asset::animations</a>, <a class="el" href="engine__types_8h_source.html#l02841">AssetInstance::asset_id</a>, <a class="el" href="main_8c_source.html#l00308">ASSET_INSTANCES</a>, <a class="el" href="engine__types_8h_source.html#l03414">Globals::assets</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="main_8c_source.html#l00305">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02714">Animation::name</a>, <a class="el" href="engine__types_8h_source.html#l02839">AssetInstance::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02844">AssetInstance::skin_indices</a>, and <a class="el" href="engine__types_8h_source.html#l03413">Globals::skins</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02756">GLTFSkin::animation_indices</a>, <a class="el" href="engine__types_8h_source.html#l02757">GLTFSkin::animation_indices_count</a>, <a class="el" href="engine__types_8h_source.html#l02884">Asset::animations</a>, <a class="el" href="engine__types_8h_source.html#l02848">AssetInstance::asset_id</a>, <a class="el" href="main_8c_source.html#l00313">ASSET_INSTANCES</a>, <a class="el" href="engine__types_8h_source.html#l03421">Globals::assets</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02721">Animation::name</a>, <a class="el" href="engine__types_8h_source.html#l02846">AssetInstance::skin_count</a>, <a class="el" href="engine__types_8h_source.html#l02851">AssetInstance::skin_indices</a>, and <a class="el" href="engine__types_8h_source.html#l03420">Globals::skins</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animation_8c_source.html#l00091">find_animation()</a>, and <a class="el" href="render_8c_source.html#l03057">render()</a>.</p>
 
@@ -325,9 +334,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animation_8c_source.html#l00115">115</a> of file <a class="el" href="animation_8c_source.html">animation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02245">AnimationTrack::active</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_BOOL</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_FLOAT</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_INT</a>, <a class="el" href="engine__types_8h_source.html#l02189">ANIM_TARGET_VEC3</a>, <a class="el" href="main_8c_source.html#l00310">ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02244">AnimationTrack::completion_data</a>, <a class="el" href="engine__types_8h_source.html#l02243">AnimationTrack::completion_type</a>, <a class="el" href="engine__types_8h_source.html#l02235">AnimationTrack::current_time</a>, <a class="el" href="engine__types_8h_source.html#l02242">AnimationTrack::data</a>, <a class="el" href="main_8c_source.html#l00314">dt</a>, <a class="el" href="engine__types_8h_source.html#l02236">AnimationTrack::duration</a>, <a class="el" href="engine__types_8h_source.html#l02264">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02233">AnimationTrack::kf</a>, <a class="el" href="engine__types_8h_source.html#l02234">AnimationTrack::kf_count</a>, <a class="el" href="engine__types_8h_source.html#l02237">AnimationTrack::loop</a>, <a class="el" href="init_8h_source.html#l00451">MAX_ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02211">AnimationKeyframe::time</a>, <a class="el" href="engine__types_8h_source.html#l02263">AnimationComponent::track_count</a>, <a class="el" href="engine__types_8h_source.html#l02262">AnimationComponent::tracks</a>, <a class="el" href="engine__types_8h_source.html#l02232">AnimationTrack::type</a>, <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>, and <a class="el" href="engine__types_8h.html#adc728fbc7b16945ef3e7761e5cb9774d">AnimationKeyframe::val</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02252">AnimationTrack::active</a>, <a class="el" href="engine__types_8h_source.html#l02196">ANIM_TARGET_BOOL</a>, <a class="el" href="engine__types_8h_source.html#l02196">ANIM_TARGET_FLOAT</a>, <a class="el" href="engine__types_8h_source.html#l02196">ANIM_TARGET_INT</a>, <a class="el" href="engine__types_8h_source.html#l02196">ANIM_TARGET_VEC3</a>, <a class="el" href="main_8c_source.html#l00315">ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02251">AnimationTrack::completion_data</a>, <a class="el" href="engine__types_8h_source.html#l02250">AnimationTrack::completion_type</a>, <a class="el" href="engine__types_8h_source.html#l02242">AnimationTrack::current_time</a>, <a class="el" href="engine__types_8h_source.html#l02249">AnimationTrack::data</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02243">AnimationTrack::duration</a>, <a class="el" href="engine__types_8h_source.html#l02271">AnimationComponent::free</a>, <a class="el" href="engine__types_8h_source.html#l02240">AnimationTrack::kf</a>, <a class="el" href="engine__types_8h_source.html#l02241">AnimationTrack::kf_count</a>, <a class="el" href="engine__types_8h_source.html#l02244">AnimationTrack::loop</a>, <a class="el" href="init_8h_source.html#l00451">MAX_ANIMATION_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02218">AnimationKeyframe::time</a>, <a class="el" href="engine__types_8h_source.html#l02270">AnimationComponent::track_count</a>, <a class="el" href="engine__types_8h_source.html#l02269">AnimationComponent::tracks</a>, <a class="el" href="engine__types_8h_source.html#l02239">AnimationTrack::type</a>, <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>, and <a class="el" href="engine__types_8h.html#adc728fbc7b16945ef3e7761e5cb9774d">AnimationKeyframe::val</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00483">main()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="animation_8c_source.html#l00115">update_animation_components()</a>.</p>
 
 </div>
 </div>

@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -164,7 +173,7 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr id="define-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">UI Constants</div></td></tr>
 <tr><td colspan="2" class="ititle"><div class="groupText"><p>Sizes of UI arrays and UI Scale.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo</a></b></dt><dd>Make UI scale dynamic.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo</a></b></dt><dd>Make UI scale dynamic.</dd></dl>
 </div></td></tr>
 <tr class="memitem:ga2485b5aae328cd7c9e35859d07e9cef3" id="r_ga2485b5aae328cd7c9e35859d07e9cef3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__ui__group.html#ga2485b5aae328cd7c9e35859d07e9cef3">MAX_UI_ELEMENTS</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="memitem:ga5ef8fa0a03dc91ba262a7d9a0f59888a" id="r_ga5ef8fa0a03dc91ba262a7d9a0f59888a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__ui__group.html#ga5ef8fa0a03dc91ba262a7d9a0f59888a">MAX_UI_CONTAINERS</a>&#160;&#160;&#160;1024</td></tr>

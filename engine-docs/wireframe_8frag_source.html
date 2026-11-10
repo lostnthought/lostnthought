@@ -117,20 +117,29 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('wireframe_8fra
 </div><!--header-->
 <div class="contents">
 <a href="wireframe_8frag.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>#version 430 core</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#version 430 core</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>layout(location = 0)out vec4 fragColor;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>in vec3 vColor;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>uniform vec3 color;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>void main()</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="wireframe_8frag.html#a14faaaca45684b615b722b3f3d790868">    4</a></span><a class="code hl_function" href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a>(location = 0)out <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a> <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">    5</a></span>in <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> <a class="code hl_variable" href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="wireframe_8frag.html#a1b6b0074b43684c435f4275d6fb7bf1a">    6</a></span>uniform <a class="code hl_struct" href="types_8h.html#structvec3">vec3</a> <a class="code hl_variable" href="wireframe_8frag.html#a1b6b0074b43684c435f4275d6fb7bf1a">color</a>;</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="wireframe_8frag.html#acdef7a1fd863a6d3770c1268cb06add3">    7</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a>()</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    // fragColor = vec4(1, 1, 1, 0);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    // fragColor = vec4(vec3(1, vColor.r, 1), 1.0);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    fragColor = vec4(vColor, 1.0);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// fragColor = vec4(1, 1, 1, 0);</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// fragColor = vec4(vec3(1, vColor.r, 1), 1.0);</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_variable" href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a> = <a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>(<a class="code hl_variable" href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a>, 1.0);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+</div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_a38d7d2d84fb7cc382da7b98797a4c70d"><div class="ttname"><a href="audio__probe__bake_8comp.html#a38d7d2d84fb7cc382da7b98797a4c70d">layout</a></div><div class="ttdeci">layout(local_size_x=16, local_size_y=16) in</div></div>
+<div class="ttc" id="aaudio__probe__bake_8comp_html_acdef7a1fd863a6d3770c1268cb06add3"><div class="ttname"><a href="audio__probe__bake_8comp.html#acdef7a1fd863a6d3770c1268cb06add3">main</a></div><div class="ttdeci">void main()</div><div class="ttdef"><b>Definition</b> <a href="audio__probe__bake_8comp_source.html#l00465">audio_probe_bake.comp:465</a></div></div>
+<div class="ttc" id="abloom_8frag_html_a6d8dd0540ed9af35f34cd31b838cacce"><div class="ttname"><a href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></div><div class="ttdeci">out vec4 fragColor</div><div class="ttdef"><b>Definition</b> <a href="bloom_8frag_source.html#l00006">bloom.frag:6</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec3"><div class="ttname"><a href="types_8h.html#structvec3">vec3</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00012">types.h:12</a></div></div>
+<div class="ttc" id="atypes_8h_html_structvec4"><div class="ttname"><a href="types_8h.html#structvec4">vec4</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="awireframe_8frag_html_a1b6b0074b43684c435f4275d6fb7bf1a"><div class="ttname"><a href="wireframe_8frag.html#a1b6b0074b43684c435f4275d6fb7bf1a">color</a></div><div class="ttdeci">uniform vec3 color</div><div class="ttdef"><b>Definition</b> <a href="#l00006">wireframe.frag:6</a></div></div>
+<div class="ttc" id="awireframe_8frag_html_a1ec666fc8acfd1ba7a92932fea4b2ad1"><div class="ttname"><a href="wireframe_8frag.html#a1ec666fc8acfd1ba7a92932fea4b2ad1">vColor</a></div><div class="ttdeci">in vec3 vColor</div><div class="ttdef"><b>Definition</b> <a href="#l00005">wireframe.frag:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

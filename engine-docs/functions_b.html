@@ -20,13 +20,22 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+<script>
+window.MathJax = {
+  tex: {
+    maxBuffer: 50 * 1024 // Increases the buffer to 50KB
+  }
+};
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -125,24 +134,27 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_b.ht
 
 
 <h3 class="doxsection"><a id="index_b" name="index_b"></a>- b -</h3><ul>
-<li>B&#160;:&#160;<a class="el" href="engine__types_8h.html#a42c56d3f1c985c8843c15eacd358c649">Light</a></li>
+<li>B&#160;:&#160;<a class="el" href="group__shader__structs__group.html#a42c56d3f1c985c8843c15eacd358c649">Light</a></li>
 <li>b&#160;:&#160;<a class="el" href="group__physics__group.html#ac6fdd751b62aa61c66c2ebebcf0a6e67">CapsuleData</a>, <a class="el" href="group__physics__group.html#aedd87357ace3f478cb5c0ba2a763e8f7">CollisionPoints</a>, <a class="el" href="types_8h.html#a0b0adbda6302bb96c4a7bd62bb9de9f8">Edge</a>, <a class="el" href="mesh_8c.html#a27890f78bfe87caccf07363be0abc0be">EdgePairKey</a>, <a class="el" href="group__physics__group.html#a63501f92222cbcdc0342cc0e17d5c24e">Manifold</a>, <a class="el" href="types_8h.html#af6210560d5737f340ab88470af58d606">SupportVertex</a></li>
 <li>b0&#160;:&#160;<a class="el" href="engine__types_8h.html#a0e93302dc1e1e2b092aba811b21e6de1">Biquad</a>, <a class="el" href="types_8h.html#a4fe0507de6eec08d42fe4a5576dc7ac5">mat3</a>, <a class="el" href="types_8h.html#a2dc71129bc97f4748af1d365240fee31">mat4</a>, <a class="el" href="types_8h.html#aadad27db84749622b5ce8b7e4223d827">RayHit</a></li>
 <li>b1&#160;:&#160;<a class="el" href="engine__types_8h.html#a14e44bc8dbf9add3d8dba4d707ecd642">Biquad</a>, <a class="el" href="types_8h.html#a57f2aac2d9ba8a1e4291c00116d97d8f">mat3</a>, <a class="el" href="types_8h.html#af999148a9550d0e8ad372b364dffdf3d">mat4</a>, <a class="el" href="types_8h.html#a4e55d285b57ff1e1cc95af8b7777f01f">RayHit</a></li>
 <li>b2&#160;:&#160;<a class="el" href="engine__types_8h.html#a365da3ef2da6d9a992f81ad5fc970659">Biquad</a>, <a class="el" href="types_8h.html#acdea6b68d9a850d52bac6452b2c1dd89">mat3</a>, <a class="el" href="types_8h.html#abda371f7671ddf5d44793bf2deb0d4d0">mat4</a>, <a class="el" href="types_8h.html#aa5eebb548515c1d73cc11bff2080228f">RayHit</a></li>
 <li>b3&#160;:&#160;<a class="el" href="types_8h.html#a6b8ffe916516d52505a9ca0e31324016">mat4</a></li>
+<li>barycentrics&#160;:&#160;<a class="el" href="types_8h.html#a1a76386b6eb4edac313b3c54387377e1">RayHit</a></li>
 <li>base&#160;:&#160;<a class="el" href="group__aprobe__group.html#a27bc6825bd1b15e840325452353623ee">ConvolverNode</a></li>
 <li>base_color_factor&#160;:&#160;<a class="el" href="engine__types_8h.html#a463cc6ef69b17c099ef01dcfc3521662">GLTFMaterial</a></li>
 <li>base_color_tex&#160;:&#160;<a class="el" href="engine__types_8h.html#a8de95a330dd15b272b256203fb69c449">GLTFMaterial</a></li>
 <li>base_pos&#160;:&#160;<a class="el" href="group__ui__group.html#ae123dd4c1fcbd677537ffdb42eb60d53">UIElement</a></li>
 <li>base_volume&#160;:&#160;<a class="el" href="group__audio__group.html#aa2882b6034230fb87110bc185bfdf561">AudioEmitter</a></li>
-<li>baseInstance&#160;:&#160;<a class="el" href="engine__types_8h.html#ad0cbed59ceee47f6f37f14c2fb35ac0b">DrawArraysIndirectCommand</a>, <a class="el" href="engine__types_8h.html#ac28aa022033c6eaa93e8af8269cbd9bc">DrawElementsIndirectCommand</a></li>
-<li>baseVertex&#160;:&#160;<a class="el" href="engine__types_8h.html#ae6f076ab6f1c28acfeb4d139dd425198">DrawElementsIndirectCommand</a></li>
+<li>baseInstance&#160;:&#160;<a class="el" href="group__shader__structs__group.html#ab14ba81ee342d5d35acb2431507f3d64">DrawArraysIndirectCommand</a>, <a class="el" href="elements__prefix_8comp.html#a7da567f6121efa6d507b050b6abd92ea">DrawElementsIndirectCommand</a></li>
+<li>baseVertex&#160;:&#160;<a class="el" href="elements__prefix_8comp.html#ac6655abbc809b7952743b2f3c3f6a182">DrawElementsIndirectCommand</a></li>
 <li>behavior&#160;:&#160;<a class="el" href="group__ui__group.html#ad3ecfb5f7f763720292b2cbde336ad92">UIValue</a></li>
+<li>best_t&#160;:&#160;<a class="el" href="types_8h.html#af518cffcf46312b3abb858a6ec56683c">RayHit</a></li>
 <li>bias_impulse&#160;:&#160;<a class="el" href="group__physics__group.html#a905c68ca0088617d7fd628019998c04b">CollisionPoints</a></li>
 <li>bind_fn&#160;:&#160;<a class="el" href="group__ui__group.html#a201b81a16374ce3c2a1bda8c2da9e100">UICallback</a></li>
 <li>bind_self&#160;:&#160;<a class="el" href="group__ui__group.html#a943746652a8a7d7e32e28b41d4d99ea8">UICallback</a></li>
 <li>block_size&#160;:&#160;<a class="el" href="group__aprobe__group.html#ae4c3c1b960aedae2ff317e2b20f8f9b7">AudioScratchBuffers</a>, <a class="el" href="group__aprobe__group.html#ab1860e2d862a57dfc207e7f1d5df9ac9">ConvolverNode</a>, <a class="el" href="engine__types_8h.html#a04fda638686522a333e75c522fdce96f">LightmapAtlas</a></li>
+<li>blocked_t&#160;:&#160;<a class="el" href="types_8h.html#afb68cb487650171e28638a9e0b17240d">RayHit</a></li>
 <li>BLOOM&#160;:&#160;<a class="el" href="group__editor__group.html#a7d8e31d552161d00c83ea5ca384330c7">EditorSettings</a></li>
 <li>blur_radius&#160;:&#160;<a class="el" href="group__editor__group.html#abc276f0c3fe9a92cf754bad8a4db3282">MainEditorMenu</a></li>
 <li>border_color&#160;:&#160;<a class="el" href="engine__types_8h.html#af5a28a3f6306351bc0019150434c5cc3">GLTexture</a></li>
@@ -160,11 +172,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_b.ht
 <li>bufferCount&#160;:&#160;<a class="el" href="engine__types_8h.html#aa7eca82dbedc1b8cf16ddf41e858e495">GLTFDoc</a></li>
 <li>buffers&#160;:&#160;<a class="el" href="engine__types_8h.html#ae0e0246b20a9ada620ee9827b4b0887c">GLTFDoc</a></li>
 <li>bufferView&#160;:&#160;<a class="el" href="engine__types_8h.html#ac8300086308446f1cfbcd181728954f5">GLTFAccessor</a></li>
-<li>bvh_index&#160;:&#160;<a class="el" href="engine__types_8h.html#afccf243373876190702f3e364b3d7b12">LightGPU</a>, <a class="el" href="engine__types_8h.html#aefde4c6028ff2b7c2934d722c75cbbb4">MeshGPU</a>, <a class="el" href="engine__types_8h.html#a7be9def2f741af5da4081795f8b02373">TriGPU</a></li>
-<li>bvh_indices&#160;:&#160;<a class="el" href="engine__types_8h.html#a53c2ab5a4050e5241c1e77b6ace0bea2">Mesh</a>, <a class="el" href="engine__types_8h.html#aef13c2ae300934b355d49d2095df96aa">SceneData</a></li>
+<li>bvh_index&#160;:&#160;<a class="el" href="probe__bake_8comp.html#ad19d1bb602f3c39ea21d03cb72a12768">Face</a>, <a class="el" href="group__shader__structs__group.html#ad7286eeff2aa2d687d35376314f57fe6">Light</a>, <a class="el" href="engine__types_8h.html#afccf243373876190702f3e364b3d7b12">LightGPU</a>, <a class="el" href="lightmap_8vert.html#ab5fb69653d6f7cb0ff00179cf7e22b45">Mesh</a>, <a class="el" href="engine__types_8h.html#aefde4c6028ff2b7c2934d722c75cbbb4">MeshGPU</a>, <a class="el" href="group__shader__structs__group.html#acac8f8075d98cd276df955271a6dfcb4">MeshNode</a>, <a class="el" href="engine__types_8h.html#a7be9def2f741af5da4081795f8b02373">TriGPU</a></li>
+<li>bvh_indices&#160;:&#160;<a class="el" href="lightmap_8vert.html#a53c2ab5a4050e5241c1e77b6ace0bea2">Mesh</a>, <a class="el" href="engine__types_8h.html#aef13c2ae300934b355d49d2095df96aa">SceneData</a></li>
 <li>bvh_indices_count&#160;:&#160;<a class="el" href="engine__types_8h.html#a060e2d63979438d944b4bc6dbfddf4be">SceneData</a></li>
 <li>bvh_nodes&#160;:&#160;<a class="el" href="engine__types_8h.html#a3005b8bbaab11d03204857dccb8265f5">SceneData</a></li>
-<li>bvh_prim&#160;:&#160;<a class="el" href="engine__types_8h.html#aa3e444fee0f872df184f7ce3c3f40f7e">Mesh</a></li>
+<li>bvh_prim&#160;:&#160;<a class="el" href="lightmap_8vert.html#aa3e444fee0f872df184f7ce3c3f40f7e">Mesh</a></li>
 <li>bwd_plan&#160;:&#160;<a class="el" href="group__aprobe__group.html#a78ae1cab3db917bc4de7c222ed9a199d">AudioScratchBuffers</a>, <a class="el" href="group__aprobe__group.html#a02efd7603b54e79ccf9b3a0cec155768">ConvolverNode</a></li>
 <li>byte_offset&#160;:&#160;<a class="el" href="group__aprobe__group.html#a8d0775856981093c2808d62bf92f3f13">ProbeVolume</a>, <a class="el" href="group__editor__group.html#add2375208d24d71c84d3231761ca8ea8">Undo</a></li>
 <li>byte_size&#160;:&#160;<a class="el" href="engine__types_8h.html#a2eb59b6e483dda9341a5bffc979ada25">Filter</a>, <a class="el" href="group__editor__group.html#a4f0d59800344abce2fc61ed703e7bab5">NKSlider</a>, <a class="el" href="group__editor__group.html#af9404edfe8b80259a2fc5a20761b15f4">Undo</a></li>

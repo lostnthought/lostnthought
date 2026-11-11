@@ -20,8 +20,8 @@ var searchData=
   ['sdf_5fcircle_17',['SDF_circle',['../text_8frag.html#ab03f86b056de905e02723eb2c98eb5f4',1,'SDF_circle(vec2 p, vec2 center, float radius):&#160;text.frag'],['../ui_8frag.html#ab03f86b056de905e02723eb2c98eb5f4',1,'SDF_circle(vec2 p, vec2 center, float radius):&#160;ui.frag'],['../utilities_8h.html#a754d5cf18c678b17b574377dae92e2e6',1,'SDF_circle(vec2 p, vec2 center, float radius):&#160;utilities.h']]],
   ['sdf_5frect_18',['SDF_rect',['../text_8frag.html#a32c7959182a3e52b00551901a9504825',1,'SDF_rect(vec2 p, vec2 center, vec2 size, float r):&#160;text.frag'],['../ui_8frag.html#a32c7959182a3e52b00551901a9504825',1,'SDF_rect(vec2 p, vec2 center, vec2 size, float r):&#160;ui.frag'],['../utilities_8h.html#a4ac8afb3010a3fcba2417d3310be041b',1,'SDF_rect(vec2 p, vec2 center, vec2 size, float r):&#160;utilities.h']]],
   ['sdlaudiocallback_19',['SDLAudioCallback',['../group__aprobe__group.html#ga88c62d0a6ccb47dd48c2049e87c690d8',1,'SDLAudioCallback(void *pUserData, Uint8 *pStream, int len):&#160;audio.c'],['../group__aprobe__group.html#ga88c62d0a6ccb47dd48c2049e87c690d8',1,'SDLAudioCallback(void *pUserData, Uint8 *pStream, int frameCountInBytes):&#160;audio.c']]],
-  ['search_5fcollisions_5ffrom_5fhull_20',['search_collisions_from_hull',['../group__physics__group.html#gae1860b61b03c93b0bf5f8d000397f0a5',1,'physics.c']]],
-  ['search_5fcollisions_5ffrom_5fpc_21',['search_collisions_from_pc',['../group__physics__group.html#ga413c84236fb56efd8b6bfdd12ed2cd65',1,'physics.c']]],
+  ['search_5fcollisions_5ffrom_5fhull_20',['search_collisions_from_hull',['../group__physics__group.html#ga0383b2ffde5d97cac0d2291166ccf522',1,'physics.c']]],
+  ['search_5fcollisions_5ffrom_5fpc_21',['search_collisions_from_pc',['../group__physics__group.html#ga058a83a289b3c1fc34699ccb1d5f16dc',1,'physics.c']]],
   ['segment_5fplane_5fdistance_22',['segment_plane_distance',['../utilities_8c.html#abe1b02067df7ae5f989da9bf9aedd697',1,'utilities.c']]],
   ['set_5fmn_5fcomponents_5fto_5fchildren_23',['set_mn_components_to_children',['../init_8c.html#a6727130ecad8f3df851558d971ee2a40',1,'init.c']]],
   ['setup_5finitial_5fhull_5fpoints_24',['setup_initial_hull_points',['../mesh_8c.html#a96507f5c0da565087ca318e5da7a38ed',1,'mesh.c']]],
@@ -41,8 +41,8 @@ var searchData=
   ['subdivide_5flight_5fbvh_38',['subdivide_light_bvh',['../acceleration_8c.html#ad1a50d65a601fa381eff98b7e39717d3',1,'acceleration.c']]],
   ['subdivide_5fmesh_5ftri_5fbvh_39',['subdivide_mesh_tri_bvh',['../acceleration_8c.html#a7a65a8d01cc961c70a15898724f0cc5b',1,'acceleration.c']]],
   ['subdivide_5fscene_5fbvh_40',['subdivide_scene_bvh',['../acceleration_8c.html#abc6e3265cefb6a827956296f124fcb61',1,'acceleration.c']]],
-  ['support_41',['support',['../group__physics__group.html#ga8bfd5e53fefa0979083b38ff02bc9b6f',1,'GJK.c']]],
-  ['support_5fcapsule_42',['support_capsule',['../group__physics__group.html#ga1a417f01916b1133355d730ce04ebe51',1,'GJK.c']]],
+  ['support_41',['support',['../group__physics__group.html#gacec6a8baa514d1613a4afac26fcee7fc',1,'GJK.c']]],
+  ['support_5fcapsule_42',['support_capsule',['../group__physics__group.html#ga82d662dde6d32298b39258c14964df1b',1,'GJK.c']]],
   ['support_5fdiff_43',['support_diff',['../group__physics__group.html#gabe8500bfe4c7345125dc41209422277b',1,'GJK.c']]],
   ['swap_5fsize_5ft_44',['swap_size_t',['../acceleration_8c.html#ae96f1ad904d6de034028e6d99b069cb9',1,'acceleration.c']]]
 ];

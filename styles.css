@@ -168,6 +168,11 @@ body {
   justify-content: space-between;  
 
 }
+.main-header-container {
+  display: flex;
+  justify-content: left;  
+  gap: 40px;
+}
 .subtitle {
   color: var(--ash);
   margin: 0;

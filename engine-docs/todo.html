@@ -134,27 +134,34 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('todo.html','',
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Global <a class="el" href="render_8h.html#ac0ba48c0ba031eef701f0ba7494ca19b">aabb_to_vertices</a>  (<a class="el" href="engine__types_8h.html#struct_debug_vertex" title="The structure used for debug wireframes.">DebugVertex</a> *out, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> *aabb, <a class="el" href="types_8h.html#structvec3">vec3</a> offset)</dt>
-<dd><a class="anchor" id="_todo000016"></a>Make a matrix transform instead of an offset. Or instance the AABBs and transform on the GPU.  </dd>
+<dd><a class="anchor" id="_todo000017"></a>Make a matrix transform instead of an offset. Or instance the AABBs and transform on the GPU.  </dd>
 <dt>Global <a class="el" href="render_8h.html#a187fdef1c8e91bed6d022d63fc468be2">add_text_box</a>  (<a class="el" href="types_8h.html#struct_vector">Vector</a> *tvs, <a class="el" href="types_8h.html#struct_vector">Vector</a> *tis, <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> *tb, int current_box)</dt>
-<dd><a class="anchor" id="_todo000017"></a>This current_box variable makes it so we can never reorder our <a class="el" href="main_8c.html#a891e5e5dcfb44e0cf47da377e33cfac5">TEXT_BOX_SSBO</a> or else every vertex will be pointing to the wrong data. Resolve this.  </dd>
+<dd><a class="anchor" id="_todo000018"></a>This current_box variable makes it so we can never reorder our <a class="el" href="main_8c.html#a891e5e5dcfb44e0cf47da377e33cfac5">TEXT_BOX_SSBO</a> or else every vertex will be pointing to the wrong data. Resolve this.  </dd>
 <dt>Global <a class="el" href="group__ui__group.html#ga82a85acaa489a9e79f17073dea4c93be">align_text_box_label</a>  (<a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a> *el)</dt>
-<dd><a class="anchor" id="_todo000024"></a>This still is off-center sometimes. It likely has to do with the resolution scaling.  </dd>
+<dd><a class="anchor" id="_todo000025"></a>This still is off-center sometimes. It likely has to do with the resolution scaling.  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">AssetInstance</a>  </dt>
 <dd><a class="anchor" id="_todo000005"></a>Very important: The first_skin is not actually in use and needs to be resolved to use skin_indices instead in <a class="el" href="init_8c.html#ac1c505fa384e621b6e9e445d9f2477f2" title="Initializes and spawns a new AssetInstance based on an Asset name, and places the AssetInstance....">init_new_asset_instance()</a>  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">AStarWorkspace</a>  </dt>
 <dd><a class="anchor" id="_todo000007"></a>Expand path size or make it reallocatable because the current limit is minimal.  </dd>
 <dt>Global <a class="el" href="group__ui__group.html#gaca118e444c8d0e7abe5a0d014b5ff343">create_ui_container</a>  (<a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a> *el, int menu_id)</dt>
-<dd><a class="anchor" id="_todo000022"></a>menu_id should be the same as the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s menu_id. Just use the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s.  </dd>
+<dd><a class="anchor" id="_todo000023"></a>menu_id should be the same as the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s menu_id. Just use the <a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>'s.  </dd>
 <dt>Global <a class="el" href="group__ui__group.html#ga948fd918289e648600e2641fda200f93">delete_ui_container</a>  (<a class="el" href="group__ui__group.html#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a> *el)</dt>
-<dd><a class="anchor" id="_todo000023"></a>Possible that a pointer is too much to ask, but think through the cases.  </dd>
+<dd><a class="anchor" id="_todo000024"></a>Possible that a pointer is too much to ask, but think through the cases.  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">DrawCommand</a>  </dt>
 <dd><a class="anchor" id="_todo000006"></a>Possibly sort 128 keys instead of 64  </dd>
 <dt>Global <a class="el" href="group__aprobe__group.html#ga29684eaf012554ebbe1bbbe2e8252adc">extract_t60</a>  (float *edc_db, <a class="el" href="group__aprobe__group.html#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> *probe, int band, float bin_duration_seconds, int last_sample)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000002"></a>Write otherwise case for the end. </p>
 <p class="enddd"><a class="anchor" id="_todo000003"></a>Make sure it's safe to return early.  </p>
 </dd>
+<dt>Global <a class="el" href="group__physics__group.html#gaa42439ced9d1e166f440078e3abb082a">find_next_direction</a>  (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *sn)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000016"></a>Case 2: Notate direction vector crossing with safe axis </p>
+<p class="interdd"></p>
+<p class="interdd">Remove simplex centroid and d, unneeded </p>
+<p class="interdd"></p>
+<p class="enddd">Redundant code here, test and remove  </p>
+</dd>
 <dt>Struct <a class="el" href="group__ui__group.html">Font</a>  </dt>
-<dd><a class="anchor" id="_todo000019"></a>Figure out if highest_y is actually used.  </dd>
+<dd><a class="anchor" id="_todo000020"></a>Figure out if highest_y is actually used.  </dd>
 <dt>Struct <a class="el" href="engine__types_8h.html">Globals</a>  </dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000008"></a>rename noclip </p>
 <p class="interdd"></p>
@@ -173,9 +180,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('todo.html','',
 <dt>Global <a class="el" href="init_8h.html#a9dd5abfdf2766f832e17f4fd8c092a45">spawn_point</a>  </dt>
 <dd><a class="anchor" id="_todo000014"></a>encapsulate.  </dd>
 <dt>Struct <a class="el" href="group__ui__group.html">TextBox</a>  </dt>
-<dd><a class="anchor" id="_todo000020"></a>Go through some of these members like hovered and see if necessary.  </dd>
+<dd><a class="anchor" id="_todo000021"></a>Go through some of these members like hovered and see if necessary.  </dd>
 <dt>Struct <a class="el" href="group__ui__group.html">UIElement</a>  </dt>
-<dd><a class="anchor" id="_todo000021"></a>Clear unused fields. </dd>
+<dd><a class="anchor" id="_todo000022"></a>Clear unused fields. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

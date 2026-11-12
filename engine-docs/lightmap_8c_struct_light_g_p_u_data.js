@@ -8,7 +8,7 @@ var lightmap_8c_struct_light_g_p_u_data =
     [ "point_w", "lightmap_8c.html#a8227a38c514cf134737b0f613650569f", null ],
     [ "tri_w", "lightmap_8c.html#a9210ee56037244c0bf3cf5e26704deb3", null ],
     [ "total_power", "lightmap_8c.html#ab1fa947355689d98688343b934c9fce3", null ],
-    [ "directional_lights", "lightmap_8c.html#ab6fb72333c41fda9daa225acb3608988", null ],
-    [ "point_lights", "lightmap_8c.html#a8a76d4e737454e4c563263302a616860", null ],
-    [ "LMDEBUG", "lightmap_8c.html#aa86821a59d386ba95bbfe97bfb2967e6", null ]
+    [ "directional_lights", "lightmap_8c.html#aefbc1f943b8da6d6a2c3f2a910dc0f63", null ],
+    [ "point_lights", "lightmap_8c.html#a587b1c15a1e8cdb2df36f7404c447277", null ],
+    [ "LMDEBUG", "lightmap_8c.html#a6257c235e67ce727f1a7e0e5e62f39cf", null ]
 ];

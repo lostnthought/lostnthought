@@ -8,7 +8,7 @@ var engine__types_8h_struct_g_l_t_f_skin =
     [ "final_mat", "engine__types_8h.html#ab973d5c87c6a1ec57dcb1b2383c1b032", null ],
     [ "inverse_bind", "engine__types_8h.html#a717411aa2fb095cb05ea8858371e04de", null ],
     [ "ibm_accessor", "engine__types_8h.html#ad1dfbc97679990f58245559469918f18", null ],
-    [ "animation_indices", "engine__types_8h.html#a95e99f4a2a77a3eeb414c7b535479b3a", null ],
+    [ "animation_indices", "engine__types_8h.html#a5fcb0399a93896fe4f6e7efa82010e36", null ],
     [ "animation_indices_count", "engine__types_8h.html#a5c1585ebda9fb33ea3ea2c9c817f42c4", null ],
     [ "ssbo_offset", "engine__types_8h.html#a83d303e66b49d7985641a22ecf4fdc39", null ]
 ];

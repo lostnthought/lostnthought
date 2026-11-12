@@ -132,6 +132,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('camera_8c.html
   <div class="headertitle"><div class="title">camera.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Functions for camera.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;omp.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
@@ -161,15 +164,24 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa3de99a5ed1ee68c539e9c2dca45a9c6" id="r_aa3de99a5ed1ee68c539e9c2dca45a9c6"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#aa3de99a5ed1ee68c539e9c2dca45a9c6">calculate_stride_governor</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> player_pos, <a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *left_leg, <a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *right_leg)</td></tr>
-<tr class="memitem:a1aea8076f7db6dc81567f793b6e2c3e9" id="r_a1aea8076f7db6dc81567f793b6e2c3e9"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a1aea8076f7db6dc81567f793b6e2c3e9">player_find_collision</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> start, <a class="el" href="types_8h.html#structvec3">vec3</a> proposed, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> p[<a class="el" href="group__physics__group.html#ga00b558c20a029f2826d859667e2afa5e">MAX_PLAYER_CONTACTS</a>], int *contact_count)</td></tr>
-<tr class="memitem:af9ae8fd03d923f588f8fae0554067a2e" id="r_af9ae8fd03d923f588f8fae0554067a2e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af9ae8fd03d923f588f8fae0554067a2e">define_M</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> P, <a class="el" href="types_8h.html#structvec3">vec3</a> D, <a class="el" href="types_8h.html#structvec3">vec3</a> minv[3], <a class="el" href="types_8h.html#structvec3">vec3</a> mfwd[3])</td></tr>
-<tr class="memitem:ad5365e55aeaa0872a41e95cb2ccbd5de" id="r_ad5365e55aeaa0872a41e95cb2ccbd5de"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad5365e55aeaa0872a41e95cb2ccbd5de">update_leg</a> (<a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *leg, <a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *other_leg, <a class="el" href="types_8h.html#structvec3">vec3</a> tr, <a class="el" href="types_8h.html#structvec3">vec3</a> vel)</td></tr>
-<tr class="memitem:a878b96b8fa3ef736f5404b2e3f0674b9" id="r_a878b96b8fa3ef736f5404b2e3f0674b9"><td class="memItemLeft">static <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a878b96b8fa3ef736f5404b2e3f0674b9">rot</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> M[3], <a class="el" href="types_8h.html#structvec3">vec3</a> a)</td></tr>
-<tr class="memitem:ab6dd905223afde3464ce480a13072a2e" id="r_ab6dd905223afde3464ce480a13072a2e"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ab6dd905223afde3464ce480a13072a2e">solve_Q</a> (<a class="el" href="engine__types_8h.html#struct_skeleton">Skeleton</a> *s, <a class="el" href="types_8h.html#structvec3">vec3</a> D, <a class="el" href="types_8h.html#structvec3">vec3</a> *Q, <a class="el" href="types_8h.html#structvec3">vec3</a> *P, <a class="el" href="types_8h.html#structvec3">vec3</a> hip_pos)</td></tr>
-<tr class="memitem:a9d713624f8a8151579916cafd9eeba4a" id="r_a9d713624f8a8151579916cafd9eeba4a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a9d713624f8a8151579916cafd9eeba4a">update_spring</a> (<a class="el" href="engine__types_8h.html#struct_spring">Spring</a> *s)</td></tr>
-<tr class="memitem:a833f9c3dfabcebf0dac0eba001f19eda" id="r_a833f9c3dfabcebf0dac0eba001f19eda"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a833f9c3dfabcebf0dac0eba001f19eda">update_angular_spring</a> (<a class="el" href="engine__types_8h.html#struct_spring">Spring</a> *s, float dt)</td></tr>
-<tr class="memitem:a0e82a59e46abd8909a285ab914c1203f" id="r_a0e82a59e46abd8909a285ab914c1203f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0e82a59e46abd8909a285ab914c1203f">calculate_camera_angles</a> (<a class="el" href="engine__types_8h.html#struct_camera">Camera</a> *cam, <a class="el" href="engine__types_8h.html#struct_spring">Spring</a> *s, <a class="el" href="types_8h.html#structvec3">vec3</a> input_acceleration, float dt)</td></tr>
+<tr class="memitem:a4e92a4949323495279fcbb3b1aec5cd1" id="r_a4e92a4949323495279fcbb3b1aec5cd1"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a4e92a4949323495279fcbb3b1aec5cd1">calculate_stride_governor</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> player_pos, <a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *left_leg, <a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *right_leg)</td></tr>
+<tr class="memdesc:a4e92a4949323495279fcbb3b1aec5cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a stride based on how stretched the legs are from the center position.  <br /></td></tr>
+<tr class="memitem:a7cd0e6c48f9f183a84a00f1c8a275744" id="r_a7cd0e6c48f9f183a84a00f1c8a275744"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7cd0e6c48f9f183a84a00f1c8a275744">player_find_collision</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> start, <a class="el" href="types_8h.html#structvec3">vec3</a> proposed, <a class="el" href="group__physics__group.html#struct_collision_points">CollisionPoints</a> p[<a class="el" href="group__physics__group.html#ga00b558c20a029f2826d859667e2afa5e">MAX_PLAYER_CONTACTS</a>], int *contact_count)</td></tr>
+<tr class="memdesc:a7cd0e6c48f9f183a84a00f1c8a275744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds collisions against the <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a>'s proposed position through a <a class="el" href="engine__types_8h.html#struct_scene_data" title="The data for the current scene.">SceneData</a>.  <br /></td></tr>
+<tr class="memitem:a40ae20013414edf368fd1fd4ba4ac1e3" id="r_a40ae20013414edf368fd1fd4ba4ac1e3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a40ae20013414edf368fd1fd4ba4ac1e3">define_M</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> P, <a class="el" href="types_8h.html#structvec3">vec3</a> D, <a class="el" href="types_8h.html#structvec3">vec3</a> minv[3], <a class="el" href="types_8h.html#structvec3">vec3</a> mfwd[3])</td></tr>
+<tr class="memdesc:a40ae20013414edf368fd1fd4ba4ac1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to Ken Perlin's 2 joint IK implmentation.  <br /></td></tr>
+<tr class="memitem:a646392d17118e05d613e553352579b20" id="r_a646392d17118e05d613e553352579b20"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#a646392d17118e05d613e553352579b20">rot</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> M[3], <a class="el" href="types_8h.html#structvec3">vec3</a> a)</td></tr>
+<tr class="memdesc:a646392d17118e05d613e553352579b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to Ken Perlin's 2 joint IK implmentation.  <br /></td></tr>
+<tr class="memitem:aed4cf9f7f00f26525c3affb1eb99aa34" id="r_aed4cf9f7f00f26525c3affb1eb99aa34"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aed4cf9f7f00f26525c3affb1eb99aa34">solve_Q</a> (<a class="el" href="engine__types_8h.html#struct_skeleton">Skeleton</a> *s, <a class="el" href="types_8h.html#structvec3">vec3</a> D, <a class="el" href="types_8h.html#structvec3">vec3</a> *Q, <a class="el" href="types_8h.html#structvec3">vec3</a> *P, <a class="el" href="types_8h.html#structvec3">vec3</a> hip_pos)</td></tr>
+<tr class="memdesc:aed4cf9f7f00f26525c3affb1eb99aa34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer to Ken Perlin's 2 joint IK implmentation.  <br /></td></tr>
+<tr class="memitem:a0ecebf8465398be69907a6903efa28c1" id="r_a0ecebf8465398be69907a6903efa28c1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0ecebf8465398be69907a6903efa28c1">update_leg</a> (<a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *leg, <a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *other_leg, <a class="el" href="types_8h.html#structvec3">vec3</a> vel)</td></tr>
+<tr class="memdesc:a0ecebf8465398be69907a6903efa28c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raycasts forward and downward to determine how far a leg can go and also updates the leg position if it is already taking a step.  <br /></td></tr>
+<tr class="memitem:a3e9bfff923cbe0c58de91604a2233adb" id="r_a3e9bfff923cbe0c58de91604a2233adb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3e9bfff923cbe0c58de91604a2233adb">update_spring</a> (<a class="el" href="engine__types_8h.html#struct_spring">Spring</a> *s)</td></tr>
+<tr class="memdesc:a3e9bfff923cbe0c58de91604a2233adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a <a class="el" href="engine__types_8h.html#struct_spring" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a>'s velocity and position based on the difference between its current position and target position.  <br /></td></tr>
+<tr class="memitem:af220f65734955fe0e6ccdb6a0b53629d" id="r_af220f65734955fe0e6ccdb6a0b53629d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af220f65734955fe0e6ccdb6a0b53629d">update_angular_spring</a> (<a class="el" href="engine__types_8h.html#struct_spring">Spring</a> *s, float dt)</td></tr>
+<tr class="memdesc:af220f65734955fe0e6ccdb6a0b53629d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a <a class="el" href="engine__types_8h.html#struct_spring" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a>'s angular velocity and rotation based on the difference between its current rotation and target rotation.  <br /></td></tr>
+<tr class="memitem:a1e0fd38e00be2b8576181f14546abc58" id="r_a1e0fd38e00be2b8576181f14546abc58"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e0fd38e00be2b8576181f14546abc58">calculate_camera_angles</a> (<a class="el" href="engine__types_8h.html#struct_camera">Camera</a> *cam, <a class="el" href="engine__types_8h.html#struct_spring">Spring</a> *s, <a class="el" href="types_8h.html#structvec3">vec3</a> input_acceleration, float dt)</td></tr>
+<tr class="memdesc:a1e0fd38e00be2b8576181f14546abc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates camera vectors and roll based on the angular <a class="el" href="engine__types_8h.html#struct_spring" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> attached to it.  <br /></td></tr>
 <tr class="memitem:aaffdffb6b86eb21651e703bfbe150426" id="r_aaffdffb6b86eb21651e703bfbe150426"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaffdffb6b86eb21651e703bfbe150426">compute_camera_basis</a> (<a class="el" href="engine__types_8h.html#struct_camera">Camera</a> *cam, float yaw, float pitch, float roll, <a class="el" href="types_8h.html#structvec3">vec3</a> world_up)</td></tr>
 <tr class="memdesc:aaffdffb6b86eb21651e703bfbe150426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes camera vectors based on yaw, pitch, and roll.  <br /></td></tr>
 <tr class="memitem:a2a3b78f22b7b32b56039de9927e06276" id="r_a2a3b78f22b7b32b56039de9927e06276"><td class="memItemLeft"><a class="el" href="types_8h.html#structmat4">mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2a3b78f22b7b32b56039de9927e06276">make_ortho</a> (float left, float right, float bottom, float top, float near, float far)</td></tr>
@@ -198,10 +210,14 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab0ad4dff47d7c85a0a22582883d66ceb" id="r_ab0ad4dff47d7c85a0a22582883d66ceb"><td class="memItemLeft">static const float&#160;</td><td class="memItemRight"><a class="el" href="#ab0ad4dff47d7c85a0a22582883d66ceb">HALTON_8</a> [8][2]</td></tr>
+<tr class="memitem:ab0ad4dff47d7c85a0a22582883d66ceb" id="r_ab0ad4dff47d7c85a0a22582883d66ceb"><td class="memItemLeft">const float&#160;</td><td class="memItemRight"><a class="el" href="#ab0ad4dff47d7c85a0a22582883d66ceb">HALTON_8</a> [8][2]</td></tr>
 <tr class="memitem:a0bc0619c0b9b664e28e6a32dc90d6cf9" id="r_a0bc0619c0b9b664e28e6a32dc90d6cf9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0bc0619c0b9b664e28e6a32dc90d6cf9">ground_hit</a></td></tr>
 </table>
-<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Functions for camera. </p>
+
+<p class="definition">Definition in file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a8f0caca57c692c1db6718bbd657f85df" name="a8f0caca57c692c1db6718bbd657f85df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f0caca57c692c1db6718bbd657f85df">&#9670;&#160;</a></span>MIN_WALKABLE_SURFACE</h2>
 
@@ -216,9 +232,9 @@ Variables</h2></td></tr>
 
 <p>How steep the surface is for it to be walkable. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01267">1267</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01371">1371</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>
@@ -236,7 +252,7 @@ Variables</h2></td></tr>
 
 <p>How high legs are raised during step. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01268">1268</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01372">1372</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
 </div>
 </div>
@@ -254,21 +270,18 @@ Variables</h2></td></tr>
 
 <p>How high legs are raised to detect for steps. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01269">1269</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01373">1373</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="aa3de99a5ed1ee68c539e9c2dca45a9c6" name="aa3de99a5ed1ee68c539e9c2dca45a9c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3de99a5ed1ee68c539e9c2dca45a9c6">&#9670;&#160;</a></span>calculate_stride_governor()</h2>
+<a id="a4e92a4949323495279fcbb3b1aec5cd1" name="a4e92a4949323495279fcbb3b1aec5cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e92a4949323495279fcbb3b1aec5cd1">&#9670;&#160;</a></span>calculate_stride_governor()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float calculate_stride_governor </td>
@@ -286,29 +299,32 @@ Variables</h2></td></tr>
           <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *</td>          <td class="paramname"><span class="paramname"><em>right_leg</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00454">454</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Calculates a stride based on how stretched the legs are from the center position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player_pos</td><td>The center of the player but with z = where the feet should be. </td></tr>
+    <tr><td class="paramname">left_leg</td><td>The left leg. </td></tr>
+    <tr><td class="paramname">right_leg</td><td>The right leg. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value that determines speed for this timestep. </dd></dl>
 
-<p class="reference">References <a class="el" href="camera_8c_source.html#l00454">calculate_stride_governor()</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::y</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00561">561</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00487">apply_planet_velocity()</a>, and <a class="el" href="camera_8c_source.html#l00454">calculate_stride_governor()</a>.</p>
+<p class="reference">References <a class="el" href="camera_8c_source.html#l00561">calculate_stride_governor()</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="mathf_8h_source.html#l00336">vec2_length()</a>, <a class="el" href="mathf_8h_source.html#l00270">vec2_sub()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00594">apply_planet_velocity()</a>, and <a class="el" href="camera_8c_source.html#l00561">calculate_stride_governor()</a>.</p>
 
 </div>
 </div>
-<a id="a1aea8076f7db6dc81567f793b6e2c3e9" name="a1aea8076f7db6dc81567f793b6e2c3e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1aea8076f7db6dc81567f793b6e2c3e9">&#9670;&#160;</a></span>player_find_collision()</h2>
+<a id="a7cd0e6c48f9f183a84a00f1c8a275744" name="a7cd0e6c48f9f183a84a00f1c8a275744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd0e6c48f9f183a84a00f1c8a275744">&#9670;&#160;</a></span>player_find_collision()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void player_find_collision </td>
@@ -331,29 +347,32 @@ Variables</h2></td></tr>
           <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>contact_count</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00603">603</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Finds collisions against the <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a>'s proposed position through a <a class="el" href="engine__types_8h.html#struct_scene_data" title="The data for the current scene.">SceneData</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>Where the <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> starts at. </td></tr>
+    <tr><td class="paramname">proposed</td><td>Where the <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> is moving to. </td></tr>
+    <tr><td class="paramname">p</td><td>The array of <a class="el" href="group__physics__group.html#struct_collision_points" title="Points that track collision data such as direction, penetration depth, and more to generate Manifolds...">CollisionPoints</a> that is being addded to during the collision check. </td></tr>
+    <tr><td class="paramname">contact_count</td><td>The amount of contacts emitted so far. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01155">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02492">Mesh::aabb</a>, <a class="el" href="utilities_8c_source.html#l00276">aabbs_intersect()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03151">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02490">Mesh::bvh_prim</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="camera_8c_source.html#l00336">collision()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00134">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="group__physics__group.html#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00133">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02371">MeshNode::free</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01112">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02503">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00128">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l00160">MAX_PLAYER_CONTACTS</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03057">Player::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00135">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02517">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02435">MeshNode::pc</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00129">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="utilities_8c_source.html#l00466">transform_aabb_by_position()</a>, <a class="el" href="acceleration_8c_source.html#l00432">traverse_collision_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, <a class="el" href="engine__types_8h_source.html#l01110">ConvexHull::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00710">710</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>, and <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01155">BVHNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02492">Mesh::aabb</a>, <a class="el" href="utilities_8c_source.html#l00276">aabbs_intersect()</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03151">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02490">Mesh::bvh_prim</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="camera_8c_source.html#l00443">collision()</a>, <a class="el" href="utilities_8h_source.html#l00481">compose_trs_from_vectors()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00134">BVHNode::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="group__physics__group.html#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00133">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02371">MeshNode::free</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01112">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02503">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00128">BVHNode::left</a>, <a class="el" href="mathf_8h_source.html#l00164">m4_inverse()</a>, <a class="el" href="utilities_8h_source.html#l00323">mat4_mul_direction()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l00160">MAX_PLAYER_CONTACTS</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03057">Player::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00135">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02517">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02435">MeshNode::pc</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="camera_8c_source.html#l00710">player_find_collision()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00129">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="utilities_8c_source.html#l00466">transform_aabb_by_position()</a>, <a class="el" href="acceleration_8c_source.html#l00514">traverse_collision_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="engine__types_8h_source.html#l01110">ConvexHull::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00710">player_find_collision()</a>, and <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>
-<a id="af9ae8fd03d923f588f8fae0554067a2e" name="af9ae8fd03d923f588f8fae0554067a2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9ae8fd03d923f588f8fae0554067a2e">&#9670;&#160;</a></span>define_M()</h2>
+<a id="a40ae20013414edf368fd1fd4ba4ac1e3" name="a40ae20013414edf368fd1fd4ba4ac1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ae20013414edf368fd1fd4ba4ac1e3">&#9670;&#160;</a></span>define_M()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void define_M </td>
@@ -376,74 +395,24 @@ Variables</h2></td></tr>
           <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>mfwd</em></span>[3]&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00875">875</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Refer to Ken Perlin's 2 joint IK implmentation. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://mrl.cs.nyu.edu/~perlin/ik/ik.java.html">https://mrl.cs.nyu.edu/~perlin/ik/ik.java.html</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="camera_8c_source.html#l00875">define_M()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00982">982</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00875">define_M()</a>, and <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="camera_8c_source.html#l00982">define_M()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00982">define_M()</a>, and <a class="el" href="camera_8c_source.html#l01016">solve_Q()</a>.</p>
 
 </div>
 </div>
-<a id="ad5365e55aeaa0872a41e95cb2ccbd5de" name="ad5365e55aeaa0872a41e95cb2ccbd5de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5365e55aeaa0872a41e95cb2ccbd5de">&#9670;&#160;</a></span>update_leg()</h2>
+<a id="a646392d17118e05d613e553352579b20" name="a646392d17118e05d613e553352579b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646392d17118e05d613e553352579b20">&#9670;&#160;</a></span>rot()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool update_leg </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *</td>          <td class="paramname"><span class="paramname"><em>leg</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *</td>          <td class="paramname"><span class="paramname"><em>other_leg</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>tr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>vel</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00991">991</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01298">LegIK::duration</a>, <a class="el" href="main_8c_source.html#l00149">FOOTSTEP_EMITTER</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="audio_8c_source.html#l00853">play_emitter()</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l01296">LegIK::start_pos</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="engine__types_8h_source.html#l01294">LegIK::stepping_off_ledge</a>, <a class="el" href="engine__types_8h_source.html#l01297">LegIK::target_pos</a>, <a class="el" href="engine__types_8h_source.html#l01299">LegIK::time</a>, <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>, and <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>.</p>
-
-</div>
-</div>
-<a id="a878b96b8fa3ef736f5404b2e3f0674b9" name="a878b96b8fa3ef736f5404b2e3f0674b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a878b96b8fa3ef736f5404b2e3f0674b9">&#9670;&#160;</a></span>rot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> rot </td>
@@ -456,29 +425,24 @@ Variables</h2></td></tr>
           <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00897">897</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Refer to Ken Perlin's 2 joint IK implmentation. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://mrl.cs.nyu.edu/~perlin/ik/ik.java.html">https://mrl.cs.nyu.edu/~perlin/ik/ik.java.html</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01004">1004</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, and <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>.</p>
+<p class="reference">References <a class="el" href="camera_8c_source.html#l01004">rot()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="acceleration_8c_source.html#l01600">build_light_bvh()</a>, <a class="el" href="utilities_8h_source.html#l00481">compose_trs_from_vectors()</a>, <a class="el" href="init_8c_source.html#l00304">init_new_asset_instance()</a>, <a class="el" href="utilities_8h_source.html#l00600">OBB_vectors()</a>, <a class="el" href="dynamic_8frag_source.html#l00561">pos_to_pv_local()</a>, <a class="el" href="editor_8c_source.html#l02676">render_mat4_widget()</a>, <a class="el" href="camera_8c_source.html#l01004">rot()</a>, <a class="el" href="audio__ir_8c_source.html#l00234">rotate_sh()</a>, <a class="el" href="camera_8c_source.html#l01016">solve_Q()</a>, <a class="el" href="physics_8c_source.html#l01724">update_physics_components()</a>, <a class="el" href="audio__ir_8c_source.html#l00326">update_player_ir()</a>, and <a class="el" href="camera_8c_source.html#l01287">update_skeleton()</a>.</p>
 
 </div>
 </div>
-<a id="ab6dd905223afde3464ce480a13072a2e" name="ab6dd905223afde3464ce480a13072a2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6dd905223afde3464ce480a13072a2e">&#9670;&#160;</a></span>solve_Q()</h2>
+<a id="aed4cf9f7f00f26525c3affb1eb99aa34" name="aed4cf9f7f00f26525c3affb1eb99aa34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4cf9f7f00f26525c3affb1eb99aa34">&#9670;&#160;</a></span>solve_Q()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool solve_Q </td>
@@ -506,29 +470,67 @@ Variables</h2></td></tr>
           <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>hip_pos</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01099">1099</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Refer to Ken Perlin's 2 joint IK implmentation. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://mrl.cs.nyu.edu/~perlin/ik/ik.java.html">https://mrl.cs.nyu.edu/~perlin/ik/ik.java.html</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="camera_8c_source.html#l00875">define_M()</a>, <a class="el" href="engine__types_8h_source.html#l01323">Skeleton::lower_leg_length</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="camera_8c_source.html#l00897">rot()</a>, <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, and <a class="el" href="engine__types_8h_source.html#l01322">Skeleton::upper_leg_length</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01016">1016</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, and <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="camera_8c_source.html#l00982">define_M()</a>, <a class="el" href="engine__types_8h_source.html#l01323">Skeleton::lower_leg_length</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="camera_8c_source.html#l01004">rot()</a>, <a class="el" href="camera_8c_source.html#l01016">solve_Q()</a>, <a class="el" href="engine__types_8h_source.html#l01322">Skeleton::upper_leg_length</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01016">solve_Q()</a>, and <a class="el" href="camera_8c_source.html#l01287">update_skeleton()</a>.</p>
 
 </div>
 </div>
-<a id="a9d713624f8a8151579916cafd9eeba4a" name="a9d713624f8a8151579916cafd9eeba4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d713624f8a8151579916cafd9eeba4a">&#9670;&#160;</a></span>update_spring()</h2>
+<a id="a0ecebf8465398be69907a6903efa28c1" name="a0ecebf8465398be69907a6903efa28c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecebf8465398be69907a6903efa28c1">&#9670;&#160;</a></span>update_leg()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool update_leg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *</td>          <td class="paramname"><span class="paramname"><em>leg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_leg_i_k">LegIK</a> *</td>          <td class="paramname"><span class="paramname"><em>other_leg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>vel</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raycasts forward and downward to determine how far a leg can go and also updates the leg position if it is already taking a step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">leg</td><td>The leg that is updating. </td></tr>
+    <tr><td class="paramname">other_leg</td><td>The other leg. </td></tr>
+    <tr><td class="paramname">vel</td><td>The input velocity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if footstep is completed. \begin{aligned} &amp;\text{Def:} \\ &amp; \quad D = \text{ Desired Stride} \\ &amp; \quad H = \text{ Step Height} \\ \hat{f_0} &amp;= \begin{bmatrix} \cos(y) \\ \sin(y) \\ \sin(p) \end{bmatrix} \\ \hat{r_0} &amp;= \begin{bmatrix} -\sin(y) \\ \cos(y) \\ 0 \end{bmatrix} \\ \hat{f} &amp;= \frac{\hat{f_0}}{||\hat{f_0}||} \\ \hat{r} &amp;= \frac{\hat{r_0}}{||\hat{r_0}||} \\ w_0 &amp;= \begin{bmatrix} v_x \hat{f_x} + v_y \hat{r_x} \\ v_x \hat{f_y} + v_y \hat{r_y} \end{bmatrix} \\ w &amp;= \frac{w_0}{||w_0||} \\ t &amp;= \begin{bmatrix} P_{B,x} + w_x \cdot D \\ P_{B,y} + w_y \cdot D \\ P_{B,z} \end{bmatrix} \\ s_s &amp;= \begin{bmatrix} P_{A,x} \\ P_{A,y} \\ P_{A,z} + H \end{bmatrix} \\ s_e &amp;= \begin{bmatrix} t_x \\ t_y \\ t_z + H \end{bmatrix} \\ \vec{h_{d,0}} &amp;= s_e - s_s \\ h_l &amp;= ||\vec{h_{d,0}}|| \\ \vec{h_d} &amp;= \frac{\vec{h_{d,0}}}{h_l} \\ &amp; R(t, \vec{v}, O) = O + t\vec{v} \\ t_{\text{hit}} &amp;= \begin{cases} &amp; min({t \ge 0 | R(t, \vec{h_d}, s_s) \in \mathcal S }), &amp; \text{if }R(t, \vec{h_d}, s_s) \text{ hits }\mathcal S\\ &amp; h_l, &amp; \text{otherwise} \\ \end{cases} \\ d_s &amp;= \begin{cases} R(t_{\text{hit}}, \vec{h_d}, s_s), &amp; \text{ if } t_{\text{hit}} &lt; h_l \\ s_e, &amp; \text{otherwise} \end{cases} \\ \vec{d_d} &amp;= \begin{bmatrix} 0 \\ 0\\ -1 \end{bmatrix}\\ t_{\text{hit},1} &amp;= \begin{cases} &amp; min({t \ge 0 | R(t, \vec{d_d}, d_s) \in \mathcal S }), &amp; \text{if }R(t, \vec{d_d}, d_s) \text{ hits }\mathcal S\\ &amp; h_l, &amp; \text{otherwise} \\ \end{cases} \\ t_1 &amp;= R(t_{\text{hit},1}, \vec{d_d}, d_s) \\ \end{aligned} </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01135">1135</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+
+<p class="reference">References <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01298">LegIK::duration</a>, <a class="el" href="main_8c_source.html#l00149">FOOTSTEP_EMITTER</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="audio_8c_source.html#l00853">play_emitter()</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l01296">LegIK::start_pos</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="engine__types_8h_source.html#l01294">LegIK::stepping_off_ledge</a>, <a class="el" href="engine__types_8h_source.html#l01297">LegIK::target_pos</a>, <a class="el" href="engine__types_8h_source.html#l01299">LegIK::time</a>, <a class="el" href="camera_8c_source.html#l01135">update_leg()</a>, <a class="el" href="mathf_8h_source.html#l00038">vec2_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00318">vec3_dist()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00375">vec3_lerp()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01135">update_leg()</a>, and <a class="el" href="camera_8c_source.html#l01287">update_skeleton()</a>.</p>
+
+</div>
+</div>
+<a id="a3e9bfff923cbe0c58de91604a2233adb" name="a3e9bfff923cbe0c58de91604a2233adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9bfff923cbe0c58de91604a2233adb">&#9670;&#160;</a></span>update_spring()</h2>
+
+<div class="memitem">
+<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void update_spring </td>
@@ -537,29 +539,30 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01135">1135</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Updates a <a class="el" href="engine__types_8h.html#struct_spring" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a>'s velocity and position based on the difference between its current position and target position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The spring to update.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>\begin{aligned} F &amp;= -s (p - p_t) \\ a &amp;= F + -d \vec{v} \\ \vec{v} &amp;= \vec{v} + a \Delta t \\ p &amp;= p + \vec{v} \Delta t \\ \end{aligned} </p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01271">Spring::damp</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01270">Spring::stiff</a>, <a class="el" href="engine__types_8h_source.html#l01274">Spring::target</a>, <a class="el" href="camera_8c_source.html#l01135">update_spring()</a>, and <a class="el" href="engine__types_8h_source.html#l01272">Spring::velocity</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01239">1239</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01135">update_spring()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01271">Spring::damp</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01270">Spring::stiff</a>, <a class="el" href="engine__types_8h_source.html#l01274">Spring::target</a>, <a class="el" href="camera_8c_source.html#l01239">update_spring()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, and <a class="el" href="engine__types_8h_source.html#l01272">Spring::velocity</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01287">update_skeleton()</a>, and <a class="el" href="camera_8c_source.html#l01239">update_spring()</a>.</p>
 
 </div>
 </div>
-<a id="a833f9c3dfabcebf0dac0eba001f19eda" name="a833f9c3dfabcebf0dac0eba001f19eda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a833f9c3dfabcebf0dac0eba001f19eda">&#9670;&#160;</a></span>update_angular_spring()</h2>
+<a id="af220f65734955fe0e6ccdb6a0b53629d" name="af220f65734955fe0e6ccdb6a0b53629d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af220f65734955fe0e6ccdb6a0b53629d">&#9670;&#160;</a></span>update_angular_spring()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void update_angular_spring </td>
@@ -572,29 +575,31 @@ Variables</h2></td></tr>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01149">1149</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Updates a <a class="el" href="engine__types_8h.html#struct_spring" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a>'s angular velocity and rotation based on the difference between its current rotation and target rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The spring to update. </td></tr>
+    <tr><td class="paramname">dt</td><td>The dt for the step.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>\begin{aligned} d &amp;= (r - t) \in (0, \pi)\\ \tau &amp;= \omega d + d s \\ \omega &amp;= \omega + (\tau \Delta t) \\ r &amp;= r + (\omega \Delta t) \\ \end{aligned} </p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01279">Spring::angular_vel</a>, <a class="el" href="engine__types_8h_source.html#l01277">Spring::damp_rot</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01278">Spring::rotation</a>, <a class="el" href="engine__types_8h_source.html#l01276">Spring::stiff_rot</a>, <a class="el" href="engine__types_8h_source.html#l01280">Spring::target_rot</a>, <a class="el" href="camera_8c_source.html#l01149">update_angular_spring()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01253">1253</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01168">calculate_camera_angles()</a>, and <a class="el" href="camera_8c_source.html#l01149">update_angular_spring()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01279">Spring::angular_vel</a>, <a class="el" href="engine__types_8h_source.html#l01277">Spring::damp_rot</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01278">Spring::rotation</a>, <a class="el" href="engine__types_8h_source.html#l01276">Spring::stiff_rot</a>, <a class="el" href="engine__types_8h_source.html#l01280">Spring::target_rot</a>, <a class="el" href="camera_8c_source.html#l01253">update_angular_spring()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="utilities_8h_source.html#l00057">wrap_angle_pi()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01272">calculate_camera_angles()</a>, and <a class="el" href="camera_8c_source.html#l01253">update_angular_spring()</a>.</p>
 
 </div>
 </div>
-<a id="a0e82a59e46abd8909a285ab914c1203f" name="a0e82a59e46abd8909a285ab914c1203f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e82a59e46abd8909a285ab914c1203f">&#9670;&#160;</a></span>calculate_camera_angles()</h2>
+<a id="a1e0fd38e00be2b8576181f14546abc58" name="a1e0fd38e00be2b8576181f14546abc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e0fd38e00be2b8576181f14546abc58">&#9670;&#160;</a></span>calculate_camera_angles()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void calculate_camera_angles </td>
@@ -617,18 +622,24 @@ Variables</h2></td></tr>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01168">1168</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p>Calculates camera vectors and roll based on the angular <a class="el" href="engine__types_8h.html#struct_spring" title="The spring used for determining Skeleton positions and eventually neck trajectory.">Spring</a> attached to it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cam</td><td>The camera to update. </td></tr>
+    <tr><td class="paramname">s</td><td>The spring to update. </td></tr>
+    <tr><td class="paramname">input_acceleration</td><td>Movement vectors to modify roll. </td></tr>
+    <tr><td class="paramname">dt</td><td>The simulation time. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="camera_8c_source.html#l01168">calculate_camera_angles()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::roll</a>, <a class="el" href="engine__types_8h_source.html#l01280">Spring::target_rot</a>, <a class="el" href="camera_8c_source.html#l01149">update_angular_spring()</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01272">1272</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01168">calculate_camera_angles()</a>, and <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>.</p>
+<p class="reference">References <a class="el" href="camera_8c_source.html#l01272">calculate_camera_angles()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::roll</a>, <a class="el" href="engine__types_8h_source.html#l01280">Spring::target_rot</a>, <a class="el" href="camera_8c_source.html#l01253">update_angular_spring()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01272">calculate_camera_angles()</a>, and <a class="el" href="camera_8c_source.html#l01287">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -678,11 +689,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00028">28</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00135">135</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="camera_8c_source.html#l00029">compute_camera_basis()</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="camera_8c_source.html#l00136">compute_camera_basis()</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="camera_8c_source.html#l00029">compute_camera_basis()</a>, <a class="el" href="camera_8c_source.html#l00370">update_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="camera_8c_source.html#l00136">compute_camera_basis()</a>, <a class="el" href="camera_8c_source.html#l00477">update_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -739,11 +750,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The 4x4 orthographic matrix. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00071">71</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00178">178</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::a0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d3</a>, and <a class="el" href="camera_8c_source.html#l00072">make_ortho()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::a0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d3</a>, and <a class="el" href="camera_8c_source.html#l00179">make_ortho()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00072">make_ortho()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l00191">update_light_camera()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00179">make_ortho()</a>, <a class="el" href="render_8c_source.html#l03057">render()</a>, and <a class="el" href="camera_8c_source.html#l00298">update_light_camera()</a>.</p>
 
 </div>
 </div>
@@ -788,11 +799,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The 4x4 projection matrix. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00113">113</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00220">220</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::a0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d3</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, and <a class="el" href="camera_8c_source.html#l00114">make_projection()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::a0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d3</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, and <a class="el" href="camera_8c_source.html#l00221">make_projection()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="camera_8c_source.html#l00114">make_projection()</a>, <a class="el" href="camera_8c_source.html#l00370">update_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="camera_8c_source.html#l00221">make_projection()</a>, <a class="el" href="camera_8c_source.html#l00477">update_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -825,11 +836,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The 4x4 view matrix. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00150">150</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00257">257</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::a0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c3</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d3</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="camera_8c_source.html#l00151">make_look_at()</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::a0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::a3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::b3</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c3</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d1</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d2</a>, <a class="el" href="types_8h_source.html#l00021">mat4::d3</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="camera_8c_source.html#l00258">make_look_at()</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="camera_8c_source.html#l00151">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00370">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00191">update_light_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="lightmap_8c_source.html#l00786">bake_reflection_probes()</a>, <a class="el" href="camera_8c_source.html#l00258">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00477">update_camera()</a>, <a class="el" href="camera_8c_source.html#l00298">update_light_camera()</a>, and <a class="el" href="render_8c_source.html#l01863">write_point_light_shadows()</a>.</p>
 
 </div>
 </div>
@@ -861,11 +872,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00190">190</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00297">297</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::dir</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l00070">FOV</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="camera_8c_source.html#l00151">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00072">make_ortho()</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01246">CamData::proj</a>, <a class="el" href="main_8c_source.html#l00080">RENDER_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00079">RENDER_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="main_8c_source.html#l00092">SHADOW_MAP_FBO</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::target</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="camera_8c_source.html#l00191">update_light_camera()</a>, <a class="el" href="engine__types_8h_source.html#l01248">CamData::view</a>, <a class="el" href="engine__types_8h_source.html#l00628">Framebuffer::w</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::dir</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l00070">FOV</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="camera_8c_source.html#l00258">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00179">make_ortho()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01246">CamData::proj</a>, <a class="el" href="main_8c_source.html#l00080">RENDER_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00079">RENDER_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="main_8c_source.html#l00092">SHADOW_MAP_FBO</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::target</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="camera_8c_source.html#l00298">update_light_camera()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="engine__types_8h_source.html#l01248">CamData::view</a>, <a class="el" href="engine__types_8h_source.html#l00628">Framebuffer::w</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="camera_8c_source.html#l00191">update_light_camera()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="camera_8c_source.html#l00298">update_light_camera()</a>.</p>
 
 </div>
 </div>
@@ -898,11 +909,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00336">336</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00443">443</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="utilities_8c_source.html#l01327">closest_point_triangle()</a>, <a class="el" href="camera_8c_source.html#l00336">collision()</a>, and <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="utilities_8c_source.html#l01327">closest_point_triangle()</a>, <a class="el" href="camera_8c_source.html#l00443">collision()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00336">collision()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>, and <a class="el" href="acceleration_8c_source.html#l00387">process_collision_node()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00443">collision()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="camera_8c_source.html#l00710">player_find_collision()</a>, and <a class="el" href="acceleration_8c_source.html#l00470">process_collision_node()</a>.</p>
 
 </div>
 </div>
@@ -934,11 +945,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00369">369</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00476">476</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="camera_8c_source.html#l00029">compute_camera_basis()</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l00070">FOV</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="camera_8c_source.html#l00357">HALTON_8</a>, <a class="el" href="engine__types_8h_source.html#l01249">CamData::inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01251">CamData::inv_view</a>, <a class="el" href="main_8c_source.html#l00181">JITTER_OFFSET</a>, <a class="el" href="camera_8c_source.html#l00151">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00114">make_projection()</a>, <a class="el" href="render_8c_source.html#l00021">master_frame</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l03405">Globals::noclip</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01246">CamData::proj</a>, <a class="el" href="main_8c_source.html#l00080">RENDER_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00079">RENDER_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::roll</a>, <a class="el" href="engine__types_8h_source.html#l01278">Spring::rotation</a>, <a class="el" href="engine__types_8h_source.html#l00718">EditorSettings::TAA</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::target</a>, <a class="el" href="engine__types_8h_source.html#l01250">CamData::unjittered_inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01247">CamData::unjittered_proj</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="camera_8c_source.html#l00370">update_camera()</a>, <a class="el" href="engine__types_8h_source.html#l01248">CamData::view</a>, <a class="el" href="engine__types_8h_source.html#l00072">VIEW_FAR</a>, <a class="el" href="engine__types_8h_source.html#l00071">VIEW_NEAR</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00013">vec4::x</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00013">vec4::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, <a class="el" href="types_8h_source.html#l00012">vec3::z</a>, and <a class="el" href="types_8h_source.html#l00013">vec4::z</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00021">mat4::c0</a>, <a class="el" href="types_8h_source.html#l00021">mat4::c1</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="camera_8c_source.html#l00136">compute_camera_basis()</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l00070">FOV</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="camera_8c_source.html#l00464">HALTON_8</a>, <a class="el" href="engine__types_8h_source.html#l01249">CamData::inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01251">CamData::inv_view</a>, <a class="el" href="main_8c_source.html#l00181">JITTER_OFFSET</a>, <a class="el" href="mathf_8h_source.html#l00164">m4_inverse()</a>, <a class="el" href="camera_8c_source.html#l00258">make_look_at()</a>, <a class="el" href="camera_8c_source.html#l00221">make_projection()</a>, <a class="el" href="render_8c_source.html#l00021">master_frame</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l03405">Globals::noclip</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01246">CamData::proj</a>, <a class="el" href="main_8c_source.html#l00080">RENDER_HEIGHT</a>, <a class="el" href="main_8c_source.html#l00079">RENDER_WIDTH</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::roll</a>, <a class="el" href="engine__types_8h_source.html#l01278">Spring::rotation</a>, <a class="el" href="engine__types_8h_source.html#l00718">EditorSettings::TAA</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::target</a>, <a class="el" href="engine__types_8h_source.html#l01250">CamData::unjittered_inv_proj</a>, <a class="el" href="engine__types_8h_source.html#l01247">CamData::unjittered_proj</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="camera_8c_source.html#l00477">update_camera()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="utilities_8h_source.html#l00166">vec3_to_vec4()</a>, <a class="el" href="engine__types_8h_source.html#l01248">CamData::view</a>, <a class="el" href="engine__types_8h_source.html#l00072">VIEW_FAR</a>, <a class="el" href="engine__types_8h_source.html#l00071">VIEW_NEAR</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00013">vec4::x</a>, <a class="el" href="types_8h_source.html#l00011">vec2::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00013">vec4::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, <a class="el" href="types_8h_source.html#l00012">vec3::z</a>, and <a class="el" href="types_8h_source.html#l00013">vec4::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="camera_8c_source.html#l00370">update_camera()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="camera_8c_source.html#l00477">update_camera()</a>.</p>
 
 </div>
 </div>
@@ -975,11 +986,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00486">486</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00593">593</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="camera_8c_source.html#l00487">apply_planet_velocity()</a>, <a class="el" href="camera_8c_source.html#l00454">calculate_stride_governor()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01334">Skeleton::left_leg</a>, <a class="el" href="engine__types_8h_source.html#l01351">Camera::on_ground</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="engine__types_8h_source.html#l01335">Skeleton::right_leg</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l03051">Player::sprinting</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="camera_8c_source.html#l00594">apply_planet_velocity()</a>, <a class="el" href="camera_8c_source.html#l00561">calculate_stride_governor()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01334">Skeleton::left_leg</a>, <a class="el" href="engine__types_8h_source.html#l01351">Camera::on_ground</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="engine__types_8h_source.html#l01335">Skeleton::right_leg</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l03051">Player::sprinting</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00487">apply_planet_velocity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00594">apply_planet_velocity()</a>.</p>
 
 </div>
 </div>
@@ -1016,11 +1027,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00552">552</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00659">659</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="camera_8c_source.html#l00553">apply_velocity()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="camera_8c_source.html#l00660">apply_velocity()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00553">apply_velocity()</a>, and <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00660">apply_velocity()</a>, and <a class="el" href="input_8c_source.html#l00412">process_input()</a>.</p>
 
 </div>
 </div>
@@ -1052,11 +1063,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00856">856</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00963">963</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01279">Spring::angular_vel</a>, <a class="el" href="engine__types_8h_source.html#l01334">Skeleton::left_leg</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l01319">Skeleton::neck_height</a>, <a class="el" href="engine__types_8h_source.html#l01332">Skeleton::pelvis</a>, <a class="el" href="engine__types_8h_source.html#l01317">Skeleton::pelvis_height</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="camera_8c_source.html#l00856">reset_skeleton()</a>, <a class="el" href="engine__types_8h_source.html#l01335">Skeleton::right_leg</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="engine__types_8h_source.html#l01272">Spring::velocity</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01279">Spring::angular_vel</a>, <a class="el" href="engine__types_8h_source.html#l01334">Skeleton::left_leg</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l01319">Skeleton::neck_height</a>, <a class="el" href="engine__types_8h_source.html#l01332">Skeleton::pelvis</a>, <a class="el" href="engine__types_8h_source.html#l01317">Skeleton::pelvis_height</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="camera_8c_source.html#l00963">reset_skeleton()</a>, <a class="el" href="engine__types_8h_source.html#l01335">Skeleton::right_leg</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="engine__types_8h_source.html#l01272">Spring::velocity</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l00856">reset_skeleton()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l00963">reset_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -1100,11 +1111,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00910">910</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01052">1052</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="engine__types_8h_source.html#l01294">LegIK::stepping_off_ledge</a>, <a class="el" href="camera_8c_source.html#l00910">update_body_from_legs()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::pitch</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l01293">LegIK::stepping</a>, <a class="el" href="engine__types_8h_source.html#l01294">LegIK::stepping_off_ledge</a>, <a class="el" href="camera_8c_source.html#l01052">update_body_from_legs()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="engine__types_8h_source.html#l01349">Camera::yaw</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l00910">update_body_from_legs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l01052">update_body_from_legs()</a>.</p>
 
 </div>
 </div>
@@ -1142,11 +1153,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01183">1183</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01287">1287</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02173">PhysicsComponent::accel</a>, <a class="el" href="engine__types_8h_source.html#l00192">ACCEL_BETA</a>, <a class="el" href="camera_8c_source.html#l01168">calculate_camera_angles()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l01318">Skeleton::hip_height</a>, <a class="el" href="engine__types_8h_source.html#l01329">Skeleton::left_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l01334">Skeleton::left_leg</a>, <a class="el" href="main_8c_source.html#l00391">left_leg_offset</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l01321">Skeleton::neck_pelvis_diff</a>, <a class="el" href="engine__types_8h_source.html#l02172">PhysicsComponent::old_vel</a>, <a class="el" href="engine__types_8h_source.html#l01327">Skeleton::p_left</a>, <a class="el" href="engine__types_8h_source.html#l01328">Skeleton::p_right</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01332">Skeleton::pelvis</a>, <a class="el" href="engine__types_8h_source.html#l01317">Skeleton::pelvis_height</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01325">Skeleton::q_left</a>, <a class="el" href="engine__types_8h_source.html#l01326">Skeleton::q_right</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01330">Skeleton::right_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l01335">Skeleton::right_leg</a>, <a class="el" href="main_8c_source.html#l00392">right_leg_offset</a>, <a class="el" href="camera_8c_source.html#l00897">rot()</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="camera_8c_source.html#l01099">solve_Q()</a>, <a class="el" href="engine__types_8h_source.html#l01274">Spring::target</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>, <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>, <a class="el" href="camera_8c_source.html#l01135">update_spring()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02173">PhysicsComponent::accel</a>, <a class="el" href="engine__types_8h_source.html#l00192">ACCEL_BETA</a>, <a class="el" href="camera_8c_source.html#l01272">calculate_camera_angles()</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l01318">Skeleton::hip_height</a>, <a class="el" href="engine__types_8h_source.html#l01329">Skeleton::left_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l01334">Skeleton::left_leg</a>, <a class="el" href="main_8c_source.html#l00391">left_leg_offset</a>, <a class="el" href="utilities_8h_source.html#l00498">mat3_mul_vec3()</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l01321">Skeleton::neck_pelvis_diff</a>, <a class="el" href="engine__types_8h_source.html#l02172">PhysicsComponent::old_vel</a>, <a class="el" href="engine__types_8h_source.html#l01327">Skeleton::p_left</a>, <a class="el" href="engine__types_8h_source.html#l01328">Skeleton::p_right</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="engine__types_8h_source.html#l01332">Skeleton::pelvis</a>, <a class="el" href="engine__types_8h_source.html#l01317">Skeleton::pelvis_height</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01295">LegIK::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l01325">Skeleton::q_left</a>, <a class="el" href="engine__types_8h_source.html#l01326">Skeleton::q_right</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="engine__types_8h_source.html#l01330">Skeleton::right_hip_pos</a>, <a class="el" href="engine__types_8h_source.html#l01335">Skeleton::right_leg</a>, <a class="el" href="main_8c_source.html#l00392">right_leg_offset</a>, <a class="el" href="camera_8c_source.html#l01004">rot()</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="camera_8c_source.html#l01016">solve_Q()</a>, <a class="el" href="engine__types_8h_source.html#l01274">Spring::target</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="camera_8c_source.html#l01135">update_leg()</a>, <a class="el" href="camera_8c_source.html#l01287">update_skeleton()</a>, <a class="el" href="camera_8c_source.html#l01239">update_spring()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l01183">update_skeleton()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l01287">update_skeleton()</a>.</p>
 
 </div>
 </div>
@@ -1167,11 +1178,11 @@ Variables</h2></td></tr>
 
 <p>Resolves collisions between camera and geometry, uses player. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01273">1273</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l01377">1377</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02156">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="camera_8c_source.html#l00597">ground_hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::id</a>, <a class="el" href="engine__types_8h_source.html#l02382">MeshNode::local_matrix</a>, <a class="el" href="engine__types_8h_source.html#l00160">MAX_PLAYER_CONTACTS</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="camera_8c_source.html#l01267">MIN_WALKABLE_SURFACE</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01351">Camera::on_ground</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02435">MeshNode::pc</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01167">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01097">player_resolve_impulse_static()</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="camera_8c_source.html#l01269">RAYCAST_HEIGHT</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l02399">MeshNode::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02505">Mesh::tris</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="engine__types_8h_source.html#l02504">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02156">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="camera_8c_source.html#l00704">ground_hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::id</a>, <a class="el" href="engine__types_8h_source.html#l02382">MeshNode::local_matrix</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l00160">MAX_PLAYER_CONTACTS</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="camera_8c_source.html#l01371">MIN_WALKABLE_SURFACE</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01351">Camera::on_ground</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02435">MeshNode::pc</a>, <a class="el" href="engine__types_8h_source.html#l03054">Player::pc</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="camera_8c_source.html#l00710">player_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01167">player_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01097">player_resolve_impulse_static()</a>, <a class="el" href="engine__types_8h_source.html#l03055">Player::pos</a>, <a class="el" href="camera_8c_source.html#l01373">RAYCAST_HEIGHT</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l02399">MeshNode::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l02505">Mesh::tris</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="engine__types_8h_source.html#l02504">Mesh::vertices</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8c_source.html#l00412">process_input()</a>, and <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>
@@ -1181,21 +1192,13 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const float HALTON_8[8][2]</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                            = {</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                      = {</div>
 <div class="line">    { 0.000000f, -0.333333f },</div>
 <div class="line">    {-0.500000f,  0.333333f },</div>
 <div class="line">    { 0.250000f, -0.777778f },</div>
@@ -1206,9 +1209,9 @@ Variables</h2></td></tr>
 <div class="line">    {-0.625000f,  0.777778f }</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00357">357</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00464">464</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00370">update_camera()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00477">update_camera()</a>.</p>
 
 </div>
 </div>
@@ -1224,9 +1227,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00597">597</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8c_source.html#l00704">704</a> of file <a class="el" href="camera_8c_source.html">camera.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>

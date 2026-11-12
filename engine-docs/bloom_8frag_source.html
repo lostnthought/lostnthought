@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('bloom_8frag_so
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">float</span> knee = 0.2;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">float</span> rq = clamp(brightness - threshold + knee, 0.0, 2.0 * knee);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">float</span> rq = <a class="code hl_function" href="mathf_8h.html#ac1937c4b05c8798d365406f380792241">clamp</a>(brightness - threshold + knee, 0.0, 2.0 * knee);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    rq = (rq * rq) / (4.0 * knee);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">float</span> intensity = max(rq, brightness - threshold);</div>
@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('bloom_8frag_so
 <div class="ttc" id="abloom_8frag_html_a158d8798faed156b59adf6d29d4ee947"><div class="ttname"><a href="bloom_8frag.html#a158d8798faed156b59adf6d29d4ee947">uScene</a></div><div class="ttdeci">uniform sampler2D uScene</div><div class="ttdef"><b>Definition</b> <a href="#l00003">bloom.frag:3</a></div></div>
 <div class="ttc" id="abloom_8frag_html_a6d8dd0540ed9af35f34cd31b838cacce"><div class="ttname"><a href="bloom_8frag.html#a6d8dd0540ed9af35f34cd31b838cacce">fragColor</a></div><div class="ttdeci">out vec4 fragColor</div><div class="ttdef"><b>Definition</b> <a href="#l00006">bloom.frag:6</a></div></div>
 <div class="ttc" id="alightmap_8frag_html_a39fca2c8fe34ab0c307cdd0f7e7f53d6"><div class="ttname"><a href="lightmap_8frag.html#a39fca2c8fe34ab0c307cdd0f7e7f53d6">vUV</a></div><div class="ttdeci">in vec2 vUV</div><div class="ttdef"><b>Definition</b> <a href="lightmap_8frag_source.html#l00013">lightmap.frag:13</a></div></div>
+<div class="ttc" id="amathf_8h_html_ac1937c4b05c8798d365406f380792241"><div class="ttname"><a href="mathf_8h.html#ac1937c4b05c8798d365406f380792241">clamp</a></div><div class="ttdeci">float clamp(float a, float b, float c)</div><div class="ttdef"><b>Definition</b> <a href="mathf_8h_source.html#l00379">mathf.h:379</a></div></div>
 <div class="ttc" id="atypes_8h_html_structvec2"><div class="ttname"><a href="types_8h.html#structvec2">vec2</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00011">types.h:11</a></div></div>
 <div class="ttc" id="atypes_8h_html_structvec4"><div class="ttname"><a href="types_8h.html#structvec4">vec4</a></div><div class="ttdef"><b>Definition</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

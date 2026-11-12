@@ -17,10 +17,10 @@ var group__aprobe__group_struct_audio_scratch_buffers =
     [ "IR_SUM_R", "group__aprobe__group.html#a842a981d7a1f6da9ac04fb5b785e1963", null ],
     [ "IR_SUM_L_FWD", "group__aprobe__group.html#a5c79d6ed2ce6551b418c5edc05db4ab7", null ],
     [ "IR_SUM_R_FWD", "group__aprobe__group.html#ad7c0e7a03bdae892668809bdde69eac1", null ],
-    [ "STATIC_HRTF_L", "group__aprobe__group.html#a3b9c39d768405e168135b66f8918c304", null ],
-    [ "STATIC_HRTF_R", "group__aprobe__group.html#a8f38cd6979abb65c69466f129a9eb767", null ],
-    [ "STATIC_HRTF_L_FWD", "group__aprobe__group.html#a19d993079b40eddd604dfecba7bf1083", null ],
-    [ "STATIC_HRTF_R_FWD", "group__aprobe__group.html#a10b2a38e15a02e04c3ad4dabaaa8014a", null ],
-    [ "IR_ROT", "group__aprobe__group.html#a4a700353c37c8743d5bd7faa5a7add6e", null ],
-    [ "IR_ROT_FWD", "group__aprobe__group.html#a94702539e0456198b6ad042c7dea3704", null ]
+    [ "STATIC_HRTF_L", "group__aprobe__group.html#a623c450e4720339a1f548c94a6eab77b", null ],
+    [ "STATIC_HRTF_R", "group__aprobe__group.html#ad6cec41dc48881322e8b06082c20fadb", null ],
+    [ "STATIC_HRTF_L_FWD", "group__aprobe__group.html#aeab9742ffacafce18b95bf7cd505b22e", null ],
+    [ "STATIC_HRTF_R_FWD", "group__aprobe__group.html#a092fc158401dd627f7574585865a0179", null ],
+    [ "IR_ROT", "group__aprobe__group.html#a03b32c6e9b066b3495c19dc9990f76e5", null ],
+    [ "IR_ROT_FWD", "group__aprobe__group.html#a5ff126c5ef31e90dc085cb9a94c5f1f0", null ]
 ];

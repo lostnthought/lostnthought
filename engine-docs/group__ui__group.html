@@ -264,22 +264,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad6e48f88a40308afedb4ac05daaf2118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a <a class="el" href="#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> to be parented to a <a class="el" href="#struct_u_i_container" title="UIContainer that contains both TextBoxes and UIElements and can mask and scroll them.">UIContainer</a>.  <br /></td></tr>
 <tr class="memitem:gabd11e903cb4f008dfdd3a415f9be82a0" id="r_gabd11e903cb4f008dfdd3a415f9be82a0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gabd11e903cb4f008dfdd3a415f9be82a0">reassign_elements_to_container</a> (<a class="el" href="#struct_u_i_element">UIElement</a> *el)</td></tr>
 <tr class="memdesc:gabd11e903cb4f008dfdd3a415f9be82a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns all children based on current <a class="el" href="#struct_u_i_container" title="UIContainer that contains both TextBoxes and UIElements and can mask and scroll them.">UIContainer</a> children.  <br /></td></tr>
-<tr class="memitem:ga35c5d62fb9850ab8ed643b69c1f84b41" id="r_ga35c5d62fb9850ab8ed643b69c1f84b41"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga35c5d62fb9850ab8ed643b69c1f84b41">UI_INIT</a> ()</td></tr>
-<tr class="memdesc:ga35c5d62fb9850ab8ed643b69c1f84b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simply frees the MENUS buffer and reinitializes the <a class="el" href="types_8h.html#struct_vector">Vector</a>.  <br /></td></tr>
-<tr class="memitem:gaf66eef0a3ae0b7a2c13b14364667f412" id="r_gaf66eef0a3ae0b7a2c13b14364667f412"><td class="memItemLeft">static <a class="el" href="#struct_u_i_menu">UIMenu</a> *&#160;</td><td class="memItemRight"><a class="el" href="#gaf66eef0a3ae0b7a2c13b14364667f412">create_menu</a> ()</td></tr>
-<tr class="memdesc:gaf66eef0a3ae0b7a2c13b14364667f412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>, expanding the MENUS <a class="el" href="types_8h.html#struct_vector">Vector</a> and sets all arrays to free.  <br /></td></tr>
-<tr class="memitem:gadf0474237e75aa58e3a3a6ac3df2eadf" id="r_gadf0474237e75aa58e3a3a6ac3df2eadf"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#gadf0474237e75aa58e3a3a6ac3df2eadf">container_is_valid</a> (int container, int menu)</td></tr>
-<tr class="memdesc:gadf0474237e75aa58e3a3a6ac3df2eadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="#struct_u_i_container" title="UIContainer that contains both TextBoxes and UIElements and can mask and scroll them.">UIContainer</a> and <a class="el" href="#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a> ID pairing is valid.  <br /></td></tr>
-<tr class="memitem:ga2427144a9c3308b28d927dd8d2f25215" id="r_ga2427144a9c3308b28d927dd8d2f25215"><td class="memItemLeft">static <a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga2427144a9c3308b28d927dd8d2f25215">screenspace_to_ui</a> (<a class="el" href="types_8h.html#structvec2">vec2</a> pos)</td></tr>
-<tr class="memdesc:ga2427144a9c3308b28d927dd8d2f25215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers a position to local UI space by multiplying it by a ratio of the two resolutions.  <br /></td></tr>
+<tr class="memitem:gab2a01971556ddc00b662af618831c6ac" id="r_gab2a01971556ddc00b662af618831c6ac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gab2a01971556ddc00b662af618831c6ac">UI_INIT</a> ()</td></tr>
+<tr class="memdesc:gab2a01971556ddc00b662af618831c6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simply frees the MENUS buffer and reinitializes the <a class="el" href="types_8h.html#struct_vector">Vector</a>.  <br /></td></tr>
+<tr class="memitem:gad5b5d16d66948ff0c1c288583c8dcb80" id="r_gad5b5d16d66948ff0c1c288583c8dcb80"><td class="memItemLeft"><a class="el" href="#struct_u_i_menu">UIMenu</a> *&#160;</td><td class="memItemRight"><a class="el" href="#gad5b5d16d66948ff0c1c288583c8dcb80">create_menu</a> ()</td></tr>
+<tr class="memdesc:gad5b5d16d66948ff0c1c288583c8dcb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>, expanding the MENUS <a class="el" href="types_8h.html#struct_vector">Vector</a> and sets all arrays to free.  <br /></td></tr>
+<tr class="memitem:gadfb18ad8aea71eeac8d5d0a257394ed1" id="r_gadfb18ad8aea71eeac8d5d0a257394ed1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#gadfb18ad8aea71eeac8d5d0a257394ed1">container_is_valid</a> (int container, int menu)</td></tr>
+<tr class="memdesc:gadfb18ad8aea71eeac8d5d0a257394ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="#struct_u_i_container" title="UIContainer that contains both TextBoxes and UIElements and can mask and scroll them.">UIContainer</a> and <a class="el" href="#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a> ID pairing is valid.  <br /></td></tr>
+<tr class="memitem:gaec6f85a88a32b79c200e35c9e268f767" id="r_gaec6f85a88a32b79c200e35c9e268f767"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec2">vec2</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaec6f85a88a32b79c200e35c9e268f767">screenspace_to_ui</a> (<a class="el" href="types_8h.html#structvec2">vec2</a> pos)</td></tr>
+<tr class="memdesc:gaec6f85a88a32b79c200e35c9e268f767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers a position to local UI space by multiplying it by a ratio of the two resolutions.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga84c4c987357676a6fa6de0bf459b72ac" id="r_ga84c4c987357676a6fa6de0bf459b72ac"><td class="memItemLeft"><a class="el" href="types_8h.html#struct_vector">Vector</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga84c4c987357676a6fa6de0bf459b72ac">MENUS</a></td></tr>
 <tr class="memdesc:ga84c4c987357676a6fa6de0bf459b72ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">All <a class="el" href="#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>s.  <br /></td></tr>
-<tr class="memitem:ga2107592622ec414832895ebf3a87b335" id="r_ga2107592622ec414832895ebf3a87b335"><td class="memItemLeft">static const char *&#160;</td><td class="memItemRight"><a class="el" href="#ga2107592622ec414832895ebf3a87b335">JUSTIFY_NAMES</a> []</td></tr>
+<tr class="memitem:ga2107592622ec414832895ebf3a87b335" id="r_ga2107592622ec414832895ebf3a87b335"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#ga2107592622ec414832895ebf3a87b335">JUSTIFY_NAMES</a> []</td></tr>
 <tr class="memdesc:ga2107592622ec414832895ebf3a87b335"><td class="mdescLeft">&#160;</td><td class="mdescRight">The names of <a class="el" href="#gad1e8474fe04a7a3dec8cd4edd1c07f61" title="Options for Justifying TextBoxes inside of containers but also around the origin .">Justify</a> for the Editor UI.  <br /></td></tr>
-<tr class="memitem:gaad9d96bdd718bd81543be85e2243fc63" id="r_gaad9d96bdd718bd81543be85e2243fc63"><td class="memItemLeft">static const char *&#160;</td><td class="memItemRight"><a class="el" href="#gaad9d96bdd718bd81543be85e2243fc63">UI_INTERACTABLE_NAMES</a> []</td></tr>
+<tr class="memitem:gaad9d96bdd718bd81543be85e2243fc63" id="r_gaad9d96bdd718bd81543be85e2243fc63"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#gaad9d96bdd718bd81543be85e2243fc63">UI_INTERACTABLE_NAMES</a> []</td></tr>
 <tr class="memdesc:gaad9d96bdd718bd81543be85e2243fc63"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a> interactable names for the union that describe unique functions.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
@@ -293,12 +293,12 @@ FBO Size</h2></td></tr>
 Default Structures</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Safe defaults for each UI structure. </p>
 </td></tr>
-<tr class="memitem:ga671b46c5ae4cae9e6121dcb5992b2921" id="r_ga671b46c5ae4cae9e6121dcb5992b2921"><td class="memItemLeft">static <a class="el" href="#struct_u_i_callback">UICallback</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga671b46c5ae4cae9e6121dcb5992b2921">DEFAULT_CALLBACK</a></td></tr>
-<tr class="memitem:ga6d260112184534a5cd24db1e91bea176" id="r_ga6d260112184534a5cd24db1e91bea176"><td class="memItemLeft">static <a class="el" href="#struct_u_i_element">UIElement</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga6d260112184534a5cd24db1e91bea176">DEFAULT_UI_ELEMENT</a></td></tr>
-<tr class="memitem:gaf6d9fbe110425b0d5284d1ff4046a285" id="r_gaf6d9fbe110425b0d5284d1ff4046a285"><td class="memItemLeft">static <a class="el" href="#struct_u_i_slider">UISlider</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaf6d9fbe110425b0d5284d1ff4046a285">DEFAULT_SLIDER</a></td></tr>
-<tr class="memitem:gaafe166ffada75840774b6cac7eac7684" id="r_gaafe166ffada75840774b6cac7eac7684"><td class="memItemLeft">static <a class="el" href="#struct_u_i_label">UILabel</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaafe166ffada75840774b6cac7eac7684">DEFAULT_LABEL</a></td></tr>
-<tr class="memitem:ga7a3502cfc07deea2156a5ba8d80a0aba" id="r_ga7a3502cfc07deea2156a5ba8d80a0aba"><td class="memItemLeft">static <a class="el" href="#struct_u_i_container">UIContainer</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga7a3502cfc07deea2156a5ba8d80a0aba">DEFAULT_UI_CONTAINER</a></td></tr>
-<tr class="memitem:ga75c39c139107ce7138b837e4c470878e" id="r_ga75c39c139107ce7138b837e4c470878e"><td class="memItemLeft">static <a class="el" href="#struct_text_box">TextBox</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga75c39c139107ce7138b837e4c470878e">DEFAULT_TEXT_BOX</a></td></tr>
+<tr class="memitem:ga671b46c5ae4cae9e6121dcb5992b2921" id="r_ga671b46c5ae4cae9e6121dcb5992b2921"><td class="memItemLeft"><a class="el" href="#struct_u_i_callback">UICallback</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga671b46c5ae4cae9e6121dcb5992b2921">DEFAULT_CALLBACK</a></td></tr>
+<tr class="memitem:ga6d260112184534a5cd24db1e91bea176" id="r_ga6d260112184534a5cd24db1e91bea176"><td class="memItemLeft"><a class="el" href="#struct_u_i_element">UIElement</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga6d260112184534a5cd24db1e91bea176">DEFAULT_UI_ELEMENT</a></td></tr>
+<tr class="memitem:gaf6d9fbe110425b0d5284d1ff4046a285" id="r_gaf6d9fbe110425b0d5284d1ff4046a285"><td class="memItemLeft"><a class="el" href="#struct_u_i_slider">UISlider</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaf6d9fbe110425b0d5284d1ff4046a285">DEFAULT_SLIDER</a></td></tr>
+<tr class="memitem:gaafe166ffada75840774b6cac7eac7684" id="r_gaafe166ffada75840774b6cac7eac7684"><td class="memItemLeft"><a class="el" href="#struct_u_i_label">UILabel</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaafe166ffada75840774b6cac7eac7684">DEFAULT_LABEL</a></td></tr>
+<tr class="memitem:ga7a3502cfc07deea2156a5ba8d80a0aba" id="r_ga7a3502cfc07deea2156a5ba8d80a0aba"><td class="memItemLeft"><a class="el" href="#struct_u_i_container">UIContainer</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga7a3502cfc07deea2156a5ba8d80a0aba">DEFAULT_UI_CONTAINER</a></td></tr>
+<tr class="memitem:ga75c39c139107ce7138b837e4c470878e" id="r_ga75c39c139107ce7138b837e4c470878e"><td class="memItemLeft"><a class="el" href="#struct_text_box">TextBox</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga75c39c139107ce7138b837e4c470878e">DEFAULT_TEXT_BOX</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
 UI Constants</h2></td></tr>
@@ -753,7 +753,7 @@ model</td>
 <td class="fieldname">
 uID</td>
 <td class="fielddoc">
-The ID inside of <a class="el" href="#ae8e032eccdb4668fe85a7fda979fd42b" title="The UIContainers.">UIMenu.containers</a>. </td></tr>
+The ID inside of <a class="el" href="#a90826812530e53612b5c9bc758bf08dd" title="The UIContainers.">UIMenu.containers</a>. </td></tr>
 <tr><td class="fieldtype">
 <a id="a03bb9c388c5a6b6eddda69288b1b0bcb" name="a03bb9c388c5a6b6eddda69288b1b0bcb"></a>bool</td>
 <td class="fieldname">
@@ -797,9 +797,9 @@ mask</td>
 <td class="fielddoc">
 If the <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>s and <a class="el" href="#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es contained should not be rendered if outside. </td></tr>
 <tr><td class="fieldtype">
-<a id="a9373d2bcb5f607874a17ae79e02f4af9" name="a9373d2bcb5f607874a17ae79e02f4af9"></a>int</td>
+<a id="ac30a0f100adfb3509868d560fb75909a" name="ac30a0f100adfb3509868d560fb75909a"></a>int</td>
 <td class="fieldname">
-children[<a class="el" href="#ga9959fb6149fe43b83f0a7a0f6435be34">MAX_UI_CHILDREN</a>]</td>
+children[1024]</td>
 <td class="fielddoc">
 The IDs for <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>s contained. </td></tr>
 <tr><td class="fieldtype">
@@ -809,9 +809,9 @@ child_count</td>
 <td class="fielddoc">
 The amount of <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>s contained. </td></tr>
 <tr><td class="fieldtype">
-<a id="ac17ff305648ece7815f669456567f9c9" name="ac17ff305648ece7815f669456567f9c9"></a>int</td>
+<a id="adbd21cff0d317d8f894bacc0d1fefa21" name="adbd21cff0d317d8f894bacc0d1fefa21"></a>int</td>
 <td class="fieldname">
-box_children[<a class="el" href="#ga9959fb6149fe43b83f0a7a0f6435be34">MAX_UI_CHILDREN</a>]</td>
+box_children[1024]</td>
 <td class="fielddoc">
 The IDs of <a class="el" href="#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es contained. </td></tr>
 <tr><td class="fieldtype">
@@ -985,7 +985,7 @@ The <a class="el" href="#struct_font" title="A Font and its Glyphs used for rend
 <td class="fieldname">
 uID</td>
 <td class="fielddoc">
-The ID inside of <a class="el" href="#aab14d461c55e851558b840a193876d25" title="The TextBoxes.">UIMenu.text_boxes</a>. </td></tr>
+The ID inside of <a class="el" href="#a52c39c9f4d76906495d33db3d30a93b1" title="The TextBoxes.">UIMenu.text_boxes</a>. </td></tr>
 <tr><td class="fieldtype">
 <a id="a874e6bff45e9a9b6e58936eecba64d0b" name="a874e6bff45e9a9b6e58936eecba64d0b"></a><a class="el" href="#gad1e8474fe04a7a3dec8cd4edd1c07f61">Justify</a></td>
 <td class="fieldname">
@@ -1702,21 +1702,21 @@ id[256]</td>
 <td class="fielddoc">
 The unique name of this menu. </td></tr>
 <tr><td class="fieldtype">
-<a id="a1cdb6ff27c9e03fd84a574936a914525" name="a1cdb6ff27c9e03fd84a574936a914525"></a><a class="el" href="#struct_u_i_element">UIElement</a></td>
+<a id="a6d58aa5c4457dbeaa47a69cbc45d01fc" name="a6d58aa5c4457dbeaa47a69cbc45d01fc"></a><a class="el" href="#struct_u_i_element">UIElement</a></td>
 <td class="fieldname">
-elements[<a class="el" href="#ga2485b5aae328cd7c9e35859d07e9cef3">MAX_UI_ELEMENTS</a>]</td>
+elements[1024]</td>
 <td class="fielddoc">
 The <a class="el" href="#struct_u_i_element" title="UIElements that are contained within a UIMenu that may receive events, be contained within UIContaine...">UIElement</a>s. </td></tr>
 <tr><td class="fieldtype">
-<a id="aab14d461c55e851558b840a193876d25" name="aab14d461c55e851558b840a193876d25"></a><a class="el" href="#struct_text_box">TextBox</a></td>
+<a id="a52c39c9f4d76906495d33db3d30a93b1" name="a52c39c9f4d76906495d33db3d30a93b1"></a><a class="el" href="#struct_text_box">TextBox</a></td>
 <td class="fieldname">
-text_boxes[<a class="el" href="#ga25b5d89627dc6543803f7df01ee04f61">MAX_TEXT_BOXES</a>]</td>
+text_boxes[1024]</td>
 <td class="fielddoc">
 The <a class="el" href="#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a>es. </td></tr>
 <tr><td class="fieldtype">
-<a id="ae8e032eccdb4668fe85a7fda979fd42b" name="ae8e032eccdb4668fe85a7fda979fd42b"></a><a class="el" href="#struct_u_i_container">UIContainer</a></td>
+<a id="a90826812530e53612b5c9bc758bf08dd" name="a90826812530e53612b5c9bc758bf08dd"></a><a class="el" href="#struct_u_i_container">UIContainer</a></td>
 <td class="fieldname">
-containers[<a class="el" href="#ga5ef8fa0a03dc91ba262a7d9a0f59888a">MAX_UI_CONTAINERS</a>]</td>
+containers[1024]</td>
 <td class="fielddoc">
 The <a class="el" href="#struct_u_i_container" title="UIContainer that contains both TextBoxes and UIElements and can mask and scroll them.">UIContainer</a>s. </td></tr>
 </table>
@@ -2304,7 +2304,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00515">515</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8c_source.html#l00515">get_text_box_from_coords()</a>, <a class="el" href="ui_8h_source.html#l00269">TextBox::h</a>, <a class="el" href="ui_8h_source.html#l00287">TextBox::layer</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00280">TextBox::scale</a>, <a class="el" href="ui_8h_source.html#l00284">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8c_source.html#l00012">TEXT_HEIGHT</a>, <a class="el" href="ui_8c_source.html#l00011">TEXT_WIDTH</a>, <a class="el" href="ui_8h_source.html#l00278">TextBox::translation</a>, <a class="el" href="ui_8h_source.html#l00036">UI_SCALE_HEIGHT</a>, <a class="el" href="ui_8h_source.html#l00035">UI_SCALE_WIDTH</a>, <a class="el" href="text_8vert_source.html#l00007">TextBox::visible</a>, <a class="el" href="ui_8h_source.html#l00268">TextBox::w</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8c_source.html#l00515">get_text_box_from_coords()</a>, <a class="el" href="ui_8h_source.html#l00269">TextBox::h</a>, <a class="el" href="ui_8h_source.html#l00287">TextBox::layer</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00280">TextBox::scale</a>, <a class="el" href="ui_8h_source.html#l00934">screenspace_to_ui()</a>, <a class="el" href="ui_8h_source.html#l00284">TextBox::start</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8c_source.html#l00012">TEXT_HEIGHT</a>, <a class="el" href="ui_8c_source.html#l00011">TEXT_WIDTH</a>, <a class="el" href="ui_8h_source.html#l00278">TextBox::translation</a>, <a class="el" href="ui_8h_source.html#l00036">UI_SCALE_HEIGHT</a>, <a class="el" href="ui_8h_source.html#l00035">UI_SCALE_WIDTH</a>, <a class="el" href="mathf_8h_source.html#l00274">vec2_add()</a>, <a class="el" href="utilities_8h_source.html#l00100">vec2_inside_bounds()</a>, <a class="el" href="text_8vert_source.html#l00007">TextBox::visible</a>, <a class="el" href="ui_8h_source.html#l00268">TextBox::w</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00515">get_text_box_from_coords()</a>, and <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>.</p>
 
@@ -2374,7 +2374,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00039">39</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ui_8h_source.html#l00533">UIElement::action_callback</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8c_source.html#l00039">create_ui_element()</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8c_source.html#l00016">find_empty_element_slot()</a>, <a class="el" href="ui_8h_source.html#l00534">UIElement::hover_callback</a>, <a class="el" href="ui_8h_source.html#l00538">UIElement::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, and <a class="el" href="ui_8h_source.html#l00514">UIElement::uID</a>.</p>
+<p class="reference">References <a class="el" href="ui_8h_source.html#l00533">UIElement::action_callback</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8c_source.html#l00039">create_ui_element()</a>, <a class="el" href="ui_8h_source.html#l00579">DEFAULT_CALLBACK</a>, <a class="el" href="ui_8h_source.html#l00593">DEFAULT_UI_ELEMENT</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8c_source.html#l00016">find_empty_element_slot()</a>, <a class="el" href="ui_8h_source.html#l00534">UIElement::hover_callback</a>, <a class="el" href="ui_8h_source.html#l00538">UIElement::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, and <a class="el" href="ui_8h_source.html#l00514">UIElement::uID</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00039">create_ui_element()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
 
@@ -2412,7 +2412,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00197">197</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00539">UIElement::container</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="ui_8c_source.html#l00197">create_ui_container()</a>, <a class="el" href="ui_8h_source.html#l00243">UIContainer::element</a>, <a class="el" href="ui_8c_source.html#l00027">find_empty_container_slot()</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00227">UIContainer::uID</a>, and <a class="el" href="ui_8h_source.html#l00514">UIElement::uID</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00539">UIElement::container</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="ui_8c_source.html#l00197">create_ui_container()</a>, <a class="el" href="ui_8h_source.html#l00642">DEFAULT_UI_CONTAINER</a>, <a class="el" href="ui_8h_source.html#l00243">UIContainer::element</a>, <a class="el" href="ui_8c_source.html#l00027">find_empty_container_slot()</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00227">UIContainer::uID</a>, and <a class="el" href="ui_8h_source.html#l00514">UIElement::uID</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00197">create_ui_container()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
 
@@ -2480,7 +2480,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00068">68</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00539">UIElement::container</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="ui_8c_source.html#l00068">delete_ui_container()</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8h_source.html#l00228">UIContainer::free</a>, <a class="el" href="ui_8h_source.html#l00512">UIElement::free</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8h_source.html#l00538">UIElement::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00290">TextBox::parent_container</a>, <a class="el" href="ui_8h_source.html#l00540">UIElement::parent_container</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, and <a class="el" href="ui_8h_source.html#l00227">UIContainer::uID</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00539">UIElement::container</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="ui_8h_source.html#l00642">DEFAULT_UI_CONTAINER</a>, <a class="el" href="ui_8c_source.html#l00068">delete_ui_container()</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8h_source.html#l00228">UIContainer::free</a>, <a class="el" href="ui_8h_source.html#l00512">UIElement::free</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8h_source.html#l00538">UIElement::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00290">TextBox::parent_container</a>, <a class="el" href="ui_8h_source.html#l00540">UIElement::parent_container</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, and <a class="el" href="ui_8h_source.html#l00227">UIContainer::uID</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00068">delete_ui_container()</a>, <a class="el" href="ui_8c_source.html#l00176">delete_ui_element()</a>, <a class="el" href="editor_8c_source.html#l01076">execute_ui_element_undo()</a>, <a class="el" href="ui_8c_source.html#l00299">move_element_to_menu()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
 
@@ -2559,7 +2559,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00816">816</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ui_8h_source.html#l00533">UIElement::action_callback</a>, <a class="el" href="#a4f5f6025805fc25ad5d0ca8c1aa1f8f2">UIElement::as</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00454">UISlider::container</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00408">UISlider::dir</a>, <a class="el" href="ui_8h_source.html#l00431">UISlider::drag_center_start</a>, <a class="el" href="ui_8h_source.html#l00430">UISlider::drag_mouse_start</a>, <a class="el" href="ui_8h_source.html#l00443">UISlider::drag_start_scalar</a>, <a class="el" href="ui_8h_source.html#l00429">UISlider::dragging</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00512">UIElement::free</a>, <a class="el" href="ui_8h_source.html#l00534">UIElement::hover_callback</a>, <a class="el" href="ui_8h_source.html#l00544">UIElement::interactable</a>, <a class="el" href="ui_8h_source.html#l00452">UISlider::max_proj</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00409">UISlider::min</a>, <a class="el" href="ui_8h_source.html#l00425">UISlider::prev_val</a>, <a class="el" href="ui_8c_source.html#l00611">process_ui_event()</a>, <a class="el" href="ui_8c_source.html#l00224">scroll_container()</a>, <a class="el" href="text_8vert_source.html#l00040">UIElement::state</a>, <a class="el" href="ui_8c_source.html#l00012">TEXT_HEIGHT</a>, <a class="el" href="ui_8c_source.html#l00011">TEXT_WIDTH</a>, <a class="el" href="text_8vert_source.html#l00045">UIElement::translation</a>, <a class="el" href="ui_8h_source.html#l00201">UI_INTERACTABLE_SLIDER</a>, <a class="el" href="ui_8h_source.html#l00036">UI_SCALE_HEIGHT</a>, <a class="el" href="ui_8h_source.html#l00035">UI_SCALE_WIDTH</a>, <a class="el" href="ui_8h_source.html#l00189">UISTATE_HOVERED</a>, <a class="el" href="ui_8h_source.html#l00188">UISTATE_NONE</a>, <a class="el" href="ui_8h_source.html#l00190">UISTATE_PRESSED</a>, <a class="el" href="ui_8c_source.html#l00816">update_ui_state()</a>, and <a class="el" href="ui_8h_source.html#l00424">UISlider::val</a>.</p>
+<p class="reference">References <a class="el" href="ui_8h_source.html#l00533">UIElement::action_callback</a>, <a class="el" href="#a4f5f6025805fc25ad5d0ca8c1aa1f8f2">UIElement::as</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00454">UISlider::container</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00408">UISlider::dir</a>, <a class="el" href="ui_8h_source.html#l00431">UISlider::drag_center_start</a>, <a class="el" href="ui_8h_source.html#l00430">UISlider::drag_mouse_start</a>, <a class="el" href="ui_8h_source.html#l00443">UISlider::drag_start_scalar</a>, <a class="el" href="ui_8h_source.html#l00429">UISlider::dragging</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00512">UIElement::free</a>, <a class="el" href="ui_8h_source.html#l00534">UIElement::hover_callback</a>, <a class="el" href="ui_8h_source.html#l00544">UIElement::interactable</a>, <a class="el" href="ui_8h_source.html#l00452">UISlider::max_proj</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00409">UISlider::min</a>, <a class="el" href="ui_8h_source.html#l00425">UISlider::prev_val</a>, <a class="el" href="ui_8c_source.html#l00611">process_ui_event()</a>, <a class="el" href="ui_8c_source.html#l00224">scroll_container()</a>, <a class="el" href="text_8vert_source.html#l00040">UIElement::state</a>, <a class="el" href="ui_8c_source.html#l00012">TEXT_HEIGHT</a>, <a class="el" href="ui_8c_source.html#l00011">TEXT_WIDTH</a>, <a class="el" href="text_8vert_source.html#l00045">UIElement::translation</a>, <a class="el" href="ui_8h_source.html#l00201">UI_INTERACTABLE_SLIDER</a>, <a class="el" href="ui_8h_source.html#l00036">UI_SCALE_HEIGHT</a>, <a class="el" href="ui_8h_source.html#l00035">UI_SCALE_WIDTH</a>, <a class="el" href="ui_8h_source.html#l00189">UISTATE_HOVERED</a>, <a class="el" href="ui_8h_source.html#l00188">UISTATE_NONE</a>, <a class="el" href="ui_8h_source.html#l00190">UISTATE_PRESSED</a>, <a class="el" href="ui_8c_source.html#l00816">update_ui_state()</a>, <a class="el" href="ui_8h_source.html#l00424">UISlider::val</a>, <a class="el" href="mathf_8h_source.html#l00274">vec2_add()</a>, <a class="el" href="mathf_8h_source.html#l00325">vec2_dot()</a>, <a class="el" href="mathf_8h_source.html#l00244">vec2_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00270">vec2_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="ui_8c_source.html#l00816">update_ui_state()</a>.</p>
 
@@ -2590,7 +2590,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8c_source.html#l00663">663</a> of file <a class="el" href="ui_8c_source.html">ui.c</a>.</p>
 
-<p class="reference">References <a class="el" href="#a4f5f6025805fc25ad5d0ca8c1aa1f8f2">UIElement::as</a>, <a class="el" href="ui_8c_source.html#l00663">compute_slider_bounds()</a>, <a class="el" href="ui_8h_source.html#l00408">UISlider::dir</a>, <a class="el" href="ui_8h_source.html#l00411">UISlider::len</a>, <a class="el" href="ui_8h_source.html#l00410">UISlider::max</a>, <a class="el" href="ui_8h_source.html#l00452">UISlider::max_proj</a>, <a class="el" href="ui_8h_source.html#l00409">UISlider::min</a>, and <a class="el" href="text_8vert_source.html#l00045">UIElement::translation</a>.</p>
+<p class="reference">References <a class="el" href="#a4f5f6025805fc25ad5d0ca8c1aa1f8f2">UIElement::as</a>, <a class="el" href="ui_8c_source.html#l00663">compute_slider_bounds()</a>, <a class="el" href="ui_8h_source.html#l00408">UISlider::dir</a>, <a class="el" href="ui_8h_source.html#l00411">UISlider::len</a>, <a class="el" href="ui_8h_source.html#l00410">UISlider::max</a>, <a class="el" href="ui_8h_source.html#l00452">UISlider::max_proj</a>, <a class="el" href="ui_8h_source.html#l00409">UISlider::min</a>, <a class="el" href="text_8vert_source.html#l00045">UIElement::translation</a>, <a class="el" href="mathf_8h_source.html#l00274">vec2_add()</a>, <a class="el" href="mathf_8h_source.html#l00336">vec2_length()</a>, <a class="el" href="mathf_8h_source.html#l00244">vec2_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00270">vec2_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00663">compute_slider_bounds()</a>, <a class="el" href="ui_8c_source.html#l00682">create_slider()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
 
@@ -2957,8 +2957,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 </div>
 </div>
-<a id="ga35c5d62fb9850ab8ed643b69c1f84b41" name="ga35c5d62fb9850ab8ed643b69c1f84b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga35c5d62fb9850ab8ed643b69c1f84b41">&#9670;&#160;</a></span>UI_INIT()</h2>
+<a id="gab2a01971556ddc00b662af618831c6ac" name="gab2a01971556ddc00b662af618831c6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2a01971556ddc00b662af618831c6ac">&#9670;&#160;</a></span>UI_INIT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2975,7 +2975,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2984,12 +2984,14 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00864">864</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, and <a class="el" href="ui_8c_source.html#l00013">MENUS</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, and <a class="el" href="ui_8h_source.html#l00864">UI_INIT()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01988">init()</a>, and <a class="el" href="ui_8h_source.html#l00864">UI_INIT()</a>.</p>
 
 </div>
 </div>
-<a id="gaf66eef0a3ae0b7a2c13b14364667f412" name="gaf66eef0a3ae0b7a2c13b14364667f412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf66eef0a3ae0b7a2c13b14364667f412">&#9670;&#160;</a></span>create_menu()</h2>
+<a id="gad5b5d16d66948ff0c1c288583c8dcb80" name="gad5b5d16d66948ff0c1c288583c8dcb80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5b5d16d66948ff0c1c288583c8dcb80">&#9670;&#160;</a></span>create_menu()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3006,7 +3008,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3015,12 +3017,14 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00875">875</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8h_source.html#l00228">UIContainer::free</a>, <a class="el" href="ui_8h_source.html#l00512">UIElement::free</a>, <a class="el" href="ui_8h_source.html#l00565">UIMenu::id</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00034">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00564">UIMenu::uID</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+<p class="reference">References <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00875">create_menu()</a>, <a class="el" href="ui_8h_source.html#l00566">UIMenu::elements</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8h_source.html#l00228">UIContainer::free</a>, <a class="el" href="ui_8h_source.html#l00512">UIElement::free</a>, <a class="el" href="ui_8h_source.html#l00565">UIMenu::id</a>, <a class="el" href="ui_8h_source.html#l00037">MAX_TEXT_BOXES</a>, <a class="el" href="ui_8h_source.html#l00034">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8h_source.html#l00033">MAX_UI_ELEMENTS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00564">UIMenu::uID</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ui_8h_source.html#l00875">create_menu()</a>, and <a class="el" href="editor_8c_source.html#l01674">create_performance_overlay()</a>.</p>
 
 </div>
 </div>
-<a id="gadf0474237e75aa58e3a3a6ac3df2eadf" name="gadf0474237e75aa58e3a3a6ac3df2eadf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf0474237e75aa58e3a3a6ac3df2eadf">&#9670;&#160;</a></span>container_is_valid()</h2>
+<a id="gadfb18ad8aea71eeac8d5d0a257394ed1" name="gadfb18ad8aea71eeac8d5d0a257394ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadfb18ad8aea71eeac8d5d0a257394ed1">&#9670;&#160;</a></span>container_is_valid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3041,7 +3045,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3059,12 +3063,14 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00905">905</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00228">UIContainer::free</a>, <a class="el" href="ui_8h_source.html#l00034">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, and <a class="el" href="ui_8h_source.html#l00227">UIContainer::uID</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00905">container_is_valid()</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="ui_8h_source.html#l00228">UIContainer::free</a>, <a class="el" href="ui_8h_source.html#l00034">MAX_UI_CONTAINERS</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, and <a class="el" href="ui_8h_source.html#l00227">UIContainer::uID</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ui_8h_source.html#l00905">container_is_valid()</a>, <a class="el" href="render_8c_source.html#l01361">GPU_upload_singular_element()</a>, <a class="el" href="render_8c_source.html#l01463">GPU_upload_ui_elements()</a>, <a class="el" href="editor_8c_source.html#l03040">render_text_menu()</a>, <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>, and <a class="el" href="render_8c_source.html#l01436">upload_parent_container()</a>.</p>
 
 </div>
 </div>
-<a id="ga2427144a9c3308b28d927dd8d2f25215" name="ga2427144a9c3308b28d927dd8d2f25215"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2427144a9c3308b28d927dd8d2f25215">&#9670;&#160;</a></span>screenspace_to_ui()</h2>
+<a id="gaec6f85a88a32b79c200e35c9e268f767" name="gaec6f85a88a32b79c200e35c9e268f767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec6f85a88a32b79c200e35c9e268f767">&#9670;&#160;</a></span>screenspace_to_ui()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3081,7 +3087,7 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3097,7 +3103,9 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00934">934</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ui_8c_source.html#l00012">TEXT_HEIGHT</a>, <a class="el" href="ui_8c_source.html#l00011">TEXT_WIDTH</a>, <a class="el" href="ui_8h_source.html#l00036">UI_SCALE_HEIGHT</a>, <a class="el" href="ui_8h_source.html#l00035">UI_SCALE_WIDTH</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+<p class="reference">References <a class="el" href="ui_8h_source.html#l00934">screenspace_to_ui()</a>, <a class="el" href="ui_8c_source.html#l00012">TEXT_HEIGHT</a>, <a class="el" href="ui_8c_source.html#l00011">TEXT_WIDTH</a>, <a class="el" href="ui_8h_source.html#l00036">UI_SCALE_HEIGHT</a>, <a class="el" href="ui_8h_source.html#l00035">UI_SCALE_WIDTH</a>, <a class="el" href="types_8h_source.html#l00011">vec2::x</a>, and <a class="el" href="types_8h_source.html#l00011">vec2::y</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00515">get_text_box_from_coords()</a>, <a class="el" href="input_8c_source.html#l00023">handle_ui_selection_event()</a>, and <a class="el" href="ui_8h_source.html#l00934">screenspace_to_ui()</a>.</p>
 
 </div>
 </div>
@@ -3187,21 +3195,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const char* JUSTIFY_NAMES[]</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                 =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                           =</div>
 <div class="line">{</div>
 <div class="line">    <span class="stringliteral">&quot;JUSTIFY_CENTER&quot;</span>,</div>
 <div class="line">    <span class="stringliteral">&quot;JUSTIFY_LEFT&quot;</span>,</div>
@@ -3218,6 +3218,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00170">170</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
+
 </div>
 </div>
 <a id="gaad9d96bdd718bd81543be85e2243fc63" name="gaad9d96bdd718bd81543be85e2243fc63"></a>
@@ -3225,21 +3227,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const char* UI_INTERACTABLE_NAMES[]</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                         =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                                   =</div>
 <div class="line">{</div>
 <div class="line">    <span class="stringliteral">&quot;UI_INTERACTABLE_NONE&quot;</span>,</div>
 <div class="line">    <span class="stringliteral">&quot;UI_INTERACTABLE_SLIDER&quot;</span>,</div>
@@ -3251,6 +3245,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00211">211</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
+
 </div>
 </div>
 <a id="ga671b46c5ae4cae9e6121dcb5992b2921" name="ga671b46c5ae4cae9e6121dcb5992b2921"></a>
@@ -3258,21 +3254,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_u_i_callback">UICallback</a> DEFAULT_CALLBACK</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                   =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                             =</div>
 <div class="line">{</div>
 <div class="line">    .id = <span class="stringliteral">&quot;empty&quot;</span>,</div>
 <div class="line">    .action_fn = NULL,</div>
@@ -3289,6 +3277,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00579">579</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00039">create_ui_element()</a>.</p>
+
 </div>
 </div>
 <a id="ga6d260112184534a5cd24db1e91bea176" name="ga6d260112184534a5cd24db1e91bea176"></a>
@@ -3296,21 +3286,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_u_i_element">UIElement</a> DEFAULT_UI_ELEMENT</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                   =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                             =</div>
 <div class="line">{</div>
 <div class="line">    .free = 0,</div>
 <div class="line">    .color = (<a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>){0,0,1,1},</div>
@@ -3343,6 +3325,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00593">593</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00039">create_ui_element()</a>.</p>
+
 </div>
 </div>
 <a id="gaf6d9fbe110425b0d5284d1ff4046a285" name="gaf6d9fbe110425b0d5284d1ff4046a285"></a>
@@ -3350,21 +3334,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_u_i_slider">UISlider</a> DEFAULT_SLIDER</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                               =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                         =</div>
 <div class="line">{</div>
 <div class="line"> </div>
 <div class="line">    .container = -1,</div>
@@ -3379,6 +3355,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00620">620</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
+
 </div>
 </div>
 <a id="gaafe166ffada75840774b6cac7eac7684" name="gaafe166ffada75840774b6cac7eac7684"></a>
@@ -3386,21 +3364,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_u_i_label">UILabel</a> DEFAULT_LABEL</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                             =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                       =</div>
 <div class="line">{</div>
 <div class="line"> </div>
 <div class="line">    .box = -1,</div>
@@ -3412,6 +3382,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00632">632</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
+
 </div>
 </div>
 <a id="ga7a3502cfc07deea2156a5ba8d80a0aba" name="ga7a3502cfc07deea2156a5ba8d80a0aba"></a>
@@ -3419,21 +3391,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_u_i_container">UIContainer</a> DEFAULT_UI_CONTAINER</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                        =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                                  =</div>
 <div class="line">{</div>
 <div class="line">    .free = 0,</div>
 <div class="line">    .uID = -1,</div>
@@ -3454,6 +3418,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00642">642</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="ui_8c_source.html#l00197">create_ui_container()</a>, and <a class="el" href="ui_8c_source.html#l00068">delete_ui_container()</a>.</p>
+
 </div>
 </div>
 <a id="ga75c39c139107ce7138b837e4c470878e" name="ga75c39c139107ce7138b837e4c470878e"></a>
@@ -3461,21 +3427,13 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_text_box">TextBox</a> DEFAULT_TEXT_BOX</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                =</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                          =</div>
 <div class="line">{</div>
 <div class="line">    .free = 0,</div>
 <div class="line">    .color = (<a class="code hl_struct" href="types_8h.html#structvec4">vec4</a>){1,1,1,1},</div>
@@ -3504,6 +3462,8 @@ The <a class="el" href="#struct_u_i_container" title="UIContainer that contains 
 <div class="line">}</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ui_8h_source.html#l00661">661</a> of file <a class="el" href="ui_8h_source.html">ui.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l01674">create_performance_overlay()</a>, <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, and <a class="el" href="fonts_8c_source.html#l00184">delete_text_box()</a>.</p>
 
 </div>
 </div>

@@ -86,10 +86,10 @@ var group__editor__group =
       [ "undo_stack_max_byte_size", "group__editor__group.html#accce3360a5e045733f889de740b9dbe9", null ]
     ] ],
     [ "ComboLabel", "group__editor__group.html#struct_combo_label", [
-      [ "buffer", "group__editor__group.html#ad7340881c84736b0e48e8a47da2d58b2", null ],
-      [ "ptrs", "group__editor__group.html#a7e361afae06447c1a9f891f86884e78c", null ],
+      [ "buffer", "group__editor__group.html#a01346bcd83e0786c79f427d801b3dd35", null ],
+      [ "ptrs", "group__editor__group.html#a88fd80f980063d4a4126c9c71793282f", null ],
       [ "selected", "group__editor__group.html#a58ca3bda3085ab8738aee3ba0402ab57", null ],
-      [ "item_to_id", "group__editor__group.html#a1c87ad99c402dcca815f728109be2c85", null ],
+      [ "item_to_id", "group__editor__group.html#a608f96baf6acd9814ab6b5dd062cfa32", null ],
       [ "item_count", "group__editor__group.html#ab273c9bf349ee4aff1d62da640eedd01", null ]
     ] ],
     [ "MainEditorMenu", "group__editor__group.html#struct_main_editor_menu", [
@@ -219,11 +219,11 @@ var group__editor__group =
       [ "next", "group__editor__group.html#ae5694d3705d2d76fe35735125839017c", null ],
       [ "special_bytes", "group__editor__group.html#ac2672a9911071a641cd12a576f996d57", null ],
       [ "structure", "group__editor__group.html#abab619a9c3d303274dcfde144890bf9a", null ],
-      [ "bytes", "group__editor__group.html#aceb4adfd7f91202e320a3285a4a5d94c", null ]
+      [ "bytes", "group__editor__group.html#ab688d5d6fa95ddb3909d36c95e566c67", null ]
     ] ],
     [ "NKSlider", "group__editor__group.html#struct_n_k_slider", [
       [ "is_held", "group__editor__group.html#ac49c5dad71e2e61c702b6bf4fd7d08b4", null ],
-      [ "bytes", "group__editor__group.html#a5c4f9d20649fd56057483018043d74b4", null ],
+      [ "bytes", "group__editor__group.html#a1371573bacb3a70b31a075dbdcbb8ada", null ],
       [ "byte_size", "group__editor__group.html#a4f0d59800344abce2fc61ed703e7bab5", null ]
     ] ],
     [ "EDITOR_LIGHT_SIZE", "group__editor__group.html#ga956cf477e3b2a547a736024ed8bb89f9", null ],
@@ -407,9 +407,9 @@ var group__editor__group =
     [ "TEXTBOX_MENU", "group__editor__group.html#gaf8125c22660ff1dbfb3172357396598d", null ],
     [ "AI_MENU", "group__editor__group.html#ga206f2e6c82a68bbec3067b187a13e9a3", null ],
     [ "MN_MENU", "group__editor__group.html#gacc7398d33e20d80b1a7fe0c0581a6277", null ],
-    [ "gltf_names", "group__editor__group.html#ga0552c36b94c96d60400fa017ae9a7e85", null ],
+    [ "gltf_names", "group__editor__group.html#ga8330f83551d85f14e69a1e42cb68be16", null ],
     [ "gltf_names_count", "group__editor__group.html#ga4715a479c186eaca00ce764338e84eca", null ],
-    [ "rprobe_names", "group__editor__group.html#ga9520ea6db7eff65b39f146330c7f52ff", null ],
+    [ "rprobe_names", "group__editor__group.html#gabbc2f38a504014df31c934992c3f606e", null ],
     [ "rprobe_names_count", "group__editor__group.html#gae78e5849d3e4ec401d35ea77da5d9c6b", null ],
     [ "scene_registry", "group__editor__group.html#gaccaf05f76a2eca61a102bbad727ac86d", null ],
     [ "lightmap_registry", "group__editor__group.html#ga82b26e9cd9aae9cf65f5f80d269bb8bd", null ],

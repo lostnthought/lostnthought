@@ -193,41 +193,41 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga2d95f263ad6f7e50959898ef9e3e281b" id="r_ga2d95f263ad6f7e50959898ef9e3e281b"><td class="memItemLeft">typedef fftwf_complex *&#160;</td><td class="memItemRight"><a class="el" href="#ga2d95f263ad6f7e50959898ef9e3e281b">PartitionTableChannel</a>[<a class="el" href="#ga062d85bdfe1a34810ed2efaf341b8d24">NUM_PARTITIONS</a>]</td></tr>
-<tr class="memdesc:ga2d95f263ad6f7e50959898ef9e3e281b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for one FFT partiton for overlap-add.  <br /></td></tr>
-<tr class="memitem:ga7fae4736b00b65e477b230a17d018cee" id="r_ga7fae4736b00b65e477b230a17d018cee"><td class="memItemLeft">typedef <a class="el" href="#ga2d95f263ad6f7e50959898ef9e3e281b">PartitionTableChannel</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a>[2]</td></tr>
+<tr class="memitem:gad0167a8e136d2c823abfc49418f9efab" id="r_gad0167a8e136d2c823abfc49418f9efab"><td class="memItemLeft">typedef fftwf_complex *&#160;</td><td class="memItemRight"><a class="el" href="#gad0167a8e136d2c823abfc49418f9efab">PartitionTableChannel</a>[95]</td></tr>
+<tr class="memdesc:gad0167a8e136d2c823abfc49418f9efab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for one FFT partiton for overlap-add.  <br /></td></tr>
+<tr class="memitem:ga7fae4736b00b65e477b230a17d018cee" id="r_ga7fae4736b00b65e477b230a17d018cee"><td class="memItemLeft">typedef <a class="el" href="#gad0167a8e136d2c823abfc49418f9efab">PartitionTableChannel</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a>[2]</td></tr>
 <tr class="memdesc:ga7fae4736b00b65e477b230a17d018cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for two channels (stereo) for overlap-add.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga03765470e0bef38997d4b3dffb7d2f56" id="r_ga03765470e0bef38997d4b3dffb7d2f56"><td class="memItemLeft">static <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga03765470e0bef38997d4b3dffb7d2f56">pos_to_pv_local</a> (<a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a> *obb, <a class="el" href="types_8h.html#structvec3">vec3</a> pos)</td></tr>
-<tr class="memdesc:ga03765470e0bef38997d4b3dffb7d2f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position to local <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a> space.  <br /></td></tr>
-<tr class="memitem:ga544d529155250722aedf702d339bc204" id="r_ga544d529155250722aedf702d339bc204"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ga544d529155250722aedf702d339bc204">query_probe_volume</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pos)</td></tr>
-<tr class="memdesc:ga544d529155250722aedf702d339bc204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks which <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> a position is inside.  <br /></td></tr>
-<tr class="memitem:ga2dd0e72bce7e0f74f4e0bfce818fd173" id="r_ga2dd0e72bce7e0f74f4e0bfce818fd173"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga2dd0e72bce7e0f74f4e0bfce818fd173">remove_audio_pv</a> (<a class="el" href="#struct_a_p_v">APV</a> *apv, bool *apb)</td></tr>
-<tr class="memdesc:ga2dd0e72bce7e0f74f4e0bfce818fd173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> from its slot.  <br /></td></tr>
-<tr class="memitem:gae49ac9b923637846ef5fe5eafe7e42a4" id="r_gae49ac9b923637846ef5fe5eafe7e42a4"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gae49ac9b923637846ef5fe5eafe7e42a4">load_audio_pv</a> (<a class="el" href="#struct_a_p_v">APV</a> *apv, <a class="el" href="#struct_probe_volume">ProbeVolume</a> *pv)</td></tr>
-<tr class="memdesc:gae49ac9b923637846ef5fe5eafe7e42a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> into a slot.  <br /></td></tr>
-<tr class="memitem:ga169531920158e88e90005fde7c719fac" id="r_ga169531920158e88e90005fde7c719fac"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga169531920158e88e90005fde7c719fac">interpolate_nearest_aprobes</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pos, <a class="el" href="#struct_audio_probe_weights">AudioProbeWeights</a> *out_w)</td></tr>
-<tr class="memdesc:ga169531920158e88e90005fde7c719fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates between 4 closest <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s within one singular <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> and weighs them based on distance.  <br /></td></tr>
-<tr class="memitem:ga595600f8e10746c92204e774711767f8" id="r_ga595600f8e10746c92204e774711767f8"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#ga595600f8e10746c92204e774711767f8">process_biquad</a> (<a class="el" href="engine__types_8h.html#struct_biquad">Biquad</a> *filter, float in_sample)</td></tr>
-<tr class="memdesc:ga595600f8e10746c92204e774711767f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a biquad filter over a sample.  <br /></td></tr>
-<tr class="memitem:ga56185d684139ab2497dd29fccd09c463" id="r_ga56185d684139ab2497dd29fccd09c463"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga56185d684139ab2497dd29fccd09c463">init_bandpass</a> (<a class="el" href="engine__types_8h.html#struct_biquad">Biquad</a> *filter, float sample_rate, float center_freq, float q)</td></tr>
-<tr class="memdesc:ga56185d684139ab2497dd29fccd09c463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a bandpass filter for the synthetic IR.  <br /></td></tr>
-<tr class="memitem:gacce77518b7c8a49583ecba2c0e27a2e1" id="r_gacce77518b7c8a49583ecba2c0e27a2e1"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gacce77518b7c8a49583ecba2c0e27a2e1">generate_synthetic_IR_tail</a> (float *out_tail, float fade_start, <a class="el" href="#struct_audio_probe">AudioProbe</a> *probe, float rms)</td></tr>
-<tr class="memdesc:gacce77518b7c8a49583ecba2c0e27a2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a synthetic IR tail for a given <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> based on its RT60.  <br /></td></tr>
-<tr class="memitem:gabf825eb3f62c06950eced5f56cbadfb3" id="r_gabf825eb3f62c06950eced5f56cbadfb3"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gabf825eb3f62c06950eced5f56cbadfb3">compute_schroeder_edc</a> (float *energy_histogram, float *edc_out)</td></tr>
-<tr class="memdesc:gabf825eb3f62c06950eced5f56cbadfb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an Energy Decay Curve for input IR samples.  <br /></td></tr>
-<tr class="memitem:gabe2006e8b2052a0a8d175b4e6b5ff071" id="r_gabe2006e8b2052a0a8d175b4e6b5ff071"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#gabe2006e8b2052a0a8d175b4e6b5ff071">extract_rms</a> (<a class="el" href="#struct_audio_probe">AudioProbe</a> *probe, int fade_start, int window_size)</td></tr>
-<tr class="memdesc:gabe2006e8b2052a0a8d175b4e6b5ff071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the RMS from a certain sample range before the synthetic IR.  <br /></td></tr>
-<tr class="memitem:ga29684eaf012554ebbe1bbbe2e8252adc" id="r_ga29684eaf012554ebbe1bbbe2e8252adc"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga29684eaf012554ebbe1bbbe2e8252adc">extract_t60</a> (float *edc_db, <a class="el" href="#struct_audio_probe">AudioProbe</a> *probe, int band, float bin_duration_seconds, int last_sample)</td></tr>
-<tr class="memdesc:ga29684eaf012554ebbe1bbbe2e8252adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the RT60 from an EDC for computing a synthetic IR.  <br /></td></tr>
-<tr class="memitem:gadaa04ca6973f2add78bb099a29432255" id="r_gadaa04ca6973f2add78bb099a29432255"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gadaa04ca6973f2add78bb099a29432255">process_probe_chunk</a> (int start, int count)</td></tr>
-<tr class="memdesc:gadaa04ca6973f2add78bb099a29432255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path traces from <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s within a certain chunk of a <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> and processes samples per <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>, forming a synthetic IR from the RT60.  <br /></td></tr>
-<tr class="memitem:ga87c9086910fb559205a3fdbcd2c975b3" id="r_ga87c9086910fb559205a3fdbcd2c975b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga87c9086910fb559205a3fdbcd2c975b3">update_player_audio_probe</a> ()</td></tr>
-<tr class="memdesc:ga87c9086910fb559205a3fdbcd2c975b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a new IR needs to be signaled from the background thread.  <br /></td></tr>
+<tr class="memitem:ga3e77e228293002683c872b8f92d54c6f" id="r_ga3e77e228293002683c872b8f92d54c6f"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga3e77e228293002683c872b8f92d54c6f">pos_to_pv_local</a> (<a class="el" href="group__shader__structs__group.html#struct_o_b_b">OBB</a> *obb, <a class="el" href="types_8h.html#structvec3">vec3</a> pos)</td></tr>
+<tr class="memdesc:ga3e77e228293002683c872b8f92d54c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position to local <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a> space.  <br /></td></tr>
+<tr class="memitem:ga28c5da4ff18d1cf2a39362009c5460c1" id="r_ga28c5da4ff18d1cf2a39362009c5460c1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ga28c5da4ff18d1cf2a39362009c5460c1">query_probe_volume</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pos)</td></tr>
+<tr class="memdesc:ga28c5da4ff18d1cf2a39362009c5460c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks which <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> a position is inside.  <br /></td></tr>
+<tr class="memitem:gaaa4c52c09da033689320e34b6ccb05f4" id="r_gaaa4c52c09da033689320e34b6ccb05f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gaaa4c52c09da033689320e34b6ccb05f4">remove_audio_pv</a> (<a class="el" href="#struct_a_p_v">APV</a> *apv, bool *apb)</td></tr>
+<tr class="memdesc:gaaa4c52c09da033689320e34b6ccb05f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> from its slot.  <br /></td></tr>
+<tr class="memitem:ga47be429339f036064bdf57fd5e190e3b" id="r_ga47be429339f036064bdf57fd5e190e3b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga47be429339f036064bdf57fd5e190e3b">load_audio_pv</a> (<a class="el" href="#struct_a_p_v">APV</a> *apv, <a class="el" href="#struct_probe_volume">ProbeVolume</a> *pv)</td></tr>
+<tr class="memdesc:ga47be429339f036064bdf57fd5e190e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> into a slot.  <br /></td></tr>
+<tr class="memitem:gad72657018ab828f28d69b5fbe9036f14" id="r_gad72657018ab828f28d69b5fbe9036f14"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gad72657018ab828f28d69b5fbe9036f14">interpolate_nearest_aprobes</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pos, <a class="el" href="#struct_audio_probe_weights">AudioProbeWeights</a> *out_w)</td></tr>
+<tr class="memdesc:gad72657018ab828f28d69b5fbe9036f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates between 4 closest <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s within one singular <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> and weighs them based on distance.  <br /></td></tr>
+<tr class="memitem:gaf60c087beda922675dcf06e5f596ad01" id="r_gaf60c087beda922675dcf06e5f596ad01"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#gaf60c087beda922675dcf06e5f596ad01">process_biquad</a> (<a class="el" href="engine__types_8h.html#struct_biquad">Biquad</a> *filter, float in_sample)</td></tr>
+<tr class="memdesc:gaf60c087beda922675dcf06e5f596ad01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a biquad filter over a sample.  <br /></td></tr>
+<tr class="memitem:ga5236864f75b5597b29ae8563ee439cc9" id="r_ga5236864f75b5597b29ae8563ee439cc9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga5236864f75b5597b29ae8563ee439cc9">init_bandpass</a> (<a class="el" href="engine__types_8h.html#struct_biquad">Biquad</a> *filter, float sample_rate, float center_freq, float q)</td></tr>
+<tr class="memdesc:ga5236864f75b5597b29ae8563ee439cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a bandpass filter for the synthetic IR.  <br /></td></tr>
+<tr class="memitem:ga9cab16900de78d05c901be7ffd51805c" id="r_ga9cab16900de78d05c901be7ffd51805c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga9cab16900de78d05c901be7ffd51805c">generate_synthetic_IR_tail</a> (float *out_tail, float fade_start, <a class="el" href="#struct_audio_probe">AudioProbe</a> *probe, float rms)</td></tr>
+<tr class="memdesc:ga9cab16900de78d05c901be7ffd51805c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a synthetic IR tail for a given <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> based on its RT60.  <br /></td></tr>
+<tr class="memitem:gabfcdfe33e5ec7ac773bc365ad76c11bf" id="r_gabfcdfe33e5ec7ac773bc365ad76c11bf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gabfcdfe33e5ec7ac773bc365ad76c11bf">compute_schroeder_edc</a> (float *energy_histogram, float *edc_out)</td></tr>
+<tr class="memdesc:gabfcdfe33e5ec7ac773bc365ad76c11bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an Energy Decay Curve for input IR samples.  <br /></td></tr>
+<tr class="memitem:ga67cad69033b0384deed7843d9c83f2d5" id="r_ga67cad69033b0384deed7843d9c83f2d5"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ga67cad69033b0384deed7843d9c83f2d5">extract_rms</a> (<a class="el" href="#struct_audio_probe">AudioProbe</a> *probe, int fade_start, int window_size)</td></tr>
+<tr class="memdesc:ga67cad69033b0384deed7843d9c83f2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the RMS from a certain sample range before the synthetic IR.  <br /></td></tr>
+<tr class="memitem:ga54f5725512ad234db39156bbf9d53d8d" id="r_ga54f5725512ad234db39156bbf9d53d8d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga54f5725512ad234db39156bbf9d53d8d">extract_t60</a> (float *edc_db, <a class="el" href="#struct_audio_probe">AudioProbe</a> *probe, int band, float bin_duration_seconds, int last_sample)</td></tr>
+<tr class="memdesc:ga54f5725512ad234db39156bbf9d53d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the RT60 from an EDC for computing a synthetic IR.  <br /></td></tr>
+<tr class="memitem:gaf25ead97da918a343c078b6af8fbaaa9" id="r_gaf25ead97da918a343c078b6af8fbaaa9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gaf25ead97da918a343c078b6af8fbaaa9">process_probe_chunk</a> (int start, int count)</td></tr>
+<tr class="memdesc:gaf25ead97da918a343c078b6af8fbaaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path traces from <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s within a certain chunk of a <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> and processes samples per <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>, forming a synthetic IR from the RT60.  <br /></td></tr>
 <tr class="memitem:ga5e05bbb23e083408d82b7db4c7611510" id="r_ga5e05bbb23e083408d82b7db4c7611510"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga5e05bbb23e083408d82b7db4c7611510">bake_audio_probe_volume</a> (<a class="el" href="#struct_probe_volume">ProbeVolume</a> *pv)</td></tr>
 <tr class="memdesc:ga5e05bbb23e083408d82b7db4c7611510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bakes an audio probe volume.  <br /></td></tr>
+<tr class="memitem:ga87c9086910fb559205a3fdbcd2c975b3" id="r_ga87c9086910fb559205a3fdbcd2c975b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga87c9086910fb559205a3fdbcd2c975b3">update_player_audio_probe</a> ()</td></tr>
+<tr class="memdesc:ga87c9086910fb559205a3fdbcd2c975b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a new IR needs to be signaled from the background thread.  <br /></td></tr>
 <tr class="memitem:ga88c62d0a6ccb47dd48c2049e87c690d8" id="r_ga88c62d0a6ccb47dd48c2049e87c690d8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga88c62d0a6ccb47dd48c2049e87c690d8">SDLAudioCallback</a> (void *pUserData, Uint8 *pStream, int frameCountInBytes)</td></tr>
 <tr class="memdesc:ga88c62d0a6ccb47dd48c2049e87c690d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes frames to miniaudio in the audio thread.  <br /></td></tr>
 <tr class="memitem:ga5bb39829f2c11d9f188ade00afa9d4a1" id="r_ga5bb39829f2c11d9f188ade00afa9d4a1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ga5bb39829f2c11d9f188ade00afa9d4a1">query_audio_probe</a> (<a class="el" href="#struct_probe_volume">ProbeVolume</a> *pv, <a class="el" href="types_8h.html#structvec3">vec3</a> pos, <a class="el" href="types_8h.html#structivec3">ivec3</a> *out_local)</td></tr>
@@ -238,12 +238,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:gab002dcb2d0c7f9e3d100f75dc89c0668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the closest audio PVs to the player and loads the closest ones into open slots based on distance.  <br /></td></tr>
 <tr class="memitem:ga32f54a812d246af91272ad9f042cc9f6" id="r_ga32f54a812d246af91272ad9f042cc9f6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga32f54a812d246af91272ad9f042cc9f6">reset_audio_pvs</a> ()</td></tr>
 <tr class="memdesc:ga32f54a812d246af91272ad9f042cc9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset audio pvs, frees each slot in the global audio pv slots.  <br /></td></tr>
-<tr class="memitem:gaee2874ca3e2d8272db7ab53b174f87e1" id="r_gaee2874ca3e2d8272db7ab53b174f87e1"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gaee2874ca3e2d8272db7ab53b174f87e1">allocate_audio_scratch_hrtf</a> (int hrtf_length)</td></tr>
-<tr class="memdesc:gaee2874ca3e2d8272db7ab53b174f87e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <a class="el" href="main_8c.html#a164f3d953f3464013633ea77e299eb83">AUDIO_SCRATCH</a> based on HRTF size.  <br /></td></tr>
-<tr class="memitem:gacd477621219feb356830a792be5987fd" id="r_gacd477621219feb356830a792be5987fd"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gacd477621219feb356830a792be5987fd">update_player_ir</a> (<a class="el" href="#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a> *OUT)</td></tr>
-<tr class="memdesc:gacd477621219feb356830a792be5987fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates neighboring IRs to the <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> and then partitions them for convolution in the audio thread.  <br /></td></tr>
-<tr class="memitem:gaaca326df599f9db4a505794b1260a961" id="r_gaaca326df599f9db4a505794b1260a961"><td class="memItemLeft">static int SDLCALL&#160;</td><td class="memItemRight"><a class="el" href="#gaaca326df599f9db4a505794b1260a961">hrtf_worker</a> (void *params)</td></tr>
-<tr class="memdesc:gaaca326df599f9db4a505794b1260a961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main thread loop for <a class="el" href="#struct_h_r_t_f_thread_data" title="The data for the thread that prepares IRs by rotating then convolving them with an HRTF before it pre...">HRTFThreadData</a>.  <br /></td></tr>
+<tr class="memitem:gad0011512b2c74c35966f2ea467be8220" id="r_gad0011512b2c74c35966f2ea467be8220"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gad0011512b2c74c35966f2ea467be8220">allocate_audio_scratch_hrtf</a> (int hrtf_length)</td></tr>
+<tr class="memdesc:gad0011512b2c74c35966f2ea467be8220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <a class="el" href="main_8c.html#a164f3d953f3464013633ea77e299eb83">AUDIO_SCRATCH</a> based on HRTF size.  <br /></td></tr>
+<tr class="memitem:ga4ba24868ceda1d80c894aa151487b62d" id="r_ga4ba24868ceda1d80c894aa151487b62d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga4ba24868ceda1d80c894aa151487b62d">update_player_ir</a> (<a class="el" href="#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a> *OUT)</td></tr>
+<tr class="memdesc:ga4ba24868ceda1d80c894aa151487b62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates neighboring IRs to the <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> and then partitions them for convolution in the audio thread.  <br /></td></tr>
+<tr class="memitem:gaf333663f8366546044641f5eb5d33f63" id="r_gaf333663f8366546044641f5eb5d33f63"><td class="memItemLeft">int SDLCALL&#160;</td><td class="memItemRight"><a class="el" href="#gaf333663f8366546044641f5eb5d33f63">hrtf_worker</a> (void *params)</td></tr>
+<tr class="memdesc:gaf333663f8366546044641f5eb5d33f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main thread loop for <a class="el" href="#struct_h_r_t_f_thread_data" title="The data for the thread that prepares IRs by rotating then convolving them with an HRTF before it pre...">HRTFThreadData</a>.  <br /></td></tr>
 <tr class="memitem:gad7b112adefb25363ce2cac8d90f519cc" id="r_gad7b112adefb25363ce2cac8d90f519cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gad7b112adefb25363ce2cac8d90f519cc">rotate_sh</a> (float *OUT, float SH[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>], <a class="el" href="types_8h.html#structmat3">mat3</a> rot)</td></tr>
 <tr class="memdesc:gad7b112adefb25363ce2cac8d90f519cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a position to local <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a> space and returns the coord as if it was a texture from \(0 \rightarrow 1\).  <br /></td></tr>
 <tr class="memitem:ga3b6731fb91c35d5c834c0addcf0753ef" id="r_ga3b6731fb91c35d5c834c0addcf0753ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga3b6731fb91c35d5c834c0addcf0753ef">fft_channels</a> (<a class="el" href="#struct_convolver_node">ConvolverNode</a> *node, bool crossfading)</td></tr>
@@ -259,7 +259,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:gaefcb57f596841e5ec15d98e7b9c5631e" id="r_gaefcb57f596841e5ec15d98e7b9c5631e"><td class="memItemLeft">static const float&#160;</td><td class="memItemRight"><a class="el" href="#gaefcb57f596841e5ec15d98e7b9c5631e">AUDIO_BAND_FREQ</a> [] = {125.0f, 250.0f, 500.0f, 1000.0f, 2000.0f, 4000.0f}</td></tr>
+<tr class="memitem:gaefcb57f596841e5ec15d98e7b9c5631e" id="r_gaefcb57f596841e5ec15d98e7b9c5631e"><td class="memItemLeft">const float&#160;</td><td class="memItemRight"><a class="el" href="#gaefcb57f596841e5ec15d98e7b9c5631e">AUDIO_BAND_FREQ</a> [] = {125.0f, 250.0f, 500.0f, 1000.0f, 2000.0f, 4000.0f}</td></tr>
 <tr class="memdesc:gaefcb57f596841e5ec15d98e7b9c5631e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio frequencies for each band for audio probe baking.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
@@ -278,7 +278,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>Weights used for interpolating between audio probes. </p>
-<dl class="section see"><dt>See also</dt><dd>interpolate_nearest_aprobes() </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#gad72657018ab828f28d69b5fbe9036f14" title="Interpolates between 4 closest AudioProbes within one singular ProbeVolume and weighs them based on d...">interpolate_nearest_aprobes()</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00381">381</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><table class="fieldtable">
@@ -296,15 +296,15 @@ APV_id</td>
 <td class="fielddoc">
 Which <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> these probes belong to. </td></tr>
 <tr><td class="fieldtype">
-<a id="af0c66c2b3ad2bf5de2f2aded8287ffdf" name="af0c66c2b3ad2bf5de2f2aded8287ffdf"></a>int</td>
+<a id="a3370c82c002b5395599ab31e72eff856" name="a3370c82c002b5395599ab31e72eff856"></a>int</td>
 <td class="fieldname">
-probes[<a class="el" href="#ga55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td>
+probes[4]</td>
 <td class="fielddoc">
 The indices of the <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s. </td></tr>
 <tr><td class="fieldtype">
-<a id="afdbd6693654e45837c1e935d36b1a7a1" name="afdbd6693654e45837c1e935d36b1a7a1"></a>float</td>
+<a id="ab6efc15f9544c46361727d57d17f77f9" name="ab6efc15f9544c46361727d57d17f77f9"></a>float</td>
 <td class="fieldname">
-weights[<a class="el" href="#ga55c402339f73606f807da9836758e96b">MAX_INTERP_APROBES</a>]</td>
+weights[4]</td>
 <td class="fielddoc">
 The weights that correspond to each probe's value. </td></tr>
 </table>
@@ -383,9 +383,9 @@ w</td>
 <td class="fielddoc">
 Current job's weights. </td></tr>
 <tr><td class="fieldtype">
-<a id="a80a75e1fd601037e38147b7fd806eced" name="a80a75e1fd601037e38147b7fd806eced"></a><a class="el" href="#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a></td>
+<a id="a22fdfb160a4c6318313413b395e8c95f" name="a22fdfb160a4c6318313413b395e8c95f"></a><a class="el" href="#ga7fae4736b00b65e477b230a17d018cee">PartitionTable</a></td>
 <td class="fieldname">
-tables[<a class="el" href="engine__types_8h.html#a90908d2e75bf3ee04a2d8c2ce9ca3967">PARTITION_BUFFERS</a>]</td>
+tables[4]</td>
 <td class="fielddoc">
 The partitions for overlap-add quad-buffered. <p>Writes into the empty one. </p>
 </td></tr>
@@ -413,7 +413,7 @@ The current partition presented to the audio thread. </td></tr>
 <div class="textblock"><p>Scratch buffers and dimensions used for audio convolution FFTs. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="init_8c.html#a8159dfaaf3b9976f159cea782c39e2ce">init_audio_scratch_buffers()</a> </dd>
 <dd>
-allocate_audio_scratch_hrtf() </dd></dl>
+<a class="el" href="#gad0011512b2c74c35966f2ea467be8220" title="Allocates AUDIO_SCRATCH based on HRTF size.">allocate_audio_scratch_hrtf()</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00443">443</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><table class="fieldtable">
@@ -521,39 +521,39 @@ IR_SUM_R_FWD</td>
 <td class="fielddoc">
 Used to accumulate the complex multiply of IR with the HRTF. </td></tr>
 <tr><td class="fieldtype">
-<a id="a3b9c39d768405e168135b66f8918c304" name="a3b9c39d768405e168135b66f8918c304"></a>float *</td>
+<a id="a623c450e4720339a1f548c94a6eab77b" name="a623c450e4720339a1f548c94a6eab77b"></a>float *</td>
 <td class="fieldname">
-STATIC_HRTF_L[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>]</td>
+STATIC_HRTF_L[9]</td>
 <td class="fielddoc">
 The static HRTF loaded from HRTF.bin. </td></tr>
 <tr><td class="fieldtype">
-<a id="a8f38cd6979abb65c69466f129a9eb767" name="a8f38cd6979abb65c69466f129a9eb767"></a>float *</td>
+<a id="ad6cec41dc48881322e8b06082c20fadb" name="ad6cec41dc48881322e8b06082c20fadb"></a>float *</td>
 <td class="fieldname">
-STATIC_HRTF_R[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>]</td>
+STATIC_HRTF_R[9]</td>
 <td class="fielddoc">
 The static HRTF loaded from HRTF.bin. </td></tr>
 <tr><td class="fieldtype">
-<a id="a19d993079b40eddd604dfecba7bf1083" name="a19d993079b40eddd604dfecba7bf1083"></a>fftwf_complex *</td>
+<a id="aeab9742ffacafce18b95bf7cd505b22e" name="aeab9742ffacafce18b95bf7cd505b22e"></a>fftwf_complex *</td>
 <td class="fieldname">
-STATIC_HRTF_L_FWD[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>]</td>
+STATIC_HRTF_L_FWD[9]</td>
 <td class="fielddoc">
 The forward FFT of the static HRTF loaded from HRTF.bin. </td></tr>
 <tr><td class="fieldtype">
-<a id="a10b2a38e15a02e04c3ad4dabaaa8014a" name="a10b2a38e15a02e04c3ad4dabaaa8014a"></a>fftwf_complex *</td>
+<a id="a092fc158401dd627f7574585865a0179" name="a092fc158401dd627f7574585865a0179"></a>fftwf_complex *</td>
 <td class="fieldname">
-STATIC_HRTF_R_FWD[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>]</td>
+STATIC_HRTF_R_FWD[9]</td>
 <td class="fielddoc">
 The forward FFT of the static HRTF loaded from HRTF.bin. </td></tr>
 <tr><td class="fieldtype">
-<a id="a4a700353c37c8743d5bd7faa5a7add6e" name="a4a700353c37c8743d5bd7faa5a7add6e"></a>float *</td>
+<a id="a03b32c6e9b066b3495c19dc9990f76e5" name="a03b32c6e9b066b3495c19dc9990f76e5"></a>float *</td>
 <td class="fieldname">
-IR_ROT[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>]</td>
+IR_ROT[9]</td>
 <td class="fielddoc">
 The IR with rotated SH. </td></tr>
 <tr><td class="fieldtype">
-<a id="a94702539e0456198b6ad042c7dea3704" name="a94702539e0456198b6ad042c7dea3704"></a>fftwf_complex *</td>
+<a id="a5ff126c5ef31e90dc085cb9a94c5f1f0" name="a5ff126c5ef31e90dc085cb9a94c5f1f0"></a>fftwf_complex *</td>
 <td class="fieldname">
-IR_ROT_FWD[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>]</td>
+IR_ROT_FWD[9]</td>
 <td class="fielddoc">
 The forward FFT of the rotated IR. </td></tr>
 </table>
@@ -574,7 +574,7 @@ The forward FFT of the rotated IR. </td></tr>
 <div class="textblock"><p>The IR <a class="el" href="main_8c.html#a57dfb1cae43a5ed36d381d4275869c7b">CONVOLVER_NODE</a> used to process frames in the audio thread. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="init_8c.html#a8159dfaaf3b9976f159cea782c39e2ce">init_audio_scratch_buffers()</a> </dd>
 <dd>
-convolver_node_process_pcm_frames() </dd></dl>
+<a class="el" href="init_8c.html#ac89caf8732e36717c34d136397332b2e">convolver_node_process_pcm_frames()</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00482">482</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><table class="fieldtable">
@@ -646,9 +646,9 @@ MONO_FWD</td>
 <td class="fielddoc">
 Contains the output of the forward FFT of IR with current audio stream. </td></tr>
 <tr><td class="fieldtype">
-<a id="afdbc4193245f48c2d83e471c4362ac1c" name="afdbc4193245f48c2d83e471c4362ac1c"></a>fftwf_complex *</td>
+<a id="adac665aeca6769b1d998ade93551d17e" name="adac665aeca6769b1d998ade93551d17e"></a>fftwf_complex *</td>
 <td class="fieldname">
-AUDIO_HISTORY[<a class="el" href="#gaf1b997de109c9801e828bba3fb0fd385">NUM_PARTITIONS_MAX</a>]</td>
+AUDIO_HISTORY[96]</td>
 <td class="fielddoc">
 Contains the history of MONO_FWD up to NUM_PARTITIONS_MAX. </td></tr>
 <tr><td class="fieldtype">
@@ -781,21 +781,21 @@ ir_length</td>
 <td class="fielddoc">
 The amount of IR samples for this probe. </td></tr>
 <tr><td class="fieldtype">
-<a id="a5933270cabc3a00cd8742bf011747fc8" name="a5933270cabc3a00cd8742bf011747fc8"></a>float</td>
+<a id="a6d7bc4500bac8dbefddbe8ac3988dbfb" name="a6d7bc4500bac8dbefddbe8ac3988dbfb"></a>float</td>
 <td class="fieldname">
-rt60[<a class="el" href="#gae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td>
+rt60[6]</td>
 <td class="fielddoc">
 The RT60 from schroeder integration. </td></tr>
 <tr><td class="fieldtype">
-<a id="aa4c9f5211127b6c99cf1b9bf4d7fde41" name="aa4c9f5211127b6c99cf1b9bf4d7fde41"></a>float</td>
+<a id="aa447072b875a39f32f6a306a76e074b8" name="aa447072b875a39f32f6a306a76e074b8"></a>float</td>
 <td class="fieldname">
-slope[<a class="el" href="#gae980555e57f3ddcbb91e59f9d1e154b6">AUDIO_NUM_BANDS</a>]</td>
+slope[6]</td>
 <td class="fielddoc">
 The slope from EDC. </td></tr>
 <tr><td class="fieldtype">
-<a id="ae887e9d57fa9aa235158e846f4d9d33d" name="ae887e9d57fa9aa235158e846f4d9d33d"></a>float(*</td>
+<a id="a404e635ce7674569ec1a9c6130d7466d" name="a404e635ce7674569ec1a9c6130d7466d"></a>float(*</td>
 <td class="fieldname">
-final_ir)[<a class="el" href="#ga11a427cb1228a62dee06e50c466d4804">SH_MAX</a>]</td>
+final_ir)[9]</td>
 <td class="fielddoc">
 The baked IR samples by 9 SH. </td></tr>
 </table>
@@ -929,7 +929,7 @@ pad5</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>The <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a>s for <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a>s and <a class="el" href="engine__types_8h.html#struct_l_p_v" title="A ProbeVolume for indirect lighting probes.">LPV</a>s, controlled by <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a>s. </p>
-<dl class="section see"><dt>See also</dt><dd>load_audio_pv() </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga47be429339f036064bdf57fd5e190e3b" title="Loads an APV into a slot.">load_audio_pv()</a> </dd>
 <dd>
 <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> </dd>
 <dd>
@@ -978,7 +978,7 @@ The resolution in X, Y, Z. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><p>A <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> for <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s. </p>
-<dl class="section see"><dt>See also</dt><dd>load_audio_pv() </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga47be429339f036064bdf57fd5e190e3b" title="Loads an APV into a slot.">load_audio_pv()</a> </dd>
 <dd>
 <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> </dd></dl>
 
@@ -1210,7 +1210,7 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00092">92</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01881">init_band_kernels()</a>, <a class="el" href="audio_8c_source.html#l01849">init_normalized_lpf()</a>, and <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01881">init_band_kernels()</a>, <a class="el" href="#gaa39ed3927af8deb0936c5b4888388374">init_band_kernels()</a>, <a class="el" href="audio_8c_source.html#l01849">init_normalized_lpf()</a>, and <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1250,7 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00094">94</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>, <a class="el" href="audio_8c_source.html#l01881">init_band_kernels()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>, <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>, <a class="el" href="audio_8c_source.html#l01881">init_band_kernels()</a>, <a class="el" href="#gaa39ed3927af8deb0936c5b4888388374">init_band_kernels()</a>, <a class="el" href="init_8c_source.html#l00920">init_globals()</a>, <a class="el" href="gltf_8c_source.html#l01250">load_gltf()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00465">main()</a>, <a class="el" href="gltf_8c_source.html#l00132">parse_gltf_materials()</a>, <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>, <a class="el" href="load_8c_source.html#l01262">scene_load()</a>, <a class="el" href="load_8c_source.html#l00502">scene_save()</a>, and <a class="el" href="render_8c_source.html#l00854">upload_material_data()</a>.</p>
 
 </div>
 </div>
@@ -1313,14 +1313,14 @@ The probes in the volume, loaded in from binary. </td></tr>
 </div>
 </div>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
-<a id="ga2d95f263ad6f7e50959898ef9e3e281b" name="ga2d95f263ad6f7e50959898ef9e3e281b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2d95f263ad6f7e50959898ef9e3e281b">&#9670;&#160;</a></span>PartitionTableChannel</h2>
+<a id="gad0167a8e136d2c823abfc49418f9efab" name="gad0167a8e136d2c823abfc49418f9efab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0167a8e136d2c823abfc49418f9efab">&#9670;&#160;</a></span>PartitionTableChannel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef fftwf_complex* PartitionTableChannel[<a class="el" href="#ga062d85bdfe1a34810ed2efaf341b8d24">NUM_PARTITIONS</a>]</td>
+          <td class="memname">typedef fftwf_complex* PartitionTableChannel[95]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1338,7 +1338,7 @@ The probes in the volume, loaded in from binary. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="#ga2d95f263ad6f7e50959898ef9e3e281b">PartitionTableChannel</a> PartitionTable[2]</td>
+          <td class="memname">typedef <a class="el" href="#gad0167a8e136d2c823abfc49418f9efab">PartitionTableChannel</a> PartitionTable[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1350,14 +1350,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ga03765470e0bef38997d4b3dffb7d2f56" name="ga03765470e0bef38997d4b3dffb7d2f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03765470e0bef38997d4b3dffb7d2f56">&#9670;&#160;</a></span>pos_to_pv_local()</h2>
+<a id="ga3e77e228293002683c872b8f92d54c6f" name="ga3e77e228293002683c872b8f92d54c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e77e228293002683c872b8f92d54c6f">&#9670;&#160;</a></span>pos_to_pv_local()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> pos_to_pv_local </td>
@@ -1370,11 +1367,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Converts a position to local <a class="el" href="group__shader__structs__group.html#struct_o_b_b" title="Oriented Bounding Boxes.">OBB</a> space. </p>
@@ -1389,20 +1381,17 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00920">920</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00015">OBB::center</a>, <a class="el" href="dynamic_8frag_source.html#l00023">OBB::extents</a>, <a class="el" href="audio_8c_source.html#l00920">pos_to_pv_local()</a>, and <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>.</p>
+<p class="reference">References <a class="el" href="dynamic_8frag_source.html#l00015">OBB::center</a>, <a class="el" href="dynamic_8frag_source.html#l00023">OBB::extents</a>, <a class="el" href="utilities_8h_source.html#l00498">mat3_mul_vec3()</a>, <a class="el" href="utilities_8h_source.html#l00545">mat3_transpose()</a>, <a class="el" href="audio_8c_source.html#l00920">pos_to_pv_local()</a>, <a class="el" href="types_8h_source.html#l00049">OBB::rot</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00306">vec3_div()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dynamic_8frag_source.html#l00573">main()</a>, <a class="el" href="audio_8c_source.html#l00920">pos_to_pv_local()</a>, <a class="el" href="dynamic_8frag_source.html#l00561">pos_to_pv_local()</a>, and <a class="el" href="audio_8c_source.html#l00929">query_audio_probe()</a>.</p>
 
 </div>
 </div>
-<a id="ga544d529155250722aedf702d339bc204" name="ga544d529155250722aedf702d339bc204"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga544d529155250722aedf702d339bc204">&#9670;&#160;</a></span>query_probe_volume()</h2>
+<a id="ga28c5da4ff18d1cf2a39362009c5460c1" name="ga28c5da4ff18d1cf2a39362009c5460c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28c5da4ff18d1cf2a39362009c5460c1">&#9670;&#160;</a></span>query_probe_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int query_probe_volume </td>
@@ -1411,11 +1400,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Checks which <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> a position is inside. </p>
@@ -1430,20 +1414,17 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00938">938</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03156">SceneData::audio_probe_volumes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="audio_8c_source.html#l00938">query_probe_volume()</a>, and <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03156">SceneData::audio_probe_volumes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="utilities_8h_source.html#l00623">point_in_obb()</a>, <a class="el" href="audio_8c_source.html#l00938">query_probe_volume()</a>, and <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00998">check_audio_pv()</a>, <a class="el" href="audio_8c_source.html#l01098">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio_8c_source.html#l00938">query_probe_volume()</a>.</p>
 
 </div>
 </div>
-<a id="ga2dd0e72bce7e0f74f4e0bfce818fd173" name="ga2dd0e72bce7e0f74f4e0bfce818fd173"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2dd0e72bce7e0f74f4e0bfce818fd173">&#9670;&#160;</a></span>remove_audio_pv()</h2>
+<a id="gaaa4c52c09da033689320e34b6ccb05f4" name="gaaa4c52c09da033689320e34b6ccb05f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa4c52c09da033689320e34b6ccb05f4">&#9670;&#160;</a></span>remove_audio_pv()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void remove_audio_pv </td>
@@ -1456,11 +1437,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>apb</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Frees an <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> from its slot. </p>
@@ -1480,14 +1456,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 </div>
 </div>
-<a id="gae49ac9b923637846ef5fe5eafe7e42a4" name="gae49ac9b923637846ef5fe5eafe7e42a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae49ac9b923637846ef5fe5eafe7e42a4">&#9670;&#160;</a></span>load_audio_pv()</h2>
+<a id="ga47be429339f036064bdf57fd5e190e3b" name="ga47be429339f036064bdf57fd5e190e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47be429339f036064bdf57fd5e190e3b">&#9670;&#160;</a></span>load_audio_pv()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void load_audio_pv </td>
@@ -1500,11 +1473,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype"><a class="el" href="#struct_probe_volume">ProbeVolume</a> *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Loads an <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> into a slot. </p>
@@ -1515,6 +1483,8 @@ The probes in the volume, loaded in from binary. </td></tr>
   </table>
   </dd>
 </dl>
+<p>&lt;</p>
+<p>&lt;</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00972">972</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
@@ -1524,14 +1494,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 </div>
 </div>
-<a id="ga169531920158e88e90005fde7c719fac" name="ga169531920158e88e90005fde7c719fac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga169531920158e88e90005fde7c719fac">&#9670;&#160;</a></span>interpolate_nearest_aprobes()</h2>
+<a id="gad72657018ab828f28d69b5fbe9036f14" name="gad72657018ab828f28d69b5fbe9036f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad72657018ab828f28d69b5fbe9036f14">&#9670;&#160;</a></span>interpolate_nearest_aprobes()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void interpolate_nearest_aprobes </td>
@@ -1544,11 +1511,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype"><a class="el" href="#struct_audio_probe_weights">AudioProbeWeights</a> *</td>          <td class="paramname"><span class="paramname"><em>out_w</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Interpolates between 4 closest <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s within one singular <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> and weighs them based on distance. </p>
@@ -1559,23 +1521,23 @@ The probes in the volume, loaded in from binary. </td></tr>
   </table>
   </dd>
 </dl>
+<p>&lt;Max <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s that can be sampled at once</p>
+<p>&lt;Max <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s that can be sampled at once</p>
+<p>&lt;Max <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s that can be sampled at once</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01098">1098</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03156">SceneData::audio_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l03093">APV::audio_probes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="main_8c_source.html#l00054">DEBUG_CURRENT_APROBE</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="audio_8c_source.html#l01098">interpolate_nearest_aprobes()</a>, <a class="el" href="engine__types_8h_source.html#l03168">SceneData::LOADED_AUDIO_PV</a>, <a class="el" href="engine__types_8h_source.html#l03169">SceneData::LOADED_AUDIO_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l00214">MAX_AUDIO_PROBE_VOLUMES</a>, <a class="el" href="engine__types_8h_source.html#l00080">MAX_INTERP_APROBES</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00159">AudioProbe::pos</a>, <a class="el" href="engine__types_8h_source.html#l03092">APV::pv_id</a>, <a class="el" href="audio_8c_source.html#l00929">query_audio_probe()</a>, <a class="el" href="audio_8c_source.html#l00938">query_probe_volume()</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03079">ProbeVolume::resolution</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="bloom__blur_8frag_source.html#l00011">weights</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, and <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03156">SceneData::audio_probe_volumes</a>, <a class="el" href="engine__types_8h_source.html#l03093">APV::audio_probes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="main_8c_source.html#l00054">DEBUG_CURRENT_APROBE</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="audio_8c_source.html#l01098">interpolate_nearest_aprobes()</a>, <a class="el" href="engine__types_8h_source.html#l03168">SceneData::LOADED_AUDIO_PV</a>, <a class="el" href="engine__types_8h_source.html#l03169">SceneData::LOADED_AUDIO_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l00214">MAX_AUDIO_PROBE_VOLUMES</a>, <a class="el" href="engine__types_8h_source.html#l00080">MAX_INTERP_APROBES</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00159">AudioProbe::pos</a>, <a class="el" href="engine__types_8h_source.html#l03092">APV::pv_id</a>, <a class="el" href="audio_8c_source.html#l00929">query_audio_probe()</a>, <a class="el" href="audio_8c_source.html#l00938">query_probe_volume()</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03079">ProbeVolume::resolution</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="bloom__blur_8frag_source.html#l00011">weights</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, and <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01098">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio_8c_source.html#l01215">update_player_audio_probe()</a>.</p>
 
 </div>
 </div>
-<a id="ga595600f8e10746c92204e774711767f8" name="ga595600f8e10746c92204e774711767f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga595600f8e10746c92204e774711767f8">&#9670;&#160;</a></span>process_biquad()</h2>
+<a id="gaf60c087beda922675dcf06e5f596ad01" name="gaf60c087beda922675dcf06e5f596ad01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf60c087beda922675dcf06e5f596ad01">&#9670;&#160;</a></span>process_biquad()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float process_biquad </td>
@@ -1588,11 +1550,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>in_sample</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Processes a biquad filter over a sample. </p>
@@ -1614,14 +1571,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 </div>
 </div>
-<a id="ga56185d684139ab2497dd29fccd09c463" name="ga56185d684139ab2497dd29fccd09c463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga56185d684139ab2497dd29fccd09c463">&#9670;&#160;</a></span>init_bandpass()</h2>
+<a id="ga5236864f75b5597b29ae8563ee439cc9" name="ga5236864f75b5597b29ae8563ee439cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5236864f75b5597b29ae8563ee439cc9">&#9670;&#160;</a></span>init_bandpass()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void init_bandpass </td>
@@ -1644,11 +1598,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>q</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Initializes a bandpass filter for the synthetic IR. </p>
@@ -1670,14 +1619,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 </div>
 </div>
-<a id="gacce77518b7c8a49583ecba2c0e27a2e1" name="gacce77518b7c8a49583ecba2c0e27a2e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacce77518b7c8a49583ecba2c0e27a2e1">&#9670;&#160;</a></span>generate_synthetic_IR_tail()</h2>
+<a id="ga9cab16900de78d05c901be7ffd51805c" name="ga9cab16900de78d05c901be7ffd51805c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cab16900de78d05c901be7ffd51805c">&#9670;&#160;</a></span>generate_synthetic_IR_tail()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void generate_synthetic_IR_tail </td>
@@ -1700,11 +1646,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rms</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Generates a synthetic IR tail for a given <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> based on its RT60. </p>
@@ -1718,23 +1659,31 @@ The probes in the volume, loaded in from binary. </td></tr>
   </table>
   </dd>
 </dl>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum IR sample length</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01266">1266</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00094">AUDIO_NUM_BANDS</a>, <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>, <a class="el" href="audio_8c_source.html#l01249">init_bandpass()</a>, <a class="el" href="engine__types_8h_source.html#l00083">IR_SAMPLE_RATE</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l00088">MAX_IR_SAMPLES</a>, <a class="el" href="audio_8c_source.html#l01232">process_biquad()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="engine__types_8h_source.html#l01402">AudioProbe::rt60</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00007">SAMPLE_RATE</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00101">AUDIO_BAND_FREQ</a>, <a class="el" href="engine__types_8h_source.html#l00094">AUDIO_NUM_BANDS</a>, <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>, <a class="el" href="audio_8c_source.html#l01249">init_bandpass()</a>, <a class="el" href="engine__types_8h_source.html#l00083">IR_SAMPLE_RATE</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l00088">MAX_IR_SAMPLES</a>, <a class="el" href="audio_8c_source.html#l01232">process_biquad()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="engine__types_8h_source.html#l01402">AudioProbe::rt60</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00007">SAMPLE_RATE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>, and <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>.</p>
 
 </div>
 </div>
-<a id="gabf825eb3f62c06950eced5f56cbadfb3" name="gabf825eb3f62c06950eced5f56cbadfb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf825eb3f62c06950eced5f56cbadfb3">&#9670;&#160;</a></span>compute_schroeder_edc()</h2>
+<a id="gabfcdfe33e5ec7ac773bc365ad76c11bf" name="gabfcdfe33e5ec7ac773bc365ad76c11bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfcdfe33e5ec7ac773bc365ad76c11bf">&#9670;&#160;</a></span>compute_schroeder_edc()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void compute_schroeder_edc </td>
@@ -1747,11 +1696,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>edc_out</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Generates an Energy Decay Curve for input IR samples. </p>
@@ -1763,6 +1707,12 @@ The probes in the volume, loaded in from binary. </td></tr>
   </table>
   </dd>
 </dl>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum EDC sample length</p>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum EDC sample length</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01312">1312</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
@@ -1772,14 +1722,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 </div>
 </div>
-<a id="gabe2006e8b2052a0a8d175b4e6b5ff071" name="gabe2006e8b2052a0a8d175b4e6b5ff071"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe2006e8b2052a0a8d175b4e6b5ff071">&#9670;&#160;</a></span>extract_rms()</h2>
+<a id="ga67cad69033b0384deed7843d9c83f2d5" name="ga67cad69033b0384deed7843d9c83f2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67cad69033b0384deed7843d9c83f2d5">&#9670;&#160;</a></span>extract_rms()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float extract_rms </td>
@@ -1797,11 +1744,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>window_size</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Extracts the RMS from a certain sample range before the synthetic IR. </p>
@@ -1824,14 +1766,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 </div>
 </div>
-<a id="ga29684eaf012554ebbe1bbbe2e8252adc" name="ga29684eaf012554ebbe1bbbe2e8252adc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga29684eaf012554ebbe1bbbe2e8252adc">&#9670;&#160;</a></span>extract_t60()</h2>
+<a id="ga54f5725512ad234db39156bbf9d53d8d" name="ga54f5725512ad234db39156bbf9d53d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54f5725512ad234db39156bbf9d53d8d">&#9670;&#160;</a></span>extract_t60()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void extract_t60 </td>
@@ -1859,11 +1798,6 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>last_sample</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Extracts the RT60 from an EDC for computing a synthetic IR. </p>
@@ -1889,14 +1823,11 @@ The probes in the volume, loaded in from binary. </td></tr>
 
 </div>
 </div>
-<a id="gadaa04ca6973f2add78bb099a29432255" name="gadaa04ca6973f2add78bb099a29432255"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadaa04ca6973f2add78bb099a29432255">&#9670;&#160;</a></span>process_probe_chunk()</h2>
+<a id="gaf25ead97da918a343c078b6af8fbaaa9" name="gaf25ead97da918a343c078b6af8fbaaa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf25ead97da918a343c078b6af8fbaaa9">&#9670;&#160;</a></span>process_probe_chunk()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void process_probe_chunk </td>
@@ -1909,17 +1840,12 @@ The probes in the volume, loaded in from binary. </td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Path traces from <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>s within a certain chunk of a <a class="el" href="#struct_probe_volume" title="The ProbeVolumes for APVs and LPVs, controlled by OBBs.">ProbeVolume</a> and processes samples per <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a>, forming a synthetic IR from the RT60. </p>
-<p><a class="anchor" id="probe_bake_anchor"></a></p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga29684eaf012554ebbe1bbbe2e8252adc" title="Extracts the RT60 from an EDC for computing a synthetic IR.">extract_t60()</a> </dd>
+<p><a class="anchor" id="probe_bake_anchor"></a></p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga54f5725512ad234db39156bbf9d53d8d" title="Extracts the RT60 from an EDC for computing a synthetic IR.">extract_t60()</a> </dd>
 <dd>
-<a class="el" href="#gabf825eb3f62c06950eced5f56cbadfb3" title="Generates an Energy Decay Curve for input IR samples.">compute_schroeder_edc()</a> </dd>
+<a class="el" href="#gabfcdfe33e5ec7ac773bc365ad76c11bf" title="Generates an Energy Decay Curve for input IR samples.">compute_schroeder_edc()</a> </dd>
 <dd>
 generate_synthetic_ir_tail()</dd></dl>
 <p>\begin{align} I &amp;= \text{Iterations} \\ P &amp;= \text{Probe Array} \\ p &amp;= \text{Probe} \\ B &amp;= \text{Bounces} \\ M &amp;= \text{Material} \\ S_{\text{rate}} &amp;= \text{Sample Rate} \\ S_{\text{max}} &amp;= \text{Maximum Samples} \\ Z &amp;= \text{Bands} \\ G &amp;= \text{Audio Kernel} \\ L &amp;= \text{Synthetic IR} \\ \delta &amp;= \text{Slope} \\ \Upsilon &amp;= \text{Speed of Sound} \\ \chi &amp;= \text{Band Impulses} \\ F &amp;= \text{Fade} \\ &amp; \textbf{for } i = 0 \text{ to } I - 1: \\ &amp; \quad \textbf{for } j = 0 \text{ to } P_{\text{count}} - 1: \\ &amp; \qquad p = P[j] \\ &amp; \qquad \phi = \pi \cdot (3 - \sqrt 5) \\ &amp; \qquad y = 1 - \frac{2 \cdot (i + 0.5)}{I} \\ &amp; \qquad r = \sqrt{1 - y^2} \\ &amp; \qquad \theta = \phi \cdot i \\ &amp; \qquad \vec v = \begin{bmatrix} \cos{\theta} \cdot r \\ y \\ \sin{\theta} \cdot r \end{bmatrix} \\ &amp; \qquad O = p_{\text{pos}} \\ &amp; \qquad \textbf{for } k = 0 \text{ to } B - 1: \\ &amp; \qquad \quad R(t) = O + t\vec v \\ &amp; \qquad \quad t_{\text{hit}} = \left\lbrace \begin{aligned} &amp; min({t \ge 0 | R(t) \in \mathcal S }), &amp; \text{if }R(t) \text{ hits }\mathcal S\\ &amp; \infty, &amp; \text{otherwise} \end{aligned} \right. \\ &amp; \qquad \quad \text{Break}, \text{if } t_{\text{hit}} = \infty \\ &amp; \qquad \quad x = R(t_{\text{hit}}) \\ &amp; \qquad \quad t_n = \text{Normal} (\mathcal S) \\ &amp; \qquad \quad M = \text{Material} (\mathcal S) \\ &amp; \qquad \quad S = p_{\text{sample}}[i, k]\\ &amp; \qquad \quad S_{\text{pos}} = x \\ &amp; \qquad \quad S_{\text{dir}} = \vec v \\ &amp; \qquad \quad \vec v_x = || p_{\text{pos}} - x || \\ &amp; \qquad \quad S_{\text{tof}} = \frac{(\sum_{o=0}^{k}t_{\text{hit}}) + \vec v_x}{\Upsilon} \\ &amp; \qquad \quad R(t) = O + t\vec v_x \\ &amp; \qquad \quad t_{\text{hit}} = \left\lbrace \begin{aligned} &amp; min({t \ge 0 | R(t) \in \mathcal S }), &amp; \text{if }R(t) \text{ hits }\mathcal S\\ &amp; \infty, &amp; \text{otherwise} \end{aligned} \right. \\ &amp; \qquad \quad S_{\text{valid}} = 0, \text{if } t_{\text{hit}} \lt \vec v_x\\ &amp; \qquad \quad E_b = E_b \cdot (1 - M_{\text{abs}}) \\ &amp; \qquad \quad S_{\text{energy}} = E_b * \gamma \\ &amp; \qquad \quad V(N) = \left\lbrace \begin{aligned} &amp; \tau_1, \tau_2 \in \sim \mathcal U [0, 1] \\ &amp; \phi = 2 \pi \cot \tau_1 \\ &amp; \vec v = \left\lbrack \begin{aligned} &amp; \cos(\phi) \cdot \sqrt{\tau_2}\\ &amp; \sin(\phi) \cdot \sqrt{\tau_2}\\ &amp; \sqrt{1 - \tau_2} \\ \end{aligned} \right\rbrack \\ &amp; \left\lbrace \begin{aligned} &amp; \begin{aligned} &amp; T = \begin{bmatrix} 0 \\ -1 \\ 0 \end{bmatrix}\\ &amp; B = \begin{bmatrix} -1 \\ 0 \\ 0 \end{bmatrix}\\ \end{aligned}, &amp; \text{if } N_z &lt; -0.99998796 \\ \\ &amp; \begin{aligned} &amp; \alpha = \frac{1}{1+N_z}\\ &amp; \beta = -N_x \cdot N_y \cdot \alpha \\ &amp; T = \begin{bmatrix} 1 - N_x^2\alpha \\ \beta \\ -N_x \end{bmatrix}\\ &amp; B = \begin{bmatrix} \beta \\ 1 - N_y^2\alpha \\ -N_y \end{bmatrix}\\ \end{aligned}, &amp; \text{otherwise} \\ \end{aligned} \right. \\ &amp; M_n = \begin{bmatrix} T_x &amp; B_x &amp; N_x \\ T_y &amp; B_y &amp; N_y \\ T_z &amp; B_z &amp; N_z \end{bmatrix}\\ &amp; \vec v = M_n \cdot \vec v \\ &amp; \frac{\vec v}{||\vec v||} \end{aligned} \right. \\ &amp; \qquad \quad \mu \in \sim \mathcal U [0, 1] \\ &amp; \qquad \quad \left\lbrace \begin{aligned} &amp; \vec v = V(t_n), &amp; \text{if } \mu \lt M_{\text{scattering}}\\ &amp; \vec v = \vec v - 2(\vec v \cdot t_n)t_n, &amp; otherwise \end{aligned} \right. \\ &amp; \textbf{for } j = 0 \text{ to } P_{\text{count}} - 1: \\ &amp; \quad p = P[j] \\ &amp; \quad \textbf{for } i = 0 \text{ to } I - 1: \\ &amp; \qquad \textbf{for } k = 0 \text{ to } B - 1: \\ &amp; \qquad \quad S = p_{\text{sample}}[i, k]\\ &amp; \qquad \quad T = S_{\text{tof}} \cdot S_{\text{rate}} \\ &amp; \qquad \quad \text{continue, }\text{if } S_{\text{valid}} = 0 \text{ or } T \geq S_{\text{max}} - 1 \text{ or } T \lt 0\\ &amp; \qquad \quad H = \text{SH} (S_{\text{dir}}) \\ &amp; \qquad \quad p_{\text{ir}}[T, o, f] = H[o] \cdot S_{\text{energy}}[f] \cdot \frac{4\pi}{I} \text{ for } o \in \lbrace0, ..., 8\rbrace \text{ and for } f \in \lbrace0, ..., Z_{\text{max}} - 1\rbrace \\ &amp; \qquad \quad E_0[T, b] = E_0[T, b] + S_{\text{abs energy}} \cdot \frac{4\pi}{I}\text{ for } b \in \lbrace 0, ..., B_{\text{max}} - 1 \rbrace \\ &amp; \quad \textbf{for } b = 0 \text{ to } B_{\text{max}} - 1: \\ &amp; \qquad E_1 = \text{EDC}(E_0) \\ &amp; \qquad (R_{\text{t60}}, \delta) = \text{RT60}(E_1) \\ &amp; \quad \textbf{for } k = 0 \text{ to } S_{\text{max}} - 1: \\ &amp; \qquad \textbf{let } \sigma \in -1, 1 \text{ be chosen uniformly at random}\\ &amp; \qquad \textbf{for } b = 0 \text{ to } B_{\text{max}} - 1: \\ &amp; \qquad \quad S_0 = p_{\text{ir}}[k, 0, b] \\ &amp; \qquad \quad \text{continue, if } S_0 \leq 0.000001 \\ &amp; \qquad \quad E_{\text{total}} = \frac{S_0}{Y_00} \\ &amp; \qquad \quad B_{\text{amp}} = \sqrt{E_{\text{total}}} * \sigma \\ &amp; \qquad \quad S_r[n] = \frac{p_{\text{ir}}[k, n, b]}{S_0} \text{ for n } \in \lbrace 0, ..., 8\rbrace\\ &amp; \qquad \quad \text{for } m = 0 \text{ to } G_{\text{size}} - 1: \\ &amp; \qquad \qquad X_i = k + m - G_{\text{center}} \\ &amp; \qquad \qquad \left\lbrace \begin{aligned} &amp; \text{continue}, X_i \lt 0\\ &amp; \text{break}, X_i \geq S_{\text{max}} - 1 \\ \end{aligned} \right. \\ &amp; \qquad \qquad p_{\text{fir}}[X_i, n] = p_{\text{fir}}[X_i, n] + \chi[b, m] \cdot B_{\text{amp}} \cdot S_r[n] \text { for n } \in \lbrace 0, ..., 8\rbrace\\ &amp; \quad R = \text{RMS}(p) \\ &amp; \quad L = \text{SYNTHETIC}(p, RMS) \\ &amp; \quad \text{for }x = F_{\text{start}} \text{ to } S_{\text{max}} - 1: \\ &amp; \qquad \alpha = \min(\frac{x - F_{\text{start}}}{F_{\text{end}} - F_{\text{start}}}, 1) \\ &amp; \qquad e = \cos(\alpha \cdot 0.5 \cdot \pi) \\ &amp; \qquad l = \sin(\alpha \cdot 0.5 \cdot \pi) \\ &amp; \qquad p_{\text{fir}}[x, 0] = p_{\text{fir}}[x, 0] \cdot e + L[x] \cdot l \\ &amp; \qquad d \in \sim \mathcal U [-0.2, 0.2] \\ &amp; \qquad p_{\text{fir}}[x, g] = p_{\text{fir}}[x, g] \cdot e + L[x] \cdot d \cdot l \text{ for } g \in \lbrace1, ..., 8\rbrace \\ \end{align} </p><dl class="params"><dt>Parameters</dt><dd>
@@ -1929,37 +1855,85 @@ generate_synthetic_ir_tail()</dd></dl>
   </table>
   </dd>
 </dl>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum EDC sample length</p>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum EDC sample length</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum IR sample length</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum IR sample length</p>
+<p>&lt;</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum IR sample length</p>
+<p>&lt;</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum EDC sample length</p>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum EDC sample length</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum IR sample length</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Max samples for runtime convolution</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Sample rate for baked audio IRs</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum IR sample length</p>
+<p>&lt;</p>
+<p>&lt;</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;EDC sample rate for schroeder integration</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Maximum EDC sample length</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Max samples for runtime convolution</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Max samples for runtime convolution</p>
+<p>&lt;</p>
+<p>&lt;</p>
+<p>&lt;Longest amount of <a class="el" href="#struct_audio_probe" title="Baked IR samples loaded in from binary into APVs from ProbeVolumes.">AudioProbe</a> samples when baking</p>
+<p>&lt;Max samples for runtime convolution</p>
+<p>&lt;The amount of bins (to reduce max sample size)</p>
+<p>&lt;The amount of bins (to reduce max sample size)</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;</p>
+<p>&lt;</p>
+<p>&lt;</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
+<p>&lt;Frequency kernel size for distributing samples during audio bake</p>
+<p>&lt;Center of the kernel for distributing samples during audio bake</p>
+<p>&lt;</p>
+<p>&lt;</p>
+<p>&lt;The amount of bands to use for audio probe baking</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01411">1411</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01434">AudioSampleGPU::abs_energy</a>, <a class="el" href="engine__types_8h_source.html#l01427">AudioSampleGPU::arrival_dir</a>, <a class="el" href="engine__types_8h_source.html#l00093">AUDIO_KERNEL_CENTER</a>, <a class="el" href="engine__types_8h_source.html#l00092">AUDIO_KERNEL_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00094">AUDIO_NUM_BANDS</a>, <a class="el" href="main_8c_source.html#l00229">AUDIO_PROBE_BAKE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00091">AUDIO_PROBE_BINS</a>, <a class="el" href="engine__types_8h_source.html#l00814">EditorSettings::audio_probe_bounces</a>, <a class="el" href="engine__types_8h_source.html#l00813">EditorSettings::audio_probe_iterations</a>, <a class="el" href="engine__types_8h_source.html#l03427">Globals::audio_probes</a>, <a class="el" href="audio_8c_source.html#l00028">BAND_IMPULSES</a>, <a class="el" href="audio_8c_source.html#l01312">compute_schroeder_edc()</a>, <a class="el" href="main_8c_source.html#l00052">DEBUG_APROBE_RAY_COUNT</a>, <a class="el" href="main_8c_source.html#l00282">DEBUG_LINE_COUNT</a>, <a class="el" href="engine__types_8h_source.html#l00084">EDC_SAMPLE_RATE</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l01431">AudioSampleGPU::energy</a>, <a class="el" href="audio__ir_8c_source.html#l00051">evaluate_sh()</a>, <a class="el" href="audio_8c_source.html#l01342">extract_rms()</a>, <a class="el" href="audio_8c_source.html#l01363">extract_t60()</a>, <a class="el" href="engine__types_8h_source.html#l01404">AudioProbe::final_ir</a>, <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01400">AudioProbe::ir_length</a>, <a class="el" href="engine__types_8h_source.html#l00083">IR_SAMPLE_RATE</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l00089">MAX_EDC_SAMPLES</a>, <a class="el" href="engine__types_8h_source.html#l00088">MAX_IR_SAMPLES</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00009">MAX_SAMPLES</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="audio_8c_source.html#l00412">SAMPLE_IDX</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00007">SAMPLE_RATE</a>, <a class="el" href="postprocess_8frag_source.html#l00177">samples</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l01428">AudioSampleGPU::time_of_flight</a>, <a class="el" href="engine__types_8h_source.html#l01430">AudioSampleGPU::valid</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="audio_8c_source.html#l00415">Y_00</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01434">AudioSampleGPU::abs_energy</a>, <a class="el" href="engine__types_8h_source.html#l01427">AudioSampleGPU::arrival_dir</a>, <a class="el" href="engine__types_8h_source.html#l00093">AUDIO_KERNEL_CENTER</a>, <a class="el" href="engine__types_8h_source.html#l00092">AUDIO_KERNEL_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00094">AUDIO_NUM_BANDS</a>, <a class="el" href="main_8c_source.html#l00229">AUDIO_PROBE_BAKE_SHADER</a>, <a class="el" href="engine__types_8h_source.html#l00091">AUDIO_PROBE_BINS</a>, <a class="el" href="engine__types_8h_source.html#l00814">EditorSettings::audio_probe_bounces</a>, <a class="el" href="engine__types_8h_source.html#l00813">EditorSettings::audio_probe_iterations</a>, <a class="el" href="engine__types_8h_source.html#l03427">Globals::audio_probes</a>, <a class="el" href="audio_8c_source.html#l00028">BAND_IMPULSES</a>, <a class="el" href="audio_8c_source.html#l01312">compute_schroeder_edc()</a>, <a class="el" href="main_8c_source.html#l00052">DEBUG_APROBE_RAY_COUNT</a>, <a class="el" href="main_8c_source.html#l00282">DEBUG_LINE_COUNT</a>, <a class="el" href="engine__types_8h_source.html#l00084">EDC_SAMPLE_RATE</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="engine__utilities_8h_source.html#l00013">end_timer()</a>, <a class="el" href="engine__types_8h_source.html#l01431">AudioSampleGPU::energy</a>, <a class="el" href="audio__ir_8c_source.html#l00051">evaluate_sh()</a>, <a class="el" href="audio_8c_source.html#l01342">extract_rms()</a>, <a class="el" href="audio_8c_source.html#l01363">extract_t60()</a>, <a class="el" href="engine__types_8h_source.html#l01404">AudioProbe::final_ir</a>, <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01400">AudioProbe::ir_length</a>, <a class="el" href="engine__types_8h_source.html#l00083">IR_SAMPLE_RATE</a>, <a class="el" href="utilities_8h_source.html#l00052">M_PI</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l00089">MAX_EDC_SAMPLES</a>, <a class="el" href="engine__types_8h_source.html#l00088">MAX_IR_SAMPLES</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00009">MAX_SAMPLES</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="audio_8c_source.html#l00412">SAMPLE_IDX</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00007">SAMPLE_RATE</a>, <a class="el" href="postprocess_8frag_source.html#l00177">samples</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__utilities_8h_source.html#l00008">start_timer()</a>, <a class="el" href="engine__types_8h_source.html#l01428">AudioSampleGPU::time_of_flight</a>, <a class="el" href="engine__types_8h_source.html#l01430">AudioSampleGPU::valid</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="audio_8c_source.html#l00415">Y_00</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01661">bake_audio_probe_volume()</a>, and <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>.</p>
-
-</div>
-</div>
-<a id="ga87c9086910fb559205a3fdbcd2c975b3" name="ga87c9086910fb559205a3fdbcd2c975b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga87c9086910fb559205a3fdbcd2c975b3">&#9670;&#160;</a></span>update_player_audio_probe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void update_player_audio_probe </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determines if a new IR needs to be signaled from the background thread. </p>
-
-<p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01215">1215</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="main_8c_source.html#l00074">HRTF_TD</a>, <a class="el" href="audio_8c_source.html#l01098">interpolate_nearest_aprobes()</a>, <a class="el" href="engine__types_8h_source.html#l00424">HRTFThreadData::last_fwd</a>, <a class="el" href="engine__types_8h_source.html#l00423">HRTFThreadData::last_pos</a>, <a class="el" href="engine__types_8h_source.html#l00418">HRTFThreadData::mutex</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l00427">HRTFThreadData::new_probe_ready</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="audio_8c_source.html#l01215">update_player_audio_probe()</a>, <a class="el" href="engine__types_8h_source.html#l00429">HRTFThreadData::w</a>, and <a class="el" href="engine__types_8h_source.html#l00419">HRTFThreadData::work_cond</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="audio_8c_source.html#l01215">update_player_audio_probe()</a>.</p>
 
 </div>
 </div>
@@ -1986,12 +1960,38 @@ generate_synthetic_ir_tail()</dd></dl>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Must have an open <a class="el" href="#struct_a_p_v" title="A ProbeVolume for AudioProbes.">APV</a> file and a valid resolution for pv. </dd></dl>
+<p>&lt;</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01661">1661</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00446">AudioScratchBuffers::aprobe_mutex</a>, <a class="el" href="engine__types_8h_source.html#l03175">SceneData::APV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00814">EditorSettings::audio_probe_bounces</a>, <a class="el" href="engine__types_8h_source.html#l00813">EditorSettings::audio_probe_iterations</a>, <a class="el" href="engine__types_8h_source.html#l03427">Globals::audio_probes</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="audio_8c_source.html#l01661">bake_audio_probe_volume()</a>, <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="engine__types_8h_source.html#l03076">ProbeVolume::byte_offset</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l01404">AudioProbe::final_ir</a>, <a class="el" href="main_8c_source.html#l00166">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="main_8c_source.html#l00171">INSTANCE_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l01400">AudioProbe::ir_length</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00159">AudioProbe::pos</a>, <a class="el" href="engine__types_8h_source.html#l01415">AudioProbeGPU::pos</a>, <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>, <a class="el" href="engine__types_8h_source.html#l03079">ProbeVolume::resolution</a>, <a class="el" href="main_8c_source.html#l00160">RPROBE_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l03077">ProbeVolume::size</a>, <a class="el" href="main_8c_source.html#l00172">TEXT_BOX_SSBO</a>, <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00446">AudioScratchBuffers::aprobe_mutex</a>, <a class="el" href="engine__types_8h_source.html#l03175">SceneData::APV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l00814">EditorSettings::audio_probe_bounces</a>, <a class="el" href="engine__types_8h_source.html#l00813">EditorSettings::audio_probe_iterations</a>, <a class="el" href="engine__types_8h_source.html#l03427">Globals::audio_probes</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="audio_8c_source.html#l01661">bake_audio_probe_volume()</a>, <a class="el" href="render_8c_source.html#l00031">bind_baking_ssbos()</a>, <a class="el" href="engine__types_8h_source.html#l03076">ProbeVolume::byte_offset</a>, <a class="el" href="main_8c_source.html#l00330">EDITOR_SETTINGS</a>, <a class="el" href="engine__types_8h_source.html#l01404">AudioProbe::final_ir</a>, <a class="el" href="main_8c_source.html#l00166">GLOBAL_INSTANCE_SSBO</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="main_8c_source.html#l00171">INSTANCE_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l01400">AudioProbe::ir_length</a>, <a class="el" href="mathf_8h_source.html#l00433">MAX</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="utilities_8h_source.html#l00607">OBB_min_corner()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00159">AudioProbe::pos</a>, <a class="el" href="engine__types_8h_source.html#l01415">AudioProbeGPU::pos</a>, <a class="el" href="audio_8c_source.html#l01411">process_probe_chunk()</a>, <a class="el" href="engine__utilities_8h_source.html#l00027">PV_step_size()</a>, <a class="el" href="engine__types_8h_source.html#l03079">ProbeVolume::resolution</a>, <a class="el" href="main_8c_source.html#l00160">RPROBE_SSBO</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l03077">ProbeVolume::size</a>, <a class="el" href="main_8c_source.html#l00172">TEXT_BOX_SSBO</a>, <a class="el" href="render_8c_source.html#l00042">unbind_baking_ssbos()</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01661">bake_audio_probe_volume()</a>, and <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>.</p>
+
+</div>
+</div>
+<a id="ga87c9086910fb559205a3fdbcd2c975b3" name="ga87c9086910fb559205a3fdbcd2c975b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87c9086910fb559205a3fdbcd2c975b3">&#9670;&#160;</a></span>update_player_audio_probe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_player_audio_probe </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines if a new IR needs to be signaled from the background thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01215">1215</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
+
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="main_8c_source.html#l00074">HRTF_TD</a>, <a class="el" href="audio_8c_source.html#l01098">interpolate_nearest_aprobes()</a>, <a class="el" href="engine__types_8h_source.html#l00424">HRTFThreadData::last_fwd</a>, <a class="el" href="engine__types_8h_source.html#l00423">HRTFThreadData::last_pos</a>, <a class="el" href="engine__types_8h_source.html#l00418">HRTFThreadData::mutex</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l00427">HRTFThreadData::new_probe_ready</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="audio_8c_source.html#l01215">update_player_audio_probe()</a>, <a class="el" href="mathf_8h_source.html#l00318">vec3_dist()</a>, <a class="el" href="engine__types_8h_source.html#l00429">HRTFThreadData::w</a>, and <a class="el" href="engine__types_8h_source.html#l00419">HRTFThreadData::work_cond</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="audio_8c_source.html#l01215">update_player_audio_probe()</a>.</p>
 
 </div>
 </div>
@@ -2067,7 +2067,7 @@ generate_synthetic_ir_tail()</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00929">929</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="audio_8c_source.html#l00920">pos_to_pv_local()</a>, <a class="el" href="audio_8c_source.html#l00929">query_audio_probe()</a>, <a class="el" href="engine__types_8h_source.html#l03079">ProbeVolume::resolution</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="audio_8c_source.html#l00920">pos_to_pv_local()</a>, <a class="el" href="audio_8c_source.html#l00929">query_audio_probe()</a>, <a class="el" href="engine__types_8h_source.html#l03079">ProbeVolume::resolution</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::y</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, <a class="el" href="types_8h_source.html#l00015">ivec3::z</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01098">interpolate_nearest_aprobes()</a>, and <a class="el" href="audio_8c_source.html#l00929">query_audio_probe()</a>.</p>
 
@@ -2125,11 +2125,7 @@ generate_synthetic_ir_tail()</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01881">1881</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
-
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00093">AUDIO_KERNEL_CENTER</a>, <a class="el" href="engine__types_8h_source.html#l00092">AUDIO_KERNEL_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00094">AUDIO_NUM_BANDS</a>, <a class="el" href="audio_8c_source.html#l01881">init_band_kernels()</a>, <a class="el" href="audio_8c_source.html#l01849">init_normalized_lpf()</a>, and <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="init_8c_source.html#l01988">init()</a>, and <a class="el" href="audio_8c_source.html#l01881">init_band_kernels()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00092">AUDIO_KERNEL_SIZE</a>, <a class="el" href="engine__types_8h_source.html#l00094">AUDIO_NUM_BANDS</a>, <a class="el" href="audio_8c_source.html#l00998">check_audio_pv()</a>, <a class="el" href="audio_8c_source.html#l01881">init_band_kernels()</a>, and <a class="el" href="audio_8c_source.html#l00964">reset_audio_pvs()</a>.</p>
 
 </div>
 </div>
@@ -2152,9 +2148,9 @@ generate_synthetic_ir_tail()</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00998">998</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00446">AudioScratchBuffers::aprobe_mutex</a>, <a class="el" href="engine__types_8h_source.html#l03175">SceneData::APV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l03156">SceneData::audio_probe_volumes</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="dynamic_8frag_source.html#l00015">OBB::center</a>, <a class="el" href="audio_8c_source.html#l00998">check_audio_pv()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio_8c_source.html#l00972">load_audio_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03168">SceneData::LOADED_AUDIO_PV</a>, <a class="el" href="engine__types_8h_source.html#l03169">SceneData::LOADED_AUDIO_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l00214">MAX_AUDIO_PROBE_VOLUMES</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l03092">APV::pv_id</a>, <a class="el" href="audio_8c_source.html#l00938">query_probe_volume()</a>, <a class="el" href="audio_8c_source.html#l00953">remove_audio_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, and <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00446">AudioScratchBuffers::aprobe_mutex</a>, <a class="el" href="engine__types_8h_source.html#l03175">SceneData::APV_FILE</a>, <a class="el" href="engine__types_8h_source.html#l03156">SceneData::audio_probe_volumes</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="dynamic_8frag_source.html#l00015">OBB::center</a>, <a class="el" href="audio_8c_source.html#l00998">check_audio_pv()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio_8c_source.html#l00972">load_audio_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03168">SceneData::LOADED_AUDIO_PV</a>, <a class="el" href="engine__types_8h_source.html#l03169">SceneData::LOADED_AUDIO_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l00214">MAX_AUDIO_PROBE_VOLUMES</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l03078">ProbeVolume::obb</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l03092">APV::pv_id</a>, <a class="el" href="audio_8c_source.html#l00938">query_probe_volume()</a>, <a class="el" href="audio_8c_source.html#l00953">remove_audio_pv()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00998">check_audio_pv()</a>, and <a class="el" href="main_8c_source.html#l00520">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00998">check_audio_pv()</a>, <a class="el" href="#gaa39ed3927af8deb0936c5b4888388374">init_band_kernels()</a>, and <a class="el" href="main_8c_source.html#l00520">main()</a>.</p>
 
 </div>
 </div>
@@ -2179,18 +2175,15 @@ generate_synthetic_ir_tail()</dd></dl>
 
 <p class="reference">References <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03168">SceneData::LOADED_AUDIO_PV</a>, <a class="el" href="engine__types_8h_source.html#l03169">SceneData::LOADED_AUDIO_PV_FLAG</a>, <a class="el" href="engine__types_8h_source.html#l00214">MAX_AUDIO_PROBE_VOLUMES</a>, <a class="el" href="audio_8c_source.html#l00953">remove_audio_pv()</a>, <a class="el" href="audio_8c_source.html#l00964">reset_audio_pvs()</a>, and <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="load_8c_source.html#l02699">load_aprobes()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l00964">reset_audio_pvs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#gaa39ed3927af8deb0936c5b4888388374">init_band_kernels()</a>, <a class="el" href="load_8c_source.html#l02699">load_aprobes()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, and <a class="el" href="audio_8c_source.html#l00964">reset_audio_pvs()</a>.</p>
 
 </div>
 </div>
-<a id="gaee2874ca3e2d8272db7ab53b174f87e1" name="gaee2874ca3e2d8272db7ab53b174f87e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee2874ca3e2d8272db7ab53b174f87e1">&#9670;&#160;</a></span>allocate_audio_scratch_hrtf()</h2>
+<a id="gad0011512b2c74c35966f2ea467be8220" name="gad0011512b2c74c35966f2ea467be8220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0011512b2c74c35966f2ea467be8220">&#9670;&#160;</a></span>allocate_audio_scratch_hrtf()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void allocate_audio_scratch_hrtf </td>
@@ -2199,11 +2192,6 @@ generate_synthetic_ir_tail()</dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Allocates <a class="el" href="main_8c.html#a164f3d953f3464013633ea77e299eb83">AUDIO_SCRATCH</a> based on HRTF size. </p>
@@ -2216,20 +2204,17 @@ generate_synthetic_ir_tail()</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00067">67</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
 
-<p class="reference">References <a class="el" href="audio__ir_8c_source.html#l00067">allocate_audio_scratch_hrtf()</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="engine__types_8h_source.html#l00453">AudioScratchBuffers::complex_ir_len</a>, <a class="el" href="engine__types_8h_source.html#l00451">AudioScratchBuffers::final_ir_len</a>, <a class="el" href="main_8c_source.html#l00071">HRTF_LENGTH</a>, <a class="el" href="engine__types_8h_source.html#l00459">AudioScratchBuffers::IR_bwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00458">AudioScratchBuffers::IR_fwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00452">AudioScratchBuffers::ir_len</a>, <a class="el" href="engine__types_8h_source.html#l00470">AudioScratchBuffers::IR_ROT</a>, <a class="el" href="engine__types_8h_source.html#l00471">AudioScratchBuffers::IR_ROT_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00462">AudioScratchBuffers::IR_SUM_L</a>, <a class="el" href="engine__types_8h_source.html#l00464">AudioScratchBuffers::IR_SUM_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00463">AudioScratchBuffers::IR_SUM_R</a>, <a class="el" href="engine__types_8h_source.html#l00465">AudioScratchBuffers::IR_SUM_R_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00088">MAX_IR_SAMPLES</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00009">MAX_SAMPLES</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l00457">AudioScratchBuffers::static_fwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00466">AudioScratchBuffers::STATIC_HRTF_L</a>, <a class="el" href="engine__types_8h_source.html#l00468">AudioScratchBuffers::STATIC_HRTF_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00467">AudioScratchBuffers::STATIC_HRTF_R</a>, and <a class="el" href="engine__types_8h_source.html#l00469">AudioScratchBuffers::STATIC_HRTF_R_FWD</a>.</p>
+<p class="reference">References <a class="el" href="audio__ir_8c_source.html#l00067">allocate_audio_scratch_hrtf()</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="engine__types_8h_source.html#l00453">AudioScratchBuffers::complex_ir_len</a>, <a class="el" href="engine__types_8h_source.html#l00451">AudioScratchBuffers::final_ir_len</a>, <a class="el" href="main_8c_source.html#l00071">HRTF_LENGTH</a>, <a class="el" href="engine__types_8h_source.html#l00459">AudioScratchBuffers::IR_bwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00458">AudioScratchBuffers::IR_fwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00452">AudioScratchBuffers::ir_len</a>, <a class="el" href="engine__types_8h_source.html#l00470">AudioScratchBuffers::IR_ROT</a>, <a class="el" href="engine__types_8h_source.html#l00471">AudioScratchBuffers::IR_ROT_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00462">AudioScratchBuffers::IR_SUM_L</a>, <a class="el" href="engine__types_8h_source.html#l00464">AudioScratchBuffers::IR_SUM_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00463">AudioScratchBuffers::IR_SUM_R</a>, <a class="el" href="engine__types_8h_source.html#l00465">AudioScratchBuffers::IR_SUM_R_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00088">MAX_IR_SAMPLES</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00009">MAX_SAMPLES</a>, <a class="el" href="mathf_8h_source.html#l00011">round_up_power_of_two()</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l00457">AudioScratchBuffers::static_fwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00466">AudioScratchBuffers::STATIC_HRTF_L</a>, <a class="el" href="engine__types_8h_source.html#l00468">AudioScratchBuffers::STATIC_HRTF_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00467">AudioScratchBuffers::STATIC_HRTF_R</a>, and <a class="el" href="engine__types_8h_source.html#l00469">AudioScratchBuffers::STATIC_HRTF_R_FWD</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00067">allocate_audio_scratch_hrtf()</a>, and <a class="el" href="audio__ir_8c_source.html#l00111">load_hrtf_from_binary()</a>.</p>
 
 </div>
 </div>
-<a id="gacd477621219feb356830a792be5987fd" name="gacd477621219feb356830a792be5987fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacd477621219feb356830a792be5987fd">&#9670;&#160;</a></span>update_player_ir()</h2>
+<a id="ga4ba24868ceda1d80c894aa151487b62d" name="ga4ba24868ceda1d80c894aa151487b62d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ba24868ceda1d80c894aa151487b62d">&#9670;&#160;</a></span>update_player_ir()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void update_player_ir </td>
@@ -2238,11 +2223,6 @@ generate_synthetic_ir_tail()</dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Rotates neighboring IRs to the <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> and then partitions them for convolution in the audio thread. </p>
@@ -2256,20 +2236,17 @@ generate_synthetic_ir_tail()</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00326">326</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00446">AudioScratchBuffers::aprobe_mutex</a>, <a class="el" href="engine__types_8h_source.html#l00385">AudioProbeWeights::APV_id</a>, <a class="el" href="engine__types_8h_source.html#l00091">AUDIO_PROBE_BINS</a>, <a class="el" href="engine__types_8h_source.html#l03093">APV::audio_probes</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="engine__types_8h_source.html#l00448">AudioScratchBuffers::block_size</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l00453">AudioScratchBuffers::complex_ir_len</a>, <a class="el" href="engine__types_8h_source.html#l00450">AudioScratchBuffers::complex_len</a>, <a class="el" href="engine__types_8h_source.html#l00384">AudioProbeWeights::count</a>, <a class="el" href="engine__types_8h_source.html#l01404">AudioProbe::final_ir</a>, <a class="el" href="engine__types_8h_source.html#l00451">AudioScratchBuffers::final_ir_len</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l00456">AudioScratchBuffers::fwd_plan</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l00455">AudioScratchBuffers::HRTF_IR_IN</a>, <a class="el" href="main_8c_source.html#l00074">HRTF_TD</a>, <a class="el" href="engine__types_8h_source.html#l00459">AudioScratchBuffers::IR_bwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00458">AudioScratchBuffers::IR_fwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00452">AudioScratchBuffers::ir_len</a>, <a class="el" href="engine__types_8h_source.html#l01400">AudioProbe::ir_length</a>, <a class="el" href="engine__types_8h_source.html#l00470">AudioScratchBuffers::IR_ROT</a>, <a class="el" href="engine__types_8h_source.html#l00471">AudioScratchBuffers::IR_ROT_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00462">AudioScratchBuffers::IR_SUM_L</a>, <a class="el" href="engine__types_8h_source.html#l00464">AudioScratchBuffers::IR_SUM_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00463">AudioScratchBuffers::IR_SUM_R</a>, <a class="el" href="engine__types_8h_source.html#l00465">AudioScratchBuffers::IR_SUM_R_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00424">HRTFThreadData::last_fwd</a>, <a class="el" href="engine__types_8h_source.html#l00423">HRTFThreadData::last_pos</a>, <a class="el" href="engine__types_8h_source.html#l03168">SceneData::LOADED_AUDIO_PV</a>, <a class="el" href="engine__types_8h_source.html#l03169">SceneData::LOADED_AUDIO_PV_FLAG</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00009">MAX_SAMPLES</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l00097">NUM_PARTITIONS</a>, <a class="el" href="engine__types_8h_source.html#l00449">AudioScratchBuffers::padded_len</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l00386">AudioProbeWeights::probes</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="audio__ir_8c_source.html#l00234">rotate_sh()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l00468">AudioScratchBuffers::STATIC_HRTF_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00469">AudioScratchBuffers::STATIC_HRTF_R_FWD</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="audio__ir_8c_source.html#l00326">update_player_ir()</a>, <a class="el" href="engine__types_8h_source.html#l00429">HRTFThreadData::w</a>, and <a class="el" href="engine__types_8h_source.html#l00387">AudioProbeWeights::weights</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00446">AudioScratchBuffers::aprobe_mutex</a>, <a class="el" href="engine__types_8h_source.html#l00385">AudioProbeWeights::APV_id</a>, <a class="el" href="engine__types_8h_source.html#l00091">AUDIO_PROBE_BINS</a>, <a class="el" href="engine__types_8h_source.html#l03093">APV::audio_probes</a>, <a class="el" href="main_8c_source.html#l00073">AUDIO_SCRATCH</a>, <a class="el" href="engine__types_8h_source.html#l00448">AudioScratchBuffers::block_size</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l00453">AudioScratchBuffers::complex_ir_len</a>, <a class="el" href="engine__types_8h_source.html#l00450">AudioScratchBuffers::complex_len</a>, <a class="el" href="engine__types_8h_source.html#l00384">AudioProbeWeights::count</a>, <a class="el" href="engine__types_8h_source.html#l01404">AudioProbe::final_ir</a>, <a class="el" href="engine__types_8h_source.html#l00451">AudioScratchBuffers::final_ir_len</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::forward</a>, <a class="el" href="engine__types_8h_source.html#l00456">AudioScratchBuffers::fwd_plan</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l00455">AudioScratchBuffers::HRTF_IR_IN</a>, <a class="el" href="main_8c_source.html#l00074">HRTF_TD</a>, <a class="el" href="engine__types_8h_source.html#l00459">AudioScratchBuffers::IR_bwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00458">AudioScratchBuffers::IR_fwd_plan</a>, <a class="el" href="engine__types_8h_source.html#l00452">AudioScratchBuffers::ir_len</a>, <a class="el" href="engine__types_8h_source.html#l01400">AudioProbe::ir_length</a>, <a class="el" href="engine__types_8h_source.html#l00470">AudioScratchBuffers::IR_ROT</a>, <a class="el" href="engine__types_8h_source.html#l00471">AudioScratchBuffers::IR_ROT_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00462">AudioScratchBuffers::IR_SUM_L</a>, <a class="el" href="engine__types_8h_source.html#l00464">AudioScratchBuffers::IR_SUM_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00463">AudioScratchBuffers::IR_SUM_R</a>, <a class="el" href="engine__types_8h_source.html#l00465">AudioScratchBuffers::IR_SUM_R_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00424">HRTFThreadData::last_fwd</a>, <a class="el" href="engine__types_8h_source.html#l00423">HRTFThreadData::last_pos</a>, <a class="el" href="engine__types_8h_source.html#l03168">SceneData::LOADED_AUDIO_PV</a>, <a class="el" href="engine__types_8h_source.html#l03169">SceneData::LOADED_AUDIO_PV_FLAG</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00009">MAX_SAMPLES</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="engine__types_8h_source.html#l00097">NUM_PARTITIONS</a>, <a class="el" href="engine__types_8h_source.html#l00449">AudioScratchBuffers::padded_len</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="engine__types_8h_source.html#l00386">AudioProbeWeights::probes</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::right</a>, <a class="el" href="camera_8c_source.html#l01004">rot()</a>, <a class="el" href="audio__ir_8c_source.html#l00234">rotate_sh()</a>, <a class="el" href="mathf_8h_source.html#l00088">rotation_matrix_r()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l00468">AudioScratchBuffers::STATIC_HRTF_L_FWD</a>, <a class="el" href="engine__types_8h_source.html#l00469">AudioScratchBuffers::STATIC_HRTF_R_FWD</a>, <a class="el" href="engine__types_8h_source.html#l01348">Camera::up</a>, <a class="el" href="audio__ir_8c_source.html#l00326">update_player_ir()</a>, <a class="el" href="engine__types_8h_source.html#l00429">HRTFThreadData::w</a>, and <a class="el" href="engine__types_8h_source.html#l00387">AudioProbeWeights::weights</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00450">hrtf_worker()</a>, and <a class="el" href="audio__ir_8c_source.html#l00326">update_player_ir()</a>.</p>
 
 </div>
 </div>
-<a id="gaaca326df599f9db4a505794b1260a961" name="gaaca326df599f9db4a505794b1260a961"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaca326df599f9db4a505794b1260a961">&#9670;&#160;</a></span>hrtf_worker()</h2>
+<a id="gaf333663f8366546044641f5eb5d33f63" name="gaf333663f8366546044641f5eb5d33f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf333663f8366546044641f5eb5d33f63">&#9670;&#160;</a></span>hrtf_worker()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int SDLCALL hrtf_worker </td>
@@ -2278,15 +2255,10 @@ generate_synthetic_ir_tail()</dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Main thread loop for <a class="el" href="#struct_h_r_t_f_thread_data" title="The data for the thread that prepares IRs by rotating then convolving them with an HRTF before it pre...">HRTFThreadData</a>. </p>
-<p>Waits for a job and then executes the job, which is calling <a class="el" href="#gacd477621219feb356830a792be5987fd" title="Rotates neighboring IRs to the Player and then partitions them for convolution in the audio thread.">update_player_ir()</a>.</p>
+<p>Waits for a job and then executes the job, which is calling <a class="el" href="#ga4ba24868ceda1d80c894aa151487b62d" title="Rotates neighboring IRs to the Player and then partitions them for convolution in the audio thread.">update_player_ir()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>The <a class="el" href="#struct_h_r_t_f_thread_data" title="The data for the thread that prepares IRs by rotating then convolving them with an HRTF before it pre...">HRTFThreadData</a>. </td></tr>
@@ -2349,7 +2321,7 @@ P_o = \mathrm{FFT}(Y_i) \\\\
 
 <p class="definition">Definition at line <a class="el" href="audio__ir_8c_source.html#l00234">234</a> of file <a class="el" href="audio__ir_8c_source.html">audio_ir.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00020">mat3::a0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::a2</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::b2</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c0</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c1</a>, <a class="el" href="types_8h_source.html#l00020">mat3::c2</a>, <a class="el" href="audio__ir_8c_source.html#l00234">rotate_sh()</a>, and <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>.</p>
+<p class="reference">References <a class="el" href="camera_8c_source.html#l01004">rot()</a>, <a class="el" href="audio__ir_8c_source.html#l00234">rotate_sh()</a>, and <a class="el" href="engine__types_8h_source.html#l00184">SH_MAX</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio__ir_8c_source.html#l00234">rotate_sh()</a>, and <a class="el" href="audio__ir_8c_source.html#l00326">update_player_ir()</a>.</p>
 
@@ -2532,24 +2504,18 @@ P_o = \mathrm{FFT}(Y_i) \\\\
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const float AUDIO_BAND_FREQ[] = {125.0f, 250.0f, 500.0f, 1000.0f, 2000.0f, 4000.0f}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Audio frequencies for each band for audio probe baking. </p>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00101">101</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l01266">generate_synthetic_IR_tail()</a>.</p>
 
 </div>
 </div>

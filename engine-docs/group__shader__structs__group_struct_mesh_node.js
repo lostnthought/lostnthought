@@ -29,7 +29,7 @@ var group__shader__structs__group_struct_mesh_node =
     [ "skin", "group__shader__structs__group.html#a20eeedea7c8205b3bece46555e94869e", null ],
     [ "skin_offset", "group__shader__structs__group.html#a5a0b1fe399002740a59f43f531fb42bc", null ],
     [ "parent", "group__shader__structs__group.html#aa7506a4c6e7c96ccce6782d7d6cd875e", null ],
-    [ "children", "group__shader__structs__group.html#a2c30498e928cc2cc11b005c6a278e60d", null ],
+    [ "children", "group__shader__structs__group.html#a8cc1c69471c206147002e5b4b699e3c6", null ],
     [ "child_count", "group__shader__structs__group.html#ac44cecf797eaedd61a44a610a95132be", null ],
     [ "static_mesh", "group__shader__structs__group.html#ae70c9467f620aefe392360e41f4e1a10", null ],
     [ "offset", "group__shader__structs__group.html#a46646b06450a7e9f176ad29ea0c8771f", null ],

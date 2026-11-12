@@ -154,20 +154,20 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafb615badfa6e3d167cdd3af384b6ef1a" id="r_gafb615badfa6e3d167cdd3af384b6ef1a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gafb615badfa6e3d167cdd3af384b6ef1a">heap_swap</a> (<a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a> *a, <a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a> *b)</td></tr>
-<tr class="memdesc:gafb615badfa6e3d167cdd3af384b6ef1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps A and B.  <br /></td></tr>
-<tr class="memitem:ga7c079b4e651f7b5f65e3305338adac9e" id="r_ga7c079b4e651f7b5f65e3305338adac9e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga7c079b4e651f7b5f65e3305338adac9e">heap_push</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *h)</td></tr>
-<tr class="memdesc:ga7c079b4e651f7b5f65e3305338adac9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a node has been pushed to the top of the stack, we reorder by f score.  <br /></td></tr>
-<tr class="memitem:ga523f30dc0b1ef89244c290e97782f07d" id="r_ga523f30dc0b1ef89244c290e97782f07d"><td class="memItemLeft">static <a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga523f30dc0b1ef89244c290e97782f07d">heap_pop</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *h)</td></tr>
-<tr class="memdesc:ga523f30dc0b1ef89244c290e97782f07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops the bottommost root off of the <a class="el" href="engine__types_8h.html#struct_open_node" title="A node inside of the min_heap of an AStarWorkspace.">OpenNode</a> <a class="el" href="types_8h.html#struct_vector">Vector</a> and then places the topmost node onto the bottom and resorts.  <br /></td></tr>
-<tr class="memitem:ga8b36d58689df80c946bce67ba65eee57" id="r_ga8b36d58689df80c946bce67ba65eee57"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga8b36d58689df80c946bce67ba65eee57">reconstruct_path_aportal</a> (<a class="el" href="engine__types_8h.html#struct_a_star_workspace">AStarWorkspace</a> *WS, int start, int end)</td></tr>
-<tr class="memdesc:ga8b36d58689df80c946bce67ba65eee57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the <a class="el" href="engine__types_8h.html#struct_a_star_state_stack" title="A running stack of nodes in a path that tracks where they came from so they can be retraced at the en...">AStarStateStack</a> and backtracks to find the entire path.  <br /></td></tr>
-<tr class="memitem:ga5174f53a5cc12f6f967c3673d6a3f70d" id="r_ga5174f53a5cc12f6f967c3673d6a3f70d"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ga5174f53a5cc12f6f967c3673d6a3f70d">a_star_aportal</a> (<a class="el" href="engine__types_8h.html#struct_a_star_workspace">AStarWorkspace</a> *WS, int start, int end)</td></tr>
-<tr class="memdesc:ga5174f53a5cc12f6f967c3673d6a3f70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conducts AStar between a start and end point in <a class="el" href="#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s.  <br /></td></tr>
-<tr class="memitem:ga322cdfb29687eddebea291e79c55e69c" id="r_ga322cdfb29687eddebea291e79c55e69c"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#ga322cdfb29687eddebea291e79c55e69c">calculate_path_volume_equal_power</a> (float path_distance, float min_distance, float max_distance)</td></tr>
-<tr class="memdesc:ga322cdfb29687eddebea291e79c55e69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates volume over a path.  <br /></td></tr>
-<tr class="memitem:ga43f9cf94d3a482f9608a49e32b7a018d" id="r_ga43f9cf94d3a482f9608a49e32b7a018d"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ga43f9cf94d3a482f9608a49e32b7a018d">pathfind_audio_occlusion</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> listener_pos, int closest_l, <a class="el" href="types_8h.html#structvec3">vec3</a> emitter_pos, <a class="el" href="types_8h.html#structvec3">vec3</a> *out_pos, float *out_volume, float *distance)</td></tr>
-<tr class="memdesc:ga43f9cf94d3a482f9608a49e32b7a018d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds closest <a class="el" href="#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a> to the <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> and calls AStar to pathfind, then calulcates the volume.  <br /></td></tr>
+<tr class="memitem:ga487e455cc2b42c020b182206b7d497d3" id="r_ga487e455cc2b42c020b182206b7d497d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga487e455cc2b42c020b182206b7d497d3">heap_swap</a> (<a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a> *a, <a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a> *b)</td></tr>
+<tr class="memdesc:ga487e455cc2b42c020b182206b7d497d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps A and B.  <br /></td></tr>
+<tr class="memitem:ga7093a9213799e40e37e1b14bd029341c" id="r_ga7093a9213799e40e37e1b14bd029341c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga7093a9213799e40e37e1b14bd029341c">heap_push</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *h)</td></tr>
+<tr class="memdesc:ga7093a9213799e40e37e1b14bd029341c"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a node has been pushed to the top of the stack, we reorder by f score.  <br /></td></tr>
+<tr class="memitem:ga78436d8b6a3d6a10cd1ed61b34da2f42" id="r_ga78436d8b6a3d6a10cd1ed61b34da2f42"><td class="memItemLeft"><a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga78436d8b6a3d6a10cd1ed61b34da2f42">heap_pop</a> (<a class="el" href="types_8h.html#struct_vector">Vector</a> *h)</td></tr>
+<tr class="memdesc:ga78436d8b6a3d6a10cd1ed61b34da2f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops the bottommost root off of the <a class="el" href="engine__types_8h.html#struct_open_node" title="A node inside of the min_heap of an AStarWorkspace.">OpenNode</a> <a class="el" href="types_8h.html#struct_vector">Vector</a> and then places the topmost node onto the bottom and resorts.  <br /></td></tr>
+<tr class="memitem:ga711aa6f46ed533e3b7900bbb68f94478" id="r_ga711aa6f46ed533e3b7900bbb68f94478"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga711aa6f46ed533e3b7900bbb68f94478">reconstruct_path_aportal</a> (<a class="el" href="engine__types_8h.html#struct_a_star_workspace">AStarWorkspace</a> *WS, int start, int end)</td></tr>
+<tr class="memdesc:ga711aa6f46ed533e3b7900bbb68f94478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the <a class="el" href="engine__types_8h.html#struct_a_star_state_stack" title="A running stack of nodes in a path that tracks where they came from so they can be retraced at the en...">AStarStateStack</a> and backtracks to find the entire path.  <br /></td></tr>
+<tr class="memitem:gaa9cc2eeb22133bdffa267dcc4fb3428b" id="r_gaa9cc2eeb22133bdffa267dcc4fb3428b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#gaa9cc2eeb22133bdffa267dcc4fb3428b">a_star_aportal</a> (<a class="el" href="engine__types_8h.html#struct_a_star_workspace">AStarWorkspace</a> *WS, int start, int end)</td></tr>
+<tr class="memdesc:gaa9cc2eeb22133bdffa267dcc4fb3428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conducts AStar between a start and end point in <a class="el" href="#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s.  <br /></td></tr>
+<tr class="memitem:ga62204015095db7dcd6503eb8fe37a149" id="r_ga62204015095db7dcd6503eb8fe37a149"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ga62204015095db7dcd6503eb8fe37a149">calculate_path_volume_equal_power</a> (float path_distance, float min_distance, float max_distance)</td></tr>
+<tr class="memdesc:ga62204015095db7dcd6503eb8fe37a149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates volume over a path.  <br /></td></tr>
+<tr class="memitem:gadf738949c4fc915e5aec3add2cbf2ab8" id="r_gadf738949c4fc915e5aec3add2cbf2ab8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#gadf738949c4fc915e5aec3add2cbf2ab8">pathfind_audio_occlusion</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> listener_pos, int closest_l, <a class="el" href="types_8h.html#structvec3">vec3</a> emitter_pos, <a class="el" href="types_8h.html#structvec3">vec3</a> *out_pos, float *out_volume, float *distance)</td></tr>
+<tr class="memdesc:gadf738949c4fc915e5aec3add2cbf2ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds closest <a class="el" href="#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a> to the <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> and calls AStar to pathfind, then calulcates the volume.  <br /></td></tr>
 <tr class="memitem:gaf16a797b8464b2f882abbe2fe8a9552e" id="r_gaf16a797b8464b2f882abbe2fe8a9552e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gaf16a797b8464b2f882abbe2fe8a9552e">update_audio_occlusion</a> (<a class="el" href="engine__types_8h.html#struct_player">Player</a> *player)</td></tr>
 <tr class="memdesc:gaf16a797b8464b2f882abbe2fe8a9552e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raycasts from player to audio sources to determine occlusion and performs a star if necessary.  <br /></td></tr>
 <tr class="memitem:ga46b47ad8e2f0888c22bd7e19befeca47" id="r_ga46b47ad8e2f0888c22bd7e19befeca47"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ga46b47ad8e2f0888c22bd7e19befeca47">find_closest_visible_aportal</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> pos)</td></tr>
@@ -244,7 +244,7 @@ int - <a class="el" href="types_8h.html#struct_vector">Vector</a> of <a class="e
 <div class="textblock"><p>An <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> that plays audio possibily from a certain position or at a certain time. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="audio_8c.html" title="Audio probe baking, portal creation, probe volumes, and emitter functions.">audio/audio.c</a> </dd>
 <dd>
-<a class="el" href="main_8c.html#ab6e8e06d25f1c3725fe2be293a97a170">AUDIO_EMITTERS</a> </dd></dl>
+<a class="el" href="main_8c.html#a31e50f5473587b66b22240a9e35cd8f8">AUDIO_EMITTERS</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00530">530</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 </div><table class="fieldtable">
@@ -260,7 +260,7 @@ The path to the sound. </td></tr>
 <td class="fieldname">
 id</td>
 <td class="fielddoc">
-The static ID of the <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> inside of <a class="el" href="main_8c.html#ab6e8e06d25f1c3725fe2be293a97a170">AUDIO_EMITTERS</a>. </td></tr>
+The static ID of the <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> inside of <a class="el" href="main_8c.html#a31e50f5473587b66b22240a9e35cd8f8">AUDIO_EMITTERS</a>. </td></tr>
 <tr><td class="fieldtype">
 <a id="aaba2fbe6538b6fd4071d1de47ebfb122" name="aaba2fbe6538b6fd4071d1de47ebfb122"></a>ma_sound</td>
 <td class="fieldname">
@@ -395,14 +395,11 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="gafb615badfa6e3d167cdd3af384b6ef1a" name="gafb615badfa6e3d167cdd3af384b6ef1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafb615badfa6e3d167cdd3af384b6ef1a">&#9670;&#160;</a></span>heap_swap()</h2>
+<a id="ga487e455cc2b42c020b182206b7d497d3" name="ga487e455cc2b42c020b182206b7d497d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga487e455cc2b42c020b182206b7d497d3">&#9670;&#160;</a></span>heap_swap()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void heap_swap </td>
@@ -415,11 +412,6 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
           <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a> *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Swaps A and B. </p>
@@ -432,14 +424,11 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 </div>
 </div>
-<a id="ga7c079b4e651f7b5f65e3305338adac9e" name="ga7c079b4e651f7b5f65e3305338adac9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7c079b4e651f7b5f65e3305338adac9e">&#9670;&#160;</a></span>heap_push()</h2>
+<a id="ga7093a9213799e40e37e1b14bd029341c" name="ga7093a9213799e40e37e1b14bd029341c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7093a9213799e40e37e1b14bd029341c">&#9670;&#160;</a></span>heap_push()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void heap_push </td>
@@ -448,11 +437,6 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>After a node has been pushed to the top of the stack, we reorder by f score. </p>
@@ -471,14 +455,11 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 </div>
 </div>
-<a id="ga523f30dc0b1ef89244c290e97782f07d" name="ga523f30dc0b1ef89244c290e97782f07d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga523f30dc0b1ef89244c290e97782f07d">&#9670;&#160;</a></span>heap_pop()</h2>
+<a id="ga78436d8b6a3d6a10cd1ed61b34da2f42" name="ga78436d8b6a3d6a10cd1ed61b34da2f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78436d8b6a3d6a10cd1ed61b34da2f42">&#9670;&#160;</a></span>heap_pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="engine__types_8h.html#struct_open_node">OpenNode</a> heap_pop </td>
@@ -487,11 +468,6 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Pops the bottommost root off of the <a class="el" href="engine__types_8h.html#struct_open_node" title="A node inside of the min_heap of an AStarWorkspace.">OpenNode</a> <a class="el" href="types_8h.html#struct_vector">Vector</a> and then places the topmost node onto the bottom and resorts. </p>
@@ -511,14 +487,11 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 </div>
 </div>
-<a id="ga8b36d58689df80c946bce67ba65eee57" name="ga8b36d58689df80c946bce67ba65eee57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b36d58689df80c946bce67ba65eee57">&#9670;&#160;</a></span>reconstruct_path_aportal()</h2>
+<a id="ga711aa6f46ed533e3b7900bbb68f94478" name="ga711aa6f46ed533e3b7900bbb68f94478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga711aa6f46ed533e3b7900bbb68f94478">&#9670;&#160;</a></span>reconstruct_path_aportal()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void reconstruct_path_aportal </td>
@@ -536,11 +509,6 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Traverses the <a class="el" href="engine__types_8h.html#struct_a_star_state_stack" title="A running stack of nodes in a path that tracks where they came from so they can be retraced at the en...">AStarStateStack</a> and backtracks to find the entire path. </p>
@@ -554,6 +522,8 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
   </table>
   </dd>
 </dl>
+<p>&lt;The maximum amount of portals that are allocated to <a class="el" href="engine__types_8h.html#abeb0e5641d38b3a6e4b9950e7a2d104d" title="The path indices that are returned.">AStarWorkspace.path</a></p>
+<p>&lt;The maximum amount of portals that are allocated to <a class="el" href="engine__types_8h.html#abeb0e5641d38b3a6e4b9950e7a2d104d" title="The path indices that are returned.">AStarWorkspace.path</a></p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00545">545</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
@@ -563,14 +533,11 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 </div>
 </div>
-<a id="ga5174f53a5cc12f6f967c3673d6a3f70d" name="ga5174f53a5cc12f6f967c3673d6a3f70d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5174f53a5cc12f6f967c3673d6a3f70d">&#9670;&#160;</a></span>a_star_aportal()</h2>
+<a id="gaa9cc2eeb22133bdffa267dcc4fb3428b" name="gaa9cc2eeb22133bdffa267dcc4fb3428b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9cc2eeb22133bdffa267dcc4fb3428b">&#9670;&#160;</a></span>a_star_aportal()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int a_star_aportal </td>
@@ -588,11 +555,6 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Conducts AStar between a start and end point in <a class="el" href="#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a>s. </p>
@@ -609,20 +571,17 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00576">576</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="audio_8c_source.html#l00576">a_star_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l00401">AudioPortal::adjacent_portals</a>, <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03016">AStarStateStack::came_from</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03034">AStarWorkspace::current_run</a>, <a class="el" href="engine__types_8h_source.html#l03015">AStarStateStack::f</a>, <a class="el" href="engine__types_8h_source.html#l02999">OpenNode::f</a>, <a class="el" href="engine__types_8h_source.html#l03014">AStarStateStack::g</a>, <a class="el" href="engine__types_8h_source.html#l02998">OpenNode::g</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio_8c_source.html#l00527">heap_pop()</a>, <a class="el" href="audio_8c_source.html#l00515">heap_push()</a>, <a class="el" href="engine__types_8h_source.html#l02997">OpenNode::i</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l03033">AStarWorkspace::min_heap</a>, <a class="el" href="engine__types_8h_source.html#l03000">OpenNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l03031">AStarWorkspace::path_count</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="audio_8c_source.html#l00545">reconstruct_path_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l03017">AStarStateStack::run_id</a>, <a class="el" href="engine__types_8h_source.html#l03029">AStarWorkspace::stack</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+<p class="reference">References <a class="el" href="audio_8c_source.html#l00576">a_star_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l00401">AudioPortal::adjacent_portals</a>, <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03016">AStarStateStack::came_from</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l03034">AStarWorkspace::current_run</a>, <a class="el" href="engine__types_8h_source.html#l03015">AStarStateStack::f</a>, <a class="el" href="engine__types_8h_source.html#l02999">OpenNode::f</a>, <a class="el" href="engine__types_8h_source.html#l03014">AStarStateStack::g</a>, <a class="el" href="engine__types_8h_source.html#l02998">OpenNode::g</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio_8c_source.html#l00527">heap_pop()</a>, <a class="el" href="audio_8c_source.html#l00515">heap_push()</a>, <a class="el" href="engine__types_8h_source.html#l02997">OpenNode::i</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l03033">AStarWorkspace::min_heap</a>, <a class="el" href="engine__types_8h_source.html#l03000">OpenNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l03031">AStarWorkspace::path_count</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="audio_8c_source.html#l00545">reconstruct_path_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l03017">AStarStateStack::run_id</a>, <a class="el" href="engine__types_8h_source.html#l03029">AStarWorkspace::stack</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00576">a_star_aportal()</a>, and <a class="el" href="audio_8c_source.html#l00661">pathfind_audio_occlusion()</a>.</p>
 
 </div>
 </div>
-<a id="ga322cdfb29687eddebea291e79c55e69c" name="ga322cdfb29687eddebea291e79c55e69c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga322cdfb29687eddebea291e79c55e69c">&#9670;&#160;</a></span>calculate_path_volume_equal_power()</h2>
+<a id="ga62204015095db7dcd6503eb8fe37a149" name="ga62204015095db7dcd6503eb8fe37a149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62204015095db7dcd6503eb8fe37a149">&#9670;&#160;</a></span>calculate_path_volume_equal_power()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float calculate_path_volume_equal_power </td>
@@ -640,11 +599,6 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>max_distance</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Calculates volume over a path. </p>
@@ -666,14 +620,11 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 </div>
 </div>
-<a id="ga43f9cf94d3a482f9608a49e32b7a018d" name="ga43f9cf94d3a482f9608a49e32b7a018d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43f9cf94d3a482f9608a49e32b7a018d">&#9670;&#160;</a></span>pathfind_audio_occlusion()</h2>
+<a id="gadf738949c4fc915e5aec3add2cbf2ab8" name="gadf738949c4fc915e5aec3add2cbf2ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf738949c4fc915e5aec3add2cbf2ab8">&#9670;&#160;</a></span>pathfind_audio_occlusion()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool pathfind_audio_occlusion </td>
@@ -706,11 +657,6 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
           <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>distance</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Finds closest <a class="el" href="#struct_audio_portal" title="AudioPortals used for determining paths to transmit sound when emitter and listener are occluded.">AudioPortal</a> to the <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a> and calls AStar to pathfind, then calulcates the volume. </p>
@@ -730,7 +676,7 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00661">661</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="audio_8c_source.html#l00576">a_star_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="main_8c_source.html#l00075">AW</a>, <a class="el" href="audio_8c_source.html#l00650">calculate_path_volume_equal_power()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="audio_8c_source.html#l00475">find_closest_visible_aportal()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l03030">AStarWorkspace::path</a>, <a class="el" href="engine__types_8h_source.html#l03031">AStarWorkspace::path_count</a>, <a class="el" href="audio_8c_source.html#l00661">pathfind_audio_occlusion()</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>.</p>
+<p class="reference">References <a class="el" href="audio_8c_source.html#l00576">a_star_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="main_8c_source.html#l00075">AW</a>, <a class="el" href="audio_8c_source.html#l00650">calculate_path_volume_equal_power()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__utilities_8h_source.html#l00013">end_timer()</a>, <a class="el" href="audio_8c_source.html#l00475">find_closest_visible_aportal()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l03030">AStarWorkspace::path</a>, <a class="el" href="engine__types_8h_source.html#l03031">AStarWorkspace::path_count</a>, <a class="el" href="audio_8c_source.html#l00661">pathfind_audio_occlusion()</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="engine__utilities_8h_source.html#l00008">start_timer()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00661">pathfind_audio_occlusion()</a>, and <a class="el" href="audio_8c_source.html#l01791">update_audio_occlusion()</a>.</p>
 
@@ -758,10 +704,11 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
   </table>
   </dd>
 </dl>
+<p>&lt;The maximum amount of <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a>s</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l01791">1791</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="main_8c_source.html#l00067">AUDIO_EMITTERS</a>, <a class="el" href="engine__types_8h_source.html#l00538">AudioEmitter::base_volume</a>, <a class="el" href="audio_8c_source.html#l00650">calculate_path_volume_equal_power()</a>, <a class="el" href="engine__types_8h_source.html#l00540">AudioEmitter::current_distance</a>, <a class="el" href="engine__types_8h_source.html#l00539">AudioEmitter::current_volume</a>, <a class="el" href="audio_8c_source.html#l00475">find_closest_visible_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l00546">AudioEmitter::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l00544">AudioEmitter::is_occludable</a>, <a class="el" href="engine__types_8h_source.html#l00037">MAX_AUDIO_EMITTERS</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="audio_8c_source.html#l00661">pathfind_audio_occlusion()</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l00541">AudioEmitter::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l00535">AudioEmitter::sound_obj</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="audio_8c_source.html#l01791">update_audio_occlusion()</a>, <a class="el" href="engine__types_8h_source.html#l00542">AudioEmitter::virtual_pos</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="main_8c_source.html#l00067">AUDIO_EMITTERS</a>, <a class="el" href="engine__types_8h_source.html#l00538">AudioEmitter::base_volume</a>, <a class="el" href="audio_8c_source.html#l00650">calculate_path_volume_equal_power()</a>, <a class="el" href="engine__types_8h_source.html#l00540">AudioEmitter::current_distance</a>, <a class="el" href="engine__types_8h_source.html#l00539">AudioEmitter::current_volume</a>, <a class="el" href="audio_8c_source.html#l00475">find_closest_visible_aportal()</a>, <a class="el" href="engine__types_8h_source.html#l00546">AudioEmitter::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l00544">AudioEmitter::is_occludable</a>, <a class="el" href="engine__types_8h_source.html#l00037">MAX_AUDIO_EMITTERS</a>, <a class="el" href="engine__types_8h_source.html#l01333">Skeleton::neck</a>, <a class="el" href="audio_8c_source.html#l00661">pathfind_audio_occlusion()</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l00541">AudioEmitter::pos</a>, <a class="el" href="engine__types_8h_source.html#l01273">Spring::pos</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="engine__types_8h_source.html#l03056">Player::skeleton</a>, <a class="el" href="engine__types_8h_source.html#l00535">AudioEmitter::sound_obj</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="audio_8c_source.html#l01791">update_audio_occlusion()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="engine__types_8h_source.html#l00542">AudioEmitter::virtual_pos</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="audio_8c_source.html#l01791">update_audio_occlusion()</a>.</p>
 
@@ -793,7 +740,7 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00475">475</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="audio_8c_source.html#l00475">find_closest_visible_aportal()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="audio_8c_source.html#l00475">find_closest_visible_aportal()</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00475">find_closest_visible_aportal()</a>, <a class="el" href="audio_8c_source.html#l00661">pathfind_audio_occlusion()</a>, and <a class="el" href="audio_8c_source.html#l01791">update_audio_occlusion()</a>.</p>
 
@@ -818,7 +765,7 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00418">418</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00401">AudioPortal::adjacent_portals</a>, <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="utilities_8h_source.html#l00305">PRINT_VEC3N</a>, <a class="el" href="acceleration_8c_source.html#l00365">raycast_scene()</a>, <a class="el" href="audio_8c_source.html#l00418">recalculate_audio_portal_paths()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00401">AudioPortal::adjacent_portals</a>, <a class="el" href="engine__types_8h_source.html#l03425">Globals::audio_portals</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="utilities_8c_source.html#l00074">init_vector()</a>, <a class="el" href="engine__types_8h_source.html#l00400">AudioPortal::pos</a>, <a class="el" href="utilities_8h_source.html#l00305">PRINT_VEC3N</a>, <a class="el" href="acceleration_8c_source.html#l00448">raycast_scene()</a>, <a class="el" href="audio_8c_source.html#l00418">recalculate_audio_portal_paths()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, and <a class="el" href="utilities_8c_source.html#l00049">vector_expand()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="audio_8c_source.html#l00418">recalculate_audio_portal_paths()</a>, and <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>.</p>
 
@@ -926,6 +873,7 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the new emitter. </dd></dl>
+<p>&lt;The maximum amount of <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a>s</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00814">814</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 
@@ -1021,7 +969,7 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
 
 <p class="reference">References <a class="el" href="engine__types_8h_source.html#l00543">AudioEmitter::is_loaded</a>, <a class="el" href="engine__types_8h_source.html#l00545">AudioEmitter::is_loop</a>, <a class="el" href="audio_8c_source.html#l00853">play_emitter()</a>, <a class="el" href="engine__types_8h_source.html#l00541">AudioEmitter::pos</a>, <a class="el" href="engine__types_8h_source.html#l00535">AudioEmitter::sound_obj</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00964">execute_aemitter_undo()</a>, <a class="el" href="init_8c_source.html#l01988">init()</a>, <a class="el" href="audio_8c_source.html#l00853">play_emitter()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, and <a class="el" href="camera_8c_source.html#l00991">update_leg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editor_8c_source.html#l00964">execute_aemitter_undo()</a>, <a class="el" href="init_8c_source.html#l01988">init()</a>, <a class="el" href="audio_8c_source.html#l00853">play_emitter()</a>, <a class="el" href="editor_8c_source.html#l04216">render_audio_menu()</a>, and <a class="el" href="camera_8c_source.html#l01135">update_leg()</a>.</p>
 
 </div>
 </div>
@@ -1078,6 +1026,7 @@ Indicates if this <a class="el" href="#struct_audio_emitter" title="An AudioEmit
   </table>
   </dd>
 </dl>
+<p>&lt;The maximum amount of <a class="el" href="#struct_audio_emitter" title="An AudioEmitter that plays audio possibily from a certain position or at a certain time.">AudioEmitter</a>s</p>
 
 <p class="definition">Definition at line <a class="el" href="audio_8c_source.html#l00886">886</a> of file <a class="el" href="audio_8c_source.html">audio.c</a>.</p>
 

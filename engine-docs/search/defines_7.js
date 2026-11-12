@@ -49,9 +49,8 @@ var searchData=
   ['max_5fui_5fmenu_5fnames_46',['MAX_UI_MENU_NAMES',['../engine__types_8h.html#a82ed1f0b5a7851f7003ef193337c2ed3',1,'engine_types.h']]],
   ['max_5fvertex_5fmemory_47',['MAX_VERTEX_MEMORY',['../main_8c.html#a3cbca218149c208c50fddaec059b4475',1,'main.c']]],
   ['min_48',['MIN',['../mathf_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'mathf.h']]],
-  ['min_5fleaf_5famt_49',['MIN_LEAF_AMT',['../acceleration_8c.html#a11feae468ba6dd44e8406a7fa29e1d24',1,'acceleration.c']]],
-  ['min_5fwalkable_5fsurface_50',['MIN_WALKABLE_SURFACE',['../camera_8c.html#a8f0caca57c692c1db6718bbd657f85df',1,'camera.c']]],
-  ['miniaudio_5fimplementation_51',['MINIAUDIO_IMPLEMENTATION',['../miniaudio__impl_8c.html#abf77f70dc931f91a9f09e7b54d8278f5',1,'miniaudio_impl.c']]],
-  ['minimum_5flight_5fvisibility_5fdist_52',['MINIMUM_LIGHT_VISIBILITY_DIST',['../engine__types_8h.html#a3fae9f31c0605bd1e90fc171551b6557',1,'MINIMUM_LIGHT_VISIBILITY_DIST:&#160;engine_types.h'],['../lightmap__bounce_8comp.html#a3fae9f31c0605bd1e90fc171551b6557',1,'MINIMUM_LIGHT_VISIBILITY_DIST:&#160;lightmap_bounce.comp'],['../probe__bake_8comp.html#a3fae9f31c0605bd1e90fc171551b6557',1,'MINIMUM_LIGHT_VISIBILITY_DIST:&#160;probe_bake.comp']]],
-  ['mn_5fstarting_5fsize_53',['MN_STARTING_SIZE',['../init_8c.html#ab5835803bf228729b8a5a05d7bde3491',1,'init.c']]]
+  ['min_5fwalkable_5fsurface_49',['MIN_WALKABLE_SURFACE',['../camera_8c.html#a8f0caca57c692c1db6718bbd657f85df',1,'camera.c']]],
+  ['miniaudio_5fimplementation_50',['MINIAUDIO_IMPLEMENTATION',['../miniaudio__impl_8c.html#abf77f70dc931f91a9f09e7b54d8278f5',1,'miniaudio_impl.c']]],
+  ['minimum_5flight_5fvisibility_5fdist_51',['MINIMUM_LIGHT_VISIBILITY_DIST',['../engine__types_8h.html#a3fae9f31c0605bd1e90fc171551b6557',1,'MINIMUM_LIGHT_VISIBILITY_DIST:&#160;engine_types.h'],['../lightmap__bounce_8comp.html#a3fae9f31c0605bd1e90fc171551b6557',1,'MINIMUM_LIGHT_VISIBILITY_DIST:&#160;lightmap_bounce.comp'],['../probe__bake_8comp.html#a3fae9f31c0605bd1e90fc171551b6557',1,'MINIMUM_LIGHT_VISIBILITY_DIST:&#160;probe_bake.comp']]],
+  ['mn_5fstarting_5fsize_52',['MN_STARTING_SIZE',['../init_8c.html#ab5835803bf228729b8a5a05d7bde3491',1,'init.c']]]
 ];

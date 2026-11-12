@@ -9,5 +9,5 @@ var group__editor__group_struct_undo =
     [ "next", "group__editor__group.html#ae5694d3705d2d76fe35735125839017c", null ],
     [ "special_bytes", "group__editor__group.html#ac2672a9911071a641cd12a576f996d57", null ],
     [ "structure", "group__editor__group.html#abab619a9c3d303274dcfde144890bf9a", null ],
-    [ "bytes", "group__editor__group.html#aceb4adfd7f91202e320a3285a4a5d94c", null ]
+    [ "bytes", "group__editor__group.html#ab688d5d6fa95ddb3909d36c95e566c67", null ]
 ];

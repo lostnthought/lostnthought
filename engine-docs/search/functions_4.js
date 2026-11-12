@@ -1,12 +1,12 @@
 var searchData=
 [
   ['end_5femitter_0',['end_emitter',['../group__audio__group.html#ga096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c'],['../group__audio__group.html#ga096f4e159caf1c94a71f394b8c8680dd',1,'end_emitter(AudioEmitter *e):&#160;audio.c']]],
-  ['end_5ftimer_1',['end_timer',['../engine__utilities_8h.html#ae527c7c487ec6387400af46102f662a1',1,'engine_utilities.h']]],
+  ['end_5ftimer_1',['end_timer',['../engine__utilities_8h.html#a4d250fa9d7a519cb0032107fa9ede807',1,'engine_utilities.h']]],
   ['epa_2',['epa',['../group__physics__group.html#gafc57382a84d9d6293a1814082a195f7b',1,'GJK.c']]],
-  ['epa_5fadd_5fhorizon_5fface_5fto_5fhull_5ffaces_3',['EPA_add_horizon_face_to_hull_faces',['../group__physics__group.html#gaae4e58568d1a1179c4b5e5b97fb4b291',1,'GJK.c']]],
-  ['epa_5fcheck_5fface_5fvisibility_4',['EPA_check_face_visibility',['../group__physics__group.html#ga6e2eff14474bdb198c2a447c80646851',1,'GJK.c']]],
-  ['epa_5fcheck_5fhorizon_5fedges_5',['EPA_check_horizon_edges',['../group__physics__group.html#gab89e45df95cb73b78244ab28443d2046',1,'GJK.c']]],
-  ['epa_5fexpand_5fhull_6',['EPA_expand_hull',['../group__physics__group.html#ga2f8f3b482d43bb261fcf82f37b891e66',1,'GJK.c']]],
+  ['epa_5fadd_5fhorizon_5fface_5fto_5fhull_5ffaces_3',['EPA_add_horizon_face_to_hull_faces',['../group__physics__group.html#gaa74fa735647866ca4bd19a627e2942fc',1,'GJK.c']]],
+  ['epa_5fcheck_5fface_5fvisibility_4',['EPA_check_face_visibility',['../group__physics__group.html#gace7e151835c57129f2fc6ed730550398',1,'GJK.c']]],
+  ['epa_5fcheck_5fhorizon_5fedges_5',['EPA_check_horizon_edges',['../group__physics__group.html#ga942c3079ee0f22821dd281d20a726f1d',1,'GJK.c']]],
+  ['epa_5fexpand_5fhull_6',['EPA_expand_hull',['../group__physics__group.html#gac67e2aa85cbe775c69eca6a9b2419387',1,'GJK.c']]],
   ['estate_5fchair_5fcombat_7',['ESTATE_chair_combat',['../entity__states_8c.html#a60921760de97285d342884fab2ac5135',1,'entity_states.c']]],
   ['estate_5fchair_5finteract_8',['ESTATE_chair_interact',['../entity__states_8c.html#ac030018416793a0409c7150219507716',1,'ESTATE_chair_interact(void *data):&#160;entity_states.c'],['../entity__states_8h.html#ac030018416793a0409c7150219507716',1,'ESTATE_chair_interact(void *data):&#160;entity_states.c']]],
   ['evaluate_5fsh_9',['evaluate_sh',['../group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c'],['../group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433',1,'evaluate_sh(vec3 dir, float SH[SH_MAX]):&#160;audio_ir.c']]],
@@ -26,11 +26,11 @@ var searchData=
   ['execute_5fui_5felement_5fundo_23',['execute_ui_element_undo',['../group__editor__group.html#gad3720b235adf88883fff1472ae04beee',1,'editor.c']]],
   ['execute_5fui_5fmenu_5fundo_24',['execute_ui_menu_undo',['../group__editor__group.html#ga6deffe0f3c3ae38ff4950ccda8479f89',1,'editor.c']]],
   ['execute_5fundo_25',['execute_undo',['../group__editor__group.html#ga614449112e147d19a2fe864257464d05',1,'execute_undo(Undo *undo):&#160;editor.c'],['../group__editor__group.html#ga614449112e147d19a2fe864257464d05',1,'execute_undo(Undo *undo):&#160;editor.c']]],
-  ['expand_5faccessor_26',['expand_accessor',['../gltf_8c.html#add612b8f1f674abb2e92b58f534215dc',1,'gltf.c']]],
-  ['expand_5fbits_27',['expand_bits',['../mathf_8h.html#a0dc7807068bfa4bc5a9e557ae2c6ea56',1,'mathf.h']]],
+  ['expand_5faccessor_26',['expand_accessor',['../gltf_8c.html#abb0aa60992e22a44bf1db2131411c8fb',1,'gltf.c']]],
+  ['expand_5fbits_27',['expand_bits',['../mathf_8h.html#acc152a61d912faa74dc6d641ff957dea',1,'mathf.h']]],
   ['expand_5fhull_28',['expand_hull',['../mesh_8c.html#a8c42c7ffd76896258674548548f7f989',1,'mesh.c']]],
-  ['expand_5fsampler_29',['expand_sampler',['../gltf_8c.html#a76ee6098e4d93b2651501699c9866647',1,'gltf.c']]],
-  ['extent_30',['extent',['../gltf_8c.html#acc0107409529a33ddc465e1da1290a19',1,'gltf.c']]],
-  ['extract_5frms_31',['extract_rms',['../group__aprobe__group.html#gabe2006e8b2052a0a8d175b4e6b5ff071',1,'audio.c']]],
-  ['extract_5ft60_32',['extract_t60',['../group__aprobe__group.html#ga29684eaf012554ebbe1bbbe2e8252adc',1,'audio.c']]]
+  ['expand_5fsampler_29',['expand_sampler',['../gltf_8c.html#a4102be1dc61a6cf071ace39b0f6b9c87',1,'gltf.c']]],
+  ['extent_30',['extent',['../gltf_8c.html#abf1e81597d3db15972606f6bb20c417d',1,'gltf.c']]],
+  ['extract_5frms_31',['extract_rms',['../group__aprobe__group.html#ga67cad69033b0384deed7843d9c83f2d5',1,'audio.c']]],
+  ['extract_5ft60_32',['extract_t60',['../group__aprobe__group.html#ga54f5725512ad234db39156bbf9d53d8d',1,'audio.c']]]
 ];

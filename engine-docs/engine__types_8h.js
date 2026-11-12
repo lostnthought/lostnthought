@@ -62,7 +62,7 @@ var engine__types_8h =
       [ "instanceOffset", "elements__prefix_8comp.html#aa9490c131aa67c550745e2909ae2804d", null ]
     ] ],
     [ "GlobalInstanceGPU", "engine__types_8h.html#struct_global_instance_g_p_u", [
-      [ "visibility", "engine__types_8h.html#ab7830762de88415489995442cb931141", null ]
+      [ "visibility", "engine__types_8h.html#ab72829a589f684f7e65c006b66b32a49", null ]
     ] ],
     [ "MeshNodeDataGPU", "engine__types_8h.html#struct_mesh_node_data_g_p_u", [
       [ "min", "engine__types_8h.html#aa3e027aaef30769f0197f6e4bafc1143", null ],
@@ -83,7 +83,7 @@ var engine__types_8h =
       [ "pad0", "engine__types_8h.html#aef7facaf940986c9af69a700d43a60b9", null ],
       [ "pad1", "engine__types_8h.html#a2c9247022b4935d03099385ba6f2faef", null ],
       [ "pad2", "engine__types_8h.html#ad145dd8a309e79fa019173fd5d181c13", null ],
-      [ "mns", "engine__types_8h.html#a8b880dbb051f18011d2580da76cf5502", null ]
+      [ "mns", "engine__types_8h.html#a554882e0b260042bb8fe119826b6d5c5", null ]
     ] ],
     [ "TransformGPU", "engine__types_8h.html#struct_transform_g_p_u", [
       [ "mn_id", "engine__types_8h.html#a37858b8411a6e4f1b4a246306a881cb3", null ],
@@ -157,8 +157,8 @@ var engine__types_8h =
       [ "uID", "engine__types_8h.html#a35770914cf2f1e977bed443bee2d56a8", null ]
     ] ],
     [ "ShadowmapUBO", "engine__types_8h.html#struct_shadowmap_u_b_o", [
-      [ "proj", "engine__types_8h.html#a7e16f9d5da3a74397a2f96ec13dc6483", null ],
-      [ "view", "engine__types_8h.html#a19b463d53d75456c23220a89edf67525", null ]
+      [ "proj", "engine__types_8h.html#aa27fa5b6230e69a468a789cb023b4e92", null ],
+      [ "view", "engine__types_8h.html#a3f22a72cbac75707f8d49c5bf5f4ff6c", null ]
     ] ],
     [ "CamData", "engine__types_8h.html#struct_cam_data", [
       [ "cam_pos", "engine__types_8h.html#af7438c9f7aa19b6cd572710d439b3cf7", null ],
@@ -226,7 +226,7 @@ var engine__types_8h =
       [ "on_ground", "engine__types_8h.html#a0bee9a7b1606f635a367c1044b74db1b", null ]
     ] ],
     [ "RProbeData", "engine__types_8h.html#struct_r_probe_data", [
-      [ "probes", "engine__types_8h.html#ad2554bc9ca735b07930d47f2e6133d57", null ]
+      [ "probes", "engine__types_8h.html#a1b2c2c2c47eb667d8916c11ac2f5a83d", null ]
     ] ],
     [ "Biquad", "engine__types_8h.html#struct_biquad", [
       [ "b0", "engine__types_8h.html#a0e93302dc1e1e2b092aba811b21e6de1", null ],
@@ -265,10 +265,10 @@ var engine__types_8h =
       [ "diffuse", "engine__types_8h.html#abecf2aefed4a6ab73b2bdea2a1580d82", null ],
       [ "specular", "engine__types_8h.html#a18db82987ca073fd06392ea4911e7735", null ],
       [ "emissive", "engine__types_8h.html#a0ed6646ed63df9d968cbf6eb0539700a", null ],
-      [ "absorption_coefficients", "engine__types_8h.html#a0712b29180d7a62c6ab53142b55c32c2", null ],
+      [ "absorption_coefficients", "engine__types_8h.html#a1e8f29a7c1f9de17a01dacfaaedcc9fb", null ],
       [ "pad0", "engine__types_8h.html#a9ae88e40cef645349d1b39769854c0c4", null ],
       [ "pad1", "engine__types_8h.html#a9950aa2b8fd56796d7e102638adfe47f", null ],
-      [ "scattering_coefficients", "engine__types_8h.html#abdf7f4d5b274d2bc3086147b32ad1b3c", null ],
+      [ "scattering_coefficients", "engine__types_8h.html#acff007f1d6ad79c6496b8f1e0e533e77", null ],
       [ "pad2", "engine__types_8h.html#a9c0b72c3c990bdaa2894e9d397a8498d", null ],
       [ "pad3", "engine__types_8h.html#a1ae7cc7b93074601864f5fb87244c18b", null ],
       [ "albedo_handle", "engine__types_8h.html#a432d2afe3d8d3c818c71b7a5872ff410", null ],
@@ -285,7 +285,7 @@ var engine__types_8h =
       [ "emissive_strength", "engine__types_8h.html#affe9b8fdb82a77649ba460a008059582", null ]
     ] ],
     [ "MaterialData", "engine__types_8h.html#struct_material_data", [
-      [ "materials", "engine__types_8h.html#a72b61121d806efacefaa2754dc5502b1", null ]
+      [ "materials", "engine__types_8h.html#aa114d5189d6fae5affa0f79e41ecd53f", null ]
     ] ],
     [ "VertexGPU", "engine__types_8h.html#struct_vertex_g_p_u", [
       [ "pos", "engine__types_8h.html#a320c8eb57e3b2c62ea84f6be2c7e3ab1", null ],
@@ -368,7 +368,7 @@ var engine__types_8h =
     [ "SHDataGPU", "engine__types_8h.html#struct_s_h_data_g_p_u", [
       [ "pos", "engine__types_8h.html#a5e87aedddecc4ceb5bb9a788bb2d94de", null ],
       [ "pad0", "engine__types_8h.html#a3851e857f591f76728ee7cdc20e5446a", null ],
-      [ "coefficients", "engine__types_8h.html#a85f04e811333de6c7fda9a170ec317f4", null ]
+      [ "coefficients", "engine__types_8h.html#a0c73c00e40bdc82c6fa71f03291b41c8", null ]
     ] ],
     [ "OBBGPU", "engine__types_8h.html#struct_o_b_b_g_p_u", [
       [ "center", "engine__types_8h.html#aaeed4effeacfa39bc039db0fbd6c44a6", null ],
@@ -383,7 +383,7 @@ var engine__types_8h =
       [ "pad4", "engine__types_8h.html#a23dac4d6aa6f023924e4486d36f4835d", null ]
     ] ],
     [ "ProbeVolumeUBO", "engine__types_8h.html#struct_probe_volume_u_b_o", [
-      [ "obb", "engine__types_8h.html#aa182f982d6240230013b340bbef3141a", null ]
+      [ "obb", "engine__types_8h.html#ab2c22bdaa11f4fe5ce5a77d17a11b50a", null ]
     ] ],
     [ "RProbeUBO", "engine__types_8h.html#struct_r_probe_u_b_o", [
       [ "Align16", "engine__types_8h.html#struct_r_probe_u_b_o_1_1_align16", [
@@ -460,7 +460,7 @@ var engine__types_8h =
     ] ],
     [ "AnimationTrack", "engine__types_8h.html#struct_animation_track", [
       [ "type", "engine__types_8h.html#af108e4f887166901d020e28f7271357c", null ],
-      [ "kf", "engine__types_8h.html#a1789a4a30b4cbd280028115e99420462", null ],
+      [ "kf", "engine__types_8h.html#a230337da89f42acc58235fc29dc50acf", null ],
       [ "kf_count", "engine__types_8h.html#a6d4d8d7e88bca6f0a4c50d4a7ce1456b", null ],
       [ "current_time", "engine__types_8h.html#af4a36f612c08e15ee945cf12a8f79249", null ],
       [ "duration", "engine__types_8h.html#a90ea50376cf70c38d84de8cbea4cda33", null ],
@@ -474,7 +474,7 @@ var engine__types_8h =
       [ "active", "engine__types_8h.html#af13c2ddda19608864a999debc5a8b1a2", null ]
     ] ],
     [ "AnimationComponent", "engine__types_8h.html#struct_animation_component", [
-      [ "tracks", "engine__types_8h.html#a600c572c77cefe65b2f1c16f5442e6eb", null ],
+      [ "tracks", "engine__types_8h.html#a68ad068243ec176e28a536efb327fbf4", null ],
       [ "track_count", "engine__types_8h.html#abbccc9b9a5dadb12307de704b32e3fcf", null ],
       [ "free", "engine__types_8h.html#a7a332e8a9e5db0a4facda430903a1966", null ],
       [ "ent", "engine__types_8h.html#ab5b9aefb939c7c285ece03d2dc397534", null ]
@@ -578,8 +578,8 @@ var engine__types_8h =
       [ "alpha_mode", "engine__types_8h.html#a1116697d593fd2fa0da81cb01d5e1e85", null ],
       [ "alpha_cutoff", "engine__types_8h.html#a9cf41109e740eabaa81212f5e666481b", null ],
       [ "double_sided", "engine__types_8h.html#a34d9e656ee65d44902f0e85e872a6166", null ],
-      [ "absorption_coefficients", "engine__types_8h.html#a590ad845a61691fa0006cf3a2befc557", null ],
-      [ "scattering_coefficients", "engine__types_8h.html#ade2c0716b3f0aa8c6bdb12d2380abe28", null ],
+      [ "absorption_coefficients", "engine__types_8h.html#abbc941d0a31a04d46de0d01bc4af6417", null ],
+      [ "scattering_coefficients", "engine__types_8h.html#a2e5bdea995add10fa089b6727c34bf4c", null ],
       [ "emissive_strength", "engine__types_8h.html#ad1268e90c20368ef2b9e9dc35ac87118", null ],
       [ "fwd_shader", "engine__types_8h.html#ad5ed6836abfb5134b35d0a7fabf29db1", null ],
       [ "gbuffer_shader", "engine__types_8h.html#aa7c4b3c848b82d1d07bbbd5ea9500d73", null ],
@@ -658,7 +658,7 @@ var engine__types_8h =
       [ "final_mat", "engine__types_8h.html#ab973d5c87c6a1ec57dcb1b2383c1b032", null ],
       [ "inverse_bind", "engine__types_8h.html#a717411aa2fb095cb05ea8858371e04de", null ],
       [ "ibm_accessor", "engine__types_8h.html#ad1dfbc97679990f58245559469918f18", null ],
-      [ "animation_indices", "engine__types_8h.html#a95e99f4a2a77a3eeb414c7b535479b3a", null ],
+      [ "animation_indices", "engine__types_8h.html#a5fcb0399a93896fe4f6e7efa82010e36", null ],
       [ "animation_indices_count", "engine__types_8h.html#a5c1585ebda9fb33ea3ea2c9c817f42c4", null ],
       [ "ssbo_offset", "engine__types_8h.html#a83d303e66b49d7985641a22ecf4fdc39", null ]
     ] ],
@@ -762,17 +762,17 @@ var engine__types_8h =
       [ "matrix", "engine__types_8h.html#a2e090097d92b7a0bbe3aa7d2e7e6a3b9", null ]
     ] ],
     [ "EPAWorkspace", "engine__types_8h.html#struct_e_p_a_workspace", [
-      [ "vertices", "engine__types_8h.html#a153a0a3907ca3f05cdd5adcab1e1dbc1", null ],
+      [ "vertices", "engine__types_8h.html#a1005a1718c5bd843a2a0b26e12ce3be6", null ],
       [ "vertices_count", "engine__types_8h.html#ae155fac1308720ea4c8337a7dd3fe59f", null ],
-      [ "faces", "engine__types_8h.html#a6d7bca64130edcc8e6b8861ab10870c8", null ],
+      [ "faces", "engine__types_8h.html#a9cdad06737321ebd8f9e86329598219f", null ],
       [ "faces_count", "engine__types_8h.html#a0c0dd8956a3581f75fdda138a55c8ea8", null ],
-      [ "indices", "engine__types_8h.html#ae855cbe2e1512e05e2521435ea4ad1fd", null ],
+      [ "indices", "engine__types_8h.html#a71dc51711256011739a9a4ce79c9b916", null ],
       [ "indices_count", "engine__types_8h.html#a0ed3169ba748633d025c03847ab06ddd", null ],
-      [ "horizon_edges", "engine__types_8h.html#ae9ad99d19aa83439cb34d3372c6d3da6", null ],
+      [ "horizon_edges", "engine__types_8h.html#ab26f61cea60ffb372c4525f6f0b82bc8", null ],
       [ "horizon_edges_count", "engine__types_8h.html#a34335bc99f9126b717cf96d1fc48900e", null ],
-      [ "horizon_counts", "engine__types_8h.html#accfd8f035b948ae624ea01a914dd15d4", null ],
+      [ "horizon_counts", "engine__types_8h.html#a064af8f7857221d82c70686c94ba945a", null ],
       [ "horizon_counts_count", "engine__types_8h.html#ade38ecc5931d6a11789787f50ae8209b", null ],
-      [ "visible_faces_indices", "engine__types_8h.html#ae693d9f5f5562821053a745f271c39a7", null ],
+      [ "visible_faces_indices", "engine__types_8h.html#a0f21b4c661c8d9b0bd462253fa55f391", null ],
       [ "visible_faces_count", "engine__types_8h.html#a8ebc74ec1f3dfcfb7ee8d727308338fb", null ]
     ] ],
     [ "OpenNode", "engine__types_8h.html#struct_open_node", [
@@ -825,10 +825,10 @@ var engine__types_8h =
       [ "audio_probe_volumes", "engine__types_8h.html#aa2d9068ca16ea120ad4c993d32213f65", null ],
       [ "lighting_probe_volumes", "engine__types_8h.html#a95a959a543c66b347b90d34f0d543054", null ],
       [ "light_bvh", "engine__types_8h.html#a01e2711ec5d23656a8bed8f34d76410f", null ],
-      [ "LOADED_AUDIO_PV", "engine__types_8h.html#a6fe1e2454bc670772eb31f67df4c4cd4", null ],
-      [ "LOADED_AUDIO_PV_FLAG", "engine__types_8h.html#a6f9d67372d7e07a9faafb26101827e94", null ],
-      [ "LOADED_LIGHTING_PV", "engine__types_8h.html#acdece25849ba31ca4971c22cbb79a302", null ],
-      [ "LOADED_LIGHTING_PV_FLAG", "engine__types_8h.html#a575dd6ec714897c8434f68aad05df29f", null ],
+      [ "LOADED_AUDIO_PV", "engine__types_8h.html#a8c12b3562bb891c576394029edef4131", null ],
+      [ "LOADED_AUDIO_PV_FLAG", "engine__types_8h.html#a53220db22f72cbfb1b5afb2b1eac4248", null ],
+      [ "LOADED_LIGHTING_PV", "engine__types_8h.html#a7fd5ef74606ade03d405b9aab07eb11a", null ],
+      [ "LOADED_LIGHTING_PV_FLAG", "engine__types_8h.html#acdbf9848bfd890e2836392f7060e8868", null ],
       [ "LPV_PATH", "engine__types_8h.html#a3a4b52cc5fc6def53b02c16dea6b12d1", null ],
       [ "LPV_FILE", "engine__types_8h.html#a08ce3c442c1f2cb31bf83d64383a276e", null ],
       [ "APV_PATH", "engine__types_8h.html#ab4bb490de6c6799549fbe3c29bbaf60c", null ],
@@ -983,7 +983,7 @@ var engine__types_8h =
     [ "MAX_EPA_HORIZON_COUNTS", "engine__types_8h.html#a0c2fe44fa93628e5e93c35b08eff7e2d", null ],
     [ "MAX_EPA_VISIBLE_FACES_INDICES", "engine__types_8h.html#a83d08e7fa22bd8d4197638fc5ad630da", null ],
     [ "MAX_PORTALS", "engine__types_8h.html#a1a21103ff7897e443ce6d9f4e8c75867", null ],
-    [ "PartitionTableChannel", "group__aprobe__group.html#ga2d95f263ad6f7e50959898ef9e3e281b", null ],
+    [ "PartitionTableChannel", "group__aprobe__group.html#gad0167a8e136d2c823abfc49418f9efab", null ],
     [ "PartitionTable", "group__aprobe__group.html#ga7fae4736b00b65e477b230a17d018cee", null ],
     [ "LightmapUV", "engine__types_8h.html#a09b2bf965b403fcb785f55c2bd36dbe2", null ],
     [ "DebugView", "engine__types_8h.html#ab676c9e978f9e9c7bd5830fb713d55fb", [
@@ -1170,5 +1170,5 @@ var engine__types_8h =
     [ "DEFAULT_LPV_RES", "engine__types_8h.html#a1d560b00f14a300af83f1c129b21e5ca", null ],
     [ "GLOBALS", "engine__types_8h.html#a790e507162ed259d78e359ecf0c320d6", null ],
     [ "cam", "engine__types_8h.html#a3b23650c3f80b53cee3a2c471797c732", null ],
-    [ "LIGHT_CAM", "engine__types_8h.html#a364f5e55d6737b3c21bf8ac717d994a6", null ]
+    [ "LIGHT_CAM", "engine__types_8h.html#a944672a5a59f3daae88e0fde8605a7d7", null ]
 ];

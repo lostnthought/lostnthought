@@ -482,7 +482,7 @@ max_z</td>
 <dd>
 <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> <a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a> BVH: <a class="el" href="lightmap_8vert.html#ab4a0f6a8913a512af20dedd7192b8234" title="BVHNodes.">Mesh.nodes</a> </dd>
 <dd>
-<a class="el" href="acceleration_8c.html">core/acceleration.c</a> </dd></dl>
+<a class="el" href="acceleration_8c.html" title="Acceleration structure generation and how we traverse them.">core/acceleration.c</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="audio__probe__bake_8comp_source.html#l00125">125</a> of file <a class="el" href="audio__probe__bake_8comp_source.html">audio_probe_bake.comp</a>.</p>
 </div><table class="fieldtable">
@@ -531,7 +531,7 @@ count</td>
 <td class="fieldname">
 next</td>
 <td class="fielddoc">
-The pointer to the next node (either right child or parent's right child) for recursion-less traversal. <p>See: assign_next_nodes(). </p>
+The pointer to the next node (either right child or parent's right child) for recursion-less traversal. <p>See: <a class="el" href="acceleration_8c.html#abecfd2a1da5725d6992499b3e064815d" title="Assigns next nodes for stackless traversal top-down.">assign_next_nodes()</a>. </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a31dc15cf2cd10ad89bd5738abfb27e63" name="a31dc15cf2cd10ad89bd5738abfb27e63"></a>uint</td>
@@ -1332,7 +1332,7 @@ b2</td>
 
 <p class="definition">Definition at line <a class="el" href="probe__bake_8comp_source.html#l00561">561</a> of file <a class="el" href="probe__bake_8comp_source.html">probe_bake.comp</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap__bounce_8comp_source.html#l00676">CalculateAttenuation()</a>, and <a class="el" href="main_8c_source.html#l00519">window</a>.</p>
+<p class="reference">References <a class="el" href="lightmap__bounce_8comp_source.html#l00676">CalculateAttenuation()</a>, <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, and <a class="el" href="main_8c_source.html#l00519">window</a>.</p>
 
 </div>
 </div>
@@ -1372,7 +1372,7 @@ b2</td>
 
 <p class="definition">Definition at line <a class="el" href="probe__bake_8comp_source.html#l00572">572</a> of file <a class="el" href="probe__bake_8comp_source.html">probe_bake.comp</a>.</p>
 
-<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00279">RayHit::best_t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00280">RayHit::blocked_t</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00676">CalculateAttenuation()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00019">Light::color</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00020">Light::cos_diff</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::dir</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00479">get_hit_albedo()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00462">get_hit_uvs()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l01473">Light::intensity</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00102">MeshNode::inverse_global_matrix</a>, <a class="el" href="engine__types_8h_source.html#l01474">Light::light_type</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00068">Face::material_id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00276">RayHit::mn_idx</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00069">Face::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00277">RayHit::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00282">RayHit::occluded</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00017">Light::outer_cos</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::radius</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00686">solve_light_source()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00410">traverse_scene_bvh()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00278">RayHit::tri_idx</a>.</p>
+<p class="reference">References <a class="el" href="audio__probe__bake_8comp_source.html#l00279">RayHit::best_t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00280">RayHit::blocked_t</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00676">CalculateAttenuation()</a>, <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00019">Light::color</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00020">Light::cos_diff</a>, <a class="el" href="engine__types_8h_source.html#l01467">Light::dir</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00479">get_hit_albedo()</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00462">get_hit_uvs()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00287">hit</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00281">RayHit::hit</a>, <a class="el" href="engine__types_8h_source.html#l01473">Light::intensity</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00102">MeshNode::inverse_global_matrix</a>, <a class="el" href="engine__types_8h_source.html#l01474">Light::light_type</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00068">Face::material_id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00276">RayHit::mn_idx</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00069">Face::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00277">RayHit::normal</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00282">RayHit::occluded</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00017">Light::outer_cos</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::pos</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00273">RayHit::pos</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::radius</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00686">solve_light_source()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00274">RayHit::t</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00410">traverse_scene_bvh()</a>, and <a class="el" href="audio__probe__bake_8comp_source.html#l00278">RayHit::tri_idx</a>.</p>
 
 </div>
 </div>
@@ -1527,7 +1527,7 @@ b2</td>
 
 <p class="definition">Definition at line <a class="el" href="probe__bake_8comp_source.html#l00824">824</a> of file <a class="el" href="probe__bake_8comp_source.html">probe_bake.comp</a>.</p>
 
-<p class="reference">References <a class="el" href="lightmap__bounce_8comp_source.html#l01002">closest_point_on_aabb()</a>.</p>
+<p class="reference">References <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, and <a class="el" href="lightmap__bounce_8comp_source.html#l01002">closest_point_on_aabb()</a>.</p>
 
 </div>
 </div>

@@ -29,7 +29,7 @@ var init_8c =
     [ "init_fbo", "init_8c.html#ae03340257059fb19212c6d1fd8cb3215", null ],
     [ "change_fbo_resolution", "init_8c.html#ad5c8c6b01959ffaa82147a401353c0df", null ],
     [ "init_sdl_audio", "init_8c.html#a9d30b81bf7fcf5911ee2f1fb0ccb1df9", null ],
-    [ "convolver_node_process_pcm_frames", "init_8c.html#ab1bc467d0820fc400dd65c5bfb47c644", null ],
+    [ "convolver_node_process_pcm_frames", "init_8c.html#ac89caf8732e36717c34d136397332b2e", null ],
     [ "init_audio_scratch_buffers", "init_8c.html#a8159dfaaf3b9976f159cea782c39e2ce", null ],
     [ "deallocate_fbo", "init_8c.html#a21079e49f244ba4fe5c24aa0aa144460", null ],
     [ "init_gl_renderbuffer", "init_8c.html#aa9694abe0c5a00a004e38767e70b5cf3", null ],

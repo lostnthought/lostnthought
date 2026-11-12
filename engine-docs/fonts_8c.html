@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a675de23a65b76d7a51579d301d6301eb" id="r_a675de23a65b76d7a51579d301d6301eb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a675de23a65b76d7a51579d301d6301eb">delete_text_box</a> (int menu, int id)</td></tr>
 <tr class="memdesc:a675de23a65b76d7a51579d301d6301eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a <a class="el" href="group__ui__group.html#struct_text_box" title="A structure holding a Font ID and text to be rendered and transformed with its properties.">TextBox</a> and its text and frees it from the <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>.  <br /></td></tr>
 <tr class="memitem:a2e9128b145fec89cba7a19a3b7190c9b" id="r_a2e9128b145fec89cba7a19a3b7190c9b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2e9128b145fec89cba7a19a3b7190c9b">create_text_box</a> (int menu_id)</td></tr>
-<tr class="memdesc:a2e9128b145fec89cba7a19a3b7190c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a ::DEFAULT_TEXT_BOX.  <br /></td></tr>
+<tr class="memdesc:a2e9128b145fec89cba7a19a3b7190c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="group__ui__group.html#ga75c39c139107ce7138b837e4c470878e">DEFAULT_TEXT_BOX</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -337,7 +337,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00184">184</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="fonts_8c_source.html#l00184">delete_text_box()</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00290">TextBox::parent_container</a>, <a class="el" href="ui_8c_source.html#l00157">remove_text_box_from_container()</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, and <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="ui_8h_source.html#l00568">UIMenu::containers</a>, <a class="el" href="ui_8h_source.html#l00661">DEFAULT_TEXT_BOX</a>, <a class="el" href="fonts_8c_source.html#l00184">delete_text_box()</a>, <a class="el" href="ui_8h_source.html#l00261">TextBox::free</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="ui_8h_source.html#l00290">TextBox::parent_container</a>, <a class="el" href="ui_8c_source.html#l00157">remove_text_box_from_container()</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, and <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00184">delete_text_box()</a>, <a class="el" href="editor_8c_source.html#l01298">execute_text_box_undo()</a>, <a class="el" href="editor_8c_source.html#l01076">execute_ui_element_undo()</a>, <a class="el" href="ui_8c_source.html#l00329">move_text_box_to_menu()</a>, <a class="el" href="editor_8c_source.html#l03040">render_text_menu()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
 
@@ -358,7 +358,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a ::DEFAULT_TEXT_BOX. </p>
+<p>Creates a <a class="el" href="group__ui__group.html#ga75c39c139107ce7138b837e4c470878e">DEFAULT_TEXT_BOX</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">menu_id</td><td>The target <a class="el" href="group__ui__group.html#struct_u_i_menu" title="The top-most UI structure that contains UIElements, TextBoxes, and UIContainers.">UIMenu</a>. </td></tr>
@@ -369,7 +369,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="fonts_8c_source.html#l00202">202</a> of file <a class="el" href="fonts_8c_source.html">fonts.c</a>.</p>
 
-<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, <a class="el" href="ui_8h_source.html#l00289">TextBox::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="fonts_8c_source.html#l00150">move_text_box_to_origin()</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00266">TextBox::text_cap</a>, <a class="el" href="ui_8h_source.html#l00263">TextBox::uID</a>, and <a class="el" href="ui_8h_source.html#l00564">UIMenu::uID</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, <a class="el" href="ui_8h_source.html#l00661">DEFAULT_TEXT_BOX</a>, <a class="el" href="fonts_8c_source.html#l00021">find_empty_text_box_slot()</a>, <a class="el" href="ui_8h_source.html#l00289">TextBox::menu</a>, <a class="el" href="ui_8c_source.html#l00013">MENUS</a>, <a class="el" href="fonts_8c_source.html#l00150">move_text_box_to_origin()</a>, <a class="el" href="ui_8h_source.html#l00265">TextBox::text</a>, <a class="el" href="ui_8h_source.html#l00567">UIMenu::text_boxes</a>, <a class="el" href="ui_8h_source.html#l00266">TextBox::text_cap</a>, <a class="el" href="ui_8h_source.html#l00263">TextBox::uID</a>, and <a class="el" href="ui_8h_source.html#l00564">UIMenu::uID</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="fonts_8c_source.html#l00202">create_text_box()</a>, <a class="el" href="editor_8c_source.html#l03040">render_text_menu()</a>, and <a class="el" href="editor_8c_source.html#l03424">render_ui_menu()</a>.</p>
 

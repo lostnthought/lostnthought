@@ -670,7 +670,7 @@ The corresponding forward rendering shader branch in <a class="el" href="main_8c
 <td class="fieldname">
 gbuffer_shader</td>
 <td class="fielddoc">
-The corresponding gbuffer rendering shader branch in <a class="el" href="main_8c.html#af1652fcad85da131a459957d0a408237" title="render/depth_pre_pass.vert render/depth_pre_pass.frag">DEPTH_PRE_PASS_SHADER</a> or <a class="el" href="main_8c.html#ac5bf88a71dcd55f5012adc2d62e5304c" title="render/depth_pre_pass_no_gbuffer.vert render/depth_pre_pass_no_gbuffer.frag">DEPTH_PRE_PASS_SHADER_MSAA</a>. </td></tr>
+The corresponding gbuffer rendering shader branch in <a class="el" href="main_8c.html#a4d52befefdcacb19ffc0d439d4847eff" title="render/depth_pre_pass.vert render/depth_pre_pass.frag">DEPTH_PRE_PASS_SHADER</a> or <a class="el" href="main_8c.html#af75ff554b279091ba99371e01a13579f" title="render/depth_pre_pass_no_gbuffer.vert render/depth_pre_pass_no_gbuffer.frag">DEPTH_PRE_PASS_SHADER_MSAA</a>. </td></tr>
 <tr><td class="fieldtype">
 <a id="a7e7f914739368a651fe526f7d619b8bd" name="a7e7f914739368a651fe526f7d619b8bd"></a><a class="el" href="types_8h.html#structvec4">vec4</a></td>
 <td class="fieldname">
@@ -1162,9 +1162,9 @@ parent</td>
 <td class="fielddoc">
 The parent to this node, a global index into <a class="el" href="engine__types_8h.html#a114b1b6ada61bb87c773b8debdd8bf99" title="MeshNodes.">Globals.mesh_nodes</a>. </td></tr>
 <tr><td class="fieldtype">
-<a id="a2c30498e928cc2cc11b005c6a278e60d" name="a2c30498e928cc2cc11b005c6a278e60d"></a>int</td>
+<a id="a8cc1c69471c206147002e5b4b699e3c6" name="a8cc1c69471c206147002e5b4b699e3c6"></a>int</td>
 <td class="fieldname">
-children[<a class="el" href="engine__types_8h.html#a54ac09062d2a7b10f41f0dacb23101e0">MAX_NODE_CHILDREN</a>]</td>
+children[128]</td>
 <td class="fielddoc">
 The children to this node, a global index into <a class="el" href="engine__types_8h.html#a114b1b6ada61bb87c773b8debdd8bf99" title="MeshNodes.">Globals.mesh_nodes</a>. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo</a></b></dt><dd>Remove this static array and replace it with a safer memory system for larger node graphs. </dd></dl>
 </td></tr>

@@ -1,8 +1,8 @@
 var audio__ir_8c =
 [
-    [ "allocate_audio_scratch_hrtf", "group__aprobe__group.html#gaee2874ca3e2d8272db7ab53b174f87e1", null ],
-    [ "update_player_ir", "group__aprobe__group.html#gacd477621219feb356830a792be5987fd", null ],
-    [ "hrtf_worker", "group__aprobe__group.html#gaaca326df599f9db4a505794b1260a961", null ],
+    [ "allocate_audio_scratch_hrtf", "group__aprobe__group.html#gad0011512b2c74c35966f2ea467be8220", null ],
+    [ "update_player_ir", "group__aprobe__group.html#ga4ba24868ceda1d80c894aa151487b62d", null ],
+    [ "hrtf_worker", "group__aprobe__group.html#gaf333663f8366546044641f5eb5d33f63", null ],
     [ "evaluate_sh", "group__aprobe__group.html#ga33cb3214a18859fbac84b5832d4ec433", null ],
     [ "load_hrtf_from_binary", "group__aprobe__group.html#gac94670b0a25d91c04c62d2e745727f03", null ],
     [ "fft_channels", "group__aprobe__group.html#ga3b6731fb91c35d5c834c0addcf0753ef", null ],

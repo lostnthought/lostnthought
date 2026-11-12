@@ -11,7 +11,7 @@ var group__aprobe__group_struct_convolver_node =
     [ "fwd_plan", "group__aprobe__group.html#a23813bdc1651cc3e31a42e139dd36f4f", null ],
     [ "bwd_plan", "group__aprobe__group.html#a02efd7603b54e79ccf9b3a0cec155768", null ],
     [ "MONO_FWD", "group__aprobe__group.html#a42945defa266bd88ffcd9659063037f9", null ],
-    [ "AUDIO_HISTORY", "group__aprobe__group.html#afdbc4193245f48c2d83e471c4362ac1c", null ],
+    [ "AUDIO_HISTORY", "group__aprobe__group.html#adac665aeca6769b1d998ade93551d17e", null ],
     [ "PREV_SUM_L", "group__aprobe__group.html#a1cf0033fc6758465031cae0c3554b988", null ],
     [ "PREV_SUM_R", "group__aprobe__group.html#a3fec8327ba83887e2deed00f630eff76", null ],
     [ "SUM_L", "group__aprobe__group.html#abd2b27139fdb351e35a9db2be70e7543", null ],

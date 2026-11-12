@@ -1,8 +1,8 @@
 var entity_8c =
 [
     [ "func_ptr_t", "entity_8c.html#aeb15e5d7315f48d03a9a3ea426c6f3c5", null ],
-    [ "find_state_by_name", "entity_8c.html#a74059d567a5ff37d54a1a0affaec5c0f", null ],
-    [ "find_default_state", "entity_8c.html#a239b8b984a4597e573fe6433bc53c57d", null ],
+    [ "find_state_by_name", "entity_8c.html#a9865ff7e7666d93f458f9bc6f9818431", null ],
+    [ "find_default_state", "entity_8c.html#a3716c34d02cde0f33c38b99ec42b0986", null ],
     [ "STATES_INIT", "entity_8c.html#ac301288b8bbd4156e4b29e02f35af7bb", null ],
     [ "update_entities", "entity_8c.html#a33925adb0c5ab7df69dfb84acf9efdde", null ],
     [ "create_physics_component", "entity_8c.html#a929fe9daf04b8a11d3bf2a44e89e1a75", null ],

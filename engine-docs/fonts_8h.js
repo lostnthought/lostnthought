@@ -1,6 +1,6 @@
 var fonts_8h =
 [
-    [ "FONTS_INIT", "fonts_8h.html#a79c3d287d8b27556e723218c77f7d797", null ],
+    [ "FONTS_INIT", "fonts_8h.html#a58a2eed637eaadd5f18a3c974cf478ed", null ],
     [ "find_empty_text_box_slot", "fonts_8h.html#a618b0e542cb8378b100b0caedaa2fc58", null ],
     [ "read_json_msdf", "fonts_8h.html#a1881ce2b8caacf02e28589674707abe2", null ],
     [ "determine_text_box_dimensions", "fonts_8h.html#aada1f2f4d89d5a5db992fd8da328008c", null ],

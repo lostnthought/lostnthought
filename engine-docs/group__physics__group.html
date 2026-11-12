@@ -177,54 +177,54 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6e2eff14474bdb198c2a447c80646851" id="r_ga6e2eff14474bdb198c2a447c80646851"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga6e2eff14474bdb198c2a447c80646851">EPA_check_face_visibility</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> p, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW)</td></tr>
-<tr class="memdesc:ga6e2eff14474bdb198c2a447c80646851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks what faces are visible from given point (by dotting the normal).  <br /></td></tr>
-<tr class="memitem:gab89e45df95cb73b78244ab28443d2046" id="r_gab89e45df95cb73b78244ab28443d2046"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gab89e45df95cb73b78244ab28443d2046">EPA_check_horizon_edges</a> (<a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a> *face, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW)</td></tr>
-<tr class="memdesc:gab89e45df95cb73b78244ab28443d2046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts edges of each visible face and tests to see if they have matched already within the horizon_edges arraw.  <br /></td></tr>
-<tr class="memitem:gaae4e58568d1a1179c4b5e5b97fb4b291" id="r_gaae4e58568d1a1179c4b5e5b97fb4b291"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#gaae4e58568d1a1179c4b5e5b97fb4b291">EPA_add_horizon_face_to_hull_faces</a> (size_t p_idx, <a class="el" href="types_8h.html#struct_horizon_edge">HorizonEdge</a> e, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW, <a class="el" href="types_8h.html#structvec3">vec3</a> center)</td></tr>
-<tr class="memdesc:gaae4e58568d1a1179c4b5e5b97fb4b291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a horizon face to to the main faces array, while making sure the normal is facing outward.  <br /></td></tr>
-<tr class="memitem:ga2f8f3b482d43bb261fcf82f37b891e66" id="r_ga2f8f3b482d43bb261fcf82f37b891e66"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga2f8f3b482d43bb261fcf82f37b891e66">EPA_expand_hull</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> p, int index, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW, <a class="el" href="types_8h.html#structvec3">vec3</a> centroid)</td></tr>
-<tr class="memdesc:ga2f8f3b482d43bb261fcf82f37b891e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conducts EPA on a given hull with a support point.  <br /></td></tr>
-<tr class="memitem:ga82d662dde6d32298b39258c14964df1b" id="r_ga82d662dde6d32298b39258c14964df1b"><td class="memItemLeft">static <a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga82d662dde6d32298b39258c14964df1b">support_capsule</a> (<a class="el" href="#struct_capsule_data">CapsuleData</a> *cap, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structmat4">mat4</a> inv)</td></tr>
-<tr class="memdesc:ga82d662dde6d32298b39258c14964df1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The support function for a <a class="el" href="#ggaa884075f403706dceea29a61771a0d44a31cbd82026ef3ba5a4b05e538d9ef4d2" title="A capsule is constructed via AABB dimensions and is used for collision tests.">COL_CAPSULE</a>.  <br /></td></tr>
-<tr class="memitem:gacec6a8baa514d1613a4afac26fcee7fc" id="r_gacec6a8baa514d1613a4afac26fcee7fc"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gacec6a8baa514d1613a4afac26fcee7fc">support</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> *v, size_t *index, <a class="el" href="types_8h.html#structvec3">vec3</a> *verts, size_t cnt, <a class="el" href="types_8h.html#structmat4">mat4</a> inv, <a class="el" href="types_8h.html#structvec3">vec3</a> dir)</td></tr>
-<tr class="memdesc:gacec6a8baa514d1613a4afac26fcee7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The support function for a <a class="el" href="#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a> or triangle <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
+<tr class="memitem:gace7e151835c57129f2fc6ed730550398" id="r_gace7e151835c57129f2fc6ed730550398"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gace7e151835c57129f2fc6ed730550398">EPA_check_face_visibility</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> p, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW)</td></tr>
+<tr class="memdesc:gace7e151835c57129f2fc6ed730550398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks what faces are visible from given point (by dotting the normal).  <br /></td></tr>
+<tr class="memitem:ga942c3079ee0f22821dd281d20a726f1d" id="r_ga942c3079ee0f22821dd281d20a726f1d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga942c3079ee0f22821dd281d20a726f1d">EPA_check_horizon_edges</a> (<a class="el" href="types_8h.html#struct_mesh_face">MeshFace</a> *face, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW)</td></tr>
+<tr class="memdesc:ga942c3079ee0f22821dd281d20a726f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts edges of each visible face and tests to see if they have matched already within the horizon_edges arraw.  <br /></td></tr>
+<tr class="memitem:gaa74fa735647866ca4bd19a627e2942fc" id="r_gaa74fa735647866ca4bd19a627e2942fc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#gaa74fa735647866ca4bd19a627e2942fc">EPA_add_horizon_face_to_hull_faces</a> (size_t p_idx, <a class="el" href="types_8h.html#struct_horizon_edge">HorizonEdge</a> e, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW, <a class="el" href="types_8h.html#structvec3">vec3</a> center)</td></tr>
+<tr class="memdesc:gaa74fa735647866ca4bd19a627e2942fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a horizon face to to the main faces array, while making sure the normal is facing outward.  <br /></td></tr>
+<tr class="memitem:gac67e2aa85cbe775c69eca6a9b2419387" id="r_gac67e2aa85cbe775c69eca6a9b2419387"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gac67e2aa85cbe775c69eca6a9b2419387">EPA_expand_hull</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> p, int index, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW, <a class="el" href="types_8h.html#structvec3">vec3</a> centroid)</td></tr>
+<tr class="memdesc:gac67e2aa85cbe775c69eca6a9b2419387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conducts EPA on a given hull with a support point.  <br /></td></tr>
+<tr class="memitem:ga1a417f01916b1133355d730ce04ebe51" id="r_ga1a417f01916b1133355d730ce04ebe51"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga1a417f01916b1133355d730ce04ebe51">support_capsule</a> (<a class="el" href="#struct_capsule_data">CapsuleData</a> *cap, <a class="el" href="types_8h.html#structvec3">vec3</a> dir, <a class="el" href="types_8h.html#structmat4">mat4</a> inv)</td></tr>
+<tr class="memdesc:ga1a417f01916b1133355d730ce04ebe51"><td class="mdescLeft">&#160;</td><td class="mdescRight">The support function for a <a class="el" href="#ggaa884075f403706dceea29a61771a0d44a31cbd82026ef3ba5a4b05e538d9ef4d2" title="A capsule is constructed via AABB dimensions and is used for collision tests.">COL_CAPSULE</a>.  <br /></td></tr>
+<tr class="memitem:gaca1f57cbfd3361331445ba8b5debda59" id="r_gaca1f57cbfd3361331445ba8b5debda59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gaca1f57cbfd3361331445ba8b5debda59">support</a> (<a class="el" href="types_8h.html#structvec3">vec3</a> *v, size_t *index, <a class="el" href="types_8h.html#structvec3">vec3</a> *verts, size_t cnt, <a class="el" href="types_8h.html#structmat4">mat4</a> inv, <a class="el" href="types_8h.html#structvec3">vec3</a> dir)</td></tr>
+<tr class="memdesc:gaca1f57cbfd3361331445ba8b5debda59"><td class="mdescLeft">&#160;</td><td class="mdescRight">The support function for a <a class="el" href="#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a> or triangle <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
 <tr class="memitem:gabe8500bfe4c7345125dc41209422277b" id="r_gabe8500bfe4c7345125dc41209422277b"><td class="memItemLeft"><a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a>&#160;</td><td class="memItemRight"><a class="el" href="#gabe8500bfe4c7345125dc41209422277b">support_diff</a> (<a class="el" href="#struct_collision_data">CollisionData</a> a_cd, <a class="el" href="#struct_collision_data">CollisionData</a> b_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> a_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> b_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> a_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> b_inv, <a class="el" href="types_8h.html#structvec3">vec3</a> dir)</td></tr>
 <tr class="memdesc:gabe8500bfe4c7345125dc41209422277b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds support points for A and B and then finds the difference.  <br /></td></tr>
 <tr class="memitem:gafc57382a84d9d6293a1814082a195f7b" id="r_gafc57382a84d9d6293a1814082a195f7b"><td class="memItemLeft"><a class="el" href="#struct_collision_points">CollisionPoints</a>&#160;</td><td class="memItemRight"><a class="el" href="#gafc57382a84d9d6293a1814082a195f7b">epa</a> (<a class="el" href="#struct_collision_data">CollisionData</a> a_cd, <a class="el" href="#struct_collision_data">CollisionData</a> b_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> a_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> b_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> a_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> b_inv, <a class="el" href="types_8h.html#struct_simplex">Simplex</a> *s, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW)</td></tr>
 <tr class="memdesc:gafc57382a84d9d6293a1814082a195f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Expanding Polytope Algorithm - expands a polytope in a loop as it becomes a polyhedron.  <br /></td></tr>
-<tr class="memitem:gaae7148d441fb72007147d272bcee4a75" id="r_gaae7148d441fb72007147d272bcee4a75"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gaae7148d441fb72007147d272bcee4a75">add_point_to_simplex</a> (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *s, <a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a> p)</td></tr>
-<tr class="memdesc:gaae7148d441fb72007147d272bcee4a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a point to the simplex by placing it at the bottom and shifting the other points forward.  <br /></td></tr>
-<tr class="memitem:ga086750bd2734b6ac8544e78551089bd4" id="r_ga086750bd2734b6ac8544e78551089bd4"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga086750bd2734b6ac8544e78551089bd4">remove_point_from_simplex</a> (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *s, int i)</td></tr>
-<tr class="memdesc:ga086750bd2734b6ac8544e78551089bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a point to the simplex by placing it at the bottom and shifting the other points forward.  <br /></td></tr>
-<tr class="memitem:ga0ffcd49ae3abfe0c39a004af17385731" id="r_ga0ffcd49ae3abfe0c39a004af17385731"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga0ffcd49ae3abfe0c39a004af17385731">replace_simplex_points</a> (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *s, <a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a> abcd[4], int count)</td></tr>
-<tr class="memdesc:ga0ffcd49ae3abfe0c39a004af17385731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces <a class="el" href="types_8h.html#struct_simplex">Simplex</a> with another array of <a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a>.  <br /></td></tr>
+<tr class="memitem:gab8340c4f1eb8b185e10ff7f4f683b2e3" id="r_gab8340c4f1eb8b185e10ff7f4f683b2e3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gab8340c4f1eb8b185e10ff7f4f683b2e3">add_point_to_simplex</a> (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *s, <a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a> p)</td></tr>
+<tr class="memdesc:gab8340c4f1eb8b185e10ff7f4f683b2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a point to the simplex by placing it at the bottom and shifting the other points forward.  <br /></td></tr>
+<tr class="memitem:gad50725990b69d44c6b2391a1b7ce1476" id="r_gad50725990b69d44c6b2391a1b7ce1476"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gad50725990b69d44c6b2391a1b7ce1476">remove_point_from_simplex</a> (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *s, int i)</td></tr>
+<tr class="memdesc:gad50725990b69d44c6b2391a1b7ce1476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a point to the simplex by placing it at the bottom and shifting the other points forward.  <br /></td></tr>
+<tr class="memitem:ga39710e82c92501ded84d5e5f586e200e" id="r_ga39710e82c92501ded84d5e5f586e200e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga39710e82c92501ded84d5e5f586e200e">replace_simplex_points</a> (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *s, <a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a> abcd[4], int count)</td></tr>
+<tr class="memdesc:ga39710e82c92501ded84d5e5f586e200e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces <a class="el" href="types_8h.html#struct_simplex">Simplex</a> with another array of <a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a>.  <br /></td></tr>
 <tr class="memitem:gaa42439ced9d1e166f440078e3abb082a" id="r_gaa42439ced9d1e166f440078e3abb082a"><td class="memItemLeft"><a class="el" href="types_8h.html#structvec3">vec3</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaa42439ced9d1e166f440078e3abb082a">find_next_direction</a> (<a class="el" href="types_8h.html#struct_simplex">Simplex</a> *sn)</td></tr>
 <tr class="memdesc:gaa42439ced9d1e166f440078e3abb082a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds next direction in <a class="el" href="#ga7dca1739af0ed872beb154b155874e9a" title="GJK polytope construction based on A and B (which can be any CollisionType), calls EPA internally.">GJK()</a> by pointing away from current points.  <br /></td></tr>
 <tr class="memitem:ga7dca1739af0ed872beb154b155874e9a" id="r_ga7dca1739af0ed872beb154b155874e9a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ga7dca1739af0ed872beb154b155874e9a">GJK</a> (<a class="el" href="#struct_collision_data">CollisionData</a> a_cd, <a class="el" href="#struct_collision_data">CollisionData</a> b_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> a_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> b_mat, <a class="el" href="types_8h.html#structmat4">mat4</a> a_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> b_inv, <a class="el" href="#struct_collision_points">CollisionPoints</a> *collision_points, <a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *EW)</td></tr>
 <tr class="memdesc:ga7dca1739af0ed872beb154b155874e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GJK polytope construction based on A and B (which can be any <a class="el" href="#gaa884075f403706dceea29a61771a0d44" title="Defines collision types with different behaviors and mesh setup and validation.">CollisionType</a>), calls EPA internally.  <br /></td></tr>
-<tr class="memitem:gae76f302f2b7db074885e122168c3730b" id="r_gae76f302f2b7db074885e122168c3730b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gae76f302f2b7db074885e122168c3730b">PC_apply_velocity</a> (<a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, float dt)</td></tr>
-<tr class="memdesc:gae76f302f2b7db074885e122168c3730b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies gravity to a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a>.  <br /></td></tr>
-<tr class="memitem:gaa9ad316a899c6272f832b5ddff6ec54e" id="r_gaa9ad316a899c6272f832b5ddff6ec54e"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#gaa9ad316a899c6272f832b5ddff6ec54e">generate_capsule_hull_manifold</a> (<a class="el" href="#struct_capsule_data">CapsuleData</a> *cap, <a class="el" href="types_8h.html#structmat4">mat4</a> cap_transform, <a class="el" href="types_8h.html#structvec3">vec3</a> hull_normal, float hull_plane_dist, <a class="el" href="#struct_manifold">Manifold</a> *manifold, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pcB)</td></tr>
-<tr class="memdesc:gaa9ad316a899c6272f832b5ddff6ec54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a manifold between a capsule and a hull plane.  <br /></td></tr>
-<tr class="memitem:ga8b1ea34e8cb186200ff7c7c2ef02bed5" id="r_ga8b1ea34e8cb186200ff7c7c2ef02bed5"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga8b1ea34e8cb186200ff7c7c2ef02bed5">clip_manifold</a> (<a class="el" href="#struct_manifold">Manifold</a> *manifold, <a class="el" href="#struct_collision_points">CollisionPoints</a> *p, <a class="el" href="#struct_collision_data">CollisionData</a> a_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> modelA, <a class="el" href="#struct_collision_data">CollisionData</a> b_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> modelB)</td></tr>
+<tr class="memitem:ga5d6fdab680a9e1d6d2237203f4934459" id="r_ga5d6fdab680a9e1d6d2237203f4934459"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga5d6fdab680a9e1d6d2237203f4934459">PC_apply_velocity</a> (<a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, float dt)</td></tr>
+<tr class="memdesc:ga5d6fdab680a9e1d6d2237203f4934459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies gravity to a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a>.  <br /></td></tr>
+<tr class="memitem:ga8e411a3ade7259cd4ffe88ac49f9b35a" id="r_ga8e411a3ade7259cd4ffe88ac49f9b35a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ga8e411a3ade7259cd4ffe88ac49f9b35a">generate_capsule_hull_manifold</a> (<a class="el" href="#struct_capsule_data">CapsuleData</a> *cap, <a class="el" href="types_8h.html#structmat4">mat4</a> cap_transform, <a class="el" href="types_8h.html#structvec3">vec3</a> hull_normal, float hull_plane_dist, <a class="el" href="#struct_manifold">Manifold</a> *manifold, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pcB)</td></tr>
+<tr class="memdesc:ga8e411a3ade7259cd4ffe88ac49f9b35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a manifold between a capsule and a hull plane.  <br /></td></tr>
+<tr class="memitem:ga8b1ea34e8cb186200ff7c7c2ef02bed5" id="r_ga8b1ea34e8cb186200ff7c7c2ef02bed5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga8b1ea34e8cb186200ff7c7c2ef02bed5">clip_manifold</a> (<a class="el" href="#struct_manifold">Manifold</a> *manifold, <a class="el" href="#struct_collision_points">CollisionPoints</a> *p, <a class="el" href="#struct_collision_data">CollisionData</a> a_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> modelA, <a class="el" href="#struct_collision_data">CollisionData</a> b_cd, <a class="el" href="types_8h.html#structmat4">mat4</a> modelB)</td></tr>
 <tr class="memdesc:ga8b1ea34e8cb186200ff7c7c2ef02bed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clips a manifold based on two different sets of points and faces with separate transforms.  <br /></td></tr>
-<tr class="memitem:gaad801c9161cc6b0c12ab58e7f3a7a469" id="r_gaad801c9161cc6b0c12ab58e7f3a7a469"><td class="memItemLeft">static <a class="el" href="#struct_manifold">Manifold</a> *&#160;</td><td class="memItemRight"><a class="el" href="#gaad801c9161cc6b0c12ab58e7f3a7a469">find_manifold_for_pair</a> (int mn0, int mn1)</td></tr>
-<tr class="memdesc:gaad801c9161cc6b0c12ab58e7f3a7a469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a current <a class="el" href="#struct_manifold" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a> if there is one from <a class="el" href="main_8c.html#addabccd33050c53a5c801708c296e326">MANIFOLDS</a> for a given pair of <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <br /></td></tr>
-<tr class="memitem:ga52c83bb45820a0888856e3f6a6652492" id="r_ga52c83bb45820a0888856e3f6a6652492"><td class="memItemLeft">static <a class="el" href="#struct_manifold">Manifold</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ga52c83bb45820a0888856e3f6a6652492">create_new_manifold</a> (<a class="el" href="#struct_physics_component">PhysicsComponent</a> *a, int mn0, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *b, int mn1)</td></tr>
-<tr class="memdesc:ga52c83bb45820a0888856e3f6a6652492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a free <a class="el" href="#struct_manifold" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a> and initializes it between two <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <br /></td></tr>
-<tr class="memitem:gafc5a7df75b470d6e1c82763494d1c8ad" id="r_gafc5a7df75b470d6e1c82763494d1c8ad"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#gafc5a7df75b470d6e1c82763494d1c8ad">PC_process_collision_node</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, <a class="el" href="lightmap_8vert.html#struct_mesh">Mesh</a> *m0, <a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn0, <a class="el" href="probe__bake_8comp.html#struct_b_v_h_node">BVHNode</a> *node, <a class="el" href="#struct_collision_data">CollisionData</a> cd, <a class="el" href="types_8h.html#structmat4">mat4</a> mat, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0, <a class="el" href="types_8h.html#structmat4">mat4</a> mat_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0_inv, <a class="el" href="#struct_manifold">Manifold</a> *manifold)</td></tr>
-<tr class="memdesc:gafc5a7df75b470d6e1c82763494d1c8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a collision against one <a class="el" href="probe__bake_8comp.html#struct_b_v_h_node" title="Nodes for the acceleration structures of BVHs.">BVHNode</a> inside of a <a class="el" href="#ggaa884075f403706dceea29a61771a0d44a788d04e3f648c22fcc9993bc19730e8b" title="The triangle BVH is generated for this mesh and triangle tests are performed on it.">COL_TRIANGLE</a> static <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>.  <br /></td></tr>
-<tr class="memitem:ga73189c13869d08971be0c490bad341c3" id="r_ga73189c13869d08971be0c490bad341c3"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ga73189c13869d08971be0c490bad341c3">PC_traverse_collision_bvh</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, <a class="el" href="lightmap_8vert.html#struct_mesh">Mesh</a> *m0, <a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn0, <a class="el" href="probe__bake_8comp.html#struct_b_v_h_node">BVHNode</a> *nodes, <a class="el" href="#struct_collision_data">CollisionData</a> cd, <a class="el" href="types_8h.html#structmat4">mat4</a> mat, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0, <a class="el" href="types_8h.html#structmat4">mat4</a> mat_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0_inv, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> tr_aabb, <a class="el" href="#struct_manifold">Manifold</a> *manifold)</td></tr>
-<tr class="memdesc:ga73189c13869d08971be0c490bad341c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the BVH for a static <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> with a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> to detect collisions.  <br /></td></tr>
-<tr class="memitem:gad3cc953064e86b1d3ba079b1a97d2413" id="r_gad3cc953064e86b1d3ba079b1a97d2413"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#gad3cc953064e86b1d3ba079b1a97d2413">PC_traverse_scene_bvh</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, <a class="el" href="#struct_collision_data">CollisionData</a> cd, <a class="el" href="engine__types_8h.html#struct_scene_data">SceneData</a> *sd, <a class="el" href="types_8h.html#structmat4">mat4</a> mat, <a class="el" href="types_8h.html#structmat4">mat4</a> mat_inv, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> aabb)</td></tr>
-<tr class="memdesc:gad3cc953064e86b1d3ba079b1a97d2413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the scene BVH to detect collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a>.  <br /></td></tr>
-<tr class="memitem:ga058a83a289b3c1fc34699ccb1d5f16dc" id="r_ga058a83a289b3c1fc34699ccb1d5f16dc"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga058a83a289b3c1fc34699ccb1d5f16dc">search_collisions_from_pc</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc)</td></tr>
-<tr class="memdesc:ga058a83a289b3c1fc34699ccb1d5f16dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> that has no corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
-<tr class="memitem:ga0383b2ffde5d97cac0d2291166ccf522" id="r_ga0383b2ffde5d97cac0d2291166ccf522"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga0383b2ffde5d97cac0d2291166ccf522">search_collisions_from_hull</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc)</td></tr>
-<tr class="memdesc:ga0383b2ffde5d97cac0d2291166ccf522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> that has a corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
-<tr class="memitem:ga28a8979b5a6c1e0ac021f0fb6ecd0332" id="r_ga28a8979b5a6c1e0ac021f0fb6ecd0332"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ga28a8979b5a6c1e0ac021f0fb6ecd0332">PC_find_collision</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc)</td></tr>
-<tr class="memdesc:ga28a8979b5a6c1e0ac021f0fb6ecd0332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> and determines how based on if its corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> exists or not.  <br /></td></tr>
+<tr class="memitem:ga73b2802d66295354253ad536797417a4" id="r_ga73b2802d66295354253ad536797417a4"><td class="memItemLeft"><a class="el" href="#struct_manifold">Manifold</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ga73b2802d66295354253ad536797417a4">find_manifold_for_pair</a> (int mn0, int mn1)</td></tr>
+<tr class="memdesc:ga73b2802d66295354253ad536797417a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a current <a class="el" href="#struct_manifold" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a> if there is one from <a class="el" href="main_8c.html#addabccd33050c53a5c801708c296e326">MANIFOLDS</a> for a given pair of <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <br /></td></tr>
+<tr class="memitem:ga63394d1f2264e1ced271814687d7f7ed" id="r_ga63394d1f2264e1ced271814687d7f7ed"><td class="memItemLeft"><a class="el" href="#struct_manifold">Manifold</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ga63394d1f2264e1ced271814687d7f7ed">create_new_manifold</a> (<a class="el" href="#struct_physics_component">PhysicsComponent</a> *a, int mn0, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *b, int mn1)</td></tr>
+<tr class="memdesc:ga63394d1f2264e1ced271814687d7f7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a free <a class="el" href="#struct_manifold" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a> and initializes it between two <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s.  <br /></td></tr>
+<tr class="memitem:gadf5e50953ebf13aaa11dad9efb04b5e3" id="r_gadf5e50953ebf13aaa11dad9efb04b5e3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#gadf5e50953ebf13aaa11dad9efb04b5e3">PC_process_collision_node</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, <a class="el" href="lightmap_8vert.html#struct_mesh">Mesh</a> *m0, <a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn0, <a class="el" href="probe__bake_8comp.html#struct_b_v_h_node">BVHNode</a> *node, <a class="el" href="#struct_collision_data">CollisionData</a> cd, <a class="el" href="types_8h.html#structmat4">mat4</a> mat, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0, <a class="el" href="types_8h.html#structmat4">mat4</a> mat_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0_inv, <a class="el" href="#struct_manifold">Manifold</a> *manifold)</td></tr>
+<tr class="memdesc:gadf5e50953ebf13aaa11dad9efb04b5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a collision against one <a class="el" href="probe__bake_8comp.html#struct_b_v_h_node" title="Nodes for the acceleration structures of BVHs.">BVHNode</a> inside of a <a class="el" href="#ggaa884075f403706dceea29a61771a0d44a788d04e3f648c22fcc9993bc19730e8b" title="The triangle BVH is generated for this mesh and triangle tests are performed on it.">COL_TRIANGLE</a> static <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>.  <br /></td></tr>
+<tr class="memitem:ga225059d0f48b08c47236a5067f4823e9" id="r_ga225059d0f48b08c47236a5067f4823e9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ga225059d0f48b08c47236a5067f4823e9">PC_traverse_collision_bvh</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, <a class="el" href="lightmap_8vert.html#struct_mesh">Mesh</a> *m0, <a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn0, <a class="el" href="probe__bake_8comp.html#struct_b_v_h_node">BVHNode</a> *nodes, <a class="el" href="#struct_collision_data">CollisionData</a> cd, <a class="el" href="types_8h.html#structmat4">mat4</a> mat, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0, <a class="el" href="types_8h.html#structmat4">mat4</a> mat_inv, <a class="el" href="types_8h.html#structmat4">mat4</a> mat0_inv, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> tr_aabb, <a class="el" href="#struct_manifold">Manifold</a> *manifold)</td></tr>
+<tr class="memdesc:ga225059d0f48b08c47236a5067f4823e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the BVH for a static <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> with a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> to detect collisions.  <br /></td></tr>
+<tr class="memitem:ga6f9da5542d8c47f5bce4e640c992ae51" id="r_ga6f9da5542d8c47f5bce4e640c992ae51"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga6f9da5542d8c47f5bce4e640c992ae51">PC_traverse_scene_bvh</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc, <a class="el" href="#struct_collision_data">CollisionData</a> cd, <a class="el" href="engine__types_8h.html#struct_scene_data">SceneData</a> *sd, <a class="el" href="types_8h.html#structmat4">mat4</a> mat, <a class="el" href="types_8h.html#structmat4">mat4</a> mat_inv, <a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a> aabb)</td></tr>
+<tr class="memdesc:ga6f9da5542d8c47f5bce4e640c992ae51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the scene BVH to detect collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a>.  <br /></td></tr>
+<tr class="memitem:ga413c84236fb56efd8b6bfdd12ed2cd65" id="r_ga413c84236fb56efd8b6bfdd12ed2cd65"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga413c84236fb56efd8b6bfdd12ed2cd65">search_collisions_from_pc</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc)</td></tr>
+<tr class="memdesc:ga413c84236fb56efd8b6bfdd12ed2cd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> that has no corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
+<tr class="memitem:gae1860b61b03c93b0bf5f8d000397f0a5" id="r_gae1860b61b03c93b0bf5f8d000397f0a5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gae1860b61b03c93b0bf5f8d000397f0a5">search_collisions_from_hull</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc)</td></tr>
+<tr class="memdesc:gae1860b61b03c93b0bf5f8d000397f0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> that has a corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
+<tr class="memitem:ga3d683e5384a3a36f014b499e8cc26207" id="r_ga3d683e5384a3a36f014b499e8cc26207"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga3d683e5384a3a36f014b499e8cc26207">PC_find_collision</a> (<a class="el" href="group__shader__structs__group.html#struct_mesh_node">MeshNode</a> *mn, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pc)</td></tr>
+<tr class="memdesc:ga3d683e5384a3a36f014b499e8cc26207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> and determines how based on if its corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> exists or not.  <br /></td></tr>
 <tr class="memitem:ga58931446c6162614b54828ef099b37b7" id="r_ga58931446c6162614b54828ef099b37b7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga58931446c6162614b54828ef099b37b7">player_resolve_impulse_static</a> (<a class="el" href="#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="#struct_collision_points">CollisionPoints</a> *p)</td></tr>
 <tr class="memdesc:ga58931446c6162614b54828ef099b37b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves an impulse for a <a class="el" href="engine__types_8h.html#struct_player" title="The Player.">Player</a> <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> against a static <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>.  <br /></td></tr>
 <tr class="memitem:gafc1586a6cbdd12ac7aaa7e7084b8ac57" id="r_gafc1586a6cbdd12ac7aaa7e7084b8ac57"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gafc1586a6cbdd12ac7aaa7e7084b8ac57">player_resolve_impulse</a> (<a class="el" href="#struct_physics_component">PhysicsComponent</a> *pcA, <a class="el" href="#struct_physics_component">PhysicsComponent</a> *pcB, <a class="el" href="#struct_collision_points">CollisionPoints</a> *p)</td></tr>
@@ -581,7 +581,7 @@ size_t indices of each <a class="el" href="types_8h.html#struct_mesh_face">MeshF
 <dd>
 <a class="el" href="physics_8c.html" title="PhysicsComponent impulse resolution and collision detection and acceleration structure traversal.">physics/physics.c</a> </dd>
 <dd>
-<a class="el" href="camera_8c.html">core/camera.c</a> </dd>
+<a class="el" href="camera_8c.html" title="Functions for camera.">core/camera.c</a> </dd>
 <dd>
 <a class="el" href="#ga87ade29221af854340b0be81b35b8468" title="Initializes a PhysicsComponent.">init_PC()</a> </dd></dl>
 
@@ -628,7 +628,7 @@ The radius of the capsule. </td></tr>
 <dd>
 <a class="el" href="_g_j_k_8c.html">physics/GJK.c</a> </dd>
 <dd>
-<a class="el" href="camera_8c.html">core/camera.c</a> </dd>
+<a class="el" href="camera_8c.html" title="Functions for camera.">core/camera.c</a> </dd>
 <dd>
 <a class="el" href="#ga87ade29221af854340b0be81b35b8468" title="Initializes a PhysicsComponent.">init_PC()</a> </dd></dl>
 
@@ -681,7 +681,7 @@ Stored from ConvexHull.hull_faces.count. </td></tr>
 <dd>
 <a class="el" href="_g_j_k_8c.html">physics/GJK.c</a> </dd>
 <dd>
-<a class="el" href="camera_8c.html">core/camera.c</a> </dd>
+<a class="el" href="camera_8c.html" title="Functions for camera.">core/camera.c</a> </dd>
 <dd>
 <a class="el" href="#ga87ade29221af854340b0be81b35b8468" title="Initializes a PhysicsComponent.">init_PC()</a> </dd></dl>
 
@@ -753,7 +753,7 @@ capsule</td>
 <dd>
 <a class="el" href="_g_j_k_8c.html">physics/GJK.c</a> </dd>
 <dd>
-<a class="el" href="camera_8c.html">core/camera.c</a> </dd>
+<a class="el" href="camera_8c.html" title="Functions for camera.">core/camera.c</a> </dd>
 <dd>
 <a class="el" href="#ga87ade29221af854340b0be81b35b8468" title="Initializes a PhysicsComponent.">init_PC()</a> </dd>
 <dd>
@@ -905,7 +905,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="engine__types_8h_source.html#l00160">160</a> of file <a class="el" href="engine__types_8h_source.html">engine_types.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>, and <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="camera_8c_source.html#l00710">player_find_collision()</a>, and <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>
@@ -927,7 +927,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 <dd>
 <a class="el" href="physics_8c.html" title="PhysicsComponent impulse resolution and collision detection and acceleration structure traversal.">physics/physics.c</a> </dd>
 <dd>
-<a class="el" href="camera_8c.html">core/camera.c</a> </dd></dl>
+<a class="el" href="camera_8c.html" title="Functions for camera.">core/camera.c</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa884075f403706dceea29a61771a0d44a788d04e3f648c22fcc9993bc19730e8b" name="ggaa884075f403706dceea29a61771a0d44a788d04e3f648c22fcc9993bc19730e8b"></a>COL_TRIANGLE&#160;</td><td class="fielddoc"><p>The triangle BVH is generated for this mesh and triangle tests are performed on it. </p>
 </td></tr>
@@ -958,7 +958,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 <dd>
 <a class="el" href="physics_8c.html" title="PhysicsComponent impulse resolution and collision detection and acceleration structure traversal.">physics/physics.c</a> </dd>
 <dd>
-<a class="el" href="camera_8c.html">core/camera.c</a> </dd></dl>
+<a class="el" href="camera_8c.html" title="Functions for camera.">core/camera.c</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaeddf82ed35ca048aebb27f515d143292a43c2d253de572a18bb88122471444f48" name="ggaeddf82ed35ca048aebb27f515d143292a43c2d253de572a18bb88122471444f48"></a>PHYSICS_NONE&#160;</td><td class="fielddoc"><p>Unused. </p>
 </td></tr>
@@ -975,14 +975,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ga6e2eff14474bdb198c2a447c80646851" name="ga6e2eff14474bdb198c2a447c80646851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e2eff14474bdb198c2a447c80646851">&#9670;&#160;</a></span>EPA_check_face_visibility()</h2>
+<a id="gace7e151835c57129f2fc6ed730550398" name="gace7e151835c57129f2fc6ed730550398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace7e151835c57129f2fc6ed730550398">&#9670;&#160;</a></span>EPA_check_face_visibility()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void EPA_check_face_visibility </td>
@@ -995,11 +992,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *</td>          <td class="paramname"><span class="paramname"><em>EW</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Checks what faces are visible from given point (by dotting the normal). </p>
@@ -1013,20 +1005,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00226">226</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="_g_j_k_8c_source.html#l00226">EPA_check_face_visibility()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="engine__types_8h_source.html#l02976">EPAWorkspace::faces</a>, <a class="el" href="engine__types_8h_source.html#l02978">EPAWorkspace::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l02979">EPAWorkspace::indices_count</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="engine__types_8h_source.html#l02974">EPAWorkspace::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02985">EPAWorkspace::visible_faces_count</a>, and <a class="el" href="engine__types_8h_source.html#l02984">EPAWorkspace::visible_faces_indices</a>.</p>
+<p class="reference">References <a class="el" href="_g_j_k_8c_source.html#l00226">EPA_check_face_visibility()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="engine__types_8h_source.html#l02976">EPAWorkspace::faces</a>, <a class="el" href="engine__types_8h_source.html#l02978">EPAWorkspace::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l02979">EPAWorkspace::indices_count</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="engine__types_8h_source.html#l02974">EPAWorkspace::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02985">EPAWorkspace::visible_faces_count</a>, and <a class="el" href="engine__types_8h_source.html#l02984">EPAWorkspace::visible_faces_indices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00226">EPA_check_face_visibility()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00327">EPA_expand_hull()</a>.</p>
 
 </div>
 </div>
-<a id="gab89e45df95cb73b78244ab28443d2046" name="gab89e45df95cb73b78244ab28443d2046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab89e45df95cb73b78244ab28443d2046">&#9670;&#160;</a></span>EPA_check_horizon_edges()</h2>
+<a id="ga942c3079ee0f22821dd281d20a726f1d" name="ga942c3079ee0f22821dd281d20a726f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga942c3079ee0f22821dd281d20a726f1d">&#9670;&#160;</a></span>EPA_check_horizon_edges()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void EPA_check_horizon_edges </td>
@@ -1039,11 +1028,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="engine__types_8h.html#struct_e_p_a_workspace">EPAWorkspace</a> *</td>          <td class="paramname"><span class="paramname"><em>EW</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Counts edges of each visible face and tests to see if they have matched already within the horizon_edges arraw. </p>
@@ -1063,14 +1047,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="gaae4e58568d1a1179c4b5e5b97fb4b291" name="gaae4e58568d1a1179c4b5e5b97fb4b291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaae4e58568d1a1179c4b5e5b97fb4b291">&#9670;&#160;</a></span>EPA_add_horizon_face_to_hull_faces()</h2>
+<a id="gaa74fa735647866ca4bd19a627e2942fc" name="gaa74fa735647866ca4bd19a627e2942fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa74fa735647866ca4bd19a627e2942fc">&#9670;&#160;</a></span>EPA_add_horizon_face_to_hull_faces()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool EPA_add_horizon_face_to_hull_faces </td>
@@ -1093,11 +1074,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>center</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Adds a horizon face to to the main faces array, while making sure the normal is facing outward. </p>
@@ -1114,20 +1090,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00283">283</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00243">HorizonEdge::ab</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="_g_j_k_8c_source.html#l00283">EPA_add_horizon_face_to_hull_faces()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="engine__types_8h_source.html#l02976">EPAWorkspace::faces</a>, <a class="el" href="engine__types_8h_source.html#l02977">EPAWorkspace::faces_count</a>, <a class="el" href="engine__types_8h_source.html#l02978">EPAWorkspace::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l02979">EPAWorkspace::indices_count</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="utilities_8h_source.html#l00305">PRINT_VEC3N</a>, and <a class="el" href="engine__types_8h_source.html#l02974">EPAWorkspace::vertices</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00243">HorizonEdge::ab</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="utilities_8h_source.html#l00254">compute_tri_normal()</a>, <a class="el" href="_g_j_k_8c_source.html#l00283">EPA_add_horizon_face_to_hull_faces()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="engine__types_8h_source.html#l02976">EPAWorkspace::faces</a>, <a class="el" href="engine__types_8h_source.html#l02977">EPAWorkspace::faces_count</a>, <a class="el" href="engine__types_8h_source.html#l02978">EPAWorkspace::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l02979">EPAWorkspace::indices_count</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="utilities_8h_source.html#l00305">PRINT_VEC3N</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, and <a class="el" href="engine__types_8h_source.html#l02974">EPAWorkspace::vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00283">EPA_add_horizon_face_to_hull_faces()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00327">EPA_expand_hull()</a>.</p>
 
 </div>
 </div>
-<a id="ga2f8f3b482d43bb261fcf82f37b891e66" name="ga2f8f3b482d43bb261fcf82f37b891e66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2f8f3b482d43bb261fcf82f37b891e66">&#9670;&#160;</a></span>EPA_expand_hull()</h2>
+<a id="gac67e2aa85cbe775c69eca6a9b2419387" name="gac67e2aa85cbe775c69eca6a9b2419387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac67e2aa85cbe775c69eca6a9b2419387">&#9670;&#160;</a></span>EPA_expand_hull()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void EPA_expand_hull </td>
@@ -1150,11 +1123,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>centroid</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Conducts EPA on a given hull with a support point. </p>
@@ -1176,14 +1144,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="ga82d662dde6d32298b39258c14964df1b" name="ga82d662dde6d32298b39258c14964df1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga82d662dde6d32298b39258c14964df1b">&#9670;&#160;</a></span>support_capsule()</h2>
+<a id="ga1a417f01916b1133355d730ce04ebe51" name="ga1a417f01916b1133355d730ce04ebe51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a417f01916b1133355d730ce04ebe51">&#9670;&#160;</a></span>support_capsule()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#structvec3">vec3</a> support_capsule </td>
@@ -1201,11 +1166,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="types_8h.html#structmat4">mat4</a></td>          <td class="paramname"><span class="paramname"><em>inv</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The support function for a <a class="el" href="#ggaa884075f403706dceea29a61771a0d44a31cbd82026ef3ba5a4b05e538d9ef4d2" title="A capsule is constructed via AABB dimensions and is used for collision tests.">COL_CAPSULE</a>. </p>
@@ -1221,20 +1181,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00376">376</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02095">CapsuleData::a</a>, <a class="el" href="engine__types_8h_source.html#l02096">CapsuleData::b</a>, <a class="el" href="engine__types_8h_source.html#l02097">CapsuleData::radius</a>, and <a class="el" href="_g_j_k_8c_source.html#l00376">support_capsule()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02095">CapsuleData::a</a>, <a class="el" href="engine__types_8h_source.html#l02096">CapsuleData::b</a>, <a class="el" href="utilities_8h_source.html#l00323">mat4_mul_direction()</a>, <a class="el" href="engine__types_8h_source.html#l02097">CapsuleData::radius</a>, <a class="el" href="_g_j_k_8c_source.html#l00376">support_capsule()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, and <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00376">support_capsule()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>.</p>
 
 </div>
 </div>
-<a id="gacec6a8baa514d1613a4afac26fcee7fc" name="gacec6a8baa514d1613a4afac26fcee7fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacec6a8baa514d1613a4afac26fcee7fc">&#9670;&#160;</a></span>support()</h2>
+<a id="gaca1f57cbfd3361331445ba8b5debda59" name="gaca1f57cbfd3361331445ba8b5debda59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca1f57cbfd3361331445ba8b5debda59">&#9670;&#160;</a></span>support()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void support </td>
@@ -1267,11 +1224,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="types_8h.html#structvec3">vec3</a></td>          <td class="paramname"><span class="paramname"><em>dir</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The support function for a <a class="el" href="#struct_convex_hull" title="Convex Hulls that are generated via incremental hull for non-static meshes.">ConvexHull</a> or triangle <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
@@ -1289,7 +1241,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00393">393</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8h_source.html#l00323">mat4_mul_direction()</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, and <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>.</p>
 
@@ -1356,7 +1308,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00418">418</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00301">SupportVertex::a</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::b</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="types_8h_source.html#l00302">SupportVertex::index_a</a>, <a class="el" href="types_8h_source.html#l00303">SupportVertex::index_b</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, <a class="el" href="_g_j_k_8c_source.html#l00376">support_capsule()</a>, <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>, and <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00301">SupportVertex::a</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::b</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="types_8h_source.html#l00302">SupportVertex::index_a</a>, <a class="el" href="types_8h_source.html#l00303">SupportVertex::index_b</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, <a class="el" href="_g_j_k_8c_source.html#l00376">support_capsule()</a>, <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, and <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>.</p>
 
@@ -1429,20 +1381,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00452">452</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::a</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::b</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="engine__types_8h_source.html#l00995">CollisionPoints::collision</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00644">compute_3d_barycentric()</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, <a class="el" href="_g_j_k_8c_source.html#l00327">EPA_expand_hull()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="engine__types_8h_source.html#l02976">EPAWorkspace::faces</a>, <a class="el" href="engine__types_8h_source.html#l02977">EPAWorkspace::faces_count</a>, <a class="el" href="engine__types_8h_source.html#l02983">EPAWorkspace::horizon_counts_count</a>, <a class="el" href="engine__types_8h_source.html#l02981">EPAWorkspace::horizon_edges_count</a>, <a class="el" href="engine__types_8h_source.html#l02978">EPAWorkspace::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l02979">EPAWorkspace::indices_count</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="types_8h_source.html#l00310">Simplex::points</a>, <a class="el" href="utilities_8h_source.html#l00305">PRINT_VEC3N</a>, <a class="el" href="utilities_8c_source.html#l01235">project_point_plane()</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>, <a class="el" href="engine__types_8h_source.html#l02974">EPAWorkspace::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02975">EPAWorkspace::vertices_count</a>, <a class="el" href="engine__types_8h_source.html#l02985">EPAWorkspace::visible_faces_count</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::a</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::b</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="engine__types_8h_source.html#l00995">CollisionPoints::collision</a>, <a class="el" href="lightmap__bounce_8comp_source.html#l00644">compute_3d_barycentric()</a>, <a class="el" href="utilities_8h_source.html#l00254">compute_tri_normal()</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, <a class="el" href="_g_j_k_8c_source.html#l00327">EPA_expand_hull()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="engine__types_8h_source.html#l02976">EPAWorkspace::faces</a>, <a class="el" href="engine__types_8h_source.html#l02977">EPAWorkspace::faces_count</a>, <a class="el" href="engine__types_8h_source.html#l02983">EPAWorkspace::horizon_counts_count</a>, <a class="el" href="engine__types_8h_source.html#l02981">EPAWorkspace::horizon_edges_count</a>, <a class="el" href="engine__types_8h_source.html#l02978">EPAWorkspace::indices</a>, <a class="el" href="types_8h_source.html#l00283">MeshFace::indices</a>, <a class="el" href="engine__types_8h_source.html#l02979">EPAWorkspace::indices_count</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="types_8h_source.html#l00284">MeshFace::normal</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="types_8h_source.html#l00310">Simplex::points</a>, <a class="el" href="utilities_8h_source.html#l00305">PRINT_VEC3N</a>, <a class="el" href="utilities_8c_source.html#l01235">project_point_plane()</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="engine__types_8h_source.html#l02974">EPAWorkspace::vertices</a>, <a class="el" href="engine__types_8h_source.html#l02975">EPAWorkspace::vertices_count</a>, <a class="el" href="engine__types_8h_source.html#l02985">EPAWorkspace::visible_faces_count</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00377">add_horizon_face_to_hull_faces()</a>, <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, and <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8c_source.html#l00415">add_horizon_face_to_hull_faces()</a>, <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, and <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>.</p>
 
 </div>
 </div>
-<a id="gaae7148d441fb72007147d272bcee4a75" name="gaae7148d441fb72007147d272bcee4a75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaae7148d441fb72007147d272bcee4a75">&#9670;&#160;</a></span>add_point_to_simplex()</h2>
+<a id="gab8340c4f1eb8b185e10ff7f4f683b2e3" name="gab8340c4f1eb8b185e10ff7f4f683b2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8340c4f1eb8b185e10ff7f4f683b2e3">&#9670;&#160;</a></span>add_point_to_simplex()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void add_point_to_simplex </td>
@@ -1455,11 +1404,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Adds a point to the simplex by placing it at the bottom and shifting the other points forward. </p>
@@ -1479,14 +1423,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="ga086750bd2734b6ac8544e78551089bd4" name="ga086750bd2734b6ac8544e78551089bd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga086750bd2734b6ac8544e78551089bd4">&#9670;&#160;</a></span>remove_point_from_simplex()</h2>
+<a id="gad50725990b69d44c6b2391a1b7ce1476" name="gad50725990b69d44c6b2391a1b7ce1476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad50725990b69d44c6b2391a1b7ce1476">&#9670;&#160;</a></span>remove_point_from_simplex()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void remove_point_from_simplex </td>
@@ -1499,11 +1440,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Adds a point to the simplex by placing it at the bottom and shifting the other points forward. </p>
@@ -1523,14 +1459,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="ga0ffcd49ae3abfe0c39a004af17385731" name="ga0ffcd49ae3abfe0c39a004af17385731"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ffcd49ae3abfe0c39a004af17385731">&#9670;&#160;</a></span>replace_simplex_points()</h2>
+<a id="ga39710e82c92501ded84d5e5f586e200e" name="ga39710e82c92501ded84d5e5f586e200e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga39710e82c92501ded84d5e5f586e200e">&#9670;&#160;</a></span>replace_simplex_points()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void replace_simplex_points </td>
@@ -1548,11 +1481,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Replaces <a class="el" href="types_8h.html#struct_simplex">Simplex</a> with another array of <a class="el" href="types_8h.html#struct_support_vertex">SupportVertex</a>. </p>
@@ -1603,7 +1531,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l00799">799</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="types_8h_source.html#l00314">Simplex::centroid</a>, <a class="el" href="types_8h_source.html#l00311">Simplex::count</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="_g_j_k_8c_source.html#l00799">find_next_direction()</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="types_8h_source.html#l00310">Simplex::points</a>, <a class="el" href="_g_j_k_8c_source.html#l00772">remove_point_from_simplex()</a>, <a class="el" href="_g_j_k_8c_source.html#l00788">replace_simplex_points()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="types_8h_source.html#l00026">C</a>, <a class="el" href="types_8h_source.html#l00314">Simplex::centroid</a>, <a class="el" href="utilities_8h_source.html#l00254">compute_tri_normal()</a>, <a class="el" href="types_8h_source.html#l00311">Simplex::count</a>, <a class="el" href="types_8h_source.html#l00026">D</a>, <a class="el" href="_g_j_k_8c_source.html#l00799">find_next_direction()</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="types_8h_source.html#l00310">Simplex::points</a>, <a class="el" href="_g_j_k_8c_source.html#l00772">remove_point_from_simplex()</a>, <a class="el" href="_g_j_k_8c_source.html#l00788">replace_simplex_points()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l00799">find_next_direction()</a>, and <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>.</p>
 
@@ -1682,20 +1610,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="_g_j_k_8c_source.html#l01052">1052</a> of file <a class="el" href="_g_j_k_8c_source.html">GJK.c</a>.</p>
 
-<p class="reference">References <a class="el" href="_g_j_k_8c_source.html#l00755">add_point_to_simplex()</a>, <a class="el" href="camera_8c_source.html#l00336">collision()</a>, <a class="el" href="engine__types_8h_source.html#l00995">CollisionPoints::collision</a>, <a class="el" href="types_8h_source.html#l00311">Simplex::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="_g_j_k_8c_source.html#l00799">find_next_direction()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="types_8h_source.html#l00310">Simplex::points</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="_g_j_k_8c_source.html#l00755">add_point_to_simplex()</a>, <a class="el" href="camera_8c_source.html#l00443">collision()</a>, <a class="el" href="engine__types_8h_source.html#l00995">CollisionPoints::collision</a>, <a class="el" href="types_8h_source.html#l00311">Simplex::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="_g_j_k_8c_source.html#l00452">epa()</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="_g_j_k_8c_source.html#l00799">find_next_direction()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="types_8h_source.html#l00301">SupportVertex::p</a>, <a class="el" href="types_8h_source.html#l00310">Simplex::points</a>, <a class="el" href="_g_j_k_8c_source.html#l00393">support()</a>, <a class="el" href="_g_j_k_8c_source.html#l00418">support_diff()</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="physics_8c_source.html#l00638">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, and <a class="el" href="camera_8c_source.html#l00603">player_find_collision()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="physics_8c_source.html#l00638">PC_process_collision_node()</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, and <a class="el" href="camera_8c_source.html#l00710">player_find_collision()</a>.</p>
 
 </div>
 </div>
-<a id="gae76f302f2b7db074885e122168c3730b" name="gae76f302f2b7db074885e122168c3730b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae76f302f2b7db074885e122168c3730b">&#9670;&#160;</a></span>PC_apply_velocity()</h2>
+<a id="ga5d6fdab680a9e1d6d2237203f4934459" name="ga5d6fdab680a9e1d6d2237203f4934459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d6fdab680a9e1d6d2237203f4934459">&#9670;&#160;</a></span>PC_apply_velocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PC_apply_velocity </td>
@@ -1708,11 +1633,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Applies gravity to a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a>. </p>
@@ -1726,20 +1646,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l00148">148</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="physics_8c_source.html#l00149">PC_apply_velocity()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="physics_8c_source.html#l00149">PC_apply_velocity()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00149">PC_apply_velocity()</a>, and <a class="el" href="physics_8c_source.html#l01724">update_physics_components()</a>.</p>
 
 </div>
 </div>
-<a id="gaa9ad316a899c6272f832b5ddff6ec54e" name="gaa9ad316a899c6272f832b5ddff6ec54e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9ad316a899c6272f832b5ddff6ec54e">&#9670;&#160;</a></span>generate_capsule_hull_manifold()</h2>
+<a id="ga8e411a3ade7259cd4ffe88ac49f9b35a" name="ga8e411a3ade7259cd4ffe88ac49f9b35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e411a3ade7259cd4ffe88ac49f9b35a">&#9670;&#160;</a></span>generate_capsule_hull_manifold()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int generate_capsule_hull_manifold </td>
@@ -1777,11 +1694,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="#struct_physics_component">PhysicsComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>pcB</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Generates a manifold between a capsule and a hull plane. </p>
@@ -1789,7 +1701,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l00172">172</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02095">CapsuleData::a</a>, <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02096">CapsuleData::b</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="physics_8c_source.html#l00172">generate_capsule_hull_manifold()</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, and <a class="el" href="engine__types_8h_source.html#l02097">CapsuleData::radius</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02095">CapsuleData::a</a>, <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02096">CapsuleData::b</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="physics_8c_source.html#l00172">generate_capsule_hull_manifold()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, <a class="el" href="engine__types_8h_source.html#l02097">CapsuleData::radius</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00172">generate_capsule_hull_manifold()</a>.</p>
 
@@ -1800,9 +1712,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void clip_manifold </td>
@@ -1835,11 +1744,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="types_8h.html#structmat4">mat4</a></td>          <td class="paramname"><span class="paramname"><em>modelB</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Clips a manifold based on two different sets of points and faces with separate transforms. </p>
@@ -1857,20 +1761,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l00213">213</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="physics_8c_source.html#l00213">clip_manifold()</a>, <a class="el" href="utilities_8c_source.html#l00838">clip_pts_against_plane()</a>, <a class="el" href="utilities_8c_source.html#l01244">closest_point_segment()</a>, <a class="el" href="utilities_8c_source.html#l01327">closest_point_triangle()</a>, <a class="el" href="engine__types_8h_source.html#l01205">DebugVertex::color</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="types_8h_source.html#l00323">HullFace::count</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00282">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00281">DEBUG_LINES</a>, <a class="el" href="types_8h_source.html#l00331">ClipVertex::edge0</a>, <a class="el" href="types_8h_source.html#l00331">ClipVertex::edge1</a>, <a class="el" href="engine__types_8h_source.html#l01017">CollisionPoints::edge_a</a>, <a class="el" href="engine__types_8h_source.html#l01018">CollisionPoints::edge_b</a>, <a class="el" href="engine__types_8h_source.html#l01015">CollisionPoints::incident_face</a>, <a class="el" href="types_8h_source.html#l00322">HullFace::indices</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l01005">CollisionPoints::mnA</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="types_8h_source.html#l00324">HullFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="types_8h_source.html#l00330">ClipVertex::p</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, <a class="el" href="engine__types_8h_source.html#l01204">DebugVertex::pos</a>, <a class="el" href="engine__types_8h_source.html#l01062">Manifold::processed</a>, <a class="el" href="engine__types_8h_source.html#l01016">CollisionPoints::reference_face</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="elements__prefix_8comp_source.html#l00027">temp</a>, and <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>.</p>
+<p class="reference">References <a class="el" href="types_8h_source.html#l00026">A</a>, <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="types_8h_source.html#l00026">B</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="physics_8c_source.html#l00213">clip_manifold()</a>, <a class="el" href="utilities_8c_source.html#l00838">clip_pts_against_plane()</a>, <a class="el" href="utilities_8c_source.html#l01244">closest_point_segment()</a>, <a class="el" href="utilities_8c_source.html#l01327">closest_point_triangle()</a>, <a class="el" href="engine__types_8h_source.html#l01205">DebugVertex::color</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="types_8h_source.html#l00323">HullFace::count</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00282">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00281">DEBUG_LINES</a>, <a class="el" href="types_8h_source.html#l00331">ClipVertex::edge0</a>, <a class="el" href="types_8h_source.html#l00331">ClipVertex::edge1</a>, <a class="el" href="engine__types_8h_source.html#l01017">CollisionPoints::edge_a</a>, <a class="el" href="engine__types_8h_source.html#l01018">CollisionPoints::edge_b</a>, <a class="el" href="engine__types_8h_source.html#l01015">CollisionPoints::incident_face</a>, <a class="el" href="types_8h_source.html#l00322">HullFace::indices</a>, <a class="el" href="mathf_8h_source.html#l00164">m4_inverse()</a>, <a class="el" href="mathf_8h_source.html#l00340">mat4_inverse()</a>, <a class="el" href="utilities_8h_source.html#l00323">mat4_mul_direction()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="mathf_8h_source.html#l00435">MIN</a>, <a class="el" href="engine__types_8h_source.html#l01005">CollisionPoints::mnA</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="elements__prefix_8comp_source.html#l00025">n</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="types_8h_source.html#l00324">HullFace::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="types_8h_source.html#l00330">ClipVertex::p</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, <a class="el" href="engine__types_8h_source.html#l01204">DebugVertex::pos</a>, <a class="el" href="engine__types_8h_source.html#l01062">Manifold::processed</a>, <a class="el" href="engine__types_8h_source.html#l01016">CollisionPoints::reference_face</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="elements__prefix_8comp_source.html#l00027">temp</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="utilities_8c_source.html#l00541">vec3_equal()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, and <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00213">clip_manifold()</a>, <a class="el" href="physics_8c_source.html#l00638">PC_process_collision_node()</a>, and <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>.</p>
 
 </div>
 </div>
-<a id="gaad801c9161cc6b0c12ab58e7f3a7a469" name="gaad801c9161cc6b0c12ab58e7f3a7a469"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad801c9161cc6b0c12ab58e7f3a7a469">&#9670;&#160;</a></span>find_manifold_for_pair()</h2>
+<a id="ga73b2802d66295354253ad536797417a4" name="ga73b2802d66295354253ad536797417a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73b2802d66295354253ad536797417a4">&#9670;&#160;</a></span>find_manifold_for_pair()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_manifold">Manifold</a> * find_manifold_for_pair </td>
@@ -1883,11 +1784,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>mn1</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Finds a current <a class="el" href="#struct_manifold" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a> if there is one from <a class="el" href="main_8c.html#addabccd33050c53a5c801708c296e326">MANIFOLDS</a> for a given pair of <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s. </p>
@@ -1908,14 +1804,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="ga52c83bb45820a0888856e3f6a6652492" name="ga52c83bb45820a0888856e3f6a6652492"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52c83bb45820a0888856e3f6a6652492">&#9670;&#160;</a></span>create_new_manifold()</h2>
+<a id="ga63394d1f2264e1ced271814687d7f7ed" name="ga63394d1f2264e1ced271814687d7f7ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63394d1f2264e1ced271814687d7f7ed">&#9670;&#160;</a></span>create_new_manifold()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#struct_manifold">Manifold</a> * create_new_manifold </td>
@@ -1938,11 +1831,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>mn1</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Finds a free <a class="el" href="#struct_manifold" title="Persistent Manifolds that track collisions and how to resolve them.">Manifold</a> and initializes it between two <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>s. </p>
@@ -1965,14 +1853,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="gafc5a7df75b470d6e1c82763494d1c8ad" name="gafc5a7df75b470d6e1c82763494d1c8ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafc5a7df75b470d6e1c82763494d1c8ad">&#9670;&#160;</a></span>PC_process_collision_node()</h2>
+<a id="gadf5e50953ebf13aaa11dad9efb04b5e3" name="gadf5e50953ebf13aaa11dad9efb04b5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf5e50953ebf13aaa11dad9efb04b5e3">&#9670;&#160;</a></span>PC_process_collision_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool PC_process_collision_node </td>
@@ -2030,11 +1915,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="#struct_manifold">Manifold</a> *</td>          <td class="paramname"><span class="paramname"><em>manifold</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Processes a collision against one <a class="el" href="probe__bake_8comp.html#struct_b_v_h_node" title="Nodes for the acceleration structures of BVHs.">BVHNode</a> inside of a <a class="el" href="#ggaa884075f403706dceea29a61771a0d44a788d04e3f648c22fcc9993bc19730e8b" title="The triangle BVH is generated for this mesh and triangle tests are performed on it.">COL_TRIANGLE</a> static <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a>. </p>
@@ -2064,14 +1944,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="ga73189c13869d08971be0c490bad341c3" name="ga73189c13869d08971be0c490bad341c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga73189c13869d08971be0c490bad341c3">&#9670;&#160;</a></span>PC_traverse_collision_bvh()</h2>
+<a id="ga225059d0f48b08c47236a5067f4823e9" name="ga225059d0f48b08c47236a5067f4823e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga225059d0f48b08c47236a5067f4823e9">&#9670;&#160;</a></span>PC_traverse_collision_bvh()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool PC_traverse_collision_bvh </td>
@@ -2134,11 +2011,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="#struct_manifold">Manifold</a> *</td>          <td class="paramname"><span class="paramname"><em>manifold</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Traverses the BVH for a static <a class="el" href="group__shader__structs__group.html#struct_mesh_node" title="MeshNodes that describe the position of Meshes, GLTF nodes for GLTFAnimations, or hold references to ...">MeshNode</a> with a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> to detect collisions. </p>
@@ -2169,14 +2041,11 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 </div>
 </div>
-<a id="gad3cc953064e86b1d3ba079b1a97d2413" name="gad3cc953064e86b1d3ba079b1a97d2413"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3cc953064e86b1d3ba079b1a97d2413">&#9670;&#160;</a></span>PC_traverse_scene_bvh()</h2>
+<a id="ga6f9da5542d8c47f5bce4e640c992ae51" name="ga6f9da5542d8c47f5bce4e640c992ae51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f9da5542d8c47f5bce4e640c992ae51">&#9670;&#160;</a></span>PC_traverse_scene_bvh()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PC_traverse_scene_bvh </td>
@@ -2214,11 +2083,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="types_8h.html#struct_a_a_b_b">AABB</a></td>          <td class="paramname"><span class="paramname"><em>aabb</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Traverses the scene BVH to detect collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a>. </p>
@@ -2237,20 +2101,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l00752">752</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01155">BVHNode::aabb</a>, <a class="el" href="utilities_8c_source.html#l00276">aabbs_intersect()</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03151">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="physics_8c_source.html#l00213">clip_manifold()</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="engine__types_8h_source.html#l00995">CollisionPoints::collision</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00134">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="physics_8c_source.html#l00611">create_new_manifold()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="physics_8c_source.html#l00594">find_manifold_for_pair()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00133">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02371">MeshNode::free</a>, <a class="el" href="engine__utilities_8c_source.html#l00019">get_root_node()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01112">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02503">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00128">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l02373">MeshNode::local_id</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01005">CollisionPoints::mnA</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00135">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02517">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02435">MeshNode::pc</a>, <a class="el" href="physics_8c_source.html#l00717">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, <a class="el" href="engine__types_8h_source.html#l01062">Manifold::processed</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00129">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l02491">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, and <a class="el" href="engine__types_8h_source.html#l01110">ConvexHull::vertices</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l01155">BVHNode::aabb</a>, <a class="el" href="utilities_8c_source.html#l00276">aabbs_intersect()</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03151">SceneData::bvh_indices</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="physics_8c_source.html#l00213">clip_manifold()</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="engine__types_8h_source.html#l00995">CollisionPoints::collision</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00134">BVHNode::count</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="physics_8c_source.html#l00611">create_new_manifold()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00291">EW</a>, <a class="el" href="physics_8c_source.html#l00594">find_manifold_for_pair()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00133">BVHNode::first_index</a>, <a class="el" href="engine__types_8h_source.html#l02371">MeshNode::free</a>, <a class="el" href="engine__utilities_8c_source.html#l00019">get_root_node()</a>, <a class="el" href="_g_j_k_8c_source.html#l01052">GJK()</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01112">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02503">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02372">MeshNode::id</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00128">BVHNode::left</a>, <a class="el" href="engine__types_8h_source.html#l02373">MeshNode::local_id</a>, <a class="el" href="mathf_8h_source.html#l00164">m4_inverse()</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01005">CollisionPoints::mnA</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00135">BVHNode::next</a>, <a class="el" href="engine__types_8h_source.html#l02517">Mesh::nodes</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02392">MeshNode::parent</a>, <a class="el" href="engine__types_8h_source.html#l02435">MeshNode::pc</a>, <a class="el" href="physics_8c_source.html#l00717">PC_traverse_collision_bvh()</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, <a class="el" href="engine__types_8h_source.html#l01062">Manifold::processed</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00129">BVHNode::right</a>, <a class="el" href="engine__types_8h_source.html#l02491">Mesh::static_mesh</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, and <a class="el" href="engine__types_8h_source.html#l01110">ConvexHull::vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, <a class="el" href="physics_8c_source.html#l01021">search_collisions_from_hull()</a>, and <a class="el" href="physics_8c_source.html#l01005">search_collisions_from_pc()</a>.</p>
 
 </div>
 </div>
-<a id="ga058a83a289b3c1fc34699ccb1d5f16dc" name="ga058a83a289b3c1fc34699ccb1d5f16dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga058a83a289b3c1fc34699ccb1d5f16dc">&#9670;&#160;</a></span>search_collisions_from_pc()</h2>
+<a id="ga413c84236fb56efd8b6bfdd12ed2cd65" name="ga413c84236fb56efd8b6bfdd12ed2cd65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga413c84236fb56efd8b6bfdd12ed2cd65">&#9670;&#160;</a></span>search_collisions_from_pc()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void search_collisions_from_pc </td>
@@ -2263,11 +2124,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="#struct_physics_component">PhysicsComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>pc</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> that has no corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
@@ -2281,20 +2137,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l01005">1005</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02178">PhysicsComponent::aabb</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="physics_8c_source.html#l01005">search_collisions_from_pc()</a>, and <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02178">PhysicsComponent::aabb</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="mathf_8h_source.html#l00164">m4_inverse()</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="physics_8c_source.html#l01005">search_collisions_from_pc()</a>, and <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01066">PC_find_collision()</a>, and <a class="el" href="physics_8c_source.html#l01005">search_collisions_from_pc()</a>.</p>
 
 </div>
 </div>
-<a id="ga0383b2ffde5d97cac0d2291166ccf522" name="ga0383b2ffde5d97cac0d2291166ccf522"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0383b2ffde5d97cac0d2291166ccf522">&#9670;&#160;</a></span>search_collisions_from_hull()</h2>
+<a id="gae1860b61b03c93b0bf5f8d000397f0a5" name="gae1860b61b03c93b0bf5f8d000397f0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1860b61b03c93b0bf5f8d000397f0a5">&#9670;&#160;</a></span>search_collisions_from_hull()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void search_collisions_from_hull </td>
@@ -2307,11 +2160,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="#struct_physics_component">PhysicsComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>pc</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> that has a corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a>. </p>
@@ -2325,20 +2173,17 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l01021">1021</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02492">Mesh::aabb</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01112">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02503">Mesh::hulls</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="physics_8c_source.html#l01021">search_collisions_from_hull()</a>, <a class="el" href="engine__types_8h_source.html#l02491">Mesh::static_mesh</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, and <a class="el" href="engine__types_8h_source.html#l01110">ConvexHull::vertices</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02492">Mesh::aabb</a>, <a class="el" href="types_8h_source.html#l00210">Vector::buffer</a>, <a class="el" href="engine__types_8h_source.html#l03149">SceneData::bvh_nodes</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l01112">ConvexHull::hull_faces</a>, <a class="el" href="engine__types_8h_source.html#l02503">Mesh::hulls</a>, <a class="el" href="mathf_8h_source.html#l00164">m4_inverse()</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="physics_8c_source.html#l00752">PC_traverse_scene_bvh()</a>, <a class="el" href="engine__types_8h_source.html#l03431">Globals::scene_data</a>, <a class="el" href="physics_8c_source.html#l01021">search_collisions_from_hull()</a>, <a class="el" href="engine__types_8h_source.html#l02491">Mesh::static_mesh</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, and <a class="el" href="engine__types_8h_source.html#l01110">ConvexHull::vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01066">PC_find_collision()</a>, and <a class="el" href="physics_8c_source.html#l01021">search_collisions_from_hull()</a>.</p>
 
 </div>
 </div>
-<a id="ga28a8979b5a6c1e0ac021f0fb6ecd0332" name="ga28a8979b5a6c1e0ac021f0fb6ecd0332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28a8979b5a6c1e0ac021f0fb6ecd0332">&#9670;&#160;</a></span>PC_find_collision()</h2>
+<a id="ga3d683e5384a3a36f014b499e8cc26207" name="ga3d683e5384a3a36f014b499e8cc26207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d683e5384a3a36f014b499e8cc26207">&#9670;&#160;</a></span>PC_find_collision()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PC_find_collision </td>
@@ -2351,11 +2196,6 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
           <td class="paramtype"><a class="el" href="#struct_physics_component">PhysicsComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>pc</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Searches for collisions from a <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> and determines how based on if its corresponding <a class="el" href="lightmap_8vert.html#struct_mesh" title="A Mesh with geometry data that is either initialized as static or dynamic and split into SubMeshes.">Mesh</a> exists or not. </p>
@@ -2405,9 +2245,9 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l01097">1097</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="physics_8c_source.html#l01097">player_resolve_impulse_static()</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="utilities_8h_source.html#l00498">mat3_mul_vec3()</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="physics_8c_source.html#l01097">player_resolve_impulse_static()</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="utilities_8h_source.html#l00165">vec4_to_vec3()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01097">player_resolve_impulse_static()</a>, and <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01097">player_resolve_impulse_static()</a>, and <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>
@@ -2447,9 +2287,9 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l01167">1167</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="physics_8c_source.html#l01167">player_resolve_impulse()</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="utilities_8h_source.html#l00498">mat3_mul_vec3()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="physics_8c_source.html#l01167">player_resolve_impulse()</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="utilities_8h_source.html#l00165">vec4_to_vec3()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01167">player_resolve_impulse()</a>, and <a class="el" href="camera_8c_source.html#l01274">resolve_collisions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01167">player_resolve_impulse()</a>, and <a class="el" href="camera_8c_source.html#l01378">resolve_collisions()</a>.</p>
 
 </div>
 </div>
@@ -2484,7 +2324,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l01357">1357</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="physics_8c_source.html#l01095">ang_impulse_sum</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="physics_8c_source.html#l01357">PC_resolve_impulse_static()</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="physics_8c_source.html#l01095">ang_impulse_sum</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="utilities_8h_source.html#l00498">mat3_mul_vec3()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="physics_8c_source.html#l01357">PC_resolve_impulse_static()</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="utilities_8h_source.html#l00165">vec4_to_vec3()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01357">PC_resolve_impulse_static()</a>, and <a class="el" href="physics_8c_source.html#l01724">update_physics_components()</a>.</p>
 
@@ -2526,7 +2366,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l01516">1516</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="physics_8c_source.html#l01516">PC_resolve_impulse()</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01027">CollisionPoints::bias_impulse</a>, <a class="el" href="main_8c_source.html#l00322">cam</a>, <a class="el" href="engine__types_8h_source.html#l03053">Player::cam</a>, <a class="el" href="engine__types_8h_source.html#l01350">Camera::cam_data</a>, <a class="el" href="engine__types_8h_source.html#l01244">CamData::cam_pos</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="mathf_8h_source.html#l00379">clamp()</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="utilities_8h_source.html#l00498">mat3_mul_vec3()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="engine__types_8h_source.html#l01026">CollisionPoints::normal_impulse</a>, <a class="el" href="physics_8c_source.html#l01516">PC_resolve_impulse()</a>, <a class="el" href="main_8c_source.html#l00287">player</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l00993">CollisionPoints::tangent</a>, <a class="el" href="engine__types_8h_source.html#l01028">CollisionPoints::tangent_impulse</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="utilities_8h_source.html#l00165">vec4_to_vec3()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="physics_8c_source.html#l01516">PC_resolve_impulse()</a>, and <a class="el" href="physics_8c_source.html#l01724">update_physics_components()</a>.</p>
 
@@ -2548,13 +2388,13 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 </div><div class="memdoc">
 
 <p>The main <a class="el" href="#struct_physics_component" title="Entity Component used for physics resolution.">PhysicsComponent</a> loop that determines velocity, solves collisions, then integrates position. </p>
-<p><a class="anchor" id="physics_anchor"></a></p>
-<p>\begin{align} &amp; \text{Let } P = \text{ all valid PhysicsComponents and } B = \text{ all valid Manifolds} \\ a(P) &amp;= \begin{cases} v_{n+1} &amp;= v_{n} - G \cdot \Delta t \\ v_{n+1} &amp;= v_{n+1} \cdot \beta \\ \omega_{n+1} &amp;= \omega_{n} \cdot \alpha \end{cases} \\ P\prime &amp;= a(P) = \lbrace a(x) | x \in P\rbrace \\ q(Q) &amp;= \begin{cases} \begin{bmatrix} 1 - 2Q_y^2 - 2Q_z^2 &amp; 2Q_xQ_y - 2Q_wQ_z &amp; 2Q_xQ_z + 2Q_wQ_y \\ 2Q_xQ_y + 2Q_wQ_z &amp; 1 - 2Q_x^2 - 2Q_z^2 &amp; 2Q_yQ_z - 2Q_wQ_x \\ 2Q_xQ_z - 2Q_wQ_y &amp; 2Q_yQ_z + 2Q_wQ_x &amp; 1 - 2Q_x^2 - 2Q_y^2 \end{bmatrix} \end{cases} \\ t(P) &amp;= \begin{cases} p = p + v\Delta t \\ \theta = || \omega || \cdot \Delta t \\ \left. \begin{cases} k = \frac{\omega}{||\omega||}\\ Q = \begin{pmatrix} k_x \cdot \sin \frac{\theta}{2}, k_y \cdot \sin \frac{\theta}{2}, k_z \cdot \sin \frac{\theta}{2}, \cos \frac{\theta}{2} \end{pmatrix}\\ r = Q r\\ r = \frac{r}{||r||}\\ \end{cases}\right\rbrace, &amp; \text{if } \theta \gt 0 \\ M = \text{TRS}(p, r, s) \\ R = q(r) \\ \mathit{IIW} = (R \cdot IIA) \cdot R \\ <br  />
- \mathit{AABB} = \mathit{AABB} \cdot M \end{cases} \\ t(P\prime) &amp;= \lbrace t(x) | x \in P\prime\rbrace \\ l(P) &amp;= \begin{cases} \text{for } y = 0 \text{ to } P_{\text{max}} - 1: \\ \quad B[P_{i}, t(P\prime)[y]_{i}] = P_{\mathit{AABB}} \cap t(P\prime)[y]_{\mathit{AABB}}, &amp; \text{if } P_{\mathit{AABB}} \cap t(P\prime)[y]_{\mathit{AABB}} \neq \emptyset \\ \end{cases} \\ B &amp;= \lbrace l(x) | x \in t(P\prime)\rbrace \\ f(n) &amp;= \begin{cases} R = r \times n \\ I = i \cdot R \\ T = I \times r \\ \psi = n \cdot T \\ \frac{1}{m_a} + \frac{1}{m_b} + \psi_a + \psi_b \\ \end{cases} \\ H(b) &amp;= \begin{cases} p = M \begin{bmatrix} p_x \\ p_y \\ p_z \\ 1\end{bmatrix} \\ c = M \begin{bmatrix} c_x \\ c_y \\ c_z \\ 1\end{bmatrix} \\ r = p - c \\ V = v - \omega \times r \\ m_i = \frac{1}{m} \\ \phi = V_a - V_b \\ \mathcal L = \vec \phi \cdot \vec N \\ \text{when } \mathcal L \in (-\infty, 0)\text{:} \\ \quad K = f(\vec N) \\ \quad J = \frac{-(1 + \mathcal{R}_a) \cdot \mathcal L}{K} \\ \quad \text{Where } \mathcal{R}_a = \text{ restitution} \\ \quad B_{F}\prime = \max{B_F + J, 0} \\ \quad J = B_F\prime - B_F \\ \quad F = J \vec{N} \\ \quad v = v \pm F\frac{1}{M} \\ \quad \tau = r \times \pm F \\ \quad \omega_F = \text{IIW} \cdot \tau \\ \quad \omega = \omega + \omega_F \\ \quad V = V + \omega \times r \\ \quad \phi = V_a - V_b \\ \quad \mathcal L = \vec \phi \cdot \vec N \\ \quad V_t = \phi - \mathcal L \vec N \\ \quad V_l = || V_t || \\ \quad \text{when } V_l \in (0, \infty)\text{:} \\ \qquad \hat t = \frac{V_t}{V_l} \\ \qquad K = f(\hat t) \\ \qquad J_t = \frac{-(\phi \cdot \hat t)}{K} \\ \qquad \gamma = \mu_a B_F \\ \qquad B_T\prime = \min(\max(B_T + J_t, -\gamma), \gamma) \\ \qquad J_t = B_T\prime - B_T \\ \qquad F = J_t \hat t \\ \qquad v = v \pm F \frac{1}{M} \\ \qquad \tau = r \times F \\ \qquad \omega_F = \mathit{IIW} \cdot \tau \\ \qquad \omega \pm \omega_F \\ \end{cases} \\ &amp; \text {Where } \pm \text{ relates even and opposite forces and where H(b) modifies both respective bodies in } P\prime \\ H(B) &amp;= \lbrace H(x) | x \in B\rbrace \\ P\prime\prime &amp;= t(P\prime) = \lbrace t(x) | x \in P\prime\rbrace \\ S(b) &amp;= \begin{cases} p = M \begin{bmatrix} p_x \\ p_y \\ p_z \\ 1\end{bmatrix} \\ d = p_a - p_b \\ s = d \cdot \vec N \\ u = \begin{cases} \left. \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}\right\rbrace, &amp; \text{if } \vec{N}_z \lt 0.9\\ \left. \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}\right\rbrace, &amp; \text{otherwise} \end{cases} \\ t = u \times \vec N \\ T = \frac{t}{||t||} \\ D = d \cdot T \\ B \setminus \lbrace b \rbrace, &amp; \text{ if } s \gt 0.01 \text{ or } D \gt 0.01 \end{cases} \\ B\prime &amp;= S(B) = \lbrace S(x) | x \in B\rbrace \\ \end{align} </p>
+<p><a class="anchor" id="physics_anchor"></a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga225059d0f48b08c47236a5067f4823e9" title="Traverses the BVH for a static MeshNode with a PhysicsComponent to detect collisions.">PC_traverse_collision_bvh()</a></dd></dl>
+<p>\begin{align} &amp; \text{Def:} \\ &amp; \quad v = \text{Velocity} \\ &amp; \quad G = \text{Gravity} \\ &amp; \quad \omega = \text{Angular Velocity} \\ &amp; \quad p = \text{Position} \\ &amp; \quad r = \text{Rotation} \\ &amp; \quad s = \text{Scale} \\ &amp; \quad \mathit{IIA, IIW} = \text{Inverse Inertia} \\ &amp; \quad M = \text{Transformation} \\ &amp; \text{Let } C = \text{ all valid PhysicsComponents and } B = \text{ all valid Manifolds} \\ a(c) &amp;= \begin{cases} v &amp;= (v - G \cdot \Delta t) \cdot \beta \\ \omega &amp;= \omega_{n} \cdot \alpha \end{cases} \\ C\prime &amp;= a(C) = \lbrace a(x) | x \in C\rbrace \\ q(Q) &amp;= \begin{cases} \begin{bmatrix} 1 - 2Q_y^2 - 2Q_z^2 &amp; 2Q_xQ_y - 2Q_wQ_z &amp; 2Q_xQ_z + 2Q_wQ_y \\ 2Q_xQ_y + 2Q_wQ_z &amp; 1 - 2Q_x^2 - 2Q_z^2 &amp; 2Q_yQ_z - 2Q_wQ_x \\ 2Q_xQ_z - 2Q_wQ_y &amp; 2Q_yQ_z + 2Q_wQ_x &amp; 1 - 2Q_x^2 - 2Q_y^2 \end{bmatrix} \end{cases} \\ t(c) &amp;= \begin{cases} p = p + v\Delta t \\ \theta = || \omega || \cdot \Delta t \\ \left. \begin{cases} k = \frac{\omega}{||\omega||}\\ Q = \begin{pmatrix} k_x \cdot \sin \frac{\theta}{2}, k_y \cdot \sin \frac{\theta}{2}, k_z \cdot \sin \frac{\theta}{2}, \cos \frac{\theta}{2} \end{pmatrix}\\ r = \frac{Q r}{||Q r||}\\ \end{cases}\right\rbrace, &amp; \text{if } \theta \gt 0 \\ M = \text{TRS}(p, r, s) \\ R = q(r) \\ \mathit{IIW} = (R \cdot IIA) \cdot R \\ <br  />
+ \mathit{AABB}_{tr} = \mathit{AABB} \cdot M \end{cases} \\ t(C\prime) &amp;= \lbrace t(x) | x \in C\prime\rbrace \\ L(c) &amp;= \begin{cases} \text{for } y = 0 \text{ to } C_{\text{max}} - 1: \\ \quad B[c_{i}, t(C\prime)[y]_{i}] = \mathit{AABB}_{tr}(c) \cap \mathit{AABB}_{tr}(t(C\prime)[y]), &amp; \text{if } \mathit{AABB}_{tr}(c) \cap \mathit{AABB}_{tr}(t(C\prime)[y]) \neq \emptyset \\ \end{cases} \\ B &amp;= \lbrace L(x) | x \in t(C\prime)\rbrace \\ f(n, c_a, c_b) &amp;= \begin{cases} R = l \times n \\ I = \mathit{IIW} \cdot R \\ T = I \times l \\ \psi = n \cdot T \\ \frac{1}{m_a} + \frac{1}{m_b} + \psi_a + \psi_b \\ \end{cases} \\ H(b) &amp;= \begin{cases} p_i = a \cap b \\ \text{Where } p_i = \text{ simultaneously the penetration of } b_a \text{ into } b_b \text{ and also } b_b \text{ into } b_a \\ \mathcal P = M \begin{bmatrix} p_{ix} \\ p_{iy} \\ p_{iz} \\ 1\end{bmatrix} \\ \mathcal M = M \begin{bmatrix} c_x \\ c_y \\ c_z \\ 1\end{bmatrix} \\ l = \mathcal P - \mathcal M \\ V = v - \omega \times l \\ \phi = V_a - V_b \\ \mathcal L = \vec \phi \cdot \vec N \\ \text{when } \mathcal L \in (-\infty, 0)\text{:} \\ \quad K = f(\vec N, b_a, b_b) \\ \quad J = \frac{-(1 + \mathcal{R}) \cdot \mathcal L}{K} \\ \quad B_{F}\prime = \max(B_F + J, 0) \\ \quad J_F = B_F\prime - B_F \\ \quad F_\parallel = J_F \vec{N} \\ \quad v = v \pm F_\parallel \frac{1}{m} \\ \quad \omega = \omega + \mathit{IIW} \cdot (l \times \pm F_\parallel) \\ \quad V = V + \omega \times l \\ \quad \phi = V_a - V_b \\ \quad \mathcal L = \vec \phi \cdot \vec N \\ \quad V_t = \phi - \mathcal L \vec N \\ \quad V_l = || V_t || \\ \quad \text{when } V_l \in (0, \infty)\text{:} \\ \qquad \hat t = \frac{V_t}{V_l} \\ \qquad K = f(\hat t, b_a, b_b) \\ \qquad J_t = \frac{-(\phi \cdot \hat t)}{K} \\ \qquad \gamma = \mu_a B_F \\ \qquad B_T\prime = \min(\max(B_T + J_t, -\gamma), \gamma) \\ \qquad J_{tF} = B_T\prime - B_T \\ \qquad F_\perp = J_{tF} \hat t \\ \qquad v = v \pm F_\perp \frac{1}{m} \\ \qquad \omega = \omega + \mathit{IIW} \cdot (l \times \pm F_\perp) \\ \end{cases} \\ &amp; \text {Where } \pm \text{ relates even and opposite forces and where H(b) modifies both respective bodies in } C\prime \\ H(B) &amp;= \lbrace H(x) | x \in B\rbrace \\ C\prime\prime &amp;= t(C\prime) = \lbrace t(x) | x \in C\prime\rbrace \\ S(b) &amp;= \begin{cases} p = M \begin{bmatrix} p_x \\ p_y \\ p_z \\ 1\end{bmatrix} \\ d = p_a - p_b \\ s = d \cdot \vec N \\ u = \begin{cases} \left. \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}\right\rbrace, &amp; \text{if } \vec{N}_z \lt 0.9\\ \left. \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}\right\rbrace, &amp; \text{otherwise} \end{cases} \\ T = \frac{u \times \vec N}{|| u \times \vec N||} \\ D = d \cdot T \\ B \setminus \lbrace b \rbrace, &amp; \text{ if } s \gt 0.01 \text{ or } D \gt 0.01 \end{cases} \\ B\prime &amp;= S(B) = \lbrace S(x) | x \in B\rbrace \\ \end{align} </p>
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l01724">1724</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l01053">Manifold::a</a>, <a class="el" href="engine__types_8h_source.html#l02441">MeshNode::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="engine__types_8h_source.html#l02173">PhysicsComponent::accel</a>, <a class="el" href="engine__types_8h_source.html#l00192">ACCEL_BETA</a>, <a class="el" href="physics_8c_source.html#l01095">ang_impulse_sum</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l02156">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01055">Manifold::b</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l01205">DebugVertex::color</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00282">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00281">DEBUG_LINES</a>, <a class="el" href="engine__types_8h_source.html#l01065">Manifold::deepest</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l01063">Manifold::free</a>, <a class="el" href="physics_8c_source.html#l01093">friction_sum</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="physics_8c_source.html#l01094">impulse_sum</a>, <a class="el" href="engine__types_8h_source.html#l02168">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l01474">Light::light_type</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::lights</a>, <a class="el" href="main_8c_source.html#l00270">MANIFOLDS</a>, <a class="el" href="engine__types_8h_source.html#l00113">MAX_LIGHTS</a>, <a class="el" href="init_8h_source.html#l00448">MAX_MANIFOLDS</a>, <a class="el" href="init_8h_source.html#l00445">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01005">CollisionPoints::mnA</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="physics_8c_source.html#l01088">normal_impulse0</a>, <a class="el" href="physics_8c_source.html#l01089">normal_impulse1</a>, <a class="el" href="physics_8c_source.html#l01090">normal_impulse2</a>, <a class="el" href="physics_8c_source.html#l01091">normal_impulse3</a>, <a class="el" href="engine__types_8h_source.html#l02175">PhysicsComponent::old_angular</a>, <a class="el" href="engine__types_8h_source.html#l02172">PhysicsComponent::old_vel</a>, <a class="el" href="physics_8c_source.html#l00149">PC_apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l01066">PC_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01516">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01357">PC_resolve_impulse_static()</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, <a class="el" href="main_8c_source.html#l00314">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02077">PHYSICS_FULL</a>, <a class="el" href="engine__types_8h_source.html#l02181">PhysicsComponent::physics_type</a>, <a class="el" href="engine__types_8h_source.html#l01446">POINT_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01204">DebugVertex::pos</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::pos</a>, <a class="el" href="engine__types_8h_source.html#l01062">Manifold::processed</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::radius</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="engine__types_8h_source.html#l02157">PhysicsComponent::rest_counter</a>, <a class="el" href="engine__types_8h_source.html#l02380">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02381">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l01482">Light::sm_dirty</a>, <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>, <a class="el" href="physics_8c_source.html#l01092">torque_sum</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::translation</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, <a class="el" href="physics_8c_source.html#l01724">update_physics_components()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l00988">CollisionPoints::a</a>, <a class="el" href="engine__types_8h_source.html#l01053">Manifold::a</a>, <a class="el" href="engine__types_8h_source.html#l02441">MeshNode::aabb</a>, <a class="el" href="render_8c_source.html#l00475">aabb_to_vertices()</a>, <a class="el" href="engine__types_8h_source.html#l02173">PhysicsComponent::accel</a>, <a class="el" href="engine__types_8h_source.html#l00192">ACCEL_BETA</a>, <a class="el" href="physics_8c_source.html#l01095">ang_impulse_sum</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="engine__types_8h_source.html#l02156">PhysicsComponent::at_rest</a>, <a class="el" href="engine__types_8h_source.html#l00989">CollisionPoints::b</a>, <a class="el" href="engine__types_8h_source.html#l01055">Manifold::b</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l01205">DebugVertex::color</a>, <a class="el" href="engine__utilities_8h_source.html#l00018">compose_trs_from_mesh_node()</a>, <a class="el" href="utilities_8h_source.html#l00481">compose_trs_from_vectors()</a>, <a class="el" href="engine__types_8h_source.html#l01059">Manifold::contacts</a>, <a class="el" href="engine__types_8h_source.html#l01060">Manifold::count</a>, <a class="el" href="types_8h_source.html#l00209">Vector::count</a>, <a class="el" href="engine__types_8h_source.html#l00994">CollisionPoints::d</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00282">DEBUG_LINE_COUNT</a>, <a class="el" href="main_8c_source.html#l00281">DEBUG_LINES</a>, <a class="el" href="engine__types_8h_source.html#l01065">Manifold::deepest</a>, <a class="el" href="main_8c_source.html#l00319">dt</a>, <a class="el" href="engine__types_8h_source.html#l02183">PhysicsComponent::ent</a>, <a class="el" href="engine__types_8h_source.html#l02336">Entity::free</a>, <a class="el" href="engine__types_8h_source.html#l01063">Manifold::free</a>, <a class="el" href="physics_8c_source.html#l01093">friction_sum</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00101">MeshNode::global_matrix</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="physics_8c_source.html#l01094">impulse_sum</a>, <a class="el" href="engine__types_8h_source.html#l02168">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02176">PhysicsComponent::inverse_world</a>, <a class="el" href="engine__types_8h_source.html#l01474">Light::light_type</a>, <a class="el" href="engine__types_8h_source.html#l03424">Globals::lights</a>, <a class="el" href="main_8c_source.html#l00270">MANIFOLDS</a>, <a class="el" href="utilities_8h_source.html#l00559">mat3_mul()</a>, <a class="el" href="utilities_8h_source.html#l00545">mat3_transpose()</a>, <a class="el" href="utilities_8h_source.html#l00313">mat4_mul_point()</a>, <a class="el" href="engine__types_8h_source.html#l00113">MAX_LIGHTS</a>, <a class="el" href="init_8h_source.html#l00448">MAX_MANIFOLDS</a>, <a class="el" href="init_8h_source.html#l00445">MAX_PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l02338">Entity::mesh_node</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="engine__types_8h_source.html#l01005">CollisionPoints::mnA</a>, <a class="el" href="engine__types_8h_source.html#l01007">CollisionPoints::mnB</a>, <a class="el" href="engine__types_8h_source.html#l00992">CollisionPoints::normal</a>, <a class="el" href="physics_8c_source.html#l01088">normal_impulse0</a>, <a class="el" href="physics_8c_source.html#l01089">normal_impulse1</a>, <a class="el" href="physics_8c_source.html#l01090">normal_impulse2</a>, <a class="el" href="physics_8c_source.html#l01091">normal_impulse3</a>, <a class="el" href="engine__types_8h_source.html#l02175">PhysicsComponent::old_angular</a>, <a class="el" href="engine__types_8h_source.html#l02172">PhysicsComponent::old_vel</a>, <a class="el" href="physics_8c_source.html#l00149">PC_apply_velocity()</a>, <a class="el" href="physics_8c_source.html#l01066">PC_find_collision()</a>, <a class="el" href="physics_8c_source.html#l01516">PC_resolve_impulse()</a>, <a class="el" href="physics_8c_source.html#l01357">PC_resolve_impulse_static()</a>, <a class="el" href="engine__types_8h_source.html#l01004">CollisionPoints::pcA</a>, <a class="el" href="engine__types_8h_source.html#l01006">CollisionPoints::pcB</a>, <a class="el" href="main_8c_source.html#l00314">PHYSICS_COMPONENTS</a>, <a class="el" href="engine__types_8h_source.html#l02077">PHYSICS_FULL</a>, <a class="el" href="engine__types_8h_source.html#l02181">PhysicsComponent::physics_type</a>, <a class="el" href="engine__types_8h_source.html#l01446">POINT_LIGHT</a>, <a class="el" href="engine__types_8h_source.html#l01204">DebugVertex::pos</a>, <a class="el" href="engine__types_8h_source.html#l01464">Light::pos</a>, <a class="el" href="engine__types_8h_source.html#l01062">Manifold::processed</a>, <a class="el" href="utilities_8h_source.html#l00361">quat_from_axis_angle()</a>, <a class="el" href="utilities_8h_source.html#l00384">quat_mul()</a>, <a class="el" href="utilities_8h_source.html#l00329">quat_to_mat3()</a>, <a class="el" href="engine__types_8h_source.html#l01478">Light::radius</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00206">rand()</a>, <a class="el" href="render_8c_source.html#l00517">render_mesh_aabbs_from_root()</a>, <a class="el" href="engine__types_8h_source.html#l02157">PhysicsComponent::rest_counter</a>, <a class="el" href="camera_8c_source.html#l01004">rot()</a>, <a class="el" href="engine__types_8h_source.html#l02380">MeshNode::rotation</a>, <a class="el" href="engine__types_8h_source.html#l02381">MeshNode::scale</a>, <a class="el" href="engine__types_8h_source.html#l01482">Light::sm_dirty</a>, <a class="el" href="cull__clusters_8comp_source.html#l00108">test_sphere_aabb()</a>, <a class="el" href="physics_8c_source.html#l01092">torque_sum</a>, <a class="el" href="cull__draw__calls_8comp_source.html#l00099">transform_aabb_by_model_matrix()</a>, <a class="el" href="engine__types_8h_source.html#l02379">MeshNode::translation</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, <a class="el" href="physics_8c_source.html#l01724">update_physics_components()</a>, <a class="el" href="mathf_8h_source.html#l00286">vec3_add()</a>, <a class="el" href="mathf_8h_source.html#l00080">vec3_cross()</a>, <a class="el" href="mathf_8h_source.html#l00322">vec3_dot()</a>, <a class="el" href="mathf_8h_source.html#l00328">vec3_length()</a>, <a class="el" href="mathf_8h_source.html#l00046">vec3_normalize()</a>, <a class="el" href="mathf_8h_source.html#l00248">vec3_scale()</a>, <a class="el" href="mathf_8h_source.html#l00266">vec3_sub()</a>, <a class="el" href="mathf_8h_source.html#l00055">vec4_normalize()</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, <a class="el" href="types_8h_source.html#l00012">vec3::y</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00520">main()</a>, and <a class="el" href="physics_8c_source.html#l01724">update_physics_components()</a>.</p>
 
@@ -2635,7 +2475,7 @@ Which <a class="el" href="engine__types_8h.html#struct_entity" title="Entity str
 
 <p class="definition">Definition at line <a class="el" href="physics_8c_source.html#l02141">2141</a> of file <a class="el" href="physics_8c_source.html">physics.c</a>.</p>
 
-<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02492">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02441">MeshNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02178">PhysicsComponent::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="physics_8c_source.html#l02115">calc_inverse_inertia()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="physics_8c_source.html#l02141">init_PC()</a>, <a class="el" href="engine__types_8h_source.html#l02168">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l02181">PhysicsComponent::physics_type</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::y</a>.</p>
+<p class="reference">References <a class="el" href="engine__types_8h_source.html#l02492">Mesh::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02441">MeshNode::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02178">PhysicsComponent::aabb</a>, <a class="el" href="engine__types_8h_source.html#l02174">PhysicsComponent::angular_velocity</a>, <a class="el" href="physics_8c_source.html#l02115">calc_inverse_inertia()</a>, <a class="el" href="utilities_8h_source.html#l00134">CAST_VEC</a>, <a class="el" href="engine__types_8h_source.html#l02180">PhysicsComponent::cd</a>, <a class="el" href="audio__probe__bake_8comp_source.html#l00117">AABB::center</a>, <a class="el" href="engine__types_8h_source.html#l02167">PhysicsComponent::center_of_mass</a>, <a class="el" href="engine__types_8h_source.html#l02062">COL_CAPSULE</a>, <a class="el" href="engine__types_8h_source.html#l02061">COL_HULL</a>, <a class="el" href="engine__types_8h_source.html#l02060">COL_TRIANGLE</a>, <a class="el" href="#a928333d0df2f32165501164da71189e2">CollisionData::data</a>, <a class="el" href="main_8c_source.html#l00310">GLOBALS</a>, <a class="el" href="physics_8c_source.html#l02141">init_PC()</a>, <a class="el" href="engine__types_8h_source.html#l02168">PhysicsComponent::inverse_inertia</a>, <a class="el" href="engine__types_8h_source.html#l02164">PhysicsComponent::mass</a>, <a class="el" href="types_8h_source.html#l00039">AABB::max_z</a>, <a class="el" href="engine__types_8h_source.html#l02386">MeshNode::mesh</a>, <a class="el" href="engine__types_8h_source.html#l03419">Globals::mesh_nodes</a>, <a class="el" href="engine__types_8h_source.html#l03418">Globals::meshes</a>, <a class="el" href="types_8h_source.html#l00039">AABB::min_z</a>, <a class="el" href="engine__types_8h_source.html#l02166">PhysicsComponent::mu</a>, <a class="el" href="engine__types_8h_source.html#l02181">PhysicsComponent::physics_type</a>, <a class="el" href="engine__types_8h_source.html#l02155">PhysicsComponent::player_pc</a>, <a class="el" href="utilities_8h_source.html#l00168">print_aabb()</a>, <a class="el" href="engine__types_8h_source.html#l02165">PhysicsComponent::restitution</a>, <a class="el" href="engine__types_8h_source.html#l02131">CollisionData::type</a>, <a class="el" href="engine__types_8h_source.html#l02171">PhysicsComponent::vel</a>, <a class="el" href="types_8h_source.html#l00012">vec3::x</a>, and <a class="el" href="types_8h_source.html#l00012">vec3::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="entity_8c_source.html#l00088">create_physics_component()</a>, and <a class="el" href="physics_8c_source.html#l02141">init_PC()</a>.</p>
 

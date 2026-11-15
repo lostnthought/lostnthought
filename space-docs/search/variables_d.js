@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['n_0',['N',['../water_8vert.html#a7722c8ecbb62d99aee7ce68b1752f337',1,'water.vert']]],
+  ['name_1',['name',['../types_8h.html#a11eec95ede6bc79aa3ad932433916027',1,'Uniform']]],
+  ['nd_2',['ND',['../main_8c.html#a2abe8da2b89c3f0df949920e3bc00624',1,'main.c']]],
+  ['next_3',['next',['../types_8h.html#aa22b124faef369b54a4d85f5105661ab',1,'GPUNode::next'],['../main_8vert.html#a80be4538a9184fa43c1dee17641e819b',1,'Node::next']]],
+  ['next_5fcompute_5fshader_4',['NEXT_COMPUTE_SHADER',['../init_8h.html#a2da4c5db40b8ab1c48ecb4626b5596b6',1,'NEXT_COMPUTE_SHADER:&#160;main.c'],['../main_8c.html#a2da4c5db40b8ab1c48ecb4626b5596b6',1,'NEXT_COMPUTE_SHADER:&#160;main.c']]],
+  ['nk_5fctx_5',['NK_CTX',['../init_8c.html#a373099635129f1b532e69f57e5d94aac',1,'NK_CTX:&#160;init.c'],['../init_8h.html#a373099635129f1b532e69f57e5d94aac',1,'NK_CTX:&#160;init.c']]],
+  ['nmax_6',['nmax',['../types_8h.html#a3c152d30a3bda5961dbea151c5e86ef9',1,'NodeData']]],
+  ['nmin_7',['nmin',['../types_8h.html#aba14abc4a6e9a018afba3cd1e7283155',1,'NodeData']]],
+  ['node_5fcounter_5fssbo_8',['NODE_COUNTER_SSBO',['../init_8h.html#a9e732facdd874690cf167378e65b9c38',1,'NODE_COUNTER_SSBO:&#160;main.c'],['../main_8c.html#a9e732facdd874690cf167378e65b9c38',1,'NODE_COUNTER_SSBO:&#160;main.c']]],
+  ['node_5fssbo_9',['NODE_SSBO',['../init_8h.html#ab8d94ed181be142b46ff8283209350a7',1,'NODE_SSBO:&#160;main.c'],['../main_8c.html#ab8d94ed181be142b46ff8283209350a7',1,'NODE_SSBO:&#160;main.c']]],
+  ['nodes_10',['nodes',['../main_8c.html#a480c54f24dfbbdfcdb4539cc67725a7c',1,'main.c']]],
+  ['nodes_5fvisited_11',['nodes_visited',['../types_8h.html#a1570246e3ae3dd2d745a8c8ec1d5fc92',1,'ParticleData']]],
+  ['normal_12',['normal',['../shadow_8vert.html#ae02d1c228b7ffcfb1c5eeec3973fe802',1,'Vertex::normal'],['../types_8h.html#afe9d434892253e72975e39bedacd9461',1,'AtmosphereVertex::normal']]],
+  ['normal_5fmap_13',['normal_map',['../mesh_8frag.html#a1b3e6a770be3e53f8f9b2714537c5a47',1,'normal_map:&#160;mesh.frag'],['../water_8frag.html#a1b3e6a770be3e53f8f9b2714537c5a47',1,'normal_map:&#160;water.frag']]],
+  ['nuklear_5fhovered_14',['NUKLEAR_HOVERED',['../init_8c.html#a519eb5228cdfc908c4896bc635e50280',1,'NUKLEAR_HOVERED:&#160;init.c'],['../init_8h.html#a519eb5228cdfc908c4896bc635e50280',1,'NUKLEAR_HOVERED:&#160;init.c']]],
+  ['num_5ftiles_5fper_5fwater_5fscale_15',['NUM_TILES_PER_WATER_SCALE',['../water_8frag.html#a405e58567b50e85b1c59cb128baf1ca3',1,'NUM_TILES_PER_WATER_SCALE:&#160;water.frag'],['../water_8vert.html#a405e58567b50e85b1c59cb128baf1ca3',1,'NUM_TILES_PER_WATER_SCALE:&#160;water.vert']]],
+  ['nxw_16',['nXw',['../mesh_8frag.html#afbc59284ae749948d55c29ddd612bbbd',1,'nXw:&#160;mesh.frag'],['../water_8frag.html#afbc59284ae749948d55c29ddd612bbbd',1,'nXw:&#160;water.frag']]],
+  ['nyw_17',['nYw',['../mesh_8frag.html#a76fc14dd5eb6ada563755f731ba0fb90',1,'nYw:&#160;mesh.frag'],['../water_8frag.html#a76fc14dd5eb6ada563755f731ba0fb90',1,'nYw:&#160;water.frag']]],
+  ['nzw_18',['nZw',['../mesh_8frag.html#a754dab7d5e96ef867830e21bbeae45cb',1,'nZw:&#160;mesh.frag'],['../water_8frag.html#a754dab7d5e96ef867830e21bbeae45cb',1,'nZw:&#160;water.frag']]]
+];

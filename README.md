@@ -1,7 +1,7 @@
 ### [Website](https://lostnthought.github.io/lostnthought/) | [Email](mailto:dustmite.business@gmail.com) | [Youtube Channel](https://www.youtube.com/@dustmite-c)
 ## How I Program
-- Languages: C, C++, GLSL
-- Libraries: OpenGL, FFTW, Nuklear, cJSON, SDL, stb
+- Languages: C, C++, GLSL, Slang
+- Libraries: OpenGL, Vulkan, FFTW, Nuklear, cJSON, SDL, stb
 - Platforms: Windows + Linux
 
 I'm a graphics engine / simulations programmer.<br>
